@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Logo from '../Logo/Logo';
 import styles from './header.less';
-import links from './links';
 
 class Header extends Component {
   constructor(props) {
