@@ -12,10 +12,13 @@
     sans-serif;
   @media @mobile {
     padding: 0 8px;
+    margin-bottom: @grid-base * 14;
   }
 }
 
 .wrapper {
+  display: flex;
+  justify-content: space-between;
   max-width: 970px;
   margin: 0 auto;
 }
@@ -27,7 +30,6 @@
 }
 
 .pullLeft {
-  float: left;
   padding: 5px 0;
   @media @desktop {
     padding: 12px 0;
@@ -35,7 +37,6 @@
 }
 
 .pullRight {
-  float: right;
   padding: 5px 0;
   @media @desktop {
     padding: 12px 0;
