@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Icons.less';
 import {
   PageBlock,
   Card,
@@ -6,47 +7,34 @@ import {
   Paragraph,
   Text
 } from 'seek-asia-style-guide/react';
+import iconsSketchExports from '../../../../react/*/*.iconSketch.js';
+import map from 'lodash/map';
 
-import * as allComponent from 'seek-asia-style-guide/react';
-
-const getAllIconComponent = () => {
-  const iconComponent = [];
-  for (const key in allComponent) {
-    if (
-      allComponent.hasOwnProperty(key) &&
-      key.indexOf('Icon') >= 0 &&
-      key !== 'ChevronIcon' &&
-      key !== 'DeleteIcon' &&
-      key !== 'ErrorIcon' &&
-      key !== 'FacebookIcon' &&
-      key !== 'HeartIcon' &&
-      key !== 'LinkedInIcon' &&
-      key !== 'PlusIcon' &&
-      key !== 'StarIcon' &&
-      key !== 'TickCircleIcon' &&
-      key !== 'TwitterIcon'
-    ) {
-      iconComponent.push({
-        displayName: allComponent[key].displayName,
-        component: allComponent[key]
-      });
-    }
-  }
-  return iconComponent;
-};
-
-const renderIcon = ({ displayName, component }) => { // eslint-disable-line react/prop-types
-  return (
-    <div key={displayName}>
-      {component()}
-      <Text>{displayName}</Text>
+const renderIcons = sketch => {
+  return sketch && sketch.symbols ? (
+    <div>
+      <PageBlock>
+        <div className={styles.symbols}>
+          <Section className={styles.section}>
+            {map(sketch.symbols || {}, (element, name) => (
+              <div key={name} className={styles.symboleContainer}>
+                <div className={styles.symbolName}>
+                  <Text strong>{name.replace(/\//g, ' \u25B8 ')}</Text>
+                </div>
+                <div className={styles.symbolElement}>{element}</div>
+              </div>
+            ))}
+          </Section>
+        </div>
+      </PageBlock>
     </div>
-  );
+  ) : null;
 };
 
-const displayAllIcon = () => {
-  const iconComponent = getAllIconComponent();
-  return <div>{iconComponent.map(icon => renderIcon(icon))}</div>;
+const renderAllIcons = () => {
+  return iconsSketchExports.map(symbols => {
+    return renderIcons(symbols);
+  });
 };
 
 export default function Icons() {
@@ -68,7 +56,7 @@ export default function Icons() {
       </PageBlock>
 
       <PageBlock>
-        <Card>{displayAllIcon()}</Card>
+        <Card className={styles.iconsCard}>{renderAllIcons()}</Card>
       </PageBlock>
     </div>
   );
