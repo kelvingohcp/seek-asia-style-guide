@@ -6,10 +6,12 @@
 
 .symbolElement {
   margin-bottom: @grid-row-height * 3;
+  max-width: @grid-row-height * 3;
 }
 
 .section {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .symboleContainer {
@@ -19,4 +21,8 @@
 .iconsCard {
   display: flex;
   flex-wrap: wrap;
+}
+
+.codeStyle {
+  background-color: @sk-gray-light;
 }

@@ -7,6 +7,7 @@ import {
   Paragraph,
   Text
 } from 'seek-asia-style-guide/react';
+import Code from '../Demo/Code/Code';
 import iconsSketchExports from '../../../../react/*/*.iconSketch.js';
 import map from 'lodash/map';
 
@@ -22,6 +23,9 @@ const renderIcons = sketch => {
                   <Text strong>{name.replace(/\//g, ' \u25B8 ')}</Text>
                 </div>
                 <div className={styles.symbolElement}>{element}</div>
+                <div className={styles.codeStyle}>
+                  <Code jsx={element} tenantPath="react" />
+                </div>
               </div>
             ))}
           </Section>
