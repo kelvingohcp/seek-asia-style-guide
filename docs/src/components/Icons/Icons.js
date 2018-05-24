@@ -48,7 +48,7 @@ export default function Icons() {
           <Section>
             <Paragraph>
               <Text>
-                This page is list out all the icons in seekasia style guide.
+                These are the icons components available for use in the SEEK Asia style guide.
               </Text>
             </Paragraph>
           </Section>
