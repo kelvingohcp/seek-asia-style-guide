@@ -2,6 +2,6 @@ import React from 'react';
 import HeartIcon from './HeartIcon';
 
 export const symbols = {
-  'HeartIcon -> with filled': <HeartIcon filled={true} />,
-  'HeartIcon -> without filled': <HeartIcon filled={false} />
+  'HeartIcon props filled true': <HeartIcon filled={true} />,
+  'HeartIcon props filled false': <HeartIcon filled={false} />
 };

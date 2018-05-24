@@ -2,6 +2,6 @@ import React from 'react';
 import FacebookIcon from './FacebookIcon';
 
 export const symbols = {
-  'FacebookIcon -> with filled': <FacebookIcon filled={true} />,
-  'FacebookIcon -> without filled': <FacebookIcon filled={false} />
+  'FacebookIcon props filled true': <FacebookIcon filled={true} />,
+  'FacebookIcon props filled false': <FacebookIcon filled={false} />
 };

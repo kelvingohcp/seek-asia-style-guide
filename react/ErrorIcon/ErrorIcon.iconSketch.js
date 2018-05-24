@@ -2,6 +2,6 @@ import React from 'react';
 import ErrorIcon from './ErrorIcon';
 
 export const symbols = {
-  'ErrorIcon -> with filled': <ErrorIcon filled={true} />,
-  'ErrorIcon -> without filled': <ErrorIcon filled={false} />
+  'ErrorIcon props filled true': <ErrorIcon filled={true} />,
+  'ErrorIcon props filled false': <ErrorIcon filled={false} />
 };
