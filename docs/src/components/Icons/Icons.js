@@ -17,9 +17,9 @@ const renderIcons = sketch => {
         <div className={styles.symbols}>
           <Section className={styles.section}>
             {map(sketch.symbols || {}, (element, name) => (
-              <div key={name} className={styles.symboleContainer}>
+              <div key={name} className={styles.symbolContainer}>
                 <div className={styles.symbolName}>
-                  <Text strong>{name.replace(/\//g, ' \u25B8 ')}</Text>
+                  <Text whispering>{name.replace(/\//g, ' \u25B8 ')}</Text>
                 </div>
                 <div className={styles.symbolElement}>{element}</div>
               </div>
