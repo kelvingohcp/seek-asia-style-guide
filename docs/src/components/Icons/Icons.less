@@ -3,6 +3,10 @@
 @iconWidth: @grid-base * 6;
 @iconHeight: @grid-base * 6;
 
+.symbolName {
+  margin-bottom: @grid-row-height * 2;
+}
+
 .symbolElement {
   svg {
     width: @iconWidth;
@@ -14,15 +18,15 @@
   display: flex;
   flex-wrap: wrap;
   border: 2px solid transparent;
-  border-radius: 4px;
+  border-radius: .25rem;
   transition: border-color .3s;
 
   @supports (display: grid) {
     display: grid;
+    align-items: center;
+    grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     padding: 0;
-    grid-gap: 1rem;
-    align-items: center;
     text-align: center;
 
     &:hover {
@@ -32,19 +36,20 @@
 }
 
 .symbolContainer {
-  padding: @grid-row-height * 3;
   display: flex;
-  flex-flow: column-reverse;
   align-items: center;
+  flex-flow: column-reverse;
+  padding: @grid-row-height * 3;
 }
 
 .iconsCard {
   display: flex;
   flex-wrap: wrap;
+
   @supports (display: grid) {
     display: grid;
+    grid-gap: 2rem 1rem;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     padding: 1rem;
-    grid-gap: 2rem 1rem;
   }
 }
