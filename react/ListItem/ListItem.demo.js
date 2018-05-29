@@ -1,5 +1,6 @@
 import React from 'react';
 import ListItem from './ListItem';
+import Badge from '../Badge/Badge';
 import * as sketch from './ListItem.sketch';
 import { HeartIcon, StarIcon } from 'seek-asia-style-guide/react';
 export default {
@@ -56,6 +57,21 @@ export default {
           })
         }
       ]
+    },
+    {
+        label: 'with Badge',
+        type: 'checklist',
+        states: [
+            {
+                label: 'with Badge',
+                transformProps: props => ({
+                    ...props,
+                    badge: (
+                      <Badge label='Badge' color='default' isBold />
+                    )
+                })
+            }
+        ]
     }
   ]
 };

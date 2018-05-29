@@ -1,0 +1,75 @@
+@import (reference) '~seek-asia-style-guide/theme';
+
+@lighten: #888;
+
+.badge {
+    font-size: .75rem;
+    display: inline-block;
+    border: .083333em solid transparent;
+    color: #333;
+    line-height: 1;
+    font-weight: 600;
+    white-space: nowrap;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    padding: .25rem .583333rem;
+}
+.subtle{
+    color:@saBlack;
+}
+
+.subtleProgressing {
+    background-color: screen(@actionGreen, @lighten);
+    border-color: screen(@actionGreen, @lighten);
+}
+
+.subtleDefault {
+    background-color:screen(@actionBlue, @lighten);
+    border-color: screen(@actionBlue, @lighten);
+}
+
+.subtleDeclined {
+    background-color: screen(@actionRed, @lighten);
+    border-color: screen(@actionRed, @lighten);;
+}
+
+.subtleExpired {
+    background-color: screen(@saGrey3, @lighten);
+    border-color: screen(@saGrey3, @lighten);
+}
+
+.subtleNew {
+    background-color: screen(@actionOrange, @lighten);
+    border-color: screen(@actionOrange, @lighten);
+}
+.bold{
+    color: @saWhite;
+    font-weight: bold;
+}
+
+.boldProgressing {
+    background-color: @actionGreen;
+    border-color: @actionGreen;
+}
+
+.boldDefault{    
+    background-color: @actionBlue;
+    border-color: @actionBlue;
+}
+
+.boldDeclined{    
+    background-color:@actionRed;
+    border-color: @actionRed;
+}
+
+.boldExpired{
+    background-color: @saGrey3;
+    border-color: @saGrey3;
+}
+
+.boldNew{
+    background-color: @actionOrange;
+    border-color: @actionOrange;
+}
