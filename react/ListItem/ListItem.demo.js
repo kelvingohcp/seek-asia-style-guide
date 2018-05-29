@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
 import * as sketch from './ListItem.sketch';
-import { Button, HeartIcon, StarIcon } from 'seek-asia-style-guide/react';
+import { HeartIcon, StarIcon } from 'seek-asia-style-guide/react';
 export default {
   route: '/listItem',
   title: 'List Item',

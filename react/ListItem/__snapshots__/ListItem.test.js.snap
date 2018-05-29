@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem: should render icon 1`] = `
+<div
+  className="listItem"
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div
+    className="listItemValue"
+  >
+    <div
+      className="listItemTitle"
+    >
+      testTitle
+    </div>
+    testValue
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render title value 1`] = `
+<div
+  className="listItem"
+>
+  <div
+    className="listItemValue"
+  >
+    <div
+      className="listItemTitle"
+    >
+      testTitle
+    </div>
+    testValue
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render value 1`] = `
+<div
+  className="listItem"
+>
+  <div
+    className="listItemValue"
+  >
+    testValue
+  </div>
+</div>
+`;
