@@ -10,23 +10,24 @@ export default function ListItem({
   badge,
   ...restProps
 }) {
-
   return (
-
     <div className={classnames(styles.listItem)}>
-      {icon != null && icon != '' &&
+      {(icon) &&
         <div className={classnames(styles.listItemIcon)}>
           {icon}
         </div>
       }
-      <div className={classnames(styles.listItemValue)}>
-        {title != null && title != '' &&
+      <div className={classnames(styles.listItemBody)}>
+        {(title) &&
           <div className={classnames(styles.listItemTitle)} >{title}</div>
         }
-        {value}
+        <div className={classnames(styles.listItemValue)}>
+          {value}
+        </div>
         {badge != null && badge != '' &&
           <span>{badge}</span>
         }
+
       </div>
     </div>
   );
@@ -38,5 +39,3 @@ ListItem.propTypes = {
   icon: PropTypes.function,
   badge: PropTypes.function
 };
-
-
