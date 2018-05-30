@@ -8,19 +8,20 @@
 }
 
 .symbolElement {
+  /* stylelint-disable selector-max-type */
   svg {
     width: @iconWidth;
     height: @iconHeight;
   }
+  /* stylelint-enable */
 }
 
 .section {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid transparent;
-  border-radius: .25rem;
-  transition: border-color .3s;
-
+  border-radius: 0.25rem;
+  transition: border-color 0.3s;
   @supports (display: grid) {
     display: grid;
     align-items: center;
@@ -30,7 +31,7 @@
     text-align: center;
 
     &:hover {
-      border-color: #ddd;
+      border-color: #dddddd;
     }
   }
 }
@@ -45,7 +46,6 @@
 .iconsCard {
   display: flex;
   flex-wrap: wrap;
-
   @supports (display: grid) {
     display: grid;
     grid-gap: 2rem 1rem;
