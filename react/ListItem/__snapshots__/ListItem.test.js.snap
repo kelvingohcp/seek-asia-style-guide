@@ -10,14 +10,24 @@ exports[`ListItem: should render icon 1`] = `
     <Education icon />
   </div>
   <div
-    className="listItemValue"
+    className="listItemBody"
   >
     <div
       className="listItemTitle"
     >
       testTitle
     </div>
-    testValue
+    <div
+      className="listItemValue"
+    >
+      testValue
+      <span>
+        <span>
+           
+        </span>
+        <span />
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -27,14 +37,24 @@ exports[`ListItem: should render title value 1`] = `
   className="listItem"
 >
   <div
-    className="listItemValue"
+    className="listItemBody"
   >
     <div
       className="listItemTitle"
     >
       testTitle
     </div>
-    testValue
+    <div
+      className="listItemValue"
+    >
+      testValue
+      <span>
+        <span>
+           
+        </span>
+        <span />
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -44,9 +64,19 @@ exports[`ListItem: should render value 1`] = `
   className="listItem"
 >
   <div
-    className="listItemValue"
+    className="listItemBody"
   >
-    testValue
+    <div
+      className="listItemValue"
+    >
+      testValue
+      <span>
+        <span>
+           
+        </span>
+        <span />
+      </span>
+    </div>
   </div>
 </div>
 `;
