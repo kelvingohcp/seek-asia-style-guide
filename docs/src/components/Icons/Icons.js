@@ -7,7 +7,6 @@ import {
   Paragraph,
   Text
 } from 'seek-asia-style-guide/react';
-import Code from '../Demo/Code/Code';
 import iconsSketchExports from '../../../../react/*/*.iconSketch.js';
 import map from 'lodash/map';
 
@@ -18,14 +17,11 @@ const renderIcons = sketch => {
         <div className={styles.symbols}>
           <Section className={styles.section}>
             {map(sketch.symbols || {}, (element, name) => (
-              <div key={name} className={styles.symboleContainer}>
+              <div key={name} className={styles.symbolContainer}>
                 <div className={styles.symbolName}>
-                  <Text strong>{name.replace(/\//g, ' \u25B8 ')}</Text>
+                  <Text whispering>{name.replace(/\//g, ' \u25B8 ')}</Text>
                 </div>
                 <div className={styles.symbolElement}>{element}</div>
-                <div className={styles.codeStyle}>
-                  <Code jsx={element} tenantPath="react" />
-                </div>
               </div>
             ))}
           </Section>

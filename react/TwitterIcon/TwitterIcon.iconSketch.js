@@ -2,6 +2,6 @@ import React from 'react';
 import TwitterIcon from './TwitterIcon';
 
 export const symbols = {
-  'TwitterIcon props filled true': <TwitterIcon filled={true} />,
-  'TwitterIcon props filled false': <TwitterIcon filled={false} />
+  'TwitterIcon -> with filled': <TwitterIcon filled={true} />,
+  'TwitterIcon -> without filled': <TwitterIcon filled={false} />
 };
