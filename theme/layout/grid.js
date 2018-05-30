@@ -1,8 +1,5 @@
-export const gridBase = 4;
+import lessToJs from 'less-vars-to-js';
+import grid from '!!raw-loader!./grid.less';
 
-export const gridRowHeight = 4;
-export const gridGutterWidth = gridBase * 4;
-
-// Slated for deletion
-export const gridColumnWidth = 60;
-export const gridContainerWidth = 940;
+const gridValues = lessToJs(grid);
+export default gridValues;
