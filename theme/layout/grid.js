@@ -1,8 +1,6 @@
-export const gridBase = 4;
+import lessToJs from 'less-vars-to-js';
+import fs from 'fs';
 
-export const gridRowHeight = 4;
-export const gridGutterWidth = gridBase * 4;
+const grid = lessToJs(fs.readFileSync('grid.js', 'utf-8')); // eslint-disable-line no-sync
 
-// Slated for deletion
-export const gridColumnWidth = 60;
-export const gridContainerWidth = 940;
+export default grid;
