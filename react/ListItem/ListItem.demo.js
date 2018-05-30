@@ -59,19 +59,19 @@ export default {
       ]
     },
     {
-        label: 'with Badge',
-        type: 'checklist',
-        states: [
-            {
-                label: 'with Badge',
-                transformProps: props => ({
-                    ...props,
-                    badge: (
-                      <Badge label='Badge' color='default' isBold />
-                    )
-                })
-            }
-        ]
+      label: 'with Badge',
+      type: 'checklist',
+      states: [
+        {
+          label: 'with Badge',
+          transformProps: props => ({
+            ...props,
+            badge: (
+              <Badge label='Badge' color='default' isBold />
+            )
+          })
+        }
+      ]
     }
   ]
 };

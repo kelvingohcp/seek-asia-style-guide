@@ -7,8 +7,7 @@ export default function ListItem({
   title,
   value,
   icon,
-  badge,
-  ...restProps
+  badge
 }) {
   return (
     <div className={classnames(styles.listItem)}>
@@ -23,11 +22,13 @@ export default function ListItem({
         }
         <div className={classnames(styles.listItemValue)}>
           {value}
+          {!(badge === null) && badge !== '' &&
+            <span>
+              <span>{' '}</span>
+              <span>{badge}</span>
+            </span>
+          }
         </div>
-        {badge != null && badge != '' &&
-          <span>{badge}</span>
-        }
-
       </div>
     </div>
   );
