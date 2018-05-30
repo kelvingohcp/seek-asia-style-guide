@@ -6,8 +6,7 @@ import classnames from 'classnames';
 export default function Badge({
   label,
   color,
-  isBold,
-  ...restProps
+  isBold
 }) {
   let colorStyle = styles.default;
   switch (color) {
