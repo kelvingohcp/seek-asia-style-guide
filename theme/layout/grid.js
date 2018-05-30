@@ -1,7 +1,8 @@
-import lessToJs from 'less-vars-to-js';
-import gridLess from 'raw-loader!./grid.less';
+export const gridBase = 4;
 
-console.log('=====>', gridLess);
-const grid = lessToJs(gridLess); // eslint-disable-line no-sync
+export const gridRowHeight = 4;
+export const gridGutterWidth = gridBase * 4;
 
-export default grid;
+// Slated for deletion
+export const gridColumnWidth = 60;
+export const gridContainerWidth = 940;
