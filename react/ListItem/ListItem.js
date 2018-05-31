@@ -13,7 +13,7 @@ export default function ListItem({ title, value, icon, badge, isCompact }) {
         )}
         <div className={classnames(styles.listItemValue)}>
           {value}
-          {badge && <span>{badge}</span>}
+          {badge && <span> <span>{badge}</span></span>}
         </div>
       </div>
     </div>
