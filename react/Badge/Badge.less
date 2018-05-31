@@ -1,73 +1,80 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
-@lighten: #bbbbbb;
+@badge-font-base: 12px;
+@badge-border-width: 1px;
+
+@lighten: @saGrey4;
+
+.badgeBg(@color) {
+  background-color: (@color);
+  border-color: (@color);
+}
+
+.badgeBg(@color, @lightFactor) {
+  background-color: screen(@color, @lightFactor);
+  border-color: screen(@color, @lightFactor);
+}
+
+.borderRadius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
 
 .root {
   border: 1px solid transparent;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  .borderRadius(@grid-base * 2.5);
   box-sizing: border-box;
   color: @saGrey1;
   display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: @badge-font-base;
+  font-weight: @sa-semi-bold;
   line-height: 1;
-  padding: (@grid-base - 1) ((@grid-base * 2) - 1);
+  padding: (@grid-base - @badge-border-width) ((@grid-base * 2) - @badge-border-width);
   white-space: nowrap;
 }
 
 .progressing {
-  background-color: screen(@actionGreen, @lighten);
-  border-color: screen(@actionGreen, @lighten);
+  .badgeBg(@actionGreen, @lighten);
 }
 
 .default {
-  background-color: screen(@actionBlue, @lighten);
-  border-color: screen(@actionBlue, @lighten);
+  .badgeBg(@actionBlue, @lighten);
 }
 
 .declined {
-  background-color: screen(@actionRed, @lighten);
-  border-color: screen(@actionRed, @lighten);
+  .badgeBg(@actionRed, @lighten);
 }
 
 .expired {
-  background-color: screen(@saGrey3, @lighten);
-  border-color: screen(@saGrey3, @lighten);
+  .badgeBg(@saGrey3, @lighten);
 }
 
 .new {
-  background-color: screen(@actionOrange, @lighten);
-  border-color: screen(@actionOrange, @lighten);
+  .badgeBg(@actionOrange, @lighten);
 }
 
 .isBold {
   color: @saWhite;
-  font-weight: 700;
+  font-weight: @sa-bold;
   &.progressing {
-    background-color: @actionGreen;
-    border-color: @actionGreen;
+    .badgeBg(@actionGreen);
   }
 
   &.default {
-    background-color: @actionBlue;
-    border-color: @actionBlue;
+    .badgeBg(@actionBlue);
   }
 
   &.declined {
-    background-color: @actionRed;
-    border-color: @actionRed;
+    .badgeBg(@actionRed);
   }
 
   &.expired {
-    background-color: @saGrey3;
-    border-color: @saGrey3;
+    .badgeBg(@saGrey3);
   }
 
   &.new {
-    background-color: @actionOrange;
-    border-color: @actionOrange;
+    .badgeBg(@actionOrange);
   }
 }

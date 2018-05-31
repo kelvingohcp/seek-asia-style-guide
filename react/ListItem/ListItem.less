@@ -1,44 +1,52 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
+@list-item-v-padding: @grid-base * 3;
+@list-item-h-padding: @grid-base * 4;
+@list-item-line-height: 20px;
+@list-item-bgc-hover: #eef8fc;
+@list-item-icon-margin-top: @grid-base / 2;
+@list-item-icon-padding-left: @grid-base * 3;
+
 .root {
   align-items: flex-start;
-  background-color: #ffffff;
+  background-color: @saWhite;
   border-radius: 0.25rem;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  color: #333333;
+  box-shadow: 0 1px 1px @saGrey5;
+  color: @saGrey1;
   display: flex;
   font-size: 16px;
   justify-content: space-between;
-  line-height: 1.25em;
-  min-width: 10rem;
-  max-width: 20rem;
-  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  line-height: @list-item-line-height;
+  padding-top: @list-item-v-padding;
+  padding-bottom: @list-item-v-padding;
+
+  @media @desktop {
+    max-width: 50vw;
+  }
+
+  &:hover {
+    background-color: @list-item-bgc-hover;
+  }
 }
 
 .listItemBody {
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
+  padding-left: @list-item-h-padding;
+  padding-right: @list-item-h-padding;
 }
 
 .listItemTitle {
-  color: #666666;
+  color: @saGrey2;
   display: block;
   font-size: 0.875em;
 }
 
 .listItemIcon {
-  display: flex;
-  align-items: center;
-  flex: 0 1 20px;
   line-height: inherit;
-  padding-right: 0.25rem;
-
-  .svg {
-    width: 1.25em;
-    height: 1.25em;
-    vertical-align: middle;
-  }
+  margin-top: @list-item-icon-margin-top;
+  padding-left: @list-item-icon-padding-left;
 }
 
 .listItemValue {
