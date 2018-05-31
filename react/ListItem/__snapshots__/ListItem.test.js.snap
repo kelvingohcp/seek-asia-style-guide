@@ -2,7 +2,7 @@
 
 exports[`ListItem: should render icon 1`] = `
 <div
-  className="listItem"
+  className="root"
 >
   <div
     className="listItemIcon"
@@ -34,7 +34,7 @@ exports[`ListItem: should render icon 1`] = `
 
 exports[`ListItem: should render title value 1`] = `
 <div
-  className="listItem"
+  className="root"
 >
   <div
     className="listItemBody"
@@ -61,7 +61,7 @@ exports[`ListItem: should render title value 1`] = `
 
 exports[`ListItem: should render value 1`] = `
 <div
-  className="listItem"
+  className="root"
 >
   <div
     className="listItemBody"

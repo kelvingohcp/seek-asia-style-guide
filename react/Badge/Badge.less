@@ -1,4 +1,4 @@
-@import (reference) '~seek-asia-style-guide/theme';
+@import (reference) "~seek-asia-style-guide/theme";
 
 @lighten: #bbbbbb;
 
@@ -18,12 +18,10 @@
   white-space: nowrap;
 }
 
-
 .progressing {
-    background-color: screen(@actionGreen, @lighten);
-    border-color: screen(@actionGreen, @lighten)
-
-  }
+  background-color: screen(@actionGreen, @lighten);
+  border-color: screen(@actionGreen, @lighten);
+}
 
 .default {
   background-color: screen(@actionBlue, @lighten);
@@ -52,26 +50,24 @@
     background-color: @actionGreen;
     border-color: @actionGreen;
   }
-  
+
   &.default {
     background-color: @actionBlue;
     border-color: @actionBlue;
   }
-  
+
   &.declined {
     background-color: @actionRed;
     border-color: @actionRed;
   }
-  
+
   &.expired {
     background-color: @saGrey3;
     border-color: @saGrey3;
   }
-  
+
   &.new {
     background-color: @actionOrange;
     border-color: @actionOrange;
   }
 }
-
-
