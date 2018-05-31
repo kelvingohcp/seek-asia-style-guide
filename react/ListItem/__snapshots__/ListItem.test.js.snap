@@ -21,12 +21,6 @@ exports[`ListItem: should render icon 1`] = `
       className="listItemValue"
     >
       testValue
-      <span>
-        <span>
-           
-        </span>
-        <span />
-      </span>
     </div>
   </div>
 </div>
@@ -48,12 +42,6 @@ exports[`ListItem: should render title value 1`] = `
       className="listItemValue"
     >
       testValue
-      <span>
-        <span>
-           
-        </span>
-        <span />
-      </span>
     </div>
   </div>
 </div>
@@ -70,12 +58,6 @@ exports[`ListItem: should render value 1`] = `
       className="listItemValue"
     >
       testValue
-      <span>
-        <span>
-           
-        </span>
-        <span />
-      </span>
     </div>
   </div>
 </div>

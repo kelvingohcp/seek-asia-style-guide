@@ -11,7 +11,6 @@ export default function Badge({
   let colorStyle = styles.default;
   switch (color) {
     case 'progressing':
-
       colorStyle = styles.progressing;
       break;
     case 'declined':
