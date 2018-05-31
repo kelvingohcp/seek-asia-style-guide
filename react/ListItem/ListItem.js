@@ -10,7 +10,7 @@ export default function ListItem({
   badge
 }) {
   return (
-    <div className={classnames(styles.listItem)}>
+    <div className={classnames({ [styles.root]: true })} >
       {(icon) &&
         <div className={classnames(styles.listItemIcon)}>
           {icon}
@@ -30,7 +30,7 @@ export default function ListItem({
           }
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

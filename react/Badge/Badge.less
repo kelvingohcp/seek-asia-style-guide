@@ -2,77 +2,76 @@
 
 @lighten: #bbbbbb;
 
-.badge {
+.root {
   border: 1px solid transparent;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #333333;
+  color: @saGrey1;
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
-  padding: 3px 7px;
+  padding: (@grid-base - 1) ((@grid-base * 2) - 1);
   white-space: nowrap;
 }
 
-.subtle {
-  color: @saBlack;
-}
 
-.subtleProgressing {
-  background-color: screen(@actionGreen, @lighten);
-  border-color: screen(@actionGreen, @lighten);
-}
+.progressing {
+    background-color: screen(@actionGreen, @lighten);
+    border-color: screen(@actionGreen, @lighten)
 
-.subtleDefault {
+  }
+
+.default {
   background-color: screen(@actionBlue, @lighten);
   border-color: screen(@actionBlue, @lighten);
 }
 
-.subtleDeclined {
+.declined {
   background-color: screen(@actionRed, @lighten);
   border-color: screen(@actionRed, @lighten);
 }
 
-.subtleExpired {
+.expired {
   background-color: screen(@saGrey3, @lighten);
   border-color: screen(@saGrey3, @lighten);
 }
 
-.subtleNew {
+.new {
   background-color: screen(@actionOrange, @lighten);
   border-color: screen(@actionOrange, @lighten);
 }
 
-.bold {
+.isBold {
   color: @saWhite;
-  font-weight: bold;
+  font-weight: 700;
+  &.progressing {
+    background-color: @actionGreen;
+    border-color: @actionGreen;
+  }
+  
+  &.default {
+    background-color: @actionBlue;
+    border-color: @actionBlue;
+  }
+  
+  &.declined {
+    background-color: @actionRed;
+    border-color: @actionRed;
+  }
+  
+  &.expired {
+    background-color: @saGrey3;
+    border-color: @saGrey3;
+  }
+  
+  &.new {
+    background-color: @actionOrange;
+    border-color: @actionOrange;
+  }
 }
 
-.boldProgressing {
-  background-color: @actionGreen;
-  border-color: @actionGreen;
-}
 
-.boldDefault {
-  background-color: @actionBlue;
-  border-color: @actionBlue;
-}
-
-.boldDeclined {
-  background-color: @actionRed;
-  border-color: @actionRed;
-}
-
-.boldExpired {
-  background-color: @saGrey3;
-  border-color: @saGrey3;
-}
-
-.boldNew {
-  background-color: @actionOrange;
-  border-color: @actionOrange;
-}

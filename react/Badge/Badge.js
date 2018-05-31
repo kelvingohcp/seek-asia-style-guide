@@ -12,27 +12,27 @@ export default function Badge({
   switch (color) {
     case 'progressing':
 
-      colorStyle = isBold ? styles.boldProgressing : styles.subtleProgressing;
+      colorStyle = styles.progressing;
       break;
     case 'declined':
-      colorStyle = isBold ? styles.boldDeclined : styles.subtleDeclined;
+      colorStyle = styles.declined;
       break;
     case 'expired':
-      colorStyle = isBold ? styles.boldExpired : styles.subtleExpired;
+      colorStyle = styles.expired;
       break;
     case 'new':
-      colorStyle = isBold ? styles.boldNew : styles.subtleNew;
+      colorStyle = styles.new;
       break;
     case 'default':
     default:
-      colorStyle = isBold ? styles.boldDefault : styles.subtleDefault;
+      colorStyle = styles.default;
       break;
   }
 
   return (
-    <span className={classnames(styles.badge, colorStyle, isBold ? styles.bold : styles.subtle)}>
+    <span className={classnames({ [styles.root]: true, [styles.isBold]: isBold }, colorStyle)}>
       {label}
-    </span>
+    </span >
   );
 }
 
