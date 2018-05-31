@@ -26,8 +26,8 @@ export default class JobCard extends React.Component {
   }
 
   handleShelfSectionToggle = e => {
-    e.stopPropagation();
     this.setState({ shelfSectionOpen: !this.state.shelfSectionOpen });
+    e.stopPropagation();
   };
 
   render() {
@@ -106,8 +106,8 @@ export default class JobCard extends React.Component {
               <div>
                 <Text whispering className={styles.postingDuration}>{job.postingDuration}</Text>
                 {job.shelf &&
-                  <Button color="hyperlink" className={styles.shelfToggle}>
-                    <Text whispering baseline={false} className={styles.shelfToggleText} onClick={this.handleShelfSectionToggle}>
+                  <Button color="hyperlink" className={styles.shelfToggle} onClick={this.handleShelfSectionToggle}>
+                    <Text whispering baseline={false} className={styles.shelfToggleText}>
                       {shelfSectionOpen ? 'less' : 'more'} <ChevronIcon direction={shelfSectionOpen ? 'up' : 'down'} svgClassName={styles.shelfToggleIcon} />
                     </Text>
                   </Button>
