@@ -1,18 +1,17 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
-@badge-font-base: 12px;
+@badge-font-base: @grid-base * 3;
 @badge-border-width: 1px;
 
-@lighten: @saGrey4;
-
-.badgeBg(@color) {
+.__badgeBg(@color) {
+  background-color: screen(@color, @saGrey4);
+  border-color: screen(@color, @saGrey4);
+}
+.__badgeBg(@color; @is-bold) when (@is-bold = true) {
+  color: @saWhite;
+  font-weight: @sa-bold;
   background-color: (@color);
   border-color: (@color);
-}
-
-.badgeBg(@color, @lightFactor) {
-  background-color: screen(@color, @lightFactor);
-  border-color: screen(@color, @lightFactor);
 }
 
 .borderRadius(@radius) {
@@ -36,45 +35,36 @@
 }
 
 .progressing {
-  .badgeBg(@actionGreen, @lighten);
+  .__badgeBg(@actionGreen);
+  &.isBold {
+    .__badgeBg(@actionGreen; true);
+  }
 }
 
 .default {
-  .badgeBg(@actionBlue, @lighten);
+  .__badgeBg(@actionBlue);
+  &.isBold {
+    .__badgeBg(@actionBlue; true);
+  }
 }
 
 .declined {
-  .badgeBg(@actionRed, @lighten);
+  .__badgeBg(@actionRed);
+  &.isBold {
+    .__badgeBg(@actionRed; true);
+  }
 }
 
 .expired {
-  .badgeBg(@saGrey3, @lighten);
+  .__badgeBg(@saGrey3);
+  &.isBold {
+    .__badgeBg(@saGrey3; true);
+  }
 }
 
 .new {
-  .badgeBg(@actionOrange, @lighten);
-}
-
-.isBold {
-  color: @saWhite;
-  font-weight: @sa-bold;
-  &.progressing {
-    .badgeBg(@actionGreen);
-  }
-
-  &.default {
-    .badgeBg(@actionBlue);
-  }
-
-  &.declined {
-    .badgeBg(@actionRed);
-  }
-
-  &.expired {
-    .badgeBg(@saGrey3);
-  }
-
-  &.new {
-    .badgeBg(@actionOrange);
+  .__badgeBg(@actionOrange);
+  &.isBold {
+    .__badgeBg(@actionOrange; true);
   }
 }
