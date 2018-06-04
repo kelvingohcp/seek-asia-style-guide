@@ -63,6 +63,7 @@
     "react-autosuggest": "^9.3.4",
     "react-isolated-scroll": "^0.1.1",
     "react-scrolllock": "^2.0.1",
+    "react-tabs": "^2.2.2",
     "webfontloader": "^1.6.28"
   },
   "peerDependencies": {
