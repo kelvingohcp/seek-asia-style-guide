@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs should render with className 1`] = `
+<Tabs
+  className="root foo"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  />
+</Tabs>
+`;
+
+exports[`Tabs should render with content 1`] = `
+<Tabs
+  className="root"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  />
+</Tabs>
+`;
+
+exports[`Tabs should render with defaults 1`] = `
+<Tabs
+  className="root"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  />
+</Tabs>
+`;
+
+exports[`Tabs should render with no content 1`] = `
+<Tabs
+  className="root"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  />
+</Tabs>
+`;
