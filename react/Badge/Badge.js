@@ -2,6 +2,7 @@ import styles from './Badge.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import Text from '../Text/Text';
 
 export default function Badge({
   label,
@@ -30,7 +31,7 @@ export default function Badge({
 
   return (
     <span className={classnames({ [styles.root]: true, [styles.isBold]: isBold }, colorStyle)}>
-      {label}
+      <Text whispering regular={!isBold} strong={isBold}>{label}</Text>
     </span >
   );
 }

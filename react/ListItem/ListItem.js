@@ -2,6 +2,7 @@ import styles from './ListItem.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import Text from '../Text/Text';
 
 export default function ListItem({ title, value, icon, badge, isCompact }) {
   return (
@@ -9,11 +10,12 @@ export default function ListItem({ title, value, icon, badge, isCompact }) {
       {icon && <div className={classnames(styles.listItemIcon)}>{icon}</div>}
       <div className={classnames(styles.listItemBody)}>
         {title && (
-          <div className={classnames(styles.listItemTitle)}>{title}</div>
+          <Text light Loud>{title}</Text>
         )}
         <div className={classnames(styles.listItemValue)}>
-          {value}
-          {badge && <span> <span>{badge}</span></span>}
+          <span><Text strong Loud className={styles.displayInline}>{value}</Text>
+            {badge && <span> <span>{badge}</span></span>}
+          </span>
         </div>
       </div>
     </div>
