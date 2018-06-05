@@ -13,20 +13,20 @@ import classnames from 'classnames';
 export default function Tabs({ items, className }) {
   const tabsTitles = [];
   const tabsContent = [];
-  for (let i = 0; items && i < items.length; i++) {
-    if (items[i].title) {
+  items.forEach(function(item) {
+    if (item.title) {
       tabsTitles.push(
         <ReactTab className={styles.tab} selectedClassName={styles.selectedTab}>
           <Text shouting strong>
-            {items[i].title}
+            {items.title}
           </Text>
         </ReactTab>
       );
+      if (item.content) {
+        tabsContent.push(<ReactTabPanel>{items.content}</ReactTabPanel>);
+      }
     }
-    if (items[i].content) {
-      tabsContent.push(<ReactTabPanel>{items[i].content}</ReactTabPanel>);
-    }
-  }
+  });
   return (
     <ReactTabs className={classnames(styles.root, className)}>
       <ReactTabList className={styles.tabList}>{tabsTitles}</ReactTabList>
@@ -36,6 +36,6 @@ export default function Tabs({ items, className }) {
 }
 
 Tabs.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
   className: PropTypes.string
 };

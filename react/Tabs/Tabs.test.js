@@ -4,7 +4,7 @@ import Tabs from './Tabs';
 
 describe('Tabs', () => {
   it('should render with defaults', () => {
-    expect(shallow(<Tabs />)).toMatchSnapshot();
+    expect(shallow(<Tabs items={[]} />)).toMatchSnapshot();
   });
 
   it('should render with className', () => {
