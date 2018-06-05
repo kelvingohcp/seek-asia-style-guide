@@ -11,28 +11,34 @@ const defaultShelf = {
         {
           name: 'Accounting',
           link: '/jobCard',
+          title: 'Limit result to Accounting',
           children: [
             {
               name: 'Accountant',
-              link: '/jobCard'
+              link: '/jobCard',
+              title: 'Limit result to Accountant in Accounting'
             },
             {
               name: 'Audit',
-              link: '/jobCard'
+              link: '/jobCard',
+              title: 'Limit result to Audit in Accounting'
             },
             {
               name: 'Others',
-              link: '/jobCard'
+              link: '/jobCard',
+              title: 'Limit result to Others in Accounting'
             }
           ]
         },
         {
           name: 'Admin & HR',
           link: '/jobCard',
+          title: 'Limit result to Admin & HR',
           children: [
             {
               name: 'Receptionist',
-              link: '/jobCard'
+              link: '/jobCard',
+              title: 'Limit result to Receptionist in Admin & HR'
             }
           ]
         }
@@ -42,14 +48,22 @@ const defaultShelf = {
       label: 'Industry',
       items: [{
         name: 'Accounting / Audit / Tax Services',
-        link: '/jobCard'
+        link: '/jobCard',
+        title: 'Limit result to Accounting / Audit / Tax Services'
       }]
     }
   ],
-  tagLinks: [{
-    name: 'keyword 1',
-    link: '/jobCard'
-  }
+  tagLinks: [
+    {
+      name: 'keyword 1',
+      link: '/jobCard',
+      title: 'Limit result to Keyword 1'
+    },
+    {
+      name: 'keyword 2',
+      link: '/jobCard',
+      title: 'Limit result to Keyword 2'
+    }
   ]
 };
 
