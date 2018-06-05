@@ -5,11 +5,12 @@ import classnames from 'classnames';
 
 const defaultRenderAside = () => null;
 
-const conditionallyRenderAside = (condition, renderAside, classNameAside, size) => (
+const conditionallyRenderAside = (condition, renderAside, classNameAside, disableOnMobile, size) => (
   condition ?
     <div
       className={classnames({
         [classNameAside]: classNameAside,
+        [styles.disableOnMobile]: disableOnMobile,
         [styles.aside]: true
       })}
       style={{ flexBasis: size }}>
@@ -18,7 +19,7 @@ const conditionallyRenderAside = (condition, renderAside, classNameAside, size) 
     null
 );
 
-export default function AsidedLayout({ className, children, renderAside = defaultRenderAside, classNameAside, size, reverse, ...restProps }) {
+export default function AsidedLayout({ className, children, renderAside = defaultRenderAside, classNameAside, size, reverse, disableOnMobile, ...restProps }) {
   return (
     <div
       {...restProps}
@@ -27,11 +28,11 @@ export default function AsidedLayout({ className, children, renderAside = defaul
         [styles.root]: true,
         [styles.reverse]: reverse
       })}>
-      { conditionallyRenderAside(reverse, renderAside, classNameAside, size) }
+      { conditionallyRenderAside(reverse, renderAside, classNameAside, disableOnMobile, size) }
       <div className={styles.content}>
         {children}
       </div>
-      { conditionallyRenderAside(!reverse, renderAside, classNameAside, size) }
+      { conditionallyRenderAside(!reverse, renderAside, classNameAside, disableOnMobile, size) }
     </div>
   );
 }
@@ -42,5 +43,6 @@ AsidedLayout.propTypes = {
   renderAside: PropTypes.func,
   classNameAside: PropTypes.string,
   size: PropTypes.string,
+  disableOnMobile: PropTypes.bool,
   reverse: PropTypes.bool
 };
