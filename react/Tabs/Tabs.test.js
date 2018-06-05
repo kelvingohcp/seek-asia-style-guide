@@ -8,14 +8,14 @@ describe('Tabs', () => {
   });
 
   it('should render with className', () => {
-    expect(shallow(<Tabs className="foo" />)).toMatchSnapshot();
+    expect(shallow(<Tabs className="foo" items={[]} />)).toMatchSnapshot();
   });
 
   it('should render with content', () => {
     expect(
       shallow(
         <Tabs
-          content={[
+          items={[
             { title: 'Title 1', content: 'Content 1' },
             { title: 'Title 2', content: 'Content 2' }
           ]}
@@ -26,7 +26,7 @@ describe('Tabs', () => {
 
   it('should render with no content', () => {
     expect(
-      shallow(<Tabs content={[{ title: 'Title 1' }, { title: 'Title 2' }]} />)
+      shallow(<Tabs items={[{ title: 'Title 1' }, { title: 'Title 2' }]} />)
     ).toMatchSnapshot();
   });
 });

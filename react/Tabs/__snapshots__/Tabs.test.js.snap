@@ -24,6 +24,47 @@ exports[`Tabs should render with content 1`] = `
 >
   <TabList
     className="tabList"
+  >
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        shouting={true}
+        strong={true}
+      />
+    </Tab>
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        shouting={true}
+        strong={true}
+      />
+    </Tab>
+  </TabList>
+  <TabPanel
+    className="react-tabs__tab-panel"
+    forceRender={false}
+    selectedClassName="react-tabs__tab-panel--selected"
+  />
+  <TabPanel
+    className="react-tabs__tab-panel"
+    forceRender={false}
+    selectedClassName="react-tabs__tab-panel--selected"
   />
 </Tabs>
 `;
@@ -52,6 +93,37 @@ exports[`Tabs should render with no content 1`] = `
 >
   <TabList
     className="tabList"
-  />
+  >
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        shouting={true}
+        strong={true}
+      />
+    </Tab>
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        shouting={true}
+        strong={true}
+      />
+    </Tab>
+  </TabList>
 </Tabs>
 `;
