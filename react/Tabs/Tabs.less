@@ -2,21 +2,25 @@
 
 .root {
   width: 100%;
+  background-color: @saWhite;
 }
 
 .tabList {
   display: inline-flex;
   justify-content: flex-start;
+  width: 100%;
+  box-shadow: 0 (@grid-row-height / -3) inset @saGrey4;
 }
 
 .tab {
   cursor: pointer;
-  padding: @grid-row-height @grid-gutter-width;
+  color: @saGrey3;
+  padding: @grid-row-height * 2 @grid-gutter-width * 2;
 }
 
 .selectedTab {
-  color: @actionBlue;
+  color: @saBlue;
   border-bottom-style: solid;
-  border-bottom-color: @actionBlue solid;
-  border-bottom-width: @grid-row-height * 2;
+  border-bottom-color: @saBlue solid;
+  border-bottom-width: @grid-row-height / 3;
 }

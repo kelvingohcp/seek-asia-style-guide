@@ -13,17 +13,24 @@ import classnames from 'classnames';
 export default function Tabs({ items, className }) {
   const tabsTitles = [];
   const tabsContent = [];
-  items.forEach(function(item) {
+  items.forEach(function(item, index) {
     if (item.title) {
       tabsTitles.push(
-        <ReactTab className={styles.tab} selectedClassName={styles.selectedTab}>
-          <Text shouting strong>
-            {items.title}
+        <ReactTab
+          className={styles.tab}
+          selectedClassName={styles.selectedTab}
+          key={index}>
+          <Text waving strong>
+            {item.title}
           </Text>
         </ReactTab>
       );
       if (item.content) {
-        tabsContent.push(<ReactTabPanel>{items.content}</ReactTabPanel>);
+        tabsContent.push(
+          <ReactTabPanel key={index} className={styles.tabPanel}>
+            {item.content}
+          </ReactTabPanel>
+        );
       }
     }
   });

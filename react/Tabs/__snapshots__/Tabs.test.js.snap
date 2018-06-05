@@ -30,42 +30,54 @@ exports[`Tabs should render with content 1`] = `
       disabledClassName="react-tabs__tab--disabled"
       focus={false}
       id={null}
+      key="0"
       panelId={null}
       selected={false}
       selectedClassName="selectedTab"
     >
       <Text
         baseline={true}
-        shouting={true}
         strong={true}
-      />
+        waving={true}
+      >
+        Title 1
+      </Text>
     </Tab>
     <Tab
       className="tab"
       disabledClassName="react-tabs__tab--disabled"
       focus={false}
       id={null}
+      key="1"
       panelId={null}
       selected={false}
       selectedClassName="selectedTab"
     >
       <Text
         baseline={true}
-        shouting={true}
         strong={true}
-      />
+        waving={true}
+      >
+        Title 2
+      </Text>
     </Tab>
   </TabList>
   <TabPanel
-    className="react-tabs__tab-panel"
+    className="tabPanel"
     forceRender={false}
+    key="0"
     selectedClassName="react-tabs__tab-panel--selected"
-  />
+  >
+    Content 1
+  </TabPanel>
   <TabPanel
-    className="react-tabs__tab-panel"
+    className="tabPanel"
     forceRender={false}
+    key="1"
     selectedClassName="react-tabs__tab-panel--selected"
-  />
+  >
+    Content 2
+  </TabPanel>
 </Tabs>
 `;
 
@@ -99,30 +111,36 @@ exports[`Tabs should render with no content 1`] = `
       disabledClassName="react-tabs__tab--disabled"
       focus={false}
       id={null}
+      key="0"
       panelId={null}
       selected={false}
       selectedClassName="selectedTab"
     >
       <Text
         baseline={true}
-        shouting={true}
         strong={true}
-      />
+        waving={true}
+      >
+        Title 1
+      </Text>
     </Tab>
     <Tab
       className="tab"
       disabledClassName="react-tabs__tab--disabled"
       focus={false}
       id={null}
+      key="1"
       panelId={null}
       selected={false}
       selectedClassName="selectedTab"
     >
       <Text
         baseline={true}
-        shouting={true}
         strong={true}
-      />
+        waving={true}
+      >
+        Title 2
+      </Text>
     </Tab>
   </TabList>
 </Tabs>
