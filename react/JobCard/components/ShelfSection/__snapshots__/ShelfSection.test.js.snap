@@ -23,6 +23,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
+        title="Limit result to Accounting"
       >
         Accounting
       </Link>
@@ -31,6 +32,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="00"
         link="/jobCard"
+        title="Limit result to Accountant in Accounting"
       >
         Accountant
       </Link>
@@ -39,6 +41,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="01"
         link="/jobCard"
+        title="Limit result to Audit in Accounting"
       >
         Audit
       </Link>
@@ -47,6 +50,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="02"
         link="/jobCard"
+        title="Limit result to Others in Accounting"
       >
         Others
       </Link>
@@ -55,6 +59,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="1"
         link="/jobCard"
+        title="Limit result to Admin & HR"
       >
         Admin & HR
       </Link>
@@ -63,6 +68,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="10"
         link="/jobCard"
+        title="Limit result to Receptionist in Admin & HR"
       >
         Receptionist
       </Link>
@@ -75,6 +81,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
+        title="Limit result to Accounting / Audit / Tax Services"
       >
         Accounting / Audit / Tax Services
       </Link>
@@ -90,8 +97,20 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       component="a"
       href="/jobCard"
       key="0"
+      title="Limit result to Keyword 1"
     >
       keyword 1
+    </Button>
+    <Button
+      className="tagLink"
+      color="primary"
+      compact={true}
+      component="a"
+      href="/jobCard"
+      key="1"
+      title="Limit result to Keyword 2"
+    >
+      keyword 2
     </Button>
   </ButtonGroup>
 </Section>
@@ -120,6 +139,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
+        title="Limit result to Accounting"
       >
         Accounting
       </customLink>
@@ -128,6 +148,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="00"
         link="/jobCard"
+        title="Limit result to Accountant in Accounting"
       >
         Accountant
       </customLink>
@@ -136,6 +157,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="01"
         link="/jobCard"
+        title="Limit result to Audit in Accounting"
       >
         Audit
       </customLink>
@@ -144,6 +166,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="02"
         link="/jobCard"
+        title="Limit result to Others in Accounting"
       >
         Others
       </customLink>
@@ -152,6 +175,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="1"
         link="/jobCard"
+        title="Limit result to Admin & HR"
       >
         Admin & HR
       </customLink>
@@ -160,6 +184,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="10"
         link="/jobCard"
+        title="Limit result to Receptionist in Admin & HR"
       >
         Receptionist
       </customLink>
@@ -172,6 +197,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
+        title="Limit result to Accounting / Audit / Tax Services"
       >
         Accounting / Audit / Tax Services
       </customLink>
@@ -187,8 +213,20 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       component="a"
       href="/jobCard"
       key="0"
+      title="Limit result to Keyword 1"
     >
       keyword 1
+    </Button>
+    <Button
+      className="tagLink"
+      color="primary"
+      compact={true}
+      component="a"
+      href="/jobCard"
+      key="1"
+      title="Limit result to Keyword 2"
+    >
+      keyword 2
     </Button>
   </ButtonGroup>
 </Section>
