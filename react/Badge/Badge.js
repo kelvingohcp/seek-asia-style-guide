@@ -31,7 +31,7 @@ export default function Badge({
 
   return (
     <span className={classnames({ [styles.root]: true, [styles.isBold]: isBold }, colorStyle)}>
-      <Text className={classnames(styles.badgeLabel)} whispering regular={!isBold} strong={isBold}>{label}</Text>
+      <Text className={classnames(styles.badgeLabel)} whispering semiStrong={!isBold} strong={isBold}>{label}</Text>
     </span >
   );
 }
