@@ -6,14 +6,17 @@ import LocationGroup from './LocationGroup';
 const defaultLocations = [
   {
     name: 'Pahang',
-    link: '/jobCard'
+    link: '/jobCard',
+    title: 'Limit result to Pahang'
   },
   {
     name: 'Selangor',
     link: '/jobCard',
+    title: 'Limit result to Selangor',
     child: {
       name: 'Cheras',
       link: '/jobCard',
+      title: 'Limit result to Cheras in Selangor',
       child: {
         name: 'Near Leisure Mall'
       }

@@ -6,11 +6,12 @@ import defaultLink from '../Link/Link';
 
 export const CompanyLinkPropTypes = PropTypes.shape({
   name: PropTypes.string,
-  link: PropTypes.string
+  link: PropTypes.string,
+  title: PropTypes.string
 });
 
 const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink }) => {
-  const { name, link } = company;
+  const { name, link, title } = company;
   if (!name) {
     return null;
   }
@@ -32,7 +33,7 @@ const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink }) => 
   </span>);
 
   if (link) {
-    return (<LinkComponent link={link} className={styles.companyLink}>{companyText}</LinkComponent>);
+    return (<LinkComponent link={link} className={styles.companyLink} title={title}>{companyText}</LinkComponent>);
   }
 
   return companyText;
