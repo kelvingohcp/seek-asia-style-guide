@@ -1,7 +1,8 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
-@badge-font-base: @grid-base * 3;
-@badge-border-width: 1px;
+@badge-line-height: @grid-base * 4;
+@badge-h-padding: @grid-base * 2;
+@badge-v-padding: @grid-base / 2;
 
 .__badgeBg(@color) {
   background-color: screen(@color, @saGrey4);
@@ -21,16 +22,22 @@
 }
 
 .root {
-  border: 1px solid transparent;
-  .borderRadius(@grid-base * 2.5);
+  align-content: center;
   box-sizing: border-box;
+  .borderRadius(@grid-base * 2.5);
   color: @saGrey1;
-  display: inline-block;
-  font-size: @badge-font-base;
-  font-weight: @sa-semi-bold;
-  line-height: 1;
-  padding: (@grid-base - @badge-border-width) ((@grid-base * 2) - @badge-border-width);
+  display: inline-flex;
+
+  padding: @badge-v-padding @badge-h-padding;
+  vertical-align: middle;
   white-space: nowrap;
+}
+
+.badgeLabel {
+  line-height: @badge-line-height;
+  padding-bottom: 0;
+  -webkit-transform: none!important;
+  transform: none!important;
 }
 
 .progressing {
