@@ -13,15 +13,18 @@ export const ShelfSectionPropTypes = PropTypes.shape({
     items: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string,
       link: PropTypes.string,
+      title: PropTypes.string,
       children: PropTypes.arrayOf(PropTypes.shape({
         name: PropTypes.string,
-        link: PropTypes.string
+        link: PropTypes.string,
+        title: PropTypes.string
       }))
     }))
   })),
   tagLinks: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
-    link: PropTypes.string
+    link: PropTypes.string,
+    title: PropTypes.string
   }))
 });
 
@@ -39,13 +42,13 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
             {`${shelfItem.label}: `}
             {
               shelfItem.items.map((item, j) => {
-                const link = (<LinkComponent link={item.link} className={styles.shelfLink} key={j} >{item.name}</LinkComponent>);
+                const link = (<LinkComponent link={item.link} className={styles.shelfLink} key={j} title={item.title}>{item.name}</LinkComponent>);
                 if (item.children && item.children.length) {
                   return [
                     link,
                     ' > ',
                     item.children.map((child, k) => (
-                      <LinkComponent link={child.link} className={styles.shelfLink} key={`${j}${k}`} >{child.name}</LinkComponent>
+                      <LinkComponent link={child.link} className={styles.shelfLink} key={`${j}${k}`} title={child.title}>{child.name}</LinkComponent>
                     )).reduce((prev, curr) => [prev, ' | ', curr])
                   ];
                 }
@@ -60,7 +63,7 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
     {tagLinks &&
       <ButtonGroup className={styles.tagLinksContainer}>
         {tagLinks.map((item, i) => (
-          <Button color="primary" compact component="a" href={item.link} className={styles.tagLink} key={i}>
+          <Button color="primary" compact component="a" href={item.link} className={styles.tagLink} key={i} title={item.title}>
             {item.name}
           </Button>
         ))}

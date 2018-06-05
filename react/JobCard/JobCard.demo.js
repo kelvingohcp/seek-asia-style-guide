@@ -27,21 +27,25 @@ export default {
     job: {
       company: {
         name: 'SEEK Asia',
-        link: '/jobCard'
+        link: '/jobCard',
+        title: 'Jobs at SEEK Asia'
       },
       jobTitle: 'Senior Software Engineer (6 months Contract)',
       jobUrl: 'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
       locations: [
         {
           name: 'Pahang',
-          link: '/jobCard'
+          link: '/jobCard',
+          title: 'Limit result to Pahang'
         },
         {
           name: 'Selangor',
           link: '/jobCard',
+          title: 'Limit result to Selangor',
           child: {
             name: 'Cheras',
             link: '/jobCard',
+            title: 'Limit result to Cheras in Selangor',
             child: {
               name: 'Near Leisure Mall'
             }
@@ -132,28 +136,34 @@ export default {
                       {
                         name: 'Accounting',
                         link: '/jobCard',
+                        title: 'Limit result to Accounting',
                         children: [
                           {
                             name: 'Accountant',
-                            link: '/jobCard'
+                            link: '/jobCard',
+                            title: 'Limit result to Accountant in Accounting'
                           },
                           {
                             name: 'Audit',
-                            link: '/jobCard'
+                            link: '/jobCard',
+                            title: 'Limit result to Audit in Accounting'
                           },
                           {
                             name: 'Others',
-                            link: '/jobCard'
+                            link: '/jobCard',
+                            title: 'Limit result to Others in Accounting'
                           }
                         ]
                       },
                       {
                         name: 'Admin & HR',
                         link: '/jobCard',
+                        title: 'Limit result to Admin & HR',
                         children: [
                           {
                             name: 'Receptionist',
-                            link: '/jobCard'
+                            link: '/jobCard',
+                            title: 'Limit result to Receptionist in Admin & HR'
                           }
                         ]
                       }
@@ -163,7 +173,8 @@ export default {
                     label: 'Industry',
                     items: [{
                       name: 'Accounting / Audit / Tax Services',
-                      link: '/jobCard'
+                      link: '/jobCard',
+                      title: 'Limit result to Accounting / Audit / Tax Services'
                     }]
                   }
                 ]
@@ -182,11 +193,13 @@ export default {
                 tagLinks: [
                   {
                     name: 'keyword 1',
-                    link: '#'
+                    link: '/jobCard',
+                    title: 'Limit result to Keyword 1'
                   },
                   {
                     name: 'keyword 2',
-                    link: '#'
+                    link: '/jobCard',
+                    title: 'Limit result to Keyword 2'
                   }
                 ]
               }
