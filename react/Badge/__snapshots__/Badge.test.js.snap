@@ -4,7 +4,15 @@ exports[`Badge: should render Bold Declined 1`] = `
 <span
   className="root isBold declined"
 >
-  Declined
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    Declined
+  </Text>
 </span>
 `;
 
@@ -12,7 +20,15 @@ exports[`Badge: should render Bold Default 1`] = `
 <span
   className="root isBold default"
 >
-  default
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    default
+  </Text>
 </span>
 `;
 
@@ -20,7 +36,15 @@ exports[`Badge: should render Bold Expired 1`] = `
 <span
   className="root isBold expired"
 >
-  Expired
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    Expired
+  </Text>
 </span>
 `;
 
@@ -28,7 +52,15 @@ exports[`Badge: should render Bold New 1`] = `
 <span
   className="root isBold new"
 >
-  New
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    New
+  </Text>
 </span>
 `;
 
@@ -36,7 +68,15 @@ exports[`Badge: should render Bold Progressing 1`] = `
 <span
   className="root isBold progressing"
 >
-  Progressing
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    Progressing
+  </Text>
 </span>
 `;
 
@@ -44,7 +84,14 @@ exports[`Badge: should render Subtle Declined 1`] = `
 <span
   className="root declined"
 >
-  Declined
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    Declined
+  </Text>
 </span>
 `;
 
@@ -52,7 +99,14 @@ exports[`Badge: should render Subtle Default 1`] = `
 <span
   className="root default"
 >
-  default
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    default
+  </Text>
 </span>
 `;
 
@@ -60,7 +114,14 @@ exports[`Badge: should render Subtle Expired 1`] = `
 <span
   className="root expired"
 >
-  Expired
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    Expired
+  </Text>
 </span>
 `;
 
@@ -68,7 +129,14 @@ exports[`Badge: should render Subtle New 1`] = `
 <span
   className="root new"
 >
-  New
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    New
+  </Text>
 </span>
 `;
 
@@ -76,6 +144,13 @@ exports[`Badge: should render Subtle Progressing 1`] = `
 <span
   className="root progressing"
 >
-  Progressing
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    Progressing
+  </Text>
 </span>
 `;

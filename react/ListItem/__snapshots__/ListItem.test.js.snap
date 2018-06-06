@@ -12,15 +12,25 @@ exports[`ListItem: should render icon 1`] = `
   <div
     className="listItemBody"
   >
-    <div
+    <Text
+      baseline={true}
       className="listItemTitle"
+      intimate={true}
+      light={true}
     >
       testTitle
-    </div>
+    </Text>
     <div
       className="listItemValue"
     >
-      testValue
+      <Text
+        baseline={true}
+        className="displayInline"
+        loud={true}
+        strong={true}
+      >
+        testValue
+      </Text>
     </div>
   </div>
 </div>
@@ -33,15 +43,25 @@ exports[`ListItem: should render title value 1`] = `
   <div
     className="listItemBody"
   >
-    <div
+    <Text
+      baseline={true}
       className="listItemTitle"
+      intimate={true}
+      light={true}
     >
       testTitle
-    </div>
+    </Text>
     <div
       className="listItemValue"
     >
-      testValue
+      <Text
+        baseline={true}
+        className="displayInline"
+        loud={true}
+        strong={true}
+      >
+        testValue
+      </Text>
     </div>
   </div>
 </div>
@@ -57,7 +77,14 @@ exports[`ListItem: should render value 1`] = `
     <div
       className="listItemValue"
     >
-      testValue
+      <Text
+        baseline={true}
+        className="displayInline"
+        loud={true}
+        strong={true}
+      >
+        testValue
+      </Text>
     </div>
   </div>
 </div>
