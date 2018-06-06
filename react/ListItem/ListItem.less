@@ -2,19 +2,18 @@
 
 @list-item-v-padding: @grid-base * 3;
 @list-item-h-padding: @grid-base * 4;
-@list-item-line-height: 20px;
+@list-item-line-height: @grid-base * 5;
 @list-item-bgc-hover: #eef8fc;
-@list-item-icon-margin-top: @grid-base / 2;
+@list-item-icon-padding-top: @grid-base;
 @list-item-icon-padding-left: @grid-base * 3;
 
 .root {
-  align-items: flex-start;
+  align-items: center;
   background-color: @saWhite;
-  border-radius: 0.25rem;
+  border-radius: @grid-base;
   box-shadow: 0 1px 1px @saGrey5;
   color: @saGrey1;
   display: flex;
-  justify-content: space-between;
   line-height: @list-item-line-height;
   padding-top: @list-item-v-padding;
   padding-bottom: @list-item-v-padding;
@@ -26,24 +25,39 @@
   }
 }
 
+.listItemBadge {
+  display: inline-block;
+  margin-left: @grid-base;
+  transform: translateY(@grid-base * -.5);
+}
+
 .listItemBody {
-  display: flex;
-  flex: 1 0 0;
-  flex-direction: column;
   padding-left: @list-item-h-padding;
   padding-right: @list-item-h-padding;
 }
 
 .listItemIcon {
   line-height: inherit;
-  margin-top: @list-item-icon-margin-top;
   padding-left: @list-item-icon-padding-left;
+  padding-top: @list-item-icon-padding-top;
+  vertical-align: middle;
+}
+
+.listItemTitle {
+  padding-bottom: 0;
+  line-height: inherit!important;
 }
 
 .listItemValue {
   flex: 1 0 0;
+  line-height: inherit;
+  .listItemTitle + & {
+    margin-top: @grid-base;
+  }
 }
 
 .displayInline {
   display: inline;
+  line-height: inherit;
+  padding-bottom: 0;
 }
