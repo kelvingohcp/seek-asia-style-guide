@@ -58,6 +58,19 @@ export default {
       ]
     },
     {
+      label: 'Disable',
+      type: 'checkbox',
+      states: [
+        {
+          label: 'Disable Aside on mobile',
+          transformProps: props => ({
+            ...props,
+            disableOnMobile: true
+          })
+        }
+      ]
+    },
+    {
       label: 'Size',
       type: 'radio',
       states: [
