@@ -59,7 +59,7 @@ export default class JobCard extends React.Component {
     return (
       <Card className={classnames(styles.root, { [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg })}>
         <Section className={styles.headerSection}>
-          <a href={job.jobUrl} className={styles.positionLink} target="_blank">{title}</a>
+          <a href={job.jobUrl} className={styles.positionLink} target="_blank" rel="noopener noreferrer">{title}</a>
         </Section>
         <Section className={styles.bodySection}>
           <div className={styles.bodyDetailsWrapper}>
