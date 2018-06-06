@@ -1,0 +1,26 @@
+@import (reference) '~seek-asia-style-guide/theme';
+
+.root {
+  width: 100%;
+  background-color: @saWhite;
+}
+
+.tabList {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+  box-shadow: 0 (@grid-row-height / -3) inset @saGrey4;
+}
+
+.tab {
+  cursor: pointer;
+  color: @saGrey3;
+  padding: @grid-row-height * 2 @grid-gutter-width * 2;
+}
+
+.selectedTab {
+  color: @saBlue;
+  border-bottom-style: solid;
+  border-bottom-color: @saBlue solid;
+  border-bottom-width: @grid-row-height / 3;
+}
