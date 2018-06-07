@@ -1,7 +1,7 @@
 import styles from './ShowMore.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'seek-asia-style-guide/react';
+import { Button, ChevronIcon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 export default class ShowMore extends Component {
   constructor(props) {
@@ -58,9 +58,11 @@ export default class ShowMore extends Component {
         <div className={classnames(styles.panel)} style={this.state.isPanelOpened ? this.state.styleShowMoreHeight : this.state.styleShowLessHeight}>
           <div id={this.state.id}>{this.state.component}</div>
         </div>
-        {this.state.showButton && <Button id='btnShowMore' color='transparent' className={classnames(styles.button)} onClick={this.handleClick}>
+        {this.state.showButton && <Button id='btnShowMore' color='hyperlink' className={classnames(styles.button)} onClick={this.handleClick}>
           <span>
-            {this.state.isPanelOpened ? this.props.lblShowLess : this.props.lblShowMore}
+            {this.state.isPanelOpened ? this.props.lblShowLess : this.props.lblShowMore}  </span>
+          <span>
+            <ChevronIcon direction={this.state.isPanelOpened ? 'up' : 'down'} />
           </span>
         </Button>
         }
