@@ -1,8 +1,8 @@
 import React from 'react';
 import ShowMore from './ShowMore';
 import { Card, Section, Text } from 'seek-asia-style-guide/react';
-
 import * as sketch from './ShowMore.sketch';
+
 export default {
   route: '/showMore',
   title: 'ShowMore',
@@ -50,23 +50,49 @@ export default {
   },
   options: [
     {
-      label: 'Title',
+      label: 'Component',
       type: 'radio',
       states: [
         {
-          label: 'No Title',
+          label: '150px height',
           transformProps: props => ({
             ...props,
-            component: (<div>HIHI2</div>),
-            showLessHeight: 150
+            showLessHeight: 150,
+            lblShowMore: 'Show more',
+            lblShowLess: 'Show less'
           })
         },
         {
-          label: 'Have Title',
+          label: '300px Height',
           transformProps: props => ({
             ...props,
-            component: (<div>HIHI</div>),
-            showLessHeight: 150
+            showLessHeight: 300,
+            lblShowMore: 'Show more',
+            lblShowLess: 'Show less'
+          })
+        },
+        {
+          label: '700px Height (mobile only)',
+          transformProps: props => ({
+            ...props,
+            showLessHeight: 700,
+            lblShowMore: 'Show more',
+            lblShowLess: 'Show less'
+          })
+        }
+      ]
+    },
+    {
+      label: 'disable',
+      type: 'checklist',
+      states: [
+        {
+          label: 'disable',
+          transformProps: props => ({
+            ...props,
+            disable: true,
+            lblShowMore: 'Show more',
+            lblShowLess: 'Show less'
           })
         }
       ]
