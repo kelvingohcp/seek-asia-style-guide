@@ -1,12 +1,12 @@
 import React from 'react';
-import ExpandableWrapper from './ExpandableWrapper';
+import ShowMore from './ShowMore';
 import { Card, Section, Text } from 'seek-asia-style-guide/react';
 
-import * as sketch from './ExpandableWrapper.sketch';
+import * as sketch from './ShowMore.sketch';
 export default {
-  route: '/expandableWrapper',
-  title: 'ExpandableWrapper',
-  component: ExpandableWrapper,
+  route: '/showMore',
+  title: 'ShowMore',
+  component: ShowMore,
   sketch,
   initialProps: {
     component: (
@@ -43,29 +43,30 @@ export default {
         </Section>
       </Card>
     ),
-    shrinkHeight: 100,
-    maxHeight: 1000,
-    label: 'Show more'
+    id: 'Content',
+    showLessHeight: 100,
+    lblShowMore: 'Show more',
+    lblShowLess: 'Show less'
   },
   options: [
     {
-      label: 'Min-height',
+      label: 'Title',
       type: 'radio',
       states: [
         {
-          label: '100',
+          label: 'No Title',
           transformProps: props => ({
             ...props,
-            shrinkHeight: 100,
-            maxHeight: 1000
+            component: (<div>HIHI2</div>),
+            showLessHeight: 150
           })
         },
         {
-          label: '300',
+          label: 'Have Title',
           transformProps: props => ({
             ...props,
-            shrinkHeight: 300,
-            maxHeight: 1000
+            component: (<div>HIHI</div>),
+            showLessHeight: 150
           })
         }
       ]
