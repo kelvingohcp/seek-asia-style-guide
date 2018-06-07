@@ -6,6 +6,7 @@ import Button from '../../../Button/Button';
 import ButtonGroup from '../../../ButtonGroup/ButtonGroup';
 import defaultLink from '../Link/Link';
 import styles from './ShelfSection.less';
+import classnames from 'classnames';
 
 export const ShelfSectionPropTypes = PropTypes.shape({
   shelfLinks: PropTypes.arrayOf(PropTypes.shape({
@@ -28,12 +29,12 @@ export const ShelfSectionPropTypes = PropTypes.shape({
   }))
 });
 
-const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
+const ShelfSection = ({ shelf, LinkComponent = defaultLink, showShelfSection = false }) => {
   const { shelfLinks, tagLinks } = shelf;
   if (!shelfLinks && !tagLinks) {
     return null;
   }
-  return (<Section className={styles.root}>
+  return (<Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
     <div className={styles.shelfDivider} />
     {shelfLinks &&
       <Text intimate className={styles.shelfLinksContainer}>
@@ -75,5 +76,6 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
 export default ShelfSection;
 ShelfSection.propTypes = {
   shelf: ShelfSectionPropTypes,
-  LinkComponent: PropTypes.func
+  LinkComponent: PropTypes.func,
+  showShelfSection: PropTypes.bool
 };
