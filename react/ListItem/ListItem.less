@@ -3,7 +3,6 @@
 @list-item-v-padding: @grid-base * 3;
 @list-item-h-padding: @grid-base * 4;
 @list-item-line-height: @grid-base * 5;
-@list-item-bgc-hover: @sk-hover;
 @list-item-icon-padding-top: @grid-base;
 @list-item-icon-padding-left: @grid-base * 3;
 
@@ -21,7 +20,7 @@
     max-width: 50vw;
   }
   &:hover {
-    background-color: @list-item-bgc-hover;
+    background-color: @saHover;
   }
 }
 
@@ -45,7 +44,7 @@
 
 .listItemTitle {
   padding-bottom: 0;
-  line-height: inherit !important;
+  line-height: inherit !important; //Design debt - this cannot be overridden without !important, and does not have its own pattern yet
 }
 
 .listItemValue {
