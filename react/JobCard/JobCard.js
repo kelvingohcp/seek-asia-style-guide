@@ -121,7 +121,7 @@ export default class JobCard extends React.Component {
             </div>
           )}
         </Section>
-        {job.shelf && shelfSectionOpen && <ShelfSection shelf={job.shelf} LinkComponent={LinkComponent} />}
+        {job.shelf && <ShelfSection shelf={job.shelf} LinkComponent={LinkComponent} showShelfSection={shelfSectionOpen} />}
       </Card>
     );
   }
