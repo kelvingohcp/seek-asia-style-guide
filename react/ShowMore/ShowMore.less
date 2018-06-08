@@ -7,7 +7,10 @@
 .root {
   position: relative;
   margin: 2em auto;
-  width: 70%;
+  width: 92%;
+  @media @desktop {
+    width: 70%;
+  }
 }
 
 .panel {
@@ -24,4 +27,43 @@
 .button {
   background-color: @saWhite;
   width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.outCanvasGradientMaskTop {
+  position: relative;
+  &:before {
+    bottom: 100%;
+    content: " ";
+    display: block;
+    height: (@grid-base * 4);
+    opacity: 1;
+    position: absolute;
+    -webkit-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+    width: 100%;
+    .linearGradientDown;
+  }
+}
+
+// [TODO] convert to mixin for shared use
+.linearGradientDown(@start-rgba: rgba(255,255,255,0), @start-position: 10%, @end-rgba: rgba(255,255,255,1), @end-position: 90%) {
+  background: -moz-linear-gradient(
+    top,
+    @start-rgba @start-position,
+    @end-rgba @end-position
+  );
+  background: -webkit-linear-gradient(
+    top,
+    @start-rgba @start-position,
+    @end-rgba @end-position
+  );
+  background: linear-gradient(
+    to bottom,
+    @start-rgba @start-position,
+    @end-rgba @end-position
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='argb(@start-rgba)', endColorstr='argb(@end-rgba)',GradientType=0 );
 }

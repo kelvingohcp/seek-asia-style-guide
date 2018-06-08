@@ -64,16 +64,18 @@ export default class ShowMore extends Component {
         </div>
         {
           this.props.disable ? false : this.state.contentHeight > this.props.showLessHeight && (
-            <Button
-              id='btnShowMore'
-              color='hyperlink'
-              className={classnames(styles.button)}
-              onClick={this.handleClick} >
-              <span>
-                {this.state.isPanelOpened ? this.props.lblShowLess : this.props.lblShowMore}
-              </span>
-              <span> <span><ChevronIcon direction={this.state.isPanelOpened ? 'up' : 'down'} /></span></span>
-            </Button>
+            <div className={classnames({ [styles.outCanvasGradientMaskTop]: !this.state.isPanelOpened })}>
+              <Button
+                id='btnShowMore'
+                color='hyperlink'
+                className={classnames(styles.button)}
+                onClick={this.handleClick} >
+                <span>
+                  {this.state.isPanelOpened ? this.props.lblShowLess : this.props.lblShowMore}
+                </span>
+                <span> <span><ChevronIcon direction={this.state.isPanelOpened ? 'up' : 'down'} /></span></span>
+              </Button>
+            </div>
           )
         }
       </div >
