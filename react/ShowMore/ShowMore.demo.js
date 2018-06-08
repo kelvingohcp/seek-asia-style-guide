@@ -5,7 +5,7 @@ import * as sketch from './ShowMore.sketch';
 
 export default {
   route: '/showMore',
-  title: 'ShowMore',
+  title: 'Show More',
   component: ShowMore,
   sketch,
   initialProps: {

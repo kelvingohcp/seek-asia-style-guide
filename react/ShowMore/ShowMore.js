@@ -72,11 +72,7 @@ export default class ShowMore extends Component {
               <span>
                 {this.state.isPanelOpened ? this.props.lblShowLess : this.props.lblShowMore}
               </span>
-              <span>
-                <ChevronIcon
-                  direction={this.state.isPanelOpened ? 'up' : 'down'}
-                />
-              </span>
+              <span> <span><ChevronIcon direction={this.state.isPanelOpened ? 'up' : 'down'} /></span></span>
             </Button>
           )
         }
