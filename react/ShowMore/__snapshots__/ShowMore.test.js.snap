@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowMore: should render value 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="panel"
+    style={
+      Object {
+        "maxHeight": "150px",
+      }
+    }
+  >
+    <div />
+  </div>
+</div>
+`;

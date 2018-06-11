@@ -6,7 +6,6 @@ import classnames from 'classnames';
 
 export default class ShowMore extends Component {
   static propTypes = {
-    id: PropTypes.string.isRequired,
     component: PropTypes.function,
     showLessHeight: PropTypes.number,
     lblShowMore: PropTypes.string,
@@ -29,6 +28,7 @@ export default class ShowMore extends Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.updateDimensions = this.updateDimensions.bind(this);
+    this.myRef = React.createRef();
   }
 
   componentDidMount() {
@@ -42,7 +42,7 @@ export default class ShowMore extends Component {
 
   updateDimensions() {
     this.setState({
-      contentHeight: document.getElementById(this.props.id).clientHeight
+      contentHeight: this.myRef.current.clientHeight
     });
   }
 
@@ -60,7 +60,7 @@ export default class ShowMore extends Component {
         <div
           className={classnames(styles.panel)}
           style={{ maxHeight: `${panelHeight}px` }} >
-          <div id={this.props.id}>{this.props.component}</div>
+          <div ref={this.myRef}>{this.props.component}</div>
         </div>
         {
           this.props.disable ? false : this.state.contentHeight > this.props.showLessHeight && (

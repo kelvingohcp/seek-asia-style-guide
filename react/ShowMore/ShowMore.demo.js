@@ -43,7 +43,6 @@ export default {
         </Section>
       </Card>
     ),
-    id: 'Content',
     showLessHeight: 100,
     lblShowMore: 'Show more',
     lblShowLess: 'Show less'
