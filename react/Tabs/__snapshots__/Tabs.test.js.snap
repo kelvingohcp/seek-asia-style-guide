@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs should render with className 1`] = `
+<Tabs
+  className="root foo"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  />
+</Tabs>
+`;
+
+exports[`Tabs should render with content 1`] = `
+<Tabs
+  className="root"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  >
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      key="0"
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        strong={true}
+        waving={true}
+      >
+        Title 1
+      </Text>
+    </Tab>
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      key="1"
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        strong={true}
+        waving={true}
+      >
+        Title 2
+      </Text>
+    </Tab>
+  </TabList>
+  <TabPanel
+    className="tabPanel"
+    forceRender={false}
+    key="0"
+    selectedClassName="react-tabs__tab-panel--selected"
+  >
+    Content 1
+  </TabPanel>
+  <TabPanel
+    className="tabPanel"
+    forceRender={false}
+    key="1"
+    selectedClassName="react-tabs__tab-panel--selected"
+  >
+    Content 2
+  </TabPanel>
+</Tabs>
+`;
+
+exports[`Tabs should render with defaults 1`] = `
+<Tabs
+  className="root"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  />
+</Tabs>
+`;
+
+exports[`Tabs should render with no content 1`] = `
+<Tabs
+  className="root"
+  defaultFocus={false}
+  defaultIndex={null}
+  forceRenderTabPanel={false}
+  selectedIndex={null}
+>
+  <TabList
+    className="tabList"
+  >
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      key="0"
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        strong={true}
+        waving={true}
+      >
+        Title 1
+      </Text>
+    </Tab>
+    <Tab
+      className="tab"
+      disabledClassName="react-tabs__tab--disabled"
+      focus={false}
+      id={null}
+      key="1"
+      panelId={null}
+      selected={false}
+      selectedClassName="selectedTab"
+    >
+      <Text
+        baseline={true}
+        strong={true}
+        waving={true}
+      >
+        Title 2
+      </Text>
+    </Tab>
+  </TabList>
+</Tabs>
+`;

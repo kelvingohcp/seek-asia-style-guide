@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem: should render icon 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div
+    className="listItemBody"
+  >
+    <Text
+      baseline={true}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={true}
+        className="displayInline"
+        loud={true}
+        strong={true}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render title value 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="listItemBody"
+  >
+    <Text
+      baseline={true}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={true}
+        className="displayInline"
+        loud={true}
+        strong={true}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render value 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="listItemBody"
+  >
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={true}
+        className="displayInline"
+        loud={true}
+        strong={true}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;

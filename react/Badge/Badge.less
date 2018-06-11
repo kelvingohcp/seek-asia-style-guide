@@ -1,0 +1,74 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+@badge-line-height: @grid-base * 4;
+@badge-h-padding: @grid-base * 2;
+@badge-v-padding: @grid-base / 2;
+
+.__badgeBg(@color) {
+  background-color: screen(@color, @saGrey4);
+  border-color: screen(@color, @saGrey4);
+}
+.__badgeBg(@color; @is-bold) when (@is-bold = true) {
+  color: @saWhite;
+  background-color: (@color);
+  border-color: (@color);
+}
+
+.borderRadius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.root {
+  box-sizing: border-box;
+  .borderRadius(@grid-base * 2.5);
+  color: @saGrey1;
+  display: inline-block;
+  height: @grid-base * 5;
+  padding: @badge-v-padding @badge-h-padding;
+  white-space: nowrap;
+}
+
+.badgeLabel {
+  line-height: @badge-line-height;
+  padding-bottom: 0;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.progressing {
+  .__badgeBg(@actionGreen);
+  &.isBold {
+    .__badgeBg(@actionGreen; true);
+  }
+}
+
+.default {
+  .__badgeBg(@actionBlue);
+  &.isBold {
+    .__badgeBg(@actionBlue; true);
+  }
+}
+
+.declined {
+  .__badgeBg(@actionRed);
+  &.isBold {
+    .__badgeBg(@actionRed; true);
+  }
+}
+
+.expired {
+  .__badgeBg(@saGrey3);
+  &.isBold {
+    .__badgeBg(@saGrey3; true);
+  }
+}
+
+.new {
+  .__badgeBg(@actionOrange);
+  &.isBold {
+    .__badgeBg(@actionOrange; true);
+  }
+}
