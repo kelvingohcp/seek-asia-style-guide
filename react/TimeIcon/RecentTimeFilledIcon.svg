@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>timestamp</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Working-Hours">
+            <g id="timestamp">
+                <g id="Group-27">
+                    <path d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z M13.27,12.63125 L10.875,10.235 L10.875,5.625 C10.875,5.28 10.595,5 10.25,5 L10,5 C9.65375,5 9.375,5.28 9.375,5.625 L9.375,10.625 C9.375,10.8325 9.4825,11.0075 9.63875,11.12125 L12.20875,13.6925 C12.45375,13.93625 12.85,13.93625 13.0925,13.6925 L13.27,13.515 C13.51375,13.27125 13.51375,12.875 13.27,12.63125 Z" id="time-stamp" fill="currentColor"></path>
+                    <rect id="Rectangle-14-Copy-12" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
