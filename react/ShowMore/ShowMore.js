@@ -78,7 +78,7 @@ export default class ShowMore extends Component {
             </div>
           )
         }
-      </div >
+      </div>
     );
   }
 }
