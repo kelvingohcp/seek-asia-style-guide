@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Field of Study</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Field-of-study" transform="translate(-2.000000, 0.000000)">
-            <g id="Field-of-Study">
-                <path d="M13.5,2.0002 C14.053,2.0002 14.5,1.5522 14.5,1.0002 C14.5,0.4482 14.053,0.0002 13.5,0.0002 L5,0.0002 C3.343,0.0002 2,1.3432 2,3.0002 L2,18.0002 C2,19.1002 2.9,20.0002 4,20.0002 L17,20.0002 C17.5522847,20.0002 18,19.5524847 18,19.0002 L18,5.0002 C18,4.44791525 17.5522847,4.0002 17,4.0002 L5,4.0002 C4.5,4.0002 4,3.6002 4,3.0002 C4,2.4002 4.5,2.0002 5,2.0002 L13.5,2.0002 Z" id="Fill-1" fill="currentColor"></path>
-                <path d="M7,10 L15,10 C15.5522847,10 16,9.55228475 16,9 L16,7 C16,6.44771525 15.5522847,6 15,6 L7,6 C6.44771525,6 6,6.44771525 6,7 L6,9 C6,9.55228475 6.44771525,10 7,10 Z" id="Fill-4" fill="#FFFFFF"></path>
-                <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20.4 4.8H6c-.6 0-1.2-.5-1.2-1.2S5.4 2.4 6 2.4h10.2c.7 0 1.2-.5 1.2-1.2S16.9 0 16.2 0H6C4 0 2.4 1.6 2.4 3.6v18c0 1.3 1.1 2.4 2.4 2.4h15.6c.7 0 1.2-.5 1.2-1.2V6c0-.7-.5-1.2-1.2-1.2zm-1.2 6c0 .7-.5 1.2-1.2 1.2H8.4c-.7 0-1.2-.5-1.2-1.2V8.4c0-.7.5-1.2 1.2-1.2H18c.7 0 1.2.5 1.2 1.2v2.4z"/></svg>
