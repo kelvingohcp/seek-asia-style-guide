@@ -42,7 +42,9 @@ exports[`Header should pass through optional props 1`] = `
   <div
     className="primaryNavNoLogin"
   >
-    <a>
+    <a
+      href="http://seekasia.com/home"
+    >
       <FakeComponent
         className="logo"
         country="my"
@@ -129,6 +131,7 @@ exports[`Header should pass through optional props 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
     showMenu={false}
@@ -187,6 +190,7 @@ exports[`Header should pass through optional props 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
     more={
@@ -244,7 +248,9 @@ exports[`Header should render with default props 1`] = `
   <div
     className="primaryNavNoLogin"
   >
-    <a>
+    <a
+      href="http://seekasia.com/home"
+    >
       <FakeComponent
         className="logo"
       />
@@ -268,6 +274,7 @@ exports[`Header should render with default props 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
   />
@@ -301,6 +308,7 @@ exports[`Header should render with default props 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
     shouldShowMenu={false}
@@ -350,7 +358,9 @@ exports[`Header should render with links list 1`] = `
   <div
     className="primaryNavNoLogin"
   >
-    <a>
+    <a
+      href="http://seekasia.com/home"
+    >
       <FakeComponent
         className="logo"
       />
@@ -435,6 +445,7 @@ exports[`Header should render with links list 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
   />
@@ -492,6 +503,7 @@ exports[`Header should render with links list 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
     shouldShowMenu={false}
@@ -541,7 +553,9 @@ exports[`Header should render with login available 1`] = `
   <div
     className="primaryNav"
   >
-    <a>
+    <a
+      href="http://seekasia.com/home"
+    >
       <FakeComponent
         className="logo"
       />
@@ -565,6 +579,7 @@ exports[`Header should render with login available 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
   />
@@ -598,6 +613,7 @@ exports[`Header should render with login available 1`] = `
         "header.employerLinkPrefix": "Awesome employers should ",
         "header.employerSiteTitle": "click here",
         "header.employerSiteUrl": "http://brand.seekasia.com",
+        "header.homeUrl": "http://seekasia.com/home",
       }
     }
     shouldShowMenu={false}
