@@ -35,7 +35,7 @@ const renderPrimaryNavLinks = ({ links, brandStyles }) => {
 
   return (
     <div className={styles.primaryNavLinksWrapper}>
-      { primaryNavLinks }
+      {primaryNavLinks}
     </div>
   );
 };
@@ -74,8 +74,8 @@ export default class Header extends Component {
           </div>
         </div>
         <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
-          <LogoComponent {...logoProps} />
-          { renderPrimaryNavLinks({ links, brandStyles }) }
+          <a href={messages['header.homeUrl']}><LogoComponent {...logoProps} className={styles.logo} /></a>
+          {renderPrimaryNavLinks({ links, brandStyles })}
         </div>
         <ActionTray {...actionTrayProps} brandStyles={brandStyles} messages={messages} menuOpen={menuOpen} handleToggleMenu={this.handleToggleMenu.bind(this)} loginAvailable={loginAvailable} activeTab={activeTab} />
         <Menu shouldShowMenu={menuOpen} messages={messages} links={links} more={more} locales={localeList} brandStyles={brandStyles} />

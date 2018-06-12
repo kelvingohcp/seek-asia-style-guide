@@ -42,9 +42,12 @@ exports[`Header should pass through optional props 1`] = `
   <div
     className="primaryNavNoLogin"
   >
-    <FakeComponent
-      country="my"
-    />
+    <a>
+      <FakeComponent
+        className="logo"
+        country="my"
+      />
+    </a>
     <div
       className="primaryNavLinksWrapper"
     >
@@ -241,7 +244,11 @@ exports[`Header should render with default props 1`] = `
   <div
     className="primaryNavNoLogin"
   >
-    <FakeComponent />
+    <a>
+      <FakeComponent
+        className="logo"
+      />
+    </a>
     <div
       className="primaryNavLinksWrapper"
     />
@@ -343,7 +350,11 @@ exports[`Header should render with links list 1`] = `
   <div
     className="primaryNavNoLogin"
   >
-    <FakeComponent />
+    <a>
+      <FakeComponent
+        className="logo"
+      />
+    </a>
     <div
       className="primaryNavLinksWrapper"
     >
@@ -530,7 +541,11 @@ exports[`Header should render with login available 1`] = `
   <div
     className="primaryNav"
   >
-    <FakeComponent />
+    <a>
+      <FakeComponent
+        className="logo"
+      />
+    </a>
     <div
       className="primaryNavLinksWrapper"
     />
