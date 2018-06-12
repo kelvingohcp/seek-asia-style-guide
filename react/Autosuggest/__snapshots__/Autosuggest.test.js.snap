@@ -2,17 +2,20 @@
 
 exports[`Autosuggest should render with compact prop 1`] = `
 <div>
-  <div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
+  >
     <div
       class="root compact"
     >
       <input
         aria-autocomplete="list"
-        aria-expanded="false"
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         autocomplete="off"
         class="input"
-        role="combobox"
         type="text"
         value=""
       />
@@ -36,6 +39,7 @@ exports[`Autosuggest should render with compact prop 1`] = `
     <div
       class="suggestionsContainer"
       id="react-autowhatever-1"
+      role="listbox"
     />
   </div>
   <div
@@ -46,7 +50,12 @@ exports[`Autosuggest should render with compact prop 1`] = `
 
 exports[`Autosuggest should render with label 1`] = `
 <div>
-  <div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
+  >
     <div
       class="root"
     >
@@ -71,12 +80,10 @@ exports[`Autosuggest should render with label 1`] = `
       </label>
       <input
         aria-autocomplete="list"
-        aria-expanded="false"
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         autocomplete="off"
         class="input"
         id="Foo"
-        role="combobox"
         type="text"
         value=""
       />
@@ -100,6 +107,7 @@ exports[`Autosuggest should render with label 1`] = `
     <div
       class="suggestionsContainer suggestionsContainer_withLabel"
       id="react-autowhatever-1"
+      role="listbox"
     />
   </div>
   <div
@@ -110,7 +118,12 @@ exports[`Autosuggest should render with label 1`] = `
 
 exports[`Autosuggest should render with mobile backdrop 1`] = `
 <div>
-  <div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
+  >
     <div
       class="root"
     >
@@ -135,12 +148,10 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
       </label>
       <input
         aria-autocomplete="list"
-        aria-expanded="false"
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         autocomplete="off"
         class="input"
         id="Foo"
-        role="combobox"
         type="text"
         value=""
       />
@@ -164,6 +175,7 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
     <div
       class="suggestionsContainer suggestionsContainer_withLabel"
       id="react-autowhatever-1"
+      role="listbox"
     />
   </div>
   <div
@@ -174,7 +186,12 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
 
 exports[`Autosuggest should render with mobile full width 1`] = `
 <div>
-  <div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
+  >
     <div
       class="root"
     >
@@ -199,12 +216,10 @@ exports[`Autosuggest should render with mobile full width 1`] = `
       </label>
       <input
         aria-autocomplete="list"
-        aria-expanded="false"
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         autocomplete="off"
         class="input"
         id="Foo"
-        role="combobox"
         type="text"
         value=""
       />
@@ -228,6 +243,7 @@ exports[`Autosuggest should render with mobile full width 1`] = `
     <div
       class="suggestionsContainer suggestionsContainer_withLabel suggestionsContainer_fullWidth"
       id="react-autowhatever-1"
+      role="listbox"
     />
   </div>
   <div
@@ -238,17 +254,20 @@ exports[`Autosuggest should render with mobile full width 1`] = `
 
 exports[`Autosuggest should render with simple props 1`] = `
 <div>
-  <div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
+  >
     <div
       class="root"
     >
       <input
         aria-autocomplete="list"
-        aria-expanded="false"
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         autocomplete="off"
         class="input"
-        role="combobox"
         type="text"
         value=""
       />
@@ -272,6 +291,7 @@ exports[`Autosuggest should render with simple props 1`] = `
     <div
       class="suggestionsContainer"
       id="react-autowhatever-1"
+      role="listbox"
     />
   </div>
   <div
@@ -282,17 +302,20 @@ exports[`Autosuggest should render with simple props 1`] = `
 
 exports[`Autosuggest should render with suggestions 1`] = `
 <div>
-  <div>
+  <div
+    aria-expanded="true"
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
+  >
     <div
       class="root"
     >
       <input
         aria-autocomplete="list"
-        aria-expanded="true"
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         autocomplete="off"
         class="input"
-        role="combobox"
         type="text"
         value=""
       />
@@ -316,11 +339,13 @@ exports[`Autosuggest should render with suggestions 1`] = `
     <div
       class="suggestionsContainer"
       id="react-autowhatever-1"
+      role="listbox"
     >
       <ul
         role="listbox"
       >
         <li
+          aria-selected="false"
           data-suggestion-index="0"
           id="react-autowhatever-1--item-0"
           role="option"
@@ -332,6 +357,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
           </span>
         </li>
         <li
+          aria-selected="false"
           data-suggestion-index="1"
           id="react-autowhatever-1--item-1"
           role="option"
