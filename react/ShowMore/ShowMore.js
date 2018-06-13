@@ -3,19 +3,17 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, ChevronIcon, Section } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
-import gridValues from '../../theme/layout/grid';
 
 export default class ShowMore extends Component {
   static propTypes = {
     component: PropTypes.function,
-    showLessHeight: PropTypes.number,
+    showLessHeight: PropTypes.number.isRequired,
     lblShowMore: PropTypes.string,
     lblShowLess: PropTypes.string,
     disable: PropTypes.boolean
   };
 
   static defaultProps = {
-    showLessHeight: gridValues * 12,
     lblShowMore: 'Show more',
     lblShowLess: 'Show less'
   };
