@@ -71,7 +71,7 @@ export default {
           })
         },
         {
-          label: '700px Height (mobile only)',
+          label: '700px Height',
           transformProps: props => ({
             ...props,
             showLessHeight: 700,
