@@ -14,6 +14,7 @@ describe('Header', () => {
       employerLink: 'employerLink'
     },
     messages: {
+      'header.homeUrl': 'http://seekasia.com/home',
       'header.employerSiteUrl': 'http://brand.seekasia.com',
       'header.employerSiteTitle': 'click here',
       'header.employerLinkPrefix': 'Awesome employers should '
