@@ -1,6 +1,6 @@
 import React from 'react';
-import CalenderIcon from './CalenderIcon';
+import CalendarIcon from './CalendarIcon';
 
 export const symbols = {
-  'CalenderIcon': <CalenderIcon />
+  'CalendarIcon': <CalendarIcon />
 };
