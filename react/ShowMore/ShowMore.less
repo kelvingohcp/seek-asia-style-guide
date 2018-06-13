@@ -1,0 +1,36 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+.panel {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.fade {
+  height: @grid-base * 25;
+  margin-top: -(@grid-base * 25);
+  position: relative;
+}
+
+.button {
+  background-color: @saWhite;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.outCanvasGradientMaskTop {
+  position: relative;
+  &::before {
+    bottom: 100%;
+    content: " ";
+    display: block;
+    height: (@grid-base * 8);
+    opacity: 1;
+    position: absolute;
+    -webkit-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+    width: 100%;
+    .linearGradientDown;
+  }
+}

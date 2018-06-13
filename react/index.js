@@ -15,7 +15,7 @@ export { default as JobCard } from './JobCard/JobCard';
 export { default as JobCardLoader } from './JobCardLoader/JobCardLoader';
 
 export { default as Header } from './Header/Header';
-
+export { default as ShowMore } from './ShowMore/ShowMore';
 // Typography
 export { default as Critical } from './Critical/Critical';
 export { default as Paragraph } from './Paragraph/Paragraph';
