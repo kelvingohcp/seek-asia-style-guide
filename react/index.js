@@ -5,6 +5,7 @@ export { default as SeekApp } from './StyleGuideProvider/StyleGuideProvider'; //
 export { default as Alert } from './Alert/Alert';
 export { default as Button } from './Button/Button';
 export { default as ButtonGroup } from './ButtonGroup/ButtonGroup';
+export { default as ListItem } from './ListItem/ListItem';
 export { default as Loader } from './Loader/Loader';
 export { default as Logo } from './Logo/Logo';
 export { default as LogoRainbow } from './LogoRainbow/LogoRainbow';
