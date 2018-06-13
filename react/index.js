@@ -84,7 +84,7 @@ export { default as PortalIcon } from './PortalIcon/PortalIcon';
 export { default as PreferencesIcon } from './PreferencesIcon/PreferencesIcon';
 export { default as ProfileIcon } from './ProfileIcon/ProfileIcon';
 export { default as ResourcesIcon } from './ResourcesIcon/ResourcesIcon';
-export { default as SkillIcon } from './SkillIcon/SkillIcon';
+export { default as SkillsIcon } from './SkillsIcon/SkillsIcon';
 export { default as SearchIcon } from './SearchIcon/SearchIcon';
 export { default as StarIcon } from './StarIcon/StarIcon';
 export { default as ThumbsUpIcon } from './ThumbsUpIcon/ThumbsUpIcon';

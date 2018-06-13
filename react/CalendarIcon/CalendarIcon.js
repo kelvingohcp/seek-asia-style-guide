@@ -1,4 +1,4 @@
-import svgMarkup from './CalenderIcon.svg';
+import svgMarkup from './CalendarIcon.svg';
 
 import React from 'react';
 import Icon from '../private/Icon/Icon';
