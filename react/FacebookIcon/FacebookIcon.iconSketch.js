@@ -3,5 +3,6 @@ import FacebookIcon from './FacebookIcon';
 
 export const symbols = {
   'FacebookIcon -> with filled': <FacebookIcon filled={true} />,
-  'FacebookIcon -> without filled': <FacebookIcon filled={false} />
+  'FacebookIcon -> without filled': <FacebookIcon filled={false} />,
+  'FacebookIcon -> without square': <FacebookIcon square={true} />
 };
