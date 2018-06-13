@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge: should render Bold Declined 1`] = `
+<span
+  className="root isBold declined"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    Declined
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Bold Default 1`] = `
+<span
+  className="root isBold default"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    default
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Bold Expired 1`] = `
+<span
+  className="root isBold expired"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    Expired
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Bold New 1`] = `
+<span
+  className="root isBold new"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    New
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Bold Progressing 1`] = `
+<span
+  className="root isBold progressing"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={false}
+    strong={true}
+    whispering={true}
+  >
+    Progressing
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Subtle Declined 1`] = `
+<span
+  className="root declined"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    Declined
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Subtle Default 1`] = `
+<span
+  className="root default"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    default
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Subtle Expired 1`] = `
+<span
+  className="root expired"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    Expired
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Subtle New 1`] = `
+<span
+  className="root new"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    New
+  </Text>
+</span>
+`;
+
+exports[`Badge: should render Subtle Progressing 1`] = `
+<span
+  className="root progressing"
+>
+  <Text
+    baseline={true}
+    className="badgeLabel"
+    semiStrong={true}
+    whispering={true}
+  >
+    Progressing
+  </Text>
+</span>
+`;

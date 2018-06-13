@@ -77,6 +77,7 @@ export default class Header extends Component {
                       <Card transparent>
                         <Text yelling regular><Link className={styles.link} to="/typography">Typography</Link></Text>
                         <Text yelling regular><Link className={styles.link} to="/page-layout">Page Layout</Link></Text>
+                        <Text yelling regular><Link className={styles.link} to="/icons">Icons</Link></Text>
                       </Card>
 
                       <Card transparent>

@@ -6,6 +6,7 @@ import Button from '../../../Button/Button';
 import ButtonGroup from '../../../ButtonGroup/ButtonGroup';
 import defaultLink from '../Link/Link';
 import styles from './ShelfSection.less';
+import classnames from 'classnames';
 
 export const ShelfSectionPropTypes = PropTypes.shape({
   shelfLinks: PropTypes.arrayOf(PropTypes.shape({
@@ -13,24 +14,27 @@ export const ShelfSectionPropTypes = PropTypes.shape({
     items: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string,
       link: PropTypes.string,
+      title: PropTypes.string,
       children: PropTypes.arrayOf(PropTypes.shape({
         name: PropTypes.string,
-        link: PropTypes.string
+        link: PropTypes.string,
+        title: PropTypes.string
       }))
     }))
   })),
   tagLinks: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
-    link: PropTypes.string
+    link: PropTypes.string,
+    title: PropTypes.string
   }))
 });
 
-const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
+const ShelfSection = ({ shelf, LinkComponent = defaultLink, showShelfSection = false }) => {
   const { shelfLinks, tagLinks } = shelf;
   if (!shelfLinks && !tagLinks) {
     return null;
   }
-  return (<Section className={styles.root}>
+  return (<Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
     <div className={styles.shelfDivider} />
     {shelfLinks &&
       <Text intimate className={styles.shelfLinksContainer}>
@@ -39,13 +43,13 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
             {`${shelfItem.label}: `}
             {
               shelfItem.items.map((item, j) => {
-                const link = (<LinkComponent link={item.link} className={styles.shelfLink} key={j} >{item.name}</LinkComponent>);
+                const link = (<LinkComponent link={item.link} className={styles.shelfLink} key={j} title={item.title}>{item.name}</LinkComponent>);
                 if (item.children && item.children.length) {
                   return [
                     link,
                     ' > ',
                     item.children.map((child, k) => (
-                      <LinkComponent link={child.link} className={styles.shelfLink} key={`${j}${k}`} >{child.name}</LinkComponent>
+                      <LinkComponent link={child.link} className={styles.shelfLink} key={`${j}${k}`} title={child.title}>{child.name}</LinkComponent>
                     )).reduce((prev, curr) => [prev, ' | ', curr])
                   ];
                 }
@@ -60,7 +64,7 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
     {tagLinks &&
       <ButtonGroup className={styles.tagLinksContainer}>
         {tagLinks.map((item, i) => (
-          <Button color="primary" compact component="a" href={item.link} className={styles.tagLink} key={i}>
+          <Button color="primary" compact component="a" href={item.link} className={styles.tagLink} key={i} title={item.title}>
             {item.name}
           </Button>
         ))}
@@ -72,5 +76,6 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink }) => {
 export default ShelfSection;
 ShelfSection.propTypes = {
   shelf: ShelfSectionPropTypes,
-  LinkComponent: PropTypes.func
+  LinkComponent: PropTypes.func,
+  showShelfSection: PropTypes.bool
 };
