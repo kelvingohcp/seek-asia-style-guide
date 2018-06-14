@@ -13,7 +13,7 @@ exports[`ListItem: should render icon 1`] = `
     className="listItemBody"
   >
     <Text
-      baseline={true}
+      baseline={false}
       className="listItemTitle"
       intimate={true}
       light={true}
@@ -24,7 +24,7 @@ exports[`ListItem: should render icon 1`] = `
       className="listItemValue"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="displayInline"
         loud={true}
         strong={true}
@@ -44,7 +44,7 @@ exports[`ListItem: should render title value 1`] = `
     className="listItemBody"
   >
     <Text
-      baseline={true}
+      baseline={false}
       className="listItemTitle"
       intimate={true}
       light={true}
@@ -55,7 +55,7 @@ exports[`ListItem: should render title value 1`] = `
       className="listItemValue"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="displayInline"
         loud={true}
         strong={true}
@@ -78,7 +78,7 @@ exports[`ListItem: should render value 1`] = `
       className="listItemValue"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="displayInline"
         loud={true}
         strong={true}

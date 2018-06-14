@@ -10,10 +10,10 @@ export default function ListItem({ title, value, icon, badge, isCompact }) {
       {icon && <div className={classnames(styles.listItemIcon)}>{icon}</div>}
       <div className={classnames(styles.listItemBody)}>
         {title && (
-          <Text light intimate className={classnames(styles.listItemTitle)}>{title}</Text>
+          <Text light intimate baseline={false} className={classnames(styles.listItemTitle)}>{title}</Text>
         )}
         <div className={classnames(styles.listItemValue)}>
-          <Text strong loud className={classnames(styles.displayInline)}>{value}</Text>
+          <Text strong loud baseline={false} className={classnames(styles.displayInline)}>{value}</Text>
           {badge && (
             <span> <span className={classnames(styles.listItemBadge)}> {badge}</span></span>
           )}
