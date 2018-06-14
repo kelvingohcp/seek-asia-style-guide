@@ -72,6 +72,19 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'have Hover',
+      type: 'checklist',
+      states: [
+        {
+          label: 'have Hover',
+          transformProps: props => ({
+            ...props,
+            hvHover: true
+          })
+        }
+      ]
     }
   ]
 };
