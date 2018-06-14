@@ -3,11 +3,11 @@
 @list-item-v-padding: @grid-base * 3;
 @list-item-h-padding: @grid-base * 4;
 @list-item-line-height: @grid-base * 5;
-@list-item-icon-padding-top: @grid-base;
+@list-item-icon-padding-top: @grid-base / 2;
 @list-item-icon-padding-left: @grid-base * 3;
 
 .root {
-  align-items: center;
+  align-items: flex-start;
   background-color: @saWhite;
   border-radius: @grid-base;
   box-shadow: 0 1px 1px @saGrey5;
@@ -36,23 +36,19 @@
 }
 
 .listItemIcon {
-  line-height: inherit;
+  color: @saGrey4;
   padding-left: @list-item-icon-padding-left;
   padding-top: @list-item-icon-padding-top;
   vertical-align: middle;
 }
 
 .listItemTitle {
-  padding-bottom: 0;
-  line-height: inherit !important; //Design debt - this cannot be overridden without !important, and does not have its own pattern yet
+  color: @saGrey2;
+  padding-bottom: @grid-base;
 }
 
 .listItemValue {
-  flex: 1 0 0;
   line-height: inherit;
-  .listItemTitle + & {
-    margin-top: @grid-base;
-  }
 }
 
 .displayInline {
