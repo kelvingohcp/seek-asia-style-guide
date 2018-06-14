@@ -74,11 +74,11 @@ export default {
       ]
     },
     {
-      label: 'have Hover',
+      label: 'Has hover state',
       type: 'checklist',
       states: [
         {
-          label: 'have Hover',
+          label: 'Has hover state',
           transformProps: props => ({
             ...props,
             hasHoverState: true
