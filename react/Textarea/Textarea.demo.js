@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import Textarea from './Textarea';
 import styles from './Textarea.less';
 import classnames from 'classnames';
@@ -34,10 +33,8 @@ class TextareaContainer extends Component {
     return (
       <DemoComponent
         {...componentProps}
-        inputProps={{
-          onChange: this.handleChange,
-          value: inputValue
-        }}
+        onChange={this.handleChange}
+        value={inputValue}
       />
     );
   }
@@ -53,10 +50,8 @@ export default {
     label: 'Description',
     message: '',
     // Documentation only:
-    inputProps: {
-      onChange: () => {},
-      value: '...'
-    }
+    onChange: () => {},
+    value: '...'
   },
   options: [
     {

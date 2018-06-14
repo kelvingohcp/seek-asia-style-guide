@@ -34,10 +34,8 @@ class DropdownContainer extends Component {
     return (
       <DemoComponent
         {...componentProps}
-        inputProps={{
-          value,
-          onChange: this.handleChange
-        }}
+        value={value}
+        onChange={this.handleChange}
       />
     );
   }
@@ -72,10 +70,8 @@ export default {
       }
     ],
     // Documentation only:
-    inputProps: {
-      onChange: () => {},
-      value: '...'
-    }
+    onChange: () => {},
+    value: '...'
   },
   options: [
     {
