@@ -11,12 +11,12 @@ export { default as Logo } from './Logo/Logo';
 export { default as LogoRainbow } from './LogoRainbow/LogoRainbow';
 export { default as Rating } from './Rating/Rating';
 export { default as NavigationBar } from './NavigationBar/NavigationBar';
-
 export { default as JobCard } from './JobCard/JobCard';
 export { default as JobCardLoader } from './JobCardLoader/JobCardLoader';
-
 export { default as Header } from './Header/Header';
 export { default as ShowMore } from './ShowMore/ShowMore';
+export { default as TitledCard } from './TitledCard/TitledCard';
+
 // Typography
 export { default as Critical } from './Critical/Critical';
 export { default as Paragraph } from './Paragraph/Paragraph';

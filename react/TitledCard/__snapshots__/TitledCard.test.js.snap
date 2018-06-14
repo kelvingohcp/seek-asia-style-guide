@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Titled Card:  should render value 1`] = `
+<Card>
+  <Section
+    className=""
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      strong={true}
+      yelling={true}
+    >
+      Job Requirement
+    </Text>
+    <hr
+      className="line"
+    />
+    <Text
+      baseline={true}
+    >
+      Take time off and schedule a date with us. We've made our class schedule and timetable handy to access when you need it. Check our schedules online to get the latest updates or changes. If there's one date you can make that won't disappoint you, it's a date with us. Choose your city or select your nearest club to get full schedules and timetables for all classes available at Celebrity Fitness. For the latest updates, check this page often
+    </Text>
+  </Section>
+</Card>
+`;
