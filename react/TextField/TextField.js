@@ -1,14 +1,10 @@
 import styles from './TextField.less';
-
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-
 import ClearField from '../ClearField/ClearField';
-
 import FieldMessage from '../private/FieldMessage/FieldMessage';
 import FieldLabel from '../private/FieldLabel/FieldLabel';
-
 import invoke from 'lodash/invoke';
 
 function combineClassNames(props = {}, ...classNames) {
@@ -32,38 +28,22 @@ export default class TextField extends Component {
   static displayName = 'TextField';
 
   static propTypes = {
-    /* eslint-disable consistent-return */
-    id: (props, propName, componentName) => {
-      const { id } = props;
-
-      if (typeof id !== 'string') {
-        return new Error(`Invalid prop \`id\` of type \`${typeof id}\` supplied to \`${componentName}\`, expected \`string\`.`);
-      }
-    },
-    /* eslint-enable consistent-return */
+    id: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
+    type: PropTypes.string,
     className: PropTypes.string,
     valid: PropTypes.bool,
-    /* eslint-disable consistent-return */
-    inputProps: (props, propName, componentName) => {
-      const { id, inputProps } = props;
-      const { id: inputId } = inputProps || {};
-
-      if (typeof inputProps !== 'undefined' && typeof inputProps !== 'object') {
-        return new Error(`Invalid prop \`inputProps\` of type \`${typeof inputProps}\` supplied to \`${componentName}\`, expected \`object\`.`);
-      }
-
-      if (inputId && id) {
-        return new Error(`\`inputProps.id\` will be overridden by \`id\` in ${componentName}. Please remove it.`);
-      }
-    },
-    /* eslint-enable consistent-return */
+    inputProps: PropTypes.object,
     onClear: PropTypes.func,
     compact: PropTypes.bool
   };
 
   static defaultProps = {
-    id: '',
     className: '',
+    inputProps: {},
     compact: false
   };
 
@@ -94,12 +74,18 @@ export default class TextField extends Component {
   }
 
   renderInput() {
-    const { inputProps = {}, id } = this.props;
+    const { id, value, onChange, onFocus, onBlur, type, inputProps = {} } = this.props;
     const { ref } = inputProps;
     const allInputProps = {
+      id,
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      type,
       ...combineClassNames(inputProps, styles.input),
-      ...(id ? { id } : {}),
-      ref: attachRefs(this.storeInputReference, ref)
+      ref: attachRefs(this.storeInputReference, ref),
+      'aria-describedby': `${id}-message`
     };
 
     return (
@@ -118,8 +104,9 @@ export default class TextField extends Component {
   }
 
   render() {
-    const { className, valid, onClear, compact, inputProps = {} } = this.props;
-    const hasValue = (inputProps.value && inputProps.value.length > 0);
+    const { id, value, compact, className, valid, onClear, inputProps = {} } = this.props;
+    const resolvedValue = value || inputProps.value || '';
+    const hasValue = resolvedValue.length > 0;
     const canClear = hasValue && (typeof onClear === 'function');
     const classNames = classnames({
       [styles.root]: true,
@@ -130,14 +117,14 @@ export default class TextField extends Component {
     });
 
     // eslint-disable-next-line react/prop-types
-    const { id, label, labelProps, secondaryLabel, tertiaryLabel, invalid, help, helpProps, message, messageProps } = this.props;
+    const { label, labelProps, secondaryLabel, tertiaryLabel, invalid, help, helpProps, message, messageProps } = this.props;
 
     return (
       <div ref={this.storeContainerReference} className={classNames}>
         <FieldLabel {...{ id, label, labelProps, secondaryLabel, tertiaryLabel }} />
         {this.renderInput()}
         {this.renderClear()}
-        <FieldMessage {...{ invalid, help, helpProps, valid, message, messageProps }} />
+        <FieldMessage {...{ id: `${id}-message`, invalid, help, helpProps, valid, message, messageProps }} />
       </div>
     );
   }

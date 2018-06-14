@@ -14,6 +14,7 @@ exports[`Autosuggest should render with compact prop 1`] = `
       <input
         aria-autocomplete="list"
         aria-controls="react-autowhatever-1"
+        aria-describedby="undefined-message"
         autocomplete="off"
         class="input"
         type="text"
@@ -81,6 +82,7 @@ exports[`Autosuggest should render with label 1`] = `
       <input
         aria-autocomplete="list"
         aria-controls="react-autowhatever-1"
+        aria-describedby="Foo-message"
         autocomplete="off"
         class="input"
         id="Foo"
@@ -149,6 +151,7 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
       <input
         aria-autocomplete="list"
         aria-controls="react-autowhatever-1"
+        aria-describedby="Foo-message"
         autocomplete="off"
         class="input"
         id="Foo"
@@ -217,6 +220,7 @@ exports[`Autosuggest should render with mobile full width 1`] = `
       <input
         aria-autocomplete="list"
         aria-controls="react-autowhatever-1"
+        aria-describedby="Foo-message"
         autocomplete="off"
         class="input"
         id="Foo"
@@ -266,6 +270,7 @@ exports[`Autosuggest should render with simple props 1`] = `
       <input
         aria-autocomplete="list"
         aria-controls="react-autowhatever-1"
+        aria-describedby="undefined-message"
         autocomplete="off"
         class="input"
         type="text"
@@ -314,6 +319,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
       <input
         aria-autocomplete="list"
         aria-controls="react-autowhatever-1"
+        aria-describedby="undefined-message"
         autocomplete="off"
         class="input"
         type="text"

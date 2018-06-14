@@ -8,49 +8,19 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
     checked={false}
     className="input"
     data-automation="first-name-field"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
     >
       <CheckMarkIcon
         className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
-      >
-        Still in role
-      </span>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Checkbox inputProps should render as checked 1`] = `
-<div
-  className="root"
->
-  <input
-    checked={true}
-    className="input"
-    id="still-in-role"
-    type="checkbox"
-  />
-  <label
-    className="label"
-    htmlFor="still-in-role"
-  >
-    <div
-      className="standard"
-    >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft checked"
         svgClassName="checkMark"
       />
       <span
@@ -70,12 +40,13 @@ exports[`Checkbox should render full width checkbox 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
@@ -101,12 +72,13 @@ exports[`Checkbox should render with button style 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <span
       className="button"
@@ -124,12 +96,13 @@ exports[`Checkbox should render with checkbox on left hand side 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
@@ -155,12 +128,13 @@ exports[`Checkbox should render with checkbox on right hand side 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
@@ -186,12 +160,13 @@ exports[`Checkbox should render with className 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
@@ -217,12 +192,13 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
@@ -248,12 +224,13 @@ exports[`Checkbox should render with simple props 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"
@@ -279,12 +256,13 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
   <input
     checked={false}
     className="input"
-    id="still-in-role"
+    id="testCheckbox"
+    onChange={[Function]}
     type="checkbox"
   />
   <label
     className="label"
-    htmlFor="still-in-role"
+    htmlFor="testCheckbox"
   >
     <div
       className="standard"

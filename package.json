@@ -62,7 +62,7 @@
     "postcss-js": "^1.0.0",
     "prop-types": "^15.6.1",
     "raw-loader": "^0.5.1",
-    "react-autosuggest": "^9.3.4",
+    "react-autosuggest": "9.3.2",
     "react-isolated-scroll": "^0.1.1",
     "react-scrolllock": "^2.0.1",
     "react-tabs": "^2.2.2",
