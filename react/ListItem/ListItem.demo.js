@@ -81,7 +81,7 @@ export default {
           label: 'have Hover',
           transformProps: props => ({
             ...props,
-            hvHover: true
+            hasHoverState: true
           })
         }
       ]
