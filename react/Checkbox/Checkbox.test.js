@@ -1,18 +1,30 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import Checkbox from './Checkbox';
 
 describe('Checkbox', () => {
   const requiredProps = {
-    id: 'still-in-role',
+    id: 'testCheckbox',
     label: 'Still in role',
-    inputProps: { checked: false }
+    checked: false,
+    onChange: () => {}
   };
 
   it('should render with simple props', () => {
     const wrapper = shallow(<Checkbox {...requiredProps} />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render as checked', () => {
+    const wrapper = shallow(<Checkbox {...requiredProps} checked={true} />);
+    const inputChecked = wrapper.find('input').prop('checked');
+    expect(inputChecked).toEqual(true);
+  });
+
+  it('should pass through the value', () => {
+    const wrapper = shallow(<Checkbox {...requiredProps} value="foo" checked={true} />);
+    const inputValue = wrapper.find('input').prop('value');
+    expect(inputValue).toEqual('foo');
   });
 
   it('should render with className', () => {
@@ -52,26 +64,19 @@ describe('Checkbox', () => {
   });
 
   describe('inputProps', () => {
-    it('should invoke the onChange handler when touched', () => {
+    it('should invoke the change handler', () => {
       const handleChange = jest.fn();
-      const props = {
-        ...requiredProps,
-        inputProps: {
-          onChange: handleChange,
-          checked: false
-        }
-      };
+      const props = { ...requiredProps, inputProps: { onChange: handleChange, checked: false } };
       const checkedEvent = { target: { checked: true } };
-
       const wrapper = shallow(<Checkbox {...props} />);
-
       wrapper.find('input').simulate('change', checkedEvent);
       expect(handleChange).toBeCalledWith(checkedEvent);
     });
 
     it('should render as checked', () => {
       const wrapper = shallow(<Checkbox {...requiredProps} inputProps={{ checked: true }} />);
-      expect(wrapper).toMatchSnapshot();
+      const inputChecked = wrapper.find('input').prop('checked');
+      expect(inputChecked).toEqual(true);
     });
 
     it('should pass through other props to the input', () => {

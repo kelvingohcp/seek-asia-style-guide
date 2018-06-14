@@ -3,6 +3,7 @@ import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import React from 'react';
 import { createRenderer } from 'react-test-renderer/shallow';
+import { shallow } from 'enzyme';
 import { findAllWithClass, findAllWithType } from 'react-shallow-testutils';
 import Dropdown from './Dropdown';
 
@@ -51,21 +52,49 @@ describe('Dropdown', () => {
   }
 
   it('should have a displayName', () => {
-    render(<Dropdown inputProps={{ value: '' }} />);
+    render(<Dropdown id="testDropdown" value="" />);
     expect(element.type.displayName).to.equal('Dropdown');
   });
 
   describe('id', () => {
     it('should error if `id` is not a string', () => {
-      render(<Dropdown inputProps={{ value: '' }} id={true} />);
+      render(<Dropdown id={true} value="" />);
       expect(errors[0]).to.match(/Invalid prop `id`/);
     });
+  });
+
+  it('should pass through the value', () => {
+    const wrapper = shallow(<Dropdown id="testDropdown" value="foo" />);
+    const selectValue = wrapper.find('select').prop('value');
+    expect(selectValue).to.equal('foo');
+  });
+
+  it('should invoke the focus handler', () => {
+    const onFocus = jest.fn();
+    const wrapper = shallow(<Dropdown id="testDropdown" value="" onFocus={onFocus} />);
+    wrapper.find('select').simulate('focus');
+    expect(onFocus.mock.calls.length).to.equal(1);
+  });
+
+  it('should invoke the blur handler', () => {
+    const onBlur = jest.fn();
+    const wrapper = shallow(<Dropdown id="testDropdown" value="" onBlur={onBlur} />);
+    wrapper.find('select').simulate('blur');
+    expect(onBlur.mock.calls.length).to.equal(1);
+  });
+
+  it('should invoke the change handler', () => {
+    const onChange = jest.fn();
+    const wrapper = shallow(<Dropdown id="testDropdown" value="" onChange={onChange} />);
+    wrapper.find('select').simulate('change', { target: { value: 'foo' } });
+    expect(onChange.mock.calls.length).to.equal(1);
+    expect(onChange.mock.calls[0][0].target.value).to.equal('foo');
   });
 
   describe('options', () => {
     const opt = [{ label: 'suburbs', value: '3130' }];
     it('should render options correctly', () => {
-      render(<Dropdown inputProps={{ value: '' }} options={opt} />);
+      render(<Dropdown id="testDropdown" value="" options={opt} />);
       expect(option.props.value).to.equal('3130');
     });
 
@@ -73,7 +102,7 @@ describe('Dropdown', () => {
       { label: 'disabled', value: 'disabled', props: { disabled: true } }
     ];
     it('should render disabled option', () => {
-      render(<Dropdown inputProps={{ value: '' }} options={opt2} />);
+      render(<Dropdown value="''" id="testDropdown" options={opt2} />);
       expect(option.props.disabled).to.equal(true);
     });
   });
@@ -90,7 +119,7 @@ describe('Dropdown', () => {
           ]
         }
       ];
-      render(<Dropdown inputProps={{ value: '' }} options={opts} />);
+      render(<Dropdown id="testDropdown" value="" options={opts} />);
     });
     it('should render optgroup correctly', () => {
       expect(optionGroup.props.label).to.equal('suburbs');
@@ -109,16 +138,9 @@ describe('Dropdown', () => {
     });
   });
 
-  describe('input', () => {
-    it('should not have an `id` if it is not specified', () => {
-      render(<Dropdown inputProps={{ value: '' }} />);
-      expect(input.props).not.to.include.keys('id');
-    });
-  });
-
   describe('placeholder', () => {
-    it('should render placeholder as first option and disabled in list ', () => {
-      render(<Dropdown inputProps={{ value: '' }} options={options} placeholder="test" />);
+    it('should render placeholder as first option in list ', () => {
+      render(<Dropdown id="testDropdown" value="" options={options} placeholder="test" />);
       expect(placeholderText()).to.equal('test');
       expect(placeholder.props.disabled).to.equal(true);
     });
@@ -132,34 +154,37 @@ describe('Dropdown', () => {
   });
 
   describe('inputProps', () => {
-    it('should error if `inputProps` is not an object', () => {
-      render(<Dropdown inputProps="hey" />);
-      expect(errors[0]).to.match(/Invalid prop `inputProps`/);
-    });
-
-    it('should error if `inputProps.value` is not supplied', () => {
-      render(<Dropdown inputProps={{}} />);
-      expect(errors[0]).to.match(/Invalid prop `inputProps.value` of type `undefined` supplied to `Dropdown`, expected `string`/);
-    });
-
-    it('should error if `inputProps.value` is not a string', () => {
-      render(<Dropdown inputProps={{ value: 2 }} />);
-      expect(errors[0]).to.match(/Invalid prop `inputProps.value` of type `number` supplied to `Dropdown`, expected `string`/);
-    });
-
-    it('should error if `inputProps`\'s `id` is specified', () => {
-      render(<Dropdown id="firstName" inputProps={{ id: 'ignored', value: '' }} />);
-      expect(errors[0]).to.match(/`inputProps.id` will be overridden by `id`/);
-    });
-
     it('should pass through className to the input', () => {
-      render(<Dropdown inputProps={{ className: 'first-name-field' }} />);
+      render(<Dropdown id="testDropdown" inputProps={{ className: 'first-name-field' }} />);
       expect(input.props.className).to.match(/first-name-field$/);
     });
 
+    it('should invoke the focus handler', () => {
+      const onFocus = jest.fn();
+      const wrapper = shallow(<Dropdown id="testDropdown" value="" inputProps={{ onFocus }} />);
+      wrapper.find('select').simulate('focus');
+      expect(onFocus.mock.calls.length).to.equal(1);
+    });
+
+    it('should invoke the blur handler', () => {
+      const onBlur = jest.fn();
+      const wrapper = shallow(<Dropdown id="testDropdown" value="" inputProps={{ onBlur }} />);
+      wrapper.find('select').simulate('blur');
+      expect(onBlur.mock.calls.length).to.equal(1);
+    });
+
+    it('should invoke the change handler', () => {
+      const onChange = jest.fn();
+      const wrapper = shallow(<Dropdown id="testDropdown" value="" inputProps={{ onChange }} />);
+      wrapper.find('select').simulate('change', { target: { value: 'foo' } });
+      expect(onChange.mock.calls.length).to.equal(1);
+      expect(onChange.mock.calls[0][0].target.value).to.equal('foo');
+    });
+
     it('should pass through other props to the input', () => {
-      render(<Dropdown inputProps={{ id: 'firstName', 'data-automation': 'first-name-field' }} />);
+      render(<Dropdown id="testDropdown" inputProps={{ id: 'firstName', value: 'value', 'data-automation': 'first-name-field' }} />);
       expect(input.props.id).to.equal('firstName');
+      expect(input.props.value).to.equal('value');
       expect(input.props['data-automation']).to.equal('first-name-field');
     });
   });
@@ -167,7 +192,7 @@ describe('Dropdown', () => {
   describe('valid', () => {
     describe('set to false', () => {
       it('Dropdown should have the invalid className', () => {
-        render(<Dropdown inputProps={{ value: '' }} valid={false} />);
+        render(<Dropdown id="testDropdown" value="" valid={false} />);
         expect(dropdown.props.className).to.contain('invalid');
       });
     });

@@ -37,10 +37,8 @@ class CheckboxContainer extends Component {
       <div className={classNames}>
         <DemoComponent
           {...componentProps}
-          inputProps={{
-            checked,
-            onChange: this.handleChange
-          }}
+          checked={checked}
+          onChange={this.handleChange}
         />
       </div>
     );
@@ -59,10 +57,8 @@ export default {
     extraLabel: '(All)',
     type: 'standard',
     // Documentation only:
-    inputProps: {
-      checked: false,
-      onChange: () => {}
-    }
+    checked: false,
+    onChange: () => {}
   },
   options: [
     {

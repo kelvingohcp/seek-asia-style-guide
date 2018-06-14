@@ -1,15 +1,11 @@
 import styles from './Autosuggest.less';
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import ReactAutosuggest from 'react-autosuggest';
 import IsolatedScroll from 'react-isolated-scroll';
-
 import omit from 'lodash/omit';
-
 import TextField from '../TextField/TextField';
-
 import smoothScroll from '../private/smoothScroll';
 import smallDeviceOnly from '../private/smallDeviceOnly';
 
@@ -18,8 +14,13 @@ export default class Autosuggest extends Component {
   static displayName = 'Autosuggest';
 
   static propTypes = {
-    id: PropTypes.string,
-    inputProps: PropTypes.object.isRequired,
+    id: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
+    type: PropTypes.string,
+    inputProps: PropTypes.object,
     label: PropTypes.string,
     labelProps: PropTypes.object,
     className: PropTypes.string,
@@ -46,10 +47,11 @@ export default class Autosuggest extends Component {
   };
 
   static defaultProps = {
-    id: '',
+    type: 'text',
     className: '',
     label: '',
     labelProps: {},
+    inputProps: {},
     showMobileBackdrop: false,
     showFullWidthSuggestionList: false,
     compact: false
@@ -119,7 +121,19 @@ export default class Autosuggest extends Component {
   }
 
   render() {
-    const { inputProps, label, autosuggestProps, suggestionsContainerClassName, showMobileBackdrop, showFullWidthSuggestionList } = this.props;
+    const {
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      type,
+      inputProps,
+      label,
+      autosuggestProps,
+      suggestionsContainerClassName,
+      showMobileBackdrop,
+      showFullWidthSuggestionList
+    } = this.props;
     const { theme = {} } = autosuggestProps;
 
     const allAutosuggestProps = {
@@ -144,7 +158,7 @@ export default class Autosuggest extends Component {
     return (
       <div>
         <ReactAutosuggest
-          inputProps={inputProps}
+          inputProps={{ value, onChange, onFocus, onBlur, type, ...inputProps }}
           ref={this.storeInputReference}
           {...allAutosuggestProps}
         />
