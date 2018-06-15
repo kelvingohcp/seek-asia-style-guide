@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Text from '../Text/Text';
 
-export default function ListItem({ title, value, icon, badge, isCompact, hasHoverState }) {
+export default function ListItem({ title, value, icon, badge, isCompact, hasHoverState, noShadow }) {
   return (
-    <div className={classnames({ [styles.root]: true, [styles.isCompact]: isCompact, [styles.hasHoverState]: hasHoverState })}>
+    <div className={classnames({ [styles.root]: true, [styles.isCompact]: isCompact, [styles.hasHoverState]: hasHoverState, [styles.noShadow]: noShadow })}>
       {icon && <div className={classnames(styles.listItemIcon)}>{icon}</div>}
       <div className={classnames(styles.listItemBody)}>
         {title && (
@@ -29,10 +29,12 @@ ListItem.propTypes = {
   icon: PropTypes.function,
   badge: PropTypes.function,
   isCompact: PropTypes.bool,
-  hasHoverState: PropTypes.bool
+  hasHoverState: PropTypes.bool,
+  noShadow: PropTypes.bool
 };
 
 ListItem.defaultProps = {
   isCompact: false,
-  hasHoverState: false
+  hasHoverState: false,
+  noShadow: false
 };

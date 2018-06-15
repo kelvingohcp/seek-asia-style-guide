@@ -85,6 +85,19 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'No shadow',
+      type: 'checklist',
+      states: [
+        {
+          label: 'No shadow',
+          transformProps: props => ({
+            ...props,
+            noShadow: true
+          })
+        }
+      ]
     }
   ]
 };
