@@ -36,29 +36,45 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink, showShelfSection = f
   }
   return (<Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
     <div className={styles.shelfDivider} />
-    {shelfLinks &&
-      <Text intimate className={styles.shelfLinksContainer}>
-        {shelfLinks.map((shelfItem, i) => (
-          <div key={i}>
-            {`${shelfItem.label}: `}
-            {
-              shelfItem.items.map((item, j) => {
-                const link = (<LinkComponent link={item.link} className={styles.shelfLink} key={j} title={item.title}>{item.name}</LinkComponent>);
-                if (item.children && item.children.length) {
-                  return [
-                    link,
-                    ' > ',
-                    item.children.map((child, k) => (
-                      <LinkComponent link={child.link} className={styles.shelfLink} key={`${j}${k}`} title={child.title}>{child.name}</LinkComponent>
-                    )).reduce((prev, curr) => [prev, ' | ', curr])
-                  ];
-                }
-                return [link];
-              }).reduce((prev, curr) => [prev, ', ', curr])
-            }
-          </div>
-        ))}
-      </Text>
+    {shelfLinks && shelfLinks.length &&
+    <Text intimate className={styles.shelfLinksContainer}>
+      {shelfLinks.map((shelfItem, i) => {
+        if (shelfItem && shelfItem.items && shelfItem.items.length) {
+          return (
+            <div key={i}>
+              {`${shelfItem.label}: `}
+              {
+                shelfItem.items.map((item, j) => {
+                  const link = (<LinkComponent
+                    link={item.link}
+                    className={styles.shelfLink}
+                    key={j}
+                    title={item.title}>
+                    {item.name}
+                  </LinkComponent>);
+                  if (item.children && item.children.length) {
+                    return [
+                      link,
+                      ' > ',
+                      item.children.map((child, k) => (
+                        <LinkComponent
+                          link={child.link}
+                          className={styles.shelfLink}
+                          key={`${j}${k}`}
+                          title={child.title}>
+                          {child.name}
+                        </LinkComponent>
+                      )).reduce((prev, curr) => [prev, ' | ', curr])
+                    ];
+                  }
+                  return [link];
+                }).reduce((prev, curr) => [prev, ', ', curr])
+              }
+            </div>);
+        }
+        return null;
+      })}
+    </Text>
     }
 
     {tagLinks &&
