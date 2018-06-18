@@ -1,12 +1,12 @@
 import styles from './ShowMore.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button, ChevronIcon, Section } from 'seek-asia-style-guide/react';
+import { Button, ChevronIcon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 
 export default class ShowMore extends Component {
   static propTypes = {
-    component: PropTypes.function,
+    children: PropTypes.node.isRequired,
     showLessHeight: PropTypes.number.isRequired,
     lblShowMore: PropTypes.string,
     lblShowLess: PropTypes.string,
@@ -53,32 +53,33 @@ export default class ShowMore extends Component {
   }
 
   render() {
-    const panelHeight = (this.state.isPanelOpened || this.props.disable) ? this.state.contentHeight : this.props.showLessHeight;
+    const { isPanelOpened, contentHeight } = this.state;
+    const { disable, showLessHeight, children, lblShowLess, lblShowMore } = this.props;
+
+    const panelHeight = (isPanelOpened || disable) ? contentHeight : showLessHeight;
     return (
       <div>
-        <Section>
-          <div
-            className={styles.panel}
-            style={{ maxHeight: `${panelHeight}px` }} >
-            <div ref={this.myRef}>{this.props.component}</div>
-          </div>
-          {
-            !this.props.disable && this.state.contentHeight > this.props.showLessHeight && (
-              <div className={classnames({ [styles.outCanvasGradientMaskTop]: !this.state.isPanelOpened })}>
-                <Button
-                  id='btnShowMore'
-                  color='hyperlink'
-                  className={styles.button}
-                  onClick={this.handleClick} >
-                  <span>
-                    {this.state.isPanelOpened ? this.props.lblShowLess : this.props.lblShowMore}
-                  </span>
-                  <span> <span><ChevronIcon direction={this.state.isPanelOpened ? 'up' : 'down'} /></span></span>
-                </Button>
-              </div>
-            )
-          }
-        </Section>
+        <div
+          className={styles.panel}
+          style={{ maxHeight: `${panelHeight}px` }} >
+          <div ref={this.myRef}>{children}</div>
+        </div>
+        {
+          !disable && contentHeight > showLessHeight && (
+            <div className={classnames({ [styles.outCanvasGradientMaskTop]: !isPanelOpened })}>
+              <Button
+                id='btnShowMore'
+                color='hyperlink'
+                className={styles.button}
+                onClick={this.handleClick} >
+                <span>
+                  {isPanelOpened ? lblShowLess : lblShowMore}
+                </span>
+                <span> <span><ChevronIcon direction={isPanelOpened ? 'up' : 'down'} /></span></span>
+              </Button>
+            </div>
+          )
+        }
       </div>
     );
   }

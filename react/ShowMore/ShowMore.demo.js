@@ -9,7 +9,7 @@ export default {
   component: ShowMore,
   sketch,
   initialProps: {
-    component: (
+    children: (
       <Card>
         <Section>
           <Text shouting>
