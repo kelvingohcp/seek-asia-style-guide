@@ -180,4 +180,18 @@ describe('JobCard', () => {
     const wrapper = shallow(<JobCard job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should not render shelf section when none of the shelf links has substantial items', () => {
+    const descriptionJob = {
+      ...defaultJob,
+      shelf: {
+        shelfLinks: [
+          { label: 'Job Details', items: [] },
+          { label: 'Industry', items: [] }
+        ]
+      }
+    };
+    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
