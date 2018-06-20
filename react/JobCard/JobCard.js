@@ -31,14 +31,7 @@ export default class JobCard extends React.Component {
   };
 
   hasShelfLinks(shelfLinks) {
-    if (shelfLinks) {
-      for (let i = 0, length = shelfLinks.length; i < length; i++) {
-        if (shelfLinks[i] && shelfLinks[i].items && shelfLinks[i].items.length > 0) {
-          return true;
-        }
-      }
-    }
-    return false;
+    return shelfLinks && shelfLinks.some(shelfLink => (shelfLink && shelfLink.items && shelfLink.items.length > 0));
   }
 
   render() {
