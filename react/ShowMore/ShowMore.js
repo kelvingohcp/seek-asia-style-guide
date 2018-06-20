@@ -1,10 +1,10 @@
 import styles from './ShowMore.less';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Button, ChevronIcon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 
-export default class ShowMore extends Component {
+export default class ShowMore extends PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
     showLessHeight: PropTypes.number.isRequired,
@@ -37,6 +37,10 @@ export default class ShowMore extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateDimensions);
+  }
+
+  componentDidUpdate(){
+    this.updateDimensions();
   }
 
   updateDimensions() {
