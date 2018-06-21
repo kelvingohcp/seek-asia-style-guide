@@ -25,7 +25,7 @@ describe('ShowMore:', () => {
     const options = { createNodeMock };
     const wrapper = renderer.create(
       <ShowMore
-        showLessHeight='150'
+        showLessHeight={150}
         lblShowMore='Show more'
         lblShowLess='Show less'>
         {card}

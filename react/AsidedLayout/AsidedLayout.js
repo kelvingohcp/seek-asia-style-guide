@@ -5,21 +5,38 @@ import classnames from 'classnames';
 
 const defaultRenderAside = () => null;
 
-const conditionallyRenderAside = (condition, renderAside, classNameAside, disableOnMobile, size) => (
-  condition ?
+const conditionallyRenderAside = ({
+  condition,
+  renderAside,
+  classNameAside,
+  disableOnMobile,
+  disableGapInBetween,
+  size
+}) =>
+  condition ? (
     <div
       className={classnames({
         [classNameAside]: classNameAside,
         [styles.disableOnMobile]: disableOnMobile,
-        [styles.aside]: true
+        [styles.aside]: true,
+        [styles.gap]: !disableGapInBetween
       })}
       style={{ flexBasis: size }}>
       {renderAside()}
-    </div> :
-    null
-);
+    </div>
+  ) : null;
 
-export default function AsidedLayout({ className, children, renderAside = defaultRenderAside, classNameAside, size, reverse, disableOnMobile, ...restProps }) {
+export default function AsidedLayout({
+  className,
+  children,
+  renderAside = defaultRenderAside,
+  classNameAside,
+  size,
+  reverse,
+  disableOnMobile,
+  disableGapInBetween,
+  ...restProps
+}) {
   return (
     <div
       {...restProps}
@@ -28,11 +45,23 @@ export default function AsidedLayout({ className, children, renderAside = defaul
         [styles.root]: true,
         [styles.reverse]: reverse
       })}>
-      { conditionallyRenderAside(reverse, renderAside, classNameAside, disableOnMobile, size) }
-      <div className={styles.content}>
-        {children}
-      </div>
-      { conditionallyRenderAside(!reverse, renderAside, classNameAside, disableOnMobile, size) }
+      {conditionallyRenderAside({
+        condition: reverse,
+        renderAside,
+        classNameAside,
+        disableOnMobile,
+        disableGapInBetween,
+        size
+      })}
+      <div className={styles.content}>{children}</div>
+      {conditionallyRenderAside({
+        condition: !reverse,
+        renderAside,
+        classNameAside,
+        disableOnMobile,
+        disableGapInBetween,
+        size
+      })}
     </div>
   );
 }
@@ -44,5 +73,16 @@ AsidedLayout.propTypes = {
   classNameAside: PropTypes.string,
   size: PropTypes.string,
   disableOnMobile: PropTypes.bool,
+  disableGapInBetween: PropTypes.bool,
+  reverse: PropTypes.bool
+};
+
+conditionallyRenderAside.propTypes = {
+  condition: PropTypes.bool,
+  renderAside: PropTypes.func,
+  classNameAside: PropTypes.string,
+  size: PropTypes.string,
+  disableOnMobile: PropTypes.bool,
+  disableGapInBetween: PropTypes.bool,
   reverse: PropTypes.bool
 };
