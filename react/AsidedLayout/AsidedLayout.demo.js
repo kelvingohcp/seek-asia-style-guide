@@ -58,7 +58,7 @@ export default {
       ]
     },
     {
-      label: 'Disable',
+      label: 'Disable Aside',
       type: 'checkbox',
       states: [
         {
@@ -66,6 +66,19 @@ export default {
           transformProps: props => ({
             ...props,
             disableOnMobile: true
+          })
+        }
+      ]
+    },
+    {
+      label: 'Disable Gap',
+      type: 'checkbox',
+      states: [
+        {
+          label: 'Disable Gap In Between',
+          transformProps: props => ({
+            ...props,
+            disableGapInBetween: true
           })
         }
       ]

@@ -10,7 +10,7 @@ export default class ShowMore extends Component {
     showLessHeight: PropTypes.number.isRequired,
     lblShowMore: PropTypes.string,
     lblShowLess: PropTypes.string,
-    disable: PropTypes.boolean
+    disable: PropTypes.bool
   };
 
   static defaultProps = {
