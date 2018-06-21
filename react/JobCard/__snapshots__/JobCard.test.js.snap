@@ -127,6 +127,133 @@ exports[`JobCard should not render shelf section 1`] = `
 </Card>
 `;
 
+exports[`JobCard should not render shelf section when none of the shelf links has substantial items 1`] = `
+<Card
+  className="root"
+>
+  <Section
+    className="headerSection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <a
+      className="positionLink"
+      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <Text
+        baseline={true}
+        className="positionTitle"
+        semiStrong={true}
+        waving={true}
+      >
+        Senior Software Engineer (6 months Contract)
+      </Text>
+    </a>
+  </Section>
+  <Section
+    className="bodySection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <div
+      className="bodyDetailsWrapper"
+    >
+      <Text
+        baseline={true}
+        className="company"
+        intimate={true}
+      >
+        <CompanyLink
+          LinkComponent={[Function]}
+          company={
+            Object {
+              "link": "/jobCard",
+              "name": "SEEK Asia",
+            }
+          }
+          keyword=""
+        />
+      </Text>
+    </div>
+  </Section>
+  <Section
+    className="footerSection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <div
+      className="footerLeft"
+    >
+      <div
+        className="jobInfoContainer"
+      >
+        <div
+          className="jobInfoList"
+        >
+          <Text
+            baseline={true}
+            className="jobInfo"
+            intimate={true}
+          >
+            <LocationIcon
+              className="jobInfoIcon"
+            />
+            <LocationGroup
+              LinkComponent={[Function]}
+              locations={
+                Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Pahang",
+                  },
+                  Object {
+                    "child": Object {
+                      "child": Object {
+                        "name": "Near Leisure Mall",
+                      },
+                      "link": "/jobCard",
+                      "name": "Cheras",
+                    },
+                    "link": "/jobCard",
+                    "name": "Selangor",
+                  },
+                ]
+              }
+            />
+          </Text>
+          <Text
+            baseline={true}
+            className="jobInfo"
+            intimate={true}
+          >
+            <MoneyIcon
+              className="jobInfoIcon"
+            />
+            <span>
+              RM99999 - RM999999
+            </span>
+          </Text>
+        </div>
+        <div>
+          <Text
+            baseline={true}
+            className="postingDuration"
+            whispering={true}
+          >
+            1 hour ago
+          </Text>
+        </div>
+      </div>
+    </div>
+  </Section>
+</Card>
+`;
+
 exports[`JobCard should render company with bold keyword 1`] = `
 <Card
   className="root"
@@ -277,7 +404,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -286,7 +413,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -486,7 +613,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -495,7 +622,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -680,7 +807,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -689,7 +816,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -855,7 +982,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -864,7 +991,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -1029,7 +1156,7 @@ exports[`JobCard should render plain company label 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1038,7 +1165,7 @@ exports[`JobCard should render plain company label 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -1204,7 +1331,7 @@ exports[`JobCard should render tag links 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1213,7 +1340,7 @@ exports[`JobCard should render tag links 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -1394,7 +1521,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1403,7 +1530,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -1564,7 +1691,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1573,7 +1700,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -1739,7 +1866,7 @@ exports[`JobCard should render with default props 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1748,7 +1875,7 @@ exports[`JobCard should render with default props 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -1919,7 +2046,7 @@ exports[`JobCard should render with featured label 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1928,7 +2055,7 @@ exports[`JobCard should render with featured label 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",
@@ -2094,7 +2221,7 @@ exports[`JobCard should render with selling points props 1`] = `
       Object {
         "shelfLinks": Array [
           Object {
-            "child": Array [
+            "itmes": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -2103,7 +2230,7 @@ exports[`JobCard should render with selling points props 1`] = `
             "label": "Job function",
           },
           Object {
-            "child": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accounting / Audit / Tax Services",

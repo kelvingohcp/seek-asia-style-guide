@@ -38,14 +38,14 @@ const defaultJob = {
     shelfLinks: [
       {
         label: 'Job function',
-        child: [{
+        itmes: [{
           name: 'Accountant',
           link: '/jobCard'
         }]
       },
       {
         label: 'Industry',
-        child: [{
+        items: [{
           name: 'Accounting / Audit / Tax Services',
           link: '/jobCard'
         }]
@@ -176,6 +176,20 @@ describe('JobCard', () => {
     const descriptionJob = {
       ...defaultJob,
       shelf: null
+    };
+    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should not render shelf section when none of the shelf links has substantial items', () => {
+    const descriptionJob = {
+      ...defaultJob,
+      shelf: {
+        shelfLinks: [
+          { label: 'Job Details', items: [] },
+          { label: 'Industry', items: [] }
+        ]
+      }
     };
     const wrapper = shallow(<JobCard job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
