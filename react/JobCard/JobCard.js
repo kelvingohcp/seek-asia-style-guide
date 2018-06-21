@@ -30,12 +30,17 @@ export default class JobCard extends React.Component {
     e.stopPropagation();
   };
 
+  hasShelfLinks(shelfLinks) {
+    return shelfLinks && shelfLinks.some(shelfLink => (shelfLink && shelfLink.items && shelfLink.items.length > 0));
+  }
+
   render() {
     const { shelfSectionOpen } = this.state;
     const { job, keyword = '', jobAdType, LinkComponent = defaultLink } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
     let title = (<Text waving semiStrong className={styles.positionTitle}>{job.jobTitle}</Text>);
     const keywordParts = getParts(job.jobTitle, keyword);
+    console.log(this.hasShelfLinks(job.shelf && job.shelf.shelfLinks));
     if (keywordParts) {
       title = (
         <div>
@@ -105,7 +110,7 @@ export default class JobCard extends React.Component {
               </div>
               <div>
                 <Text whispering className={styles.postingDuration}>{job.postingDuration}</Text>
-                {job.shelf &&
+                {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) &&
                   <Button color="hyperlink" className={styles.shelfToggle} onClick={this.handleShelfSectionToggle}>
                     <Text whispering baseline={false} className={styles.shelfToggleText}>
                       {shelfSectionOpen ? 'less' : 'more'} <ChevronIcon direction={shelfSectionOpen ? 'up' : 'down'} svgClassName={styles.shelfToggleIcon} />
@@ -121,7 +126,7 @@ export default class JobCard extends React.Component {
             </div>
           )}
         </Section>
-        {job.shelf && <ShelfSection shelf={job.shelf} LinkComponent={LinkComponent} showShelfSection={shelfSectionOpen} />}
+        {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && <ShelfSection shelf={job.shelf} LinkComponent={LinkComponent} showShelfSection={shelfSectionOpen} />}
       </Card>
     );
   }
