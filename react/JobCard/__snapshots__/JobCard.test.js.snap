@@ -374,10 +374,58 @@ exports[`JobCard should render company with bold keyword 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -535,10 +583,58 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -673,6 +769,26 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
@@ -685,6 +801,34 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       />
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -808,10 +952,58 @@ exports[`JobCard should render jobsDB default style 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -934,10 +1126,58 @@ exports[`JobCard should render plain company label 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -1061,10 +1301,68 @@ exports[`JobCard should render tag links 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+        "tagLinks": Array [
+          Object {
+            "child": "keyword 1",
+            "link": "/jobCard",
+          },
+          Object {
+            "child": "keyword 2",
+            "link": "/jobCard",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -1193,10 +1491,58 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -1315,10 +1661,58 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -1442,10 +1836,58 @@ exports[`JobCard should render with default props 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -1574,10 +2016,58 @@ exports[`JobCard should render with featured label 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;
 
@@ -1701,9 +2191,57 @@ exports[`JobCard should render with selling points props 1`] = `
           >
             1 hour ago
           </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
         </div>
       </div>
     </div>
   </Section>
+  <ShelfSection
+    LinkComponent={[Function]}
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "itmes": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
 </Card>
 `;

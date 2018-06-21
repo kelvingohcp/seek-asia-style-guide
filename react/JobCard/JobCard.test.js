@@ -38,14 +38,14 @@ const defaultJob = {
     shelfLinks: [
       {
         label: 'Job function',
-        child: [{
+        itmes: [{
           name: 'Accountant',
           link: '/jobCard'
         }]
       },
       {
         label: 'Industry',
-        child: [{
+        items: [{
           name: 'Accounting / Audit / Tax Services',
           link: '/jobCard'
         }]
