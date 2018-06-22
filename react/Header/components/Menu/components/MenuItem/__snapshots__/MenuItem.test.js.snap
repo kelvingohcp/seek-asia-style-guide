@@ -3,38 +3,22 @@
 exports[`MenuItem should render with a click handler 1`] = `
 <div
   className="root"
->
-  <Button
-    className="item"
-    color="hyperlink"
-    component="a"
-    onClick={[MockFunction]}
-  >
-    <span
-      key="children"
-    >
-      Awesome Brand Portal!
-    </span>
-  </Button>
-</div>
+/>
 `;
 
-exports[`MenuItem should render with a linkUrl 1`] = `
+exports[`MenuItem should render with a linkRenderer 1`] = `
 <div
   className="root"
 >
-  <Button
+  <span
     className="item"
-    color="hyperlink"
-    component="a"
-    href="https://brand.seekasia.com/"
   >
     <span
       key="children"
     >
       Awesome Brand Portal!
     </span>
-  </Button>
+  </span>
 </div>
 `;
 

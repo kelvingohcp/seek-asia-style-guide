@@ -11,7 +11,8 @@ describe('MenuItem', () => {
   };
 
   const defaultProps = {
-    brandStyles: {}
+    brandStyles: {},
+    linkRenderer: jest.fn()
   };
 
   it('should render with no icon and default props', () => {
@@ -24,10 +25,9 @@ describe('MenuItem', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render with a linkUrl', () => {
+  it('should render with a linkRenderer', () => {
     const testProps = {
-      ...defaultProps,
-      linkUrl: 'https://brand.seekasia.com/'
+      ...defaultProps
     };
     const wrapper = shallow(<MenuItem {...testProps}>Awesome Brand Portal!</MenuItem>);
     expect(wrapper).toMatchSnapshot();
@@ -55,6 +55,7 @@ describe('MenuItem', () => {
       className: 'awesomeClass',
       itemClass: 'seriously I thought css modules would solve this precarious css specificity nonsense'
     };
+
     const wrapper = shallow(<MenuItem ItemIcon={FakeIcon} {...testProps}>Awesome Brand Portal!</MenuItem>);
     expect(wrapper).toMatchSnapshot();
   });

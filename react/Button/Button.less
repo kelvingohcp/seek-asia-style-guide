@@ -1,4 +1,4 @@
-@import (reference) '~seek-asia-style-guide/theme';
+@import (reference) "~seek-asia-style-guide/theme";
 
 .hoverState(@rules) {
   &:hover,
@@ -17,9 +17,7 @@
 .buttonColor(@color, @background-color) {
   color: @color;
   background-color: @background-color;
-  .hoverState({
-    background-color: darken(@background-color, 5%);
-  });
+  .hoverState({background-color: darken(@background-color, 5%) ;});
 }
 
 .root {
@@ -39,9 +37,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
-  .activeState({
-    outline: none;
-  });
+  .activeState({outline: none;});
 }
 
 .compact {
@@ -80,13 +76,9 @@
   padding-left: 0;
   padding-right: 0;
 
-  .hoverState({
-    text-decoration: underline;
-  });
+  .hoverState({text-decoration: underline;});
 
-  .activeState({
-    transform: none;
-  });
+  .activeState({transform: none;});
 
   &.disabled {
     color: @saGrey4;
@@ -97,6 +89,18 @@
 
 .root_hyperlink.compact {
   .compactTouchableText(@whispering-type-scale);
+}
+
+.root_tertiary {
+  .buttonColor(@actionTurquoise, @saWhite);
+
+  .hoverState({background-color: @actionTurquoise; color: @saWhite;});
+  border: 1px solid @actionTurquoise;
+  padding-bottom: 10px;
+}
+
+.root_tertiary.compact {
+  padding-bottom: 7px;
 }
 
 .group {

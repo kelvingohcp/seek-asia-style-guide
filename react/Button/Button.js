@@ -9,7 +9,7 @@ export default class Button extends Component {
 
   static propTypes = {
     color: PropTypes.oneOf([
-      'callToAction', 'primary', 'secondary', 'hyperlink'
+      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary'
     ]).isRequired,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
@@ -49,6 +49,7 @@ export default class Button extends Component {
         [styles.root_primary]: color === 'primary',
         [styles.root_secondary]: color === 'secondary',
         [styles.root_hyperlink]: color === 'hyperlink',
+        [styles.root_tertiary]: color === 'tertiary',
         [styles.disabled]: disabled
       }),
       ref: this.storeButtonReference,

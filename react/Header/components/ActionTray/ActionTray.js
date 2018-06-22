@@ -1,10 +1,10 @@
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { HomeIcon, SearchIcon, BookmarkIcon, HamburgerIcon, Constants } from 'seek-asia-style-guide/react';
+import { HomeIcon, SearchIcon, HamburgerIcon, Constants } from 'seek-asia-style-guide/react';
 import styles from './ActionTray.less';
 
-const actionTrayLink = ({ linkUrl, LinkIcon, activeTab, tabName, menuOpen, brandStyles, showFlag, handleToggleMenu }) => {
+const actionTrayLink = ({ linkUrl, LinkIcon, activeTab, tabName, menuOpen, brandStyles, showFlag, handleToggleMenu, linkRenderer }) => {
   if (showFlag) {
     return activeTab === tabName ? (
       <div
@@ -18,9 +18,13 @@ const actionTrayLink = ({ linkUrl, LinkIcon, activeTab, tabName, menuOpen, brand
       </div>
     ) : (
       <div className={styles.actionTrayTab}>
-        <a href={linkUrl} className={styles.actionTrayLink}>
-          <LinkIcon svgClassName={styles.svg} />
-        </a>
+        {
+          linkRenderer({
+            href: linkUrl,
+            className: styles.actionTrayLink,
+            children: <LinkIcon svgClassName={styles.svg} />
+          })
+        }
       </div>
     );
   }
@@ -35,27 +39,27 @@ actionTrayLink.propTypes = {
   menuOpen: PropTypes.bool,
   showFlag: PropTypes.bool.isRequired,
   brandStyles: PropTypes.object.isRequired,
-  handleToggleMenu: PropTypes.func
+  handleToggleMenu: PropTypes.func,
+  baseUrl: PropTypes.string.isRequired,
+  linkRenderer: PropTypes.func
 };
 
-const ActionTray = ({ loginAvailable, brandStyles, messages, handleToggleMenu, activeTab, menuOpen, showTray = true, showHome = true, showSearch = true, showSavedJobs = true, showMenu = true }) => {
+const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOpen, showTray = true, showHome = true, showSearch = true, showMenu = true, baseUrl, linkRenderer }) => {
   const actionTrayLinkProps = {
     brandStyles,
     activeTab,
     menuOpen,
-    handleToggleMenu
+    handleToggleMenu,
+    linkRenderer
   };
-  const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH, ACTIVE_TAB_SAVED_JOBS } = Constants;
+  const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH } = Constants;
 
   if (showTray) {
     return (
       <div className={styles.root}>
-        { actionTrayLink({ showFlag: showHome, LinkIcon: HomeIcon, linkUrl: messages['header.homeUrl'], tabName: ACTIVE_TAB_HOME, ...actionTrayLinkProps }) }
-        { actionTrayLink({ showFlag: showSearch, LinkIcon: SearchIcon, linkUrl: messages['header.searchUrl'], tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps }) }
-        { loginAvailable &&
-            actionTrayLink({ showFlag: showSavedJobs, LinkIcon: BookmarkIcon, linkUrl: messages['header.savedJobsUrl'], tabName: ACTIVE_TAB_SAVED_JOBS, ...actionTrayLinkProps })
-        }
-        { showMenu && (
+        {actionTrayLink({ showFlag: showHome, LinkIcon: HomeIcon, linkUrl: baseUrl + messages['header.homeUrl'], tabName: ACTIVE_TAB_HOME, ...actionTrayLinkProps })}
+        {actionTrayLink({ showFlag: showSearch, LinkIcon: SearchIcon, linkUrl: baseUrl + messages['header.searchUrl'], tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps })}
+        {showMenu && (
           <div onClick={handleToggleMenu} className={styles.menuToggle}>
             <HamburgerIcon svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} />
           </div>
@@ -67,7 +71,6 @@ const ActionTray = ({ loginAvailable, brandStyles, messages, handleToggleMenu, a
 };
 
 ActionTray.propTypes = {
-  loginAvailable: PropTypes.bool,
   brandStyles: PropTypes.object.isRequired,
   messages: PropTypes.object.isRequired,
   handleToggleMenu: PropTypes.func.isRequired,
@@ -76,8 +79,9 @@ ActionTray.propTypes = {
   showTray: PropTypes.bool,
   showHome: PropTypes.bool,
   showSearch: PropTypes.bool,
-  showSavedJobs: PropTypes.bool,
-  showMenu: PropTypes.bool
+  showMenu: PropTypes.bool,
+  baseUrl: PropTypes.string,
+  linkRenderer: PropTypes.func
 };
 
 export default ActionTray;

@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Menu should render when authenticated 1`] = `
+<span
+  authenticationstatus="authenticated"
+  class="root baseline"
+  username="Olivia"
+>
+  <span
+    class=""
+  />
+</span>
+`;
+
+exports[`Menu should render when unauthenticated 1`] = `
+<span
+  authenticationstatus="unauthenticated"
+  class="root baseline"
+>
+  <span
+    class=""
+  />
+</span>
+`;
+
 exports[`Menu should render with default props 1`] = `
 <div
   className="root"
@@ -14,29 +37,10 @@ exports[`Menu should render with default props 1`] = `
       baseline={true}
       whisperingTitle={true}
     >
+       
       JOB SEEKER
     </Text>
   </Section>
-  <div
-    className="menuBody"
-  >
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="employerLink"
-      linkUrl="http://brand.seekasia.com"
-    >
-      <Text
-        baseline={true}
-      >
-        Awesome employers click here
-      </Text>
-    </MenuItem>
-  </div>
   <Section
     className="headerMenu"
     header={false}
@@ -66,6 +70,7 @@ exports[`Menu should render with default props 1`] = `
       <div>
         <Text
           baseline={true}
+          className="countryLanguageText"
         >
           Country & Language
         </Text>
@@ -79,6 +84,32 @@ exports[`Menu should render with default props 1`] = `
       </div>
     </MenuItem>
   </div>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
   <div
     className="subMenu"
   >
@@ -200,6 +231,7 @@ exports[`Menu should render with links list 1`] = `
       baseline={true}
       whisperingTitle={true}
     >
+       
       JOB SEEKER
     </Text>
   </Section>
@@ -271,26 +303,6 @@ exports[`Menu should render with links list 1`] = `
       </Text>
     </MenuItem>
   </div>
-  <div
-    className="menuBody"
-  >
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="employerLink"
-      linkUrl="http://brand.seekasia.com"
-    >
-      <Text
-        baseline={true}
-      >
-        Awesome employers click here
-      </Text>
-    </MenuItem>
-  </div>
   <Section
     className="headerMenu"
     header={false}
@@ -320,6 +332,7 @@ exports[`Menu should render with links list 1`] = `
       <div>
         <Text
           baseline={true}
+          className="countryLanguageText"
         >
           Country & Language
         </Text>
@@ -333,6 +346,32 @@ exports[`Menu should render with links list 1`] = `
       </div>
     </MenuItem>
   </div>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
   <div
     className="subMenu"
   >
@@ -454,29 +493,10 @@ exports[`Menu should render with menu open 1`] = `
       baseline={true}
       whisperingTitle={true}
     >
+       
       JOB SEEKER
     </Text>
   </Section>
-  <div
-    className="menuBody"
-  >
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="employerLink"
-      linkUrl="http://brand.seekasia.com"
-    >
-      <Text
-        baseline={true}
-      >
-        Awesome employers click here
-      </Text>
-    </MenuItem>
-  </div>
   <Section
     className="headerMenu"
     header={false}
@@ -506,6 +526,7 @@ exports[`Menu should render with menu open 1`] = `
       <div>
         <Text
           baseline={true}
+          className="countryLanguageText"
         >
           Country & Language
         </Text>
@@ -519,6 +540,32 @@ exports[`Menu should render with menu open 1`] = `
       </div>
     </MenuItem>
   </div>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
   <div
     className="subMenu"
   >
@@ -640,6 +687,7 @@ exports[`Menu should render with more links 1`] = `
       baseline={true}
       whisperingTitle={true}
     >
+       
       JOB SEEKER
     </Text>
   </Section>
@@ -727,26 +775,6 @@ exports[`Menu should render with more links 1`] = `
       </Text>
     </MenuItem>
   </div>
-  <div
-    className="menuBody"
-  >
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="employerLink"
-      linkUrl="http://brand.seekasia.com"
-    >
-      <Text
-        baseline={true}
-      >
-        Awesome employers click here
-      </Text>
-    </MenuItem>
-  </div>
   <Section
     className="headerMenu"
     header={false}
@@ -776,6 +804,7 @@ exports[`Menu should render with more links 1`] = `
       <div>
         <Text
           baseline={true}
+          className="countryLanguageText"
         >
           Country & Language
         </Text>
@@ -789,6 +818,32 @@ exports[`Menu should render with more links 1`] = `
       </div>
     </MenuItem>
   </div>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    itemClass="loginSignup"
+    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
+  >
+    <Text
+      baseline={true}
+    />
+  </MenuItem>
   <div
     className="subMenu"
   >

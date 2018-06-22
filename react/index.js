@@ -73,6 +73,7 @@ export { default as HomeIcon } from './HomeIcon/HomeIcon';
 export { default as IndustryIcon } from './IndustryIcon/IndustryIcon';
 export { default as InfoIcon } from './InfoIcon/InfoIcon';
 export { default as JobFunctionIcon } from './JobFunctionIcon/JobFunctionIcon';
+export { default as JobInvitationIcon } from './JobInvitationIcon/JobInvitationIcon';
 export { default as LanguageIcon } from './LanguageIcon/LanguageIcon';
 export { default as LightbulbIcon } from './LightbulbIcon/LightbulbIcon';
 export { default as LinkedInIcon } from './LinkedInIcon/LinkedInIcon';

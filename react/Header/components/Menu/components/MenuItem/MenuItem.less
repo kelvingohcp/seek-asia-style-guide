@@ -27,13 +27,17 @@
   filter: opacity(50%);
 }
 
+.item:focus {
+  outline: none;
+}
+
 .noIcon {
   height: @grid-base * 12;
 }
 
 .icon {
   padding-top: @grid-base * 2;
-  margin-right: @grid-base * 8;
+  margin-right: @grid-base * 4;
 }
 
 /* stylelint-disable */
@@ -44,3 +48,6 @@
 }
 /* stylelint-enable */
 
+.menuText {
+  text-decoration: none;
+}

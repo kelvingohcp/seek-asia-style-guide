@@ -12,6 +12,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
   brandStyles={null}
   country="my"
   language="en"
+  linkRenderer={[Function]}
   links={
     Array [
       Object {
@@ -169,6 +170,7 @@ exports[`JobStreet Header renders with default props 1`] = `
   brandStyles={null}
   country="my"
   language="en"
+  linkRenderer={[Function]}
   links={
     Array [
       Object {

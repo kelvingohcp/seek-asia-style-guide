@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import ActionTray from './ActionTray';
 import { Constants } from 'seek-asia-style-guide/react';
 
-const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH, ACTIVE_TAB_SAVED_JOBS } = Constants;
+const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH } = Constants;
 
 describe('ActionTray', () => {
   const defaultProps = {
@@ -14,9 +14,9 @@ describe('ActionTray', () => {
     },
     messages: {
       'header.homeUrl': 'header.homeUrl',
-      'header.searchUrl': 'header.searchUrl',
-      'header.savedJobsUrl': 'header.savedJobsUrl'
-    }
+      'header.searchUrl': 'header.searchUrl'
+    },
+    linkRenderer: jest.fn()
   };
 
   it('should render with default props', () => {
@@ -46,16 +46,6 @@ describe('ActionTray', () => {
     const testProps = {
       ...defaultProps,
       activeTab: ACTIVE_TAB_SEARCH
-    };
-    const wrapper = shallow(<ActionTray {...testProps} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with saved jobs tab active', () => {
-    const testProps = {
-      ...defaultProps,
-      loginAvailable: true,
-      activeTab: ACTIVE_TAB_SAVED_JOBS
     };
     const wrapper = shallow(<ActionTray {...testProps} />);
     expect(wrapper).toMatchSnapshot();
@@ -93,15 +83,6 @@ describe('ActionTray', () => {
     const testProps = {
       ...defaultProps,
       showSearch: false
-    };
-    const wrapper = shallow(<ActionTray {...testProps} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should not render saved jobs link if showSavedJobs prop is explicitly false', () => {
-    const testProps = {
-      ...defaultProps,
-      showSavedJobs: false
     };
     const wrapper = shallow(<ActionTray {...testProps} />);
     expect(wrapper).toMatchSnapshot();

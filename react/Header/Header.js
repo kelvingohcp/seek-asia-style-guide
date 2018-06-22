@@ -4,8 +4,11 @@ import classnames from 'classnames';
 import { Text } from 'seek-asia-style-guide/react';
 import Menu from './components/Menu/Menu';
 import ActionTray from './components/ActionTray/ActionTray';
+import CountryDropdown from './components/CountryDropdown/CountryDropdown';
 import { sortCurrentLocaleToTop } from './localeUtils';
 import styles from './Header.less';
+import UserAccount from './components/UserAccount/UserAccount';
+import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
 const currentLocale = ({ title, ItemIcon }) => {
   return (
@@ -16,25 +19,29 @@ const currentLocale = ({ title, ItemIcon }) => {
   );
 };
 
+const defaultLinkRenderer = props => (<a {...props} />);
+
 currentLocale.propTypes = {
   title: PropTypes.string,
   ItemIcon: PropTypes.func
 };
 
-const renderPrimaryNavLinks = ({ links, brandStyles }) => {
+const renderPrimaryNavLinks = ({ brandStyles }, links, _style, linkRenderer) => {
   const primaryNavLinks = (links && links.map) ?
     links.map((link, index) => {
       return (
         <span key={index} className={styles.primaryNavLinkWrapper}>
-          <a href={link.url} className={classnames(styles.primaryNavLink, brandStyles.primaryNavLink)}>
-            <Text>{link.title}</Text>
-          </a>
+          {
+            linkRenderer({
+              href: link.url,
+              className: classnames(styles.primaryNavLink, brandStyles.primaryNavLink),
+              children: <Text> {link.title}</Text>
+            })}
         </span>
       );
     }) : [];
-
   return (
-    <div className={styles.primaryNavLinksWrapper}>
+    <div className={_style}>
       {primaryNavLinks}
     </div>
   );
@@ -42,7 +49,8 @@ const renderPrimaryNavLinks = ({ links, brandStyles }) => {
 
 renderPrimaryNavLinks.propTypes = {
   links: PropTypes.array,
-  brandStyles: PropTypes.object.isRequired
+  brandStyles: PropTypes.object.isRequired,
+  linkRenderer: PropTypes.func
 };
 
 export default class Header extends Component {
@@ -52,6 +60,18 @@ export default class Header extends Component {
     this.state = {
       menuOpen: false
     };
+    this.handleResize = this.handleResize.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+  }
+  componentWillUnmount() {
+    window.addEventListener('resize', null);
+  }
+  handleResize() {
+    if (this.state.menuOpen && window.innerWidth > 760) {
+      this.setState({ menuOpen: false });
+    }
   }
 
   handleToggleMenu() {
@@ -59,26 +79,99 @@ export default class Header extends Component {
   }
 
   render() {
-    const { loginAvailable = false, LogoComponent, logoProps, activeTab, links, more, locales, messages, brandStyles, country, language, actionTrayProps } = this.props;
+    const {
+      LogoComponent,
+      logoProps,
+      activeTab,
+      links,
+      more,
+      locales,
+      messages,
+      brandStyles,
+      country,
+      language,
+      actionTrayProps,
+      employerSite,
+      loginAvailable = false,
+      selectCountry = true,
+      authenticationStatus,
+      userName,
+      userAccMenuItems,
+      baseUrl,
+      linkRenderer
+    } = this.props;
+
     const localeList = sortCurrentLocaleToTop({ locales, country, language });
     const menuOpen = this.state.menuOpen;
 
     return (
       <header className={styles.root}>
         <div className={styles.externalNav}>
-          <div className={styles.locale}>
-            {currentLocale(localeList[0])}
-          </div>
-          <div>
-            <Text whispering>{messages['header.employerLinkPrefix']}<a className={styles.employerLink} href={messages['header.employerSiteUrl']}>{messages['header.employerSiteTitle']}</a></Text>
-          </div>
+          {
+            // *** Country Selector ***
+            selectCountry &&
+            (
+              <CountryDropdown
+                links={localeList}
+                checked={0}
+                messages={messages}
+                linkRenderer={linkRenderer}
+              />
+            ) ||
+            (
+              <div className={styles.locale}>
+                {currentLocale(localeList[0])}
+              </div>
+            )
+          }
         </div>
         <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
-          <a href={messages['header.homeUrl']}><LogoComponent {...logoProps} className={styles.logo} /></a>
-          {renderPrimaryNavLinks({ links, brandStyles })}
+          <h1 className={styles.logo}>
+            <LogoComponent svgClassName={styles.logoSvg} {...logoProps} />
+            {
+              linkRenderer({
+                className: styles.logoLink,
+                href: '/'
+              })
+            }
+          </h1>
+          {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
+          {loginAvailable && <div className={styles.secondaryNav} />}
+          <UserAccount
+            userName={userName}
+            loginAvailable={loginAvailable}
+            authenticationStatus={authenticationStatus}
+            brandStyles={brandStyles}
+            baseUrl={baseUrl}
+            userAccMenuItems={userAccMenuItems}
+            messages={messages}
+            linkRenderer={linkRenderer}
+          />
         </div>
-        <ActionTray {...actionTrayProps} brandStyles={brandStyles} messages={messages} menuOpen={menuOpen} handleToggleMenu={this.handleToggleMenu.bind(this)} loginAvailable={loginAvailable} activeTab={activeTab} />
-        <Menu shouldShowMenu={menuOpen} messages={messages} links={links} more={more} locales={localeList} brandStyles={brandStyles} />
+        <ActionTray
+          {...actionTrayProps}
+          brandStyles={brandStyles}
+          messages={messages}
+          menuOpen={menuOpen}
+          handleToggleMenu={this.handleToggleMenu.bind(this)}
+          activeTab={activeTab}
+          baseUrl={baseUrl}
+          linkRenderer={linkRenderer}
+        />
+        <Menu
+          shouldShowMenu={menuOpen}
+          messages={messages}
+          links={links}
+          more={more}
+          locales={localeList}
+          brandStyles={brandStyles}
+          loginAvailable={loginAvailable}
+          employerSite={employerSite}
+          authenticationStatus={authenticationStatus}
+          baseUrl={baseUrl}
+          userName={userName}
+          linkRenderer={linkRenderer}
+        />
       </header>
     );
   }
@@ -96,5 +189,20 @@ Header.propTypes = {
   language: PropTypes.string.isRequired,
   messages: PropTypes.object.isRequired,
   brandStyles: PropTypes.object.isRequired,
-  actionTrayProps: PropTypes.object
+  actionTrayProps: PropTypes.object,
+  employerSite: PropTypes.bool,
+  linkRenderer: PropTypes.func,
+  selectCountry: PropTypes.bool,
+  authenticationStatus: PropTypes.oneOf([
+    AUTHENTICATED,
+    UNAUTHENTICATED,
+    AUTH_PENDING
+  ]),
+  userName: PropTypes.string,
+  userAccMenuItems: PropTypes.array,
+  baseUrl: PropTypes.string
+};
+
+Header.defaultProps = {
+  linkRenderer: defaultLinkRenderer
 };
