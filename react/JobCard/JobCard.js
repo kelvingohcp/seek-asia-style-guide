@@ -40,7 +40,7 @@ export default class JobCard extends React.Component {
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
     let title = (<Text waving semiStrong className={styles.positionTitle}>{job.jobTitle}</Text>);
     const keywordParts = getParts(job.jobTitle, keyword);
-    console.log(this.hasShelfLinks(job.shelf && job.shelf.shelfLinks));
+
     if (keywordParts) {
       title = (
         <div>
