@@ -15,7 +15,9 @@ describe('Rating', () => {
     starElem.forEach((e, i) => expect(conditons[i](e)).to.equal(true));
 
   const findStars = () => {
-    const { props: { children } } = rating;
+    const {
+      props: { children }
+    } = rating;
     return children[1];
   };
 
@@ -36,32 +38,68 @@ describe('Rating', () => {
 
     it('when rating is: 2.74', () => {
       render(<Rating rating={2.74} />);
-      return testStars(findStars(), [isFilled, isFilled, isHalfFilled, isEmpty, isEmpty]);
+      return testStars(findStars(), [
+        isFilled,
+        isFilled,
+        isHalfFilled,
+        isEmpty,
+        isEmpty
+      ]);
     });
 
     it('when rating is: 2.75', () => {
       render(<Rating rating={2.75} />);
-      return testStars(findStars(), [isFilled, isFilled, isFilled, isEmpty, isEmpty]);
+      return testStars(findStars(), [
+        isFilled,
+        isFilled,
+        isFilled,
+        isEmpty,
+        isEmpty
+      ]);
     });
 
     it('when rating is: 3.74', () => {
       render(<Rating rating={3.74} />);
-      return testStars(findStars(), [isFilled, isFilled, isFilled, isHalfFilled, isEmpty]);
+      return testStars(findStars(), [
+        isFilled,
+        isFilled,
+        isFilled,
+        isHalfFilled,
+        isEmpty
+      ]);
     });
 
     it('when rating is: 3.75', () => {
       render(<Rating rating={3.75} />);
-      return testStars(findStars(), [isFilled, isFilled, isFilled, isFilled, isEmpty]);
+      return testStars(findStars(), [
+        isFilled,
+        isFilled,
+        isFilled,
+        isFilled,
+        isEmpty
+      ]);
     });
 
     it('when rating is: 0.0', () => {
       render(<Rating rating={0.0} />);
-      return testStars(findStars(), [isEmpty, isEmpty, isEmpty, isEmpty, isEmpty]);
+      return testStars(findStars(), [
+        isEmpty,
+        isEmpty,
+        isEmpty,
+        isEmpty,
+        isEmpty
+      ]);
     });
 
     it('when rating is: 5.0', () => {
       render(<Rating rating={5.0} />);
-      return testStars(findStars(), [isFilled, isFilled, isFilled, isFilled, isFilled]);
+      return testStars(findStars(), [
+        isFilled,
+        isFilled,
+        isFilled,
+        isFilled,
+        isFilled
+      ]);
     });
   });
 

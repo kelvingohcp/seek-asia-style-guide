@@ -1,6 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TitledCard, Text, PageBlock, Section } from 'seek-asia-style-guide/react';
+import {
+  TitledCard,
+  Text,
+  PageBlock,
+  Section
+} from 'seek-asia-style-guide/react';
 import * as sketch from './TitledCard.sketch';
 
 const TitledCardContainer = ({ component: DemoComponent, componentProps }) => (
@@ -23,9 +28,7 @@ export default {
   sketch,
   block: true,
   initialProps: {
-    children: (
-      <Text>This is some text inside a card.</Text>
-    ),
+    children: <Text>This is some text inside a card.</Text>,
     text: 'Title'
   },
   options: [

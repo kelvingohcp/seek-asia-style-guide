@@ -9,17 +9,18 @@ export default class Button extends Component {
 
   static propTypes = {
     color: PropTypes.oneOf([
-      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary'
+      'callToAction',
+      'primary',
+      'secondary',
+      'hyperlink',
+      'tertiary'
     ]).isRequired,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node
     ]).isRequired,
     className: PropTypes.string,
-    component: PropTypes.oneOfType([
-      PropTypes.func,
-      PropTypes.string
-    ]),
+    component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
     isJobsDB: PropTypes.bool,
     isJobStreet: PropTypes.bool,
     compact: PropTypes.bool,
@@ -35,10 +36,20 @@ export default class Button extends Component {
     if (button !== null) {
       this.button = button;
     }
-  }
+  };
 
   render() {
-    const { color, compact, className, children, component, disabled, isJobsDB, isJobStreet, ...restProps } = this.props;
+    const {
+      color,
+      compact,
+      className,
+      children,
+      component,
+      disabled,
+      isJobsDB,
+      isJobStreet,
+      ...restProps
+    } = this.props;
 
     const combinedProps = {
       className: classnames(styles.root, className, {

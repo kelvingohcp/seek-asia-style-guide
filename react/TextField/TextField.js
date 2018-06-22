@@ -59,7 +59,7 @@ export default class TextField extends Component {
     if (textField !== null) {
       this.container = textField;
     }
-  }
+  };
 
   storeInputReference(input) {
     if (input !== null) {
@@ -74,7 +74,15 @@ export default class TextField extends Component {
   }
 
   renderInput() {
-    const { id, value, onChange, onFocus, onBlur, type, inputProps = {} } = this.props;
+    const {
+      id,
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      type,
+      inputProps = {}
+    } = this.props;
     const { ref } = inputProps;
     const allInputProps = {
       id,
@@ -88,26 +96,33 @@ export default class TextField extends Component {
       'aria-describedby': `${id}-message`
     };
 
-    return (
-      <input {...allInputProps} />
-    );
+    return <input {...allInputProps} />;
   }
 
   renderClear() {
     return (
       <span
         className={styles.clearField}
-        onMouseDown={this.handleMouseDownOnClear}>
+        onMouseDown={this.handleMouseDownOnClear}
+      >
         <ClearField />
       </span>
     );
   }
 
   render() {
-    const { id, value, compact, className, valid, onClear, inputProps = {} } = this.props;
+    const {
+      id,
+      value,
+      compact,
+      className,
+      valid,
+      onClear,
+      inputProps = {}
+    } = this.props;
     const resolvedValue = value || inputProps.value || '';
     const hasValue = resolvedValue.length > 0;
-    const canClear = hasValue && (typeof onClear === 'function');
+    const canClear = hasValue && typeof onClear === 'function';
     const classNames = classnames({
       [styles.root]: true,
       [styles.invalid]: valid === false,
@@ -117,14 +132,36 @@ export default class TextField extends Component {
     });
 
     // eslint-disable-next-line react/prop-types
-    const { label, labelProps, secondaryLabel, tertiaryLabel, invalid, help, helpProps, message, messageProps } = this.props;
+    const {
+      label,
+      labelProps,
+      secondaryLabel,
+      tertiaryLabel,
+      invalid,
+      help,
+      helpProps,
+      message,
+      messageProps
+    } = this.props;
 
     return (
       <div ref={this.storeContainerReference} className={classNames}>
-        <FieldLabel {...{ id, label, labelProps, secondaryLabel, tertiaryLabel }} />
+        <FieldLabel
+          {...{ id, label, labelProps, secondaryLabel, tertiaryLabel }}
+        />
         {this.renderInput()}
         {this.renderClear()}
-        <FieldMessage {...{ id: `${id}-message`, invalid, help, helpProps, valid, message, messageProps }} />
+        <FieldMessage
+          {...{
+            id: `${id}-message`,
+            invalid,
+            help,
+            helpProps,
+            valid,
+            message,
+            messageProps
+          }}
+        />
       </div>
     );
   }

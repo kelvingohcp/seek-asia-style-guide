@@ -20,8 +20,10 @@ const getMarkup = country => {
 };
 
 export default function Logo({ country, svgClassName, ...restProps }) {
-  const svgWithClasses = getMarkup(country)
-    .replace('<svg ', `<svg class="${svgClassName}" `);
+  const svgWithClasses = getMarkup(country).replace(
+    '<svg ',
+    `<svg class="${svgClassName}" `
+  );
 
   return (
     <span dangerouslySetInnerHTML={{ __html: svgWithClasses }} {...restProps} /> // eslint-disable-line react/no-danger

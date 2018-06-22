@@ -21,7 +21,8 @@ const conditionallyRenderAside = ({
         [styles.aside]: true,
         [styles.gap]: !disableGapInBetween
       })}
-      style={{ flexBasis: size }}>
+      style={{ flexBasis: size }}
+    >
       {renderAside()}
     </div>
   ) : null;
@@ -44,7 +45,8 @@ export default function AsidedLayout({
         [className]: className,
         [styles.root]: true,
         [styles.reverse]: reverse
-      })}>
+      })}
+    >
       {conditionallyRenderAside({
         condition: reverse,
         renderAside,

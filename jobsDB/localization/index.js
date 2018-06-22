@@ -1,4 +1,3 @@
-
 import enHkLocalization from './en-hk';
 import enSgLocalization from './en-sg';
 import enIdLocalization from './en-id';
@@ -16,8 +15,9 @@ const localization = {
 };
 
 export const getLocalization = ({ language, country }) => {
-  return localization[`${language.toLowerCase()}-${country.toLowerCase()}`] ?
-    localization[`${language.toLowerCase()}-${country.toLowerCase()}`] : {};
+  return localization[`${language.toLowerCase()}-${country.toLowerCase()}`]
+    ? localization[`${language.toLowerCase()}-${country.toLowerCase()}`]
+    : {};
 };
 
 export default localization;

@@ -50,19 +50,20 @@ export default class Checkbox extends Component {
   };
 
   renderButton(label) {
-    return (
-      <span className={styles.button}>
-        {label}
-      </span>
-    );
+    return <span className={styles.button}>{label}</span>;
   }
 
   renderStandard(label, extraLabel) {
     return (
       <div className={styles.standard}>
         {this.renderCheckBox(LEFT)}
-        <span className={styles.standardLabel}>{label}
-          {extraLabel && <Text baseline={false} className={styles.extraLabel} whispering>{extraLabel}</Text>}
+        <span className={styles.standardLabel}>
+          {label}
+          {extraLabel && (
+            <Text baseline={false} className={styles.extraLabel} whispering>
+              {extraLabel}
+            </Text>
+          )}
         </span>
         {this.renderCheckBox(RIGHT)}
       </div>
@@ -70,15 +71,23 @@ export default class Checkbox extends Component {
   }
 
   renderCheckBox(currentPosition) {
-    const { position, inputProps: { checked } } = this.props;
+    const {
+      position,
+      inputProps: { checked }
+    } = this.props;
     const checkBoxStyle = classnames(
       styles.checkBox,
       position === LEFT ? styles.checkBoxLeft : styles.checkBoxRight,
       checked ? styles.checked : null
     );
 
-    return position === currentPosition && (
-      <CheckMarkIcon svgClassName={styles.checkMark} className={checkBoxStyle} />
+    return (
+      position === currentPosition && (
+        <CheckMarkIcon
+          svgClassName={styles.checkMark}
+          className={checkBoxStyle}
+        />
+      )
     );
   }
 
@@ -87,17 +96,23 @@ export default class Checkbox extends Component {
 
     return (
       <label className={styles.label} htmlFor={id}>
-        {
-          type === STANDARD ?
-            this.renderStandard(label, extraLabel) :
-            this.renderButton(label)
-        }
+        {type === STANDARD
+          ? this.renderStandard(label, extraLabel)
+          : this.renderButton(label)}
       </label>
     );
   }
 
   renderInput() {
-    const { id, value, checked, onChange, onFocus, onBlur, inputProps } = this.props;
+    const {
+      id,
+      value,
+      checked,
+      onChange,
+      onFocus,
+      onBlur,
+      inputProps
+    } = this.props;
 
     const allInputProps = {
       id,
@@ -110,9 +125,7 @@ export default class Checkbox extends Component {
       type: 'checkbox'
     };
 
-    return (
-      <input {...allInputProps} />
-    );
+    return <input {...allInputProps} />;
   }
 
   render() {

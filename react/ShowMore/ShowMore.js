@@ -54,32 +54,44 @@ export default class ShowMore extends Component {
 
   render() {
     const { isPanelOpened, contentHeight } = this.state;
-    const { disable, showLessHeight, children, lblShowLess, lblShowMore } = this.props;
+    const {
+      disable,
+      showLessHeight,
+      children,
+      lblShowLess,
+      lblShowMore
+    } = this.props;
 
-    const panelHeight = (isPanelOpened || disable) ? contentHeight : showLessHeight;
+    const panelHeight =
+      isPanelOpened || disable ? contentHeight : showLessHeight;
     return (
       <div>
-        <div
-          className={styles.panel}
-          style={{ maxHeight: `${panelHeight}px` }} >
+        <div className={styles.panel} style={{ maxHeight: `${panelHeight}px` }}>
           <div ref={this.myRef}>{children}</div>
         </div>
-        {
-          !disable && contentHeight > showLessHeight && (
-            <div className={classnames({ [styles.outCanvasGradientMaskTop]: !isPanelOpened })}>
+        {!disable &&
+          contentHeight > showLessHeight && (
+            <div
+              className={classnames({
+                [styles.outCanvasGradientMaskTop]: !isPanelOpened
+              })}
+            >
               <Button
-                id='btnShowMore'
-                color='hyperlink'
+                id="btnShowMore"
+                color="hyperlink"
                 className={styles.button}
-                onClick={this.handleClick} >
+                onClick={this.handleClick}
+              >
+                <span>{isPanelOpened ? lblShowLess : lblShowMore}</span>
                 <span>
-                  {isPanelOpened ? lblShowLess : lblShowMore}
+                  {' '}
+                  <span>
+                    <ChevronIcon direction={isPanelOpened ? 'up' : 'down'} />
+                  </span>
                 </span>
-                <span> <span><ChevronIcon direction={isPanelOpened ? 'up' : 'down'} /></span></span>
               </Button>
             </div>
-          )
-        }
+          )}
       </div>
     );
   }

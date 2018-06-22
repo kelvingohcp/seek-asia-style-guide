@@ -67,7 +67,12 @@ export default {
     value: '...',
     onChange: () => {},
     autosuggestProps: {
-      suggestions: ['Developer', 'Product manager', 'Iteration manager', 'Designer'],
+      suggestions: [
+        'Developer',
+        'Product manager',
+        'Iteration manager',
+        'Designer'
+      ],
       onSuggestionsFetchRequested: () => {},
       onSuggestionsClearRequested: () => {},
       renderSuggestion: suggestion => <div>{suggestion}</div>,

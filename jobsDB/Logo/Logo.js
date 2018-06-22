@@ -5,11 +5,17 @@ import markup from './JobsDBLogo.svg';
 import styles from './Logo.less';
 
 export default function Logo({ svgClassName, className, ...restProps }) {
-  const svgWithClasses = markup
-    .replace('<svg ', `<svg class="${svgClassName}" `);
+  const svgWithClasses = markup.replace(
+    '<svg ',
+    `<svg class="${svgClassName}" `
+  );
 
   return (
-    <span className={classnames(styles.logoWrapper, className)} dangerouslySetInnerHTML={{ __html: svgWithClasses }} {...restProps} /> // eslint-disable-line react/no-danger
+    <span
+      className={classnames(styles.logoWrapper, className)}
+      dangerouslySetInnerHTML={{ __html: svgWithClasses }}
+      {...restProps}
+    /> // eslint-disable-line react/no-danger
   );
 }
 

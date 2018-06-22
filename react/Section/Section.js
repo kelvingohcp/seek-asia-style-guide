@@ -41,7 +41,8 @@ export default function Section({
         [styles[level]]: level,
         [styles.jobsDB]: isJobsDB,
         [styles.jobStreet]: isJobStreet
-      })}>
+      })}
+    >
       {children}
     </div>
   );

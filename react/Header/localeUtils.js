@@ -4,16 +4,12 @@ export const sortCurrentLocaleToTop = ({ locales, country, language }) => {
   });
 
   const localeWithDiffLang = locales.filter(locale => {
-    return ((locale.country === country) && !(locale.language === language));
+    return locale.country === country && !(locale.language === language);
   });
 
   const otherLocales = locales.filter(locale => {
     return !(locale.country === country);
   });
 
-  return [
-    ...currentLocale,
-    ...localeWithDiffLang,
-    ...otherLocales
-  ];
+  return [...currentLocale, ...localeWithDiffLang, ...otherLocales];
 };

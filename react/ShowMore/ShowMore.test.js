@@ -26,8 +26,9 @@ describe('ShowMore:', () => {
     const wrapper = renderer.create(
       <ShowMore
         showLessHeight={150}
-        lblShowMore='Show more'
-        lblShowLess='Show less'>
+        lblShowMore="Show more"
+        lblShowLess="Show less"
+      >
         {card}
       </ShowMore>,
       options

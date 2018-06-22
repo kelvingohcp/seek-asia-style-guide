@@ -16,8 +16,10 @@ export default class PlusIcon extends Component {
 
   render() {
     const { svgClassName, ...restProps } = this.props;
-    const svgMarkupWithClassName = svgMarkup
-      .replace('<svg ', `<svg class="${svgClassName}" `);
+    const svgMarkupWithClassName = svgMarkup.replace(
+      '<svg ',
+      `<svg class="${svgClassName}" `
+    );
 
     /* eslint-disable react/no-danger */
     return (

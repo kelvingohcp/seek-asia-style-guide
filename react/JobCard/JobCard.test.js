@@ -12,7 +12,8 @@ const defaultJob = {
     link: '/jobCard'
   },
   jobTitle: 'Senior Software Engineer (6 months Contract)',
-  jobUrl: 'https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J',
+  jobUrl:
+    'https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J',
   locations: [
     {
       name: 'Pahang',
@@ -30,25 +31,31 @@ const defaultJob = {
       }
     }
   ],
-  description: 'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
-  companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
+  description:
+    'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
+  companyLogoUrl:
+    'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
   postingDuration: '1 hour ago',
   salary: 'RM99999 - RM999999',
   shelf: {
     shelfLinks: [
       {
         label: 'Job function',
-        itmes: [{
-          name: 'Accountant',
-          link: '/jobCard'
-        }]
+        itmes: [
+          {
+            name: 'Accountant',
+            link: '/jobCard'
+          }
+        ]
       },
       {
         label: 'Industry',
-        items: [{
-          name: 'Accounting / Audit / Tax Services',
-          link: '/jobCard'
-        }]
+        items: [
+          {
+            name: 'Accounting / Audit / Tax Services',
+            link: '/jobCard'
+          }
+        ]
       }
     ]
   }
@@ -127,7 +134,13 @@ describe('JobCard', () => {
       ...defaultJob
     };
     const keyword = 'Seek';
-    const wrapper = shallow(<JobCard job={descriptionJob} keyword={keyword} jobAdType={JOBADTYPE_JOBSDB_DEFAULT} />);
+    const wrapper = shallow(
+      <JobCard
+        job={descriptionJob}
+        keyword={keyword}
+        jobAdType={JOBADTYPE_JOBSDB_DEFAULT}
+      />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -136,7 +149,13 @@ describe('JobCard', () => {
       ...defaultJob
     };
     const keyword = 'Seek';
-    const wrapper = shallow(<JobCard job={descriptionJob} keyword={keyword} jobAdType={JOBADTYPE_JOBSTREET_STANDOUT} />);
+    const wrapper = shallow(
+      <JobCard
+        job={descriptionJob}
+        keyword={keyword}
+        jobAdType={JOBADTYPE_JOBSTREET_STANDOUT}
+      />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

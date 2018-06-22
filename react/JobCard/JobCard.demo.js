@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { JobCard, PageBlock, Constants } from 'seek-asia-style-guide/react';
 
-const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSDB_BRANDED, JOBADTYPE_JOBSTREET_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
+const {
+  JOBADTYPE_JOBSDB_DEFAULT,
+  JOBADTYPE_JOBSDB_BRANDED,
+  JOBADTYPE_JOBSTREET_DEFAULT,
+  JOBADTYPE_JOBSTREET_STANDOUT
+} = Constants;
 
 const JobCardContainer = ({ component: DemoComponent, componentProps }) => {
   return (
@@ -31,7 +36,8 @@ export default {
         title: 'Jobs at SEEK Asia'
       },
       jobTitle: 'Senior Software Engineer (6 months Contract)',
-      jobUrl: 'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
+      jobUrl:
+        'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
       locations: [
         {
           name: 'Pahang',
@@ -52,9 +58,12 @@ export default {
           }
         }
       ],
-      description: 'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
-      companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
-      companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg',
+      description:
+        'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
+      companyLogoUrl:
+        'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
+      companyPictureUrl:
+        'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg',
       postingDuration: '1 hour ago',
       salary: 'RM99999 - RM999999',
       sellingPoints: [
@@ -171,11 +180,14 @@ export default {
                   },
                   {
                     label: 'Industry',
-                    items: [{
-                      name: 'Accounting / Audit / Tax Services',
-                      link: '/jobCard',
-                      title: 'Limit result to Accounting / Audit / Tax Services'
-                    }]
+                    items: [
+                      {
+                        name: 'Accounting / Audit / Tax Services',
+                        link: '/jobCard',
+                        title:
+                          'Limit result to Accounting / Audit / Tax Services'
+                      }
+                    ]
                   }
                 ]
               }
@@ -261,7 +273,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg'
+              companyPictureUrl:
+                'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg'
             }
           })
         },
@@ -271,7 +284,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/56932/images/photo/56932_photo_0_213672.jpg'
+              companyPictureUrl:
+                'https://siva.jsstatic.com/my/56932/images/photo/56932_photo_0_213672.jpg'
             }
           })
         },
@@ -281,7 +295,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/86688/images/photo/86688_photo_0_400935.jpg'
+              companyPictureUrl:
+                'https://siva.jsstatic.com/my/86688/images/photo/86688_photo_0_400935.jpg'
             }
           })
         },
@@ -291,7 +306,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/119697/images/photo/119697_photo_0_738574.jpg'
+              companyPictureUrl:
+                'https://siva.jsstatic.com/my/119697/images/photo/119697_photo_0_738574.jpg'
             }
           })
         }

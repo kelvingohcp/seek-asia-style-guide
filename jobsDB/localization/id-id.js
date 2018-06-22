@@ -1,4 +1,9 @@
-import { FlagHKIcon, FlagIDIcon, FlagSGIcon, FlagTHIcon } from 'seek-asia-style-guide/react';
+import {
+  FlagHKIcon,
+  FlagIDIcon,
+  FlagSGIcon,
+  FlagTHIcon
+} from 'seek-asia-style-guide/react';
 
 export default {
   'header.homeTitle': 'Beranda',
@@ -23,7 +28,8 @@ export default {
   'header.logoutTitle': 'Keluar',
   'header.logoutUrl': 'https://www.thisislogoutlink.test',
   'header.seperatorOr': 'atau',
-  'header.searchUrl': '/ID/ID/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=JSRSB',
+  'header.searchUrl':
+    '/ID/ID/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=JSRSB',
   'menu.jobSeekerHeader': 'KANDIDAT',
   'menu.jobSeekerProfile': 'PROFIL',
   'menu.settingsHeader': 'PENGATURAN',
@@ -31,48 +37,54 @@ export default {
   'menu.moreHeader': 'MORE',
   'menu.countryAndLanguage': 'Negara & Bahasa',
   'menu.backToMenu': 'Kembali ke menu',
-  'header.countryList': [ {
-    title: 'Hong Kong (English)',
-    ItemIcon: FlagHKIcon,
-    url: '',
-    language: 'en',
-    country: 'hk',
-    languageDisplay: 'English'
-  }, {
-    title: 'Indonesia (English)',
-    ItemIcon: FlagIDIcon,
-    url: '',
-    language: 'en',
-    country: 'id',
-    languageDisplay: 'English'
-
-  }, {
-    title: 'Indonesia (Bahasa)',
-    ItemIcon: FlagIDIcon,
-    url: '',
-    language: 'id',
-    country: 'id',
-    languageDisplay: 'Bahasa'
-  }, {
-    title: 'Singapura (English)',
-    ItemIcon: FlagSGIcon,
-    url: '',
-    language: 'en',
-    country: 'sg',
-    languageDisplay: 'English'
-  }, {
-    title: 'Thailand (English)',
-    ItemIcon: FlagTHIcon,
-    url: '',
-    language: 'en',
-    country: 'th',
-    languageDisplay: 'English'
-  }, {
-    title: 'ไทย (ภาษาไทย)',
-    ItemIcon: FlagTHIcon,
-    url: '',
-    language: 'th',
-    country: 'th',
-    languageDisplay: 'ภาษาไทย'
-  } ]
+  'header.countryList': [
+    {
+      title: 'Hong Kong (English)',
+      ItemIcon: FlagHKIcon,
+      url: '',
+      language: 'en',
+      country: 'hk',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'Indonesia (English)',
+      ItemIcon: FlagIDIcon,
+      url: '',
+      language: 'en',
+      country: 'id',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'Indonesia (Bahasa)',
+      ItemIcon: FlagIDIcon,
+      url: '',
+      language: 'id',
+      country: 'id',
+      languageDisplay: 'Bahasa'
+    },
+    {
+      title: 'Singapura (English)',
+      ItemIcon: FlagSGIcon,
+      url: '',
+      language: 'en',
+      country: 'sg',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'Thailand (English)',
+      ItemIcon: FlagTHIcon,
+      url: '',
+      language: 'en',
+      country: 'th',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'ไทย (ภาษาไทย)',
+      ItemIcon: FlagTHIcon,
+      url: '',
+      language: 'th',
+      country: 'th',
+      languageDisplay: 'ภาษาไทย'
+    }
+  ]
 };

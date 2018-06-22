@@ -42,18 +42,14 @@ export default {
           label: 'Heart Icon',
           transformProps: props => ({
             ...props,
-            icon: (
-              <HeartIcon />
-            )
+            icon: <HeartIcon />
           })
         },
         {
           label: 'Star Icon',
           transformProps: props => ({
             ...props,
-            icon: (
-              <StarIcon />
-            )
+            icon: <StarIcon />
           })
         }
       ]
@@ -66,9 +62,7 @@ export default {
           label: 'with Badge',
           transformProps: props => ({
             ...props,
-            badge: (
-              <Badge label='Badge' color='default' isBold />
-            )
+            badge: <Badge label="Badge" color="default" isBold />
           })
         }
       ]

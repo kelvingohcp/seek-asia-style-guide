@@ -3,14 +3,15 @@ import { shallow } from 'enzyme';
 import Alert from './Alert';
 import { TONE, LEVEL } from '../Section/Section';
 
-const renderAlert = props => shallow(
-  <Alert
-    tone={TONE.POSITIVE}
-    level={LEVEL.PRIMARY}
-    message="Test message"
-    {...props}
-  />
-);
+const renderAlert = props =>
+  shallow(
+    <Alert
+      tone={TONE.POSITIVE}
+      level={LEVEL.PRIMARY}
+      message="Test message"
+      {...props}
+    />
+  );
 
 describe('Alert:', () => {
   describe('types:', () => {

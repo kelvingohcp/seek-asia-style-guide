@@ -1,4 +1,9 @@
-import { FlagHKIcon, FlagIDIcon, FlagSGIcon, FlagTHIcon } from 'seek-asia-style-guide/react';
+import {
+  FlagHKIcon,
+  FlagIDIcon,
+  FlagSGIcon,
+  FlagTHIcon
+} from 'seek-asia-style-guide/react';
 
 export default {
   'header.homeTitle': 'หน้าหลัก',
@@ -23,7 +28,8 @@ export default {
   'header.logoutTitle': 'ออกจากระบบ',
   'header.logoutUrl': 'https://www.thisislogoutlink.test',
   'header.seperatorOr': 'หรือ',
-  'header.searchUrl': '/TH/TH/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS',
+  'header.searchUrl':
+    '/TH/TH/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS',
   'menu.jobSeekerHeader': 'ผู้หางาน',
   'menu.jobSeekerProfile': 'โปรไฟล์',
   'menu.settingsHeader': 'การตั้งค่า',
@@ -31,48 +37,54 @@ export default {
   'menu.moreHeader': 'MORE',
   'menu.countryAndLanguage': 'ประเทศ และ ภาษา',
   'menu.backToMenu': 'กลับสู่หน้าเมนู',
-  'header.countryList': [ {
-    title: 'ฮ่องกง (English)',
-    ItemIcon: FlagHKIcon,
-    url: '',
-    language: 'en',
-    country: 'hk',
-    languageDisplay: 'English'
-  }, {
-    title: 'อินโดนีเซีย (English)',
-    ItemIcon: FlagIDIcon,
-    url: '',
-    language: 'en',
-    country: 'id',
-    languageDisplay: 'English'
-
-  }, {
-    title: 'อินโดนีเซีย (Bahasa)',
-    ItemIcon: FlagIDIcon,
-    url: '',
-    language: 'id',
-    country: 'id',
-    languageDisplay: 'Bahasa'
-  }, {
-    title: 'สิงคโปร์ (English)',
-    ItemIcon: FlagSGIcon,
-    url: '',
-    language: 'en',
-    country: 'sg',
-    languageDisplay: 'English'
-  }, {
-    title: 'ไทย (English)',
-    ItemIcon: FlagTHIcon,
-    url: '',
-    language: 'en',
-    country: 'th',
-    languageDisplay: 'English'
-  }, {
-    title: 'ไทย (ภาษาไทย)',
-    ItemIcon: FlagTHIcon,
-    url: '',
-    language: 'th',
-    country: 'th',
-    languageDisplay: 'ภาษาไทย'
-  } ]
+  'header.countryList': [
+    {
+      title: 'ฮ่องกง (English)',
+      ItemIcon: FlagHKIcon,
+      url: '',
+      language: 'en',
+      country: 'hk',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'อินโดนีเซีย (English)',
+      ItemIcon: FlagIDIcon,
+      url: '',
+      language: 'en',
+      country: 'id',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'อินโดนีเซีย (Bahasa)',
+      ItemIcon: FlagIDIcon,
+      url: '',
+      language: 'id',
+      country: 'id',
+      languageDisplay: 'Bahasa'
+    },
+    {
+      title: 'สิงคโปร์ (English)',
+      ItemIcon: FlagSGIcon,
+      url: '',
+      language: 'en',
+      country: 'sg',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'ไทย (English)',
+      ItemIcon: FlagTHIcon,
+      url: '',
+      language: 'en',
+      country: 'th',
+      languageDisplay: 'English'
+    },
+    {
+      title: 'ไทย (ภาษาไทย)',
+      ItemIcon: FlagTHIcon,
+      url: '',
+      language: 'th',
+      country: 'th',
+      languageDisplay: 'ภาษาไทย'
+    }
+  ]
 };

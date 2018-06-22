@@ -2,7 +2,12 @@ import Constants from '../Constants/Constants';
 import match from 'autosuggest-highlight/match';
 import parse from 'autosuggest-highlight/parse';
 
-const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSDB_BRANDED, JOBADTYPE_JOBSTREET_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
+const {
+  JOBADTYPE_JOBSDB_DEFAULT,
+  JOBADTYPE_JOBSDB_BRANDED,
+  JOBADTYPE_JOBSTREET_DEFAULT,
+  JOBADTYPE_JOBSTREET_STANDOUT
+} = Constants;
 
 const jobsdbDefault = {
   showCompanyLogo: false,

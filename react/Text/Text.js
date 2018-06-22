@@ -51,7 +51,8 @@ export default function Text({
         [styles.whispering]: whispering,
         [styles.raw]: raw,
         [styles.baseline]: baseline
-      })}>
+      })}
+    >
       <span
         className={classnames({
           [stylesPositive.root]: positive,
@@ -61,7 +62,8 @@ export default function Text({
           [stylesSemiStrong.root]: semiStrong,
           [stylesRegular.root]: regular,
           [styles.light]: light
-        })}>
+        })}
+      >
         {children}
       </span>
     </span>

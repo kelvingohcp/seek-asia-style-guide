@@ -26,8 +26,10 @@ export default class Alert extends Component {
   static displayName = 'Alert';
 
   static propTypes = {
-    tone: PropTypes.oneOf([TONE.POSITIVE, TONE.INFO, TONE.CRITICAL, TONE.HELP]).isRequired,
-    level: PropTypes.oneOf([LEVEL.PRIMARY, LEVEL.SECONDARY, LEVEL.TERTIARY]).isRequired,
+    tone: PropTypes.oneOf([TONE.POSITIVE, TONE.INFO, TONE.CRITICAL, TONE.HELP])
+      .isRequired,
+    level: PropTypes.oneOf([LEVEL.PRIMARY, LEVEL.SECONDARY, LEVEL.TERTIARY])
+      .isRequired,
     message: PropTypes.node,
     pullout: PropTypes.bool,
     hideIcon: PropTypes.bool,
@@ -50,9 +52,13 @@ export default class Alert extends Component {
 
     return (
       <div className={styles.alert}>
-        {(!hideIcon && Icon) && <Icon className={styles.icon} />}
+        {!hideIcon && Icon && <Icon className={styles.icon} />}
         <div className={styles.text}>
-          { message && (<Text raw baseline={false}>{message}</Text>)}
+          {message && (
+            <Text raw baseline={false}>
+              {message}
+            </Text>
+          )}
           {children}
         </div>
         {onClose && (
@@ -62,10 +68,17 @@ export default class Alert extends Component {
         )}
       </div>
     );
-  }
+  };
 
   render() {
-    const { hideIcon, onClose, tone, level, pullout, ...restProps } = this.props;
+    const {
+      hideIcon,
+      onClose,
+      tone,
+      level,
+      pullout,
+      ...restProps
+    } = this.props;
 
     const additionalProps = omit(restProps, 'message');
 
@@ -88,7 +101,8 @@ export default class Alert extends Component {
         level={level}
         pullout={pullout}
         className={rootClasses}
-        {...additionalProps}>
+        {...additionalProps}
+      >
         {this.renderContents()}
       </Section>
     );

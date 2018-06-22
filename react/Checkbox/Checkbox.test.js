@@ -22,14 +22,18 @@ describe('Checkbox', () => {
   });
 
   it('should pass through the value', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} value="foo" checked={true} />);
+    const wrapper = shallow(
+      <Checkbox {...requiredProps} value="foo" checked={true} />
+    );
     const inputValue = wrapper.find('input').prop('value');
     expect(inputValue).toEqual('foo');
   });
 
   it('should render with className', () => {
     const className = 'testClassname';
-    const wrapper = shallow(<Checkbox {...requiredProps} className={className} />);
+    const wrapper = shallow(
+      <Checkbox {...requiredProps} className={className} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -39,7 +43,9 @@ describe('Checkbox', () => {
   });
 
   it('should render with compact checkbox style', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} type="standard" standard />);
+    const wrapper = shallow(
+      <Checkbox {...requiredProps} type="standard" standard />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -66,7 +72,10 @@ describe('Checkbox', () => {
   describe('inputProps', () => {
     it('should invoke the change handler', () => {
       const handleChange = jest.fn();
-      const props = { ...requiredProps, inputProps: { onChange: handleChange, checked: false } };
+      const props = {
+        ...requiredProps,
+        inputProps: { onChange: handleChange, checked: false }
+      };
       const checkedEvent = { target: { checked: true } };
       const wrapper = shallow(<Checkbox {...props} />);
       wrapper.find('input').simulate('change', checkedEvent);
@@ -74,13 +83,20 @@ describe('Checkbox', () => {
     });
 
     it('should render as checked', () => {
-      const wrapper = shallow(<Checkbox {...requiredProps} inputProps={{ checked: true }} />);
+      const wrapper = shallow(
+        <Checkbox {...requiredProps} inputProps={{ checked: true }} />
+      );
       const inputChecked = wrapper.find('input').prop('checked');
       expect(inputChecked).toEqual(true);
     });
 
     it('should pass through other props to the input', () => {
-      const wrapper = shallow(<Checkbox {...requiredProps} inputProps={{ checked: false, 'data-automation': 'first-name-field' }} />);
+      const wrapper = shallow(
+        <Checkbox
+          {...requiredProps}
+          inputProps={{ checked: false, 'data-automation': 'first-name-field' }}
+        />
+      );
       expect(wrapper).toMatchSnapshot();
     });
   });

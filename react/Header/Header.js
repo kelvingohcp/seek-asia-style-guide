@@ -8,7 +8,11 @@ import CountryDropdown from './components/CountryDropdown/CountryDropdown';
 import { sortCurrentLocaleToTop } from './localeUtils';
 import styles from './Header.less';
 import UserAccount from './components/UserAccount/UserAccount';
-import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
+import {
+  AUTHENTICATED,
+  UNAUTHENTICATED,
+  AUTH_PENDING
+} from 'seek-asia-style-guide/react/private/authStatusTypes';
 
 const currentLocale = ({ title, ItemIcon }) => {
   return (
@@ -19,32 +23,37 @@ const currentLocale = ({ title, ItemIcon }) => {
   );
 };
 
-const defaultLinkRenderer = props => (<a {...props} />);
+const defaultLinkRenderer = props => <a {...props} />;
 
 currentLocale.propTypes = {
   title: PropTypes.string,
   ItemIcon: PropTypes.func
 };
 
-const renderPrimaryNavLinks = ({ brandStyles }, links, _style, linkRenderer) => {
-  const primaryNavLinks = (links && links.map) ?
-    links.map((link, index) => {
-      return (
-        <span key={index} className={styles.primaryNavLinkWrapper}>
-          {
-            linkRenderer({
-              href: link.url,
-              className: classnames(styles.primaryNavLink, brandStyles.primaryNavLink),
-              children: <Text> {link.title}</Text>
-            })}
-        </span>
-      );
-    }) : [];
-  return (
-    <div className={_style}>
-      {primaryNavLinks}
-    </div>
-  );
+const renderPrimaryNavLinks = (
+  { brandStyles },
+  links,
+  _style,
+  linkRenderer
+) => {
+  const primaryNavLinks =
+    links && links.map
+      ? links.map((link, index) => {
+          return (
+            <span key={index} className={styles.primaryNavLinkWrapper}>
+              {linkRenderer({
+                href: link.url,
+                className: classnames(
+                  styles.primaryNavLink,
+                  brandStyles.primaryNavLink
+                ),
+                children: <Text> {link.title}</Text>
+              })}
+            </span>
+          );
+        })
+      : [];
+  return <div className={_style}>{primaryNavLinks}</div>;
 };
 
 renderPrimaryNavLinks.propTypes = {
@@ -107,35 +116,36 @@ export default class Header extends Component {
     return (
       <header className={styles.root}>
         <div className={styles.externalNav}>
-          {
-            // *** Country Selector ***
-            selectCountry &&
-            (
-              <CountryDropdown
-                links={localeList}
-                checked={0}
-                messages={messages}
-                linkRenderer={linkRenderer}
-              />
-            ) ||
-            (
-              <div className={styles.locale}>
-                {currentLocale(localeList[0])}
-              </div>
-            )
-          }
+          {// *** Country Selector ***
+          (selectCountry && (
+            <CountryDropdown
+              links={localeList}
+              checked={0}
+              messages={messages}
+              linkRenderer={linkRenderer}
+            />
+          )) || (
+            <div className={styles.locale}>{currentLocale(localeList[0])}</div>
+          )}
         </div>
-        <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
+        <div
+          className={
+            loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin
+          }
+        >
           <h1 className={styles.logo}>
             <LogoComponent svgClassName={styles.logoSvg} {...logoProps} />
-            {
-              linkRenderer({
-                className: styles.logoLink,
-                href: '/'
-              })
-            }
+            {linkRenderer({
+              className: styles.logoLink,
+              href: '/'
+            })}
           </h1>
-          {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
+          {renderPrimaryNavLinks(
+            { brandStyles },
+            links,
+            styles.primaryNavLinksWrapper,
+            linkRenderer
+          )}
           {loginAvailable && <div className={styles.secondaryNav} />}
           <UserAccount
             userName={userName}

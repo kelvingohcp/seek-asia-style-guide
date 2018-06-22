@@ -30,11 +30,13 @@ export default class Dropdown extends Component {
     options: PropTypes.arrayOf(
       PropTypes.shape({
         value: PropTypes.oneOfType([
-          PropTypes.arrayOf(PropTypes.shape({
-            value: PropTypes.string,
-            label: PropTypes.string,
-            props: PropTypes.object
-          })),
+          PropTypes.arrayOf(
+            PropTypes.shape({
+              value: PropTypes.string,
+              label: PropTypes.string,
+              props: PropTypes.object
+            })
+          ),
           PropTypes.string
         ]).isRequired,
         label: PropTypes.string,
@@ -68,7 +70,16 @@ export default class Dropdown extends Component {
   }
 
   renderSelect() {
-    const { id, value, onChange, onFocus, onBlur, inputProps, options, placeholder } = this.props;
+    const {
+      id,
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      inputProps,
+      options,
+      placeholder
+    } = this.props;
     const inputStyles = classnames({
       [styles.dropdown]: true,
       [styles.placeholderSelected]: !value && !inputProps.value
@@ -88,14 +99,16 @@ export default class Dropdown extends Component {
         <option value="" disabled={!this.props.placeholderSelectable}>
           {placeholder}
         </option>
-        {
-          options.map(option => {
-            if (Array.isArray(option.value)) {
-              return (<optgroup value="" label={option.label} key={option.label}>{option.value.map(this.renderOption)}</optgroup>);
-            }
-            return this.renderOption(option);
-          })
-        }
+        {options.map(option => {
+          if (Array.isArray(option.value)) {
+            return (
+              <optgroup value="" label={option.label} key={option.label}>
+                {option.value.map(this.renderOption)}
+              </optgroup>
+            );
+          }
+          return this.renderOption(option);
+        })}
       </select>
     );
   }
@@ -117,14 +130,29 @@ export default class Dropdown extends Component {
     });
 
     // eslint-disable-next-line react/prop-types
-    const { id, label, labelProps, secondaryLabel, tertiaryLabel, invalid, help, helpProps, message, messageProps } = this.props;
+    const {
+      id,
+      label,
+      labelProps,
+      secondaryLabel,
+      tertiaryLabel,
+      invalid,
+      help,
+      helpProps,
+      message,
+      messageProps
+    } = this.props;
 
     return (
       <div className={classNames}>
-        <FieldLabel {...{ id, label, labelProps, secondaryLabel, tertiaryLabel }} />
+        <FieldLabel
+          {...{ id, label, labelProps, secondaryLabel, tertiaryLabel }}
+        />
         {this.renderChevron()}
         {this.renderSelect()}
-        <FieldMessage {...{ invalid, help, helpProps, valid, message, messageProps }} />
+        <FieldMessage
+          {...{ invalid, help, helpProps, valid, message, messageProps }}
+        />
       </div>
     );
   }

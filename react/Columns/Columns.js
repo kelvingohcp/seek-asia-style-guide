@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 const renderColumn = (el, index) => (
-  <div key={index} className={styles.column}>{el}</div>
+  <div key={index} className={styles.column}>
+    {el}
+  </div>
 );
 
 export default function Columns({ children, tight, flexible }) {
@@ -15,7 +17,8 @@ export default function Columns({ children, tight, flexible }) {
         [styles.columns]: true,
         [styles.columns_tight]: tight,
         [styles.columns_flexible]: flexible
-      })}>
+      })}
+    >
       {children.map(renderColumn)}
     </div>
   );

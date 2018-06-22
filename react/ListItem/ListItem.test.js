@@ -15,8 +15,9 @@ describe('ListItem:', () => {
   });
 
   it('should render icon', () => {
-    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} />);
+    const wrapper = shallow(
+      <ListItem value="testValue" title="testTitle" icon={<IconEducation />} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });
-

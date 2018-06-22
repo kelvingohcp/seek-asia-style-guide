@@ -2,11 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Section, { TONE, LEVEL } from './Section';
 
-const renderSection = props => shallow(
-  <Section {...props} >
-    Test content
-  </Section>
-);
+const renderSection = props =>
+  shallow(<Section {...props}>Test content</Section>);
 
 describe('Section:', () => {
   describe('types:', () => {
@@ -59,7 +56,10 @@ describe('Section:', () => {
   });
 
   it('should accept additional classnames and place them on the root', () => {
-    const section = renderSection({ level: LEVEL.SECONDARY, className: 'testClass' });
+    const section = renderSection({
+      level: LEVEL.SECONDARY,
+      className: 'testClass'
+    });
     expect(section).toMatchSnapshot();
   });
 
@@ -69,7 +69,11 @@ describe('Section:', () => {
   });
 
   it('should render multiple classes together', () => {
-    const section = renderSection({ level: LEVEL.SECONDARY, tone: TONE.INFO, slim: true });
+    const section = renderSection({
+      level: LEVEL.SECONDARY,
+      tone: TONE.INFO,
+      slim: true
+    });
     expect(section).toMatchSnapshot();
   });
 });

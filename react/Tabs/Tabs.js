@@ -19,7 +19,8 @@ export default function Tabs({ items, className }) {
         <ReactTab
           className={styles.tab}
           selectedClassName={styles.selectedTab}
-          key={index}>
+          key={index}
+        >
           <Text waving strong>
             {item.title}
           </Text>

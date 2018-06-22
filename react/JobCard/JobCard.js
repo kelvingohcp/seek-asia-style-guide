@@ -11,9 +11,15 @@ import MoneyIcon from '../MoneyIcon/MoneyIcon';
 import styles from './JobCard.less';
 import classnames from 'classnames';
 import { getJobAdTypeOption, getParts } from './jobCardHelper.js';
-import LocationGroup, { LocationsPropTypes } from './components/LocationGroup/LocationGroup';
-import CompanyLink, { CompanyLinkPropTypes } from './components/CompanyLink/CompanyLink';
-import ShelfSection, { ShelfSectionPropTypes } from './components/ShelfSection/ShelfSection';
+import LocationGroup, {
+  LocationsPropTypes
+} from './components/LocationGroup/LocationGroup';
+import CompanyLink, {
+  CompanyLinkPropTypes
+} from './components/CompanyLink/CompanyLink';
+import ShelfSection, {
+  ShelfSectionPropTypes
+} from './components/ShelfSection/ShelfSection';
 import defaultLink from './components/Link/Link';
 
 export default class JobCard extends React.Component {
@@ -31,72 +37,132 @@ export default class JobCard extends React.Component {
   };
 
   hasShelfLinks(shelfLinks) {
-    return shelfLinks && shelfLinks.some(shelfLink => (shelfLink && shelfLink.items && shelfLink.items.length > 0));
+    return (
+      shelfLinks &&
+      shelfLinks.some(
+        shelfLink => shelfLink && shelfLink.items && shelfLink.items.length > 0
+      )
+    );
   }
 
   render() {
     const { shelfSectionOpen } = this.state;
-    const { job, keyword = '', jobAdType, LinkComponent = defaultLink } = this.props;
+    const {
+      job,
+      keyword = '',
+      jobAdType,
+      LinkComponent = defaultLink
+    } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
-    let title = (<Text waving semiStrong className={styles.positionTitle}>{job.jobTitle}</Text>);
+    let title = (
+      <Text waving semiStrong className={styles.positionTitle}>
+        {job.jobTitle}
+      </Text>
+    );
     const keywordParts = getParts(job.jobTitle, keyword);
 
     if (keywordParts) {
       title = (
         <div>
-          {
-            keywordParts.map((part, index) => {
-              return (
-                <Text
-                  strong={part.highlight}
-                  semiStrong={!part.highlight}
-                  waving
-                  className={classnames(styles.positionTitle, { [styles.titleKeyword]: part.highlight })}
-                  key={index}>
-                  {part.text}
-                </Text>
-              );
-            })
-          }
+          {keywordParts.map((part, index) => {
+            return (
+              <Text
+                strong={part.highlight}
+                semiStrong={!part.highlight}
+                waving
+                className={classnames(styles.positionTitle, {
+                  [styles.titleKeyword]: part.highlight
+                })}
+                key={index}
+              >
+                {part.text}
+              </Text>
+            );
+          })}
         </div>
       );
     }
     return (
-      <Card className={classnames(styles.root, { [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg })}>
+      <Card
+        className={classnames(styles.root, {
+          [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg
+        })}
+      >
         <Section className={styles.headerSection}>
-          <a href={job.jobUrl} className={styles.positionLink} target="_blank" rel="noopener noreferrer">{title}</a>
+          <a
+            href={job.jobUrl}
+            className={styles.positionLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {title}
+          </a>
         </Section>
         <Section className={styles.bodySection}>
           <div className={styles.bodyDetailsWrapper}>
             <Text intimate className={styles.company}>
-              {job.featuredLabel && (<span className={styles.featuredLabel}>{job.featuredLabel}</span>)}
-              {job.classifiedLabel && (<span className={styles.classifiedLabel}>{job.classifiedLabel}</span>)}
-              {job.confidentialLabel && (<span className={styles.confidentialLabel}>{job.confidentialLabel}</span>)}
-              {job.company && <CompanyLink company={job.company} keyword={keyword} LinkComponent={LinkComponent} />}
+              {job.featuredLabel && (
+                <span className={styles.featuredLabel}>
+                  {job.featuredLabel}
+                </span>
+              )}
+              {job.classifiedLabel && (
+                <span className={styles.classifiedLabel}>
+                  {job.classifiedLabel}
+                </span>
+              )}
+              {job.confidentialLabel && (
+                <span className={styles.confidentialLabel}>
+                  {job.confidentialLabel}
+                </span>
+              )}
+              {job.company && (
+                <CompanyLink
+                  company={job.company}
+                  keyword={keyword}
+                  LinkComponent={LinkComponent}
+                />
+              )}
             </Text>
-            {jobAdTypeOption.showSellingPoint && job.sellingPoints && (
-              <div
-                className={classnames(styles.sellingPointsSection, { [styles.withDescription]: jobAdTypeOption.showDescription && job.description })}>
-                <ul className={styles.sellingPointsList} >
-                  {job.sellingPoints.map((sellingPoint, i) => {
-                    return (
-                      <li key={i}><Text intimate className={styles.sellingPoint}>{sellingPoint}</Text></li>
-                    );
+            {jobAdTypeOption.showSellingPoint &&
+              job.sellingPoints && (
+                <div
+                  className={classnames(styles.sellingPointsSection, {
+                    [styles.withDescription]:
+                      jobAdTypeOption.showDescription && job.description
                   })}
-                </ul>
-              </div>
-            )}
-            {jobAdTypeOption.showDescription && job.description && (
-              <div className={styles.jobDescriptionSection}>
-                <Text intimate className={styles.bodyDescriptionText}>{job.description}</Text>
-              </div>
-            )}
+                >
+                  <ul className={styles.sellingPointsList}>
+                    {job.sellingPoints.map((sellingPoint, i) => {
+                      return (
+                        <li key={i}>
+                          <Text intimate className={styles.sellingPoint}>
+                            {sellingPoint}
+                          </Text>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
+            {jobAdTypeOption.showDescription &&
+              job.description && (
+                <div className={styles.jobDescriptionSection}>
+                  <Text intimate className={styles.bodyDescriptionText}>
+                    {job.description}
+                  </Text>
+                </div>
+              )}
           </div>
-          {jobAdTypeOption.showCompanyPic && job.companyPictureUrl && (
-            <div className={styles.companyPicWrapper}>
-              <img className={styles.companyPic} src={job.companyPictureUrl} />
-            </div>
-          )}
+          {jobAdTypeOption.showCompanyPic &&
+            job.companyPictureUrl && (
+              <div className={styles.companyPicWrapper}>
+                <img
+                  className={styles.companyPic}
+                  src={job.companyPictureUrl}
+                />
+              </div>
+            )}
         </Section>
         <Section className={styles.footerSection}>
           <div className={styles.footerLeft}>
@@ -104,19 +170,43 @@ export default class JobCard extends React.Component {
               <div className={styles.jobInfoList}>
                 <Text intimate className={styles.jobInfo}>
                   <LocationIcon className={styles.jobInfoIcon} />
-                  {job.locations && <LocationGroup locations={job.locations} LinkComponent={LinkComponent} />}
+                  {job.locations && (
+                    <LocationGroup
+                      locations={job.locations}
+                      LinkComponent={LinkComponent}
+                    />
+                  )}
                 </Text>
-                {job.salary && (<Text intimate className={styles.jobInfo}><MoneyIcon className={styles.jobInfoIcon} /><span>{job.salary}</span></Text>)}
+                {job.salary && (
+                  <Text intimate className={styles.jobInfo}>
+                    <MoneyIcon className={styles.jobInfoIcon} />
+                    <span>{job.salary}</span>
+                  </Text>
+                )}
               </div>
               <div>
-                <Text whispering className={styles.postingDuration}>{job.postingDuration}</Text>
-                {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) &&
-                  <Button color="hyperlink" className={styles.shelfToggle} onClick={this.handleShelfSectionToggle}>
-                    <Text whispering baseline={false} className={styles.shelfToggleText}>
-                      {shelfSectionOpen ? 'less' : 'more'} <ChevronIcon direction={shelfSectionOpen ? 'up' : 'down'} svgClassName={styles.shelfToggleIcon} />
+                <Text whispering className={styles.postingDuration}>
+                  {job.postingDuration}
+                </Text>
+                {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
+                  <Button
+                    color="hyperlink"
+                    className={styles.shelfToggle}
+                    onClick={this.handleShelfSectionToggle}
+                  >
+                    <Text
+                      whispering
+                      baseline={false}
+                      className={styles.shelfToggleText}
+                    >
+                      {shelfSectionOpen ? 'less' : 'more'}{' '}
+                      <ChevronIcon
+                        direction={shelfSectionOpen ? 'up' : 'down'}
+                        svgClassName={styles.shelfToggleIcon}
+                      />
                     </Text>
                   </Button>
-                }
+                )}
               </div>
             </div>
           </div>
@@ -126,7 +216,13 @@ export default class JobCard extends React.Component {
             </div>
           )}
         </Section>
-        {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && <ShelfSection shelf={job.shelf} LinkComponent={LinkComponent} showShelfSection={shelfSectionOpen} />}
+        {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
+          <ShelfSection
+            shelf={job.shelf}
+            LinkComponent={LinkComponent}
+            showShelfSection={shelfSectionOpen}
+          />
+        )}
       </Card>
     );
   }

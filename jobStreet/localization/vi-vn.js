@@ -25,7 +25,8 @@ export default {
   'header.homeTitle': 'Home',
   'header.homeUrl': baseUrl,
   'header.myJobStreetTitle': 'MyJobStreet',
-  'header.myJobStreetUrl': 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',
+  'header.myJobStreetUrl':
+    'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',
   'header.companyProfilesTitle': 'Company Profiles',
   'header.companyProfilesUrl': `${baseUrlWithLanguage}/companies/`,
   'header.careerInsightsTitle': 'Career Insights',
@@ -33,7 +34,8 @@ export default {
   'header.educationTitle': 'Education',
   'header.educationUrl': `${baseUrlWithLanguage}/career-insights`,
   'header.myAccountTitle': 'My Account',
-  'header.myAccountUrl': 'https://myjobstreet.jobstreet.com.my/resume/preview-resume.php?',
+  'header.myAccountUrl':
+    'https://myjobstreet.jobstreet.com.my/resume/preview-resume.php?',
   'header.employerSiteTitle': 'Employer Site',
   'header.employerLinkPrefix': 'Looking to hire? Check out our ',
   'header.employerSiteUrl': `${baseUrlWithLanguage}/cms/employer`,

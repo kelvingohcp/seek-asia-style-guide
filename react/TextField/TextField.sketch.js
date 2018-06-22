@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import TextField from './TextField';
 
 const Container = ({ children }) => (
-  <div style={{ maxWidth: '520px' }}>
-    { children }
-  </div>
+  <div style={{ maxWidth: '520px' }}>{children}</div>
 );
 Container.propTypes = {
   children: PropTypes.node.isRequired
@@ -24,12 +22,22 @@ export const symbols = {
   ),
   'TextField/With Critical Text': (
     <Container>
-      <TextField id="firstName3" label="Label" message="Critical text" valid={false} />
+      <TextField
+        id="firstName3"
+        label="Label"
+        message="Critical text"
+        valid={false}
+      />
     </Container>
   ),
   'TextField/With Positive Text': (
     <Container>
-      <TextField id="firstName4" label="Label" message="Positive text" valid={true} />
+      <TextField
+        id="firstName4"
+        label="Label"
+        message="Positive text"
+        valid={true}
+      />
     </Container>
   )
 };

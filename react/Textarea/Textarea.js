@@ -32,12 +32,25 @@ export default class Textarea extends Component {
     countFeedback: (props, propName, componentName) => {
       const { value, inputProps = {} } = props;
 
-      if (typeof props[propName] !== 'function' && typeof props[propName] !== 'undefined') {
-        return new Error(`Invalid prop \`${propName}\` of type \`${typeof props[propName]}\` supplied to \`${componentName}\`, expected \`function\`.`);
+      if (
+        typeof props[propName] !== 'function' &&
+        typeof props[propName] !== 'undefined'
+      ) {
+        return new Error(
+          `Invalid prop \`${propName}\` of type \`${typeof props[
+            propName
+          ]}\` supplied to \`${componentName}\`, expected \`function\`.`
+        );
       }
 
-      if (props[propName] && typeof value !== 'string' && typeof inputProps.value !== 'string') {
-        return new Error(`\`value\` must be supplied if \`${propName}\` is set`);
+      if (
+        props[propName] &&
+        typeof value !== 'string' &&
+        typeof inputProps.value !== 'string'
+      ) {
+        return new Error(
+          `\`value\` must be supplied if \`${propName}\` is set`
+        );
       }
     },
     secondaryLabel: PropTypes.string,
@@ -76,14 +89,10 @@ export default class Textarea extends Component {
 
     const className = classnames({
       [styles.characterCount]: true,
-      [styles.invalidCharacterCount]: (count < 0)
+      [styles.invalidCharacterCount]: count < 0
     });
 
-    return (
-      <span className={className}>
-        { count }
-      </span>
-    );
+    return <span className={className}>{count}</span>;
   }
   /* eslint-enable consistent-return */
 
@@ -99,9 +108,7 @@ export default class Textarea extends Component {
       'aria-describedby': `${id}-message`
     };
 
-    return (
-      <textarea {...allInputProps} />
-    );
+    return <textarea {...allInputProps} />;
   }
 
   render() {
@@ -114,18 +121,38 @@ export default class Textarea extends Component {
     });
 
     // eslint-disable-next-line react/prop-types
-    const { label, labelProps, invalid, help, helpProps, message, messageProps, secondaryLabel, tertiaryLabel, description } = this.props;
+    const {
+      label,
+      labelProps,
+      invalid,
+      help,
+      helpProps,
+      message,
+      messageProps,
+      secondaryLabel,
+      tertiaryLabel,
+      description
+    } = this.props;
     const hasDescription = description.length > 0;
 
     return (
       <div className={classNames}>
-        <FieldLabel {...{ id, label, labelProps, secondaryLabel, tertiaryLabel, raw: hasDescription }} />
-        {
-          hasDescription ? <Text secondary>{description}</Text> : null
-        }
+        <FieldLabel
+          {...{
+            id,
+            label,
+            labelProps,
+            secondaryLabel,
+            tertiaryLabel,
+            raw: hasDescription
+          }}
+        />
+        {hasDescription ? <Text secondary>{description}</Text> : null}
         {this.renderInput()}
         <div className={styles.footer}>
-          <FieldMessage {...{ invalid, help, helpProps, valid, message, messageProps }} />
+          <FieldMessage
+            {...{ invalid, help, helpProps, valid, message, messageProps }}
+          />
           {this.renderCharacterCount()}
         </div>
       </div>

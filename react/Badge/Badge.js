@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Text from '../Text/Text';
 
-export default function Badge({
-  label,
-  color,
-  isBold
-}) {
+export default function Badge({ label, color, isBold }) {
   let colorStyle = styles.default;
   switch (color) {
     case 'progressing':
@@ -30,9 +26,21 @@ export default function Badge({
   }
 
   return (
-    <span className={classnames({ [styles.root]: true, [styles.isBold]: isBold }, colorStyle)}>
-      <Text className={classnames(styles.badgeLabel)} whispering semiStrong={!isBold} strong={isBold}>{label}</Text>
-    </span >
+    <span
+      className={classnames(
+        { [styles.root]: true, [styles.isBold]: isBold },
+        colorStyle
+      )}
+    >
+      <Text
+        className={classnames(styles.badgeLabel)}
+        whispering
+        semiStrong={!isBold}
+        strong={isBold}
+      >
+        {label}
+      </Text>
+    </span>
   );
 }
 
@@ -40,7 +48,10 @@ Badge.propTypes = {
   label: PropTypes.string.isRequired,
   isBold: PropTypes.bool,
   color: PropTypes.oneOf([
-    'progressing', 'default', 'declined', 'expired', 'new'
+    'progressing',
+    'default',
+    'declined',
+    'expired',
+    'new'
   ])
 };
-

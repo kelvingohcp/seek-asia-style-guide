@@ -1,6 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Columns, PageBlock, Card, Section, Text } from 'seek-asia-style-guide/react';
+import {
+  Columns,
+  PageBlock,
+  Card,
+  Section,
+  Text
+} from 'seek-asia-style-guide/react';
 
 const ColumnsContainer = ({ component: DemoComponent, componentProps }) => (
   <PageBlock>
@@ -12,14 +18,15 @@ ColumnsContainer.propTypes = {
   componentProps: PropTypes.object.isRequired
 };
 
-const makeColumns = count => [...new Array(count)].map((x, i) => (
-  <Card key={i}>
-    <Section>
-      <Text shouting>Column {i + 1}</Text>
-      <Text>This card is currently acting as a column.</Text>
-    </Section>
-  </Card>
-));
+const makeColumns = count =>
+  [...new Array(count)].map((x, i) => (
+    <Card key={i}>
+      <Section>
+        <Text shouting>Column {i + 1}</Text>
+        <Text>This card is currently acting as a column.</Text>
+      </Section>
+    </Card>
+  ));
 
 export default {
   route: '/columns',
