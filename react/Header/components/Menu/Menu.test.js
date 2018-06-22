@@ -1,7 +1,8 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 
 import Menu from './Menu';
+import { Text } from 'seek-asia-style-guide/react';
 
 describe('Menu', () => {
   const FakeIcon = () => {
@@ -12,6 +13,7 @@ describe('Menu', () => {
     brandStyles: {
       employerLink: 'employerLink'
     },
+    linkUrl: '/test',
     messages: {
       'header.employerSiteUrl': 'http://brand.seekasia.com',
       'header.employerSiteTitle': 'Awesome employers click here',
@@ -20,7 +22,9 @@ describe('Menu', () => {
       'menu.settingsHeader': 'SETTINGS',
       'menu.more': 'More',
       'menu.moreHeader': 'MORE',
-      'menu.countryAndLanguage': 'Country & Language'
+      'menu.countryAndLanguage': 'Country & Language',
+      'header.loginUrl': '/hk/en/login/jobseekerlogin',
+      'header.signupUrl': '/hk/en/jobseeker/registration'
     },
     locales: [{
       title: 'Hong Kong (English)',
@@ -34,7 +38,10 @@ describe('Menu', () => {
       url: 'https://id.jobsdb.com/id',
       language: 'en',
       country: 'id'
-    }]
+    }],
+    authenticationStatus: 'unauthenticated',
+    userName: 'Olivia',
+    baseUrl: 'http://seekasia.com'
   };
 
   const mockLinks = [
@@ -79,6 +86,16 @@ describe('Menu', () => {
     };
     const wrapper = shallow(<Menu {...testProps} />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render when authenticated', () => {
+    const renderTitle = props => render(<Text {...props} />);
+    expect(renderTitle({ authenticationStatus: 'authenticated', userName: 'Olivia' })).toMatchSnapshot();
+  });
+
+  it('should render when unauthenticated', () => {
+    const renderTitle = props => render(<Text {...props} />);
+    expect(renderTitle({ authenticationStatus: 'unauthenticated' })).toMatchSnapshot();
   });
 });
 

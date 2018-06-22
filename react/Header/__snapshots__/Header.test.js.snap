@@ -7,49 +7,53 @@ exports[`Header should pass through optional props 1`] = `
   <div
     className="externalNav"
   >
-    <div
-      className="locale"
-    >
-      <span
-        className="currentLocale"
-      >
-        <FakeComponent
-          className="localeIcon"
-        />
-        <Text
-          baseline={true}
-          whispering={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </span>
-    </div>
-    <div>
-      <Text
-        baseline={true}
-        whispering={true}
-      >
-        Awesome employers should 
-        <a
-          className="employerLink"
-          href="http://brand.seekasia.com"
-        >
-          click here
-        </a>
-      </Text>
-    </div>
+    <CountryDropdown
+      checked={0}
+      linkRenderer={[Function]}
+      links={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "country": "hk",
+            "language": "en",
+            "title": "Hong Kong (English)",
+            "url": "https://hk.jobsdb.com/hk",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "country": "id",
+            "language": "en",
+            "title": "Indonesia (English)",
+            "url": "https://id.jobsdb.com/id",
+          },
+        ]
+      }
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
+    />
   </div>
   <div
     className="primaryNavNoLogin"
   >
-    <a
-      href="http://seekasia.com/home"
+    <h1
+      className="logo"
     >
       <FakeComponent
-        className="logo"
         country="my"
+        svgClassName="logoSvg"
       />
-    </a>
+      <a
+        className="logoLink"
+        href="/"
+      />
+    </h1>
     <div
       className="primaryNavLinksWrapper"
     >
@@ -64,6 +68,7 @@ exports[`Header should pass through optional props 1`] = `
           <Text
             baseline={true}
           >
+             
             Home
           </Text>
         </a>
@@ -79,6 +84,7 @@ exports[`Header should pass through optional props 1`] = `
           <Text
             baseline={true}
           >
+             
             MyPortal
           </Text>
         </a>
@@ -94,6 +100,7 @@ exports[`Header should pass through optional props 1`] = `
           <Text
             baseline={true}
           >
+             
             Resources
           </Text>
         </a>
@@ -109,11 +116,32 @@ exports[`Header should pass through optional props 1`] = `
           <Text
             baseline={true}
           >
+             
             CareerInsights
           </Text>
         </a>
       </span>
     </div>
+    <UserAccount
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      linkRenderer={[Function]}
+      loginAvailable={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
+    />
   </div>
   <ActionTray
     activeTab="ACTIVE_TAB_HOME"
@@ -124,7 +152,7 @@ exports[`Header should pass through optional props 1`] = `
       }
     }
     handleToggleMenu={[Function]}
-    loginAvailable={false}
+    linkRenderer={[Function]}
     menuOpen={false}
     messages={
       Object {
@@ -143,6 +171,7 @@ exports[`Header should pass through optional props 1`] = `
         "primaryNavLink": "primaryNavLink",
       }
     }
+    linkRenderer={[Function]}
     links={
       Array [
         Object {
@@ -185,6 +214,7 @@ exports[`Header should pass through optional props 1`] = `
         },
       ]
     }
+    loginAvailable={false}
     messages={
       Object {
         "header.employerLinkPrefix": "Awesome employers should ",
@@ -213,50 +243,74 @@ exports[`Header should render with default props 1`] = `
   <div
     className="externalNav"
   >
-    <div
-      className="locale"
-    >
-      <span
-        className="currentLocale"
-      >
-        <FakeComponent
-          className="localeIcon"
-        />
-        <Text
-          baseline={true}
-          whispering={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </span>
-    </div>
-    <div>
-      <Text
-        baseline={true}
-        whispering={true}
-      >
-        Awesome employers should 
-        <a
-          className="employerLink"
-          href="http://brand.seekasia.com"
-        >
-          click here
-        </a>
-      </Text>
-    </div>
+    <CountryDropdown
+      checked={0}
+      linkRenderer={[Function]}
+      links={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "country": "hk",
+            "language": "en",
+            "title": "Hong Kong (English)",
+            "url": "https://hk.jobsdb.com/hk",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "country": "id",
+            "language": "en",
+            "title": "Indonesia (English)",
+            "url": "https://id.jobsdb.com/id",
+          },
+        ]
+      }
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
+    />
   </div>
   <div
     className="primaryNavNoLogin"
   >
-    <a
-      href="http://seekasia.com/home"
+    <h1
+      className="logo"
     >
       <FakeComponent
-        className="logo"
+        svgClassName="logoSvg"
       />
-    </a>
+      <a
+        className="logoLink"
+        href="/"
+      />
+    </h1>
     <div
       className="primaryNavLinksWrapper"
+    />
+    <UserAccount
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      linkRenderer={[Function]}
+      loginAvailable={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
     />
   </div>
   <ActionTray
@@ -267,7 +321,7 @@ exports[`Header should render with default props 1`] = `
       }
     }
     handleToggleMenu={[Function]}
-    loginAvailable={false}
+    linkRenderer={[Function]}
     menuOpen={false}
     messages={
       Object {
@@ -285,6 +339,7 @@ exports[`Header should render with default props 1`] = `
         "primaryNavLink": "primaryNavLink",
       }
     }
+    linkRenderer={[Function]}
     locales={
       Array [
         Object {
@@ -303,6 +358,7 @@ exports[`Header should render with default props 1`] = `
         },
       ]
     }
+    loginAvailable={false}
     messages={
       Object {
         "header.employerLinkPrefix": "Awesome employers should ",
@@ -323,48 +379,52 @@ exports[`Header should render with links list 1`] = `
   <div
     className="externalNav"
   >
-    <div
-      className="locale"
-    >
-      <span
-        className="currentLocale"
-      >
-        <FakeComponent
-          className="localeIcon"
-        />
-        <Text
-          baseline={true}
-          whispering={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </span>
-    </div>
-    <div>
-      <Text
-        baseline={true}
-        whispering={true}
-      >
-        Awesome employers should 
-        <a
-          className="employerLink"
-          href="http://brand.seekasia.com"
-        >
-          click here
-        </a>
-      </Text>
-    </div>
+    <CountryDropdown
+      checked={0}
+      linkRenderer={[Function]}
+      links={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "country": "hk",
+            "language": "en",
+            "title": "Hong Kong (English)",
+            "url": "https://hk.jobsdb.com/hk",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "country": "id",
+            "language": "en",
+            "title": "Indonesia (English)",
+            "url": "https://id.jobsdb.com/id",
+          },
+        ]
+      }
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
+    />
   </div>
   <div
     className="primaryNavNoLogin"
   >
-    <a
-      href="http://seekasia.com/home"
+    <h1
+      className="logo"
     >
       <FakeComponent
-        className="logo"
+        svgClassName="logoSvg"
       />
-    </a>
+      <a
+        className="logoLink"
+        href="/"
+      />
+    </h1>
     <div
       className="primaryNavLinksWrapper"
     >
@@ -379,6 +439,7 @@ exports[`Header should render with links list 1`] = `
           <Text
             baseline={true}
           >
+             
             Home
           </Text>
         </a>
@@ -394,6 +455,7 @@ exports[`Header should render with links list 1`] = `
           <Text
             baseline={true}
           >
+             
             MyPortal
           </Text>
         </a>
@@ -409,6 +471,7 @@ exports[`Header should render with links list 1`] = `
           <Text
             baseline={true}
           >
+             
             Resources
           </Text>
         </a>
@@ -424,11 +487,32 @@ exports[`Header should render with links list 1`] = `
           <Text
             baseline={true}
           >
+             
             CareerInsights
           </Text>
         </a>
       </span>
     </div>
+    <UserAccount
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      linkRenderer={[Function]}
+      loginAvailable={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
+    />
   </div>
   <ActionTray
     brandStyles={
@@ -438,7 +522,7 @@ exports[`Header should render with links list 1`] = `
       }
     }
     handleToggleMenu={[Function]}
-    loginAvailable={false}
+    linkRenderer={[Function]}
     menuOpen={false}
     messages={
       Object {
@@ -456,6 +540,7 @@ exports[`Header should render with links list 1`] = `
         "primaryNavLink": "primaryNavLink",
       }
     }
+    linkRenderer={[Function]}
     links={
       Array [
         Object {
@@ -498,6 +583,7 @@ exports[`Header should render with links list 1`] = `
         },
       ]
     }
+    loginAvailable={false}
     messages={
       Object {
         "header.employerLinkPrefix": "Awesome employers should ",
@@ -518,50 +604,77 @@ exports[`Header should render with login available 1`] = `
   <div
     className="externalNav"
   >
-    <div
-      className="locale"
-    >
-      <span
-        className="currentLocale"
-      >
-        <FakeComponent
-          className="localeIcon"
-        />
-        <Text
-          baseline={true}
-          whispering={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </span>
-    </div>
-    <div>
-      <Text
-        baseline={true}
-        whispering={true}
-      >
-        Awesome employers should 
-        <a
-          className="employerLink"
-          href="http://brand.seekasia.com"
-        >
-          click here
-        </a>
-      </Text>
-    </div>
+    <CountryDropdown
+      checked={0}
+      linkRenderer={[Function]}
+      links={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "country": "hk",
+            "language": "en",
+            "title": "Hong Kong (English)",
+            "url": "https://hk.jobsdb.com/hk",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "country": "id",
+            "language": "en",
+            "title": "Indonesia (English)",
+            "url": "https://id.jobsdb.com/id",
+          },
+        ]
+      }
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
+    />
   </div>
   <div
     className="primaryNav"
   >
-    <a
-      href="http://seekasia.com/home"
+    <h1
+      className="logo"
     >
       <FakeComponent
-        className="logo"
+        svgClassName="logoSvg"
       />
-    </a>
+      <a
+        className="logoLink"
+        href="/"
+      />
+    </h1>
     <div
       className="primaryNavLinksWrapper"
+    />
+    <div
+      className="secondaryNav"
+    />
+    <UserAccount
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      linkRenderer={[Function]}
+      loginAvailable={true}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      onMenuToggle={[Function]}
     />
   </div>
   <ActionTray
@@ -572,7 +685,7 @@ exports[`Header should render with login available 1`] = `
       }
     }
     handleToggleMenu={[Function]}
-    loginAvailable={true}
+    linkRenderer={[Function]}
     menuOpen={false}
     messages={
       Object {
@@ -590,6 +703,7 @@ exports[`Header should render with login available 1`] = `
         "primaryNavLink": "primaryNavLink",
       }
     }
+    linkRenderer={[Function]}
     locales={
       Array [
         Object {
@@ -608,6 +722,7 @@ exports[`Header should render with login available 1`] = `
         },
       ]
     }
+    loginAvailable={true}
     messages={
       Object {
         "header.employerLinkPrefix": "Awesome employers should ",

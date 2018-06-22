@@ -13,5 +13,7 @@ export const symbols = {
   'Button/Secondary/Standard': <Button color="secondary">Button</Button>,
   'Button/Secondary/Compact': <Button color="secondary" compact>Button</Button>,
   'Button/Hyperlink/Standard': <Button color="hyperlink">Button</Button>,
-  'Button/Hyperlink/Compact': <Button color="hyperlink" compact>Button</Button>
+  'Button/Hyperlink/Compact': <Button color="hyperlink" compact>Button</Button>,
+  'Button/Tertiary/jobsDB Hirer/Standard': <Button color="tertiary">Button</Button>,
+  'Button/Tertiary/jobsDB Hirer/Compact': <Button color="tertiary" compact>Button</Button>
 };

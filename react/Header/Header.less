@@ -5,21 +5,40 @@
   background-color: @saWhite;
 }
 
+._cfs_container_width() {
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
 .externalNav {
   display: none;
+  ._cfs_container_width;
   @media @desktop {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    height: @grid-base * 8;
+    height: @grid-base * 4;
     padding: 0 @grid-base * 6;
-    background-color: @saGrey6;
+  }
+  &::before,
+  &::after {
+    display: none !important;
   }
 }
 
 .currentLocale {
   display: flex;
+  margin-top: @grid-base*4;
   align-items: center;
 }
 
@@ -27,22 +46,18 @@
   margin: @grid-base @grid-base 0 0;
 }
 
-.employerLink {
-  color: @hyperlink;
-  text-decoration: none;
-}
-
 .primaryNav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  width: 100%;
   padding: 1px @grid-base * 2 0 @grid-base * 2; /* 1px padding fixes baseline for align-centered items in this container */
   height: @grid-base * 12;
+  justify-content: center;
+  ._cfs_container_width;
   @media @desktop {
     height: @grid-base * 16;
-    padding: 1px @grid-base * 6 0 @grid-base * 6;
+    padding: 1px @grid-base * 6 0 @grid-base * 4;
   }
 }
 
@@ -66,13 +81,57 @@
 }
 
 .primaryNavLinkWrapper {
+  cursor: pointer;
+}
+
+.primaryNavLinkWrapper:not(:last-child) {
   margin-right: @grid-base * 8;
 }
 
 .primaryNavLink {
   text-decoration: none;
+  display: flex;
+}
+
+.primaryNavLink .icon {
+  margin: auto @grid-base * 2;
+}
+
+.secondaryNav {
+  margin-left: auto;
+  display: none;
+  min-width: max-content;
+  @media @desktop {
+    display: flex;
+  }
 }
 
 .logo {
-  display: inline-block;
+  width: 118px;
+  height: 31px;
+  position: relative;
+  top: 3px;
+  margin-bottom: @grid-base*3;
+  @media @desktop {
+    margin-bottom: @grid-base*8;
+    margin-right: @grid-base*8;
+  }
+}
+
+.logoSvg {
+  height: 39px;
+  width: 105px;
+  @media @desktop {
+    height: 51px;
+    width: 129px;
+  }
+}
+
+.logoLink {
+  position: absolute;
+  top: 0;
+  text-indent: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }

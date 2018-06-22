@@ -123,6 +123,20 @@ export default {
             ...props,
             color: 'hyperlink'
           })
+        },
+        {
+          label: 'Secondary',
+          transformProps: props => ({
+            ...props,
+            color: 'secondary'
+          })
+        },
+        {
+          label: 'Tertiary - jobsDB Hirer',
+          transformProps: props => ({
+            ...props,
+            color: 'tertiary'
+          })
         }
       ]
     },

@@ -1,0 +1,27 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+.secondaryNav {
+  display: none;
+  @media @desktop {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: @grid-base * 2;
+  }
+}
+
+.userAcclink:focus {
+  outline: none;
+}
+
+.signup {
+  margin-right: @grid-base*2;
+}
+
+.signup:focus {
+  outline: none;
+}
+
+.displayText {
+  color: @saGrey3;
+}

@@ -9,15 +9,20 @@ const withIcon = ({ ItemIcon, children, brandStyles, itemClass, iconProps = {} }
 
   return [
     ...(ItemIcon ? [(<ItemIcon key="icon" className={styles.icon} {...iconProps} />)] : []),
-    <span key="children" className={itemClass}>{children}</span>
+    <span key={'children'} className={itemClass}>{children}</span>
+
   ];
 };
 
-const interactionButton = ({ ItemIcon, children, iconProps, brandStyles, itemClass, ...restProps }) => {
+const interactionButton = ({ ItemIcon, children, iconProps, brandStyles, itemClass, linkUrl, linkRenderer, ...restProps }) => {
   return (
-    <Button {...restProps}>
-      { withIcon({ ItemIcon, children, iconProps, brandStyles, itemClass }) }
-    </Button>
+    linkRenderer({
+      href: linkUrl !== '' || typeof(linkUrl) !== 'undefined' ? linkUrl : '',
+      className: styles.menuText,
+      children: <Button {...restProps}>
+        {withIcon({ ItemIcon, children, iconProps, brandStyles, itemClass, linkRenderer, linkUrl })}
+      </Button>
+    })
   );
 };
 
@@ -26,25 +31,27 @@ interactionButton.propTypes = {
   children: PropTypes.any,
   iconProps: PropTypes.object,
   brandStyles: PropTypes.object,
-  itemClass: PropTypes.string
+  itemClass: PropTypes.string,
+  linkUrl: PropTypes.string,
+  linkRenderer: PropTypes.func
 };
 
-const renderInteraction = ({ linkUrl, handleClick, children, ItemIcon, itemClass, iconProps, brandStyles }) => {
+const renderInteraction = ({ linkUrl, handleClick, children, ItemIcon, itemClass, iconProps, brandStyles, linkRenderer }) => {
   const interactionProps = {
     color: 'hyperlink',
-    component: 'a',
     className: styles.item,
     children,
     ItemIcon,
     iconProps,
     brandStyles,
-    itemClass
+    itemClass,
+    linkUrl,
+    linkRenderer
   };
 
   if (linkUrl) {
     return interactionButton({
-      ...interactionProps,
-      href: linkUrl
+      ...interactionProps
     });
   } else if (handleClick) {
     return interactionButton({
@@ -67,7 +74,8 @@ renderInteraction.propTypes = {
   ItemIcon: PropTypes.func,
   itemClass: PropTypes.string,
   iconProps: PropTypes.object,
-  brandStyles: PropTypes.object
+  brandStyles: PropTypes.object,
+  linkRenderer: PropTypes.func
 };
 
 const MenuItem = ({ className, ...restProps }) => {
@@ -79,7 +87,9 @@ const MenuItem = ({ className, ...restProps }) => {
 };
 
 MenuItem.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  userAccMenuItems: PropTypes.array,
+  linkRenderer: PropTypes.func
 };
 
 export default MenuItem;
