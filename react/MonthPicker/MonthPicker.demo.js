@@ -44,6 +44,7 @@ export default {
   title: 'Month Picker',
   component: MonthPicker,
   container: MonthPickerContainer,
+  seekComponent: true,
   initialProps: {
     id: 'startMonth',
     label: 'Start Month',

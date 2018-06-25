@@ -4,6 +4,7 @@ export default {
   route: '/rating',
   title: 'Rating',
   component: Rating,
+  seekComponent: true,
   initialProps: {
     rating: 0
   },

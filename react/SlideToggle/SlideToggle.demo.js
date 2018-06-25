@@ -5,6 +5,7 @@ export default {
   route: '/slidetoggle',
   title: 'Slide Toggle',
   component: SlideToggle,
+  seekComponent: true,
   sketch,
   initialProps: {
     onChange: () => {},

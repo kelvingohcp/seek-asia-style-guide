@@ -17,6 +17,7 @@ export default {
   title: 'Asided Layout',
   component: AsidedLayout,
   container: AsidedLayoutContainer,
+  seekComponent: true,
   block: true,
   initialProps: {
     size: '30%',

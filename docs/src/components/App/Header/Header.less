@@ -125,6 +125,20 @@
   }
 }
 
+.componentList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.componentListItem {
+  flex: 0 0 (@grid-base * 64);
+}
+
+.componentSectionTitle {
+  padding-top: @grid-base * 8;
+  border-bottom: medium solid rgba(255, 255, 255, 0.2);
+}
+
 .link {
   color: white;
   text-decoration: none;

@@ -23,6 +23,7 @@ export default {
   category: 'Form',
   component: Alert,
   container: Container,
+  seekComponent: true,
   sketch,
   initialProps: {
     tone: TONE.POSITIVE,

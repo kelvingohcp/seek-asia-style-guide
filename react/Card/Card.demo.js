@@ -19,6 +19,7 @@ export default {
   title: 'Card',
   component: Card,
   container: CardContainer,
+  seekComponent: true,
   block: true,
   initialProps: {
     children: (

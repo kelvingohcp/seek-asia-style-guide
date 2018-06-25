@@ -26,6 +26,7 @@ export default {
   category: 'Layout',
   component: Section,
   container: SectionContainer,
+  seekComponent: true,
   block: true,
   initialProps: {
     slim: false,

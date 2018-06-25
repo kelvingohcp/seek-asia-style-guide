@@ -45,6 +45,7 @@ export default {
   title: 'Textarea',
   component: Textarea,
   container: TextareaContainer,
+  seekComponent: true,
   initialProps: {
     id: 'description',
     label: 'Description',

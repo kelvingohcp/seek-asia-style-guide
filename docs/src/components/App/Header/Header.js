@@ -11,7 +11,10 @@ import Logo from './Logo/Logo';
 import demoSpecExports from '../../../../../react/*/*.demo.js';
 import jobStreetDemoExports from '../../../../../jobStreet/*/*.demo.js';
 import jobsDBDemoExports from '../../../../../jobsDB/*/*.demo.js';
-const demoSpecs = demoSpecExports.concat(jobStreetDemoExports, jobsDBDemoExports).map(x => x.default);
+const skDemoSpecs = demoSpecExports.map(x => x.default).filter(sk => sk.seekComponent === true);
+const saDemoSpecs = demoSpecExports.concat(jobStreetDemoExports, jobsDBDemoExports).map(x => x.default).filter(function(el) {
+  return skDemoSpecs.indexOf(el) < 0;
+});
 
 export default class Header extends Component {
   constructor() {
@@ -65,30 +68,50 @@ export default class Header extends Component {
                 <div className={styles.menu} onClick={this.handleMenuClose}>
                   <PageBlock>
                     <Section header>
-                      <Card transparent>
-                        <Text yelling regular><Link className={styles.link} to="/">Home</Link></Text>
+                      <Card transparent className={styles.components}>
+                        <h2>
+                          <Text yelling regular><Link className={styles.link} to="./">Home</Link></Text>
+                        </h2>
                       </Card>
 
                       <Card transparent>
                         <h2>
-                          <Text yelling>Guides</Text>
+                          <Text yelling className={styles.componentSectionTitle}>SEEK Asia Style Basics</Text>
                         </h2>
                       </Card>
-                      <Card transparent>
-                        <Text yelling regular><Link className={styles.link} to="/typography">Typography</Link></Text>
-                        <Text yelling regular><Link className={styles.link} to="/page-layout">Page Layout</Link></Text>
-                        <Text yelling regular><Link className={styles.link} to="/icons">Icons</Link></Text>
+                      <Card transparent className={styles.componentList}>
+                        <Text shouting regular className={styles.componentListItem}>Colours</Text>
+                        <Text shouting regular className={styles.componentListItem}><Link className={styles.link} to="./typography">Typography</Link></Text>
+                        <Text shouting regular className={styles.componentListItem}>Spacing Guidelines</Text>
+                        <Text shouting regular className={styles.componentListItem}>Logos</Text>
                       </Card>
 
                       <Card transparent>
                         <h2>
-                          <Text yelling>Components</Text>
+                          <Text yelling className={styles.componentSectionTitle}>SEEK Asia Components</Text>
                         </h2>
                       </Card>
-                      <Card transparent>
+                      <Card transparent className={styles.componentList}>
                         {
-                          demoSpecs.map(demoSpec => (
-                            <Text yelling regular key={demoSpec.title}>
+                          saDemoSpecs.map(demoSpec => (
+                            <Text shouting regular key={demoSpec.title} className={styles.componentListItem}>
+                              <Link className={styles.link} to={demoSpec.route}>
+                                { demoSpec.title }
+                              </Link>
+                            </Text>
+                          ))
+                        }
+                      </Card>
+
+                      <Card transparent>
+                        <h2>
+                          <Text yelling className={styles.componentSectionTitle}>SEEK Components</Text>
+                        </h2>
+                      </Card>
+                      <Card transparent className={styles.componentList}>
+                        {
+                          skDemoSpecs.map(demoSpec => (
+                            <Text shouting regular key={demoSpec.title} className={styles.componentListItem}>
                               <Link className={styles.link} to={demoSpec.route}>
                                 { demoSpec.title }
                               </Link>

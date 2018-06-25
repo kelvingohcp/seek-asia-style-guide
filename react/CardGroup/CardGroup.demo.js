@@ -19,6 +19,7 @@ export default {
   title: 'Card Group',
   component: CardGroup,
   container: CardGroupContainer,
+  seekComponent: true,
   block: true,
   initialProps: {
     children: [

@@ -26,6 +26,7 @@ export default {
   title: 'Columns',
   component: Columns,
   container: ColumnsContainer,
+  seekComponent: true,
   block: true,
   initialProps: {
     children: makeColumns(2)
