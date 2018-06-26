@@ -1,5 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ListItem: should render icon (compact mode) 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div
+    className="listItemBody"
+  >
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={false}
+      regular={true}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        loud={false}
+        strong={true}
+        waving={true}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`ListItem: should render icon 1`] = `
 <div
   className="root"
@@ -17,6 +55,7 @@ exports[`ListItem: should render icon 1`] = `
       className="listItemTitle"
       intimate={true}
       light={true}
+      regular={false}
     >
       testTitle
     </Text>
@@ -28,9 +67,133 @@ exports[`ListItem: should render icon 1`] = `
         className="displayInline"
         loud={true}
         strong={true}
+        waving={false}
       >
         testValue
       </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render icon in compact mode 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div
+    className="listItemBody"
+  >
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={false}
+      regular={true}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        loud={false}
+        strong={true}
+        waving={true}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render icon in hasHoverState mode 1`] = `
+<div
+  className="root hasHoverState"
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div
+    className="listItemBody"
+  >
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+      regular={false}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        loud={true}
+        strong={true}
+        waving={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render icon with badge with hasHoverState and compact mode 1`] = `
+<div
+  className="root hasHoverState"
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div
+    className="listItemBody"
+  >
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={false}
+      regular={true}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        loud={false}
+        strong={true}
+        waving={true}
+      >
+        testValue
+      </Text>
+      <span
+        className="listItemBadge"
+      >
+        <Badge
+          color="default"
+          isBold={true}
+          label="badge"
+        />
+      </span>
     </div>
   </div>
 </div>
@@ -48,6 +211,7 @@ exports[`ListItem: should render title value 1`] = `
       className="listItemTitle"
       intimate={true}
       light={true}
+      regular={false}
     >
       testTitle
     </Text>
@@ -59,6 +223,7 @@ exports[`ListItem: should render title value 1`] = `
         className="displayInline"
         loud={true}
         strong={true}
+        waving={false}
       >
         testValue
       </Text>
@@ -82,6 +247,7 @@ exports[`ListItem: should render value 1`] = `
         className="displayInline"
         loud={true}
         strong={true}
+        waving={false}
       >
         testValue
       </Text>

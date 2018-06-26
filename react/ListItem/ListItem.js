@@ -3,20 +3,51 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Text from '../Text/Text';
+import Badge from '../Badge/Badge';
 
-export default function ListItem({ title, value, icon, badge, isCompact, hasHoverState, noShadow }) {
+const defaultBadgeSetting = {
+  color: 'default',
+  isBold: true
+};
+
+export default function ListItem({
+  title,
+  value,
+  icon,
+  badge,
+  compact,
+  hasHoverState,
+  noShadow
+}) {
   return (
-    <div className={classnames({ [styles.root]: true, [styles.isCompact]: isCompact, [styles.hasHoverState]: hasHoverState, [styles.noShadow]: noShadow })}>
-      {icon && <div className={classnames(styles.listItemIcon)}>{icon}</div>}
-      <div className={classnames(styles.listItemBody)}>
+    <div
+      className={classnames({
+        [styles.root]: true,
+        [styles.hasHoverState]: hasHoverState,
+        [styles.noShadow]: noShadow
+      })}>
+      {icon && <div className={styles.listItemIcon}>{icon}</div>}
+      <div className={styles.listItemBody}>
         {title && (
-          <Text light intimate baseline={false} className={classnames(styles.listItemTitle)}>{title}</Text>
+          <Text
+            light={!compact}
+            regular={compact}
+            intimate
+            baseline={false}
+            className={styles.listItemTitle}>
+            {title}
+          </Text>
         )}
-        <div className={classnames(styles.listItemValue)}>
-          <Text strong loud baseline={false} className={classnames(styles.displayInline)}>{value}</Text>
-          {badge && (
-            <span> <span className={classnames(styles.listItemBadge)}> {badge}</span></span>
-          )}
+        <div className={styles.listItemValue}>
+          <Text
+            strong
+            loud={!compact}
+            waving={compact}
+            baseline={false}
+            className={styles.displayInline}>
+            {value}
+          </Text>
+          {badge && <span className={styles.listItemBadge}><Badge {... { ...defaultBadgeSetting, ...badge }} /></span>}
         </div>
       </div>
     </div>
@@ -26,15 +57,17 @@ export default function ListItem({ title, value, icon, badge, isCompact, hasHove
 ListItem.propTypes = {
   title: PropTypes.string,
   value: PropTypes.string.isRequired,
-  icon: PropTypes.function,
-  badge: PropTypes.function,
-  isCompact: PropTypes.bool,
+  icon: PropTypes.node,
+  badge: PropTypes.object,
+  compact: PropTypes.bool,
   hasHoverState: PropTypes.bool,
   noShadow: PropTypes.bool
 };
 
 ListItem.defaultProps = {
-  isCompact: false,
+  compact: false,
   hasHoverState: false,
-  noShadow: false
+  noShadow: false,
+  badge: null,
+  icon: null
 };
