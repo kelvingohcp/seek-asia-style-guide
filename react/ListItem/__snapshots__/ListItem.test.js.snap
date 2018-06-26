@@ -1,43 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListItem: should render icon (compact mode) 1`] = `
-<div
-  className="root"
->
-  <div
-    className="listItemIcon"
-  >
-    <Education icon />
-  </div>
-  <div
-    className="listItemBody"
-  >
-    <Text
-      baseline={false}
-      className="listItemTitle"
-      intimate={true}
-      light={false}
-      regular={true}
-    >
-      testTitle
-    </Text>
-    <div
-      className="listItemValue"
-    >
-      <Text
-        baseline={false}
-        className="displayInline"
-        loud={false}
-        strong={true}
-        waving={true}
-      >
-        testValue
-      </Text>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`ListItem: should render icon 1`] = `
 <div
   className="root"
