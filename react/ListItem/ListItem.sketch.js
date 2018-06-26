@@ -2,7 +2,6 @@ import React from 'react';
 import mapKeys from 'lodash/mapKeys';
 import ListItem from './ListItem';
 import { IconEducation } from 'seek-asia-style-guide/react';
-// import Badge from '../Badge/Badge';
 
 const badge = {
   label: 'Badge'

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import Text from '../Text/Text';
 import Badge from '../Badge/Badge';
 
-const defaultBadgeSetting = {
+const defaultBadgeProps = {
   color: 'default',
   isBold: true
 };
@@ -47,7 +47,7 @@ export default function ListItem({
             className={styles.displayInline}>
             {value}
           </Text>
-          {badge && <span className={styles.listItemBadge}><Badge {... { ...defaultBadgeSetting, ...badge }} /></span>}
+          {badge && <span className={styles.listItemBadge}><Badge {... { ...defaultBadgeProps, ...badge }} /></span>}
         </div>
       </div>
     </div>
