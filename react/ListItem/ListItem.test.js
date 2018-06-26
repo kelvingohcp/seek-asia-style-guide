@@ -18,5 +18,20 @@ describe('ListItem:', () => {
     const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render icon in compact mode', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} compact />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render icon in hasHoverState mode', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} hasHoverState />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render icon with badge with hasHoverState and compact mode', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} hasHoverState compact badge={{ color: 'default', isBold: true, label: 'badge' }} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
 
