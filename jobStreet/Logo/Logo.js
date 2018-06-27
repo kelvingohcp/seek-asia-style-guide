@@ -5,6 +5,8 @@ import markupID from './JobStreetLogoID.svg';
 import markupMY from './JobStreetLogoMY.svg';
 import markupPH from './JobStreetLogoPH.svg';
 import markupSG from './JobStreetLogoSG.svg';
+import classnames from 'classnames';
+import styles from './Logo.less';
 
 const getMarkup = country => {
   switch (country.toLowerCase()) {
@@ -24,7 +26,7 @@ export default function Logo({ country, svgClassName, ...restProps }) {
     .replace('<svg ', `<svg class="${svgClassName}" `);
 
   return (
-    <span dangerouslySetInnerHTML={{ __html: svgWithClasses }} {...restProps} /> // eslint-disable-line react/no-danger
+    <span dangerouslySetInnerHTML={{ __html: svgWithClasses }} className={classnames(styles.logoWrapper)} {...restProps} /> // eslint-disable-line react/no-danger
   );
 }
 

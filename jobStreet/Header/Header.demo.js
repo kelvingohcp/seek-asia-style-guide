@@ -12,7 +12,7 @@ export default {
   initialProps: {
     language: 'en',
     country: 'my',
-    loginAvailable: true,
+    loginAvailable: false,
     activeTab: ACTIVE_TAB_HOME
   },
   options: [{
@@ -124,17 +124,17 @@ export default {
     type: 'radio',
     states: [
       {
-        label: 'Login available',
-        transformProps: props => ({
-          ...props,
-          loginAvailable: true
-        })
-      },
-      {
         label: 'Login unavailable',
         transformProps: props => ({
           ...props,
           loginAvailable: false
+        })
+      },
+      {
+        label: 'Login available',
+        transformProps: props => ({
+          ...props,
+          loginAvailable: true
         })
       }
     ]

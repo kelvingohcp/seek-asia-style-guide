@@ -3,5 +3,9 @@
 .logoWrapper {
   width: 132px;
   height: 32px;
-  padding-right: 1px;
+  display: inline-block;
+  @media @desktop {
+    margin-bottom: @grid-base*2;
+    margin-right: @grid-base*8;
+  }
 }

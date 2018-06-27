@@ -45,13 +45,12 @@ exports[`Header should pass through optional props 1`] = `
     <h1
       className="logo"
     >
-      <FakeComponent
-        country="my"
-        svgClassName="logoSvg"
-      />
       <a
         className="logoLink"
         href="/"
+      />
+      <FakeComponent
+        country="my"
       />
     </h1>
     <div
@@ -165,6 +164,7 @@ exports[`Header should pass through optional props 1`] = `
     showMenu={false}
   />
   <Menu
+    authenticationStatus="unauthenticated"
     brandStyles={
       Object {
         "employerLink": "employerLink",
@@ -281,13 +281,11 @@ exports[`Header should render with default props 1`] = `
     <h1
       className="logo"
     >
-      <FakeComponent
-        svgClassName="logoSvg"
-      />
       <a
         className="logoLink"
         href="/"
       />
+      <FakeComponent />
     </h1>
     <div
       className="primaryNavLinksWrapper"
@@ -333,6 +331,7 @@ exports[`Header should render with default props 1`] = `
     }
   />
   <Menu
+    authenticationStatus="unauthenticated"
     brandStyles={
       Object {
         "employerLink": "employerLink",
@@ -417,13 +416,11 @@ exports[`Header should render with links list 1`] = `
     <h1
       className="logo"
     >
-      <FakeComponent
-        svgClassName="logoSvg"
-      />
       <a
         className="logoLink"
         href="/"
       />
+      <FakeComponent />
     </h1>
     <div
       className="primaryNavLinksWrapper"
@@ -534,6 +531,7 @@ exports[`Header should render with links list 1`] = `
     }
   />
   <Menu
+    authenticationStatus="unauthenticated"
     brandStyles={
       Object {
         "employerLink": "employerLink",
@@ -642,13 +640,11 @@ exports[`Header should render with login available 1`] = `
     <h1
       className="logo"
     >
-      <FakeComponent
-        svgClassName="logoSvg"
-      />
       <a
         className="logoLink"
         href="/"
       />
+      <FakeComponent />
     </h1>
     <div
       className="primaryNavLinksWrapper"
@@ -697,6 +693,7 @@ exports[`Header should render with login available 1`] = `
     }
   />
   <Menu
+    authenticationStatus="unauthenticated"
     brandStyles={
       Object {
         "employerLink": "employerLink",

@@ -29,37 +29,43 @@ export const locales = [
     ItemIcon: FlagSGIcon,
     url: 'https://www.jobstreet.com.sg/',
     language: 'en',
-    country: 'sg'
+    country: 'sg',
+    languageDisplay: 'English'
   }, {
     title: 'Malaysia (English)',
     ItemIcon: FlagMYIcon,
     url: 'https://www.jobstreet.com.my/',
     language: 'en',
-    country: 'my'
+    country: 'my',
+    languageDisplay: 'English'
   }, {
     title: 'Philiphines (English)',
     ItemIcon: FlagPHIcon,
     url: 'https://www.jobstreet.com.ph/',
     language: 'en',
-    country: 'ph'
+    country: 'ph',
+    languageDisplay: 'English'
   }, {
     title: 'Indonesia (English)',
     ItemIcon: FlagIDIcon,
     url: 'https://www.jobstreet.co.id/en/',
     language: 'en',
-    country: 'id'
+    country: 'id',
+    languageDisplay: 'English'
   }, {
     title: 'Indonesia (Bahasa)',
     ItemIcon: FlagIDIcon,
     url: 'https://www.jobstreet.co.id/',
     language: 'id',
-    country: 'id'
+    country: 'id',
+    languageDisplay: 'Bahasa'
   }, {
     title: 'Việt Nam (Tiếng Việt)',
     ItemIcon: FlagVNIcon,
     url: 'https://www.jobstreet.vn/',
     language: 'vi',
-    country: 'vn'
+    country: 'vn',
+    languageDisplay: 'Tiếng Việt'
   }
 ];
 

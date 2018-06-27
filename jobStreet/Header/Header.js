@@ -26,7 +26,8 @@ const getJobStreetProps = ({ country, language }) => {
   return {
     links,
     messages,
-    more
+    more,
+    locales
   };
 };
 

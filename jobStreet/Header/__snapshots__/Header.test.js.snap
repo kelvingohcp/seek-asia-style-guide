@@ -9,6 +9,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
     }
   }
   activeTab="ACTIVE_TAB_HOME"
+  authenticationStatus="unauthenticated"
   brandStyles={null}
   country="my"
   language="en"
@@ -48,6 +49,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "ItemIcon": [Function],
         "country": "sg",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Singapore (English)",
         "url": "https://www.jobstreet.com.sg/",
       },
@@ -55,6 +57,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "ItemIcon": [Function],
         "country": "my",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Malaysia (English)",
         "url": "https://www.jobstreet.com.my/",
       },
@@ -62,6 +65,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "ItemIcon": [Function],
         "country": "ph",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Philiphines (English)",
         "url": "https://www.jobstreet.com.ph/",
       },
@@ -69,6 +73,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "ItemIcon": [Function],
         "country": "id",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Indonesia (English)",
         "url": "https://www.jobstreet.co.id/en/",
       },
@@ -76,6 +81,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "ItemIcon": [Function],
         "country": "id",
         "language": "id",
+        "languageDisplay": "Bahasa",
         "title": "Indonesia (Bahasa)",
         "url": "https://www.jobstreet.co.id/",
       },
@@ -83,6 +89,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "ItemIcon": [Function],
         "country": "vn",
         "language": "vi",
+        "languageDisplay": "Tiếng Việt",
         "title": "Việt Nam (Tiếng Việt)",
         "url": "https://www.jobstreet.vn/",
       },
@@ -130,12 +137,17 @@ exports[`JobStreet Header passes through optional props 1`] = `
       "header.freshGradJobsUrl": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
       "header.homeTitle": "Home",
       "header.homeUrl": "https://jobstreet.com.my",
+      "header.loginTitle": "Log in",
+      "header.loginUrl": "https://myjobstreet.jobstreet.com.my/login",
       "header.myAccountTitle": "My Account",
       "header.myAccountUrl": "https://myjobstreet.jobstreet.com.my/resume/preview-resume.php?",
       "header.myJobStreetTitle": "MyJobStreet",
       "header.myJobStreetUrl": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
       "header.overseasJobsTitle": "Overseas Jobs",
       "header.overseasJobsUrl": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
+      "header.seperatorOr": "or",
+      "header.signupTitle": "Sign up",
+      "header.signupUrl": "https://myjobstreet.jobstreet.com.my/signup",
       "menu.backToMenu": "Back to Menu",
       "menu.countryAndLanguage": "Country & Language",
       "menu.jobSeekerHeader": "JOB SEEKER",
@@ -167,6 +179,7 @@ exports[`JobStreet Header renders with default props 1`] = `
 <Header
   LogoComponent={[Function]}
   activeTab="ACTIVE_TAB_HOME"
+  authenticationStatus="unauthenticated"
   brandStyles={null}
   country="my"
   language="en"
@@ -206,6 +219,7 @@ exports[`JobStreet Header renders with default props 1`] = `
         "ItemIcon": [Function],
         "country": "sg",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Singapore (English)",
         "url": "https://www.jobstreet.com.sg/",
       },
@@ -213,6 +227,7 @@ exports[`JobStreet Header renders with default props 1`] = `
         "ItemIcon": [Function],
         "country": "my",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Malaysia (English)",
         "url": "https://www.jobstreet.com.my/",
       },
@@ -220,6 +235,7 @@ exports[`JobStreet Header renders with default props 1`] = `
         "ItemIcon": [Function],
         "country": "ph",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Philiphines (English)",
         "url": "https://www.jobstreet.com.ph/",
       },
@@ -227,6 +243,7 @@ exports[`JobStreet Header renders with default props 1`] = `
         "ItemIcon": [Function],
         "country": "id",
         "language": "en",
+        "languageDisplay": "English",
         "title": "Indonesia (English)",
         "url": "https://www.jobstreet.co.id/en/",
       },
@@ -234,6 +251,7 @@ exports[`JobStreet Header renders with default props 1`] = `
         "ItemIcon": [Function],
         "country": "id",
         "language": "id",
+        "languageDisplay": "Bahasa",
         "title": "Indonesia (Bahasa)",
         "url": "https://www.jobstreet.co.id/",
       },
@@ -241,6 +259,7 @@ exports[`JobStreet Header renders with default props 1`] = `
         "ItemIcon": [Function],
         "country": "vn",
         "language": "vi",
+        "languageDisplay": "Tiếng Việt",
         "title": "Việt Nam (Tiếng Việt)",
         "url": "https://www.jobstreet.vn/",
       },
@@ -288,12 +307,17 @@ exports[`JobStreet Header renders with default props 1`] = `
       "header.freshGradJobsUrl": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
       "header.homeTitle": "Home",
       "header.homeUrl": "https://jobstreet.com.my",
+      "header.loginTitle": "Log in",
+      "header.loginUrl": "https://myjobstreet.jobstreet.com.my/login",
       "header.myAccountTitle": "My Account",
       "header.myAccountUrl": "https://myjobstreet.jobstreet.com.my/resume/preview-resume.php?",
       "header.myJobStreetTitle": "MyJobStreet",
       "header.myJobStreetUrl": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
       "header.overseasJobsTitle": "Overseas Jobs",
       "header.overseasJobsUrl": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
+      "header.seperatorOr": "or",
+      "header.signupTitle": "Sign up",
+      "header.signupUrl": "https://myjobstreet.jobstreet.com.my/signup",
       "menu.backToMenu": "Back to Menu",
       "menu.countryAndLanguage": "Country & Language",
       "menu.jobSeekerHeader": "JOB SEEKER",

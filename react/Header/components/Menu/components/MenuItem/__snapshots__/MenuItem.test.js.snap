@@ -33,7 +33,7 @@ exports[`MenuItem should render with all optional props 1`] = `
       className="icon"
       direction="left"
       key="icon"
-      svgClassName="awesomeSVG menuIcon"
+      svgClassName="awesomeSVG"
     />
     <span
       className="seriously I thought css modules would solve this precarious css specificity nonsense"

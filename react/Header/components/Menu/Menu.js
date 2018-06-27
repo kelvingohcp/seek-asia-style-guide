@@ -50,7 +50,7 @@ export default class Menu extends Component {
     return null;
   }
   render() {
-    const { messages, shouldShowMenu, links, locales, more, brandStyles, employerSite, authenticationStatus, baseUrl, userName, linkRenderer } = this.props;
+    const { messages, shouldShowMenu, links, locales, more, brandStyles, employerSite, authenticationStatus, baseUrl, userName, linkRenderer, loginAvailable } = this.props;
     return (
       <div className={classnames(styles.root, { [styles.showMenu]: shouldShowMenu })}>
         <Section className={styles.headerMenu}>
@@ -95,14 +95,14 @@ export default class Menu extends Component {
           </div>)
         }
         {
-          authenticationStatus === UNAUTHENTICATED && (
+          authenticationStatus === UNAUTHENTICATED && loginAvailable && (
             <MenuItem itemClass={styles.loginSignup} linkUrl={baseUrl + messages['header.loginUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               <Text>{messages['header.loginTitle']}</Text>
             </MenuItem>
           )
         }
         {
-          authenticationStatus === UNAUTHENTICATED && (
+          authenticationStatus === UNAUTHENTICATED && loginAvailable && (
             <MenuItem itemClass={styles.loginSignup} linkUrl={baseUrl + messages['header.signupUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               <Text>{messages['header.signupTitle']}</Text>
             </MenuItem>
@@ -165,5 +165,6 @@ Menu.propTypes = {
   ]).isRequired,
   baseUrl: PropTypes.string,
   linkRenderer: PropTypes.func,
-  userName: PropTypes.string
+  userName: PropTypes.string,
+  loginAvailable: PropTypes.bool
 };

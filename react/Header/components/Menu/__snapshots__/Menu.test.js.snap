@@ -84,32 +84,6 @@ exports[`Menu should render with default props 1`] = `
       </div>
     </MenuItem>
   </div>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
   <div
     className="subMenu"
   >
@@ -346,32 +320,6 @@ exports[`Menu should render with links list 1`] = `
       </div>
     </MenuItem>
   </div>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
   <div
     className="subMenu"
   >
@@ -540,32 +488,6 @@ exports[`Menu should render with menu open 1`] = `
       </div>
     </MenuItem>
   </div>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
   <div
     className="subMenu"
   >
@@ -818,32 +740,6 @@ exports[`Menu should render with more links 1`] = `
       </div>
     </MenuItem>
   </div>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/login/jobseekerlogin"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
-  <MenuItem
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-      }
-    }
-    itemClass="loginSignup"
-    linkUrl="http://seekasia.com/hk/en/jobseeker/registration"
-  >
-    <Text
-      baseline={true}
-    />
-  </MenuItem>
   <div
     className="subMenu"
   >

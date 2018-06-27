@@ -5,7 +5,7 @@ import { Button } from 'seek-asia-style-guide/react';
 import styles from './MenuItem.less';
 
 const withIcon = ({ ItemIcon, children, brandStyles, itemClass, iconProps = {} }) => {
-  iconProps.svgClassName = iconProps.svgClassName ? classnames(iconProps.svgClassName, brandStyles.menuIcon) : brandStyles.menuIcon;
+  iconProps.svgClassName = iconProps.svgClassName ? classnames(iconProps.svgClassName) : brandStyles.menuIcon;
 
   return [
     ...(ItemIcon ? [(<ItemIcon key="icon" className={styles.icon} {...iconProps} />)] : []),

@@ -127,13 +127,13 @@ export default class Header extends Component {
         </div>
         <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
           <h1 className={styles.logo}>
-            <LogoComponent svgClassName={styles.logoSvg} {...logoProps} />
             {
               linkRenderer({
                 className: styles.logoLink,
                 href: '/'
               })
             }
+            <LogoComponent {...logoProps} />
           </h1>
           {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
           {loginAvailable && <div className={styles.secondaryNav} />}
@@ -204,5 +204,6 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  linkRenderer: defaultLinkRenderer
+  linkRenderer: defaultLinkRenderer,
+  authenticationStatus: UNAUTHENTICATED
 };
