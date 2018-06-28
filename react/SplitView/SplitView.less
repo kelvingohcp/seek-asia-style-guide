@@ -1,0 +1,23 @@
+@import (reference) '~seek-asia-style-guide/theme';
+
+.root {
+  display: flex;
+}
+
+.leftChild {
+  @media @new-tablet, @new-desktop {
+    max-width: @gutter-width * 16;
+  }
+  @media @new-large-screen {
+    max-width: @gutter-width * 22;
+  }
+}
+
+.rightChild {
+  max-width: @gutter-width * 50;
+  display: none;
+  flex: 1;
+  @media @new-tablet, @new-desktop, @new-large-screen {
+    display: inherit;
+  }
+}
