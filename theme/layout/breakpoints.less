@@ -1,9 +1,28 @@
 // Breakpoint
+//Will be deprecated
 @responsive-breakpoint: 770px;
 
-@mobile: %(~"only screen and (max-width: %s)", (@responsive-breakpoint - 1));
+@mobile: %(~'only screen and (max-width: %s)', (@responsive-breakpoint - 1));
 
-@desktop: %(~"only screen and (min-width: %s)", @responsive-breakpoint);
+@desktop: %(~'only screen and (min-width: %s)', @responsive-breakpoint);
+
+//New rules
+@mobile-breakpoint: 770px;
+@tablet-breakpoint: 1024px;
+@desktop-breakpoint: 1280px;
+
+@new-mobile: %(~'only screen and (max-width: %s)', (@mobile-breakpoint - 1));
+@new-tablet: %(
+  ~'only screen and (min-width: %s) and (max-width: %s)',
+  @mobile-breakpoint,
+  (@tablet-breakpoint - 1)
+);
+@new-desktop: %(
+  ~'only screen and (min-width: %s) and (max-width: %s)',
+  @tablet-breakpoint,
+  (@desktop-breakpoint - 1)
+);
+@new-large-screen: %(~'only screen and (min-width: %s)', @desktop-breakpoint);
 
 // DEPRECATED: Use @mobile variable instead.
 .smallDeviceOnly(@rules) {
