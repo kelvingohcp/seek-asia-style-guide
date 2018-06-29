@@ -156,21 +156,21 @@ export default {
       type: 'radio',
       states: [
         {
-          label: 'Strong',
+          label: 'Regular',
           transformProps: props => props
+        },
+        {
+          label: 'Strong',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, strong: true }
+          })
         },
         {
           label: 'Light',
           transformProps: props => ({
             ...props,
             descriptionProps: { ...props.descriptionProps, light: true }
-          })
-        },
-        {
-          label: 'Regular',
-          transformProps: props => ({
-            ...props,
-            descriptionProps: { ...props.descriptionProps, regular: true }
           })
         },
         {
@@ -209,6 +209,21 @@ export default {
           transformProps: props => ({
             ...props,
             descriptionProps: { ...props.descriptionProps, secondary: true }
+          })
+        }
+      ]
+    },
+    {
+      label: 'with onClick',
+      type: 'checklist',
+      states: [
+        {
+          label: 'with onClick',
+          transformProps: props => ({
+            ...props,
+            onClick: () => {
+              console.log('List Item clicked');
+            }
           })
         }
       ]

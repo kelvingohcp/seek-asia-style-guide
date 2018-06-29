@@ -20,7 +20,8 @@ export default function ListItem({
   noShadow,
   leftPadding,
   rightPadding,
-  descriptionProps
+  descriptionProps,
+  onClick
 }) {
   return (
     <div
@@ -32,7 +33,8 @@ export default function ListItem({
       style={{
         paddingLeft: `calc(${styles.listItemPadding} * ${leftPadding})`,
         paddingRight: `calc(${styles.listItemPadding} * ${rightPadding})`
-      }} >
+      }}
+      onClick={onClick && (e => onClick(e))} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
       <div>
         {title && (
@@ -71,7 +73,8 @@ ListItem.propTypes = {
   noShadow: PropTypes.bool,
   leftPadding: PropTypes.number,
   rightPadding: PropTypes.number,
-  descriptionProps: PropTypes.object
+  descriptionProps: PropTypes.object,
+  onClick: PropTypes.function
 };
 
 ListItem.defaultProps = {
@@ -81,6 +84,5 @@ ListItem.defaultProps = {
   badge: null,
   icon: null,
   leftPadding: 4,
-  rightPadding: 4,
-  descriptionProps: { strong: true }
+  rightPadding: 4
 };
