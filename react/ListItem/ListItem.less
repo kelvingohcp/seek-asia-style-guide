@@ -1,10 +1,14 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
 @list-item-v-padding: @grid-base * 3;
-@list-item-h-padding: @grid-base * 4;
 @list-item-line-height: @grid-base * 5;
 @list-item-icon-padding-top: @grid-base / 2;
 @list-item-icon-padding-left: @grid-base * 3;
+@list-item-icon-padding-right: @grid-base * 3;
+
+:export {
+  listItemPadding: @grid-base;
+}
 
 .root {
   align-items: flex-start;
@@ -35,15 +39,11 @@
   transform: translateY(@grid-base * -0.5);
 }
 
-.listItemBody {
-  padding-left: @list-item-h-padding;
-  padding-right: @list-item-h-padding;
-}
-
 .listItemIcon {
   color: @saGrey4;
   padding-left: @list-item-icon-padding-left;
   padding-top: @list-item-icon-padding-top;
+  padding-right: @list-item-icon-padding-right;
   vertical-align: middle;
 }
 

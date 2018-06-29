@@ -110,6 +110,46 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'Custom Padding',
+      type: 'radio',
+      states: [
+        {
+          label: 'Default Paddings',
+          transformProps: props => props
+        },
+        {
+          label: 'No Paddings',
+          transformProps: props => ({
+            ...props,
+            leftPadding: '0',
+            rightPadding: '0'
+          })
+        },
+        {
+          label: 'Left Custom Padding',
+          transformProps: props => ({
+            ...props,
+            leftPadding: '8'
+          })
+        },
+        {
+          label: 'Right Custom Padding',
+          transformProps: props => ({
+            ...props,
+            rightPadding: '8'
+          })
+        },
+        {
+          label: 'Custom Paddings',
+          transformProps: props => ({
+            ...props,
+            leftPadding: '8',
+            rightPadding: '8'
+          })
+        }
+      ]
     }
   ]
 };
