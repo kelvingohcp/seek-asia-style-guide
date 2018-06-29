@@ -1,17 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListItem: should render icon 1`] = `
+exports[`ListItem: should render custom left padding 1`] = `
 <div
   className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 8)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
 >
-  <div
-    className="listItemIcon"
-  >
-    <Education icon />
-  </div>
-  <div
-    className="listItemBody"
-  >
+  <div>
     <Text
       baseline={false}
       className="listItemTitle"
@@ -28,7 +27,161 @@ exports[`ListItem: should render icon 1`] = `
         baseline={false}
         className="displayInline"
         loud={true}
-        strong={true}
+        waving={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render custom left padding with light font weight 1`] = `
+<div
+  className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 8)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
+>
+  <div>
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+      regular={false}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        light={true}
+        loud={true}
+        waving={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render custom left padding with light font weight and secondary text 1`] = `
+<div
+  className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 8)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
+>
+  <div>
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+      regular={false}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        light={true}
+        loud={true}
+        secondary={true}
+        waving={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render custom left padding with light font weight, secondary text and onclick function 1`] = `
+<div
+  className="root"
+  onClick={[Function]}
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 8)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
+>
+  <div>
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+      regular={false}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        light={true}
+        loud={true}
+        secondary={true}
+        waving={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render icon 1`] = `
+<div
+  className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 4)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
+>
+  <div
+    className="listItemIcon"
+  >
+    <Education icon />
+  </div>
+  <div>
+    <Text
+      baseline={false}
+      className="listItemTitle"
+      intimate={true}
+      light={true}
+      regular={false}
+    >
+      testTitle
+    </Text>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        loud={true}
         waving={false}
       >
         testValue
@@ -41,15 +194,19 @@ exports[`ListItem: should render icon 1`] = `
 exports[`ListItem: should render icon in compact mode 1`] = `
 <div
   className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 4)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
 >
   <div
     className="listItemIcon"
   >
     <Education icon />
   </div>
-  <div
-    className="listItemBody"
-  >
+  <div>
     <Text
       baseline={false}
       className="listItemTitle"
@@ -66,7 +223,6 @@ exports[`ListItem: should render icon in compact mode 1`] = `
         baseline={false}
         className="displayInline"
         loud={false}
-        strong={true}
         waving={true}
       >
         testValue
@@ -79,15 +235,19 @@ exports[`ListItem: should render icon in compact mode 1`] = `
 exports[`ListItem: should render icon in hasHoverState mode 1`] = `
 <div
   className="root hasHoverState"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 4)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
 >
   <div
     className="listItemIcon"
   >
     <Education icon />
   </div>
-  <div
-    className="listItemBody"
-  >
+  <div>
     <Text
       baseline={false}
       className="listItemTitle"
@@ -104,7 +264,6 @@ exports[`ListItem: should render icon in hasHoverState mode 1`] = `
         baseline={false}
         className="displayInline"
         loud={true}
-        strong={true}
         waving={false}
       >
         testValue
@@ -117,15 +276,19 @@ exports[`ListItem: should render icon in hasHoverState mode 1`] = `
 exports[`ListItem: should render icon with badge with hasHoverState and compact mode 1`] = `
 <div
   className="root hasHoverState"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 4)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
 >
   <div
     className="listItemIcon"
   >
     <Education icon />
   </div>
-  <div
-    className="listItemBody"
-  >
+  <div>
     <Text
       baseline={false}
       className="listItemTitle"
@@ -142,7 +305,6 @@ exports[`ListItem: should render icon with badge with hasHoverState and compact 
         baseline={false}
         className="displayInline"
         loud={false}
-        strong={true}
         waving={true}
       >
         testValue
@@ -164,10 +326,14 @@ exports[`ListItem: should render icon with badge with hasHoverState and compact 
 exports[`ListItem: should render title value 1`] = `
 <div
   className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 4)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
 >
-  <div
-    className="listItemBody"
-  >
+  <div>
     <Text
       baseline={false}
       className="listItemTitle"
@@ -184,7 +350,6 @@ exports[`ListItem: should render title value 1`] = `
         baseline={false}
         className="displayInline"
         loud={true}
-        strong={true}
         waving={false}
       >
         testValue
@@ -197,10 +362,14 @@ exports[`ListItem: should render title value 1`] = `
 exports[`ListItem: should render value 1`] = `
 <div
   className="root"
+  style={
+    Object {
+      "paddingLeft": "calc(listItemPadding * 4)",
+      "paddingRight": "calc(listItemPadding * 4)",
+    }
+  }
 >
-  <div
-    className="listItemBody"
-  >
+  <div>
     <div
       className="listItemValue"
     >
@@ -208,7 +377,6 @@ exports[`ListItem: should render value 1`] = `
         baseline={false}
         className="displayInline"
         loud={true}
-        strong={true}
         waving={false}
       >
         testValue

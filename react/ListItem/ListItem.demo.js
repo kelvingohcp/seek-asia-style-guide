@@ -123,30 +123,30 @@ export default {
           label: 'No Paddings',
           transformProps: props => ({
             ...props,
-            leftPadding: '0',
-            rightPadding: '0'
+            leftPadding: 0,
+            rightPadding: 0
           })
         },
         {
           label: 'Left Custom Padding',
           transformProps: props => ({
             ...props,
-            leftPadding: '8'
+            leftPadding: 8
           })
         },
         {
           label: 'Right Custom Padding',
           transformProps: props => ({
             ...props,
-            rightPadding: '8'
+            rightPadding: 8
           })
         },
         {
           label: 'Custom Paddings',
           transformProps: props => ({
             ...props,
-            leftPadding: '8',
-            rightPadding: '8'
+            leftPadding: 8,
+            rightPadding: 8
           })
         }
       ]
