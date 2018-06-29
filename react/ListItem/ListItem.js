@@ -19,7 +19,8 @@ export default function ListItem({
   hasHoverState,
   noShadow,
   leftPadding,
-  rightPadding
+  rightPadding,
+  descriptionProps
 }) {
   return (
     <div
@@ -28,7 +29,10 @@ export default function ListItem({
         [styles.hasHoverState]: hasHoverState,
         [styles.noShadow]: noShadow
       })}
-      style={{ paddingLeft: `calc(${styles.listItemPadding} * ${leftPadding})`, paddingRight: `calc(${styles.listItemPadding} * ${rightPadding})` }} >
+      style={{
+        paddingLeft: `calc(${styles.listItemPadding} * ${leftPadding})`,
+        paddingRight: `calc(${styles.listItemPadding} * ${rightPadding})`
+      }} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
       <div>
         {title && (
@@ -43,11 +47,11 @@ export default function ListItem({
         )}
         <div className={styles.listItemValue}>
           <Text
-            strong
             loud={!compact}
             waving={compact}
             baseline={false}
-            className={styles.displayInline}>
+            className={styles.displayInline}
+            {...descriptionProps}>
             {value}
           </Text>
           {badge && <span className={styles.listItemBadge}><Badge {... { ...defaultBadgeProps, ...badge }} /></span>}
@@ -66,7 +70,8 @@ ListItem.propTypes = {
   hasHoverState: PropTypes.bool,
   noShadow: PropTypes.bool,
   leftPadding: PropTypes.number,
-  rightPadding: PropTypes.number
+  rightPadding: PropTypes.number,
+  descriptionProps: PropTypes.object
 };
 
 ListItem.defaultProps = {
@@ -76,5 +81,6 @@ ListItem.defaultProps = {
   badge: null,
   icon: null,
   leftPadding: 4,
-  rightPadding: 4
+  rightPadding: 4,
+  descriptionProps: { strong: true }
 };
