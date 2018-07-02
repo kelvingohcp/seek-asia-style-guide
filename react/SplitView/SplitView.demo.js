@@ -23,7 +23,7 @@ export default {
           <Text shouting>Right Content</Text>
           <Text>
             This content is provided by the second child. It will not show on
-            mobile or tablet. 
+            mobile or tablet.
           </Text>
         </Section>
       </Card>
