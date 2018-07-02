@@ -1,12 +1,13 @@
 // Breakpoint
-//Will be deprecated
 @responsive-breakpoint: 770px;
 
 @mobile: %(~'only screen and (max-width: %s)', (@responsive-breakpoint - 1));
 
 @desktop: %(~'only screen and (min-width: %s)', @responsive-breakpoint);
 
-//New rules
+//New rules as proposed by design
+//The plan is to eventually replace values above with these
+//These values and names are still not final and subject to change
 @mobile-breakpoint: 770px;
 @tablet-breakpoint: 1024px;
 @desktop-breakpoint: 1280px;
