@@ -11,7 +11,7 @@ export default function SplitView({ children }) {
       )}
       {children &&
         children.length > 1 && (
-        <div className={styles.rightChild}>{children[1]}</div>
+        <div className={styles.rightChild}>{children.slice(1)}</div>
       )}
     </div>
   );
