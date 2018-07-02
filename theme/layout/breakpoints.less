@@ -22,7 +22,7 @@
   @tablet-breakpoint,
   (@desktop-breakpoint - 1)
 );
-@new-large-screen: %(~'only screen and (min-width: %s)', @desktop-breakpoint);
+@new-desktop-widescreen: %(~'only screen and (min-width: %s)', @desktop-breakpoint);
 
 // DEPRECATED: Use @mobile variable instead.
 .smallDeviceOnly(@rules) {
