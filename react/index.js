@@ -34,6 +34,7 @@ export { default as Columns } from './Columns/Columns';
 export { default as Hidden } from './Hidden/Hidden';
 export { default as PageBlock } from './PageBlock/PageBlock';
 export { default as Section } from './Section/Section';
+export { default as SplitView } from './SplitView/SplitView';
 
 // Icons
 export { default as BenefitsIcon } from './BenefitsIcon/BenefitsIcon';
