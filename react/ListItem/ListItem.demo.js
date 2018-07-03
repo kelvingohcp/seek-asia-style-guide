@@ -112,41 +112,14 @@ export default {
       ]
     },
     {
-      label: 'Custom Padding',
-      type: 'radio',
+      label: 'Left padding',
+      type: 'checklist',
       states: [
         {
-          label: 'Default Paddings',
-          transformProps: props => props
-        },
-        {
-          label: 'No Paddings',
+          label: 'Left padding',
           transformProps: props => ({
             ...props,
-            leftPadding: 0,
-            rightPadding: 0
-          })
-        },
-        {
-          label: 'Left Custom Padding',
-          transformProps: props => ({
-            ...props,
-            leftPadding: 8
-          })
-        },
-        {
-          label: 'Right Custom Padding',
-          transformProps: props => ({
-            ...props,
-            rightPadding: 8
-          })
-        },
-        {
-          label: 'Custom Paddings',
-          transformProps: props => ({
-            ...props,
-            leftPadding: 8,
-            rightPadding: 8
+            leftPadding: true
           })
         }
       ]
@@ -209,21 +182,6 @@ export default {
           transformProps: props => ({
             ...props,
             descriptionProps: { ...props.descriptionProps, secondary: true }
-          })
-        }
-      ]
-    },
-    {
-      label: 'with onClick',
-      type: 'checklist',
-      states: [
-        {
-          label: 'with onClick',
-          transformProps: props => ({
-            ...props,
-            onClick: () => {
-              console.log('List Item clicked');
-            }
           })
         }
       ]

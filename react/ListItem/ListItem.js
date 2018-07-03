@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Text from '../Text/Text';
 import Badge from '../Badge/Badge';
-import gridValues from 'seek-asia-style-guide/theme/layout/grid.js';
-
-const gridBase = parseInt(gridValues['@grid-base'], 10);
 
 const defaultBadgeProps = {
   color: 'default',
@@ -22,24 +19,19 @@ export default function ListItem({
   hasHoverState,
   noShadow,
   leftPadding,
-  rightPadding,
-  descriptionProps,
-  onClick
+  descriptionProps
 }) {
   return (
+
     <div
       className={classnames({
         [styles.root]: true,
         [styles.hasHoverState]: hasHoverState,
-        [styles.noShadow]: noShadow
-      })}
-      style={{
-        paddingLeft: `${gridBase * leftPadding}px`,
-        paddingRight: `${gridBase * rightPadding}px`
-      }}
-      onClick={onClick && (e => onClick(e))} >
+        [styles.noShadow]: noShadow,
+        [styles.listItemPaddingLeft]: leftPadding
+      })} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
-      <div>
+      <div >
         {title && (
           <Text
             light={!compact}
@@ -74,10 +66,8 @@ ListItem.propTypes = {
   compact: PropTypes.bool,
   hasHoverState: PropTypes.bool,
   noShadow: PropTypes.bool,
-  leftPadding: PropTypes.number,
-  rightPadding: PropTypes.number,
-  descriptionProps: PropTypes.object,
-  onClick: PropTypes.func
+  leftPadding: PropTypes.bool,
+  descriptionProps: PropTypes.object
 };
 
 ListItem.defaultProps = {
@@ -86,6 +76,5 @@ ListItem.defaultProps = {
   noShadow: false,
   badge: null,
   icon: null,
-  leftPadding: 4,
-  rightPadding: 4
+  leftPadding: false
 };

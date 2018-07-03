@@ -1,9 +1,11 @@
 @import (reference) "~seek-asia-style-guide/theme";
-
+@list-item-h-padding: @grid-base * 4;
 @list-item-v-padding: @grid-base * 3;
 @list-item-line-height: @grid-base * 5;
 @list-item-icon-padding-top: @grid-base / 2;
 @list-item-icon-padding-right: @grid-base * 3;
+
+@list-item-padding-left: @grid-base * 8;
 
 .root {
   align-items: flex-start;
@@ -15,6 +17,8 @@
   line-height: @list-item-line-height;
   padding-top: @list-item-v-padding;
   padding-bottom: @list-item-v-padding;
+  padding-left: @list-item-h-padding;
+  padding-right: @list-item-h-padding;
   @media @desktop {
     max-width: 50vw;
   }
@@ -48,6 +52,10 @@
 
 .listItemValue {
   line-height: inherit;
+}
+
+.listItemPaddingLeft {
+  padding-left: @list-item-padding-left;
 }
 
 .displayInline {
