@@ -3,7 +3,6 @@ import styles from './SplitView.less';
 import PropTypes from 'prop-types';
 
 export default function SplitView({ children, height }) {
-  const heightStyle = height ? { height } : null;
   return (
     <div className={styles.root}>
       {children &&
@@ -14,7 +13,7 @@ export default function SplitView({ children, height }) {
       )}
       {children &&
         children.length > 1 && (
-        <div className={styles.rightChild} style={heightStyle}>
+        <div className={styles.rightChild} style={{ height }}>
           {children.slice(1)}
         </div>
       )}

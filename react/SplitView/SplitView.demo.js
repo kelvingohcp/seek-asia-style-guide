@@ -44,7 +44,7 @@ export default {
   title: 'Split View',
   component: SplitView,
   initialProps: {
-    children: [leftCards(3), rightCards(5)]
+    children: [leftCards(4), rightCards(6)]
   },
   options: [
     {
