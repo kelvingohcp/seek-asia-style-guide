@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterButton: color variants: should render primary FilterButton 1`] = `
+<Button
+  className="root root_primary"
+  color="primary"
+  component="button"
+>
+  SEEK
+</Button>
+`;
+
+exports[`FilterButton: color variants: should render secondary FilterButton 1`] = `
+<Button
+  className="root root_secondary"
+  color="secondary"
+  component="button"
+>
+  SEEK
+</Button>
+`;
+
+exports[`FilterButton: should render with active state 1`] = `
+<Button
+  className="foo root root_primary isActive"
+  color="primary"
+  component="button"
+>
+  SEEK
+</Button>
+`;
+
+exports[`FilterButton: should render with array of nodes 1`] = `
+<Button
+  className="root root_primary"
+  color="primary"
+  component="button"
+>
+  <span>
+    SEEK
+  </span>
+  <span>
+    AU
+  </span>
+</Button>
+`;
+
+exports[`FilterButton: should render with className 1`] = `
+<Button
+  className="foo root root_primary"
+  color="primary"
+  component="button"
+>
+  SEEK
+</Button>
+`;
+
+exports[`FilterButton: should render with node 1`] = `
+<Button
+  className="root root_primary"
+  color="primary"
+  component="button"
+>
+  <h5>
+    SEEK
+  </h5>
+</Button>
+`;

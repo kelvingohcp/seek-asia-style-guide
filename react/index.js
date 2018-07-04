@@ -4,6 +4,7 @@ export { default as SeekApp } from './StyleGuideProvider/StyleGuideProvider'; //
 // Components
 export { default as Alert } from './Alert/Alert';
 export { default as Button } from './Button/Button';
+export { default as FilterButton } from './FilterButton/FilterButton';
 export { default as ButtonGroup } from './ButtonGroup/ButtonGroup';
 export { default as ListItem } from './ListItem/ListItem';
 export { default as Loader } from './Loader/Loader';
@@ -34,6 +35,7 @@ export { default as Columns } from './Columns/Columns';
 export { default as Hidden } from './Hidden/Hidden';
 export { default as PageBlock } from './PageBlock/PageBlock';
 export { default as Section } from './Section/Section';
+export { default as SplitView } from './SplitView/SplitView';
 
 // Icons
 export { default as BenefitsIcon } from './BenefitsIcon/BenefitsIcon';
