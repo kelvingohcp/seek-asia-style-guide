@@ -2,7 +2,7 @@
 
 exports[`ListItem: should render custom left padding 1`] = `
 <div
-  className="root listItemPaddingLeft"
+  className="root"
 >
   <div>
     <Text
@@ -32,7 +32,7 @@ exports[`ListItem: should render custom left padding 1`] = `
 
 exports[`ListItem: should render custom left padding with light font weight 1`] = `
 <div
-  className="root listItemPaddingLeft"
+  className="root"
 >
   <div>
     <Text
@@ -63,7 +63,7 @@ exports[`ListItem: should render custom left padding with light font weight 1`] 
 
 exports[`ListItem: should render custom left padding with light font weight and secondary text 1`] = `
 <div
-  className="root listItemPaddingLeft"
+  className="root"
 >
   <div>
     <Text
@@ -95,7 +95,7 @@ exports[`ListItem: should render custom left padding with light font weight and 
 
 exports[`ListItem: should render custom left padding with light font weight, secondary text and onclick function 1`] = `
 <div
-  className="root listItemPaddingLeft"
+  className="root"
 >
   <div>
     <Text

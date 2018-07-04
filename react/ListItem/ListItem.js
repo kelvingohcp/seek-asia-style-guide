@@ -18,7 +18,7 @@ export default function ListItem({
   compact,
   hasHoverState,
   noShadow,
-  leftPadding,
+  secondLevel,
   descriptionProps
 }) {
   return (
@@ -28,7 +28,7 @@ export default function ListItem({
         [styles.root]: true,
         [styles.hasHoverState]: hasHoverState,
         [styles.noShadow]: noShadow,
-        [styles.listItemPaddingLeft]: leftPadding
+        [styles.secondLevelPadding]: secondLevel
       })} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
       <div >
@@ -66,7 +66,7 @@ ListItem.propTypes = {
   compact: PropTypes.bool,
   hasHoverState: PropTypes.bool,
   noShadow: PropTypes.bool,
-  leftPadding: PropTypes.bool,
+  secondLevel: PropTypes.bool,
   descriptionProps: PropTypes.object
 };
 
@@ -76,5 +76,5 @@ ListItem.defaultProps = {
   noShadow: false,
   badge: null,
   icon: null,
-  leftPadding: false
+  secondLevel: false
 };

@@ -112,14 +112,14 @@ export default {
       ]
     },
     {
-      label: 'Left padding',
+      label: 'Second Level',
       type: 'checklist',
       states: [
         {
-          label: 'Left padding',
+          label: 'second level',
           transformProps: props => ({
             ...props,
-            leftPadding: true
+            secondLevel: true
           })
         }
       ]
