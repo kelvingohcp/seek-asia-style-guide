@@ -19,5 +19,4 @@ describe('Split View:', () => {
   it('should render with height prop', () => {
     expect(renderSplitView({ height: 200 })).toMatchSnapshot();
   });
-
 });
