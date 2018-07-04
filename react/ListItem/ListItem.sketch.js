@@ -10,6 +10,7 @@ const badge = {
 export const listItem = {
 
   'value': <ListItem value='Description' />,
+  'value, second level': <ListItem value='Description' secondLevel />,
   'value, hover': <ListItem value='Description' hasHoverState />,
   'value, no shadow': <ListItem value='Description' noShadow />,
   'title, value': <ListItem title='Title' value="Description" />,
