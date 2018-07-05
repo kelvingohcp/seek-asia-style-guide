@@ -4,6 +4,4 @@ npm-debug.log
 yarn.lock
 *.sketch
 sketch-manifest.json
-package-lock.json
 .idea
-package-lock.json
