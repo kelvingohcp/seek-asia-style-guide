@@ -23,5 +23,5 @@ export default function SplitView({ children, height }) {
 
 SplitView.propTypes = {
   children: PropTypes.node.isRequired,
-  height: PropTypes.int
+  height: PropTypes.number
 };
