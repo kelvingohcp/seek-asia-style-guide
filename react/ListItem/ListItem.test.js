@@ -14,6 +14,26 @@ describe('ListItem:', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render custom left padding', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" leftPadding={8} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render custom left padding with light font weight', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" leftPadding={8} descriptionProps={{ light: true }} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render custom left padding with light font weight and secondary text', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" leftPadding={8} descriptionProps={{ light: true, secondary: true }} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render custom left padding with light font weight, secondary text and onclick function', () => {
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" leftPadding={8} descriptionProps={{ light: true, secondary: true }} onClick={() => {}} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render icon', () => {
     const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} />);
     expect(wrapper).toMatchSnapshot();
@@ -34,4 +54,3 @@ describe('ListItem:', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-
