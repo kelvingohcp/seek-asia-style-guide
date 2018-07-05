@@ -17,17 +17,21 @@ export default function ListItem({
   badge,
   compact,
   hasHoverState,
-  noShadow
+  noShadow,
+  secondLevel,
+  descriptionProps
 }) {
   return (
+
     <div
       className={classnames({
         [styles.root]: true,
         [styles.hasHoverState]: hasHoverState,
-        [styles.noShadow]: noShadow
-      })}>
+        [styles.noShadow]: noShadow,
+        [styles.secondLevelPadding]: secondLevel
+      })} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
-      <div className={styles.listItemBody}>
+      <div >
         {title && (
           <Text
             light={!compact}
@@ -40,11 +44,11 @@ export default function ListItem({
         )}
         <div className={styles.listItemValue}>
           <Text
-            strong
             loud={!compact}
             waving={compact}
             baseline={false}
-            className={styles.displayInline}>
+            className={styles.displayInline}
+            {...descriptionProps}>
             {value}
           </Text>
           {badge && <span className={styles.listItemBadge}><Badge {... { ...defaultBadgeProps, ...badge }} /></span>}
@@ -61,7 +65,9 @@ ListItem.propTypes = {
   badge: PropTypes.object,
   compact: PropTypes.bool,
   hasHoverState: PropTypes.bool,
-  noShadow: PropTypes.bool
+  noShadow: PropTypes.bool,
+  secondLevel: PropTypes.bool,
+  descriptionProps: PropTypes.object
 };
 
 ListItem.defaultProps = {
@@ -69,5 +75,6 @@ ListItem.defaultProps = {
   hasHoverState: false,
   noShadow: false,
   badge: null,
-  icon: null
+  icon: null,
+  secondLevel: false
 };

@@ -110,6 +110,81 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'Second Level',
+      type: 'checklist',
+      states: [
+        {
+          label: 'second level',
+          transformProps: props => ({
+            ...props,
+            secondLevel: true
+          })
+        }
+      ]
+    },
+    {
+      label: 'Description Text Weight',
+      type: 'radio',
+      states: [
+        {
+          label: 'Regular',
+          transformProps: props => props
+        },
+        {
+          label: 'Strong',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, strong: true }
+          })
+        },
+        {
+          label: 'Light',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, light: true }
+          })
+        },
+        {
+          label: 'Semi-strong',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, semiStrong: true }
+          })
+        }
+      ]
+    },
+    {
+      label: 'Description Text Color',
+      type: 'radio',
+      states: [
+        {
+          label: 'Neutral tone',
+          transformProps: props => props
+        },
+        {
+          label: 'Positive',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, positive: true }
+          })
+        },
+        {
+          label: 'Critical',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, critical: true }
+          })
+        },
+        {
+          label: 'Secondary',
+          transformProps: props => ({
+            ...props,
+            descriptionProps: { ...props.descriptionProps, secondary: true }
+          })
+        }
+      ]
     }
   ]
 };
