@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Split View: should render with default props 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="leftChild"
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    <div>
+       Child 1
+    </div>
+  </div>
+  <div
+    className="rightChild"
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    <div>
+       Child 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Split View: should render with height prop 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="leftChild"
+    style={
+      Object {
+        "height": 200,
+      }
+    }
+  >
+    <div>
+       Child 1
+    </div>
+  </div>
+  <div
+    className="rightChild"
+    style={
+      Object {
+        "height": 200,
+      }
+    }
+  >
+    <div>
+       Child 2
+    </div>
+  </div>
+</div>
+`;
