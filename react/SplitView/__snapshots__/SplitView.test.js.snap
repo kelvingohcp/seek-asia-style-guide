@@ -18,7 +18,11 @@ exports[`Split View: should render with default props 1`] = `
   </div>
   <div
     className="rightChild"
-    style={null}
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
   >
     <div>
        Child 2
