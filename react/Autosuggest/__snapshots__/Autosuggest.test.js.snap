@@ -27,7 +27,7 @@ exports[`Autosuggest should render with compact prop 1`] = `
           class="root"
         >
           <span
-            class="root"
+            class="root clearRoot"
           >
             mock svg
           </span>
@@ -96,7 +96,7 @@ exports[`Autosuggest should render with label 1`] = `
           class="root"
         >
           <span
-            class="root"
+            class="root clearRoot"
           >
             mock svg
           </span>
@@ -165,7 +165,7 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
           class="root"
         >
           <span
-            class="root"
+            class="root clearRoot"
           >
             mock svg
           </span>
@@ -234,7 +234,7 @@ exports[`Autosuggest should render with mobile full width 1`] = `
           class="root"
         >
           <span
-            class="root"
+            class="root clearRoot"
           >
             mock svg
           </span>
@@ -283,7 +283,7 @@ exports[`Autosuggest should render with simple props 1`] = `
           class="root"
         >
           <span
-            class="root"
+            class="root clearRoot"
           >
             mock svg
           </span>
@@ -332,7 +332,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
           class="root"
         >
           <span
-            class="root"
+            class="root clearRoot"
           >
             mock svg
           </span>

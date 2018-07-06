@@ -10,7 +10,7 @@
   padding: 0 @field-gutter-width;
   border: @field-border-width solid @sk-mid-gray-light;
   border-radius: @field-border-radius;
-  color: @sk-charcoal;
+  color: @saGrey1;
   width: 100%;
   background-color: @sk-white;
   -webkit-appearance: none;
@@ -55,12 +55,13 @@
   opacity: 0;
   max-width: 0;
   overflow: hidden;
+  margin-top: (@touchableTextHeight - @clear-icon-size) / 2;
   .canClear & {
     opacity: 1;
     transition: opacity 0.3s ease;
     max-width: initial;
   }
   .compact & {
-    .compactTouchableText();
+    margin-top: (@compactTouchableTextHeight - @clear-icon-size) / 2;
   }
 }

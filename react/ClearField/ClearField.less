@@ -2,20 +2,17 @@
 @import (reference) "ClearFieldVariables";
 
 .root {
-  height: (@interaction-type-row-span * @grid-row-height);
   border: 0;
   padding: 0 @field-gutter-width;
   background-color: transparent;
-  color: @sk-mid-gray;
+  color: @saGrey4;
   cursor: pointer;
-  display: flex;
-  align-items: center;
   &:hover {
     color: @sk-mid-gray-dark;
   }
 }
 
-.clearSvg {
+.clearRoot {
   height: @clear-icon-size;
   width: @clear-icon-size;
 }
