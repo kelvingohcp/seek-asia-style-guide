@@ -1,4 +1,4 @@
-@import (reference) "~seek-asia-style-guide/theme";
+@import (reference) '~seek-asia-style-guide/theme';
 
 .hoverState(@rules) {
   &:hover,
@@ -55,10 +55,18 @@
 
 .jobStreet.root_callToAction {
   .buttonColor(@sk-black, @actionYellow);
+  &.disabled {
+    .buttonColor(@saGrey5, @saGrey4);
+    cursor: default;
+  }
 }
 
 .jobsDB.root_callToAction {
   .buttonColor(@saWhite, @actionOrange);
+  &.disabled {
+    .buttonColor(@saGrey5, @saGrey4);
+    cursor: default;
+  }
 }
 
 .root_primary {

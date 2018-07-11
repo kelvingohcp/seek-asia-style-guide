@@ -83,7 +83,7 @@ exports[`Button: should render custom component based on it’s reference 1`] = 
 
 exports[`Button: should render disabled 1`] = `
 <button
-  className="root root_callToAction disabled"
+  className="root disabled root_callToAction"
 >
   SEEK
 </button>
