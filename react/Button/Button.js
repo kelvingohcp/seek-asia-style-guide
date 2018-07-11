@@ -43,14 +43,14 @@ export default class Button extends Component {
     const combinedProps = {
       className: classnames(styles.root, className, {
         [styles.compact]: compact,
+        [styles.disabled]: disabled,
         [styles.jobsDB]: isJobsDB || tenant.isJobsDB,
         [styles.jobStreet]: isJobStreet || tenant.isJobStreet,
         [styles.root_callToAction]: color === 'callToAction',
         [styles.root_primary]: color === 'primary',
         [styles.root_secondary]: color === 'secondary',
         [styles.root_hyperlink]: color === 'hyperlink',
-        [styles.root_tertiary]: color === 'tertiary',
-        [styles.disabled]: disabled
+        [styles.root_tertiary]: color === 'tertiary'
       }),
       ref: this.storeButtonReference,
       ...restProps
