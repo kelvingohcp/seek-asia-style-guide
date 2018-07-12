@@ -214,6 +214,16 @@ export default {
               <span {...restProps}>{children}</span>
             )
           })
+        },
+        {
+          label: 'Job Title Component',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            TitleLinkComponent: ({ link, children, ...restProps }) => (
+              <span {...restProps}>
+                {children}
+              </span>)
+          })
         }
       ]
     },

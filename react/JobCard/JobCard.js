@@ -10,11 +10,11 @@ import LocationIcon from '../LocationIcon/LocationIcon';
 import MoneyIcon from '../MoneyIcon/MoneyIcon';
 import styles from './JobCard.less';
 import classnames from 'classnames';
-import { getJobAdTypeOption, getParts } from './jobCardHelper.js';
+import { getJobAdTypeOption } from './jobCardHelper.js';
 import LocationGroup, { LocationsPropTypes } from './components/LocationGroup/LocationGroup';
 import CompanyLink, { CompanyLinkPropTypes } from './components/CompanyLink/CompanyLink';
+import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import ShelfSection, { ShelfSectionPropTypes } from './components/ShelfSection/ShelfSection';
-import defaultLink from './components/Link/Link';
 
 export default class JobCard extends React.Component {
   constructor() {
@@ -36,35 +36,13 @@ export default class JobCard extends React.Component {
 
   render() {
     const { shelfSectionOpen } = this.state;
-    const { job, keyword = '', jobAdType, LinkComponent = defaultLink } = this.props;
+    const { job, keyword = '', jobAdType, LinkComponent, TitleLinkComponent } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
-    let title = (<Text waving semiStrong className={styles.positionTitle}>{job.jobTitle}</Text>);
-    const keywordParts = getParts(job.jobTitle, keyword);
 
-    if (keywordParts) {
-      title = (
-        <div>
-          {
-            keywordParts.map((part, index) => {
-              return (
-                <Text
-                  strong={part.highlight}
-                  semiStrong={!part.highlight}
-                  waving
-                  className={classnames(styles.positionTitle, { [styles.titleKeyword]: part.highlight })}
-                  key={index}>
-                  {part.text}
-                </Text>
-              );
-            })
-          }
-        </div>
-      );
-    }
     return (
       <Card className={classnames(styles.root, { [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg })}>
         <Section className={styles.headerSection}>
-          <a href={job.jobUrl} className={styles.positionLink} target="_blank" rel="noopener noreferrer">{title}</a>
+          <JobTitleLink LinkComponent={TitleLinkComponent} keyword={keyword} job={job} />
         </Section>
         <Section className={styles.bodySection}>
           <div className={styles.bodyDetailsWrapper}>
@@ -150,5 +128,6 @@ JobCard.propTypes = {
     shelf: ShelfSectionPropTypes
   }).isRequired,
   jobAdType: PropTypes.string,
-  LinkComponent: PropTypes.func
+  LinkComponent: PropTypes.func,
+  TitleLinkComponent: PropTypes.func
 };

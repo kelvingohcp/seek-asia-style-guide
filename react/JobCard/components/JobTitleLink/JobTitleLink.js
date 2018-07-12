@@ -1,0 +1,50 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './JobTitleLink.less';
+import classnames from 'classnames';
+import { getParts } from '../../jobCardHelper.js';
+import { Text } from 'seek-asia-style-guide/react';
+import defaultLink from '../Link/Link';
+
+const JobTitleLinkPropTypes = PropTypes.shape({
+  jobTitle: PropTypes.string,
+  jobUrl: PropTypes.string
+});
+
+const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink }) => {
+  let title = (<Text waving semiStrong className={styles.jobTitle}>{jobTitle}</Text>);
+  const keywordParts = getParts(jobTitle, keyword);
+
+  if (keywordParts) {
+    title = (
+      <div>
+        {
+          keywordParts.map((part, index) => {
+            return (
+              <Text
+                strong={part.highlight}
+                semiStrong={!part.highlight}
+                waving
+                className={classnames(styles.jobTitle, { [styles.titleKeyword]: part.highlight })}
+                key={index}>
+                {part.text}
+              </Text>
+            );
+          })
+        }
+      </div>
+    );
+  }
+
+  return <LinkComponent link={jobUrl} className={styles.jobTitleLink} target="_blank" rel="noopener noreferrer">{title}</LinkComponent>;
+};
+
+JobTitleLink.propTypes = {
+  keyword: PropTypes.string,
+  showJobSplit: PropTypes.bool,
+  isDesktop: PropTypes.bool,
+  job: JobTitleLinkPropTypes.isRequired,
+  LinkComponent: PropTypes.func
+};
+
+export default JobTitleLink;

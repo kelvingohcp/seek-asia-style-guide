@@ -1,0 +1,26 @@
+@import (reference) "~seek-asia-style-guide/theme";
+@job-card-text-space: 0;
+
+.jobTitle {
+  padding-bottom: @job-card-text-space;
+  display: inline;
+  word-wrap: break-word;
+}
+
+.jobTitleLink {
+  .link(@actionBlue, true);
+  text-decoration: none;
+  pointer-events: auto;
+
+  .titleKeyword {
+    color: darken(@actionBlue, 10%);
+  }
+}
+
+.jobTitleLink:visited {
+  .link(@saVisitedLink, true);
+
+  .titleKeyword {
+    color: darken(@saVisitedLink, 10%);
+  }
+}

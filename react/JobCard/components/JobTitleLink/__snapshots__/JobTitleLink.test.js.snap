@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobCard - JobTitleLink should bold keyword 1`] = `
+<Link
+  className="jobTitleLink"
+  link="/jobCard"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    semiStrong={true}
+    waving={true}
+  >
+    Software Engineer
+  </Text>
+</Link>
+`;
+
+exports[`JobCard - JobTitleLink should render LinkComponent when it provide 1`] = `
+<LinkComponent
+  className="jobTitleLink"
+  link="/jobCard"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    semiStrong={true}
+    waving={true}
+  >
+    Software Engineer
+  </Text>
+</LinkComponent>
+`;
+
+exports[`JobCard - JobTitleLink should render correctly 1`] = `
+<Link
+  className="jobTitleLink"
+  link="/jobCard"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    semiStrong={true}
+    waving={true}
+  >
+    Software Engineer
+  </Text>
+</Link>
+`;

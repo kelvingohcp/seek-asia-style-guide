@@ -10,21 +10,41 @@ exports[`JobCard should not render shelf section 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": null,
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -41,7 +61,6 @@ exports[`JobCard should not render shelf section 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -77,7 +96,6 @@ exports[`JobCard should not render shelf section 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -137,21 +155,52 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [],
+                "label": "Job Details",
+              },
+              Object {
+                "items": Array [],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -168,7 +217,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -204,7 +252,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -264,21 +311,62 @@ exports[`JobCard should render company with bold keyword 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword="Seek"
+    />
   </Section>
   <Section
     className="bodySection"
@@ -295,7 +383,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -331,7 +418,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -399,12 +485,225 @@ exports[`JobCard should render company with bold keyword 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
+</Card>
+`;
+
+exports[`JobCard should render job title component 1`] = `
+<Card
+  className="root"
+>
+  <Section
+    className="headerSection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <JobTitleLink
+      LinkComponent={[Function]}
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
+  </Section>
+  <Section
+    className="bodySection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <div
+      className="bodyDetailsWrapper"
+    >
+      <Text
+        baseline={true}
+        className="company"
+        intimate={true}
+      >
+        <CompanyLink
+          company={
+            Object {
+              "link": "/jobCard",
+              "name": "SEEK Asia",
+            }
+          }
+          keyword=""
+        />
+      </Text>
+    </div>
+  </Section>
+  <Section
+    className="footerSection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <div
+      className="footerLeft"
+    >
+      <div
+        className="jobInfoContainer"
+      >
+        <div
+          className="jobInfoList"
+        >
+          <Text
+            baseline={true}
+            className="jobInfo"
+            intimate={true}
+          >
+            <LocationIcon
+              className="jobInfoIcon"
+            />
+            <LocationGroup
+              locations={
+                Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Pahang",
+                  },
+                  Object {
+                    "child": Object {
+                      "child": Object {
+                        "name": "Near Leisure Mall",
+                      },
+                      "link": "/jobCard",
+                      "name": "Cheras",
+                    },
+                    "link": "/jobCard",
+                    "name": "Selangor",
+                  },
+                ]
+              }
+            />
+          </Text>
+          <Text
+            baseline={true}
+            className="jobInfo"
+            intimate={true}
+          >
+            <MoneyIcon
+              className="jobInfoIcon"
+            />
+            <span>
+              RM99999 - RM999999
+            </span>
+          </Text>
+        </div>
+        <div>
+          <Text
+            baseline={true}
+            className="postingDuration"
+            whispering={true}
+          >
+            1 hour ago
+          </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Section>
+  <ShelfSection
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -439,55 +738,62 @@ exports[`JobCard should render job title with bold keyword 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div>
-        <Text
-          baseline={true}
-          className="positionTitle titleKeyword"
-          key="0"
-          semiStrong={false}
-          strong={true}
-          waving={true}
-        >
-          Senior
-        </Text>
-        <Text
-          baseline={true}
-          className="positionTitle"
-          key="1"
-          semiStrong={true}
-          strong={false}
-          waving={true}
-        >
-           Software 
-        </Text>
-        <Text
-          baseline={true}
-          className="positionTitle titleKeyword"
-          key="2"
-          semiStrong={false}
-          strong={true}
-          waving={true}
-        >
-          Engineer
-        </Text>
-        <Text
-          baseline={true}
-          className="positionTitle"
-          key="3"
-          semiStrong={true}
-          strong={false}
-          waving={true}
-        >
-           (6 months Contract)
-        </Text>
-      </div>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword="Seek Senior Engineer"
+    />
   </Section>
   <Section
     className="bodySection"
@@ -504,7 +810,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -540,7 +845,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -608,12 +912,11 @@ exports[`JobCard should render job title with bold keyword 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -648,21 +951,62 @@ exports[`JobCard should render jobStreet standout style 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword="Seek"
+    />
   </Section>
   <Section
     className="bodySection"
@@ -679,7 +1023,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -726,7 +1069,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -802,12 +1144,11 @@ exports[`JobCard should render jobStreet standout style 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -842,21 +1183,62 @@ exports[`JobCard should render jobsDB default style 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword="Seek"
+    />
   </Section>
   <Section
     className="bodySection"
@@ -873,7 +1255,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -909,7 +1290,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -977,12 +1357,11 @@ exports[`JobCard should render jobsDB default style 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1017,21 +1396,61 @@ exports[`JobCard should render plain company label 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "name": "Seek Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -1048,7 +1467,6 @@ exports[`JobCard should render plain company label 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "name": "Seek Asia",
@@ -1083,7 +1501,6 @@ exports[`JobCard should render plain company label 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -1151,12 +1568,11 @@ exports[`JobCard should render plain company label 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1191,21 +1607,72 @@ exports[`JobCard should render tag links 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+            "tagLinks": Array [
+              Object {
+                "child": "keyword 1",
+                "link": "/jobCard",
+              },
+              Object {
+                "child": "keyword 2",
+                "link": "/jobCard",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -1222,7 +1689,6 @@ exports[`JobCard should render tag links 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -1258,7 +1724,6 @@ exports[`JobCard should render tag links 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -1326,12 +1791,11 @@ exports[`JobCard should render tag links 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1376,21 +1840,63 @@ exports[`JobCard should render with Classified in grey label 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "classifiedLabel": "Classified",
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -1412,7 +1918,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           Classified
         </span>
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -1448,7 +1953,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -1516,12 +2020,11 @@ exports[`JobCard should render with Classified in grey label 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1556,21 +2059,60 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": null,
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "confidentialLabel": "Company Confidential",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -1618,7 +2160,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -1686,12 +2227,11 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1726,21 +2266,62 @@ exports[`JobCard should render with default props 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -1757,7 +2338,6 @@ exports[`JobCard should render with default props 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -1793,7 +2373,6 @@ exports[`JobCard should render with default props 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -1861,12 +2440,11 @@ exports[`JobCard should render with default props 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -1901,21 +2479,63 @@ exports[`JobCard should render with featured label 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "featuredLabel": "Feature",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -1937,7 +2557,6 @@ exports[`JobCard should render with featured label 1`] = `
           Feature
         </span>
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -1973,7 +2592,6 @@ exports[`JobCard should render with featured label 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -2041,12 +2659,11 @@ exports[`JobCard should render with featured label 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
@@ -2081,21 +2698,67 @@ exports[`JobCard should render with selling points props 1`] = `
     pullout={false}
     slim={false}
   >
-    <a
-      className="positionLink"
-      href="https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Text
-        baseline={true}
-        className="positionTitle"
-        semiStrong={true}
-        waving={true}
-      >
-        Senior Software Engineer (6 months Contract)
-      </Text>
-    </a>
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "sellingPoints": Array [
+            "We practice a vibrant & energetic office culture",
+            "Our company supports a fun yet balanced working environment",
+            "We support a safe environment for our employees",
+          ],
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
   </Section>
   <Section
     className="bodySection"
@@ -2112,7 +2775,6 @@ exports[`JobCard should render with selling points props 1`] = `
         intimate={true}
       >
         <CompanyLink
-          LinkComponent={[Function]}
           company={
             Object {
               "link": "/jobCard",
@@ -2148,7 +2810,6 @@ exports[`JobCard should render with selling points props 1`] = `
               className="jobInfoIcon"
             />
             <LocationGroup
-              LinkComponent={[Function]}
               locations={
                 Array [
                   Object {
@@ -2216,12 +2877,11 @@ exports[`JobCard should render with selling points props 1`] = `
     </div>
   </Section>
   <ShelfSection
-    LinkComponent={[Function]}
     shelf={
       Object {
         "shelfLinks": Array [
           Object {
-            "itmes": Array [
+            "items": Array [
               Object {
                 "link": "/jobCard",
                 "name": "Accountant",
