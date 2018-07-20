@@ -20,7 +20,7 @@ export default {
           label: 'Hover',
           transformProps: ({ className, ...props }) => ({
             ...props,
-            className: classnames(className, styles.ishover)
+            className: classnames(className, styles.isHover)
           })
         },
         {
