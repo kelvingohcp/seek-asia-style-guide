@@ -45,7 +45,6 @@ export default function ListItem({
         <div className={styles.listItemValue}>
           <Text
             loud={!compact}
-            waving={compact}
             baseline={false}
             className={styles.displayInline}
             {...descriptionProps}>

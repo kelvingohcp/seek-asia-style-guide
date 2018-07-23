@@ -7,7 +7,7 @@ export default function TitledCard({ children, text, ...restProps }) {
   return (
     <Card {...restProps}>
       <Section>
-        <Text yelling strong>{text}</Text>
+        <Text waving strong>{text}</Text>
         <hr className={styles.line} />
         {children}
       </Section>
