@@ -17,7 +17,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
 
   if (keywordParts) {
     title = (
-      <div>
+      <span>
         {
           keywordParts.map((part, index) => {
             return (
@@ -32,7 +32,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
             );
           })
         }
-      </div>
+      </span>
     );
   }
 
