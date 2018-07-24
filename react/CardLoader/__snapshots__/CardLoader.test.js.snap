@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardLoader should render with defaults 1`] = `
+<Card
+  className="root"
+>
+  <div
+    className="animatedBackground"
+  />
+</Card>
+`;

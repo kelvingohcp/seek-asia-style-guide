@@ -1,5 +1,15 @@
-import lessToJs from 'less-vars-to-js';
-import grid from '!!raw-loader!./grid.less';
-
-const gridValues = lessToJs(grid);
+// based on grid.less
+const gridValues = {
+  '@grid-base': '4px',
+  '@grid-row-height': '4px',
+  '@grid-gutter-width': '@grid-base * 4',
+  '@grid-column-width': '60px',
+  '@grid-container-width': '940px',
+  '@gutter-width': '20px'
+};
 export default gridValues;
+
+export const GRID_BASE = parseInt(gridValues['@grid-base'], 10);
+export const getMultipliedGridLength = (multiplier = 1) => {
+  return `${(GRID_BASE * multiplier)}px`;
+};

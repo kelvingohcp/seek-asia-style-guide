@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardLoadingBar should render loadingBar from right 1`] = `
+<Card
+  className="root"
+>
+  <div
+    className="animatedBackground"
+  >
+    <CardLoadingBar
+      inverse={true}
+      width="5o%"
+    />
+  </div>
+</Card>
+`;
+
+exports[`CardLoadingBar should render loadingBar height in px 1`] = `
+<Card
+  className="root"
+>
+  <div
+    className="animatedBackground"
+  >
+    <CardLoadingBar
+      height={4}
+      width={10}
+    />
+  </div>
+</Card>
+`;
+
+exports[`CardLoadingBar should render loadingBar width and height in px 1`] = `
+<Card
+  className="root"
+>
+  <div
+    className="animatedBackground"
+  >
+    <CardLoadingBar
+      height={4}
+      width={10}
+    />
+  </div>
+</Card>
+`;
+
+exports[`CardLoadingBar should render with empty loadingBar 1`] = `
+<Card
+  className="root"
+>
+  <div
+    className="animatedBackground"
+  >
+    <CardLoadingBar />
+  </div>
+</Card>
+`;
+
+exports[`CardLoadingBar should render with full width loadingBar 1`] = `
+<Card
+  className="root"
+>
+  <div
+    className="animatedBackground"
+  >
+    <CardLoadingBar
+      width="1oo%"
+    />
+  </div>
+</Card>
+`;

@@ -17,7 +17,7 @@
     "test-unit-in-window": "jest --config ./jest.config.json",
     "update-snapshot": "npm run test-unit -- --updateSnapshot",
     "lint": "npm run lint-js && npm run lint-less",
-    "lint-js": "eslint app standalone/*/src docs/src react test jobsDB jobStreet",
+    "lint-js": "eslint app standalone/*/src docs/src react test jobsDB jobStreet theme",
     "lint-less": "stylelint '{theme,react,standalone,docs,jobsDB,jobStreet}/**/*.less'",
     "clean": "rm -rf dist && rm -rf docs/dist && mkdir -p dist && mkdir -p docs/dist",
     "compile": "npm run compile-render && npm run compile-client",
