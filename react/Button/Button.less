@@ -26,7 +26,7 @@
   text-decoration: none;
   user-select: none;
   text-align: center;
-  padding: 0 @grid-base * 2;
+  padding: 0 @grid-base * 4;
   border: 0;
   border-radius: 3px;
   transition:
@@ -96,7 +96,7 @@
 }
 
 .root_hyperlink.compact {
-  .compactTouchableText(@whispering-type-scale);
+  .compactTouchableText(@whistling-type-scale);
 }
 
 .root_tertiary {
@@ -133,7 +133,7 @@
       }
     }
     & + .root_hyperlink {
-      margin-left: @grid-gutter-width * 2;
+      margin-left: @grid-gutter-width;
       @media only screen and (max-width: 500px) {
         margin-left: 0;
       }
