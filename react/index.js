@@ -17,6 +17,7 @@ export { default as JobCardLoader } from './JobCardLoader/JobCardLoader';
 export { default as Header } from './Header/Header';
 export { default as ShowMore } from './ShowMore/ShowMore';
 export { default as TitledCard } from './TitledCard/TitledCard';
+export { default as ImageSlider } from './ImageSlider/ImageSlider';
 
 // Typography
 export { default as Critical } from './Critical/Critical';

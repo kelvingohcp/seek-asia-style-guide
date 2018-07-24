@@ -1,0 +1,28 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+.wrapperDiv,
+.wrapperDivSliding,
+.wrapperDivSlidingPrev {
+  margin-left: @grid-base * -34;
+  margin-right: @grid-base * -64;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.wrapperDiv {
+  transition: all 2s ease-in-out;
+  transform: translateX(0);
+}
+
+.wrapperDivSliding {
+  transition: none;
+  transform: translateX(@grid-base * 34);
+}
+
+.wrapperDivSlidingPrev {
+  transition: none;
+  transform: translateX(@grid-base * -34);
+}
