@@ -1,0 +1,105 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+@dbColors: DbCandi @dbBlue, DbHirer @dbHirer, DbCTA @actionOrange;
+
+@jsColors: JsCandi @jsBlue, JsHirer @jsHirerGreen, JsCTA @actionYellow;
+
+@saColors: SAAccent @saBlue, Button @actionBlue, Hyperlink @actionBlue,
+  Completion @actionGreen, Success @actionGreen, Positive @actionGreen,
+  Alert @actionRed, Highlight @actionPastelBlue, Black @saBlack, Grey1 @saGrey1,
+  Grey2 @saGrey2, Secondary @saGrey3, Grey3 @saGrey3, Grey4 @saGrey4,
+  Grey5 @saGrey5, Grey6 @saGrey6, White @saWhite;
+
+.color-factory(@list) {
+  .iter(length(@list));
+  .iter(@i) when (@i > 0) {
+    .iter(@i - 1);
+    @pair: extract(@list, @i);
+    @key: extract(@pair, 1);
+    @value: extract(@pair, 2);
+    .background@{key} {
+      background-color: @value;
+      padding: @grid-base * 2;
+      box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: @grid-base;
+      .get-yiq(@value);
+      .parse-color-yiq(@yiq);
+    }
+    .color@{key} {
+      color: @value;
+      padding: @grid-base * 2;
+      box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: @grid-base;
+      .get-yiq(@value);
+      .parse-bg-yiq(@yiq);
+    }
+  }
+}
+
+.Text {
+  padding: @grid-base * 2;
+}
+
+.color-factory(@dbColors);
+.color-factory(@jsColors);
+.color-factory(@saColors);
+
+/* Set text color with YIQ algo BEGIN */
+.parse-bg-yiq(@yiq) when (@yiq >= 150) {
+  background-color: @saBlack;
+}
+.parse-bg-yiq(@yiq) when (@yiq < 150) {
+  background-color: @saWhite;
+}
+.parse-color-yiq(@yiq) when (@yiq >= 150) {
+  color: @saBlack;
+}
+.parse-color-yiq(@yiq) when (@yiq < 150) {
+  color: @saWhite;
+}
+.get-yiq(@color) {
+  @r: red(@color);
+  @g: green(@color);
+  @b: blue(@color);
+  @yiq: ((@r * 299) + (@g * 587) + (@b * 114)) / 1000;
+}
+
+/* Set text color with YIQ algo END */
+
+.colorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  @supports (display: grid) {
+    display: grid;
+    @media @mobile {
+      grid-template-columns: 1fr;
+    }
+    @media @desktop {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+}
+
+.colorGridType {
+  align-self: center;
+}
+
+.colorGridText::before {
+  display: block;
+  padding: @grid-base (@grid-base * 2);
+  font-size: @grid-base * 3;
+  content: 'Text color';
+}
+
+.colorGridBackground {
+  &::before {
+    display: block;
+    padding: @grid-base (@grid-base * 2);
+    font-size: @grid-base * 3;
+    content: 'Background color';
+  }
+  @media @mobile {
+    margin-bottom: 2rem;
+  }
+}

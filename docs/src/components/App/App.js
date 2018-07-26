@@ -6,6 +6,7 @@ import Footer from './Footer/Footer';
 import Home from 'Home/Home';
 import PageLayout from 'PageLayout/PageLayout';
 import Typography from 'Typography/Typography';
+import Colors from 'Colors/Colors';
 import Playground from 'Playground/Playground';
 import Icons from 'Icons/Icons';
 import SketchExports from 'SketchExports/SketchExports';
@@ -28,6 +29,7 @@ export default () => (
     <Header tenant={tenant} />
     <Route path="/" exact component={Home} />
     <Route path="/typography" component={Typography} />
+    <Route path="/Colors" component={Colors} />
     <Route path="/page-layout" component={PageLayout} />
     <Route path="/playground" component={Playground} />
     <Route path="/sketch-exports" component={SketchExports} />
