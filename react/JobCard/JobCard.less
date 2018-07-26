@@ -30,7 +30,7 @@
 }
 
 .company {
-  padding-bottom: @grid-base * 4;
+  padding-bottom: @grid-base;
   color: @saGrey1;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -63,13 +63,12 @@
   .rawText();
   list-style: disc;
   padding-left: @job-card-list-indent;
-  color: @saGrey3;
+  color: @saGrey1;
   margin-left: @grid-base;
 }
 
 .sellingPoint {
   padding-bottom: @job-card-text-space;
-  color: @saGrey2;
 }
 
 .sellingPointsSection {
@@ -110,6 +109,8 @@
 }
 
 .footerSection {
+  padding-top: @grid-base;
+  padding-bottom: @grid-base * 3;
   display: flex;
   justify-content: space-between;
 }
@@ -127,7 +128,7 @@
 }
 
 .jobInfoList {
-  padding-bottom: (@grid-base * 4);
+  padding-bottom: (@grid-base * 2);
 }
 
 .jobInfo {
@@ -135,7 +136,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  color: @saGrey2;
+  color: @saGrey1;
   /* stylelint-disable-next-line */
   & span {
     vertical-align: middle;
@@ -144,7 +145,7 @@
 
 .jobInfoIcon {
   color: @saGrey4;
-  margin-right: @grid-base;
+  margin-right: @grid-base * 2;
 }
 
 .postingDuration {

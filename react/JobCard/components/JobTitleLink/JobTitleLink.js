@@ -12,7 +12,7 @@ const JobTitleLinkPropTypes = PropTypes.shape({
 });
 
 const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink }) => {
-  let title = (<Text waving semiStrong className={styles.jobTitle}>{jobTitle}</Text>);
+  let title = (<Text waving strong className={styles.jobTitle}>{jobTitle}</Text>);
   const keywordParts = getParts(jobTitle, keyword);
 
   if (keywordParts) {
