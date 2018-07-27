@@ -4,7 +4,7 @@ const gridValues = {
   '@grid-row-height': '4px',
   '@grid-gutter-width': '@grid-base * 4',
   '@grid-column-width': '60px',
-  '@grid-container-width': '940px',
+  '@grid-container-width': '1168px',
   '@gutter-width': '20px'
 };
 export default gridValues;
