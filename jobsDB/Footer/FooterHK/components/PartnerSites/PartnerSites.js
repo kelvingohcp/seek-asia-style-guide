@@ -2,17 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './PartnerSites.less';
-import DropdownList from '../DropdownList/DropdownList';
-import { ListItem } from 'seek-asia-style-guide/react';
+import { ListItem, DropdownList } from 'seek-asia-style-guide/react';
 
 const PartnerSites = ({ messages, externalLink }) => {
   return (
     <DropdownList
       value={messages['FooterHK.partners']}
       noShadow
-      compact
       className={styles.content}
-      descriptionProps={{ semiStrong: true, whistling: true }}>
+      semiStrong
+      whistling>
 
       {externalLink(
         <ListItem value='BabaJob (India)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,

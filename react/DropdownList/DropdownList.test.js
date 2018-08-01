@@ -13,18 +13,9 @@ describe('DropdownList:', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render in compact mode', () => {
+  it('should render without shadow', () => {
     const wrapper = shallow(
-      <DropdownList value="testValue" compact>
-        <span />
-      </DropdownList>
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render in compact without shadow', () => {
-    const wrapper = shallow(
-      <DropdownList value="testValue" compact noShadow>
+      <DropdownList value="testValue" noShadow>
         <span />
       </DropdownList>
     );
@@ -34,15 +25,6 @@ describe('DropdownList:', () => {
   it('should render with className', () => {
     const wrapper = shallow(
       <DropdownList value="testValue" className={styles.root}>
-        <span />
-      </DropdownList>
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with descriptionProps', () => {
-    const wrapper = shallow(
-      <DropdownList value="testValue" descriptionProps={{}}>
         <span />
       </DropdownList>
     );

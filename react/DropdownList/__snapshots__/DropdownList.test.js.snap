@@ -1,65 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownList: should render in compact mode 1`] = `
-<div
-  className="root"
->
-  <div
-    className="listItemValue"
-    onClick={[Function]}
-  >
-    <Text
-      baseline={false}
-      className="chevronRight"
-      loud={false}
-      raw={true}
-      waving={true}
-    >
-      testValue
-    </Text>
-    <ChevronIcon
-      className="chevronFixHeight"
-      direction="down"
-    />
-  </div>
-  <div
-    className="dropdownNoShow"
-  >
-    <span />
-  </div>
-</div>
-`;
-
-exports[`DropdownList: should render in compact without shadow 1`] = `
-<div
-  className="root noShadow"
->
-  <div
-    className="listItemValue"
-    onClick={[Function]}
-  >
-    <Text
-      baseline={false}
-      className="chevronRight"
-      loud={false}
-      raw={true}
-      waving={true}
-    >
-      testValue
-    </Text>
-    <ChevronIcon
-      className="chevronFixHeight"
-      direction="down"
-    />
-  </div>
-  <div
-    className="dropdownNoShow"
-  >
-    <span />
-  </div>
-</div>
-`;
-
 exports[`DropdownList: should render value with children 1`] = `
 <div
   className="root"
@@ -71,9 +11,8 @@ exports[`DropdownList: should render value with children 1`] = `
     <Text
       baseline={false}
       className="chevronRight"
-      loud={true}
       raw={true}
-      waving={false}
+      shouting={true}
     >
       testValue
     </Text>
@@ -101,9 +40,8 @@ exports[`DropdownList: should render with className 1`] = `
     <Text
       baseline={false}
       className="chevronRight"
-      loud={true}
       raw={true}
-      waving={false}
+      shouting={true}
     >
       testValue
     </Text>
@@ -120,9 +58,9 @@ exports[`DropdownList: should render with className 1`] = `
 </div>
 `;
 
-exports[`DropdownList: should render with descriptionProps 1`] = `
+exports[`DropdownList: should render without shadow 1`] = `
 <div
-  className="root"
+  className="root noShadow"
 >
   <div
     className="listItemValue"
@@ -131,9 +69,8 @@ exports[`DropdownList: should render with descriptionProps 1`] = `
     <Text
       baseline={false}
       className="chevronRight"
-      loud={true}
       raw={true}
-      waving={false}
+      shouting={true}
     >
       testValue
     </Text>

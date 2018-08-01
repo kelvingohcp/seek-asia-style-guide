@@ -22,7 +22,7 @@ export default class DropdownList extends Component {
   }
 
   render() {
-    const { value, compact, noShadow, descriptionProps, className, children } = this.props;
+    const { value, noShadow, className, children, ...restProps } = this.props;
     return (
       <div
         className={classnames({
@@ -32,12 +32,11 @@ export default class DropdownList extends Component {
         })} >
         <div className={styles.listItemValue} onClick={this.toggleDropdown.bind(this)} >
           <Text
-            loud={!compact}
-            waving={compact}
+            shouting
             baseline={false}
             className={styles.chevronRight}
             raw={true}
-            {...descriptionProps}>
+            {...restProps}>
             {value}
           </Text>
           <ChevronIcon className={styles.chevronFixHeight} direction={this.state.chevronDirection} />
@@ -54,12 +53,9 @@ DropdownList.propTypes = {
   value: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  compact: PropTypes.bool,
-  noShadow: PropTypes.bool,
-  descriptionProps: PropTypes.object
+  noShadow: PropTypes.bool
 };
 
 DropdownList.defaultProps = {
-  compact: false,
   noShadow: false
 };
