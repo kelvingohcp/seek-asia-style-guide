@@ -19,12 +19,14 @@ export default function ListItem({
   hasHoverState,
   noShadow,
   secondLevel,
-  descriptionProps
+  descriptionProps,
+  className
 }) {
   return (
 
     <div
       className={classnames({
+        [className]: className,
         [styles.root]: true,
         [styles.hasHoverState]: hasHoverState,
         [styles.noShadow]: noShadow,
@@ -61,6 +63,7 @@ export default function ListItem({
 ListItem.propTypes = {
   title: PropTypes.string,
   value: PropTypes.string.isRequired,
+  className: PropTypes.string,
   icon: PropTypes.node,
   badge: PropTypes.object,
   compact: PropTypes.bool,

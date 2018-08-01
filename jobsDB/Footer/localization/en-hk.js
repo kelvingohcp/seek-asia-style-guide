@@ -1,7 +1,8 @@
-const baseUrl = 'https://hk.jobsdb.com';
+const domain = 'jobsdb.com';
+const baseUrl = `https://hk.${domain}`;
 const baseUrlWithLanguage = `${baseUrl}/hk/en`;
 const wpUrlWithLanguage = `${baseUrl}/en-hk`;
-const mbaseUrl = 'https://m.jobsdb.com';
+const mbaseUrl = `https://m.${domain}`;
 const mUrlWithLanguage = `${mbaseUrl}/en-hk`;
 
 export default {

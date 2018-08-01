@@ -1,0 +1,38 @@
+@import (reference) "~seek-asia-style-guide/theme";
+@wrapper-low-vertical-padding: @grid-base * 10;
+@title-padding-bottom: @grid-base * 3;
+
+.columnGroup {
+  display: flex;
+  @media @mobile {
+    justify-content: space-evenly;
+  }
+}
+
+.category {
+  padding: 0;
+  margin: 0 auto;
+  @media @mobile {
+    margin: inherit;
+    padding-bottom: @wrapper-low-vertical-padding;
+  }
+}
+
+.firstCategory:extend(.category) {
+  margin-left: 0;
+}
+
+.title {
+  color: @dbBrand;
+  padding-bottom: @title-padding-bottom;
+}
+
+.contentBase {
+  background-color: transparent;
+  color: @saGrey2;
+}
+
+.content:extend(.contentBase) {
+  padding-left: 0;
+  padding-bottom: 0;
+}

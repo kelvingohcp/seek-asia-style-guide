@@ -1,13 +1,36 @@
 import Footer from './Footer';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import * as sketch from './Footer.sketch';
+
+export const makeDummyLinkRendererForPath = path => {
+  const DummyLinkRenderer = ({ href, children, ...props }) => (
+    <Link style={{ textDecoration: 'none' }} to={`${path}#actualHref=${href}`} {...props}>
+      {children}
+    </Link>
+  );
+
+  DummyLinkRenderer.propTypes = {
+    children: PropTypes.array,
+    href: PropTypes.string
+  };
+
+  return DummyLinkRenderer;
+};
+
+const ROUTE = '/jobsdb-footer';
 
 export default {
-  route: '/jobsdb-footer',
+  route: ROUTE,
   tenantPath: 'jobsDB',
   title: 'JobsDB Footer',
   component: Footer,
+  sketch,
   initialProps: {
     language: 'en',
-    country: 'hk'
+    country: 'hk',
+    linkRenderer: makeDummyLinkRendererForPath(ROUTE)
   },
   options: [
     {

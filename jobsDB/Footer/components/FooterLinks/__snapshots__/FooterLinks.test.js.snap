@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterLinks: should render links with messages 1`] = `
+<ul
+  className="list"
+>
+  <li
+    className="itemMobile"
+  >
+    <a
+      className="link"
+      rel="nofollow"
+    />
+  </li>
+  <li
+    className="item"
+  >
+    <a
+      className="link"
+      rel="nofollow"
+    />
+  </li>
+  <li
+    className="item"
+  >
+    <a
+      className="link"
+      rel="nofollow"
+    />
+  </li>
+  <li
+    className="item"
+  >
+    <a
+      className="link"
+    />
+  </li>
+</ul>
+`;

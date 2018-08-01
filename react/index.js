@@ -62,6 +62,8 @@ export { default as EmploymentTypeIcon } from './EmploymentTypeIcon/EmploymentTy
 export { default as ErrorIcon } from './ErrorIcon/ErrorIcon';
 export { default as EventIcon } from './EventIcon/EventIcon';
 export { default as FacebookIcon } from './FacebookIcon/FacebookIcon';
+export { default as AppleIcon } from './AppleIcon/AppleIcon';
+export { default as AndroidIcon } from './AndroidIcon/AndroidIcon';
 export { default as FieldOfStudyIcon } from './FieldOfStudyIcon/FieldOfStudyIcon';
 export { default as FlagHKIcon } from './FlagHKIcon/FlagHKIcon';
 export { default as FlagIDIcon } from './FlagIDIcon/FlagIDIcon';

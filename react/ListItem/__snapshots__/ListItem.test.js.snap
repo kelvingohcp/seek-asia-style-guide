@@ -324,3 +324,24 @@ exports[`ListItem: should render value 1`] = `
   </div>
 </div>
 `;
+
+exports[`ListItem: should render with className 1`] = `
+<div
+  className="root"
+>
+  <div>
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        loud={true}
+        waving={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;

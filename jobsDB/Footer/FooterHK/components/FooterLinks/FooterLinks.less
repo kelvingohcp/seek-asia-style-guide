@@ -1,0 +1,21 @@
+@import (reference) "~seek-asia-style-guide/theme";
+@import (reference) "../../FooterHK.less";
+
+@list-line-height: @grid-base * 4;
+@item-horizontal-padding: @grid-base * 2;
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: @list-line-height;
+}
+
+.item {
+  padding: 0 @item-horizontal-padding;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}

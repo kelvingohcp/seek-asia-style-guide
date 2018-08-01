@@ -1,0 +1,39 @@
+@import (reference) "~seek-asia-style-guide/theme";
+@container-horizontal-padding: @grid-base * 4;
+@wrapper-up-padding-top: @grid-base * 8;
+@wrapper-low-vertical-padding: @grid-base * 10;
+@copyright-padding-top: @grid-base * 5;
+
+.container {
+  cursor: default;
+  margin: 0 auto;
+  background-color: @saGrey6;
+  padding: 0 @container-horizontal-padding;
+  width: 100%;
+  font-weight: @sa-semi-bold;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.upperWrapper {
+  padding-top: @wrapper-up-padding-top;
+}
+
+.lowerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: @wrapper-low-vertical-padding 0;
+  @media @mobile {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+.copyright {
+  text-align: center;
+  @media @mobile {
+    padding-top: @copyright-padding-top;
+  }
+}

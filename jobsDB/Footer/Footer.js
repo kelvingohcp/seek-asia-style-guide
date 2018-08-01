@@ -3,12 +3,16 @@ import styles from './footer.less';
 import PropTypes from 'prop-types';
 
 import FooterLinks from './components/FooterLinks/FooterLinks';
+import FooterHK from './FooterHK/FooterHK';
 import localization from './localization';
 
-const Footer = ({ language, country }) => {
+const Footer = ({ language, country, ...restProps }) => {
   const year = new Date().getFullYear();
   const messages = localization[`${language}-${country}`];
 
+  if (country === 'hk') {
+    return (<FooterHK language={language} country={country} {...restProps} />);
+  }
   return (
     <footer className={styles.container}>
       <div className={styles.wrapper}>

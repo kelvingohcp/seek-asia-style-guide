@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterLinks: should render links with messages and linking functions 1`] = `
+<div
+  className="list"
+>
+  <div
+    className="item"
+  />
+  <div
+    className="item"
+  />
+  <div
+    className="item"
+  />
+</div>
+`;
