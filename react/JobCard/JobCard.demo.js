@@ -224,6 +224,13 @@ export default {
                 {children}
               </span>)
           })
+        },
+        {
+          label: 'Selected',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            isSelected: true
+          })
         }
       ]
     },

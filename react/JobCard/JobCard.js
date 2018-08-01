@@ -36,11 +36,16 @@ export default class JobCard extends React.Component {
 
   render() {
     const { shelfSectionOpen } = this.state;
+    const { isSelected } = this.props;
     const { job, keyword = '', jobAdType, LinkComponent, TitleLinkComponent } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
 
     return (
-      <Card className={classnames(styles.root, { [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg })}>
+      <Card
+        className={classnames(styles.root, {
+          [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg,
+          [styles.selected]: isSelected
+        })}>
         <Section className={styles.headerSection}>
           <JobTitleLink LinkComponent={TitleLinkComponent} keyword={keyword} job={job} />
         </Section>
@@ -129,5 +134,6 @@ JobCard.propTypes = {
   }).isRequired,
   jobAdType: PropTypes.string,
   LinkComponent: PropTypes.func,
-  TitleLinkComponent: PropTypes.func
+  TitleLinkComponent: PropTypes.func,
+  isSelected: PropTypes.bool
 };

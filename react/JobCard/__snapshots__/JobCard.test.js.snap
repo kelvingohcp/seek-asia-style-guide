@@ -1597,6 +1597,219 @@ exports[`JobCard should render plain company label 1`] = `
 </Card>
 `;
 
+exports[`JobCard should render selected style 1`] = `
+<Card
+  className="root selected"
+>
+  <Section
+    className="headerSection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <JobTitleLink
+      job={
+        Object {
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+        }
+      }
+      keyword=""
+    />
+  </Section>
+  <Section
+    className="bodySection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <div
+      className="bodyDetailsWrapper"
+    >
+      <Text
+        baseline={true}
+        className="company"
+        intimate={true}
+      >
+        <CompanyLink
+          company={
+            Object {
+              "link": "/jobCard",
+              "name": "SEEK Asia",
+            }
+          }
+          keyword=""
+        />
+      </Text>
+    </div>
+  </Section>
+  <Section
+    className="footerSection"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <div
+      className="footerLeft"
+    >
+      <div
+        className="jobInfoContainer"
+      >
+        <div
+          className="jobInfoList"
+        >
+          <Text
+            baseline={true}
+            className="jobInfo"
+            intimate={true}
+          >
+            <LocationIcon
+              className="jobInfoIcon"
+            />
+            <LocationGroup
+              locations={
+                Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Pahang",
+                  },
+                  Object {
+                    "child": Object {
+                      "child": Object {
+                        "name": "Near Leisure Mall",
+                      },
+                      "link": "/jobCard",
+                      "name": "Cheras",
+                    },
+                    "link": "/jobCard",
+                    "name": "Selangor",
+                  },
+                ]
+              }
+            />
+          </Text>
+          <Text
+            baseline={true}
+            className="jobInfo"
+            intimate={true}
+          >
+            <MoneyIcon
+              className="jobInfoIcon"
+            />
+            <span>
+              RM99999 - RM999999
+            </span>
+          </Text>
+        </div>
+        <div>
+          <Text
+            baseline={true}
+            className="postingDuration"
+            whispering={true}
+          >
+            1 hour ago
+          </Text>
+          <Button
+            className="shelfToggle"
+            color="hyperlink"
+            component="button"
+            onClick={[Function]}
+          >
+            <Text
+              baseline={false}
+              className="shelfToggleText"
+              whispering={true}
+            >
+              more
+               
+              <ChevronIcon
+                className=""
+                direction="down"
+                svgClassName="shelfToggleIcon"
+              />
+            </Text>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Section>
+  <ShelfSection
+    shelf={
+      Object {
+        "shelfLinks": Array [
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accountant",
+              },
+            ],
+            "label": "Job function",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          },
+        ],
+      }
+    }
+    showShelfSection={false}
+  />
+</Card>
+`;
+
 exports[`JobCard should render tag links 1`] = `
 <Card
   className="root"

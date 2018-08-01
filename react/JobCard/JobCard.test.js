@@ -227,4 +227,14 @@ describe('JobCard', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render selected style', () => {
+    const wrapper = shallow(
+      <JobCard
+        job={defaultJob}
+        isSelected
+      />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });
