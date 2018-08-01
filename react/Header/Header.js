@@ -82,6 +82,7 @@ export default class Header extends Component {
     const {
       LogoComponent,
       logoProps,
+      mobileLoggedHomeUrl,
       activeTab,
       links,
       more,
@@ -126,11 +127,20 @@ export default class Header extends Component {
           }
         </div>
         <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
-          <h1 className={styles.logo}>
+          <h1 className={styles.desktopLogo}>
             {
               linkRenderer({
                 className: styles.logoLink,
                 href: '/'
+              })
+            }
+            <LogoComponent {...logoProps} />
+          </h1>
+          <h1 className={styles.mobileLogo}>
+            {
+              linkRenderer({
+                className: styles.logoLink,
+                href: mobileLoggedHomeUrl
               })
             }
             <LogoComponent {...logoProps} />
@@ -182,6 +192,7 @@ Header.propTypes = {
   LogoComponent: PropTypes.func.isRequired,
   logoProps: PropTypes.object,
   activeTab: PropTypes.string,
+  mobileLoggedHomeUrl: PropTypes.string,
   links: PropTypes.array,
   more: PropTypes.array,
   locales: PropTypes.array.isRequired,
@@ -205,5 +216,6 @@ Header.propTypes = {
 
 Header.defaultProps = {
   linkRenderer: defaultLinkRenderer,
-  authenticationStatus: UNAUTHENTICATED
+  authenticationStatus: UNAUTHENTICATED,
+  mobileLoggedHomeUrl: '/'
 };

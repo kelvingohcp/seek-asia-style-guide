@@ -147,6 +147,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "header.loginUrl": "/hk/en/login/jobseekerlogin",
       "header.logoutTitle": "Log out",
       "header.logoutUrl": "https://www.thisislogoutlink.test",
+      "header.mobileLoggedHomeUrl": "https://m.jobsdb.com/en-hk/jobsForYou.do",
       "header.myJobsDBTitle": "My jobsDB",
       "header.myJobsDBUrl": "/hk/en/MyJobsDB",
       "header.myJobsDBUrlLoggedIn": "/hk/en/MyJobsDB",
@@ -167,6 +168,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
+  mobileLoggedHomeUrl="/"
   selectCountry={true}
   userAccMenuItems={
     Array [

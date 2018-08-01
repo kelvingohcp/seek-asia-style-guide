@@ -112,6 +112,21 @@
   top: 3px;
 }
 
+.desktopLogo {
+  display: none;
+  @media @desktop {
+    display: flex;
+    &:extend(.logo);
+  }
+}
+
+.mobileLogo {
+  &:extend(.logo);
+  @media @desktop {
+    display: none;
+  }
+}
+
 .logoSvg {
   height: 39px;
   width: 105px;

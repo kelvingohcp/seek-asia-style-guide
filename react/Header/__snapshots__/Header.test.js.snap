@@ -43,7 +43,18 @@ exports[`Header should pass through optional props 1`] = `
     className="primaryNavNoLogin"
   >
     <h1
-      className="logo"
+      className="desktopLogo"
+    >
+      <a
+        className="logoLink"
+        href="/"
+      />
+      <FakeComponent
+        country="my"
+      />
+    </h1>
+    <h1
+      className="mobileLogo"
     >
       <a
         className="logoLink"
@@ -279,7 +290,16 @@ exports[`Header should render with default props 1`] = `
     className="primaryNavNoLogin"
   >
     <h1
-      className="logo"
+      className="desktopLogo"
+    >
+      <a
+        className="logoLink"
+        href="/"
+      />
+      <FakeComponent />
+    </h1>
+    <h1
+      className="mobileLogo"
     >
       <a
         className="logoLink"
@@ -414,7 +434,16 @@ exports[`Header should render with links list 1`] = `
     className="primaryNavNoLogin"
   >
     <h1
-      className="logo"
+      className="desktopLogo"
+    >
+      <a
+        className="logoLink"
+        href="/"
+      />
+      <FakeComponent />
+    </h1>
+    <h1
+      className="mobileLogo"
     >
       <a
         className="logoLink"
@@ -638,7 +667,16 @@ exports[`Header should render with login available 1`] = `
     className="primaryNav"
   >
     <h1
-      className="logo"
+      className="desktopLogo"
+    >
+      <a
+        className="logoLink"
+        href="/"
+      />
+      <FakeComponent />
+    </h1>
+    <h1
+      className="mobileLogo"
     >
       <a
         className="logoLink"

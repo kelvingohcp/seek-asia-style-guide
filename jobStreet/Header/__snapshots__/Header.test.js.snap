@@ -156,6 +156,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
+  mobileLoggedHomeUrl="/"
   more={
     Array [
       Object {
@@ -326,6 +327,7 @@ exports[`JobStreet Header renders with default props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
+  mobileLoggedHomeUrl="/"
   more={
     Array [
       Object {

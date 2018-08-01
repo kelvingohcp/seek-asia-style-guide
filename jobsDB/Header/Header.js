@@ -7,8 +7,7 @@ import { PortalIcon, LightbulbIcon, ResourcesIcon, JobFunctionIcon, ProfileIcon,
 import { getLocalization } from '../localization';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/private/authStatusTypes';
 
-const getJobsDBProps = ({ country, language, domainUrl, authenticationStatus, currentPage }) => {
-  const messages = getLocalization({ country, language });
+const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage, messages }) => {
   const baseUrl = `https://${country}.${domainUrl}`;
 
   let icon = LightbulbIcon;
@@ -49,13 +48,14 @@ const getJobsDBProps = ({ country, language, domainUrl, authenticationStatus, cu
 };
 
 const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = false, selectCountry = true, authenticationStatus = UNAUTHENTICATED, userName, domainUrl, currentPage, ...restProps }) => {
+  const messages = getLocalization({ country, language });
   return (
 
     <GlobalHeader
       LogoComponent={Logo}
       activeTab={activeTab}
       loginAvailable={loginAvailable}
-      {...getJobsDBProps({ country, language, domainUrl, authenticationStatus, currentPage })}
+      {...getJobsDBProps({ country, domainUrl, authenticationStatus, currentPage, messages })}
       brandStyles={styles}
       country={country}
       language={language}
@@ -63,6 +63,7 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
       selectCountry={selectCountry}
       userName={userName}
       authenticationStatus={authenticationStatus}
+      mobileLoggedHomeUrl={(authenticationStatus === AUTHENTICATED) ? messages['header.mobileLoggedHomeUrl'] : '/'}
       {...restProps}
     />
   );
