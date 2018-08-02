@@ -237,4 +237,14 @@ describe('JobCard', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should pass through viewed prop', () => {
+    const wrapper = shallow(
+      <JobCard
+        job={defaultJob}
+        viewed
+      />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

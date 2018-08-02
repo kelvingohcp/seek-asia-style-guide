@@ -5,7 +5,6 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
   className="jobTitleLink"
   link="/jobCard"
   rel="noopener noreferrer"
-  target="_blank"
 >
   <Text
     baseline={true}
@@ -18,12 +17,29 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
 </Link>
 `;
 
-exports[`JobCard - JobTitleLink should render LinkComponent when it provide 1`] = `
+exports[`JobCard - JobTitleLink should pass through viewed prop 1`] = `
+<Link
+  className="jobTitleLink"
+  link="/jobCard"
+  rel="noopener noreferrer"
+  viewed={true}
+>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    strong={true}
+    waving={true}
+  >
+    Software Engineer
+  </Text>
+</Link>
+`;
+
+exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 1`] = `
 <LinkComponent
   className="jobTitleLink"
   link="/jobCard"
   rel="noopener noreferrer"
-  target="_blank"
 >
   <Text
     baseline={true}
@@ -41,7 +57,6 @@ exports[`JobCard - JobTitleLink should render correctly 1`] = `
   className="jobTitleLink"
   link="/jobCard"
   rel="noopener noreferrer"
-  target="_blank"
 >
   <Text
     baseline={true}

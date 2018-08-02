@@ -37,7 +37,7 @@ export default class JobCard extends React.Component {
   render() {
     const { shelfSectionOpen } = this.state;
     const { isSelected } = this.props;
-    const { job, keyword = '', jobAdType, LinkComponent, TitleLinkComponent } = this.props;
+    const { job, keyword = '', jobAdType, LinkComponent, TitleLinkComponent, viewed } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
 
     return (
@@ -47,7 +47,7 @@ export default class JobCard extends React.Component {
           [styles.selected]: isSelected
         })}>
         <Section className={styles.headerSection}>
-          <JobTitleLink LinkComponent={TitleLinkComponent} keyword={keyword} job={job} />
+          <JobTitleLink LinkComponent={TitleLinkComponent} viewed={viewed} keyword={keyword} job={job} />
         </Section>
         <Section className={styles.bodySection}>
           <div className={styles.bodyDetailsWrapper}>
@@ -135,5 +135,6 @@ JobCard.propTypes = {
   jobAdType: PropTypes.string,
   LinkComponent: PropTypes.func,
   TitleLinkComponent: PropTypes.func,
-  isSelected: PropTypes.bool
+  isSelected: PropTypes.bool,
+  viewed: PropTypes.bool
 };
