@@ -29,7 +29,7 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
   const userAccMenuItems = [
     { title: messages['header.profileTitle'], url: baseUrl + messages['header.profileUrl'], ItemIcon: ProfileIcon, EnableIcon: true },
     { title: messages['header.invitationTitle'], url: baseUrl + messages['header.invitationUrl'], ItemIcon: JobInvitationIcon, EnableIcon: true },
-    { title: messages['header.logoutTitle'], url: messages['header.logoutUrl'], ItemIcon: JobFunctionIcon, EnableIcon: false }
+    { title: messages['header.logoutTitle'], url: baseUrl + messages['header.logoutUrl'], ItemIcon: JobFunctionIcon, EnableIcon: false }
   ];
 
   const locales = messages['header.countryList'];

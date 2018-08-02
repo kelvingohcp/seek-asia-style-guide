@@ -21,7 +21,7 @@ export default {
   'header.invitationTitle': 'Panggilan kerja',
   'header.invitationUrl': '/id/ID/Invitations/InvitationList',
   'header.logoutTitle': 'Keluar',
-  'header.logoutUrl': 'https://www.thisislogoutlink.test',
+  'header.logoutUrl': '/id/en/login/jobseekerlogoff',
   'header.seperatorOr': 'atau',
   'header.searchUrl': '/ID/ID/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=JSRSB',
   'menu.jobSeekerHeader': 'KANDIDAT',

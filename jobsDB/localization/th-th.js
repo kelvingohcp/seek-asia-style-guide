@@ -21,7 +21,7 @@ export default {
   'header.invitationTitle': 'คำเชิญให้สมัครงาน',
   'header.invitationUrl': '/th/th/Invitations/InvitationList',
   'header.logoutTitle': 'ออกจากระบบ',
-  'header.logoutUrl': 'https://www.thisislogoutlink.test',
+  'header.logoutUrl': '/th/th/login/jobseekerlogoff',
   'header.seperatorOr': 'หรือ',
   'header.searchUrl': '/TH/TH/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS',
   'menu.jobSeekerHeader': 'ผู้หางาน',

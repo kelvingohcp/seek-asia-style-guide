@@ -7,7 +7,8 @@ describe('JobsDB Header', () => {
   const defaultProps = {
     country: 'hk',
     language: 'en',
-    activeTab: 'ACTIVE_TAB_HOME'
+    activeTab: 'ACTIVE_TAB_HOME',
+    domainUrl: 'jobsdb.com'
   };
 
   it('renders with default props', () => {
