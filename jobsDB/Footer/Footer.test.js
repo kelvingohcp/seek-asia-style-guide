@@ -45,5 +45,10 @@ describe('Footer component', () => {
       const wrapper = shallow(<Footer language="th" country="th" />);
       expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render en-hk fat footer', () => {
+      const wrapper = shallow(<Footer language="en" country="hk" isExpandedVersion />);
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });

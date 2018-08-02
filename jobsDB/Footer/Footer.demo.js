@@ -93,6 +93,19 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'States',
+      type: 'checklist',
+      states: [
+        {
+          label: 'isExpandedVersion',
+          transformProps: props => ({
+            ...props,
+            isExpandedVersion: true
+          })
+        }
+      ]
     }
   ]
 };
