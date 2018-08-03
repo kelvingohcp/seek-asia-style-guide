@@ -5,7 +5,7 @@ exports[`JobsDB Header renders with default props 1`] = `
   LogoComponent={[Function]}
   activeTab="ACTIVE_TAB_HOME"
   authenticationStatus="unauthenticated"
-  baseUrl="https://hk.undefined"
+  baseUrl="https://hk.jobsdb.com"
   brandStyles={null}
   country="hk"
   employerSite={true}
@@ -16,17 +16,17 @@ exports[`JobsDB Header renders with default props 1`] = `
       Object {
         "ItemIcon": [Function],
         "title": "My jobsDB",
-        "url": "https://hk.undefined/hk/en/MyJobsDB",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
       },
       Object {
         "ItemIcon": [Function],
         "title": "Resources",
-        "url": "https://hk.undefined/en-hk/career-recruitment-advice/",
+        "url": "https://hk.jobsdb.com/en-hk/career-recruitment-advice/",
       },
       Object {
         "ItemIcon": [Function],
         "title": "Career Insights",
-        "url": "https://hk.undefined/hk/en/career-insights",
+        "url": "https://hk.jobsdb.com/hk/en/career-insights",
       },
     ]
   }
@@ -38,7 +38,7 @@ exports[`JobsDB Header renders with default props 1`] = `
         "language": "en",
         "languageDisplay": "English",
         "title": "Hong Kong (English)",
-        "url": "https://hk.undefined/hk",
+        "url": "https://hk.jobsdb.com/hk",
       },
       Object {
         "ItemIcon": [Function],
@@ -46,7 +46,7 @@ exports[`JobsDB Header renders with default props 1`] = `
         "language": "en",
         "languageDisplay": "English",
         "title": "Indonesia (English)",
-        "url": "https://id.undefined/id",
+        "url": "https://id.jobsdb.com/id",
       },
       Object {
         "ItemIcon": [Function],
@@ -54,7 +54,7 @@ exports[`JobsDB Header renders with default props 1`] = `
         "language": "id",
         "languageDisplay": "Bahasa",
         "title": "Indonesia (Bahasa)",
-        "url": "https://id.undefined/id/id",
+        "url": "https://id.jobsdb.com/id/id",
       },
       Object {
         "ItemIcon": [Function],
@@ -62,7 +62,7 @@ exports[`JobsDB Header renders with default props 1`] = `
         "language": "en",
         "languageDisplay": "English",
         "title": "Singapore (English)",
-        "url": "https://sg.undefined/sg",
+        "url": "https://sg.jobsdb.com/sg",
       },
       Object {
         "ItemIcon": [Function],
@@ -70,7 +70,7 @@ exports[`JobsDB Header renders with default props 1`] = `
         "language": "en",
         "languageDisplay": "English",
         "title": "Thailand (English)",
-        "url": "https://th.undefined/th",
+        "url": "https://th.jobsdb.com/th",
       },
       Object {
         "ItemIcon": [Function],
@@ -78,7 +78,7 @@ exports[`JobsDB Header renders with default props 1`] = `
         "language": "th",
         "languageDisplay": "ภาษาไทย",
         "title": "ไทย (ภาษาไทย)",
-        "url": "https://th.undefined/th/th",
+        "url": "https://th.jobsdb.com/th/th",
       },
     ]
   }
@@ -94,7 +94,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "language": "en",
           "languageDisplay": "English",
           "title": "Hong Kong (English)",
-          "url": "https://hk.undefined/hk",
+          "url": "https://hk.jobsdb.com/hk",
         },
         Object {
           "ItemIcon": [Function],
@@ -102,7 +102,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "language": "en",
           "languageDisplay": "English",
           "title": "Indonesia (English)",
-          "url": "https://id.undefined/id",
+          "url": "https://id.jobsdb.com/id",
         },
         Object {
           "ItemIcon": [Function],
@@ -110,7 +110,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "language": "id",
           "languageDisplay": "Bahasa",
           "title": "Indonesia (Bahasa)",
-          "url": "https://id.undefined/id/id",
+          "url": "https://id.jobsdb.com/id/id",
         },
         Object {
           "ItemIcon": [Function],
@@ -118,7 +118,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "language": "en",
           "languageDisplay": "English",
           "title": "Singapore (English)",
-          "url": "https://sg.undefined/sg",
+          "url": "https://sg.jobsdb.com/sg",
         },
         Object {
           "ItemIcon": [Function],
@@ -126,7 +126,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "language": "en",
           "languageDisplay": "English",
           "title": "Thailand (English)",
-          "url": "https://th.undefined/th",
+          "url": "https://th.jobsdb.com/th",
         },
         Object {
           "ItemIcon": [Function],
@@ -134,7 +134,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "language": "th",
           "languageDisplay": "ภาษาไทย",
           "title": "ไทย (ภาษาไทย)",
-          "url": "https://th.undefined/th/th",
+          "url": "https://th.jobsdb.com/th/th",
         },
       ],
       "header.employerSiteTitle": "For Employers",
@@ -146,7 +146,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "header.loginTitle": "Log in",
       "header.loginUrl": "/hk/en/login/jobseekerlogin",
       "header.logoutTitle": "Log out",
-      "header.logoutUrl": "https://www.thisislogoutlink.test",
+      "header.logoutUrl": "/hk/en/login/jobseekerlogoff",
       "header.mobileLoggedHomeUrl": "https://m.jobsdb.com/en-hk/jobsForYou.do",
       "header.myJobsDBTitle": "My jobsDB",
       "header.myJobsDBUrl": "/hk/en/MyJobsDB",
@@ -176,19 +176,19 @@ exports[`JobsDB Header renders with default props 1`] = `
         "EnableIcon": true,
         "ItemIcon": [Function],
         "title": "View profile",
-        "url": "https://hk.undefined/hk/en/MyJobsDB/profile",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/profile",
       },
       Object {
         "EnableIcon": true,
         "ItemIcon": [Function],
         "title": "Job invitations",
-        "url": "https://hk.undefined/hk/en/Invitations/InvitationList",
+        "url": "https://hk.jobsdb.com/hk/en/Invitations/InvitationList",
       },
       Object {
         "EnableIcon": false,
         "ItemIcon": [Function],
         "title": "Log out",
-        "url": "https://www.thisislogoutlink.test",
+        "url": "https://hk.jobsdb.com/hk/en/login/jobseekerlogoff",
       },
     ]
   }

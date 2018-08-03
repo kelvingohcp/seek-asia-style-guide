@@ -6,11 +6,11 @@ import FooterLinks from './components/FooterLinks/FooterLinks';
 import FooterHK from './FooterHK/FooterHK';
 import localization from './localization';
 
-const Footer = ({ language, country, ...restProps }) => {
+const Footer = ({ language, country, isExpandedVersion, ...restProps }) => {
   const year = new Date().getFullYear();
   const messages = localization[`${language}-${country}`];
 
-  if (country === 'hk') {
+  if (country === 'hk' && isExpandedVersion) {
     return (<FooterHK language={language} country={country} {...restProps} />);
   }
   return (
@@ -34,7 +34,8 @@ const Footer = ({ language, country, ...restProps }) => {
 
 Footer.propTypes = {
   language: PropTypes.string.isRequired,
-  country: PropTypes.string.isRequired
+  country: PropTypes.string.isRequired,
+  isExpandedVersion: PropTypes.bool
 };
 
 export default Footer;

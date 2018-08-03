@@ -11,7 +11,7 @@ const JobTitleLinkPropTypes = PropTypes.shape({
   jobUrl: PropTypes.string
 });
 
-const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink }) => {
+const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink, viewed }) => {
   let title = (<Text waving strong className={styles.jobTitle}>{jobTitle}</Text>);
   const keywordParts = getParts(jobTitle, keyword);
 
@@ -36,7 +36,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
     );
   }
 
-  return <LinkComponent link={jobUrl} className={styles.jobTitleLink} target="_blank" rel="noopener noreferrer">{title}</LinkComponent>;
+  return <LinkComponent link={jobUrl} className={styles.jobTitleLink} viewed={viewed} rel="noopener noreferrer">{title}</LinkComponent>;
 };
 
 JobTitleLink.propTypes = {
@@ -44,7 +44,8 @@ JobTitleLink.propTypes = {
   showJobSplit: PropTypes.bool,
   isDesktop: PropTypes.bool,
   job: JobTitleLinkPropTypes.isRequired,
-  LinkComponent: PropTypes.func
+  LinkComponent: PropTypes.func,
+  viewed: PropTypes.bool
 };
 
 export default JobTitleLink;

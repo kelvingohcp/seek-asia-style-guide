@@ -19,7 +19,7 @@ export default {
   'header.invitationTitle': 'No job invitations',
   'header.invitationUrl': 'https://www.thisisjobinvitation.test',
   'header.logoutTitle': 'Log out',
-  'header.logoutUrl': 'https://www.thisislogoutlink.test',
+  'header.logoutUrl': '/sg/en/login/jobseekerlogoff',
   'header.seperatorOr': 'or',
   'header.searchUrl': 'https://sg.jobsdb.com/j?q=&l=&sp=homepage',
   'menu.jobSeekerHeader': 'JOB SEEKER',

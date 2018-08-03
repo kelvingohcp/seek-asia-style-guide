@@ -17,7 +17,7 @@ describe('JobCard - JobTitleLink', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Seek" />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('should render LinkComponent when it provide', () => {
+  it('should render LinkComponent when it is provided', () => {
     const wrapper = shallow(
       <JobTitleLink
         job={defaultJob}
@@ -27,6 +27,11 @@ describe('JobCard - JobTitleLink', () => {
         )}
       />
     );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should pass through viewed prop', () => {
+    const wrapper = shallow(<JobTitleLink job={defaultJob} viewed />);
     expect(wrapper).toMatchSnapshot();
   });
 });

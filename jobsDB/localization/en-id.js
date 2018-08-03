@@ -22,7 +22,7 @@ export default {
   'header.invitationTitle': 'Job invitations',
   'header.invitationUrl': '/id/en/Invitations/InvitationList',
   'header.logoutTitle': 'Log out',
-  'header.logoutUrl': 'https://www.thisislogoutlink.test',
+  'header.logoutUrl': '/id/en/login/jobseekerlogoff',
   'header.seperatorOr': 'or',
   'header.searchUrl': '/ID/EN/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS',
   'menu.jobSeekerHeader': 'JOB SEEKER',
