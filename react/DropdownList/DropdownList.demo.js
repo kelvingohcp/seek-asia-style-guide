@@ -4,10 +4,10 @@ import * as sketch from './DropdownList.sketch';
 import { ListItem } from 'seek-asia-style-guide/react';
 
 const list = [
-  <ListItem key="1" value="Children 1" noShadow />,
-  <ListItem key="2" value="Children 2" noShadow />,
-  <ListItem key="3" value="Children 3" noShadow />,
-  <ListItem key="4" value="Children 4" noShadow />
+  <ListItem key="1" value="Children 1" />,
+  <ListItem key="2" value="Children 2" />,
+  <ListItem key="3" value="Children 3" />,
+  <ListItem key="4" value="Children 4" />
 ];
 
 export default {
@@ -20,6 +20,19 @@ export default {
     children: list
   },
   options: [
+    {
+      label: 'Compact',
+      type: 'checklist',
+      states: [
+        {
+          label: 'Compact',
+          transformProps: props => ({
+            ...props,
+            compact: true
+          })
+        }
+      ]
+    },
     {
       label: 'No shadow',
       type: 'checklist',

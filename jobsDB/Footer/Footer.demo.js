@@ -3,11 +3,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as sketch from './Footer.sketch';
+import { ListItem } from 'seek-asia-style-guide/react';
 
 export const makeDummyLinkRendererForPath = path => {
   const DummyLinkRenderer = ({ href, children, ...props }) => (
     <Link style={{ textDecoration: 'none' }} to={`${path}#actualHref=${href}`} {...props}>
-      {children}
+      {React.Children.map(children, child => {
+        if (child.type === ListItem) {
+          return React.cloneElement(child, { noShadow: true });
+        }
+        return child;
+      })}
     </Link>
   );
 

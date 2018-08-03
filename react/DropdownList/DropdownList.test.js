@@ -22,6 +22,15 @@ describe('DropdownList:', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render in compact mode', () => {
+    const wrapper = shallow(
+      <DropdownList value="testValue" compact>
+        <span />
+      </DropdownList>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render with className', () => {
     const wrapper = shallow(
       <DropdownList value="testValue" className={styles.root}>

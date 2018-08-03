@@ -14,59 +14,59 @@ const PartnerSites = ({ messages, externalLink }) => {
       whistling>
 
       {externalLink(
-        <ListItem value='BabaJob (India)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='BabaJob (India)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.BabaJobLink']
       )}
       {externalLink(
-        <ListItem value='Bdjobs (Bandladesh)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Bdjobs (Bandladesh)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.BdjobsLink']
       )}
       {externalLink(
-        <ListItem value='Brighter Monday (East Africa)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Brighter Monday (East Africa)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.BrighterMondayLink']
       )}
       {externalLink(
-        <ListItem value='Catho (Brazil)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Catho (Brazil)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.CathoLink']
       )}
       {externalLink(
-        <ListItem value='Jobberman (West Africa)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Jobberman (West Africa)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.JobbermanLink']
       )}
       {externalLink(
-        <ListItem value='JobStreet (S.E. Asia)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='JobStreet (S.E. Asia)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.JobStreetLink']
       )}
       {externalLink(
-        <ListItem value='Jora (Hong Kong)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Jora (Hong Kong)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.JoraLink']
       )}
       {externalLink(
-        <ListItem value='Manager (Brazil)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Manager (Brazil)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.ManagerLink']
       )}
       {externalLink(
-        <ListItem value='OCC Mundial (Mexico)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='OCC Mundial (Mexico)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.OCCLink']
       )}
       {externalLink(
-        <ListItem value='Seaman Jobsite (Philippines)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Seaman Jobsite (Philippines)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.SeamanJobsiteLink']
       )}
       {externalLink(
-        <ListItem value='SEEK (Australia)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='SEEK (Australia)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.SEEKLink']
       )}
       {externalLink(
-        <ListItem value='Work Abroad (Philippines)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Work Abroad (Philippines)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.WorkAbroadLink']
       )}
       {externalLink(
-        <ListItem value='Workana' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Workana' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.WorkanaLink']
       )}
       {externalLink(
-        <ListItem value='Zhaopin (China)' noShadow compact className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
+        <ListItem value='Zhaopin (China)' className={styles.partners} descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.ZhaopinLink']
       )}
     </DropdownList>

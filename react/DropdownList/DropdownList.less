@@ -1,12 +1,36 @@
 @import (reference) "~seek-asia-style-guide/theme";
-@import "~seek-asia-style-guide/react/ListItem/ListItem.less";
+@import (reference) "~seek-asia-style-guide/react/ListItem/ListItem.less";
 
 @chevron-padding-left: @grid-base * 2;
 @dropdown-padding-top: @grid-base * 2;
 @chevron-height: @grid-base * 4;
+@button-padding: @grid-base * 4;
 
 .root {
+  align-items: flex-start;
+  background-color: @saWhite;
+  box-shadow: 0 1px 1px @saGrey5;
+  color: @saGrey1;
+  display: flex;
+  line-height: @list-item-line-height;
+  padding: @list-item-h-padding @list-item-v-padding;
   flex-direction: column;
+  &.lowerLevel.expanded {
+    padding-bottom: 0;
+  }
+}
+
+.noShadow {
+  box-shadow: none;
+}
+
+.button {
+  outline: none;
+  line-height: normal;
+  height: auto;
+  white-space: normal;
+  padding: @button-padding;
+  text-align: left;
 }
 
 .chevronFixHeight {

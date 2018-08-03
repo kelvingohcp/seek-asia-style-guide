@@ -46,7 +46,6 @@ export default function ListItem({
         )}
         <div className={styles.listItemValue}>
           <Text
-            conversational={!compact}
             intimate={compact}
             baseline={false}
             className={styles.displayInline}

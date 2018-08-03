@@ -1,5 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`DropdownList: should render in compact mode 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="listItemValue"
+    onClick={[Function]}
+  >
+    <Text
+      baseline={false}
+      className="chevronRight"
+      raw={true}
+      shouting={false}
+    >
+      testValue
+    </Text>
+    <ChevronIcon
+      className="chevronFixHeight"
+      direction="down"
+    />
+  </div>
+  <div
+    className="dropdownNoShow"
+  >
+    <span
+      key=".0"
+    />
+  </div>
+</div>
+`;
+
 exports[`DropdownList: should render value with children 1`] = `
 <div
   className="root"
@@ -24,7 +55,9 @@ exports[`DropdownList: should render value with children 1`] = `
   <div
     className="dropdownNoShow"
   >
-    <span />
+    <span
+      key=".0"
+    />
   </div>
 </div>
 `;
@@ -53,7 +86,9 @@ exports[`DropdownList: should render with className 1`] = `
   <div
     className="dropdownNoShow"
   >
-    <span />
+    <span
+      key=".0"
+    />
   </div>
 </div>
 `;
@@ -82,7 +117,9 @@ exports[`DropdownList: should render without shadow 1`] = `
   <div
     className="dropdownNoShow"
   >
-    <span />
+    <span
+      key=".0"
+    />
   </div>
 </div>
 `;
