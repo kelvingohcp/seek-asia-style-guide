@@ -33,7 +33,7 @@ export default function ListItem({
         [styles.secondLevelPadding]: secondLevel
       })} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
-      <div >
+      <div>
         {title && (
           <Text
             light={!compact}
@@ -46,8 +46,8 @@ export default function ListItem({
         )}
         <div className={styles.listItemValue}>
           <Text
-            loud={!compact}
-            waving={compact}
+            conversational={!compact}
+            intimate={compact}
             baseline={false}
             className={styles.displayInline}
             {...descriptionProps}>

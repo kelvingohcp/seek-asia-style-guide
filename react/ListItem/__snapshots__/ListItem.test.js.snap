@@ -20,8 +20,8 @@ exports[`ListItem: should render custom left padding 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={true}
-        waving={false}
+        conversational={true}
+        intimate={false}
       >
         testValue
       </Text>
@@ -50,9 +50,9 @@ exports[`ListItem: should render custom left padding with light font weight 1`] 
       <Text
         baseline={false}
         className="displayInline"
+        conversational={true}
+        intimate={false}
         light={true}
-        loud={true}
-        waving={false}
       >
         testValue
       </Text>
@@ -81,10 +81,10 @@ exports[`ListItem: should render custom left padding with light font weight and 
       <Text
         baseline={false}
         className="displayInline"
+        conversational={true}
+        intimate={false}
         light={true}
-        loud={true}
         secondary={true}
-        waving={false}
       >
         testValue
       </Text>
@@ -113,10 +113,10 @@ exports[`ListItem: should render custom left padding with light font weight, sec
       <Text
         baseline={false}
         className="displayInline"
+        conversational={true}
+        intimate={false}
         light={true}
-        loud={true}
         secondary={true}
-        waving={false}
       >
         testValue
       </Text>
@@ -150,8 +150,8 @@ exports[`ListItem: should render icon 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={true}
-        waving={false}
+        conversational={true}
+        intimate={false}
       >
         testValue
       </Text>
@@ -185,8 +185,8 @@ exports[`ListItem: should render icon in compact mode 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={false}
-        waving={true}
+        conversational={false}
+        intimate={true}
       >
         testValue
       </Text>
@@ -220,8 +220,8 @@ exports[`ListItem: should render icon in hasHoverState mode 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={true}
-        waving={false}
+        conversational={true}
+        intimate={false}
       >
         testValue
       </Text>
@@ -255,8 +255,8 @@ exports[`ListItem: should render icon with badge with hasHoverState and compact 
       <Text
         baseline={false}
         className="displayInline"
-        loud={false}
-        waving={true}
+        conversational={false}
+        intimate={true}
       >
         testValue
       </Text>
@@ -294,8 +294,8 @@ exports[`ListItem: should render title value 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={true}
-        waving={false}
+        conversational={true}
+        intimate={false}
       >
         testValue
       </Text>
@@ -315,8 +315,8 @@ exports[`ListItem: should render value 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={true}
-        waving={false}
+        conversational={true}
+        intimate={false}
       >
         testValue
       </Text>
@@ -336,8 +336,8 @@ exports[`ListItem: should render with className 1`] = `
       <Text
         baseline={false}
         className="displayInline"
-        loud={true}
-        waving={false}
+        conversational={true}
+        intimate={false}
       >
         testValue
       </Text>
