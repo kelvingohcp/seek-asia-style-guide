@@ -12,13 +12,15 @@ export default class ImageSlider extends Component {
     this.state = {
       position: 0,
       direction: 'next',
-      sliding: false,
-      timerDuration: 5000
+      sliding: false
     };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.nextSlide(), this.state.timerDuration);
+    if (this.props.autoSlide) {
+      this.timerID = setInterval(() => this.nextSlide(),
+        this.props.timerDuration);
+    }
   }
 
   componentWillUnmount() {
@@ -30,7 +32,10 @@ export default class ImageSlider extends Component {
   }
 
   resumeAutoSlide() {
-    this.timerID = setInterval(() => this.nextSlide(), this.state.timerDuration);
+    if (this.props.autoSlide) {
+      this.timerID = setInterval(() => this.nextSlide(),
+        this.props.timerDuration);
+    }
   }
 
   doSliding = (direction, position) => {
@@ -92,14 +97,12 @@ export default class ImageSlider extends Component {
 
 ImageSlider.propTypes = {
   items: PropTypes.array.isRequired,
-  position: PropTypes.number,
-  direction: PropTypes.string,
-  sliding: PropTypes.bool
+  timerDuration: PropTypes.number,
+  autoSlide: PropTypes.bool
 };
 
 ImageSlider.defaultProps = {
   items: [],
-  position: 0,
-  direction: 'next',
-  sliding: false
+  timerDuration: 5000,
+  autoSlide: false
 };
