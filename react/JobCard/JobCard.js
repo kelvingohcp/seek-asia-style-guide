@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Badge from '../Badge/Badge';
 import Text from '../Text/Text';
 import Button from '../Button/Button';
 import Card from '../Card/Card';
@@ -51,8 +52,7 @@ export default class JobCard extends React.Component {
         </Section>
         <Section className={styles.bodySection}>
           <div className={styles.bodyDetailsWrapper}>
-            <Text intimate className={styles.company}>
-              {job.featuredLabel && (<span className={styles.featuredLabel}>{job.featuredLabel}</span>)}
+            <Text intimate baseline={false} className={styles.company}>
               {job.classifiedLabel && (<span className={styles.classifiedLabel}>{job.classifiedLabel}</span>)}
               {job.confidentialLabel && (<span className={styles.confidentialLabel}>{job.confidentialLabel}</span>)}
               {job.company && <CompanyLink company={job.company} keyword={keyword} LinkComponent={LinkComponent} />}
@@ -60,10 +60,10 @@ export default class JobCard extends React.Component {
             {jobAdTypeOption.showSellingPoint && job.sellingPoints && (
               <div
                 className={classnames(styles.sellingPointsSection, { [styles.withDescription]: jobAdTypeOption.showDescription && job.description })}>
-                <ul className={styles.sellingPointsList} >
+                <ul className={styles.sellingPoints} >
                   {job.sellingPoints.map((sellingPoint, i) => {
                     return (
-                      <li key={i}><Text intimate className={styles.sellingPoint}>{sellingPoint}</Text></li>
+                      <li key={i}><Text intimate baseline={false} className={styles.sellingPoint}>{sellingPoint}</Text></li>
                     );
                   })}
                 </ul>
@@ -71,7 +71,7 @@ export default class JobCard extends React.Component {
             )}
             {jobAdTypeOption.showDescription && job.description && (
               <div className={styles.jobDescriptionSection}>
-                <Text intimate className={styles.bodyDescriptionText}>{job.description}</Text>
+                <Text intimate baseline={false} className={styles.bodyDescriptionText}>{job.description}</Text>
               </div>
             )}
           </div>
@@ -85,14 +85,19 @@ export default class JobCard extends React.Component {
           <div className={styles.footerLeft}>
             <div className={styles.jobInfoContainer}>
               <div className={styles.jobInfoList}>
-                <Text intimate className={styles.jobInfo}>
+                <Text intimate baseline={false} className={styles.jobInfo}>
                   <LocationIcon className={styles.jobInfoIcon} />
                   {job.locations && <LocationGroup locations={job.locations} LinkComponent={LinkComponent} />}
                 </Text>
-                {job.salary && (<Text intimate className={styles.jobInfo}><MoneyIcon className={styles.jobInfoIcon} /><span>{job.salary}</span></Text>)}
+                {job.salary && (<Text intimate baseline={false} className={styles.jobInfo}><MoneyIcon className={styles.jobInfoIcon} /><span>{job.salary}</span></Text>)}
               </div>
               <div>
-                <Text whispering className={styles.postingDuration}>{job.postingDuration}</Text>
+                {job.featuredLabel && (<span className={styles.featuredLabel}><Badge color="new" label={job.featuredLabel} /></span>)}
+                {job.appliedDate ? (
+                  <Text whispering baseline={false} className={styles.applyDate}>{job.appliedDate}</Text>
+                ) : (
+                  <Text whispering baseline={false} className={styles.postingDuration}>{job.postingDuration}</Text>
+                )}
                 {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) &&
                   <Button color="hyperlink" className={styles.shelfToggle} onClick={this.handleShelfSectionToggle}>
                     <Text whispering baseline={false} className={styles.shelfToggleText}>
@@ -130,7 +135,8 @@ JobCard.propTypes = {
     featuredLabel: PropTypes.string,
     classifiedLabel: PropTypes.string,
     confidentialLabel: PropTypes.string,
-    shelf: ShelfSectionPropTypes
+    shelf: ShelfSectionPropTypes,
+    appliedDate: PropTypes.string
   }).isRequired,
   jobAdType: PropTypes.string,
   LinkComponent: PropTypes.func,

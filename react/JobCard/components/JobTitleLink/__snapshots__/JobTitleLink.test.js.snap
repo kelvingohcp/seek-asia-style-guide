@@ -19,7 +19,7 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
 
 exports[`JobCard - JobTitleLink should pass through viewed prop 1`] = `
 <Link
-  className="jobTitleLink"
+  className="jobTitleLinkVisited"
   link="/jobCard"
   rel="noopener noreferrer"
   viewed={true}

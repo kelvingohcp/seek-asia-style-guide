@@ -22,8 +22,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
           keywordParts.map((part, index) => {
             return (
               <Text
-                strong={part.highlight}
-                semiStrong={!part.highlight}
+                strong
                 waving
                 className={classnames(styles.jobTitle, { [styles.titleKeyword]: part.highlight })}
                 key={index}>
@@ -36,7 +35,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
     );
   }
 
-  return <LinkComponent link={jobUrl} className={styles.jobTitleLink} viewed={viewed} rel="noopener noreferrer">{title}</LinkComponent>;
+  return <LinkComponent link={jobUrl} className={classnames({ [ styles.jobTitleLink ]: !viewed, [ styles.jobTitleLinkVisited ]: viewed })} viewed={viewed} rel="noopener noreferrer">{title}</LinkComponent>;
 };
 
 JobTitleLink.propTypes = {

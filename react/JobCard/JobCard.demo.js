@@ -71,6 +71,23 @@ export default {
       type: 'checklist',
       states: [
         {
+          label: 'Applied',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            job: {
+              ...props.job,
+              appliedDate: 'Applied on 20-Jul-2018'
+            }
+          })
+        },
+        {
+          label: 'Visited',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            viewed: true
+          })
+        },
+        {
           label: 'Featured',
           transformProps: ({ className, ...props }) => ({
             ...props,

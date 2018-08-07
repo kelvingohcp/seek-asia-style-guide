@@ -56,7 +56,7 @@ exports[`JobCard should not render shelf section 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -88,7 +88,7 @@ exports[`JobCard should not render shelf section 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -118,7 +118,7 @@ exports[`JobCard should not render shelf section 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -132,7 +132,7 @@ exports[`JobCard should not render shelf section 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -212,7 +212,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -244,7 +244,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -274,7 +274,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -288,7 +288,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -379,7 +379,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -411,7 +411,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -441,7 +441,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -455,7 +455,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -592,7 +592,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -624,7 +624,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -654,7 +654,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -668,7 +668,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -806,7 +806,7 @@ exports[`JobCard should render job title component 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -838,7 +838,7 @@ exports[`JobCard should render job title component 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -868,7 +868,7 @@ exports[`JobCard should render job title component 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -882,7 +882,7 @@ exports[`JobCard should render job title component 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -1019,7 +1019,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -1051,7 +1051,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1081,7 +1081,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1095,7 +1095,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -1232,7 +1232,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -1250,7 +1250,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         className="jobDescriptionSection"
       >
         <Text
-          baseline={true}
+          baseline={false}
           className="bodyDescriptionText"
           intimate={true}
         >
@@ -1275,7 +1275,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1305,7 +1305,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1319,7 +1319,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -1464,7 +1464,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -1496,7 +1496,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1526,7 +1526,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1540,7 +1540,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -1676,7 +1676,7 @@ exports[`JobCard should render plain company label 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -1707,7 +1707,7 @@ exports[`JobCard should render plain company label 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1737,7 +1737,7 @@ exports[`JobCard should render plain company label 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1751,7 +1751,7 @@ exports[`JobCard should render plain company label 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -1888,7 +1888,7 @@ exports[`JobCard should render selected style 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -1920,7 +1920,7 @@ exports[`JobCard should render selected style 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1950,7 +1950,7 @@ exports[`JobCard should render selected style 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -1964,7 +1964,7 @@ exports[`JobCard should render selected style 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -2111,7 +2111,7 @@ exports[`JobCard should render tag links 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -2143,7 +2143,7 @@ exports[`JobCard should render tag links 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2173,7 +2173,7 @@ exports[`JobCard should render tag links 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2187,7 +2187,7 @@ exports[`JobCard should render tag links 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -2335,7 +2335,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -2372,7 +2372,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2402,7 +2402,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2416,7 +2416,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -2551,7 +2551,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -2579,7 +2579,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2609,7 +2609,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2623,7 +2623,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -2760,7 +2760,7 @@ exports[`JobCard should render with default props 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -2792,7 +2792,7 @@ exports[`JobCard should render with default props 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2822,7 +2822,7 @@ exports[`JobCard should render with default props 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -2836,7 +2836,7 @@ exports[`JobCard should render with default props 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -2974,15 +2974,10 @@ exports[`JobCard should render with featured label 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
-        <span
-          className="featuredLabel"
-        >
-          Feature
-        </span>
         <CompanyLink
           company={
             Object {
@@ -3011,7 +3006,7 @@ exports[`JobCard should render with featured label 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -3041,7 +3036,7 @@ exports[`JobCard should render with featured label 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -3054,8 +3049,16 @@ exports[`JobCard should render with featured label 1`] = `
           </Text>
         </div>
         <div>
+          <span
+            className="featuredLabel"
+          >
+            <Badge
+              color="new"
+              label="Feature"
+            />
+          </span>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
@@ -3197,7 +3200,7 @@ exports[`JobCard should render with selling points props 1`] = `
       className="bodyDetailsWrapper"
     >
       <Text
-        baseline={true}
+        baseline={false}
         className="company"
         intimate={true}
       >
@@ -3229,7 +3232,7 @@ exports[`JobCard should render with selling points props 1`] = `
           className="jobInfoList"
         >
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -3259,7 +3262,7 @@ exports[`JobCard should render with selling points props 1`] = `
             />
           </Text>
           <Text
-            baseline={true}
+            baseline={false}
             className="jobInfo"
             intimate={true}
           >
@@ -3273,7 +3276,7 @@ exports[`JobCard should render with selling points props 1`] = `
         </div>
         <div>
           <Text
-            baseline={true}
+            baseline={false}
             className="postingDuration"
             whispering={true}
           >
