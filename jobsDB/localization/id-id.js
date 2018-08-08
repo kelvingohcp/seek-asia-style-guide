@@ -13,7 +13,7 @@ export default {
   'header.employerSiteTitle': 'Situs Perusahaan',
   'header.employerSiteUrl': '/id/id/home/employerindex',
   'header.loginTitle': 'Masuk',
-  'header.loginUrl': '/id/id/login/jobseekerlogin',
+  'header.loginUrl': '/id/id/login/jobseekerlogin?from=header',
   'header.signupTitle': 'Daftar',
   'header.signupUrl': '/id/id/jobseeker/registration',
   'header.profileTitle': 'Lihat profil',

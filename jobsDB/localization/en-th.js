@@ -13,7 +13,7 @@ export default {
   'header.employerSiteTitle': 'For Employers',
   'header.employerSiteUrl': '/th/en/home/employerindex',
   'header.loginTitle': 'Log in',
-  'header.loginUrl': '/th/en/login/jobseekerlogin',
+  'header.loginUrl': '/th/en/login/jobseekerlogin?from=header',
   'header.signupTitle': 'Sign up',
   'header.signupUrl': '/th/en/jobseeker/registration',
   'header.profileTitle': 'View profile',

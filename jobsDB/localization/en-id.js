@@ -14,7 +14,7 @@ export default {
   'header.employerSiteTitle': 'For Employers',
   'header.employerSiteUrl': '/id/en/home/employerindex',
   'header.loginTitle': 'Log in',
-  'header.loginUrl': '/id/en/login/jobseekerlogin',
+  'header.loginUrl': '/id/en/login/jobseekerlogin?from=header',
   'header.signupTitle': 'Sign up',
   'header.signupUrl': '/id/en/jobseeker/registration',
   'header.profileTitle': 'View profile',

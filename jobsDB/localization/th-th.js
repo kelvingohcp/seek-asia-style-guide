@@ -13,7 +13,7 @@ export default {
   'header.employerSiteTitle': 'สำหรับผู้ประกอบการ',
   'header.employerSiteUrl': '/th/th/home/employerindex',
   'header.loginTitle': 'เข้าสู่ระบบ',
-  'header.loginUrl': '/th/th/login/jobseekerlogin',
+  'header.loginUrl': '/th/th/login/jobseekerlogin?from=header',
   'header.signupTitle': 'ลงทะเบียน',
   'header.signupUrl': '/th/th/jobseeker/registration',
   'header.profileTitle': 'ดูโปรไฟล์',
