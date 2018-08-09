@@ -11,7 +11,7 @@ export default class ShowMore extends Component {
     lblShowMore: PropTypes.string,
     lblShowLess: PropTypes.string,
     disable: PropTypes.bool,
-    onClickEvent: PropTypes.func
+    onPanelOpen: PropTypes.func
   };
 
   static defaultProps = {
@@ -47,12 +47,16 @@ export default class ShowMore extends Component {
   }
 
   handleClick(e) {
-    const { onClickEvent = () => {} } = this.props;
+    const { onPanelOpen = () => {} } = this.props;
     e.preventDefault();
+
+    if (!this.state.isPanelOpened) {
+      onPanelOpen();
+    }
+
     this.setState({
       isPanelOpened: !this.state.isPanelOpened
     });
-    onClickEvent();
   }
 
   render() {

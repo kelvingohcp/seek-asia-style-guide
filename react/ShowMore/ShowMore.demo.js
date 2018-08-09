@@ -89,14 +89,14 @@ export default {
       ]
     },
     {
-      label: 'onClickEvent',
+      label: 'onPanelOpen',
       type: 'checklist',
       states: [
         {
-          label: 'onClickEvent',
+          label: 'onPanelOpen',
           transformProps: props => ({
             ...props,
-            onClickEvent: () => {
+            onPanelOpen: () => {
               alert('hi'); // eslint-disable-line no-alert
             }
           })
