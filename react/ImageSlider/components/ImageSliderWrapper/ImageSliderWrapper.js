@@ -34,7 +34,7 @@ export default function ImageSliderWrapper({ items,
           orderID={OrderID}
           urlPath={item.url}
           imagePath={item.imagePath}
-          companyTitle={item.title} indexID={item.index}
+          companyTitle={item.title} indexID={index}
         />
       );
       if (OrderID === 0) {
@@ -43,7 +43,7 @@ export default function ImageSliderWrapper({ items,
           <ImageSlot
             orderID={-1} urlPath={items[prevIndexID].url}
             imagePath={items[prevIndexID].imagePath}
-            companyTitle={items[prevIndexID].title} indexID={items.length}
+            companyTitle={items[prevIndexID].title} indexID={-1}
           />
         );
       }
@@ -53,7 +53,7 @@ export default function ImageSliderWrapper({ items,
           <ImageSlot
             orderID={items.length} urlPath={items[nextIndexID].url}
             imagePath={items[nextIndexID].imagePath}
-            companyTitle={items[nextIndexID].title} indexID={-1}
+            companyTitle={items[nextIndexID].title} indexID={items.length}
           />
         );
       }
