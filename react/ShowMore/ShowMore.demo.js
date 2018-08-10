@@ -56,27 +56,21 @@ export default {
           label: '150px height',
           transformProps: props => ({
             ...props,
-            showLessHeight: 150,
-            lblShowMore: 'Show more',
-            lblShowLess: 'Show less'
+            showLessHeight: 150
           })
         },
         {
           label: '300px Height',
           transformProps: props => ({
             ...props,
-            showLessHeight: 300,
-            lblShowMore: 'Show more',
-            lblShowLess: 'Show less'
+            showLessHeight: 300
           })
         },
         {
           label: '700px Height',
           transformProps: props => ({
             ...props,
-            showLessHeight: 700,
-            lblShowMore: 'Show more',
-            lblShowLess: 'Show less'
+            showLessHeight: 700
           })
         }
       ]
@@ -89,9 +83,22 @@ export default {
           label: 'disable',
           transformProps: props => ({
             ...props,
-            disable: true,
-            lblShowMore: 'Show more',
-            lblShowLess: 'Show less'
+            disable: true
+          })
+        }
+      ]
+    },
+    {
+      label: 'onPanelOpen',
+      type: 'checklist',
+      states: [
+        {
+          label: 'onPanelOpen',
+          transformProps: props => ({
+            ...props,
+            onPanelOpen: () => {
+              alert('hi'); // eslint-disable-line no-alert
+            }
           })
         }
       ]
