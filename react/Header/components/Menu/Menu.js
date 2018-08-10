@@ -89,14 +89,14 @@ export default class Menu extends Component {
         </div>
         {
           authenticationStatus === AUTHENTICATED && (<div className={styles.menuBody}>
-            <MenuItem itemClass={styles.loginSignup} linkUrl={messages['header.logoutUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+            <MenuItem itemClass={styles.loginSignup} linkUrl={messages['header.mobileLogoutUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               <Text>{messages['header.logoutTitle']}</Text>
             </MenuItem>
           </div>)
         }
         {
           authenticationStatus === UNAUTHENTICATED && loginAvailable && (
-            <MenuItem itemClass={styles.loginSignup} linkUrl={baseUrl + messages['header.loginUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+            <MenuItem itemClass={styles.loginSignup} linkUrl={messages['header.mobileLoginUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               <Text>{messages['header.loginTitle']}</Text>
             </MenuItem>
           )
