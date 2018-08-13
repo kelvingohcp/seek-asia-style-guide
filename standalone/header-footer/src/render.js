@@ -21,6 +21,7 @@ const renderHtml = (Component, initialProps, options = { preview: false }) => {
     ${!options.preview ? '' : `
       <!DOCTYPE html>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">html,body{padding:0;margin:0;}</style>
         <link rel="stylesheet" type="text/css" href="styles.css" />
       </head>
@@ -36,11 +37,14 @@ const renderHtml = (Component, initialProps, options = { preview: false }) => {
         // Create the instance
         window.seek${Component.displayName}Instance = SeekHeaderFooter.render${Component.displayName}();
 
-        // Simulate authenticating the user
-        seek${Component.displayName}Instance.updateProps({ authenticationStatus: 'authenticated', userName: 'Olivia', domainUrl: 'jobsdb.com' });
+        ${Component.displayName === 'Footer' ? `
+          // Simulate company profile toggled
+          seek${Component.displayName}Instance.updateProps({ hasCompanyProfile: true });
+        ` : `
+          // Simulate authenticating the user
+          seek${Component.displayName}Instance.updateProps({ authenticationStatus: 'authenticated', userName: 'Olivia', domainUrl: 'jobsdb.com' });
+        `}
 
-        // Let developers know what's up
-        console.log("The standalone ${Component.displayName.toLowerCase()} instance is available as 'window.seek${Component.displayName}Instance'");
       </script>
       </body>
     `}

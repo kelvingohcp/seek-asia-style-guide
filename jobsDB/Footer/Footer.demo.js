@@ -106,6 +106,19 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'With Company Profile',
+      type: 'checklist',
+      states: [
+        {
+          label: 'hasCompanyProfile',
+          transformProps: props => ({
+            ...props,
+            hasCompanyProfile: true
+          })
+        }
+      ]
     }
   ]
 };

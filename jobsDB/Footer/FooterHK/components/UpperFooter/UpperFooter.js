@@ -5,7 +5,7 @@ import styles from './UpperFooter.less';
 import PartnerSites from '../PartnerSites/PartnerSites';
 import { Columns, ListItem, Section, Text, FacebookIcon, TwitterIcon, AppleIcon, AndroidIcon } from 'seek-asia-style-guide/react';
 
-const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink }) => {
+const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompanyProfile }) => {
   return (
     <Columns>
       <div className={styles.columnGroup}>
@@ -74,7 +74,7 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink }) => {
             <ListItem value={messages['FooterHK.advertise']} noShadow compact className={styles.content} descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.advertiseLink']
           )}
-          {cfsLink(
+          {hasCompanyProfile && cfsLink(
             <ListItem value={messages['FooterHK.bestCompanies']} noShadow compact className={styles.content} descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.bestCompaniesLink']
           )}
@@ -137,7 +137,12 @@ UpperFooter.propTypes = {
   messages: PropTypes.object.isRequired,
   externalLink: PropTypes.func.isRequired,
   cfsLink: PropTypes.func.isRequired,
-  wordpressLink: PropTypes.func.isRequired
+  wordpressLink: PropTypes.func.isRequired,
+  hasCompanyProfile: PropTypes.bool
+};
+
+UpperFooter.defaultProps = {
+  hasCompanyProfile: false
 };
 
 export default UpperFooter;

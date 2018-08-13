@@ -142,3 +142,146 @@ exports[`UpperFooter: should render columns with messages and linking functions 
   </div>
 </Columns>
 `;
+
+exports[`UpperFooter: should render with company profile link 1`] = `
+<Columns>
+  <div
+    className="columnGroup"
+  >
+    <Section
+      className="firstCategory"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <Text
+        baseline={true}
+        className="title"
+        semiStrong={true}
+        waving={true}
+      >
+        About JobsDB
+      </Text>
+      <PartnerSites
+        externalLink={[Function]}
+        messages={
+          Object {
+            "FooterHK.BabaJobLink": "http://www.babajob.com/",
+            "FooterHK.BdjobsLink": "http://www.bdjobs.com/",
+            "FooterHK.BrighterMondayLink": "http://www.brightermonday.com/",
+            "FooterHK.CathoLink": "http://www.catho.com.br/",
+            "FooterHK.JobStreetLink": "http://www.jobstreet.com/",
+            "FooterHK.JobbermanLink": "http://www.jobberman.com/",
+            "FooterHK.JoraLink": "https://hk.jora.com/",
+            "FooterHK.ManagerLink": "http://www.manager.com.br/",
+            "FooterHK.OCCLink": "https://www.occ.com.mx/",
+            "FooterHK.SEEKLink": "http://www.seek.com.au/",
+            "FooterHK.SeamanJobsiteLink": "http://www.seamanjobsite.com/",
+            "FooterHK.WorkAbroadLink": "http://www.workabroad.ph/",
+            "FooterHK.WorkanaLink": "https://www.workana.com/",
+            "FooterHK.ZhaopinLink": "http://www.zhaopin.com/",
+            "FooterHK.aboutJobsDB": "About jobsDB",
+            "FooterHK.aboutJobsDBLink": "/pages/aboutus",
+            "FooterHK.advertise": "Advertise with us",
+            "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
+            "FooterHK.appStore": "jobsDB @ App Store",
+            "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+            "FooterHK.bestCompanies": "Best Companies",
+            "FooterHK.bestCompaniesLink": "/companies",
+            "FooterHK.browseJobs": "Browse jobs",
+            "FooterHK.browseJobsLink": "/browse",
+            "FooterHK.career": "Career @ jobsDB",
+            "FooterHK.careerInsights": "Career Insights",
+            "FooterHK.careerInsightsTitle": "Career Insights",
+            "FooterHK.careerInsightsUrl": "/career-insights",
+            "FooterHK.careerLink": "/Search/FindJobs?JSRV=1&AccNums=1&SubAccount=14",
+            "FooterHK.cfsLink": "/hk/en",
+            "FooterHK.cmsLink": "/en-hk",
+            "FooterHK.contactUs": "Contact us",
+            "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.copyright": "© jobsDB. All Rights Reserved",
+            "FooterHK.facebook": "Facebook",
+            "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
+            "FooterHK.faq": "FAQ",
+            "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
+            "FooterHK.googlePlay": "jobsDB @ Google Play",
+            "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
+            "FooterHK.jobAlerts": "Job Alerts",
+            "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
+            "FooterHK.myJobsDBTitle": "My jobsDB",
+            "FooterHK.myJobsDBUrl": "/MyJobsDB",
+            "FooterHK.partners": "International partners",
+            "FooterHK.postJob": "Post a job",
+            "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
+            "FooterHK.privacyLink": "/pages/terms/privacy-policy",
+            "FooterHK.privacyLinkText": "Privacy Statement",
+            "FooterHK.resumes": "Post resumes",
+            "FooterHK.resumesLink": "/Resumes/ResumeIndex",
+            "FooterHK.searchCandidates": "Search candidates",
+            "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
+            "FooterHK.siteMapLink": "/sitemap",
+            "FooterHK.siteMapLinkText": "Site Map",
+            "FooterHK.termsLink": "/pages/terms/terms-conditions",
+            "FooterHK.termsLinkText": "Terms & Conditions",
+            "FooterHK.titleAboutJobsDB": "About JobsDB",
+            "FooterHK.titleConnect": "Connect",
+            "FooterHK.titleEmployer": "Employers",
+            "FooterHK.titleJobSeeker": "Job Seekers",
+            "FooterHK.twitter": "Twitter",
+            "FooterHK.twitterLink": "https://twitter.com/HKJobs",
+          }
+        }
+      />
+    </Section>
+    <Section
+      className="category"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <Text
+        baseline={true}
+        className="title"
+        semiStrong={true}
+        waving={true}
+      >
+        Job Seekers
+      </Text>
+    </Section>
+  </div>
+  <div
+    className="columnGroup"
+  >
+    <Section
+      className="category"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <Text
+        baseline={true}
+        className="title"
+        semiStrong={true}
+        waving={true}
+      >
+        Employers
+      </Text>
+    </Section>
+    <Section
+      className="category"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <Text
+        baseline={true}
+        className="title"
+        semiStrong={true}
+        waving={true}
+      >
+        Connect
+      </Text>
+    </Section>
+  </div>
+</Columns>
+`;

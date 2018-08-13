@@ -10,4 +10,10 @@ describe('UpperFooter:', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+  it('should render with company profile link', () => {
+    const wrapper = shallow(
+      <UpperFooter messages={localization['en-hk']} externalLink={() => {}} cfsLink={() => {}} wordpressLink={() => {}} hasCompanyProfile={true} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

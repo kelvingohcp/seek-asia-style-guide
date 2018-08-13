@@ -20,6 +20,11 @@ describe('FooterHK component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render with "Best Companies" ListItem', () => {
+    const wrapper = shallow(<FooterHK hasCompanyProfile={true} {...defaultProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render with custom href link', () => {
     const wrapper = shallow(
       <FooterHK

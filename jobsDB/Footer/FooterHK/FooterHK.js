@@ -34,7 +34,7 @@ const makeDefaultHrefLink = baseUrl => {
   return DefaultHrefLink;
 };
 
-const FooterHK = ({ language, country, domainUrl, linkRenderer, hrefLink }) => {
+const FooterHK = ({ language, country, domainUrl, linkRenderer, hrefLink, hasCompanyProfile }) => {
   const baseUrl = `https://${country}.${domainUrl}`;
 
   const messages = getLocalization({ language, country });
@@ -47,7 +47,7 @@ const FooterHK = ({ language, country, domainUrl, linkRenderer, hrefLink }) => {
     <footer className={styles.container}>
       <PageBlock>
         <div className={styles.upperWrapper}>
-          <UpperFooter messages={messages} cfsLink={cfsLink} wordpressLink={wordpressLink} externalLink={externalLink} />
+          <UpperFooter messages={messages} cfsLink={cfsLink} wordpressLink={wordpressLink} externalLink={externalLink} hasCompanyProfile={hasCompanyProfile} />
         </div>
         <div className={styles.lowerWrapper}>
           <FooterLinks messages={messages} baseUrl={baseUrl} cfsLink={cfsLink} wordpressLink={wordpressLink} />
@@ -65,7 +65,8 @@ FooterHK.defaultProps = {
   hrefLink: makeDefaultHrefLink('https://hk.jobsdb.com'),
   country: 'hk',
   language: 'en',
-  domainUrl: 'jobsdb.com'
+  domainUrl: 'jobsdb.com',
+  hasCompanyProfile: false
 };
 
 FooterHK.propTypes = {
@@ -73,7 +74,8 @@ FooterHK.propTypes = {
   country: PropTypes.string,
   domainUrl: PropTypes.string,
   linkRenderer: PropTypes.func,
-  hrefLink: PropTypes.func
+  hrefLink: PropTypes.func,
+  hasCompanyProfile: PropTypes.bool
 };
 
 export default FooterHK;

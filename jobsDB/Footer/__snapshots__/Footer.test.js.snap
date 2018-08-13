@@ -49,6 +49,7 @@ exports[`Footer component Localization should render en-hk fat footer 1`] = `
 <FooterHK
   country="hk"
   domainUrl="jobsdb.com"
+  hasCompanyProfile={false}
   hrefLink={[Function]}
   language="en"
   linkRenderer={[Function]}
