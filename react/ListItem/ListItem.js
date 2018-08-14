@@ -20,7 +20,8 @@ export default function ListItem({
   noShadow,
   secondLevel,
   descriptionProps,
-  className
+  className,
+  activeState
 }) {
   return (
 
@@ -46,10 +47,13 @@ export default function ListItem({
         )}
         <div className={styles.listItemValue}>
           <Text
-            conversational={!compact}
             intimate={compact}
             baseline={false}
-            className={styles.displayInline}
+            className={classnames({
+              [styles.displayInline]: true,
+              [styles.activeState]: activeState
+            })}
+            semiStrong={activeState}
             {...descriptionProps}>
             {value}
           </Text>
@@ -70,7 +74,8 @@ ListItem.propTypes = {
   hasHoverState: PropTypes.bool,
   noShadow: PropTypes.bool,
   secondLevel: PropTypes.bool,
-  descriptionProps: PropTypes.object
+  descriptionProps: PropTypes.object,
+  activeState: PropTypes.bool
 };
 
 ListItem.defaultProps = {
@@ -79,5 +84,6 @@ ListItem.defaultProps = {
   noShadow: false,
   badge: null,
   icon: null,
-  secondLevel: false
+  secondLevel: false,
+  activeState: false
 };

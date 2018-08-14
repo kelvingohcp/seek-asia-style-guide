@@ -22,25 +22,33 @@ export default class DropdownList extends Component {
   }
 
   render() {
-    const { value, compact, noShadow, descriptionProps, className, children } = this.props;
+    const { value, noShadow, className, children, compact, chevronAlignment, lowerLevel, ...restProps } = this.props;
+
     return (
       <div
         className={classnames({
           [styles.root]: true,
           [styles.noShadow]: noShadow,
+          [styles.expanded]: this.state.isDropdownOpen,
+          [styles.lowerLevel]: lowerLevel,
           [className]: className
         })} >
-        <div className={styles.listItemValue} onClick={this.toggleDropdown.bind(this)} >
+        <div className={styles.toggler} onClick={this.toggleDropdown.bind(this)} >
           <Text
-            loud={!compact}
-            waving={compact}
+            shouting={!compact}
             baseline={false}
-            className={styles.chevronRight}
+            className={styles.description}
             raw={true}
-            {...descriptionProps}>
+            {...restProps}>
             {value}
           </Text>
-          <ChevronIcon className={styles.chevronFixHeight} direction={this.state.chevronDirection} />
+          <ChevronIcon
+            className={classnames({
+              [styles.chevron]: true,
+              [styles[`${chevronAlignment}`]]: true
+            })}
+            direction={this.state.chevronDirection}
+          />
         </div>
         <div className={this.state.isDropdownOpen ? styles.dropdown : styles.dropdownNoShow}>
           {children}
@@ -54,12 +62,15 @@ DropdownList.propTypes = {
   value: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  compact: PropTypes.bool,
   noShadow: PropTypes.bool,
-  descriptionProps: PropTypes.object
+  compact: PropTypes.bool,
+  chevronAlignment: PropTypes.oneOf(['top', 'center', 'bottom']),
+  lowerLevel: PropTypes.bool
 };
 
 DropdownList.defaultProps = {
+  noShadow: false,
   compact: false,
-  noShadow: false
+  chevronAlignment: 'top',
+  lowerLevel: false
 };

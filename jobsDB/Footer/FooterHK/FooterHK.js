@@ -4,13 +4,18 @@ import PropTypes from 'prop-types';
 
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import UpperFooter from './components/UpperFooter/UpperFooter';
-import { Text, PageBlock } from 'seek-asia-style-guide/react';
+import { Text, PageBlock, ListItem } from 'seek-asia-style-guide/react';
 import { getLocalization } from './localization';
 
 export const makeDefaultLinkRenderer = () => {
   const DefaultLinkRenderer = ({ href, children, ...props }) => (
     <a className={styles.link} href={href} {...props}>
-      {children}
+      {React.Children.map(children, child => {
+        if (child.type === ListItem) {
+          return React.cloneElement(child, { noShadow: true });
+        }
+        return child;
+      })}
     </a>
   );
 

@@ -9,7 +9,6 @@
 .root {
   align-items: flex-start;
   background-color: @saWhite;
-  border-radius: @grid-base;
   box-shadow: 0 1px 1px @saGrey5;
   color: @saGrey1;
   display: flex;
@@ -18,9 +17,6 @@
   padding-bottom: @list-item-v-padding;
   padding-left: @list-item-h-padding;
   padding-right: @list-item-h-padding;
-  @media @desktop {
-    max-width: 50vw;
-  }
 }
 
 .noShadow {
@@ -61,4 +57,8 @@
   display: inline;
   line-height: inherit;
   padding-bottom: 0;
+}
+
+.activeState {
+  color: @saBlack;
 }

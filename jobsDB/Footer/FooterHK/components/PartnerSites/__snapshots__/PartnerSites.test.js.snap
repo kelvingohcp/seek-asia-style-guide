@@ -2,15 +2,13 @@
 
 exports[`PartnerSites: should render list with messages and linking function 1`] = `
 <DropdownList
+  chevronAlignment="center"
   className="content"
-  compact={true}
-  descriptionProps={
-    Object {
-      "semiStrong": true,
-      "whistling": true,
-    }
-  }
+  compact={false}
+  lowerLevel={false}
   noShadow={true}
+  semiStrong={true}
   value="International partners"
+  whistling={true}
 />
 `;

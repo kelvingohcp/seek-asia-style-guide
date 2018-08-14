@@ -1,0 +1,59 @@
+@import (reference) "~seek-asia-style-guide/theme";
+@import (reference) "~seek-asia-style-guide/react/ListItem/ListItem.less";
+
+@chevron-padding-left: @grid-base * 2;
+@dropdown-padding-top: @grid-base * 2;
+@chevron-height: @grid-base * 4;
+@chevron-padding: @grid-base;
+
+.root {
+  align-items: flex-start;
+  background-color: @saWhite;
+  box-shadow: 0 1px 1px @saGrey5;
+  color: @saGrey1;
+  display: flex;
+  line-height: @list-item-line-height;
+  padding: @list-item-h-padding @list-item-v-padding;
+  flex-direction: column;
+  &.lowerLevel.expanded {
+    padding-bottom: 0;
+  }
+}
+
+.noShadow {
+  box-shadow: none;
+}
+
+.chevron {
+  height: @chevron-height;
+
+  &.top {
+    margin-top: @chevron-padding;
+  }
+  &.center {
+    margin: auto;
+  }
+  &.bottom {
+    margin-top: auto;
+    margin-bottom: @chevron-padding;
+  }
+}
+
+.description {
+  padding-right: @chevron-padding-left;
+}
+
+.toggler {
+  display: flex;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-top: @dropdown-padding-top;
+}
+
+.dropdownNoShow:extend(.dropdown) {
+  display: none;
+}

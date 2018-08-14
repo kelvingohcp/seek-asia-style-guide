@@ -14,6 +14,7 @@ export const listItem = {
   'value, hover': <ListItem value='Description' hasHoverState />,
   'value, no shadow': <ListItem value='Description' noShadow />,
   'title, value': <ListItem title='Title' value="Description" />,
+  'value, active state': <ListItem value='Description' activeState />,
   'title, value, icon': <ListItem title='Qualification' value='Degree' icon={<IconEducation />} />,
   'title, value, icon, compact': <ListItem title='Qualification' value='Degree' compact icon={<IconEducation />} />,
   'title, value, icon, badge': <ListItem badge={{ ...badge }} icon={<IconEducation />} title="Job Posted Date" value="10 May 2018" />,

@@ -125,6 +125,19 @@ export default {
       ]
     },
     {
+      label: 'Active State',
+      type: 'checklist',
+      states: [
+        {
+          label: 'active state',
+          transformProps: props => ({
+            ...props,
+            activeState: true
+          })
+        }
+      ]
+    },
+    {
       label: 'Description Text Weight',
       type: 'radio',
       states: [

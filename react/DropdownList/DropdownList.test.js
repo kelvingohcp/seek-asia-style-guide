@@ -13,6 +13,35 @@ describe('DropdownList:', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render with center-aligned chevron', () => {
+    const wrapper = shallow(
+      <DropdownList value="testValue" chevronAlignment="center">
+        <span />
+      </DropdownList>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render without shadow', () => {
+    const wrapper = shallow(
+      <DropdownList value="testValue" noShadow>
+        <span />
+      </DropdownList>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render as lower level child', () => {
+    const wrapper = shallow(
+      <DropdownList value="testValue">
+        <DropdownList value="testValue" lowerLevel>
+          <span />
+        </DropdownList>
+      </DropdownList>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render in compact mode', () => {
     const wrapper = shallow(
       <DropdownList value="testValue" compact>
@@ -22,27 +51,9 @@ describe('DropdownList:', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render in compact without shadow', () => {
-    const wrapper = shallow(
-      <DropdownList value="testValue" compact noShadow>
-        <span />
-      </DropdownList>
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it('should render with className', () => {
     const wrapper = shallow(
       <DropdownList value="testValue" className={styles.root}>
-        <span />
-      </DropdownList>
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with descriptionProps', () => {
-    const wrapper = shallow(
-      <DropdownList value="testValue" descriptionProps={{}}>
         <span />
       </DropdownList>
     );
