@@ -8,7 +8,6 @@ import PageLayout from 'PageLayout/PageLayout';
 import Typography from 'Typography/Typography';
 import Colors from 'Colors/Colors';
 import Playground from 'Playground/Playground';
-import Icons from 'Icons/Icons';
 import SketchExports from 'SketchExports/SketchExports';
 import Demo from 'Demo/Demo';
 import demoSpecExports from '../../../../react/*/*.demo.js';
@@ -33,7 +32,6 @@ export default () => (
     <Route path="/page-layout" component={PageLayout} />
     <Route path="/playground" component={Playground} />
     <Route path="/sketch-exports" component={SketchExports} />
-    <Route path="/icons" component={Icons} />
     { demoRoutes }
     <Footer />
   </StyleGuideProvider>

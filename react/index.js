@@ -20,6 +20,7 @@ export { default as Header } from './Header/Header';
 export { default as ShowMore } from './ShowMore/ShowMore';
 export { default as TitledCard } from './TitledCard/TitledCard';
 export { default as ImageSlider } from './ImageSlider/ImageSlider';
+export { default as Icons } from './Icons/Icons';
 export { default as DropdownList } from './DropdownList/DropdownList';
 
 // Typography
