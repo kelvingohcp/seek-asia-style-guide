@@ -5,7 +5,7 @@ export default {
   'header.homeUrl': '/hk',
   'header.mobileLoggedHomeUrl': 'https://m.jobsdb.com/en-hk/jobsForYou.do',
   'header.mobileLogoutUrl': 'https://m.jobsdb.com/en-hk/logout.do',
-  'header.mobileLoginUrl': 'https://m.jobsdb.com/en-hk/login.do',
+  'header.mobileLoginUrl': 'https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F',
   'header.myJobsDBTitle': 'My jobsDB',
   'header.myJobsDBUrl': '/hk/en/MyJobsDB',
   'header.myJobsDBUrlLoggedIn': '/hk/en/MyJobsDB',
