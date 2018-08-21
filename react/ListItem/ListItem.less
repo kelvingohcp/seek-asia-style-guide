@@ -1,22 +1,28 @@
 @import (reference) "~seek-asia-style-guide/theme";
-@list-item-h-padding: @grid-base * 4;
-@list-item-v-padding: @grid-base * 3;
+
+@list-item-padding: @grid-base * 3;
+@list-item-padding-compact: @grid-base * 2;
+@list-item-line-height-compact: @grid-base * 4.5; //this is as per brandportal spec
 @list-item-line-height: @grid-base * 5;
 @list-item-icon-padding-top: @grid-base / 2;
 @list-item-icon-padding-right: @grid-base * 3;
 @list-item-second-level-padding-left: @grid-base * 8;
 
+.__listItemBg(@color) {
+  background-color: @color;
+}
+
 .root {
   align-items: flex-start;
-  background-color: @saWhite;
+  .__listItemBg(@saWhite);
   box-shadow: 0 1px 1px @saGrey5;
   color: @saGrey1;
   display: flex;
   line-height: @list-item-line-height;
-  padding-top: @list-item-v-padding;
-  padding-bottom: @list-item-v-padding;
-  padding-left: @list-item-h-padding;
-  padding-right: @list-item-h-padding;
+  padding: @list-item-padding;
+  &.disableBackground {
+    .__listItemBg(transparent);
+  }
 }
 
 .noShadow {
@@ -61,4 +67,10 @@
 
 .activeState {
   color: @saBlack;
+}
+
+.compact {
+  padding-top: @list-item-padding-compact;
+  padding-bottom: @list-item-padding-compact;
+  line-height: @list-item-line-height-compact;
 }

@@ -21,17 +21,20 @@ export default function ListItem({
   secondLevel,
   descriptionProps,
   className,
-  activeState
+  activeState,
+  disableBackground
 }) {
   return (
 
     <div
       className={classnames({
-        [className]: className,
+        [styles.className]: className,
         [styles.root]: true,
+        [styles.disableBackground]: disableBackground,
         [styles.hasHoverState]: hasHoverState,
         [styles.noShadow]: noShadow,
-        [styles.secondLevelPadding]: secondLevel
+        [styles.secondLevelPadding]: secondLevel,
+        [styles.compact]: compact
       })} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
       <div>
@@ -75,7 +78,8 @@ ListItem.propTypes = {
   noShadow: PropTypes.bool,
   secondLevel: PropTypes.bool,
   descriptionProps: PropTypes.object,
-  activeState: PropTypes.bool
+  activeState: PropTypes.bool,
+  disableBackground: PropTypes.bool
 };
 
 ListItem.defaultProps = {
@@ -85,5 +89,6 @@ ListItem.defaultProps = {
   badge: null,
   icon: null,
   secondLevel: false,
-  activeState: false
+  activeState: false,
+  disableBackground: false
 };

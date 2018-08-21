@@ -12,6 +12,7 @@
 .category {
   padding: 0;
   margin: 0 auto;
+  flex: 1;
   @media @mobile {
     margin: inherit;
     padding-bottom: @wrapper-low-vertical-padding;
@@ -24,15 +25,11 @@
 
 .title {
   color: @dbBrand;
-  padding-bottom: @title-padding-bottom;
+  padding-bottom: @grid-base * 4;
+  padding-left: @grid-base * 3;
+  padding-right: @grid-base * 3;
 }
 
-.contentBase {
-  background-color: transparent;
+.content {
   color: @saGrey2;
-}
-
-.content:extend(.contentBase) {
-  padding-left: 0;
-  padding-bottom: 0;
 }

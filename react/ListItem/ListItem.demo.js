@@ -138,6 +138,19 @@ export default {
       ]
     },
     {
+      label: 'Disable Background',
+      type: 'checklist',
+      states: [
+        {
+          label: 'disable background',
+          transformProps: props => ({
+            ...props,
+            disableBackground: true
+          })
+        }
+      ]
+    },
+    {
       label: 'Description Text Weight',
       type: 'radio',
       states: [
