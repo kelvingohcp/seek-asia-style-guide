@@ -2,8 +2,8 @@
 
 exports[`PartnerSites: should render list with messages and linking function 1`] = `
 <DropdownList
-  className="content"
-  compact={false}
+  className="dropdownListContent"
+  compact={true}
   noShadow={true}
   semiStrong={true}
   value="International partners"
