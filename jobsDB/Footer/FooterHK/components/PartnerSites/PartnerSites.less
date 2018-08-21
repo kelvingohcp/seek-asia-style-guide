@@ -1,5 +1,4 @@
 @import (reference) "~seek-asia-style-guide/theme";
-@import "../UpperFooter/UpperFooter.less";
 
 .partnersList {
   background-color: inherit;
@@ -7,6 +6,7 @@
   padding-bottom: inherit;
 }
 
-.partners:extend(.contentBase) {
-  padding-bottom: 0;
+&.dropdownListContent {
+  padding-left:@grid-base * 4;
+  background-color: transparent;
 }

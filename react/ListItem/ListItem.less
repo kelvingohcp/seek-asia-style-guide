@@ -6,9 +6,13 @@
 @list-item-icon-padding-right: @grid-base * 3;
 @list-item-second-level-padding-left: @grid-base * 8;
 
+.__listItemBg(@color) {
+  background-color: @color;
+}
+
 .root {
   align-items: flex-start;
-  background-color: @saWhite;
+  .__listItemBg(@saWhite);
   box-shadow: 0 1px 1px @saGrey5;
   color: @saGrey1;
   display: flex;
@@ -17,6 +21,9 @@
   padding-bottom: @list-item-v-padding;
   padding-left: @list-item-h-padding;
   padding-right: @list-item-h-padding;
+  &.disableBackground{
+    .__listItemBg(transparent);
+  }
 }
 
 .noShadow {
