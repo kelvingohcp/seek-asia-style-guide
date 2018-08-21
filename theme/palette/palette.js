@@ -21,6 +21,14 @@ export const saGrey4 = '#CCCCCC';
 export const saGrey5 = '#EEEEEE';
 export const saWhite = '#FFFFFF';
 
+// Blue shades added at 16 Aug 2018
+// Please refer to https://brand.seekasia.com/product/color-usage/
+export const saBlue1 = '#206E8F';
+export const saBlue2 = '#298EB9'; // equivalent to "actionBlue"
+export const saBlue3 = '#94C9E0';
+export const saBlue4 = '#DDF1FA'; // equivalent to "actionPastelBlue"
+export const saBlue5 = '#EEF8FC';
+
 export const linkBlue = '#2E4191';
 export const panelPink = '#FF0072';
 export const lightBlue = '#EEF8FC';
