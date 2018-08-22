@@ -1,0 +1,29 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+@tag-h-padding: @grid-base * 2;
+@tag-v-padding: @grid-base;
+
+.borderRadius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.root {
+  box-sizing: border-box;
+  .borderRadius(@grid-base);
+  color: @saGrey1;
+  background-color: screen(@actionBlue, @saGrey4);
+  border-color: screen(@actionBlue, @saGrey4);
+  display: inline-block;
+  height: @grid-base * 6;
+  padding: @tag-v-padding @tag-h-padding;
+  white-space: nowrap;
+}
+
+.tagLabel {
+  padding-bottom: 0;
+  -webkit-transform: none !important;
+  transform: none !important;
+}

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag: should render Tag with label "This is a Tag" 1`] = `
+<span
+  className="root"
+>
+  <Text
+    baseline={true}
+    className="tagLabel"
+    strong={true}
+    whistling={true}
+  >
+    This is a Tag
+  </Text>
+</span>
+`;

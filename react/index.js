@@ -22,6 +22,7 @@ export { default as TitledCard } from './TitledCard/TitledCard';
 export { default as ImageSlider } from './ImageSlider/ImageSlider';
 export { default as Icons } from './Icons/Icons';
 export { default as DropdownList } from './DropdownList/DropdownList';
+export { default as Tag } from './Tag/Tag';
 
 // Typography
 export { default as Critical } from './Critical/Critical';
