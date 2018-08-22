@@ -33,7 +33,7 @@ export default function ListItem({
         [styles.disableBackground]: disableBackground,
         [styles.hasHoverState]: hasHoverState,
         [styles.noShadow]: noShadow,
-        [styles.secondLevelPadding]: secondLevel,
+        [styles.secondLevelListItem]: secondLevel,
         [styles.compact]: compact
       })} >
       {icon && <div className={styles.listItemIcon}>{icon}</div>}
