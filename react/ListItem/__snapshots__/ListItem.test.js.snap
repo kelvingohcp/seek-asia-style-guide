@@ -327,7 +327,7 @@ exports[`ListItem: should render value 1`] = `
 
 exports[`ListItem: should render with className 1`] = `
 <div
-  className="className root"
+  className="root"
 >
   <div>
     <div

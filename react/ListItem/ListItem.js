@@ -28,7 +28,7 @@ export default function ListItem({
 
     <div
       className={classnames({
-        [styles.className]: className,
+        [className]: className,
         [styles.root]: true,
         [styles.disableBackground]: disableBackground,
         [styles.hasHoverState]: hasHoverState,
