@@ -1,0 +1,157 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import dedent from 'dedent';
+import queryString from 'query-string';
+import base64url from 'base64-url';
+import debounce from 'lodash/debounce';
+import localforage from 'localforage';
+import { Parser } from 'acorn-jsx';
+import Preview from './Preview/Preview';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/material.css';
+import styles from './Sandbox.less';
+
+// CodeMirror blows up in a Node context, so only execute it in the browser
+const CodeMirror = typeof window === 'undefined' ? null : (() => {
+  const lib = require('react-codemirror');
+  require('codemirror/mode/jsx/jsx');
+
+  return lib;
+})();
+
+const initialValue = `${dedent`
+  <JobsDBHeader country={'hk'} language={'en'} />
+  <PageBlock>
+    <Section>
+      <Card>
+        <Section header>
+          <Text screaming>Style Guide Sandbox</Text>
+        </Section>
+      </Card>
+    </Section>
+  </PageBlock>
+  <JobsDBFooter country={'hk'} language={'en'} isExpandedVersion />
+`}\n`;
+
+const store = localforage.createInstance({
+  name: 'sandbox',
+  version: 1
+});
+
+export default class Sandbox extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired,
+    brandedComponents: PropTypes.object
+  };
+
+  state = {
+    codeReady: false,
+    code: null,
+    renderCode: null
+  };
+
+  componentDidMount() {
+    this.getCode().then(savedCode => {
+      const code = savedCode || initialValue;
+      this.initialiseCode(code);
+      this.validateCode(code);
+    });
+  }
+
+  getCode() {
+    const { location } = this.props;
+
+    const hash = location.hash.replace(/^#/, '');
+    const query = queryString.parse(hash);
+
+    return query.code ?
+      Promise.resolve(base64url.decode(query.code)) :
+      store.getItem('code');
+  }
+
+  storeCodeMirrorRef = cmRef => {
+    this.cmRef = cmRef;
+  };
+
+  initialiseCode = (code = initialValue) => {
+    this.setState({
+      codeReady: true,
+      code,
+      renderCode: code
+    });
+  };
+
+  updateCode = code => {
+    const { history } = this.props;
+
+    this.setState({ code });
+    history.replace(!code ? {} : { hash: `?code=${base64url.encode(code)}` });
+    store.setItem('code', code);
+
+    this.validateCode(code);
+  };
+
+  revertCode = () => {
+    this.updateCode(this.state.renderCode);
+
+    const doc = this.cmRef.codeMirror.getDoc();
+    doc.setValue(this.state.renderCode);
+    doc.setCursor(this.state.cursor);
+  };
+
+  validateCode = code => {
+    const cm = this.cmRef.codeMirror;
+    cm.clearGutter(styles.gutter);
+
+    try {
+      const parser = new Parser({ plugins: { jsx: true } }, `<div>${code}</div>`);
+      parser.parse();
+
+      const cursor = cm.getDoc().getCursor();
+      this.setState({ renderCode: code, cursor });
+    } catch (err) {
+      const errorMessage = err && (err.message || '');
+      const matches = errorMessage.match(/\(([0-9]+):/);
+      const lineNumber = matches && matches.length >= 2 && matches[1] && parseInt(matches[1], 10) - 1;
+
+      if (!lineNumber) {
+        return;
+      }
+
+      const marker = document.createElement('div');
+      marker.classList.add(styles.marker);
+      marker.setAttribute('title', err.message);
+      marker.addEventListener('click', this.revertCode);
+      cm.setGutterMarker(lineNumber, styles.gutter, marker);
+    }
+  };
+
+  handleChange = debounce(this.updateCode, 200);
+
+  render() {
+    const { codeReady, code, renderCode } = this.state;
+    const { brandedComponents } = this.props;
+
+    return !codeReady ? null : (
+      <div>
+        <div className={styles.previewContainer}>
+          <Preview code={renderCode} brandedComponents={brandedComponents} />
+        </div>
+        <div className={styles.editorContainer}>
+          <CodeMirror
+            ref={this.storeCodeMirrorRef}
+            value={code}
+            onChange={this.handleChange}
+            options={{
+              mode: 'jsx',
+              theme: 'material',
+              lineNumbers: true,
+              gutters: [styles.gutter]
+            }}
+          />
+        </div>
+      </div>
+    );
+  }
+}

@@ -16,6 +16,7 @@ const appPaths = [
 
 const config = decorateClientConfig({
   entry: [
+    'core-js/modules/es6.symbol',
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
@@ -109,6 +110,18 @@ const config = decorateClientConfig({
           },
           {
             loader: 'less-loader'
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        include: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
           }
         ]
       },

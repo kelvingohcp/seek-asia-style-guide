@@ -108,6 +108,18 @@ const config = {
         ]
       },
       {
+        test: /\.css$/,
+        include: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          }
+        ]
+      },
+      {
         test: /\.svg$/,
         include: appPaths,
         use: [
@@ -152,4 +164,9 @@ const config = {
   ]
 };
 
-module.exports = decorateServerConfig(config);
+module.exports = decorateServerConfig(config, {
+  extraIncludePaths: [
+    'codemirror/lib/codemirror.css',
+    'codemirror/theme/material.css'
+  ]
+});

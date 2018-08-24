@@ -7,7 +7,7 @@ const autoprefixer = require('autoprefixer');
 const autoprefixerConfig = require('../config/autoprefixer.config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const decorateClientConfig = require('seek-asia-style-guide-webpack').decorateClientConfig;
-const babelConfig = require('../config/babel.config.js')({ reactHotLoader: false });
+const babelConfig = require('../config/babel.config.js')({ reactHotLoader: false});
 
 const appCss = new ExtractTextPlugin('app.css');
 
@@ -112,6 +112,18 @@ const config = {
             }
           ]
         }),
+      },
+      {
+        test: /\.css$/,
+        include: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          }
+        ]
       },
       {
         test: /\.svg$/,

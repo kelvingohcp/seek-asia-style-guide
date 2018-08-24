@@ -88,6 +88,15 @@ export default class Header extends Component {
 
                       <Card transparent>
                         <h2>
+                          <Text yelling className={styles.componentSectionTitle}>Tools</Text>
+                        </h2>
+                      </Card>
+                      <Card transparent className={styles.componentList}>
+                        <Text shouting regular className={styles.componentListItem}><Link className={styles.link} to="./sandbox">Sandbox</Link></Text>
+                      </Card>
+
+                      <Card transparent>
+                        <h2>
                           <Text yelling className={styles.componentSectionTitle}>SEEK Asia Components</Text>
                         </h2>
                       </Card>
