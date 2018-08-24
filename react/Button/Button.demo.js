@@ -33,6 +33,13 @@ export default {
           })
         },
         {
+          label: 'isSelected',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            isSelected: true
+          })
+        },
+        {
           label: 'Compact',
           transformProps: props => ({
             ...props,

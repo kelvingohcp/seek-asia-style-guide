@@ -14,10 +14,18 @@
   }
 }
 
+.selectedState(@rules) {
+  &.selected {
+    outline: none;
+    @rules();
+  }
+}
+
 .buttonColor(@color, @background-color) {
   color: @color;
   background-color: @background-color;
   .hoverState({background-color: darken(@background-color, 5%) ;});
+  .selectedState({background-color: darken(@background-color, 5%) ;});
 }
 
 .root {

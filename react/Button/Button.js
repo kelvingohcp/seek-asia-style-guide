@@ -23,7 +23,8 @@ export default class Button extends Component {
     isJobsDB: PropTypes.bool,
     isJobStreet: PropTypes.bool,
     compact: PropTypes.bool,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
+    isSelected: PropTypes.bool
   };
 
   static defaultProps = {
@@ -38,7 +39,7 @@ export default class Button extends Component {
   }
 
   render() {
-    const { color, compact, className, children, component, disabled, isJobsDB, isJobStreet, ...restProps } = this.props;
+    const { color, compact, className, children, component, disabled, isJobsDB, isJobStreet, isSelected, ...restProps } = this.props;
 
     const combinedProps = {
       className: classnames(styles.root, className, {
@@ -50,7 +51,8 @@ export default class Button extends Component {
         [styles.root_primary]: color === 'primary',
         [styles.root_secondary]: color === 'secondary',
         [styles.root_hyperlink]: color === 'hyperlink',
-        [styles.root_tertiary]: color === 'tertiary'
+        [styles.root_tertiary]: color === 'tertiary',
+        [styles.selected]: isSelected
       }),
       ref: this.storeButtonReference,
       ...restProps

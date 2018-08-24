@@ -110,6 +110,14 @@ exports[`Button: should render with className 1`] = `
 </button>
 `;
 
+exports[`Button: should render with isSelected style 1`] = `
+<button
+  className="root root_callToAction selected"
+>
+  SEEK
+</button>
+`;
+
 exports[`Button: should render with node 1`] = `
 <button
   className="root root_callToAction"

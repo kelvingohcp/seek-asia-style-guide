@@ -116,4 +116,13 @@ describe('Button:', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with isSelected style', () => {
+    const wrapper = shallow(
+      <Button color="callToAction" isSelected>
+        SEEK
+      </Button>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });
