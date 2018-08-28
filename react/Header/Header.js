@@ -131,7 +131,7 @@ export default class Header extends Component {
             {
               linkRenderer({
                 className: styles.logoLink,
-                href: '/'
+                href: messages['header.homeUrl'] || '/'
               })
             }
             <LogoComponent {...logoProps} />

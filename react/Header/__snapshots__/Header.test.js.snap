@@ -47,7 +47,7 @@ exports[`Header should pass through optional props 1`] = `
     >
       <a
         className="logoLink"
-        href="/"
+        href="http://seekasia.com/home"
       />
       <FakeComponent
         country="my"
@@ -294,7 +294,7 @@ exports[`Header should render with default props 1`] = `
     >
       <a
         className="logoLink"
-        href="/"
+        href="http://seekasia.com/home"
       />
       <FakeComponent />
     </h1>
@@ -438,7 +438,7 @@ exports[`Header should render with links list 1`] = `
     >
       <a
         className="logoLink"
-        href="/"
+        href="http://seekasia.com/home"
       />
       <FakeComponent />
     </h1>
@@ -671,7 +671,7 @@ exports[`Header should render with login available 1`] = `
     >
       <a
         className="logoLink"
-        href="/"
+        href="http://seekasia.com/home"
       />
       <FakeComponent />
     </h1>
