@@ -170,7 +170,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
-  mobileLoggedHomeUrl="/"
+  mobileLoggedHomeUrl="/hk"
   selectCountry={true}
   userAccMenuItems={
     Array [

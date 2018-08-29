@@ -35,7 +35,7 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
   const locales = messages['header.countryList'];
   locales.map(locale => {
     locale.url = locale.language === 'id' || locale.language === 'th' ? `https://${locale.country}.${domainUrl}/${locale.country}/${locale.language}` : `https://${locale.country}.${domainUrl}/${locale.country}`;
-    locale.url = (currentPage !== null && typeof(currentPage) !== 'undefined') && (locale.country === 'id' || locale.country === 'th') ? `${locale.url }/${currentPage}` : locale.url;
+    locale.url = (currentPage !== null && typeof(currentPage) !== 'undefined') && (locale.country === 'id' || locale.country === 'th') ? `${locale.url}/${currentPage}` : locale.url;
   });
 
   return {
@@ -63,7 +63,7 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
       selectCountry={selectCountry}
       userName={userName}
       authenticationStatus={authenticationStatus}
-      mobileLoggedHomeUrl={(authenticationStatus === AUTHENTICATED) ? messages['header.mobileLoggedHomeUrl'] : '/'}
+      mobileLoggedHomeUrl={(authenticationStatus === AUTHENTICATED) ? messages['header.mobileLoggedHomeUrl'] : messages['header.homeUrl']}
       {...restProps}
     />
   );
