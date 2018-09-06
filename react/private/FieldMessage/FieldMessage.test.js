@@ -58,16 +58,6 @@ describe('FieldMessage', () => {
       expect(message.props.secondary).to.equal(true);
     });
 
-    it('should have the noMarginBottom className if passed a string', () => {
-      render(<FieldMessage message="Something went wrong" />);
-      expect(fieldMessage.props.className).to.contain('noMarginBottom');
-    });
-
-    it('should have the noMarginBottom className if false', () => {
-      render(<FieldMessage message={false} />);
-      expect(fieldMessage.props.className).to.contain('noMarginBottom');
-    });
-
     describe('messageProps', () => {
       it('should pass through other props to the message', () => {
         render(<FieldMessage message="Something went wrong" messageProps={{ className: 'message', 'data-automation': 'first-name-message' }} />);

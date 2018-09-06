@@ -3,8 +3,6 @@ import styles from './FieldMessage.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import classnames from 'classnames';
-
 import ErrorIcon from '../../ErrorIcon/ErrorIcon';
 import TickCircleIcon from '../../TickCircleIcon/TickCircleIcon';
 
@@ -89,19 +87,14 @@ export default class FieldMessage extends Component {
   }
 
   render() {
-    const { invalid, help, helpProps, message } = this.props;
+    const { invalid, help, helpProps } = this.props;
 
     if (invalid || help || helpProps) {
       throw new Error('WARNING: "invalid", "help", and "helpProps" have been deprecated in favour of "valid" and "message" props');
     }
 
-    const classNames = classnames({
-      [styles.root]: true,
-      [styles.noMarginBottom]: message || message === false
-    });
-
     return (
-      <div className={classNames}>
+      <div className={styles.root}>
         {this.renderMessage()}
       </div>
     );
