@@ -7,42 +7,37 @@ export default {
   component: Text,
   sketch,
   initialProps: {
-    children: 'Living Style Guide',
-    screaming: true
+    children: 'Living Style Guide'
   },
   options: [
     {
-      label: 'States',
-      type: 'checklist',
+      label: 'Weight',
+      type: 'radio',
       states: [
         {
-          label: 'Bold',
-          transformProps: props => ({
-            ...props,
-            strong: true
-          })
+          label: 'Regular',
+          transformProps: props => props
         },
         {
-          label: 'SemiBold',
+          label: 'Semi Bold',
           transformProps: props => ({
             ...props,
             semiStrong: true
           })
         },
         {
-          label: 'Regular',
+          label: 'Bold',
           transformProps: props => ({
             ...props,
-            regular: true
+            strong: true
           })
-        },
-        {
-          label: 'Light',
-          transformProps: props => ({
-            ...props,
-            light: true
-          })
-        },
+        }
+      ]
+    },
+    {
+      label: 'States',
+      type: 'checklist',
+      states: [
         {
           label: 'Disable baseline',
           transformProps: props => ({
@@ -88,67 +83,70 @@ export default {
       type: 'radio',
       states: [
         {
-          label: 'Screaming',
+          label: 'Conversational',
           transformProps: props => props
         },
         {
-          label: 'Yelling',
-          transformProps: ({ screaming, ...props }) => ({
-            ...props,
-            yelling: true
-          })
-        },
-        {
-          label: 'Shouting',
-          transformProps: ({ screaming, ...props }) => ({
-            ...props,
-            shouting: true
-          })
-        },
-        {
-          label: 'Waving',
-          transformProps: ({ screaming, ...props }) => ({
-            ...props,
-            waving: true
-          })
-        },
-        {
-          label: 'Whistling',
-          transformProps: ({ screaming, ...props }) => ({
-            ...props,
-            whistling: true
-          })
-        },
-        {
-          label: 'Whispering (Title)',
-          transformProps: ({ screaming, ...props }) => ({
-            ...props,
-            whisperingTitle: true
-          })
-        },
-        {
           label: 'Loud',
-          transformProps: ({ screaming, ...props }) => ({
+          transformProps: props => ({
             ...props,
             loud: true
           })
         },
         {
-          label: 'Conversational',
-          transformProps: ({ screaming, ...props }) => props
-        },
-        {
           label: 'Intimate',
-          transformProps: ({ screaming, ...props }) => ({
+          transformProps: props => ({
             ...props,
             intimate: true
           })
         },
         {
           label: 'Whispering',
-          transformProps: ({ screaming, ...props }) => ({
+          transformProps: props => ({
             ...props,
             whispering: true
+          })
+        },
+        {
+          label: 'Screaming (Title)',
+          transformProps: ({ screaming, ...props }) => ({
+            ...props,
+            screaming: true
+          })
+        },
+        {
+          label: 'Yelling (Title)',
+          transformProps: ({ yelling, ...props }) => ({
+            ...props,
+            yelling: true
+          })
+        },
+        {
+          label: 'Shouting (Title)',
+          transformProps: ({ shouting, ...props }) => ({
+            ...props,
+            shouting: true
+          })
+        },
+        {
+          label: 'Waving (Title)',
+          transformProps: ({ waving, ...props }) => ({
+            ...props,
+            waving: true
+          })
+        },
+        {
+          label: 'Whistling (Title)',
+          transformProps: ({ whistling, ...props }) => ({
+            ...props,
+            whistling: true
+          })
+        },
+        {
+          label: 'Whispering (Title)',
+          transformProps: ({ whisperingTitle, ...props }) => ({
+            ...props,
+            whisperingTitle: true
           })
         }
       ]
