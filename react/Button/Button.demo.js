@@ -132,17 +132,19 @@ export default {
           })
         },
         {
-          label: 'Secondary',
+          label: 'Tertiary - DB Hirer',
           transformProps: props => ({
             ...props,
-            color: 'secondary'
+            color: 'tertiary',
+            isJobsDB: true
           })
         },
         {
-          label: 'Tertiary - jobsDB Hirer',
+          label: 'Tertiary - JS Hirer (SiVA)',
           transformProps: props => ({
             ...props,
-            color: 'tertiary'
+            color: 'tertiary',
+            isJobStreet: true
           })
         }
       ]

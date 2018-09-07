@@ -41,11 +41,23 @@
   height: @touchableTextHeight;
 }
 
+.touchableText(@font-scale: @interaction-type-scale; @border-width: 0) {
+  .rawText(@font-scale);
+  line-height: @touchableTextHeight - (@border-width * 2);
+  height: @touchableTextHeight;
+}
+
 @compactTouchableTextHeight: @grid-row-height * @compact-interaction-type-row-span;
 
 .compactTouchableText(@font-scale: @compact-interaction-type-scale) {
   .rawText(@font-scale);
   line-height: @compactTouchableTextHeight;
+  height: @compactTouchableTextHeight;
+}
+
+.compactTouchableText(@font-scale: @compact-interaction-type-scale; @border-width: 0) {
+  .rawText(@font-scale);
+  line-height: @compactTouchableTextHeight - (@border-width * 2);
   height: @compactTouchableTextHeight;
 }
 

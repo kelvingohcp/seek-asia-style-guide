@@ -21,21 +21,35 @@
   }
 }
 
+.focusedState(@rules) {
+  &:focus,
+  &.rootFocused {
+    @rules();
+  }
+}
+
 .buttonColor(@color, @background-color) {
-  color: @color;
   background-color: @background-color;
-  .hoverState({background-color: darken(@background-color, 5%) ;});
-  .selectedState({background-color: darken(@background-color, 5%) ;});
+  border-color: @background-color;
+  color: @color;
+  .hoverState({background-color: darken(@background-color, 5%); border-color: @background-color;});
+}
+
+.buttonColor(@color, @background-color, @border-color: @background-color) {
+  background-color: @background-color;
+  border-color: @border-color;
+  color: @color;
+  .hoverState({background-color: darken(@background-color, 5%); border-color: @border-color;});
 }
 
 .root {
-  .touchableText(@waving-type-scale);
+  .touchableText(@waving-type-scale, 1px);
   display: inline-block;
   text-decoration: none;
   user-select: none;
   text-align: center;
-  padding: 0 @grid-base * 4;
-  border: 0;
+  border: 1px solid transparent;
+  padding: 0 (@grid-base * 4 - 1);
   border-radius: 3px;
   transition:
     background-color 0.2s,
@@ -49,7 +63,7 @@
 }
 
 .compact {
-  .compactTouchableText(@whistling-type-scale);
+  .compactTouchableText(@whistling-type-scale, 1px);
 }
 
 .disabled:not(.root_hyperlink) {
@@ -59,30 +73,65 @@
 
 .root_callToAction {
   .buttonColor(@saWhite, @saBlue);
+  &.disabled {
+    .disabled();
+  }
 }
 
 .jobStreet.root_callToAction {
   .buttonColor(@sk-black, @actionYellow);
-  &.disabled {
-    .buttonColor(@saGrey5, @saGrey4);
-    cursor: default;
-  }
 }
 
 .jobsDB.root_callToAction {
   .buttonColor(@saWhite, @actionOrange);
-  &.disabled {
-    .buttonColor(@saGrey5, @saGrey4);
-    cursor: default;
-  }
 }
 
 .root_primary {
-  .buttonColor(@saWhite, @actionBlue);
+  .buttonColor(@saWhite, @saBlue2);
+  .hoverState({background-color: @saBlue3; border-color: @saBlue3;});
+  transition: box-shadow 0.15s ease-in-out;
+  will-change: auto;
+  &.selected {
+    .touchableText(@waving-type-scale, 1px);
+    .selectedState({background-color: @saBlue2; border-color: @saBlue1; color: @saWhite;});
+    padding-left: @grid-base * 4 - 1;
+    padding-right: @grid-base * 4 - 1;
+
+    &.compact {
+      .compactTouchableText(@waving-type-scale);
+    }
+  }
+  &.disabled {
+    .disabled();
+  }
+  &:focus,
+  &.focused {
+    .focusedState({box-shadow: 0 0 2px 2px #94c9e0;});
+  }
 }
 
 .root_secondary {
-  .buttonColor(@actionBlue, @actionPastelBlue);
+  .buttonColor(@actionBlue, @saBlue4);
+  .hoverState({background-color: @saBlue5; border-color: @saBlue5;});
+  transition: box-shadow 0.15s ease-in-out;
+  will-change: auto;
+  &.selected {
+    .touchableText(@waving-type-scale, 1px);
+    .selectedState({background-color: @saBlue4; border-color: @saBlue3; color: @saWhite;});
+    padding-left: @grid-base * 4 - 1;
+    padding-right: @grid-base * 4 - 1;
+
+    &.compact {
+      .compactTouchableText(@waving-type-scale);
+    }
+  }
+  &.disabled {
+    .disabled();
+  }
+  &:focus,
+  &.focused {
+    .focusedState({box-shadow: 0 0 2px 2px #94c9e0;});
+  }
 }
 
 .root_hyperlink {
@@ -97,9 +146,7 @@
   .activeState({transform: none;});
 
   &.disabled {
-    color: @saGrey4;
-    text-decoration: underline;
-    cursor: default;
+    .disabledLink();
   }
 }
 
@@ -107,12 +154,28 @@
   .compactTouchableText(@whistling-type-scale);
 }
 
-.root_tertiary {
-  .buttonColor(@actionTurquoise, @saWhite);
+.jobStreet.root_tertiary {
+  .buttonColor(@jsHirerGreen, @saWhite);
+  border-color: currentColor;
 
-  .hoverState({background-color: @actionTurquoise; color: @saWhite;});
-  border: 1px solid @actionTurquoise;
+  .hoverState({background-color: fade(@jsHirerGreen, 10%); color: @jsHirerGreen; border-color: currentColor;});
+  border: 1px solid @jsHirerGreen;
   padding-bottom: 10px;
+
+  &.disabled {
+    .disabledGhost();
+  }
+}
+
+.jobsDB.root_tertiary {
+  .buttonColor(@dbHirer, @saWhite);
+
+  .hoverState({background-color: fade(@dbHirer, 10%); color: @dbHirer; border-color: currentColor;});
+  border: 1px solid @dbHirer;
+  padding-bottom: 10px;
+  &.disabled {
+    .disabledGhost();
+  }
 }
 
 .root_tertiary.compact {
@@ -147,4 +210,24 @@
       }
     }
   }
+}
+
+.disabled() {
+  background-color: @saGrey5;
+  border-color: @saGrey5;
+  color: @saGrey4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.disabledGhost() {
+  background-color: @saWhite;
+  border-color: @saGrey5;
+  color: @saGrey4;
+  cursor: not-allowed;
+}
+.disabledLink() {
+  background-color: transparent;
+  color: @saGrey4;
+  cursor: not-allowed;
+  text-decoration: underline;
 }
