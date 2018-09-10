@@ -98,7 +98,7 @@
     padding-right: @grid-base * 4 - 1;
 
     &.compact {
-      .compactTouchableText(@waving-type-scale);
+      .compactTouchableText(@whistling-type-scale, 1px);
     }
   }
   &.disabled {
@@ -117,12 +117,12 @@
   will-change: auto;
   &.selected {
     .touchableText(@waving-type-scale, 1px);
-    .selectedState({background-color: @saBlue4; border-color: @saBlue3; color: @saWhite;});
+    .selectedState({background-color: @saBlue4; border-color: @saBlue3; color: @saBlue2;});
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
 
     &.compact {
-      .compactTouchableText(@waving-type-scale);
+      .compactTouchableText(@whistling-type-scale, 1px);
     }
   }
   &.disabled {
