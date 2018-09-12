@@ -5,5 +5,17 @@ export default {
   title: 'Loader',
   component: Loader,
   initialProps: {},
-  options: []
+  options: [{
+    label: 'Compact',
+    type: 'checklist',
+    states: [
+      {
+        label: 'Compact',
+        transformProps: props => ({
+          ...props,
+          compact: true
+        })
+      }
+    ]
+  }]
 };
