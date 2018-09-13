@@ -70,7 +70,7 @@ export default class ImageSlider extends Component {
     const storedDirection = this.state.direction;
     const storedSliding = this.state.sliding;
     const storedPosition = this.state.position;
-    const { className, items } = this.props;
+    const { className, items, onFeatureCompanyClick, LinkComponent } = this.props;
 
     return (
       <div
@@ -85,6 +85,8 @@ export default class ImageSlider extends Component {
         </div>
         <div className={styles.containerDiv}>
           <Wrapper
+            onFeatureCompanyClick={onFeatureCompanyClick}
+            LinkComponent={LinkComponent}
             items={items}
             direction={storedDirection}
             sliding={storedSliding}
@@ -106,7 +108,9 @@ ImageSlider.propTypes = {
   items: PropTypes.array.isRequired,
   timerDuration: PropTypes.number,
   autoSlide: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
+  onFeatureCompanyClick: PropTypes.func,
+  LinkComponent: PropTypes.func
 };
 
 ImageSlider.defaultProps = {

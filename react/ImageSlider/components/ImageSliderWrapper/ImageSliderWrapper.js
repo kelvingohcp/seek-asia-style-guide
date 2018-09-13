@@ -6,7 +6,9 @@ import ImageSlot from '../ImageSliderSlot/ImageSliderSlot';
 export default function ImageSliderWrapper({ items,
   direction,
   sliding,
-  statePosition }) {
+  statePosition,
+  onFeatureCompanyClick,
+  LinkComponent }) {
   const getOrder = function(itemIndex, currentPosition, itemLength) {
     const numItems = itemLength || 1;
     if (itemIndex - currentPosition < 0) {
@@ -31,6 +33,8 @@ export default function ImageSliderWrapper({ items,
       const OrderID = getOrder(index, statePosition, items.length);
       imagesList.push(
         <ImageSlot
+          onFeatureCompanyClick={onFeatureCompanyClick}
+          LinkComponent={LinkComponent}
           orderID={OrderID}
           urlPath={item.url}
           imagePath={item.imagePath}
@@ -41,6 +45,8 @@ export default function ImageSliderWrapper({ items,
         const prevIndexID = index - 1 < 0 ? items.length - 1 : index - 1;
         imagesList.push(
           <ImageSlot
+            onFeatureCompanyClick={onFeatureCompanyClick}
+            LinkComponent={LinkComponent}
             orderID={-1} urlPath={items[prevIndexID].url}
             imagePath={items[prevIndexID].imagePath}
             companyTitle={items[prevIndexID].title} indexID={-1}
@@ -51,6 +57,8 @@ export default function ImageSliderWrapper({ items,
         const nextIndexID = index + 1 >= items.length ? 0 : index + 1;
         imagesList.push(
           <ImageSlot
+            onFeatureCompanyClick={onFeatureCompanyClick}
+            LinkComponent={LinkComponent}
             orderID={items.length} urlPath={items[nextIndexID].url}
             imagePath={items[nextIndexID].imagePath}
             companyTitle={items[nextIndexID].title} indexID={items.length}
@@ -70,5 +78,7 @@ ImageSliderWrapper.propTypes = {
   items: PropTypes.array.isRequired,
   direction: PropTypes.string.isRequired,
   sliding: PropTypes.bool.isRequired,
-  statePosition: PropTypes.number.isRequired
+  statePosition: PropTypes.number.isRequired,
+  onFeatureCompanyClick: PropTypes.func,
+  LinkComponent: PropTypes.func
 };
