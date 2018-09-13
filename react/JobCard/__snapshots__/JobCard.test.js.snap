@@ -461,26 +461,35 @@ exports[`JobCard should pass through viewed prop 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -674,26 +683,35 @@ exports[`JobCard should render company with bold keyword 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -888,26 +906,35 @@ exports[`JobCard should render job title component 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -1101,26 +1128,35 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -1325,37 +1361,42 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
-    <div
-      className="companyLogoWrapper"
-    >
-      <img
-        className="companyLogo"
-        src="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
-      />
-    </div>
+    <img
+      className="companyLogo"
+      src="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
+    />
   </Section>
   <ShelfSection
     shelf={
@@ -1546,26 +1587,35 @@ exports[`JobCard should render jobsDB default style 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -1757,26 +1807,35 @@ exports[`JobCard should render plain company label 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -1970,26 +2029,35 @@ exports[`JobCard should render selected style 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -2193,26 +2261,35 @@ exports[`JobCard should render tag links 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -2422,26 +2499,35 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -2629,26 +2715,35 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -2842,26 +2937,35 @@ exports[`JobCard should render with default props 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -3064,26 +3168,35 @@ exports[`JobCard should render with featured label 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>
@@ -3282,26 +3395,35 @@ exports[`JobCard should render with selling points props 1`] = `
           >
             1 hour ago
           </Text>
-          <Button
-            className="shelfToggle"
-            color="hyperlink"
-            component="button"
-            onClick={[Function]}
-          >
+          <span>
             <Text
               baseline={false}
-              className="shelfToggleText"
+              className="separatorDot"
               whispering={true}
             >
-              more
-               
-              <ChevronIcon
-                className=""
-                direction="down"
-                svgClassName="shelfToggleIcon"
-              />
+              •
             </Text>
-          </Button>
+            <Button
+              className="shelfToggle"
+              color="hyperlink"
+              component="button"
+              onClick={[Function]}
+            >
+              <Text
+                baseline={false}
+                className="shelfToggleText"
+                whispering={true}
+              >
+                more
+                 
+                <ChevronIcon
+                  className=""
+                  direction="down"
+                  svgClassName="shelfToggleIcon"
+                />
+              </Text>
+            </Button>
+          </span>
         </div>
       </div>
     </div>

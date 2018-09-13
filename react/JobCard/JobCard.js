@@ -12,10 +12,16 @@ import MoneyIcon from '../MoneyIcon/MoneyIcon';
 import styles from './JobCard.less';
 import classnames from 'classnames';
 import { getJobAdTypeOption } from './jobCardHelper.js';
-import LocationGroup, { LocationsPropTypes } from './components/LocationGroup/LocationGroup';
-import CompanyLink, { CompanyLinkPropTypes } from './components/CompanyLink/CompanyLink';
+import LocationGroup, {
+  LocationsPropTypes
+} from './components/LocationGroup/LocationGroup';
+import CompanyLink, {
+  CompanyLinkPropTypes
+} from './components/CompanyLink/CompanyLink';
 import JobTitleLink from './components/JobTitleLink/JobTitleLink';
-import ShelfSection, { ShelfSectionPropTypes } from './components/ShelfSection/ShelfSection';
+import ShelfSection, {
+  ShelfSectionPropTypes
+} from './components/ShelfSection/ShelfSection';
 
 export default class JobCard extends React.Component {
   constructor() {
@@ -32,13 +38,25 @@ export default class JobCard extends React.Component {
   };
 
   hasShelfLinks(shelfLinks) {
-    return shelfLinks && shelfLinks.some(shelfLink => (shelfLink && shelfLink.items && shelfLink.items.length > 0));
+    return (
+      shelfLinks &&
+      shelfLinks.some(
+        shelfLink => shelfLink && shelfLink.items && shelfLink.items.length > 0
+      )
+    );
   }
 
   render() {
     const { shelfSectionOpen } = this.state;
     const { isSelected } = this.props;
-    const { job, keyword = '', jobAdType, LinkComponent, TitleLinkComponent, viewed } = this.props;
+    const {
+      job,
+      keyword = '',
+      jobAdType,
+      LinkComponent,
+      TitleLinkComponent,
+      viewed
+    } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
 
     return (
@@ -48,36 +66,76 @@ export default class JobCard extends React.Component {
           [styles.selected]: isSelected
         })}>
         <Section className={styles.headerSection}>
-          <JobTitleLink LinkComponent={TitleLinkComponent} viewed={viewed} keyword={keyword} job={job} />
+          <JobTitleLink
+            LinkComponent={TitleLinkComponent}
+            viewed={viewed}
+            keyword={keyword}
+            job={job}
+          />
         </Section>
         <Section className={styles.bodySection}>
           <div className={styles.bodyDetailsWrapper}>
             <Text intimate baseline={false} className={styles.company}>
-              {job.classifiedLabel && (<span className={styles.classifiedLabel}>{job.classifiedLabel}</span>)}
-              {job.confidentialLabel && (<span className={styles.confidentialLabel}>{job.confidentialLabel}</span>)}
-              {job.company && <CompanyLink company={job.company} keyword={keyword} LinkComponent={LinkComponent} />}
+              {job.classifiedLabel && (
+                <span className={styles.classifiedLabel}>
+                  {job.classifiedLabel}
+                </span>
+              )}
+              {job.confidentialLabel && (
+                <span className={styles.confidentialLabel}>
+                  {job.confidentialLabel}
+                </span>
+              )}
+              {job.company && (
+                <CompanyLink
+                  company={job.company}
+                  keyword={keyword}
+                  LinkComponent={LinkComponent}
+                />
+              )}
             </Text>
-            {jobAdTypeOption.showSellingPoint && job.sellingPoints && (
+            {jobAdTypeOption.showSellingPoint &&
+              job.sellingPoints && (
               <div
-                className={classnames(styles.sellingPointsSection, { [styles.withDescription]: jobAdTypeOption.showDescription && job.description })}>
-                <ul className={styles.sellingPoints} >
+                className={classnames(styles.sellingPointsSection, {
+                  [styles.withDescription]:
+                      jobAdTypeOption.showDescription && job.description
+                })}>
+                <ul className={styles.sellingPoints}>
                   {job.sellingPoints.map((sellingPoint, i) => {
                     return (
-                      <li key={i}><Text intimate baseline={false} className={styles.sellingPoint}>{sellingPoint}</Text></li>
+                      <li key={i}>
+                        <Text
+                          intimate
+                          baseline={false}
+                          className={styles.sellingPoint}>
+                          {sellingPoint}
+                        </Text>
+                      </li>
                     );
                   })}
                 </ul>
               </div>
             )}
-            {jobAdTypeOption.showDescription && job.description && (
+            {jobAdTypeOption.showDescription &&
+              job.description && (
               <div className={styles.jobDescriptionSection}>
-                <Text intimate baseline={false} className={styles.bodyDescriptionText}>{job.description}</Text>
+                <Text
+                  intimate
+                  baseline={false}
+                  className={styles.bodyDescriptionText}>
+                  {job.description}
+                </Text>
               </div>
             )}
           </div>
-          {jobAdTypeOption.showCompanyPic && job.companyPictureUrl && (
+          {jobAdTypeOption.showCompanyPic &&
+            job.companyPictureUrl && (
             <div className={styles.companyPicWrapper}>
-              <img className={styles.companyPic} src={job.companyPictureUrl} />
+              <img
+                className={styles.companyPic}
+                src={job.companyPictureUrl}
+              />
             </div>
           )}
         </Section>
@@ -87,34 +145,81 @@ export default class JobCard extends React.Component {
               <div className={styles.jobInfoList}>
                 <Text intimate baseline={false} className={styles.jobInfo}>
                   <LocationIcon className={styles.jobInfoIcon} />
-                  {job.locations && <LocationGroup locations={job.locations} LinkComponent={LinkComponent} />}
+                  {job.locations && (
+                    <LocationGroup
+                      locations={job.locations}
+                      LinkComponent={LinkComponent}
+                    />
+                  )}
                 </Text>
-                {job.salary && (<Text intimate baseline={false} className={styles.jobInfo}><MoneyIcon className={styles.jobInfoIcon} /><span>{job.salary}</span></Text>)}
+                {job.salary && (
+                  <Text intimate baseline={false} className={styles.jobInfo}>
+                    <MoneyIcon className={styles.jobInfoIcon} />
+                    <span>{job.salary}</span>
+                  </Text>
+                )}
               </div>
               <div>
-                {job.featuredLabel && (<span className={styles.featuredLabel}><Badge color="new" label={job.featuredLabel} /></span>)}
-                {job.appliedDate ? (
-                  <Text whispering baseline={false} className={styles.applyDate}>{job.appliedDate}</Text>
-                ) : (
-                  <Text whispering baseline={false} className={styles.postingDuration}>{job.postingDuration}</Text>
+                {job.featuredLabel && (
+                  <span className={styles.featuredLabel}>
+                    <Badge color="new" label={job.featuredLabel} />
+                  </span>
                 )}
-                {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) &&
-                  <Button color="hyperlink" className={styles.shelfToggle} onClick={this.handleShelfSectionToggle}>
-                    <Text whispering baseline={false} className={styles.shelfToggleText}>
-                      {shelfSectionOpen ? 'less' : 'more'} <ChevronIcon direction={shelfSectionOpen ? 'up' : 'down'} svgClassName={styles.shelfToggleIcon} />
+                {job.appliedDate ? (
+                  <Text
+                    whispering
+                    baseline={false}
+                    className={styles.applyDate}>
+                    {job.appliedDate}
+                  </Text>
+                ) : (
+                  <Text
+                    whispering
+                    baseline={false}
+                    className={styles.postingDuration}>
+                    {job.postingDuration}
+                  </Text>
+                )}
+
+                {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
+                  <span>
+                    <Text
+                      whispering
+                      baseline={false}
+                      className={styles.separatorDot}>
+                      •
                     </Text>
-                  </Button>
-                }
+                    <Button
+                      color="hyperlink"
+                      className={styles.shelfToggle}
+                      onClick={this.handleShelfSectionToggle}>
+                      <Text
+                        whispering
+                        baseline={false}
+                        className={styles.shelfToggleText}>
+                        {shelfSectionOpen ? 'less' : 'more'}{' '}
+                        <ChevronIcon
+                          direction={shelfSectionOpen ? 'up' : 'down'}
+                          svgClassName={styles.shelfToggleIcon}
+                        />
+                      </Text>
+                    </Button>
+                  </span>
+                )}
               </div>
             </div>
           </div>
           {jobAdTypeOption.showCompanyLogo && (
-            <div className={styles.companyLogoWrapper}>
-              <img className={styles.companyLogo} src={job.companyLogoUrl} />
-            </div>
+            <img className={styles.companyLogo} src={job.companyLogoUrl} />
           )}
         </Section>
-        {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && <ShelfSection shelf={job.shelf} LinkComponent={LinkComponent} showShelfSection={shelfSectionOpen} />}
+        {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
+          <ShelfSection
+            shelf={job.shelf}
+            LinkComponent={LinkComponent}
+            showShelfSection={shelfSectionOpen}
+          />
+        )}
       </Card>
     );
   }
