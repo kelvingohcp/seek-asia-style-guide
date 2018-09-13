@@ -57,6 +57,7 @@
   justify-content: center;
   ._cfs_container_width;
   @media @desktop {
+    justify-content: space-between;
     height: @grid-base * 16;
     padding: 1px @grid-base * 6 0 @grid-base * 4;
   }
@@ -82,16 +83,17 @@
 }
 
 .primaryNavLinkWrapper {
+  flex-grow: 1;
   cursor: pointer;
-}
-
-.primaryNavLinkWrapper:not(:last-child) {
   margin-right: @grid-base * 8;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .primaryNavLink {
   text-decoration: none;
-  display: flex;
+  display: inline-block;
 }
 
 .primaryNavLink .icon {
@@ -102,6 +104,7 @@
   margin-left: auto;
   display: none;
   min-width: max-content;
+  justify-content: space-between;
   @media @desktop {
     display: flex;
   }
