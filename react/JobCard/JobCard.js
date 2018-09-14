@@ -180,9 +180,8 @@ export default class JobCard extends React.Component {
                     {job.postingDuration}
                   </Text>
                 )}
-
                 {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
-                  <span>
+                  <span className={styles.shelfToggleContainer}>
                     <Text
                       whispering
                       baseline={false}

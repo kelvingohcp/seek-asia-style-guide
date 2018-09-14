@@ -254,16 +254,20 @@
   }
 }
 
+.shelfToggleContainer {
+  display: none;
+  @media @desktop {
+    display: inline-block;
+  }
+}
+
 .shelfToggle {
   .link(@saGrey2);
-  display: none;
+
   line-height: unset;
   height: unset;
   &:focus {
     outline: none;
-  }
-  @media @desktop {
-    display: inline-block;
   }
 }
 
@@ -276,16 +280,16 @@
   height: @grid-base * 2;
 }
 
+.separatorDot {
+  color: @saGrey4;
+  display: inline;
+  padding-right: @grid-base * 2;
+}
+
 .selected {
   background-color: @saHover;
 }
 
 .visitedLink {
   text-transform: uppercase;
-}
-
-.separatorDot {
-  color: @saGrey4;
-  display: inline;
-  padding-right: @grid-base * 2;
 }
