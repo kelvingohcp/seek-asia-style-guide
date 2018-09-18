@@ -71,7 +71,7 @@ FooterHK.defaultProps = {
   country: 'hk',
   language: 'en',
   domainUrl: 'jobsdb.com',
-  hasCompanyProfile: false
+  hasCompanyProfile: true
 };
 
 FooterHK.propTypes = {

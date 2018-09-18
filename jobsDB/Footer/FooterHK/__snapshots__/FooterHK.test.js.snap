@@ -182,7 +182,7 @@ exports[`FooterHK component should render with custom href link 1`] = `
       <UpperFooter
         cfsLink={[Function]}
         externalLink={[Function]}
-        hasCompanyProfile={false}
+        hasCompanyProfile={true}
         messages={
           Object {
             "FooterHK.BabaJobLink": "http://www.babajob.com/",
@@ -353,7 +353,7 @@ exports[`FooterHK component should render with custom link renderer 1`] = `
       <UpperFooter
         cfsLink={[Function]}
         externalLink={[Function]}
-        hasCompanyProfile={false}
+        hasCompanyProfile={true}
         messages={
           Object {
             "FooterHK.BabaJobLink": "http://www.babajob.com/",
@@ -524,7 +524,7 @@ exports[`FooterHK component should render with default props 1`] = `
       <UpperFooter
         cfsLink={[Function]}
         externalLink={[Function]}
-        hasCompanyProfile={false}
+        hasCompanyProfile={true}
         messages={
           Object {
             "FooterHK.BabaJobLink": "http://www.babajob.com/",
