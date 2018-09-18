@@ -4,13 +4,211 @@ exports[`Header should pass through optional props 1`] = `
 <header
   className="root"
 >
-  <div
-    className="externalNav"
-  >
-    <CountryDropdown
-      checked={0}
+  <PageBlock>
+    <div
+      className="externalNav"
+    >
+      <CountryDropdown
+        checked={0}
+        linkRenderer={[Function]}
+        links={
+          Array [
+            Object {
+              "ItemIcon": [Function],
+              "country": "hk",
+              "language": "en",
+              "title": "Hong Kong (English)",
+              "url": "https://hk.jobsdb.com/hk",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "id",
+              "language": "en",
+              "title": "Indonesia (English)",
+              "url": "https://id.jobsdb.com/id",
+            },
+          ]
+        }
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <div
+      className="primaryNavNoLogin"
+    >
+      <h1
+        className="desktopLogo"
+      >
+        <a
+          className="logoLink"
+          href="http://seekasia.com/home"
+        />
+        <FakeComponent
+          country="my"
+        />
+      </h1>
+      <h1
+        className="mobileLogo"
+      >
+        <a
+          className="logoLink"
+          href="/"
+        />
+        <FakeComponent
+          country="my"
+        />
+      </h1>
+      <div
+        className="primaryNavLinksWrapper"
+      >
+        <span
+          className="primaryNavLinkWrapper"
+          key="0"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/home"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              Home
+            </Text>
+          </a>
+        </span>
+        <span
+          className="primaryNavLinkWrapper"
+          key="1"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/myPortal"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              MyPortal
+            </Text>
+          </a>
+        </span>
+        <span
+          className="primaryNavLinkWrapper"
+          key="2"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/resources"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              Resources
+            </Text>
+          </a>
+        </span>
+        <span
+          className="primaryNavLinkWrapper"
+          key="3"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/career-insights"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              CareerInsights
+            </Text>
+          </a>
+        </span>
+      </div>
+      <UserAccount
+        authenticationStatus="unauthenticated"
+        brandStyles={
+          Object {
+            "employerLink": "employerLink",
+            "primaryNavLink": "primaryNavLink",
+          }
+        }
+        linkRenderer={[Function]}
+        loginAvailable={false}
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <ActionTray
+      activeTab="ACTIVE_TAB_HOME"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      handleToggleMenu={[Function]}
+      linkRenderer={[Function]}
+      menuOpen={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+      showMenu={false}
+    />
+    <Menu
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
       linkRenderer={[Function]}
       links={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "title": "Home",
+            "url": "http://seekasia.com/home",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "title": "MyPortal",
+            "url": "http://seekasia.com/myPortal",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "title": "Resources",
+            "url": "http://seekasia.com/resources",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "title": "CareerInsights",
+            "url": "http://seekasia.com/career-insights",
+          },
+        ]
+      }
+      locales={
         Array [
           Object {
             "ItemIcon": [Function],
@@ -28,119 +226,6 @@ exports[`Header should pass through optional props 1`] = `
           },
         ]
       }
-      messages={
-        Object {
-          "header.employerLinkPrefix": "Awesome employers should ",
-          "header.employerSiteTitle": "click here",
-          "header.employerSiteUrl": "http://brand.seekasia.com",
-          "header.homeUrl": "http://seekasia.com/home",
-        }
-      }
-      onMenuToggle={[Function]}
-    />
-  </div>
-  <div
-    className="primaryNavNoLogin"
-  >
-    <h1
-      className="desktopLogo"
-    >
-      <a
-        className="logoLink"
-        href="http://seekasia.com/home"
-      />
-      <FakeComponent
-        country="my"
-      />
-    </h1>
-    <h1
-      className="mobileLogo"
-    >
-      <a
-        className="logoLink"
-        href="/"
-      />
-      <FakeComponent
-        country="my"
-      />
-    </h1>
-    <div
-      className="primaryNavLinksWrapper"
-    >
-      <span
-        className="primaryNavLinkWrapper"
-        key="0"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/home"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            Home
-          </Text>
-        </a>
-      </span>
-      <span
-        className="primaryNavLinkWrapper"
-        key="1"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/myPortal"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            MyPortal
-          </Text>
-        </a>
-      </span>
-      <span
-        className="primaryNavLinkWrapper"
-        key="2"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/resources"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            Resources
-          </Text>
-        </a>
-      </span>
-      <span
-        className="primaryNavLinkWrapper"
-        key="3"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/career-insights"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            CareerInsights
-          </Text>
-        </a>
-      </span>
-    </div>
-    <UserAccount
-      authenticationStatus="unauthenticated"
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-          "primaryNavLink": "primaryNavLink",
-        }
-      }
-      linkRenderer={[Function]}
       loginAvailable={false}
       messages={
         Object {
@@ -150,100 +235,17 @@ exports[`Header should pass through optional props 1`] = `
           "header.homeUrl": "http://seekasia.com/home",
         }
       }
-      onMenuToggle={[Function]}
+      more={
+        Array [
+          Object {
+            "title": "Space Piracy Jobs",
+            "url": "http://seekasia.com/space-piracy",
+          },
+        ]
+      }
+      shouldShowMenu={false}
     />
-  </div>
-  <ActionTray
-    activeTab="ACTIVE_TAB_HOME"
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    handleToggleMenu={[Function]}
-    linkRenderer={[Function]}
-    menuOpen={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-    showMenu={false}
-  />
-  <Menu
-    authenticationStatus="unauthenticated"
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    linkRenderer={[Function]}
-    links={
-      Array [
-        Object {
-          "ItemIcon": [Function],
-          "title": "Home",
-          "url": "http://seekasia.com/home",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "title": "MyPortal",
-          "url": "http://seekasia.com/myPortal",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "title": "Resources",
-          "url": "http://seekasia.com/resources",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "title": "CareerInsights",
-          "url": "http://seekasia.com/career-insights",
-        },
-      ]
-    }
-    locales={
-      Array [
-        Object {
-          "ItemIcon": [Function],
-          "country": "hk",
-          "language": "en",
-          "title": "Hong Kong (English)",
-          "url": "https://hk.jobsdb.com/hk",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "country": "id",
-          "language": "en",
-          "title": "Indonesia (English)",
-          "url": "https://id.jobsdb.com/id",
-        },
-      ]
-    }
-    loginAvailable={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-    more={
-      Array [
-        Object {
-          "title": "Space Piracy Jobs",
-          "url": "http://seekasia.com/space-piracy",
-        },
-      ]
-    }
-    shouldShowMenu={false}
-  />
+  </PageBlock>
 </header>
 `;
 
@@ -251,13 +253,116 @@ exports[`Header should render with default props 1`] = `
 <header
   className="root"
 >
-  <div
-    className="externalNav"
-  >
-    <CountryDropdown
-      checked={0}
+  <PageBlock>
+    <div
+      className="externalNav"
+    >
+      <CountryDropdown
+        checked={0}
+        linkRenderer={[Function]}
+        links={
+          Array [
+            Object {
+              "ItemIcon": [Function],
+              "country": "hk",
+              "language": "en",
+              "title": "Hong Kong (English)",
+              "url": "https://hk.jobsdb.com/hk",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "id",
+              "language": "en",
+              "title": "Indonesia (English)",
+              "url": "https://id.jobsdb.com/id",
+            },
+          ]
+        }
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <div
+      className="primaryNavNoLogin"
+    >
+      <h1
+        className="desktopLogo"
+      >
+        <a
+          className="logoLink"
+          href="http://seekasia.com/home"
+        />
+        <FakeComponent />
+      </h1>
+      <h1
+        className="mobileLogo"
+      >
+        <a
+          className="logoLink"
+          href="/"
+        />
+        <FakeComponent />
+      </h1>
+      <div
+        className="primaryNavLinksWrapper"
+      />
+      <UserAccount
+        authenticationStatus="unauthenticated"
+        brandStyles={
+          Object {
+            "employerLink": "employerLink",
+            "primaryNavLink": "primaryNavLink",
+          }
+        }
+        linkRenderer={[Function]}
+        loginAvailable={false}
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <ActionTray
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      handleToggleMenu={[Function]}
       linkRenderer={[Function]}
-      links={
+      menuOpen={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+    />
+    <Menu
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      linkRenderer={[Function]}
+      locales={
         Array [
           Object {
             "ItemIcon": [Function],
@@ -275,50 +380,6 @@ exports[`Header should render with default props 1`] = `
           },
         ]
       }
-      messages={
-        Object {
-          "header.employerLinkPrefix": "Awesome employers should ",
-          "header.employerSiteTitle": "click here",
-          "header.employerSiteUrl": "http://brand.seekasia.com",
-          "header.homeUrl": "http://seekasia.com/home",
-        }
-      }
-      onMenuToggle={[Function]}
-    />
-  </div>
-  <div
-    className="primaryNavNoLogin"
-  >
-    <h1
-      className="desktopLogo"
-    >
-      <a
-        className="logoLink"
-        href="http://seekasia.com/home"
-      />
-      <FakeComponent />
-    </h1>
-    <h1
-      className="mobileLogo"
-    >
-      <a
-        className="logoLink"
-        href="/"
-      />
-      <FakeComponent />
-    </h1>
-    <div
-      className="primaryNavLinksWrapper"
-    />
-    <UserAccount
-      authenticationStatus="unauthenticated"
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-          "primaryNavLink": "primaryNavLink",
-        }
-      }
-      linkRenderer={[Function]}
       loginAvailable={false}
       messages={
         Object {
@@ -328,66 +389,9 @@ exports[`Header should render with default props 1`] = `
           "header.homeUrl": "http://seekasia.com/home",
         }
       }
-      onMenuToggle={[Function]}
+      shouldShowMenu={false}
     />
-  </div>
-  <ActionTray
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    handleToggleMenu={[Function]}
-    linkRenderer={[Function]}
-    menuOpen={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-  />
-  <Menu
-    authenticationStatus="unauthenticated"
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    linkRenderer={[Function]}
-    locales={
-      Array [
-        Object {
-          "ItemIcon": [Function],
-          "country": "hk",
-          "language": "en",
-          "title": "Hong Kong (English)",
-          "url": "https://hk.jobsdb.com/hk",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "country": "id",
-          "language": "en",
-          "title": "Indonesia (English)",
-          "url": "https://id.jobsdb.com/id",
-        },
-      ]
-    }
-    loginAvailable={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-    shouldShowMenu={false}
-  />
+  </PageBlock>
 </header>
 `;
 
@@ -395,13 +399,205 @@ exports[`Header should render with links list 1`] = `
 <header
   className="root"
 >
-  <div
-    className="externalNav"
-  >
-    <CountryDropdown
-      checked={0}
+  <PageBlock>
+    <div
+      className="externalNav"
+    >
+      <CountryDropdown
+        checked={0}
+        linkRenderer={[Function]}
+        links={
+          Array [
+            Object {
+              "ItemIcon": [Function],
+              "country": "hk",
+              "language": "en",
+              "title": "Hong Kong (English)",
+              "url": "https://hk.jobsdb.com/hk",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "id",
+              "language": "en",
+              "title": "Indonesia (English)",
+              "url": "https://id.jobsdb.com/id",
+            },
+          ]
+        }
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <div
+      className="primaryNavNoLogin"
+    >
+      <h1
+        className="desktopLogo"
+      >
+        <a
+          className="logoLink"
+          href="http://seekasia.com/home"
+        />
+        <FakeComponent />
+      </h1>
+      <h1
+        className="mobileLogo"
+      >
+        <a
+          className="logoLink"
+          href="/"
+        />
+        <FakeComponent />
+      </h1>
+      <div
+        className="primaryNavLinksWrapper"
+      >
+        <span
+          className="primaryNavLinkWrapper"
+          key="0"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/home"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              Home
+            </Text>
+          </a>
+        </span>
+        <span
+          className="primaryNavLinkWrapper"
+          key="1"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/myPortal"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              MyPortal
+            </Text>
+          </a>
+        </span>
+        <span
+          className="primaryNavLinkWrapper"
+          key="2"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/resources"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              Resources
+            </Text>
+          </a>
+        </span>
+        <span
+          className="primaryNavLinkWrapper"
+          key="3"
+        >
+          <a
+            className="primaryNavLink primaryNavLink"
+            href="http://seekasia.com/career-insights"
+          >
+            <Text
+              baseline={true}
+            >
+               
+              CareerInsights
+            </Text>
+          </a>
+        </span>
+      </div>
+      <UserAccount
+        authenticationStatus="unauthenticated"
+        brandStyles={
+          Object {
+            "employerLink": "employerLink",
+            "primaryNavLink": "primaryNavLink",
+          }
+        }
+        linkRenderer={[Function]}
+        loginAvailable={false}
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <ActionTray
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      handleToggleMenu={[Function]}
+      linkRenderer={[Function]}
+      menuOpen={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+    />
+    <Menu
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
       linkRenderer={[Function]}
       links={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "title": "Home",
+            "url": "http://seekasia.com/home",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "title": "MyPortal",
+            "url": "http://seekasia.com/myPortal",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "title": "Resources",
+            "url": "http://seekasia.com/resources",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "title": "CareerInsights",
+            "url": "http://seekasia.com/career-insights",
+          },
+        ]
+      }
+      locales={
         Array [
           Object {
             "ItemIcon": [Function],
@@ -419,115 +615,6 @@ exports[`Header should render with links list 1`] = `
           },
         ]
       }
-      messages={
-        Object {
-          "header.employerLinkPrefix": "Awesome employers should ",
-          "header.employerSiteTitle": "click here",
-          "header.employerSiteUrl": "http://brand.seekasia.com",
-          "header.homeUrl": "http://seekasia.com/home",
-        }
-      }
-      onMenuToggle={[Function]}
-    />
-  </div>
-  <div
-    className="primaryNavNoLogin"
-  >
-    <h1
-      className="desktopLogo"
-    >
-      <a
-        className="logoLink"
-        href="http://seekasia.com/home"
-      />
-      <FakeComponent />
-    </h1>
-    <h1
-      className="mobileLogo"
-    >
-      <a
-        className="logoLink"
-        href="/"
-      />
-      <FakeComponent />
-    </h1>
-    <div
-      className="primaryNavLinksWrapper"
-    >
-      <span
-        className="primaryNavLinkWrapper"
-        key="0"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/home"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            Home
-          </Text>
-        </a>
-      </span>
-      <span
-        className="primaryNavLinkWrapper"
-        key="1"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/myPortal"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            MyPortal
-          </Text>
-        </a>
-      </span>
-      <span
-        className="primaryNavLinkWrapper"
-        key="2"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/resources"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            Resources
-          </Text>
-        </a>
-      </span>
-      <span
-        className="primaryNavLinkWrapper"
-        key="3"
-      >
-        <a
-          className="primaryNavLink primaryNavLink"
-          href="http://seekasia.com/career-insights"
-        >
-          <Text
-            baseline={true}
-          >
-             
-            CareerInsights
-          </Text>
-        </a>
-      </span>
-    </div>
-    <UserAccount
-      authenticationStatus="unauthenticated"
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-          "primaryNavLink": "primaryNavLink",
-        }
-      }
-      linkRenderer={[Function]}
       loginAvailable={false}
       messages={
         Object {
@@ -537,90 +624,9 @@ exports[`Header should render with links list 1`] = `
           "header.homeUrl": "http://seekasia.com/home",
         }
       }
-      onMenuToggle={[Function]}
+      shouldShowMenu={false}
     />
-  </div>
-  <ActionTray
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    handleToggleMenu={[Function]}
-    linkRenderer={[Function]}
-    menuOpen={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-  />
-  <Menu
-    authenticationStatus="unauthenticated"
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    linkRenderer={[Function]}
-    links={
-      Array [
-        Object {
-          "ItemIcon": [Function],
-          "title": "Home",
-          "url": "http://seekasia.com/home",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "title": "MyPortal",
-          "url": "http://seekasia.com/myPortal",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "title": "Resources",
-          "url": "http://seekasia.com/resources",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "title": "CareerInsights",
-          "url": "http://seekasia.com/career-insights",
-        },
-      ]
-    }
-    locales={
-      Array [
-        Object {
-          "ItemIcon": [Function],
-          "country": "hk",
-          "language": "en",
-          "title": "Hong Kong (English)",
-          "url": "https://hk.jobsdb.com/hk",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "country": "id",
-          "language": "en",
-          "title": "Indonesia (English)",
-          "url": "https://id.jobsdb.com/id",
-        },
-      ]
-    }
-    loginAvailable={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-    shouldShowMenu={false}
-  />
+  </PageBlock>
 </header>
 `;
 
@@ -628,13 +634,119 @@ exports[`Header should render with login available 1`] = `
 <header
   className="root"
 >
-  <div
-    className="externalNav"
-  >
-    <CountryDropdown
-      checked={0}
+  <PageBlock>
+    <div
+      className="externalNav"
+    >
+      <CountryDropdown
+        checked={0}
+        linkRenderer={[Function]}
+        links={
+          Array [
+            Object {
+              "ItemIcon": [Function],
+              "country": "hk",
+              "language": "en",
+              "title": "Hong Kong (English)",
+              "url": "https://hk.jobsdb.com/hk",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "id",
+              "language": "en",
+              "title": "Indonesia (English)",
+              "url": "https://id.jobsdb.com/id",
+            },
+          ]
+        }
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <div
+      className="primaryNav"
+    >
+      <h1
+        className="desktopLogo"
+      >
+        <a
+          className="logoLink"
+          href="http://seekasia.com/home"
+        />
+        <FakeComponent />
+      </h1>
+      <h1
+        className="mobileLogo"
+      >
+        <a
+          className="logoLink"
+          href="/"
+        />
+        <FakeComponent />
+      </h1>
+      <div
+        className="primaryNavLinksWrapper"
+      />
+      <div
+        className="secondaryNav"
+      />
+      <UserAccount
+        authenticationStatus="unauthenticated"
+        brandStyles={
+          Object {
+            "employerLink": "employerLink",
+            "primaryNavLink": "primaryNavLink",
+          }
+        }
+        linkRenderer={[Function]}
+        loginAvailable={true}
+        messages={
+          Object {
+            "header.employerLinkPrefix": "Awesome employers should ",
+            "header.employerSiteTitle": "click here",
+            "header.employerSiteUrl": "http://brand.seekasia.com",
+            "header.homeUrl": "http://seekasia.com/home",
+          }
+        }
+        onMenuToggle={[Function]}
+      />
+    </div>
+    <ActionTray
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      handleToggleMenu={[Function]}
       linkRenderer={[Function]}
-      links={
+      menuOpen={false}
+      messages={
+        Object {
+          "header.employerLinkPrefix": "Awesome employers should ",
+          "header.employerSiteTitle": "click here",
+          "header.employerSiteUrl": "http://brand.seekasia.com",
+          "header.homeUrl": "http://seekasia.com/home",
+        }
+      }
+    />
+    <Menu
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      linkRenderer={[Function]}
+      locales={
         Array [
           Object {
             "ItemIcon": [Function],
@@ -652,53 +764,6 @@ exports[`Header should render with login available 1`] = `
           },
         ]
       }
-      messages={
-        Object {
-          "header.employerLinkPrefix": "Awesome employers should ",
-          "header.employerSiteTitle": "click here",
-          "header.employerSiteUrl": "http://brand.seekasia.com",
-          "header.homeUrl": "http://seekasia.com/home",
-        }
-      }
-      onMenuToggle={[Function]}
-    />
-  </div>
-  <div
-    className="primaryNav"
-  >
-    <h1
-      className="desktopLogo"
-    >
-      <a
-        className="logoLink"
-        href="http://seekasia.com/home"
-      />
-      <FakeComponent />
-    </h1>
-    <h1
-      className="mobileLogo"
-    >
-      <a
-        className="logoLink"
-        href="/"
-      />
-      <FakeComponent />
-    </h1>
-    <div
-      className="primaryNavLinksWrapper"
-    />
-    <div
-      className="secondaryNav"
-    />
-    <UserAccount
-      authenticationStatus="unauthenticated"
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-          "primaryNavLink": "primaryNavLink",
-        }
-      }
-      linkRenderer={[Function]}
       loginAvailable={true}
       messages={
         Object {
@@ -708,65 +773,8 @@ exports[`Header should render with login available 1`] = `
           "header.homeUrl": "http://seekasia.com/home",
         }
       }
-      onMenuToggle={[Function]}
+      shouldShowMenu={false}
     />
-  </div>
-  <ActionTray
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    handleToggleMenu={[Function]}
-    linkRenderer={[Function]}
-    menuOpen={false}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-  />
-  <Menu
-    authenticationStatus="unauthenticated"
-    brandStyles={
-      Object {
-        "employerLink": "employerLink",
-        "primaryNavLink": "primaryNavLink",
-      }
-    }
-    linkRenderer={[Function]}
-    locales={
-      Array [
-        Object {
-          "ItemIcon": [Function],
-          "country": "hk",
-          "language": "en",
-          "title": "Hong Kong (English)",
-          "url": "https://hk.jobsdb.com/hk",
-        },
-        Object {
-          "ItemIcon": [Function],
-          "country": "id",
-          "language": "en",
-          "title": "Indonesia (English)",
-          "url": "https://id.jobsdb.com/id",
-        },
-      ]
-    }
-    loginAvailable={true}
-    messages={
-      Object {
-        "header.employerLinkPrefix": "Awesome employers should ",
-        "header.employerSiteTitle": "click here",
-        "header.employerSiteUrl": "http://brand.seekasia.com",
-        "header.homeUrl": "http://seekasia.com/home",
-      }
-    }
-    shouldShowMenu={false}
-  />
+  </PageBlock>
 </header>
 `;

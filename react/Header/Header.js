@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { Text } from 'seek-asia-style-guide/react';
+import { Text, PageBlock } from 'seek-asia-style-guide/react';
 import Menu from './components/Menu/Menu';
 import ActionTray from './components/ActionTray/ActionTray';
 import CountryDropdown from './components/CountryDropdown/CountryDropdown';
@@ -107,81 +107,83 @@ export default class Header extends Component {
 
     return (
       <header className={styles.root}>
-        <div className={styles.externalNav}>
-          {
-            // *** Country Selector ***
-            selectCountry &&
-            (
-              <CountryDropdown
-                links={localeList}
-                checked={0}
-                messages={messages}
-                linkRenderer={linkRenderer}
-              />
-            ) ||
-            (
-              <div className={styles.locale}>
-                {currentLocale(localeList[0])}
-              </div>
-            )
-          }
-        </div>
-        <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
-          <h1 className={styles.desktopLogo}>
+        <PageBlock>
+          <div className={styles.externalNav}>
             {
-              linkRenderer({
-                className: styles.logoLink,
-                href: messages['header.homeUrl'] || '/'
-              })
+              // *** Country Selector ***
+              selectCountry &&
+              (
+                <CountryDropdown
+                  links={localeList}
+                  checked={0}
+                  messages={messages}
+                  linkRenderer={linkRenderer}
+                />
+              ) ||
+              (
+                <div className={styles.locale}>
+                  {currentLocale(localeList[0])}
+                </div>
+              )
             }
-            <LogoComponent {...logoProps} />
-          </h1>
-          <h1 className={styles.mobileLogo}>
-            {
-              linkRenderer({
-                className: styles.logoLink,
-                href: mobileLoggedHomeUrl
-              })
-            }
-            <LogoComponent {...logoProps} />
-          </h1>
-          {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
-          {loginAvailable && <div className={styles.secondaryNav} />}
-          <UserAccount
-            userName={userName}
-            loginAvailable={loginAvailable}
-            authenticationStatus={authenticationStatus}
+          </div>
+          <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
+            <h1 className={styles.desktopLogo}>
+              {
+                linkRenderer({
+                  className: styles.logoLink,
+                  href: messages['header.homeUrl'] || '/'
+                })
+              }
+              <LogoComponent {...logoProps} />
+            </h1>
+            <h1 className={styles.mobileLogo}>
+              {
+                linkRenderer({
+                  className: styles.logoLink,
+                  href: mobileLoggedHomeUrl
+                })
+              }
+              <LogoComponent {...logoProps} />
+            </h1>
+            {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
+            {loginAvailable && <div className={styles.secondaryNav} />}
+            <UserAccount
+              userName={userName}
+              loginAvailable={loginAvailable}
+              authenticationStatus={authenticationStatus}
+              brandStyles={brandStyles}
+              baseUrl={baseUrl}
+              userAccMenuItems={userAccMenuItems}
+              messages={messages}
+              linkRenderer={linkRenderer}
+            />
+          </div>
+          <ActionTray
+            {...actionTrayProps}
             brandStyles={brandStyles}
-            baseUrl={baseUrl}
-            userAccMenuItems={userAccMenuItems}
             messages={messages}
+            menuOpen={menuOpen}
+            handleToggleMenu={this.handleToggleMenu.bind(this)}
+            activeTab={activeTab}
+            baseUrl={baseUrl}
             linkRenderer={linkRenderer}
           />
-        </div>
-        <ActionTray
-          {...actionTrayProps}
-          brandStyles={brandStyles}
-          messages={messages}
-          menuOpen={menuOpen}
-          handleToggleMenu={this.handleToggleMenu.bind(this)}
-          activeTab={activeTab}
-          baseUrl={baseUrl}
-          linkRenderer={linkRenderer}
-        />
-        <Menu
-          shouldShowMenu={menuOpen}
-          messages={messages}
-          links={links}
-          more={more}
-          locales={localeList}
-          brandStyles={brandStyles}
-          loginAvailable={loginAvailable}
-          employerSite={employerSite}
-          authenticationStatus={authenticationStatus}
-          baseUrl={baseUrl}
-          userName={userName}
-          linkRenderer={linkRenderer}
-        />
+          <Menu
+            shouldShowMenu={menuOpen}
+            messages={messages}
+            links={links}
+            more={more}
+            locales={localeList}
+            brandStyles={brandStyles}
+            loginAvailable={loginAvailable}
+            employerSite={employerSite}
+            authenticationStatus={authenticationStatus}
+            baseUrl={baseUrl}
+            userName={userName}
+            linkRenderer={linkRenderer}
+          />
+        </PageBlock>
       </header>
     );
   }
