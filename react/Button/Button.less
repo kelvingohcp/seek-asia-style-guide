@@ -80,10 +80,16 @@
 
 .jobStreet.root_callToAction {
   .buttonColor(@sk-black, @actionYellow);
+  &.disabled {
+    .disabled();
+  }
 }
 
 .jobsDB.root_callToAction {
   .buttonColor(@saWhite, @actionOrange);
+  &.disabled {
+    .disabled();
+  }
 }
 
 .root_primary {
