@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
 import * as sketch from './ListItem.sketch';
-import { HeartIcon, StarIcon } from 'seek-asia-style-guide/react';
+import { Icons, Checkbox } from 'seek-asia-style-guide/react';
 export default {
   route: '/listItem',
   title: 'List Item',
@@ -38,20 +38,22 @@ export default {
           transformProps: props => props
         },
         {
-          label: 'Heart Icon',
+          label: 'Skills',
           transformProps: props => ({
             ...props,
+            secondLevel: false,
             icon: (
-              <HeartIcon />
+              <Icons iconName="skills" />
             )
           })
         },
         {
-          label: 'Star Icon',
+          label: 'Company',
           transformProps: props => ({
             ...props,
+            secondLevel: false,
             icon: (
-              <StarIcon />
+              <Icons iconName="company" />
             )
           })
         }
@@ -138,6 +140,34 @@ export default {
       ]
     },
     {
+      label: 'Checkbox',
+      type: 'radio',
+      states: [
+        {
+          label: 'no checkbox',
+          transformProps: props => props
+        },
+        {
+          label: 'has checkbox',
+          transformProps: props => ({
+            ...props,
+            checkbox: (
+              <Checkbox compact />
+            )
+          })
+        },
+        {
+          label: 'has checkbox (checked)',
+          transformProps: props => ({
+            ...props,
+            checkbox: (
+              <Checkbox compact checked={true} />
+            )
+          })
+        }
+      ]
+    },
+    {
       label: 'Disable Background',
       type: 'checklist',
       states: [
@@ -157,20 +187,6 @@ export default {
         {
           label: 'Regular',
           transformProps: props => props
-        },
-        {
-          label: 'Strong',
-          transformProps: props => ({
-            ...props,
-            descriptionProps: { ...props.descriptionProps, strong: true }
-          })
-        },
-        {
-          label: 'Light',
-          transformProps: props => ({
-            ...props,
-            descriptionProps: { ...props.descriptionProps, light: true }
-          })
         },
         {
           label: 'Semi-strong',

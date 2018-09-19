@@ -1,11 +1,10 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
-@list-item-padding: @grid-base * 3;
-@list-item-padding-compact: @grid-base * 2;
-@list-item-line-height-compact: (@grid-base * 4) + 2; //this is as per brandportal spec
+@list-item-padding: (@grid-base * 3) - 2;
+@list-item-padding-compact: (@grid-base * 2) - 2; // used for top and bottom padding, when combined them together will get a 12px total vertical padding
 @list-item-line-height: @grid-base * 5;
 @list-item-icon-padding-top: @grid-base / 2;
-@list-item-second-level-padding-left: @grid-base * 8;
+@list-item-second-level-padding-left: @grid-base * 10;
 
 .__listItemBg(@color) {
   background-color: @color;
@@ -17,11 +16,10 @@
   box-shadow: 0 1px 1px @saGrey5;
   color: @saGrey1;
   display: flex;
+  font-size: @grid-base * 4;
+  justify-content: space-between;
   line-height: @list-item-line-height;
   padding: @list-item-padding;
-  &.disableBackground {
-    .__listItemBg(transparent);
-  }
 }
 
 .noShadow {
@@ -34,16 +32,26 @@
 }
 
 .listItemBadge {
+  align-items: center;
   display: inline-block;
   margin-left: @grid-base;
-  transform: translateY(@grid-base * -0.5);
+  height: @grid-base * 5;
 }
 
 .listItemIcon {
+  align-items: center;
+  justify-content: center;
   color: @saGrey4;
-  padding-top: @list-item-icon-padding-top;
-  padding-right: @list-item-padding;
+  display: flex;
   vertical-align: middle;
+  flex-basis: @list-item-line-height;
+  width: @list-item-line-height;
+  height: @list-item-line-height;
+  margin-right: @grid-base * 3;
+}
+
+.listItemContent {
+  flex: 9999;
 }
 
 .listItemTitle {
@@ -52,7 +60,16 @@
 }
 
 .listItemValue {
-  line-height: inherit;
+  min-height: @grid-base * 5;
+}
+
+.listItemCheckbox {
+  margin-left: @grid-base * 3;
+  display: flex;
+  align-items: center;
+  flex-basis: @list-item-line-height;
+  width: @list-item-line-height;
+  height: @list-item-line-height;
 }
 
 .secondLevelListItem {
@@ -74,5 +91,8 @@
 .compact {
   padding-top: @list-item-padding-compact;
   padding-bottom: @list-item-padding-compact;
-  line-height: @list-item-line-height-compact;
+}
+
+.disableBackground {
+  .__listItemBg(transparent);
 }

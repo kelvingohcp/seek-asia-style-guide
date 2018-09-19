@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import ListItem from './ListItem';
-import { IconEducation } from 'seek-asia-style-guide/react';
+import { Icons } from 'seek-asia-style-guide/react';
 import styles from './ListItem.less';
 
 describe('ListItem:', () => {
@@ -36,22 +36,22 @@ describe('ListItem:', () => {
   });
 
   it('should render icon', () => {
-    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} />);
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<Icons iconName="education" />} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render icon in compact mode', () => {
-    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} compact />);
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<Icons iconName="education" />} compact />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render icon in hasHoverState mode', () => {
-    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} hasHoverState />);
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<Icons iconName="education" />} hasHoverState />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render icon with badge with hasHoverState and compact mode', () => {
-    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<IconEducation />} hasHoverState compact badge={{ color: 'default', isBold: true, label: 'badge' }} />);
+    const wrapper = shallow(<ListItem value="testValue" title="testTitle" icon={<Icons iconName="education" />} hasHoverState compact badge={{ color: 'default', isBold: true, label: 'badge' }} />);
     expect(wrapper).toMatchSnapshot();
   });
 

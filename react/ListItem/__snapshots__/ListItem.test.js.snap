@@ -4,13 +4,14 @@ exports[`ListItem: should render custom left padding 1`] = `
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -34,13 +35,14 @@ exports[`ListItem: should render custom left padding with light font weight 1`] 
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -65,13 +67,14 @@ exports[`ListItem: should render custom left padding with light font weight and 
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -97,13 +100,14 @@ exports[`ListItem: should render custom left padding with light font weight, sec
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -132,15 +136,18 @@ exports[`ListItem: should render icon 1`] = `
   <div
     className="listItemIcon"
   >
-    <Education icon />
+    <Icons
+      iconName="education"
+    />
   </div>
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -167,15 +174,18 @@ exports[`ListItem: should render icon in compact mode 1`] = `
   <div
     className="listItemIcon"
   >
-    <Education icon />
+    <Icons
+      iconName="education"
+    />
   </div>
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
       intimate={true}
-      light={false}
-      regular={true}
+      light={true}
     >
       testTitle
     </Text>
@@ -202,15 +212,18 @@ exports[`ListItem: should render icon in hasHoverState mode 1`] = `
   <div
     className="listItemIcon"
   >
-    <Education icon />
+    <Icons
+      iconName="education"
+    />
   </div>
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -237,15 +250,18 @@ exports[`ListItem: should render icon with badge with hasHoverState and compact 
   <div
     className="listItemIcon"
   >
-    <Education icon />
+    <Icons
+      iconName="education"
+    />
   </div>
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
       intimate={true}
-      light={false}
-      regular={true}
+      light={true}
     >
       testTitle
     </Text>
@@ -278,13 +294,14 @@ exports[`ListItem: should render title value 1`] = `
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <Text
       baseline={false}
       className="listItemTitle"
-      intimate={true}
+      intimate={false}
       light={true}
-      regular={false}
     >
       testTitle
     </Text>
@@ -308,7 +325,9 @@ exports[`ListItem: should render value 1`] = `
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <div
       className="listItemValue"
     >
@@ -329,7 +348,9 @@ exports[`ListItem: should render with className 1`] = `
 <div
   className="root"
 >
-  <div>
+  <div
+    className="listItemContent"
+  >
     <div
       className="listItemValue"
     >
