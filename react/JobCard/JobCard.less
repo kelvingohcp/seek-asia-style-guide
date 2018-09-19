@@ -23,6 +23,7 @@
     padding: (@grid-base * 3) (@grid-base * 4);
     grid-gap: @grid-base;
   }
+  word-break: break-word;
 }
 
 .headerSection {
@@ -40,7 +41,6 @@
   padding-bottom: @grid-base;
   color: @saGrey1;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -172,7 +172,6 @@
 .jobInfo {
   padding-bottom: @job-card-text-space;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
   color: @saGrey1;
   /* stylelint-disable-next-line */
@@ -233,7 +232,6 @@
 .positionTitle {
   padding-bottom: @job-card-text-space;
   display: inline;
-  word-wrap: break-word;
 }
 
 .positionLink {
