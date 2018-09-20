@@ -23,7 +23,10 @@
   @tablet-breakpoint,
   (@desktop-breakpoint - 1)
 );
-@new-desktop-widescreen: %(~'only screen and (min-width: %s)', @desktop-breakpoint);
+@new-desktop-widescreen: %(
+  ~'only screen and (min-width: %s)',
+  @desktop-breakpoint
+);
 
 // DEPRECATED: Use @mobile variable instead.
 .smallDeviceOnly(@rules) {
@@ -37,4 +40,13 @@
   @media @desktop {
     @rules();
   }
+}
+
+/* stylelint-disable property-no-unknown */
+
+:export {
+  responsive-breakpoint: @responsive-breakpoint;
+  mobile-breakpoint: @mobile-breakpoint;
+  tablet-breakpoint: @tablet-breakpoint;
+  desktop-breakpoint: @desktop-breakpoint;
 }

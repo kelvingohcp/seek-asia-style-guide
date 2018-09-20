@@ -4,4 +4,16 @@
 @z-index-backdrop: 200;
 @z-index-inline-overlay: 100;
 @z-index-negative: -99;
-@z-index-header-dropdown:10;
+@z-index-header-dropdown: 10;
+
+/* stylelint-disable property-no-unknown */
+
+:export {
+  z-index-header-overlay: @z-index-header-overlay;
+  z-index-header: @z-index-header;
+  z-index-page-overlay: @z-index-page-overlay;
+  z-index-backdrop: @z-index-backdrop;
+  z-index-inline-overlay: @z-index-inline-overlay;
+  z-index-negative: @z-index-negative;
+  z-index-header-dropdown: @z-index-header-dropdown;
+}
