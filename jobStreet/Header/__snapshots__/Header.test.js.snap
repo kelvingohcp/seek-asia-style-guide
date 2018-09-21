@@ -41,6 +41,26 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "title": "Education",
         "url": "https://jobstreet.com.my/en/career-insights",
       },
+      Object {
+        "ItemIcon": [Function],
+        "children": Array [
+          Object {
+            "title": "Overseas Jobs",
+            "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
+          },
+          Object {
+            "title": "Fresh Grad Jobs",
+            "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
+          },
+          Object {
+            "title": "Classified Jobs",
+            "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
+          },
+        ],
+        "hideInDesktop": true,
+        "title": "More",
+        "url": "",
+      },
     ]
   }
   locales={
@@ -157,22 +177,6 @@ exports[`JobStreet Header passes through optional props 1`] = `
     }
   }
   mobileLoggedHomeUrl="/"
-  more={
-    Array [
-      Object {
-        "title": "Overseas Jobs",
-        "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
-      },
-      Object {
-        "title": "Fresh Grad Jobs",
-        "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
-      },
-      Object {
-        "title": "Classified Jobs",
-        "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
-      },
-    ]
-  }
 />
 `;
 
@@ -212,6 +216,26 @@ exports[`JobStreet Header renders with default props 1`] = `
         "title": "Education",
         "url": "https://jobstreet.com.my/en/career-insights",
       },
+      Object {
+        "ItemIcon": [Function],
+        "children": Array [
+          Object {
+            "title": "Overseas Jobs",
+            "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
+          },
+          Object {
+            "title": "Fresh Grad Jobs",
+            "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
+          },
+          Object {
+            "title": "Classified Jobs",
+            "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
+          },
+        ],
+        "hideInDesktop": true,
+        "title": "More",
+        "url": "",
+      },
     ]
   }
   locales={
@@ -328,21 +352,5 @@ exports[`JobStreet Header renders with default props 1`] = `
     }
   }
   mobileLoggedHomeUrl="/"
-  more={
-    Array [
-      Object {
-        "title": "Overseas Jobs",
-        "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
-      },
-      Object {
-        "title": "Fresh Grad Jobs",
-        "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
-      },
-      Object {
-        "title": "Classified Jobs",
-        "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
-      },
-    ]
-  }
 />
 `;

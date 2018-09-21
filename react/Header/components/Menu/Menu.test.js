@@ -79,6 +79,15 @@ describe('Menu', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render with sub links', () => {
+    const testProps = {
+      ...defaultProps,
+      links: [{ title: 'Title', url: 'http://seekasia.com/any', ItemIcon: FakeIcon, children: mockLinks }]
+    };
+    const wrapper = shallow(<Menu {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render with menu open', () => {
     const testProps = {
       ...defaultProps,

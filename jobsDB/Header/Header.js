@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Header.less';
 import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
-import { PortalIcon, LightbulbIcon, ResourcesIcon, JobFunctionIcon, ProfileIcon, JobInvitationIcon, EducationIcon, EventIcon } from 'seek-asia-style-guide/react';
+import { PortalIcon, LightbulbIcon, ResourcesIcon, JobFunctionIcon, ProfileIcon, JobInvitationIcon, EducationIcon, EventIcon, IconResume, IconBookmark, Icons } from 'seek-asia-style-guide/react';
 import { getLocalization } from '../localization';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/private/authStatusTypes';
 
@@ -18,9 +18,35 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
     icon = EventIcon;
   }
 
+  const profileItems =
+  [{
+    title: messages['header.myJobsDBResumesAndDocumentsTitle'],
+    ItemIcon: IconResume,
+    url: baseUrl + messages['header.myJobsDBResumesAndDocumentsUrl']
+  },
+  {
+    title: messages['header.myJobsDBApplicationHistoryListTitle'],
+    ItemIcon: props => {
+      return <Icons iconName='applicationHistory' {...props} />;
+    },
+    url: baseUrl + messages['header.myJobsDBApplicationHistoryListUrl']
+  },
+  {
+    title: messages['header.myJobsDBJobAlertsListTitle'],
+    ItemIcon: props => {
+      return <Icons iconName='jobAlert' {...props} />;
+    },
+    url: baseUrl + messages['header.myJobsDBJobAlertsListUrl']
+  },
+  {
+    title: messages['header.myJobsDBSaveJobsTitle'],
+    ItemIcon: IconBookmark,
+    url: messages['header.myJobsDBSaveJobsUrl']
+  }];
+
   const links = [
     authenticationStatus === AUTHENTICATED ?
-      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrlLoggedIn'], ItemIcon: PortalIcon }) :
+      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrlLoggedIn'], ItemIcon: PortalIcon, children: profileItems }) :
       ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrl'], ItemIcon: PortalIcon }),
     { title: messages['header.resourcesTitle'], url: baseUrl + messages['header.resourcesUrl'], ItemIcon: ResourcesIcon },
     { title: messages['header.careerInsightsTitle'], url: baseUrl + messages['header.careerInsightsUrl'], ItemIcon: icon }
@@ -43,7 +69,8 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
     messages,
     userAccMenuItems,
     baseUrl,
-    locales
+    locales,
+    profileItems
   };
 };
 

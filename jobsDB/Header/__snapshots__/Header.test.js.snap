@@ -150,6 +150,14 @@ exports[`JobsDB Header renders with default props 1`] = `
       "header.mobileLoggedHomeUrl": "https://m.jobsdb.com/en-hk/jobsForYou.do",
       "header.mobileLoginUrl": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
       "header.mobileLogoutUrl": "https://m.jobsdb.com/en-hk/logout.do",
+      "header.myJobsDBApplicationHistoryListTitle": "Application History",
+      "header.myJobsDBApplicationHistoryListUrl": "/hk/en/MyJobsDB/ApplictationHistoryList",
+      "header.myJobsDBJobAlertsListTitle": "Job Alerts",
+      "header.myJobsDBJobAlertsListUrl": "/hk/en/MyJobsDB/JobAlertsList",
+      "header.myJobsDBResumesAndDocumentsTitle": "Resumes and Documents",
+      "header.myJobsDBResumesAndDocumentsUrl": "/hk/en/MyJobsDB/resumes-and-documents",
+      "header.myJobsDBSaveJobsTitle": "Save Jobs",
+      "header.myJobsDBSaveJobsUrl": "https://m.jobsdb.com/en-hk/saveJobs.do",
       "header.myJobsDBTitle": "My jobsDB",
       "header.myJobsDBUrl": "/hk/en/MyJobsDB",
       "header.myJobsDBUrlLoggedIn": "/hk/en/MyJobsDB",
@@ -171,6 +179,30 @@ exports[`JobsDB Header renders with default props 1`] = `
     }
   }
   mobileLoggedHomeUrl="/hk"
+  profileItems={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "title": "Resumes and Documents",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/resumes-and-documents",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "title": "Application History",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/ApplictationHistoryList",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "title": "Job Alerts",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/JobAlertsList",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "title": "Save Jobs",
+        "url": "https://m.jobsdb.com/en-hk/saveJobs.do",
+      },
+    ]
+  }
   selectCountry={true}
   userAccMenuItems={
     Array [

@@ -30,7 +30,7 @@ const renderPrimaryNavLinks = ({ brandStyles }, links, _style, linkRenderer) => 
   const primaryNavLinks = (links && links.map) ?
     links.map((link, index) => {
       return (
-        <span key={index} className={styles.primaryNavLinkWrapper}>
+        <span key={index} className={link.hideInDesktop ? styles.hideInDesktop : styles.primaryNavLinkWrapper}>
           {
             linkRenderer({
               href: link.url,
@@ -85,7 +85,6 @@ export default class Header extends Component {
       mobileLoggedHomeUrl,
       activeTab,
       links,
-      more,
       locales,
       messages,
       brandStyles,
@@ -173,7 +172,6 @@ export default class Header extends Component {
             shouldShowMenu={menuOpen}
             messages={messages}
             links={links}
-            more={more}
             locales={localeList}
             brandStyles={brandStyles}
             loginAvailable={loginAvailable}
@@ -196,7 +194,6 @@ Header.propTypes = {
   activeTab: PropTypes.string,
   mobileLoggedHomeUrl: PropTypes.string,
   links: PropTypes.array,
-  more: PropTypes.array,
   locales: PropTypes.array.isRequired,
   country: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,

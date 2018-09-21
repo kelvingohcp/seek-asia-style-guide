@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './Menu.less';
 import MenuItem from './components/MenuItem/MenuItem';
-import { Text, Section, MoreIcon, ChevronIcon, CheckMarkIcon, GlobeIcon, EmployerIcon, ProfileIcon, JobInvitationIcon } from 'seek-asia-style-guide/react';
+import { Text, Section, ChevronIcon, CheckMarkIcon, GlobeIcon, EmployerIcon, ProfileIcon, JobInvitationIcon } from 'seek-asia-style-guide/react';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
 export default class Menu extends Component {
@@ -11,34 +11,48 @@ export default class Menu extends Component {
     super();
 
     this.state = {
-      moreMenuOpen: false,
+      subMenuOpen: false,
       localesMenuOpen: false
     };
   }
 
-  toggleMoreMenu() {
-    this.setState({ moreMenuOpen: !this.state.moreMenuOpen });
+  toggleSubMenu() {
+    this.setState({ subMenuOpen: !this.state.subMenuOpen });
   }
 
   toggleLocalesMenu() {
     this.setState({ localesMenuOpen: !this.state.localesMenuOpen });
   }
 
-  renderMenuLinks = ({ more, messages, brandStyles, linkRenderer }, links) => {
+  renderMenuLinks = ({ messages, brandStyles, linkRenderer }, links) => {
     if (links && links.map) {
       const menuItems = links.map((link, index) => (
-        <MenuItem key={index} linkUrl={link.url} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-          <Text>{link.title}</Text>
-        </MenuItem>
-      ));
-
-      if (more) {
-        menuItems.push((
-          <MenuItem key={menuItems.length} handleClick={this.toggleMoreMenu.bind(this)} ItemIcon={MoreIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-            <Text>{messages['menu.more']}</Text>
+        link.children ? (
+          <div>
+            <MenuItem handleClick={this.toggleSubMenu.bind(this)} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              <Text>{link.title}</Text>
+            </MenuItem>
+            <div className={this.state.subMenuOpen ? styles.showSubMenu : styles.subMenu}>
+              <MenuItem handleClick={this.toggleSubMenu.bind(this)} itemClass={styles.backLink} ItemIcon={ChevronIcon} iconProps={{ direction: 'left', svgClassName: styles.backChevron }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+                <Text>{messages['menu.backToMenu']}</Text>
+              </MenuItem>
+              {
+                link.children && link.children.map((sublink, i) => {
+                  return (
+                    <MenuItem key={i} linkUrl={sublink.url} itemClass={styles.subItem} ItemIcon={sublink.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+                      <Text>{sublink.title}</Text>
+                    </MenuItem>
+                  );
+                })
+              }
+            </div>
+          </div>
+        ) : (
+          <MenuItem key={index} linkUrl={link.url} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+            <Text>{link.title}</Text>
           </MenuItem>
-        ));
-      }
+        )
+      ));
 
       return (
         <div className={styles.menuBody}>
@@ -50,7 +64,7 @@ export default class Menu extends Component {
     return null;
   }
   render() {
-    const { messages, shouldShowMenu, links, locales, more, brandStyles, employerSite, authenticationStatus, baseUrl, userName, linkRenderer, loginAvailable } = this.props;
+    const { messages, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, baseUrl, userName, linkRenderer, loginAvailable } = this.props;
     return (
       <div className={classnames(styles.root, { [styles.showMenu]: shouldShowMenu })}>
         <Section className={styles.headerMenu}>
@@ -66,7 +80,7 @@ export default class Menu extends Component {
             </MenuItem>
           </div>)
         }
-        {this.renderMenuLinks({ more, messages, brandStyles, linkRenderer }, links)}
+        {this.renderMenuLinks({ messages, brandStyles, linkRenderer }, links)}
         {
           authenticationStatus === UNAUTHENTICATED && employerSite && (<div className={styles.menuBody}>
             <MenuItem linkUrl={baseUrl + messages['header.employerSiteUrl']} ItemIcon={EmployerIcon} iconProps={{ svgClassName: styles.employer }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
@@ -108,19 +122,6 @@ export default class Menu extends Component {
             </MenuItem>
           )
         }
-        <div className={this.state.moreMenuOpen ? styles.showSubMenu : styles.subMenu}>
-          <MenuItem handleClick={this.toggleMoreMenu.bind(this)} itemClass={styles.backLink} ItemIcon={ChevronIcon} iconProps={{ direction: 'left', svgClassName: styles.backChevron }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-            <Text>{messages['menu.backToMenu']}</Text>
-          </MenuItem>
-          <Section className={styles.headerMenu}>
-            <Text whisperingTitle>{messages['menu.moreHeader']}</Text>
-          </Section>
-          {more && more.map && more.map((link, index) => (
-            <MenuItem key={index} linkUrl={link.url} itemClass={styles.moreItem} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <Text>{link.title}</Text>
-            </MenuItem>
-          ))}
-        </div>
         <div className={this.state.localesMenuOpen ? styles.showSubMenu : styles.subMenu}>
           <MenuItem handleClick={this.toggleLocalesMenu.bind(this)} itemClass={styles.backLink} ItemIcon={ChevronIcon} iconProps={{ direction: 'left', svgClassName: styles.backChevron }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
             <Text>{messages['menu.backToMenu']}</Text>
@@ -152,7 +153,6 @@ Menu.propTypes = {
   shouldShowMenu: PropTypes.bool,
   links: PropTypes.array,
   locales: PropTypes.array.isRequired,
-  more: PropTypes.array,
   brandStyles: PropTypes.object.isRequired,
   rightLinks: PropTypes.array,
   menulinks: PropTypes.array,

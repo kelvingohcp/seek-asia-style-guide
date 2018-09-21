@@ -235,14 +235,6 @@ exports[`Header should pass through optional props 1`] = `
           "header.homeUrl": "http://seekasia.com/home",
         }
       }
-      more={
-        Array [
-          Object {
-            "title": "Space Piracy Jobs",
-            "url": "http://seekasia.com/space-piracy",
-          },
-        ]
-      }
       shouldShowMenu={false}
     />
   </PageBlock>

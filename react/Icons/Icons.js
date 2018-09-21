@@ -1,15 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconPack from './Icons.path';
+import Icon from '../private/Icon/Icon';
+
+const getIconSvg = getItem => {
+  return (
+    `<svg width="24" height="24" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <title>${getItem.name}</title>
+      <path d="${getItem.path}" fill="currentColor" />
+    </svg>`
+  );
+};
 
 const Icons = ({ iconName, ...restProps }) => {
   const getItem = IconPack.find(x => x.name === iconName);
-  return (getItem) ? (
-    <svg {...restProps} width="24" height="24" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-      <title>{getItem.name}</title>
-      <path d={getItem.path} fill="currentColor" />
-    </svg>
-  ) : null;
+  if (getItem) {
+    const svgMarkup = getIconSvg(getItem);
+    return <Icon markup={svgMarkup} {...restProps} />;
+  }
+  return null;
 };
 
 Icons.propTypes = {
