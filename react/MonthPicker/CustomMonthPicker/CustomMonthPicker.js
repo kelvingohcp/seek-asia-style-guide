@@ -28,15 +28,16 @@ export default class CustomMonthPicker extends Component {
   static displayName = 'CustomMonthPicker';
 
   static propTypes = {
+    id: PropTypes.string.isRequired,
     onChange: PropTypes.func,
     onBlur: PropTypes.func,
+    onFocus: PropTypes.func,
     value: PropTypes.shape({
       month: PropTypes.number,
       year: PropTypes.number
     }),
     valid: PropTypes.bool,
     className: PropTypes.string,
-    id: PropTypes.string,
     minYear: PropTypes.number.isRequired,
     maxYear: PropTypes.number.isRequired,
     ascendingYears: PropTypes.bool.isRequired
@@ -55,6 +56,7 @@ export default class CustomMonthPicker extends Component {
     this.storeMonthReference = this.storeMonthReference.bind(this);
     this.storeYearReference = this.storeYearReference.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
     this.blurIfNotFocussed = this.blurIfNotFocussed.bind(this);
 
     this.yearOptions = getYearOptions(minYear, maxYear, ascendingYears);
@@ -132,6 +134,13 @@ export default class CustomMonthPicker extends Component {
     }
   }
 
+  handleFocus(evt) {
+    const { onFocus } = this.props;
+    if (typeof onFocus === 'function') {
+      onFocus(evt);
+    }
+  }
+
   render() {
     const { value, className, valid, id } = this.props;
     const { month, year } = value;
@@ -146,30 +155,34 @@ export default class CustomMonthPicker extends Component {
     return (
       <div className={rootClasses}>
         <Dropdown
-          {...(id ? { id } : {})}
+          id={`${id}-month`}
           options={months}
           className={styles.dropdown}
           valid={valid}
           message={false}
           placeholder="Month"
+          onChange={this.handleMonthChange}
+          onBlur={this.handleBlur}
+          onFocus={this.handleFocus}
+          value={monthValue}
           inputProps={{
-            onBlur: this.handleBlur,
-            onChange: this.handleMonthChange,
-            value: monthValue,
             className: styles.dropdownInput,
             ref: this.storeMonthReference
           }}
         />
+
         <Dropdown
+          id={`${id}-year`}
           options={this.yearOptions}
           className={styles.dropdown}
           valid={valid}
           message={false}
           placeholder="Year"
+          onChange={this.handleYearChange}
+          onBlur={this.handleBlur}
+          onFocus={this.handleFocus}
+          value={yearValue}
           inputProps={{
-            onBlur: this.handleBlur,
-            onChange: this.handleYearChange,
-            value: yearValue,
             className: styles.dropdownInput,
             ref: this.storeYearReference
           }}
