@@ -17,7 +17,8 @@ describe('Header', () => {
       'header.homeUrl': 'http://seekasia.com/home',
       'header.employerSiteUrl': 'http://brand.seekasia.com',
       'header.employerSiteTitle': 'click here',
-      'header.employerLinkPrefix': 'Awesome employers should '
+      'header.employerLinkPrefix': 'Awesome employers should ',
+      'header.homeUrlText': 'awesome'
     },
     locales: [{
       title: 'Hong Kong (English)',

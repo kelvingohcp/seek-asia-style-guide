@@ -35,6 +35,7 @@ exports[`Header should pass through optional props 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -44,23 +45,18 @@ exports[`Header should pass through optional props 1`] = `
       className="primaryNavNoLogin"
     >
       <h1
-        className="desktopLogo"
-      >
-        <a
-          className="logoLink"
-          href="http://seekasia.com/home"
-        />
-        <FakeComponent
-          country="my"
-        />
-      </h1>
-      <h1
-        className="mobileLogo"
+        className="logo"
       >
         <a
           className="logoLink"
           href="/"
-        />
+        >
+          <ScreenReaderOnly
+            component="span"
+          >
+            awesome
+          </ScreenReaderOnly>
+        </a>
         <FakeComponent
           country="my"
         />
@@ -149,6 +145,7 @@ exports[`Header should pass through optional props 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -171,6 +168,7 @@ exports[`Header should pass through optional props 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
       showMenu={false}
@@ -233,6 +231,7 @@ exports[`Header should pass through optional props 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
       shouldShowMenu={false}
@@ -276,6 +275,7 @@ exports[`Header should render with default props 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -285,21 +285,18 @@ exports[`Header should render with default props 1`] = `
       className="primaryNavNoLogin"
     >
       <h1
-        className="desktopLogo"
-      >
-        <a
-          className="logoLink"
-          href="http://seekasia.com/home"
-        />
-        <FakeComponent />
-      </h1>
-      <h1
-        className="mobileLogo"
+        className="logo"
       >
         <a
           className="logoLink"
           href="/"
-        />
+        >
+          <ScreenReaderOnly
+            component="span"
+          >
+            awesome
+          </ScreenReaderOnly>
+        </a>
         <FakeComponent />
       </h1>
       <div
@@ -321,6 +318,7 @@ exports[`Header should render with default props 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -342,6 +340,7 @@ exports[`Header should render with default props 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
     />
@@ -379,6 +378,7 @@ exports[`Header should render with default props 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
       shouldShowMenu={false}
@@ -422,6 +422,7 @@ exports[`Header should render with links list 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -431,21 +432,18 @@ exports[`Header should render with links list 1`] = `
       className="primaryNavNoLogin"
     >
       <h1
-        className="desktopLogo"
-      >
-        <a
-          className="logoLink"
-          href="http://seekasia.com/home"
-        />
-        <FakeComponent />
-      </h1>
-      <h1
-        className="mobileLogo"
+        className="logo"
       >
         <a
           className="logoLink"
           href="/"
-        />
+        >
+          <ScreenReaderOnly
+            component="span"
+          >
+            awesome
+          </ScreenReaderOnly>
+        </a>
         <FakeComponent />
       </h1>
       <div
@@ -532,6 +530,7 @@ exports[`Header should render with links list 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -553,6 +552,7 @@ exports[`Header should render with links list 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
     />
@@ -614,6 +614,7 @@ exports[`Header should render with links list 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
       shouldShowMenu={false}
@@ -657,6 +658,7 @@ exports[`Header should render with login available 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -666,21 +668,18 @@ exports[`Header should render with login available 1`] = `
       className="primaryNav"
     >
       <h1
-        className="desktopLogo"
-      >
-        <a
-          className="logoLink"
-          href="http://seekasia.com/home"
-        />
-        <FakeComponent />
-      </h1>
-      <h1
-        className="mobileLogo"
+        className="logo"
       >
         <a
           className="logoLink"
           href="/"
-        />
+        >
+          <ScreenReaderOnly
+            component="span"
+          >
+            awesome
+          </ScreenReaderOnly>
+        </a>
         <FakeComponent />
       </h1>
       <div
@@ -705,6 +704,7 @@ exports[`Header should render with login available 1`] = `
             "header.employerSiteTitle": "click here",
             "header.employerSiteUrl": "http://brand.seekasia.com",
             "header.homeUrl": "http://seekasia.com/home",
+            "header.homeUrlText": "awesome",
           }
         }
         onMenuToggle={[Function]}
@@ -726,6 +726,7 @@ exports[`Header should render with login available 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
     />
@@ -763,6 +764,7 @@ exports[`Header should render with login available 1`] = `
           "header.employerSiteTitle": "click here",
           "header.employerSiteUrl": "http://brand.seekasia.com",
           "header.homeUrl": "http://seekasia.com/home",
+          "header.homeUrlText": "awesome",
         }
       }
       shouldShowMenu={false}

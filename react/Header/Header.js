@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import { Text, PageBlock } from 'seek-asia-style-guide/react';
 import Menu from './components/Menu/Menu';
 import ActionTray from './components/ActionTray/ActionTray';
@@ -82,7 +83,7 @@ export default class Header extends Component {
     const {
       LogoComponent,
       logoProps,
-      mobileLoggedHomeUrl,
+      homeUrl,
       activeTab,
       links,
       locales,
@@ -127,24 +128,17 @@ export default class Header extends Component {
             }
           </div>
           <div className={loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin}>
-            <h1 className={styles.desktopLogo}>
+            <h1 className={styles.logo}>
               {
                 linkRenderer({
                   className: styles.logoLink,
-                  href: messages['header.homeUrl'] || '/'
+                  href: homeUrl,
+                  children: <ScreenReaderOnly>{messages['header.homeUrlText']}</ScreenReaderOnly>
                 })
               }
               <LogoComponent {...logoProps} />
             </h1>
-            <h1 className={styles.mobileLogo}>
-              {
-                linkRenderer({
-                  className: styles.logoLink,
-                  href: mobileLoggedHomeUrl
-                })
-              }
-              <LogoComponent {...logoProps} />
-            </h1>
+
             {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
             {loginAvailable && <div className={styles.secondaryNav} />}
             <UserAccount
@@ -192,7 +186,7 @@ Header.propTypes = {
   LogoComponent: PropTypes.func.isRequired,
   logoProps: PropTypes.object,
   activeTab: PropTypes.string,
-  mobileLoggedHomeUrl: PropTypes.string,
+  homeUrl: PropTypes.string,
   links: PropTypes.array,
   locales: PropTypes.array.isRequired,
   country: PropTypes.string.isRequired,
@@ -216,5 +210,5 @@ Header.propTypes = {
 Header.defaultProps = {
   linkRenderer: defaultLinkRenderer,
   authenticationStatus: UNAUTHENTICATED,
-  mobileLoggedHomeUrl: '/'
+  homeUrl: '/'
 };

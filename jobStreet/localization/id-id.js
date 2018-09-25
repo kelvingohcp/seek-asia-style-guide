@@ -23,6 +23,7 @@ export default {
     'https://myjobstreet.jobstreet.co.id/home/feedback.php?site=id&sub=feedback',
   'footer.feedbackLinkText': 'Kirim Saran',
   'header.homeTitle': 'Home',
+  'header.homeUrlText': 'JOBSTREET',
   'header.homeUrl': baseUrl,
   'header.myJobStreetTitle': 'MyJobStreet',
   'header.myJobStreetUrl': 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',

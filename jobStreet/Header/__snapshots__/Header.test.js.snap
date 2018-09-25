@@ -12,6 +12,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
   authenticationStatus="unauthenticated"
   brandStyles={null}
   country="my"
+  homeUrl="/"
   language="en"
   linkRenderer={[Function]}
   links={
@@ -157,6 +158,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
       "header.freshGradJobsUrl": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
       "header.homeTitle": "Home",
       "header.homeUrl": "https://jobstreet.com.my",
+      "header.homeUrlText": "JOBSTREET",
       "header.loginTitle": "Log in",
       "header.loginUrl": "https://myjobstreet.jobstreet.com.my/login",
       "header.myAccountTitle": "My Account",
@@ -176,7 +178,6 @@ exports[`JobStreet Header passes through optional props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
-  mobileLoggedHomeUrl="/"
 />
 `;
 
@@ -187,6 +188,7 @@ exports[`JobStreet Header renders with default props 1`] = `
   authenticationStatus="unauthenticated"
   brandStyles={null}
   country="my"
+  homeUrl="/"
   language="en"
   linkRenderer={[Function]}
   links={
@@ -332,6 +334,7 @@ exports[`JobStreet Header renders with default props 1`] = `
       "header.freshGradJobsUrl": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
       "header.homeTitle": "Home",
       "header.homeUrl": "https://jobstreet.com.my",
+      "header.homeUrlText": "JOBSTREET",
       "header.loginTitle": "Log in",
       "header.loginUrl": "https://myjobstreet.jobstreet.com.my/login",
       "header.myAccountTitle": "My Account",
@@ -351,6 +354,5 @@ exports[`JobStreet Header renders with default props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
-  mobileLoggedHomeUrl="/"
 />
 `;

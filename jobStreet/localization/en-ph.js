@@ -24,6 +24,7 @@ export default {
     'https://myjobstreet.jobstreet.com.ph/home/feedback.php?site=ph&sub=feedback',
   'footer.feedbackLinkText': 'Send Feedback',
   'header.homeTitle': 'Home',
+  'header.homeUrlText': 'JOBSTREET',
   'header.homeUrl': baseUrl,
   'header.myJobStreetTitle': 'MyJobStreet',
   'header.myJobStreetUrl': 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',

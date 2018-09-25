@@ -90,7 +90,7 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
       selectCountry={selectCountry}
       userName={userName}
       authenticationStatus={authenticationStatus}
-      mobileLoggedHomeUrl={(authenticationStatus === AUTHENTICATED) ? messages['header.mobileLoggedHomeUrl'] : messages['header.homeUrl']}
+      homeUrl={messages['header.homeUrl']}
       {...restProps}
     />
   );
