@@ -1,46 +1,29 @@
-// Breakpoint
-@responsive-breakpoint: 770px;
+// Please refer to here for https://getbootstrap.com/docs/3.3/css/#grid-options
+// Note that @grid-gutter-width is @grid-base * 4
+@mobile-breakpoint: 768px;
+@tablet-breakpoint: 992px;
+@responsive-breakpoint: @tablet-breakpoint;
+@desktop-breakpoint: 1200px;
 
-@mobile: %(~'only screen and (max-width: %s)', (@responsive-breakpoint - 1));
+@mobile: %(
+  ~'only screen and (max-width: %s)',
+  (@mobile-breakpoint - 1)
+); // alias to make thing less broken, as in mobile first approach it is not necessary as always be the default state
+@tablet: %(~'only screen and (min-width: %s)', @mobile-breakpoint);
+@desktop: %(~'only screen and (min-width: %s)', @tablet-breakpoint);
+@widescreen: %(~'only screen and (min-width: %s)', @desktop-breakpoint);
 
-@desktop: %(~'only screen and (min-width: %s)', @responsive-breakpoint);
-
-//New rules as proposed by design
-//The plan is to eventually replace values above with these
-//These values and names are still not final and subject to change
-@mobile-breakpoint: 770px;
-@tablet-breakpoint: 1024px;
-@desktop-breakpoint: 1280px;
-
-@new-mobile: %(~'only screen and (max-width: %s)', (@mobile-breakpoint - 1));
-@new-tablet: %(
+/* screen size between breakpoints (lower breakpoint inclusive) */
+@tablet-only: %(
   ~'only screen and (min-width: %s) and (max-width: %s)',
   @mobile-breakpoint,
   (@tablet-breakpoint - 1)
 );
-@new-desktop: %(
+@desktop-only: %(
   ~'only screen and (min-width: %s) and (max-width: %s)',
   @tablet-breakpoint,
   (@desktop-breakpoint - 1)
 );
-@new-desktop-widescreen: %(
-  ~'only screen and (min-width: %s)',
-  @desktop-breakpoint
-);
-
-// DEPRECATED: Use @mobile variable instead.
-.smallDeviceOnly(@rules) {
-  @media @mobile {
-    @rules();
-  }
-}
-
-// DEPRECATED: Use @desktop variable instead.
-.aboveSmallDevice(@rules) {
-  @media @desktop {
-    @rules();
-  }
-}
 
 /* stylelint-disable property-no-unknown */
 

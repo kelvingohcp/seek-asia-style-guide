@@ -1,4 +1,4 @@
-@import (reference) "~seek-asia-style-guide/theme";
+@import (reference) '~seek-asia-style-guide/theme';
 
 @suggestionContainerRowsOffset: 12;
 @suggestionFieldHeightInRows: 10;
@@ -28,10 +28,9 @@
   max-height: 385px;
   overflow-y: auto;
   top: @grid-row-height * @suggestionContainerRowsOffset;
-
-  .smallDeviceOnly({
-    max-height: ~"calc(100vh - @{containerHeight})";
-  });
+  @media @mobile {
+    max-height: ~'calc(100vh - @{containerHeight})';
+  }
 }
 
 .suggestionsContainerOpen {
@@ -104,9 +103,9 @@
   visibility: visible;
 
   &.backdrop_isMobile {
-    .smallDeviceOnly({
+    @media @mobile {
       .backdrop();
-    });
+    }
   }
 }
 
