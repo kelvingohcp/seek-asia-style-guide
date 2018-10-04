@@ -153,6 +153,7 @@ export default class Header extends Component {
             />
           </div>
           <ActionTray
+            country={country}
             {...actionTrayProps}
             brandStyles={brandStyles}
             messages={messages}

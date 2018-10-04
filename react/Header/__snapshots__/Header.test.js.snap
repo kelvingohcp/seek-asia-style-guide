@@ -159,6 +159,7 @@ exports[`Header should pass through optional props 1`] = `
           "primaryNavLink": "primaryNavLink",
         }
       }
+      country="hk"
       handleToggleMenu={[Function]}
       linkRenderer={[Function]}
       menuOpen={false}
@@ -331,6 +332,7 @@ exports[`Header should render with default props 1`] = `
           "primaryNavLink": "primaryNavLink",
         }
       }
+      country="hk"
       handleToggleMenu={[Function]}
       linkRenderer={[Function]}
       menuOpen={false}
@@ -543,6 +545,7 @@ exports[`Header should render with links list 1`] = `
           "primaryNavLink": "primaryNavLink",
         }
       }
+      country="hk"
       handleToggleMenu={[Function]}
       linkRenderer={[Function]}
       menuOpen={false}
@@ -717,6 +720,7 @@ exports[`Header should render with login available 1`] = `
           "primaryNavLink": "primaryNavLink",
         }
       }
+      country="hk"
       handleToggleMenu={[Function]}
       linkRenderer={[Function]}
       menuOpen={false}

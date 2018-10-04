@@ -96,4 +96,13 @@ describe('ActionTray', () => {
     const wrapper = shallow(<ActionTray {...testProps} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with country hk', () => {
+    const testProps = {
+      ...defaultProps,
+      country: 'hk'
+    };
+    const wrapper = shallow(<ActionTray {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

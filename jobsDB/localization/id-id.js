@@ -32,7 +32,7 @@ export default {
   'header.logoutTitle': 'Keluar',
   'header.logoutUrl': '/id/en/login/jobseekerlogoff',
   'header.seperatorOr': 'atau',
-  'header.searchUrl': '/ID/ID/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=JSRSB',
+  'header.searchUrl': '/ID/ID/Search/FindJobs?JSRV=1&page=1',
   'menu.jobSeekerHeader': 'KANDIDAT',
   'menu.jobSeekerProfile': 'PROFIL',
   'menu.settingsHeader': 'PENGATURAN',

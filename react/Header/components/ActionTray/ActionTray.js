@@ -1,16 +1,18 @@
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { HomeIcon, SearchIcon, HamburgerIcon, Constants } from 'seek-asia-style-guide/react';
+import { Icons, HamburgerIcon, Constants } from 'seek-asia-style-guide/react';
 import styles from './ActionTray.less';
 
-const actionTrayLink = ({ linkUrl, LinkIcon, activeTab, tabName, menuOpen, brandStyles, showFlag, handleToggleMenu, linkRenderer }) => {
+const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, showFlag, handleToggleMenu, linkRenderer, title, iconName }) => {
   if (showFlag) {
     return activeTab === tabName ? (
       <div
         onClick={(menuOpen && activeTab === tabName) ? handleToggleMenu : undefined} // eslint-disable-line no-undefined
         className={menuOpen ? styles.menuToggle : styles.actionTrayTab}>
-        <LinkIcon
+        <Icons
+          title={title}
+          iconName={iconName}
           svgClassName={classnames(styles.svg, {
             [brandStyles.activeActionTrayIcon]: !menuOpen
           })}
@@ -22,7 +24,7 @@ const actionTrayLink = ({ linkUrl, LinkIcon, activeTab, tabName, menuOpen, brand
           linkRenderer({
             href: linkUrl,
             className: styles.actionTrayLink,
-            children: <LinkIcon svgClassName={styles.svg} />
+            children: <Icons title={title} iconName={iconName} svgClassName={styles.svg} />
           })
         }
       </div>
@@ -33,7 +35,6 @@ const actionTrayLink = ({ linkUrl, LinkIcon, activeTab, tabName, menuOpen, brand
 
 actionTrayLink.propTypes = {
   linkUrl: PropTypes.string,
-  LinkIcon: PropTypes.func,
   activeTab: PropTypes.string,
   tabName: PropTypes.string,
   menuOpen: PropTypes.bool,
@@ -41,10 +42,12 @@ actionTrayLink.propTypes = {
   brandStyles: PropTypes.object.isRequired,
   handleToggleMenu: PropTypes.func,
   baseUrl: PropTypes.string.isRequired,
-  linkRenderer: PropTypes.func
+  linkRenderer: PropTypes.func,
+  title: PropTypes.string,
+  iconName: PropTypes.string
 };
 
-const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOpen, showTray = true, showHome = true, showSearch = true, showMenu = true, baseUrl, linkRenderer }) => {
+const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOpen, showTray = true, showHome = true, showSearch = true, showMenu = true, baseUrl, country, linkRenderer }) => {
   const actionTrayLinkProps = {
     brandStyles,
     activeTab,
@@ -53,12 +56,14 @@ const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOp
     linkRenderer
   };
   const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH } = Constants;
-
   if (showTray) {
     return (
       <div className={styles.root}>
-        {actionTrayLink({ showFlag: showHome, LinkIcon: HomeIcon, linkUrl: baseUrl + messages['header.homeUrl'], tabName: ACTIVE_TAB_HOME, ...actionTrayLinkProps })}
-        {actionTrayLink({ showFlag: showSearch, LinkIcon: SearchIcon, linkUrl: baseUrl + messages['header.searchUrl'], tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps })}
+        {actionTrayLink({ showFlag: showHome, iconName: 'home', linkUrl: baseUrl + messages['header.homeUrl'], tabName: ACTIVE_TAB_HOME, ...actionTrayLinkProps })}
+        { country === 'hk' ?
+          actionTrayLink({ showFlag: showSearch, iconName: 'search', linkUrl: baseUrl + messages['header.searchUrl'], title: 'Search HK Jobs', tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps }) :
+          actionTrayLink({ showFlag: showSearch, iconName: 'search', linkUrl: baseUrl + messages['header.searchUrl'], tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps })
+        }
         {showMenu && (
           <div onClick={handleToggleMenu} className={styles.menuToggle}>
             <HamburgerIcon svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} />
@@ -81,7 +86,8 @@ ActionTray.propTypes = {
   showSearch: PropTypes.bool,
   showMenu: PropTypes.bool,
   baseUrl: PropTypes.string,
-  linkRenderer: PropTypes.func
+  linkRenderer: PropTypes.func,
+  country: PropTypes.string
 };
 
 export default ActionTray;

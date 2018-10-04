@@ -51,6 +51,27 @@ exports[`ActionTray should not render search link if showSearch prop is explicit
 
 exports[`ActionTray should not render tray if showTray prop is explicitly false 1`] = `""`;
 
+exports[`ActionTray should render with country hk 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="actionTrayTab"
+  />
+  <div
+    className="actionTrayTab"
+  />
+  <div
+    className="menuToggle"
+    onClick={[MockFunction]}
+  >
+    <HamburgerIcon
+      svgClassName="svg"
+    />
+  </div>
+</div>
+`;
+
 exports[`ActionTray should render with default props 1`] = `
 <div
   className="root"
@@ -79,7 +100,8 @@ exports[`ActionTray should render with home tab active 1`] = `
   <div
     className="actionTrayTab"
   >
-    <HomeIcon
+    <Icons
+      iconName="home"
       svgClassName="svg activeActionTrayIcon"
     />
   </div>
@@ -126,7 +148,8 @@ exports[`ActionTray should render with menu open 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HomeIcon
+    <Icons
+      iconName="home"
       svgClassName="svg"
     />
   </div>
@@ -154,7 +177,8 @@ exports[`ActionTray should render with search tab active 1`] = `
   <div
     className="actionTrayTab"
   >
-    <SearchIcon
+    <Icons
+      iconName="search"
       svgClassName="svg activeActionTrayIcon"
     />
   </div>

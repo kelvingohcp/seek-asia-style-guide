@@ -33,7 +33,7 @@ export default {
   'header.logoutTitle': 'Log out',
   'header.logoutUrl': '/id/en/login/jobseekerlogoff',
   'header.seperatorOr': 'or',
-  'header.searchUrl': '/ID/EN/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS',
+  'header.searchUrl': '/ID/EN/Search/FindJobs?JSRV=1&page=1',
   'menu.jobSeekerHeader': 'JOB SEEKER',
   'menu.jobSeekerProfile': 'PROFILE',
   'menu.settingsHeader': 'SETTINGS',

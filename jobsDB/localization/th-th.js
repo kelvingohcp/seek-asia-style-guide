@@ -32,7 +32,7 @@ export default {
   'header.logoutTitle': 'ออกจากระบบ',
   'header.logoutUrl': '/th/th/login/jobseekerlogoff',
   'header.seperatorOr': 'หรือ',
-  'header.searchUrl': '/TH/TH/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS',
+  'header.searchUrl': '/TH/TH/Search/FindJobs?JSRV=1&page=1',
   'menu.jobSeekerHeader': 'ผู้หางาน',
   'menu.jobSeekerProfile': 'โปรไฟล์',
   'menu.settingsHeader': 'การตั้งค่า',

@@ -3,25 +3,26 @@ import PropTypes from 'prop-types';
 import IconPack from './Icons.path';
 import Icon from '../private/Icon/Icon';
 
-const getIconSvg = getItem => {
+const getIconSvg = (getItem, title) => {
   return (
     `<svg width="24" height="24" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-      <title>${getItem.name}</title>
+      <title>${title ? title : getItem.name}</title>
       <path d="${getItem.path}" fill="currentColor" />
     </svg>`
   );
 };
 
-const Icons = ({ iconName, ...restProps }) => {
-  const getItem = IconPack.find(x => x.name === iconName);
-  if (getItem) {
-    const svgMarkup = getIconSvg(getItem);
+const Icons = ({ iconName, title, ...restProps }) => {
+  const iconData = IconPack.find(x => x.name === iconName);
+  if (iconData) {
+    const svgMarkup = getIconSvg(iconData, title);
     return <Icon markup={svgMarkup} {...restProps} />;
   }
   return null;
 };
 
 Icons.propTypes = {
+  title: PropTypes.string,
   iconName: PropTypes.oneOf([
     'add',
     'advance',

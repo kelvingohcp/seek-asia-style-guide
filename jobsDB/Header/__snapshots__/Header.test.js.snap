@@ -166,7 +166,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "header.profileUrl": "/hk/en/MyJobsDB/profile",
       "header.resourcesTitle": "Resources",
       "header.resourcesUrl": "/en-hk/career-recruitment-advice/",
-      "header.searchUrl": "/HK/EN/Search/FindJobs?KeyOpt=COMPLEX&JSRV=1&RLRSF=1&JobCat=1&JSSRC=HPSS",
+      "header.searchUrl": "/hk/en/search/getsearchresult",
       "header.seperatorOr": "or",
       "header.signupTitle": "Sign up",
       "header.signupUrl": "/hk/en/jobseeker/registration",
