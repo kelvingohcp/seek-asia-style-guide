@@ -15,10 +15,6 @@ const PartnerSites = ({ messages, externalLink }) => {
       chevronAlignment='center'>
 
       {externalLink(
-        <ListItem value='BabaJob (India)' disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
-        messages['FooterHK.BabaJobLink']
-      )}
-      {externalLink(
         <ListItem value='Bdjobs (Bandladesh)' disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.BdjobsLink']
       )}
@@ -41,10 +37,6 @@ const PartnerSites = ({ messages, externalLink }) => {
       {externalLink(
         <ListItem value='Jora (Hong Kong)' disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
         messages['FooterHK.JoraLink']
-      )}
-      {externalLink(
-        <ListItem value='Manager (Brazil)' disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
-        messages['FooterHK.ManagerLink']
       )}
       {externalLink(
         <ListItem value='OCC Mundial (Mexico)' disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
