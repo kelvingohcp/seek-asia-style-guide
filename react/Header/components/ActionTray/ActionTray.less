@@ -1,5 +1,7 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
+@actionTrayHeight: @grid-base * 14;
+
 .root {
   display: flex;
   flex-direction: row;
@@ -10,7 +12,7 @@
   bottom: 0;
   z-index: @z-index-header-overlay + 1;
   width: 100%;
-  height: @grid-base * 14;
+  height: @actionTrayHeight;
   background-color: @saWhite;
   border-top: 1px solid @saGrey5;
   color: @saGrey4;

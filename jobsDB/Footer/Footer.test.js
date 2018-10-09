@@ -50,5 +50,10 @@ describe('Footer component', () => {
       const wrapper = shallow(<Footer language="en" country="hk" isExpandedVersion />);
       expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render without offset if prop is passed', () => {
+      const wrapper = shallow(<Footer language="en" country="hk" showHeaderActionTrayOffset={false} />);
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });

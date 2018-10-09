@@ -1,17 +1,24 @@
 @import (reference) "~seek-asia-style-guide/theme";
+@import (reference) "~seek-asia-style-guide/react/Header/components/ActionTray/ActionTray.less";
 
 .container {
+  padding: 0 (@grid-base * 2);
   margin: 0 auto;
-  padding: 0 20px;
   width: 100%;
   font-family:
     "Helvetica Neue",
     Helvetica,
     Arial,
     sans-serif;
-  @media @mobile {
-    padding: 0 8px;
-    margin-bottom: @grid-base * 14;
+  @media @desktop {
+    padding: 0 (@grid-base * 5);
+  }
+}
+
+.headerActionTrayOffset {
+  margin: 0 auto @actionTrayHeight;
+  @media @desktop {
+    margin: 0 auto;
   }
 }
 
@@ -38,7 +45,7 @@
 .pullRight {
   padding: 5px 0;
   @media @desktop {
-    padding: 12px 0;
+    padding: (@grid-base * 3) 0;
   }
   color: @saGrey3;
 }

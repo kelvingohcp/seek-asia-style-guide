@@ -19,21 +19,22 @@
 
 .upperWrapper {
   padding-top: @wrapper-up-padding-top;
+  padding-bottom: @wrapper-low-vertical-padding;
 }
 
 .lowerWrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: @wrapper-low-vertical-padding 0;
-  @media @mobile {
-    display: block;
-    padding-top: 0;
+  display: block;
+  padding: 0 0 @wrapper-low-vertical-padding;
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .copyright {
   text-align: center;
-  @media @mobile {
-    padding-top: @copyright-padding-top;
+  padding-top: @copyright-padding-top;
+  @media @desktop {
+    padding-top: 0;
   }
 }

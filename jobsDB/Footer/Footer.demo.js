@@ -125,6 +125,19 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'Remove header action tray offset',
+      type: 'checklist',
+      states: [
+        {
+          label: 'Hide mobile action tray offset',
+          transformProps: props => ({
+            ...props,
+            showHeaderActionTrayOffset: false
+          })
+        }
+      ]
     }
   ]
 };

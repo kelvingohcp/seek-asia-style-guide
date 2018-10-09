@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './footer.less';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import FooterHK from './FooterHK/FooterHK';
 import localization from './localization';
 
-const Footer = ({ language, country, isExpandedVersion, ...restProps }) => {
+const Footer = ({ language, country, isExpandedVersion, showHeaderActionTrayOffset = true, ...restProps }) => {
   const year = new Date().getFullYear();
   const messages = localization[`${language}-${country}`];
 
@@ -14,7 +15,7 @@ const Footer = ({ language, country, isExpandedVersion, ...restProps }) => {
     return (<FooterHK language={language} country={country} {...restProps} />);
   }
   return (
-    <footer className={styles.container}>
+    <footer className={classnames(styles.container, { [styles.headerActionTrayOffset]: showHeaderActionTrayOffset })}>
       <div className={styles.wrapper}>
         <div className={styles.pullRight}>
           <FooterLinks messages={messages} />
@@ -35,6 +36,7 @@ const Footer = ({ language, country, isExpandedVersion, ...restProps }) => {
 Footer.propTypes = {
   language: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
+  showHeaderActionTrayOffset: PropTypes.bool,
   isExpandedVersion: PropTypes.bool
 };
 
