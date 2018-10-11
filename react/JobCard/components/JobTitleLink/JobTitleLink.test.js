@@ -30,7 +30,7 @@ describe('JobCard - JobTitleLink', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should pass through viewed prop', () => {
+  it('should change className for viewed job', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} viewed />);
     expect(wrapper).toMatchSnapshot();
   });
