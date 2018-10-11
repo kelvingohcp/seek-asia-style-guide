@@ -9,7 +9,7 @@ export default function Tag({
   return (
     <span className={styles.root}>
       <Text className={styles.tagLabel} whistling strong>{label}</Text>
-    </span >
+    </span>
   );
 }
 
