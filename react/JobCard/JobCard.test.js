@@ -247,4 +247,9 @@ describe('JobCard', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with applied badge', () => {
+    const wrapper = shallow(<JobCard job={defaultJob} applied />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

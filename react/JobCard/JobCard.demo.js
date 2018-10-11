@@ -75,6 +75,16 @@ export default {
           transformProps: ({ className, ...props }) => ({
             ...props,
             job: {
+              ...props.job
+            },
+            applied: true
+          })
+        },
+        {
+          label: 'AppliedDate',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            job: {
               ...props.job,
               appliedDate: 'Applied on 20-Jul-2018'
             }

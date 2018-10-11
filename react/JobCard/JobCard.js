@@ -55,7 +55,8 @@ export default class JobCard extends React.Component {
       jobAdType,
       LinkComponent,
       TitleLinkComponent,
-      viewed
+      viewed,
+      applied = false
     } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
 
@@ -66,6 +67,11 @@ export default class JobCard extends React.Component {
           [styles.selected]: isSelected
         })}>
         <Section className={styles.headerSection}>
+          {applied && (
+            <span className={styles.appliedBadge}>
+              <Badge label={'Applied'} />
+            </span>
+          )}
           <JobTitleLink
             LinkComponent={TitleLinkComponent}
             viewed={viewed}
@@ -246,5 +252,6 @@ JobCard.propTypes = {
   LinkComponent: PropTypes.func,
   TitleLinkComponent: PropTypes.func,
   isSelected: PropTypes.bool,
-  viewed: PropTypes.bool
+  viewed: PropTypes.bool,
+  applied: PropTypes.bool
 };
