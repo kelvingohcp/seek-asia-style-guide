@@ -71,7 +71,7 @@ export default class Dropdown extends Component {
     const { id, value, onChange, onFocus, onBlur, inputProps, options, placeholder } = this.props;
     const inputStyles = classnames({
       [styles.dropdown]: true,
-      [styles.placeholderSelected]: !value && !inputProps.value
+      [styles.placeholderSelected]: !value && !inputProps.value && placeholder
     });
     const allInputProps = {
       id,
@@ -85,7 +85,7 @@ export default class Dropdown extends Component {
 
     return (
       <select {...allInputProps}>
-        <option value="" disabled={!this.props.placeholderSelectable}>
+        <option value="" disabled={!this.props.placeholderSelectable} className={classnames({ [styles.noPlaceholder]: !placeholder })}>
           {placeholder}
         </option>
         {
