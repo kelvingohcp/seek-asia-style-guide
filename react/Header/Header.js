@@ -36,7 +36,7 @@ const renderPrimaryNavLinks = ({ brandStyles }, links, _style, linkRenderer) => 
             linkRenderer({
               href: link.url,
               className: classnames(styles.primaryNavLink, brandStyles.primaryNavLink),
-              children: <Text> {link.title}</Text>
+              children: <Text data-automation={link.automationId}>{link.title}</Text>
             })}
         </span>
       );

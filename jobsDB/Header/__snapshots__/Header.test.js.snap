@@ -16,16 +16,19 @@ exports[`JobsDB Header renders with default props 1`] = `
     Array [
       Object {
         "ItemIcon": [Function],
+        "automationId": "myjobsDB",
         "title": "My jobsDB",
         "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
       },
       Object {
         "ItemIcon": [Function],
+        "automationId": "resources",
         "title": "Resources",
         "url": "https://hk.jobsdb.com/en-hk/career-recruitment-advice/",
       },
       Object {
         "ItemIcon": [Function],
+        "automationId": "career-insights",
         "title": "Career Insights",
         "url": "https://hk.jobsdb.com/hk/en/career-insights",
       },

@@ -46,10 +46,10 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
 
   const links = [
     authenticationStatus === AUTHENTICATED ?
-      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrlLoggedIn'], ItemIcon: PortalIcon, children: profileItems }) :
-      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrl'], ItemIcon: PortalIcon }),
-    { title: messages['header.resourcesTitle'], url: baseUrl + messages['header.resourcesUrl'], ItemIcon: ResourcesIcon },
-    { title: messages['header.careerInsightsTitle'], url: baseUrl + messages['header.careerInsightsUrl'], ItemIcon: icon }
+      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrlLoggedIn'], ItemIcon: PortalIcon, children: profileItems, automationId: 'myjobsDB' }) :
+      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrl'], ItemIcon: PortalIcon, automationId: 'myjobsDB' }),
+    { title: messages['header.resourcesTitle'], url: baseUrl + messages['header.resourcesUrl'], ItemIcon: ResourcesIcon, automationId: 'resources' },
+    { title: messages['header.careerInsightsTitle'], url: baseUrl + messages['header.careerInsightsUrl'], ItemIcon: icon, automationId: 'career-insights' }
   ];
 
   const userAccMenuItems = [

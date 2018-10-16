@@ -75,7 +75,6 @@ exports[`Header should pass through optional props 1`] = `
             <Text
               baseline={true}
             >
-               
               Home
             </Text>
           </a>
@@ -91,7 +90,6 @@ exports[`Header should pass through optional props 1`] = `
             <Text
               baseline={true}
             >
-               
               MyPortal
             </Text>
           </a>
@@ -107,7 +105,6 @@ exports[`Header should pass through optional props 1`] = `
             <Text
               baseline={true}
             >
-               
               Resources
             </Text>
           </a>
@@ -123,7 +120,6 @@ exports[`Header should pass through optional props 1`] = `
             <Text
               baseline={true}
             >
-               
               CareerInsights
             </Text>
           </a>
@@ -462,7 +458,6 @@ exports[`Header should render with links list 1`] = `
             <Text
               baseline={true}
             >
-               
               Home
             </Text>
           </a>
@@ -478,7 +473,6 @@ exports[`Header should render with links list 1`] = `
             <Text
               baseline={true}
             >
-               
               MyPortal
             </Text>
           </a>
@@ -494,7 +488,6 @@ exports[`Header should render with links list 1`] = `
             <Text
               baseline={true}
             >
-               
               Resources
             </Text>
           </a>
@@ -510,7 +503,6 @@ exports[`Header should render with links list 1`] = `
             <Text
               baseline={true}
             >
-               
               CareerInsights
             </Text>
           </a>

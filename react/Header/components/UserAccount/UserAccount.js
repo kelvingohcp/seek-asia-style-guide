@@ -55,7 +55,8 @@ export default class UserAccount extends Component {
                 href: `${baseUrl + messages['header.loginUrl']}`,
                 children: <Button
                   className={styles.userAcclink}
-                  color='hyperlink'>
+                  color='hyperlink'
+                  data-automation='log-in'>
                   {`${messages['header.loginTitle']}`}
                 </Button>
               })}
@@ -64,7 +65,8 @@ export default class UserAccount extends Component {
                 href: `${baseUrl + messages['header.signupUrl']}`,
                 children: <Button
                   className={styles.signup}
-                  color='hyperlink'>
+                  color='hyperlink'
+                  data-automation='sign-up'>
                   {`${messages['header.signupTitle']}`}
                 </Button>
               })}
@@ -74,7 +76,8 @@ export default class UserAccount extends Component {
                   children: <Button
                     className={styles.userAcclink}
                     color='tertiary'
-                    compact>
+                    compact
+                    data-automation='employer-site'>
                     {`${messages['header.employerSiteTitle']}`}
                   </Button>
                 })}
