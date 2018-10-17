@@ -23,7 +23,7 @@ export default {
     'https://myjobstreet.jobstreet.vn/home/feedback.php?site=vn&sub=feedback',
   'footer.feedbackLinkText': 'Gửi Phản Hồi',
   'header.homeTitle': 'Home',
-  'header.homeUrlText': 'JOBSTREET',
+  'header.homeUrlText': 'JobStreet.com',
   'header.homeUrl': baseUrl,
   'header.myJobStreetTitle': 'MyJobStreet',
   'header.myJobStreetUrl': 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',

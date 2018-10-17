@@ -2,7 +2,7 @@ import { FlagHKIcon, FlagIDIcon, FlagSGIcon, FlagTHIcon } from 'seek-asia-style-
 
 export default {
   'header.homeTitle': 'Home',
-  'header.homeUrlText': 'JOBSDB',
+  'header.homeUrlText': 'jobsDB.com',
   'header.homeUrl': '/th',
   'header.myJobsDBTitle': 'My jobsDB',
   'header.myJobsDBUrl': '/th/en/MyJobsDB',

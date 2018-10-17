@@ -145,7 +145,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "header.employerSiteUrl": "/hk/en/home/employerindex",
       "header.homeTitle": "Home",
       "header.homeUrl": "/hk",
-      "header.homeUrlText": "JOBSDB",
+      "header.homeUrlText": "jobsDB.com",
       "header.invitationTitle": "Job invitations",
       "header.invitationUrl": "/hk/en/Invitations/InvitationList",
       "header.loginTitle": "Log in",
