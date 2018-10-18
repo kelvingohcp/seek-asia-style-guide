@@ -73,6 +73,9 @@
 
 .root_callToAction {
   .buttonColor(@saWhite, @saBlue);
+  &.selected {
+    .selectedState({background-color: darken(@saBlue, 5%); color: @saWhite;});
+  }
   &.disabled {
     .disabled();
   }
@@ -80,6 +83,9 @@
 
 .jobStreet.root_callToAction {
   .buttonColor(@sk-black, @actionYellow);
+  &.selected {
+    .selectedState({background-color: darken(@actionYellow, 5%); color: @sk-black;});
+  }
   &.disabled {
     .disabled();
   }
@@ -87,6 +93,9 @@
 
 .jobsDB.root_callToAction {
   .buttonColor(@saWhite, @actionOrange);
+  &.selected {
+    .selectedState({background-color: darken(@actionOrange, 5%); color: @saWhite;});
+  }
   &.disabled {
     .disabled();
   }
