@@ -18,5 +18,6 @@
   "setupFiles": [
     "<rootDir>/test/setupPolyfills.js"
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>/test/setupTestFramework.js"
+  "setupTestFrameworkScriptFile": "<rootDir>/test/setupTestFramework.js",
+  "testURL": "http://localhost/"
 }
