@@ -9,6 +9,8 @@ import Section from '../Section/Section';
 import ChevronIcon from '../ChevronIcon/ChevronIcon';
 import LocationIcon from '../LocationIcon/LocationIcon';
 import MoneyIcon from '../MoneyIcon/MoneyIcon';
+import Bookmark from './components/Bookmark/Bookmark';
+import { BOOKMARKED, NOT_BOOKMARKED } from './components/Bookmark/Bookmark';
 import styles from './JobCard.less';
 import classnames from 'classnames';
 import { getJobAdTypeOption } from './jobCardHelper.js';
@@ -48,7 +50,6 @@ export default class JobCard extends React.Component {
 
   render() {
     const { shelfSectionOpen } = this.state;
-    const { isSelected } = this.props;
     const {
       job,
       keyword = '',
@@ -56,176 +57,185 @@ export default class JobCard extends React.Component {
       LinkComponent,
       TitleLinkComponent,
       viewed,
-      applied = false
+      applied = false,
+      isSelected,
+      bookmarked,
+      onBookmarkClick
     } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
 
     return (
-      <Card
-        className={classnames(styles.root, {
-          [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg,
-          [styles.selected]: isSelected
-        })}>
-        <Section className={styles.headerSection}>
-          {applied && (
-            <span className={styles.appliedBadge}>
-              <Badge label={'Applied'} />
-            </span>
-          )}
-          <JobTitleLink
-            LinkComponent={TitleLinkComponent}
-            viewed={viewed}
-            keyword={keyword}
-            job={job}
-          />
-        </Section>
-        <Section className={styles.bodySection}>
-          <div className={styles.bodyDetailsWrapper}>
-            <Text intimate baseline={false} className={styles.company}>
-              {job.classifiedLabel && (
-                <span className={styles.classifiedLabel}>
-                  {job.classifiedLabel}
-                </span>
-              )}
-              {job.confidentialLabel && (
-                <span className={styles.confidentialLabel}>
-                  {job.confidentialLabel}
-                </span>
-              )}
-              {job.company && (
-                <CompanyLink
-                  company={job.company}
-                  keyword={keyword}
-                  LinkComponent={LinkComponent}
-                />
-              )}
-            </Text>
-            {jobAdTypeOption.showSellingPoint &&
-              job.sellingPoints && (
-              <div
-                className={classnames(styles.sellingPointsSection, {
-                  [styles.withDescription]:
-                      jobAdTypeOption.showDescription && job.description
-                })}>
-                <ul className={styles.sellingPoints}>
-                  {job.sellingPoints.map((sellingPoint, i) => {
-                    return (
-                      <li key={i}>
-                        <Text
-                          intimate
-                          baseline={false}
-                          className={styles.sellingPoint}>
-                          {sellingPoint}
-                        </Text>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+      <div className={styles.container}>
+        <Bookmark bookmarked={bookmarked} onBookmarkClick={onBookmarkClick} />
+        <Card
+          className={classnames(styles.root, {
+            [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg,
+            [styles.selected]: isSelected
+          })}>
+          <Section
+            className={classnames(styles.headerSection, {
+              [styles.withBookmark]: bookmarked
+            })}>
+            {applied && (
+              <span className={styles.appliedBadge}>
+                <Badge label={'Applied'} />
+              </span>
             )}
-            {jobAdTypeOption.showDescription &&
-              job.description && (
-              <div className={styles.jobDescriptionSection}>
-                <Text
-                  intimate
-                  baseline={false}
-                  className={styles.bodyDescriptionText}>
-                  {job.description}
-                </Text>
-              </div>
-            )}
-          </div>
-          {jobAdTypeOption.showCompanyPic &&
-            job.companyPictureUrl && (
-            <div className={styles.companyPicWrapper}>
-              <img
-                className={styles.companyPic}
-                src={job.companyPictureUrl}
-              />
-            </div>
-          )}
-        </Section>
-        <Section className={styles.footerSection}>
-          <div className={styles.footerLeft}>
-            <div className={styles.jobInfoContainer}>
-              <div className={styles.jobInfoList}>
-                <Text intimate baseline={false} className={styles.jobInfo}>
-                  <LocationIcon className={styles.jobInfoIcon} />
-                  {job.locations && (
-                    <LocationGroup
-                      locations={job.locations}
-                      LinkComponent={LinkComponent}
-                    />
-                  )}
-                </Text>
-                {job.salary && (
-                  <Text intimate baseline={false} className={styles.jobInfo}>
-                    <MoneyIcon className={styles.jobInfoIcon} />
-                    <span>{job.salary}</span>
-                  </Text>
-                )}
-              </div>
-              <div>
-                {job.featuredLabel && (
-                  <span className={styles.featuredLabel}>
-                    <Badge color="new" label={job.featuredLabel} />
+            <JobTitleLink
+              LinkComponent={TitleLinkComponent}
+              viewed={viewed}
+              keyword={keyword}
+              job={job}
+            />
+          </Section>
+          <Section className={styles.bodySection}>
+            <div className={styles.bodyDetailsWrapper}>
+              <Text intimate baseline={false} className={styles.company}>
+                {job.classifiedLabel && (
+                  <span className={styles.classifiedLabel}>
+                    {job.classifiedLabel}
                   </span>
                 )}
-                {job.appliedDate ? (
-                  <Text
-                    whispering
-                    baseline={false}
-                    className={styles.applyDate}>
-                    {job.appliedDate}
-                  </Text>
-                ) : (
-                  <Text
-                    whispering
-                    baseline={false}
-                    className={styles.postingDuration}>
-                    {job.postingDuration}
-                  </Text>
+                {job.confidentialLabel && (
+                  <span className={styles.confidentialLabel}>
+                    {job.confidentialLabel}
+                  </span>
                 )}
-                {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
-                  <span className={styles.shelfToggleContainer}>
+                {job.company && (
+                  <CompanyLink
+                    company={job.company}
+                    keyword={keyword}
+                    LinkComponent={LinkComponent}
+                  />
+                )}
+              </Text>
+              {jobAdTypeOption.showSellingPoint &&
+              job.sellingPoints && (
+                <div
+                  className={classnames(styles.sellingPointsSection, {
+                    [styles.withDescription]:
+                      jobAdTypeOption.showDescription && job.description
+                  })}>
+                  <ul className={styles.sellingPoints}>
+                    {job.sellingPoints.map((sellingPoint, i) => {
+                      return (
+                        <li key={i}>
+                          <Text
+                            whispering
+                            baseline={false}
+                            className={styles.sellingPoint}>
+                            {sellingPoint}
+                          </Text>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
+              {jobAdTypeOption.showDescription &&
+              job.description && (
+                <div className={styles.jobDescriptionSection}>
+                  <Text
+                    whispering
+                    baseline={false}
+                    className={styles.bodyDescriptionText}>
+                    {job.description}
+                  </Text>
+                </div>
+              )}
+            </div>
+            {jobAdTypeOption.showCompanyPic &&
+            job.companyPictureUrl && (
+              <div className={styles.companyPicWrapper}>
+                <img
+                  className={styles.companyPic}
+                  src={job.companyPictureUrl}
+                />
+              </div>
+            )}
+          </Section>
+          <Section className={styles.footerSection}>
+            <div className={styles.footerLeft}>
+              <div className={styles.jobInfoContainer}>
+                <div className={styles.jobInfoList}>
+                  <Text whispering baseline={false} className={styles.jobInfo}>
+                    <LocationIcon className={styles.jobInfoIcon} />
+                    {job.locations && (
+                      <LocationGroup
+                        locations={job.locations}
+                        LinkComponent={LinkComponent}
+                      />
+                    )}
+                  </Text>
+                  {job.salary && (
+                    <Text whispering baseline={false} className={styles.jobInfo}>
+                      <MoneyIcon className={styles.jobInfoIcon} />
+                      <span>{job.salary}</span>
+                    </Text>
+                  )}
+                </div>
+                <div>
+                  {job.featuredLabel && (
+                    <span className={styles.featuredLabel}>
+                      <Badge color="new" label={job.featuredLabel} />
+                    </span>
+                  )}
+                  {job.appliedDate ? (
                     <Text
                       whispering
                       baseline={false}
-                      className={styles.separatorDot}>
-                      •
+                      className={styles.applyDate}>
+                      {job.appliedDate}
                     </Text>
-                    <Button
-                      color="hyperlink"
-                      className={styles.shelfToggle}
-                      onClick={this.handleShelfSectionToggle}>
+                  ) : (
+                    <Text
+                      whispering
+                      baseline={false}
+                      className={styles.postingDuration}>
+                      {job.postingDuration}
+                    </Text>
+                  )}
+                  {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
+                    <span className={styles.shelfToggleContainer}>
                       <Text
                         whispering
                         baseline={false}
-                        className={styles.shelfToggleText}>
-                        {shelfSectionOpen ? 'less' : 'more'}{' '}
-                        <ChevronIcon
-                          direction={shelfSectionOpen ? 'up' : 'down'}
-                          svgClassName={styles.shelfToggleIcon}
-                        />
+                        className={styles.separatorDot}>
+                      •
                       </Text>
-                    </Button>
-                  </span>
-                )}
+                      <Button
+                        color="hyperlink"
+                        className={styles.shelfToggle}
+                        onClick={this.handleShelfSectionToggle}>
+                        <Text
+                          whispering
+                          baseline={false}
+                          className={styles.shelfToggleText}>
+                          {shelfSectionOpen ? 'less' : 'more'}{' '}
+                          <ChevronIcon
+                            direction={shelfSectionOpen ? 'up' : 'down'}
+                            svgClassName={styles.shelfToggleIcon}
+                          />
+                        </Text>
+                      </Button>
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-          {jobAdTypeOption.showCompanyLogo && (
-            <img className={styles.companyLogo} src={job.companyLogoUrl} />
+            {jobAdTypeOption.showCompanyLogo && (
+              <img className={styles.companyLogo} src={job.companyLogoUrl} />
+            )}
+          </Section>
+          {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
+            <ShelfSection
+              shelf={job.shelf}
+              LinkComponent={LinkComponent}
+              showShelfSection={shelfSectionOpen}
+            />
           )}
-        </Section>
-        {this.hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
-          <ShelfSection
-            shelf={job.shelf}
-            LinkComponent={LinkComponent}
-            showShelfSection={shelfSectionOpen}
-          />
-        )}
-      </Card>
+        </Card>
+      </div>
     );
   }
 }
@@ -253,5 +263,7 @@ JobCard.propTypes = {
   TitleLinkComponent: PropTypes.func,
   isSelected: PropTypes.bool,
   viewed: PropTypes.bool,
-  applied: PropTypes.bool
+  applied: PropTypes.bool,
+  bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
+  onBookmarkClick: PropTypes.func
 };

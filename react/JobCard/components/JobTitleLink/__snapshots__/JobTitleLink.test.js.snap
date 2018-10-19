@@ -10,7 +10,7 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
     baseline={true}
     className="jobTitle"
     strong={true}
-    waving={true}
+    whistling={true}
   >
     Software Engineer
   </Text>
@@ -27,7 +27,7 @@ exports[`JobCard - JobTitleLink should change className for viewed job 1`] = `
     baseline={true}
     className="jobTitle"
     strong={true}
-    waving={true}
+    whistling={true}
   >
     Software Engineer
   </Text>
@@ -44,7 +44,7 @@ exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 
     baseline={true}
     className="jobTitle"
     strong={true}
-    waving={true}
+    whistling={true}
   >
     Software Engineer
   </Text>
@@ -61,7 +61,7 @@ exports[`JobCard - JobTitleLink should render correctly 1`] = `
     baseline={true}
     className="jobTitle"
     strong={true}
-    waving={true}
+    whistling={true}
   >
     Software Engineer
   </Text>

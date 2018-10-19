@@ -63,7 +63,10 @@ export default {
         'We support a safe environment for our employees'
       ]
     },
-    jobAdType: JOBADTYPE_JOBSDB_DEFAULT
+    jobAdType: JOBADTYPE_JOBSDB_DEFAULT,
+    onBookmarkClick: () => {
+      alert('hi'); // eslint-disable-line no-alert
+    }
   },
   options: [
     {
@@ -262,6 +265,34 @@ export default {
       ]
     },
     {
+      label: 'Bookmark',
+      type: 'radio',
+      states: [
+        {
+          label: 'No Bookmark',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'Bookmarked',
+          transformProps: props => ({
+            ...props,
+            bookmarked: 'bookmarked',
+            onBookmarkClick: () => {}
+          })
+        },
+        {
+          label: 'Not bookmarked',
+          transformProps: props => ({
+            ...props,
+            bookmarked: 'notBookmarked',
+            onBookmarkClick: () => {}
+          })
+        }
+      ]
+    },
+    {
       label: 'JobAd Type',
       type: 'radio',
       states: [
@@ -296,11 +327,57 @@ export default {
       ]
     },
     {
+      label: 'Company Logo',
+      type: 'radio',
+      states: [
+        {
+          label: 'Company Logo Size -- Normal',
+          transformProps: props => ({
+            ...props,
+            job: {
+              ...props.job,
+              companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+            }
+          })
+        },
+        {
+          label: 'Very long',
+          transformProps: props => ({
+            ...props,
+            job: {
+              ...props.job,
+              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
+            }
+          })
+        },
+        {
+          label: 'Vertical',
+          transformProps: props => ({
+            ...props,
+            job: {
+              ...props.job,
+              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
+            }
+          })
+        },
+        {
+          label: 'Square',
+          transformProps: props => ({
+            ...props,
+            job: {
+              ...props.job,
+              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
+            }
+          })
+        }
+      ]
+    },
+    {
       label: 'Company Pic',
       type: 'radio',
       states: [
         {
-          label: 'Normal',
+          label: 'Company Pic Size -- Normal',
           transformProps: props => ({
             ...props,
             job: {

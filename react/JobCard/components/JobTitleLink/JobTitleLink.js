@@ -12,7 +12,7 @@ const JobTitleLinkPropTypes = PropTypes.shape({
 });
 
 const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink, viewed }) => {
-  let title = (<Text waving strong className={styles.jobTitle}>{jobTitle}</Text>);
+  let title = (<Text whistling strong className={styles.jobTitle}>{jobTitle}</Text>);
   const keywordParts = getParts(jobTitle, keyword);
 
   if (keywordParts) {
@@ -23,7 +23,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
             return (
               <Text
                 strong
-                waving
+                whistling
                 className={classnames(styles.jobTitle, { [styles.titleKeyword]: part.highlight })}
                 key={index}>
                 {part.text}

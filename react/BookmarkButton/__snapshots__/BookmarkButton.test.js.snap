@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookmarkButton should render bookmarked 1`] = `
+<Button
+  className="button bookmarkFilled"
+  color="hyperlink"
+  component="button"
+  onClick={[Function]}
+>
+  <BookmarkIcon
+    isBookmarked={true}
+    onBookmarkClick={[Function]}
+  />
+</Button>
+`;
+
+exports[`BookmarkButton should render with class 1`] = `
+<Button
+  className="button aClassyClass"
+  color="hyperlink"
+  component="button"
+  onClick={[Function]}
+>
+  <BookmarkIcon
+    onBookmarkClick={[Function]}
+  />
+</Button>
+`;
+
+exports[`BookmarkButton should render with default props 1`] = `
+<Button
+  className="button"
+  color="hyperlink"
+  component="button"
+  onClick={[Function]}
+>
+  <BookmarkIcon
+    onBookmarkClick={[Function]}
+  />
+</Button>
+`;

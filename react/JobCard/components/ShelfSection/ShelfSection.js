@@ -37,7 +37,7 @@ const ShelfSection = ({ shelf, LinkComponent = defaultLink, showShelfSection = f
   return (<Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
     <div className={styles.shelfDivider} />
     {shelfLinks && shelfLinks.length &&
-    <Text intimate className={styles.shelfLinksContainer}>
+    <Text whispering className={styles.shelfLinksContainer}>
       {shelfLinks.map((shelfItem, i) => {
         if (shelfItem && shelfItem.items && shelfItem.items.length) {
           return (

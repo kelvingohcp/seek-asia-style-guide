@@ -248,6 +248,11 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should pass through bookmark props', () => {
+    const wrapper = shallow(<JobCard job={defaultJob} bookmarked={'bookmarked'} onBookmarkClick={() => {}} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render with applied badge', () => {
     const wrapper = shallow(<JobCard job={defaultJob} applied />);
     expect(wrapper).toMatchSnapshot();

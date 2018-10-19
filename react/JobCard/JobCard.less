@@ -6,6 +6,13 @@
 @job-card-bottom-text-space: @grid-base;
 @job-card-logo-indent: @grid-gutter-width;
 
+.container {
+  position: relative;
+  &:hover .root {
+    background-color: @saHover;
+  }
+}
+
 .root {
   width: 100%;
   margin-bottom: 0;
@@ -28,9 +35,14 @@
 
 .headerSection {
   padding-bottom: @job-card-section-space;
+  display: flex;
   @supports (display: grid) {
     padding: @job-card-section-space;
   }
+}
+
+.withBookmark {
+  margin-right: @grid-base * 7;
 }
 
 .highlightedBg {
@@ -122,6 +134,7 @@
   // Without this, the flex child containing the other text elements
   // won't narrow past the "implied width" of those text elements.
   min-width: 0;
+  width: 100%;
 }
 
 .footerSection {
@@ -130,6 +143,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   @supports (display: grid) {
     display: grid;
     grid-gap: @job-card-logo-indent;
@@ -208,6 +222,7 @@
   @media @desktop {
     width: @grid-base * 50;
     min-width: @grid-base * 50;
+    max-width: 100%;
     height: @grid-base * 35;
     max-height: 100%;
     display: flex;
@@ -223,6 +238,7 @@
   display: flex;
   object-fit: contain;
   align-self: flex-start;
+  flex-shrink: 0;
 }
 
 .companyLogo {

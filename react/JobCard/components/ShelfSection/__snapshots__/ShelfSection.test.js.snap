@@ -13,7 +13,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
   <Text
     baseline={true}
     className="shelfLinksContainer"
-    intimate={true}
+    whispering={true}
   >
     <div
       key="0"
@@ -129,7 +129,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
   <Text
     baseline={true}
     className="shelfLinksContainer"
-    intimate={true}
+    whispering={true}
   >
     <div
       key="0"
