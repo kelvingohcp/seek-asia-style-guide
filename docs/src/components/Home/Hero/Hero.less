@@ -8,8 +8,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: (@grid-row-height * 6) 0 (@grid-row-height * 4);
+  padding: (@grid-row-height * 6) (@grid-base * 4) (@grid-row-height * 4);
   @media @desktop {
-    padding: (@grid-row-height * 10) 0 (@grid-row-height * 8);
+    padding: (@grid-row-height * 10) (@grid-base * 4) (@grid-row-height * 8);
+  }
+  margin-left: @grid-base * -8;
+  margin-right: @grid-base * -8;
+
+  & > * {
+    padding-left: @grid-base * 4;
+    padding-right: @grid-base * 4;
   }
 }

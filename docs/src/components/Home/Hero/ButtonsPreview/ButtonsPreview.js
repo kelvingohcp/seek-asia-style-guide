@@ -9,14 +9,14 @@ export default function ButtonsPreview() {
   return (
     <div className={styles.root}>
       <div className={styles.group}>
-        <Button color="hyperlink" className={styles.button}>Normal</Button>
-        <Button color="hyperlink" className={classnames(styles.button, buttonStyles.rootHover)}>Hover</Button>
-        <Button color="hyperlink" className={classnames(styles.button, buttonStyles.rootActive)}>Pressed</Button>
+        <Button color="secondary" className={styles.button}>Normal</Button>
+        <Button color="secondary" className={classnames(styles.button, buttonStyles.rootHover)}>Hover</Button>
+        <Button color="secondary" className={classnames(styles.button, buttonStyles.rootActive)}>Pressed</Button>
       </div>
       <div className={styles.group}>
-        <Button color="highlight" className={styles.button}>Normal</Button>
-        <Button color="highlight" className={classnames(styles.button, buttonStyles.rootHover)}>Hover</Button>
-        <Button color="highlight" className={classnames(styles.button, buttonStyles.rootActive)}>Pressed</Button>
+        <Button color="primary" className={styles.button}>Normal</Button>
+        <Button color="primary" className={classnames(styles.button, buttonStyles.rootHover)}>Hover</Button>
+        <Button color="primary" className={classnames(styles.button, buttonStyles.rootActive)}>Pressed</Button>
       </div>
     </div>
   );
