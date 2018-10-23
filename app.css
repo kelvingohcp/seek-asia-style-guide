@@ -10,8 +10,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 .Header__logoLink___1z4_l {
   display: inline-block;
-  position: relative;
-  left: -4px;
 }
 .Header__logo___3QhLL {
   width: 118px;
@@ -48,12 +46,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   }
 }
 .Header__sectionContent___1TFNW {
-  position: relative;
-}
-.Header__hamburger___1TbaW {
-  position: absolute;
-  right: 0;
-  top: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 40px;
 }
 .Header__hamburgerText___1ZklY {
   overflow: hidden;
@@ -218,12 +223,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding: 24px 0 16px;
+  padding: 24px 16px 16px;
+  margin-left: -32px;
+  margin-right: -32px;
 }
 @media only screen and (min-width: 992px) {
   .Hero__layout___1pTuT {
-    padding: 40px 0 32px;
+    padding: 40px 16px 32px;
   }
+}
+.Hero__layout___1pTuT > * {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .ColorPreview__root___2O834 {
   position: relative;
@@ -417,7 +428,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   height: 32px;
 }
 .IconPreview__iconSvg___2xO6G {
-  fill: #1C3F94;
+  color: #298eb9;
+  fill: #298eb9;
   width: 32px;
   height: 32px;
 }
