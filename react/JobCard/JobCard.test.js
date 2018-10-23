@@ -257,4 +257,21 @@ describe('JobCard', () => {
     const wrapper = shallow(<JobCard job={defaultJob} applied />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with expired badge', () => {
+    const jobThatsExpired = {
+      ...defaultJob,
+      isExpired: true
+    };
+    const wrapper = shallow(<JobCard job={jobThatsExpired} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+  it('should render only applied badge, when both applied and expired states are active', () => {
+    const jobThatsExpired = {
+      ...defaultJob,
+      isExpired: true
+    };
+    const wrapper = shallow(<JobCard job={jobThatsExpired} applied />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

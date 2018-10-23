@@ -63,7 +63,6 @@ export default class JobCard extends React.Component {
       onBookmarkClick
     } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
-
     return (
       <div className={styles.container}>
         <Bookmark bookmarked={bookmarked} onBookmarkClick={onBookmarkClick} />
@@ -76,9 +75,13 @@ export default class JobCard extends React.Component {
             className={classnames(styles.headerSection, {
               [styles.withBookmark]: bookmarked
             })}>
-            {applied && (
-              <span className={styles.appliedBadge}>
-                <Badge label={'Applied'} />
+            { (applied || job.isExpired) && (
+              <span className={styles.titleBadge}>
+                {
+                  applied ?
+                    (<Badge label="Applied" />) :
+                    (<Badge label="Expired" color="expired" />)
+                }
               </span>
             )}
             <JobTitleLink
@@ -256,7 +259,8 @@ JobCard.propTypes = {
     classifiedLabel: PropTypes.string,
     confidentialLabel: PropTypes.string,
     shelf: ShelfSectionPropTypes,
-    appliedDate: PropTypes.string
+    appliedDate: PropTypes.string,
+    isExpired: PropTypes.bool.isRequired
   }).isRequired,
   jobAdType: PropTypes.string,
   LinkComponent: PropTypes.func,
