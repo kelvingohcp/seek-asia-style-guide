@@ -19,6 +19,42 @@ exports[`UpperFooter: should render columns with messages and linking functions 
       >
         About JobsDB
       </Text>
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={true}
+        mobile={false}
+        print={false}
+        screen={false}
+        tablet={true}
+      />
       <PartnerSites
         externalLink={[Function]}
         messages={
@@ -49,11 +85,12 @@ exports[`UpperFooter: should render columns with messages and linking functions 
             "FooterHK.careerInsights": "Career Insights",
             "FooterHK.careerInsightsTitle": "Career Insights",
             "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
+            "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
             "FooterHK.cfsLink": "/hk/en",
             "FooterHK.cmsLink": "/en-hk",
             "FooterHK.contactUs": "Contact us",
             "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
             "FooterHK.copyright": "© jobsDB. All Rights Reserved",
             "FooterHK.facebook": "Facebook",
             "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
@@ -102,6 +139,24 @@ exports[`UpperFooter: should render columns with messages and linking functions 
       >
         Job Seekers
       </Text>
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
     </Section>
   </div>
   <div
@@ -160,6 +215,42 @@ exports[`UpperFooter: should render with company profile link 1`] = `
       >
         About JobsDB
       </Text>
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={true}
+        mobile={false}
+        print={false}
+        screen={false}
+        tablet={true}
+      />
       <PartnerSites
         externalLink={[Function]}
         messages={
@@ -190,11 +281,12 @@ exports[`UpperFooter: should render with company profile link 1`] = `
             "FooterHK.careerInsights": "Career Insights",
             "FooterHK.careerInsightsTitle": "Career Insights",
             "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
+            "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
             "FooterHK.cfsLink": "/hk/en",
             "FooterHK.cmsLink": "/en-hk",
             "FooterHK.contactUs": "Contact us",
             "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
             "FooterHK.copyright": "© jobsDB. All Rights Reserved",
             "FooterHK.facebook": "Facebook",
             "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
@@ -243,6 +335,24 @@ exports[`UpperFooter: should render with company profile link 1`] = `
       >
         Job Seekers
       </Text>
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
+      <Hidden
+        className=""
+        component="span"
+        desktop={false}
+        mobile={true}
+        print={false}
+        screen={false}
+        tablet={false}
+      />
     </Section>
   </div>
   <div

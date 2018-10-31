@@ -6,7 +6,7 @@ exports[`FooterHK component should render with "Best Companies" ListItem 1`] = `
 >
   <PageBlock>
     <div
-      className="upperWrapper"
+      className="hidden upperWrapper"
     >
       <UpperFooter
         cfsLink={[Function]}
@@ -40,11 +40,12 @@ exports[`FooterHK component should render with "Best Companies" ListItem 1`] = `
             "FooterHK.careerInsights": "Career Insights",
             "FooterHK.careerInsightsTitle": "Career Insights",
             "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
+            "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
             "FooterHK.cfsLink": "/hk/en",
             "FooterHK.cmsLink": "/en-hk",
             "FooterHK.contactUs": "Contact us",
             "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
             "FooterHK.copyright": "© jobsDB. All Rights Reserved",
             "FooterHK.facebook": "Facebook",
             "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
@@ -83,85 +84,99 @@ exports[`FooterHK component should render with "Best Companies" ListItem 1`] = `
     <div
       className="lowerWrapper"
     >
-      <FooterLinks
-        baseUrl="https://hk.jobsdb.com"
-        cfsLink={[Function]}
-        messages={
-          Object {
-            "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
-            "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
-            "FooterHK.CathoLink": "https://www.catho.com.br/",
-            "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
-            "FooterHK.JobbermanLink": "https://www.jobberman.com/",
-            "FooterHK.JoraLink": "https://hk.jora.com/",
-            "FooterHK.OCCLink": "https://www.occ.com.mx/",
-            "FooterHK.SEEKLink": "https://www.seek.com.au/",
-            "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
-            "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
-            "FooterHK.WorkanaLink": "https://www.workana.com/",
-            "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
-            "FooterHK.aboutJobsDB": "About jobsDB",
-            "FooterHK.aboutJobsDBLink": "/pages/aboutus",
-            "FooterHK.advertise": "Advertise with us",
-            "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
-            "FooterHK.appStore": "jobsDB @ App Store",
-            "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-            "FooterHK.bestCompanies": "Best Companies",
-            "FooterHK.bestCompaniesLink": "/companies",
-            "FooterHK.browseJobs": "Browse jobs",
-            "FooterHK.browseJobsLink": "/browse",
-            "FooterHK.career": "Career @ jobsDB",
-            "FooterHK.careerInsights": "Career Insights",
-            "FooterHK.careerInsightsTitle": "Career Insights",
-            "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
-            "FooterHK.cfsLink": "/hk/en",
-            "FooterHK.cmsLink": "/en-hk",
-            "FooterHK.contactUs": "Contact us",
-            "FooterHK.contactUsLink": "/pages/regional-coverage",
-            "FooterHK.copyright": "© jobsDB. All Rights Reserved",
-            "FooterHK.facebook": "Facebook",
-            "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
-            "FooterHK.faq": "FAQ",
-            "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
-            "FooterHK.googlePlay": "jobsDB @ Google Play",
-            "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
-            "FooterHK.jobAlerts": "Job Alerts",
-            "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
-            "FooterHK.myJobsDBTitle": "My jobsDB",
-            "FooterHK.myJobsDBUrl": "/MyJobsDB",
-            "FooterHK.partners": "International partners",
-            "FooterHK.postJob": "Post a job",
-            "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
-            "FooterHK.privacyLink": "/pages/terms/privacy-policy",
-            "FooterHK.privacyLinkText": "Privacy Statement",
-            "FooterHK.resumes": "Post resumes",
-            "FooterHK.resumesLink": "/Resumes/ResumeIndex",
-            "FooterHK.searchCandidates": "Search candidates",
-            "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
-            "FooterHK.siteMapLink": "/sitemap",
-            "FooterHK.siteMapLinkText": "Site Map",
-            "FooterHK.termsLink": "/pages/terms/terms-conditions",
-            "FooterHK.termsLinkText": "Terms & Conditions",
-            "FooterHK.titleAboutJobsDB": "About JobsDB",
-            "FooterHK.titleConnect": "Connect",
-            "FooterHK.titleEmployer": "Employers",
-            "FooterHK.titleJobSeeker": "Job Seekers",
-            "FooterHK.twitter": "Twitter",
-            "FooterHK.twitterLink": "https://twitter.com/HKJobs",
-          }
-        }
-        wordpressLink={[Function]}
-      />
-      <Text
-        baseline={true}
-        className="copyright"
-        secondary={true}
-        semiStrong={true}
-        whistling={true}
+      <div
+        className="collapsed lowerWrapperLinks"
       >
-        © jobsDB. All Rights Reserved
-      </Text>
+        <FooterLinks
+          baseUrl="https://hk.jobsdb.com"
+          cfsLink={[Function]}
+          messages={
+            Object {
+              "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
+              "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
+              "FooterHK.CathoLink": "https://www.catho.com.br/",
+              "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
+              "FooterHK.JobbermanLink": "https://www.jobberman.com/",
+              "FooterHK.JoraLink": "https://hk.jora.com/",
+              "FooterHK.OCCLink": "https://www.occ.com.mx/",
+              "FooterHK.SEEKLink": "https://www.seek.com.au/",
+              "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
+              "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
+              "FooterHK.WorkanaLink": "https://www.workana.com/",
+              "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
+              "FooterHK.aboutJobsDB": "About jobsDB",
+              "FooterHK.aboutJobsDBLink": "/pages/aboutus",
+              "FooterHK.advertise": "Advertise with us",
+              "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
+              "FooterHK.appStore": "jobsDB @ App Store",
+              "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "FooterHK.bestCompanies": "Best Companies",
+              "FooterHK.bestCompaniesLink": "/companies",
+              "FooterHK.browseJobs": "Browse jobs",
+              "FooterHK.browseJobsLink": "/browse",
+              "FooterHK.career": "Career @ jobsDB",
+              "FooterHK.careerInsights": "Career Insights",
+              "FooterHK.careerInsightsTitle": "Career Insights",
+              "FooterHK.careerInsightsUrl": "/career-insights",
+              "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
+              "FooterHK.cfsLink": "/hk/en",
+              "FooterHK.cmsLink": "/en-hk",
+              "FooterHK.contactUs": "Contact us",
+              "FooterHK.contactUsLink": "/pages/regional-coverage",
+              "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+              "FooterHK.copyright": "© jobsDB. All Rights Reserved",
+              "FooterHK.facebook": "Facebook",
+              "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
+              "FooterHK.faq": "FAQ",
+              "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
+              "FooterHK.googlePlay": "jobsDB @ Google Play",
+              "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "FooterHK.jobAlerts": "Job Alerts",
+              "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
+              "FooterHK.myJobsDBTitle": "My jobsDB",
+              "FooterHK.myJobsDBUrl": "/MyJobsDB",
+              "FooterHK.partners": "International partners",
+              "FooterHK.postJob": "Post a job",
+              "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
+              "FooterHK.privacyLink": "/pages/terms/privacy-policy",
+              "FooterHK.privacyLinkText": "Privacy Statement",
+              "FooterHK.resumes": "Post resumes",
+              "FooterHK.resumesLink": "/Resumes/ResumeIndex",
+              "FooterHK.searchCandidates": "Search candidates",
+              "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
+              "FooterHK.siteMapLink": "/sitemap",
+              "FooterHK.siteMapLinkText": "Site Map",
+              "FooterHK.termsLink": "/pages/terms/terms-conditions",
+              "FooterHK.termsLinkText": "Terms & Conditions",
+              "FooterHK.titleAboutJobsDB": "About JobsDB",
+              "FooterHK.titleConnect": "Connect",
+              "FooterHK.titleEmployer": "Employers",
+              "FooterHK.titleJobSeeker": "Job Seekers",
+              "FooterHK.twitter": "Twitter",
+              "FooterHK.twitterLink": "https://twitter.com/HKJobs",
+            }
+          }
+          wordpressLink={[Function]}
+        />
+        <Text
+          baseline={true}
+          secondary={true}
+          semiStrong={true}
+          whistling={true}
+        >
+          © jobsDB. All Rights Reserved
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <ChevronIcon
+          className=""
+          direction="down"
+          svgClassName="chevronSvg"
+        />
+      </div>
     </div>
   </PageBlock>
 </footer>
@@ -173,7 +188,7 @@ exports[`FooterHK component should render with custom href link 1`] = `
 >
   <PageBlock>
     <div
-      className="upperWrapper"
+      className="hidden upperWrapper"
     >
       <UpperFooter
         cfsLink={[Function]}
@@ -207,11 +222,12 @@ exports[`FooterHK component should render with custom href link 1`] = `
             "FooterHK.careerInsights": "Career Insights",
             "FooterHK.careerInsightsTitle": "Career Insights",
             "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
+            "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
             "FooterHK.cfsLink": "/hk/en",
             "FooterHK.cmsLink": "/en-hk",
             "FooterHK.contactUs": "Contact us",
             "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
             "FooterHK.copyright": "© jobsDB. All Rights Reserved",
             "FooterHK.facebook": "Facebook",
             "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
@@ -250,85 +266,99 @@ exports[`FooterHK component should render with custom href link 1`] = `
     <div
       className="lowerWrapper"
     >
-      <FooterLinks
-        baseUrl="https://hk.jobsdb.com"
-        cfsLink={[Function]}
-        messages={
-          Object {
-            "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
-            "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
-            "FooterHK.CathoLink": "https://www.catho.com.br/",
-            "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
-            "FooterHK.JobbermanLink": "https://www.jobberman.com/",
-            "FooterHK.JoraLink": "https://hk.jora.com/",
-            "FooterHK.OCCLink": "https://www.occ.com.mx/",
-            "FooterHK.SEEKLink": "https://www.seek.com.au/",
-            "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
-            "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
-            "FooterHK.WorkanaLink": "https://www.workana.com/",
-            "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
-            "FooterHK.aboutJobsDB": "About jobsDB",
-            "FooterHK.aboutJobsDBLink": "/pages/aboutus",
-            "FooterHK.advertise": "Advertise with us",
-            "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
-            "FooterHK.appStore": "jobsDB @ App Store",
-            "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-            "FooterHK.bestCompanies": "Best Companies",
-            "FooterHK.bestCompaniesLink": "/companies",
-            "FooterHK.browseJobs": "Browse jobs",
-            "FooterHK.browseJobsLink": "/browse",
-            "FooterHK.career": "Career @ jobsDB",
-            "FooterHK.careerInsights": "Career Insights",
-            "FooterHK.careerInsightsTitle": "Career Insights",
-            "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
-            "FooterHK.cfsLink": "/hk/en",
-            "FooterHK.cmsLink": "/en-hk",
-            "FooterHK.contactUs": "Contact us",
-            "FooterHK.contactUsLink": "/pages/regional-coverage",
-            "FooterHK.copyright": "© jobsDB. All Rights Reserved",
-            "FooterHK.facebook": "Facebook",
-            "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
-            "FooterHK.faq": "FAQ",
-            "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
-            "FooterHK.googlePlay": "jobsDB @ Google Play",
-            "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
-            "FooterHK.jobAlerts": "Job Alerts",
-            "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
-            "FooterHK.myJobsDBTitle": "My jobsDB",
-            "FooterHK.myJobsDBUrl": "/MyJobsDB",
-            "FooterHK.partners": "International partners",
-            "FooterHK.postJob": "Post a job",
-            "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
-            "FooterHK.privacyLink": "/pages/terms/privacy-policy",
-            "FooterHK.privacyLinkText": "Privacy Statement",
-            "FooterHK.resumes": "Post resumes",
-            "FooterHK.resumesLink": "/Resumes/ResumeIndex",
-            "FooterHK.searchCandidates": "Search candidates",
-            "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
-            "FooterHK.siteMapLink": "/sitemap",
-            "FooterHK.siteMapLinkText": "Site Map",
-            "FooterHK.termsLink": "/pages/terms/terms-conditions",
-            "FooterHK.termsLinkText": "Terms & Conditions",
-            "FooterHK.titleAboutJobsDB": "About JobsDB",
-            "FooterHK.titleConnect": "Connect",
-            "FooterHK.titleEmployer": "Employers",
-            "FooterHK.titleJobSeeker": "Job Seekers",
-            "FooterHK.twitter": "Twitter",
-            "FooterHK.twitterLink": "https://twitter.com/HKJobs",
-          }
-        }
-        wordpressLink={[Function]}
-      />
-      <Text
-        baseline={true}
-        className="copyright"
-        secondary={true}
-        semiStrong={true}
-        whistling={true}
+      <div
+        className="collapsed lowerWrapperLinks"
       >
-        © jobsDB. All Rights Reserved
-      </Text>
+        <FooterLinks
+          baseUrl="https://hk.jobsdb.com"
+          cfsLink={[Function]}
+          messages={
+            Object {
+              "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
+              "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
+              "FooterHK.CathoLink": "https://www.catho.com.br/",
+              "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
+              "FooterHK.JobbermanLink": "https://www.jobberman.com/",
+              "FooterHK.JoraLink": "https://hk.jora.com/",
+              "FooterHK.OCCLink": "https://www.occ.com.mx/",
+              "FooterHK.SEEKLink": "https://www.seek.com.au/",
+              "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
+              "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
+              "FooterHK.WorkanaLink": "https://www.workana.com/",
+              "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
+              "FooterHK.aboutJobsDB": "About jobsDB",
+              "FooterHK.aboutJobsDBLink": "/pages/aboutus",
+              "FooterHK.advertise": "Advertise with us",
+              "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
+              "FooterHK.appStore": "jobsDB @ App Store",
+              "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "FooterHK.bestCompanies": "Best Companies",
+              "FooterHK.bestCompaniesLink": "/companies",
+              "FooterHK.browseJobs": "Browse jobs",
+              "FooterHK.browseJobsLink": "/browse",
+              "FooterHK.career": "Career @ jobsDB",
+              "FooterHK.careerInsights": "Career Insights",
+              "FooterHK.careerInsightsTitle": "Career Insights",
+              "FooterHK.careerInsightsUrl": "/career-insights",
+              "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
+              "FooterHK.cfsLink": "/hk/en",
+              "FooterHK.cmsLink": "/en-hk",
+              "FooterHK.contactUs": "Contact us",
+              "FooterHK.contactUsLink": "/pages/regional-coverage",
+              "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+              "FooterHK.copyright": "© jobsDB. All Rights Reserved",
+              "FooterHK.facebook": "Facebook",
+              "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
+              "FooterHK.faq": "FAQ",
+              "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
+              "FooterHK.googlePlay": "jobsDB @ Google Play",
+              "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "FooterHK.jobAlerts": "Job Alerts",
+              "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
+              "FooterHK.myJobsDBTitle": "My jobsDB",
+              "FooterHK.myJobsDBUrl": "/MyJobsDB",
+              "FooterHK.partners": "International partners",
+              "FooterHK.postJob": "Post a job",
+              "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
+              "FooterHK.privacyLink": "/pages/terms/privacy-policy",
+              "FooterHK.privacyLinkText": "Privacy Statement",
+              "FooterHK.resumes": "Post resumes",
+              "FooterHK.resumesLink": "/Resumes/ResumeIndex",
+              "FooterHK.searchCandidates": "Search candidates",
+              "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
+              "FooterHK.siteMapLink": "/sitemap",
+              "FooterHK.siteMapLinkText": "Site Map",
+              "FooterHK.termsLink": "/pages/terms/terms-conditions",
+              "FooterHK.termsLinkText": "Terms & Conditions",
+              "FooterHK.titleAboutJobsDB": "About JobsDB",
+              "FooterHK.titleConnect": "Connect",
+              "FooterHK.titleEmployer": "Employers",
+              "FooterHK.titleJobSeeker": "Job Seekers",
+              "FooterHK.twitter": "Twitter",
+              "FooterHK.twitterLink": "https://twitter.com/HKJobs",
+            }
+          }
+          wordpressLink={[Function]}
+        />
+        <Text
+          baseline={true}
+          secondary={true}
+          semiStrong={true}
+          whistling={true}
+        >
+          © jobsDB. All Rights Reserved
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <ChevronIcon
+          className=""
+          direction="down"
+          svgClassName="chevronSvg"
+        />
+      </div>
     </div>
   </PageBlock>
 </footer>
@@ -340,7 +370,7 @@ exports[`FooterHK component should render with custom link renderer 1`] = `
 >
   <PageBlock>
     <div
-      className="upperWrapper"
+      className="hidden upperWrapper"
     >
       <UpperFooter
         cfsLink={[Function]}
@@ -374,11 +404,12 @@ exports[`FooterHK component should render with custom link renderer 1`] = `
             "FooterHK.careerInsights": "Career Insights",
             "FooterHK.careerInsightsTitle": "Career Insights",
             "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
+            "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
             "FooterHK.cfsLink": "/hk/en",
             "FooterHK.cmsLink": "/en-hk",
             "FooterHK.contactUs": "Contact us",
             "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
             "FooterHK.copyright": "© jobsDB. All Rights Reserved",
             "FooterHK.facebook": "Facebook",
             "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
@@ -417,85 +448,99 @@ exports[`FooterHK component should render with custom link renderer 1`] = `
     <div
       className="lowerWrapper"
     >
-      <FooterLinks
-        baseUrl="https://hk.jobsdb.com"
-        cfsLink={[Function]}
-        messages={
-          Object {
-            "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
-            "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
-            "FooterHK.CathoLink": "https://www.catho.com.br/",
-            "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
-            "FooterHK.JobbermanLink": "https://www.jobberman.com/",
-            "FooterHK.JoraLink": "https://hk.jora.com/",
-            "FooterHK.OCCLink": "https://www.occ.com.mx/",
-            "FooterHK.SEEKLink": "https://www.seek.com.au/",
-            "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
-            "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
-            "FooterHK.WorkanaLink": "https://www.workana.com/",
-            "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
-            "FooterHK.aboutJobsDB": "About jobsDB",
-            "FooterHK.aboutJobsDBLink": "/pages/aboutus",
-            "FooterHK.advertise": "Advertise with us",
-            "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
-            "FooterHK.appStore": "jobsDB @ App Store",
-            "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-            "FooterHK.bestCompanies": "Best Companies",
-            "FooterHK.bestCompaniesLink": "/companies",
-            "FooterHK.browseJobs": "Browse jobs",
-            "FooterHK.browseJobsLink": "/browse",
-            "FooterHK.career": "Career @ jobsDB",
-            "FooterHK.careerInsights": "Career Insights",
-            "FooterHK.careerInsightsTitle": "Career Insights",
-            "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
-            "FooterHK.cfsLink": "/hk/en",
-            "FooterHK.cmsLink": "/en-hk",
-            "FooterHK.contactUs": "Contact us",
-            "FooterHK.contactUsLink": "/pages/regional-coverage",
-            "FooterHK.copyright": "© jobsDB. All Rights Reserved",
-            "FooterHK.facebook": "Facebook",
-            "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
-            "FooterHK.faq": "FAQ",
-            "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
-            "FooterHK.googlePlay": "jobsDB @ Google Play",
-            "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
-            "FooterHK.jobAlerts": "Job Alerts",
-            "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
-            "FooterHK.myJobsDBTitle": "My jobsDB",
-            "FooterHK.myJobsDBUrl": "/MyJobsDB",
-            "FooterHK.partners": "International partners",
-            "FooterHK.postJob": "Post a job",
-            "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
-            "FooterHK.privacyLink": "/pages/terms/privacy-policy",
-            "FooterHK.privacyLinkText": "Privacy Statement",
-            "FooterHK.resumes": "Post resumes",
-            "FooterHK.resumesLink": "/Resumes/ResumeIndex",
-            "FooterHK.searchCandidates": "Search candidates",
-            "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
-            "FooterHK.siteMapLink": "/sitemap",
-            "FooterHK.siteMapLinkText": "Site Map",
-            "FooterHK.termsLink": "/pages/terms/terms-conditions",
-            "FooterHK.termsLinkText": "Terms & Conditions",
-            "FooterHK.titleAboutJobsDB": "About JobsDB",
-            "FooterHK.titleConnect": "Connect",
-            "FooterHK.titleEmployer": "Employers",
-            "FooterHK.titleJobSeeker": "Job Seekers",
-            "FooterHK.twitter": "Twitter",
-            "FooterHK.twitterLink": "https://twitter.com/HKJobs",
-          }
-        }
-        wordpressLink={[Function]}
-      />
-      <Text
-        baseline={true}
-        className="copyright"
-        secondary={true}
-        semiStrong={true}
-        whistling={true}
+      <div
+        className="collapsed lowerWrapperLinks"
       >
-        © jobsDB. All Rights Reserved
-      </Text>
+        <FooterLinks
+          baseUrl="https://hk.jobsdb.com"
+          cfsLink={[Function]}
+          messages={
+            Object {
+              "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
+              "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
+              "FooterHK.CathoLink": "https://www.catho.com.br/",
+              "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
+              "FooterHK.JobbermanLink": "https://www.jobberman.com/",
+              "FooterHK.JoraLink": "https://hk.jora.com/",
+              "FooterHK.OCCLink": "https://www.occ.com.mx/",
+              "FooterHK.SEEKLink": "https://www.seek.com.au/",
+              "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
+              "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
+              "FooterHK.WorkanaLink": "https://www.workana.com/",
+              "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
+              "FooterHK.aboutJobsDB": "About jobsDB",
+              "FooterHK.aboutJobsDBLink": "/pages/aboutus",
+              "FooterHK.advertise": "Advertise with us",
+              "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
+              "FooterHK.appStore": "jobsDB @ App Store",
+              "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "FooterHK.bestCompanies": "Best Companies",
+              "FooterHK.bestCompaniesLink": "/companies",
+              "FooterHK.browseJobs": "Browse jobs",
+              "FooterHK.browseJobsLink": "/browse",
+              "FooterHK.career": "Career @ jobsDB",
+              "FooterHK.careerInsights": "Career Insights",
+              "FooterHK.careerInsightsTitle": "Career Insights",
+              "FooterHK.careerInsightsUrl": "/career-insights",
+              "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
+              "FooterHK.cfsLink": "/hk/en",
+              "FooterHK.cmsLink": "/en-hk",
+              "FooterHK.contactUs": "Contact us",
+              "FooterHK.contactUsLink": "/pages/regional-coverage",
+              "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+              "FooterHK.copyright": "© jobsDB. All Rights Reserved",
+              "FooterHK.facebook": "Facebook",
+              "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
+              "FooterHK.faq": "FAQ",
+              "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
+              "FooterHK.googlePlay": "jobsDB @ Google Play",
+              "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "FooterHK.jobAlerts": "Job Alerts",
+              "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
+              "FooterHK.myJobsDBTitle": "My jobsDB",
+              "FooterHK.myJobsDBUrl": "/MyJobsDB",
+              "FooterHK.partners": "International partners",
+              "FooterHK.postJob": "Post a job",
+              "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
+              "FooterHK.privacyLink": "/pages/terms/privacy-policy",
+              "FooterHK.privacyLinkText": "Privacy Statement",
+              "FooterHK.resumes": "Post resumes",
+              "FooterHK.resumesLink": "/Resumes/ResumeIndex",
+              "FooterHK.searchCandidates": "Search candidates",
+              "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
+              "FooterHK.siteMapLink": "/sitemap",
+              "FooterHK.siteMapLinkText": "Site Map",
+              "FooterHK.termsLink": "/pages/terms/terms-conditions",
+              "FooterHK.termsLinkText": "Terms & Conditions",
+              "FooterHK.titleAboutJobsDB": "About JobsDB",
+              "FooterHK.titleConnect": "Connect",
+              "FooterHK.titleEmployer": "Employers",
+              "FooterHK.titleJobSeeker": "Job Seekers",
+              "FooterHK.twitter": "Twitter",
+              "FooterHK.twitterLink": "https://twitter.com/HKJobs",
+            }
+          }
+          wordpressLink={[Function]}
+        />
+        <Text
+          baseline={true}
+          secondary={true}
+          semiStrong={true}
+          whistling={true}
+        >
+          © jobsDB. All Rights Reserved
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <ChevronIcon
+          className=""
+          direction="down"
+          svgClassName="chevronSvg"
+        />
+      </div>
     </div>
   </PageBlock>
 </footer>
@@ -507,7 +552,7 @@ exports[`FooterHK component should render with default props 1`] = `
 >
   <PageBlock>
     <div
-      className="upperWrapper"
+      className="hidden upperWrapper"
     >
       <UpperFooter
         cfsLink={[Function]}
@@ -541,11 +586,12 @@ exports[`FooterHK component should render with default props 1`] = `
             "FooterHK.careerInsights": "Career Insights",
             "FooterHK.careerInsightsTitle": "Career Insights",
             "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
+            "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
             "FooterHK.cfsLink": "/hk/en",
             "FooterHK.cmsLink": "/en-hk",
             "FooterHK.contactUs": "Contact us",
             "FooterHK.contactUsLink": "/pages/regional-coverage",
+            "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
             "FooterHK.copyright": "© jobsDB. All Rights Reserved",
             "FooterHK.facebook": "Facebook",
             "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
@@ -584,85 +630,99 @@ exports[`FooterHK component should render with default props 1`] = `
     <div
       className="lowerWrapper"
     >
-      <FooterLinks
-        baseUrl="https://hk.jobsdb.com"
-        cfsLink={[Function]}
-        messages={
-          Object {
-            "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
-            "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
-            "FooterHK.CathoLink": "https://www.catho.com.br/",
-            "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
-            "FooterHK.JobbermanLink": "https://www.jobberman.com/",
-            "FooterHK.JoraLink": "https://hk.jora.com/",
-            "FooterHK.OCCLink": "https://www.occ.com.mx/",
-            "FooterHK.SEEKLink": "https://www.seek.com.au/",
-            "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
-            "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
-            "FooterHK.WorkanaLink": "https://www.workana.com/",
-            "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
-            "FooterHK.aboutJobsDB": "About jobsDB",
-            "FooterHK.aboutJobsDBLink": "/pages/aboutus",
-            "FooterHK.advertise": "Advertise with us",
-            "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
-            "FooterHK.appStore": "jobsDB @ App Store",
-            "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-            "FooterHK.bestCompanies": "Best Companies",
-            "FooterHK.bestCompaniesLink": "/companies",
-            "FooterHK.browseJobs": "Browse jobs",
-            "FooterHK.browseJobsLink": "/browse",
-            "FooterHK.career": "Career @ jobsDB",
-            "FooterHK.careerInsights": "Career Insights",
-            "FooterHK.careerInsightsTitle": "Career Insights",
-            "FooterHK.careerInsightsUrl": "/career-insights",
-            "FooterHK.careerLink": "/Search/FindJobs?AccNums=1&JSRV=1&page=1",
-            "FooterHK.cfsLink": "/hk/en",
-            "FooterHK.cmsLink": "/en-hk",
-            "FooterHK.contactUs": "Contact us",
-            "FooterHK.contactUsLink": "/pages/regional-coverage",
-            "FooterHK.copyright": "© jobsDB. All Rights Reserved",
-            "FooterHK.facebook": "Facebook",
-            "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
-            "FooterHK.faq": "FAQ",
-            "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
-            "FooterHK.googlePlay": "jobsDB @ Google Play",
-            "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
-            "FooterHK.jobAlerts": "Job Alerts",
-            "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
-            "FooterHK.myJobsDBTitle": "My jobsDB",
-            "FooterHK.myJobsDBUrl": "/MyJobsDB",
-            "FooterHK.partners": "International partners",
-            "FooterHK.postJob": "Post a job",
-            "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
-            "FooterHK.privacyLink": "/pages/terms/privacy-policy",
-            "FooterHK.privacyLinkText": "Privacy Statement",
-            "FooterHK.resumes": "Post resumes",
-            "FooterHK.resumesLink": "/Resumes/ResumeIndex",
-            "FooterHK.searchCandidates": "Search candidates",
-            "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
-            "FooterHK.siteMapLink": "/sitemap",
-            "FooterHK.siteMapLinkText": "Site Map",
-            "FooterHK.termsLink": "/pages/terms/terms-conditions",
-            "FooterHK.termsLinkText": "Terms & Conditions",
-            "FooterHK.titleAboutJobsDB": "About JobsDB",
-            "FooterHK.titleConnect": "Connect",
-            "FooterHK.titleEmployer": "Employers",
-            "FooterHK.titleJobSeeker": "Job Seekers",
-            "FooterHK.twitter": "Twitter",
-            "FooterHK.twitterLink": "https://twitter.com/HKJobs",
-          }
-        }
-        wordpressLink={[Function]}
-      />
-      <Text
-        baseline={true}
-        className="copyright"
-        secondary={true}
-        semiStrong={true}
-        whistling={true}
+      <div
+        className="collapsed lowerWrapperLinks"
       >
-        © jobsDB. All Rights Reserved
-      </Text>
+        <FooterLinks
+          baseUrl="https://hk.jobsdb.com"
+          cfsLink={[Function]}
+          messages={
+            Object {
+              "FooterHK.BdjobsLink": "https://www.bdjobs.com/",
+              "FooterHK.BrighterMondayLink": "https://www.brightermonday.com/",
+              "FooterHK.CathoLink": "https://www.catho.com.br/",
+              "FooterHK.JobStreetLink": "https://www.jobstreet.com/",
+              "FooterHK.JobbermanLink": "https://www.jobberman.com/",
+              "FooterHK.JoraLink": "https://hk.jora.com/",
+              "FooterHK.OCCLink": "https://www.occ.com.mx/",
+              "FooterHK.SEEKLink": "https://www.seek.com.au/",
+              "FooterHK.SeamanJobsiteLink": "https://www.seamanjobsite.com/",
+              "FooterHK.WorkAbroadLink": "https://www.workabroad.ph/",
+              "FooterHK.WorkanaLink": "https://www.workana.com/",
+              "FooterHK.ZhaopinLink": "https://www.zhaopin.com/",
+              "FooterHK.aboutJobsDB": "About jobsDB",
+              "FooterHK.aboutJobsDBLink": "/pages/aboutus",
+              "FooterHK.advertise": "Advertise with us",
+              "FooterHK.advertiseLink": "/cms/employer/product-and-services/",
+              "FooterHK.appStore": "jobsDB @ App Store",
+              "FooterHK.appStoreLink": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "FooterHK.bestCompanies": "Best Companies",
+              "FooterHK.bestCompaniesLink": "/companies",
+              "FooterHK.browseJobs": "Browse jobs",
+              "FooterHK.browseJobsLink": "/browse",
+              "FooterHK.career": "Career @ jobsDB",
+              "FooterHK.careerInsights": "Career Insights",
+              "FooterHK.careerInsightsTitle": "Career Insights",
+              "FooterHK.careerInsightsUrl": "/career-insights",
+              "FooterHK.careerLink": "/jobs/companies/jobsdb-hong-kong/1",
+              "FooterHK.cfsLink": "/hk/en",
+              "FooterHK.cmsLink": "/en-hk",
+              "FooterHK.contactUs": "Contact us",
+              "FooterHK.contactUsLink": "/pages/regional-coverage",
+              "FooterHK.contactUsLinkMsite": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+              "FooterHK.copyright": "© jobsDB. All Rights Reserved",
+              "FooterHK.facebook": "Facebook",
+              "FooterHK.facebookLink": "https://www.facebook.com/JobsDB.HongKong",
+              "FooterHK.faq": "FAQ",
+              "FooterHK.faqLink": "/StaticContentFullContainer/AboutUS/faq/index.htm",
+              "FooterHK.googlePlay": "jobsDB @ Google Play",
+              "FooterHK.googlePlayLink": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "FooterHK.jobAlerts": "Job Alerts",
+              "FooterHK.jobAlertsLink": "/JobAlert/JobAlertCreation",
+              "FooterHK.myJobsDBTitle": "My jobsDB",
+              "FooterHK.myJobsDBUrl": "/MyJobsDB",
+              "FooterHK.partners": "International partners",
+              "FooterHK.postJob": "Post a job",
+              "FooterHK.postJobLink": "/cms/employer/product-services/job-ads/",
+              "FooterHK.privacyLink": "/pages/terms/privacy-policy",
+              "FooterHK.privacyLinkText": "Privacy Statement",
+              "FooterHK.resumes": "Post resumes",
+              "FooterHK.resumesLink": "/Resumes/ResumeIndex",
+              "FooterHK.searchCandidates": "Search candidates",
+              "FooterHK.searchCandidatesLink": "/cms/employer/product-services/talent-search/",
+              "FooterHK.siteMapLink": "/sitemap",
+              "FooterHK.siteMapLinkText": "Site Map",
+              "FooterHK.termsLink": "/pages/terms/terms-conditions",
+              "FooterHK.termsLinkText": "Terms & Conditions",
+              "FooterHK.titleAboutJobsDB": "About JobsDB",
+              "FooterHK.titleConnect": "Connect",
+              "FooterHK.titleEmployer": "Employers",
+              "FooterHK.titleJobSeeker": "Job Seekers",
+              "FooterHK.twitter": "Twitter",
+              "FooterHK.twitterLink": "https://twitter.com/HKJobs",
+            }
+          }
+          wordpressLink={[Function]}
+        />
+        <Text
+          baseline={true}
+          secondary={true}
+          semiStrong={true}
+          whistling={true}
+        >
+          © jobsDB. All Rights Reserved
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <ChevronIcon
+          className=""
+          direction="down"
+          svgClassName="chevronSvg"
+        />
+      </div>
     </div>
   </PageBlock>
 </footer>

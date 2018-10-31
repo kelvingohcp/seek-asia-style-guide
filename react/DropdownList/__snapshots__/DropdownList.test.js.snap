@@ -19,6 +19,7 @@ exports[`DropdownList: should render as lower level child 1`] = `
     <ChevronIcon
       className="chevron top"
       direction="down"
+      svgClassName="chevronSvg"
     />
   </div>
   <div
@@ -27,6 +28,7 @@ exports[`DropdownList: should render as lower level child 1`] = `
     <DropdownList
       chevronAlignment="top"
       compact={false}
+      iconPosition="right"
       lowerLevel={true}
       noShadow={false}
       value="testValue"
@@ -56,6 +58,7 @@ exports[`DropdownList: should render in compact mode 1`] = `
     <ChevronIcon
       className="chevron top"
       direction="down"
+      svgClassName="chevronSvg"
     />
   </div>
   <div
@@ -85,6 +88,7 @@ exports[`DropdownList: should render value with children 1`] = `
     <ChevronIcon
       className="chevron top"
       direction="down"
+      svgClassName="chevronSvg"
     />
   </div>
   <div
@@ -114,6 +118,7 @@ exports[`DropdownList: should render with center-aligned chevron 1`] = `
     <ChevronIcon
       className="chevron center"
       direction="down"
+      svgClassName="chevronSvg"
     />
   </div>
   <div
@@ -143,6 +148,7 @@ exports[`DropdownList: should render with className 1`] = `
     <ChevronIcon
       className="chevron top"
       direction="down"
+      svgClassName="chevronSvg"
     />
   </div>
   <div
@@ -172,6 +178,7 @@ exports[`DropdownList: should render without shadow 1`] = `
     <ChevronIcon
       className="chevron top"
       direction="down"
+      svgClassName="chevronSvg"
     />
   </div>
   <div

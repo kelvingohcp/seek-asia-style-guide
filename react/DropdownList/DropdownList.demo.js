@@ -114,6 +114,23 @@ export default {
           })
         }
       ]
+    },
+    {
+      label: 'Chevron Icon Position',
+      type: 'radio',
+      states: [
+        {
+          label: 'Right',
+          transformProps: props => props
+        },
+        {
+          label: 'Left',
+          transformProps: props => ({
+            ...props,
+            iconPosition: 'left'
+          })
+        }
+      ]
     }
   ]
 };

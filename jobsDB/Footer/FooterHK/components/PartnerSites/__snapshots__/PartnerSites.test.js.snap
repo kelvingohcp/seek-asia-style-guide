@@ -2,9 +2,10 @@
 
 exports[`PartnerSites: should render list with messages and linking function 1`] = `
 <DropdownList
-  chevronAlignment="center"
+  chevronAlignment="top"
   className="content"
-  compact={false}
+  compact={true}
+  iconPosition="left"
   lowerLevel={false}
   noShadow={true}
   semiStrong={true}

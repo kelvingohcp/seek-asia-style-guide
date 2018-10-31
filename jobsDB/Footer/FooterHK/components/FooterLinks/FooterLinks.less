@@ -7,14 +7,22 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   line-height: @list-line-height;
+  flex-direction: column;
+  @media @tablet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .item {
-  padding: 0 @item-horizontal-padding;
-
+  padding: 0;
+  @media @tablet {
+    padding: 0 @item-horizontal-padding;
+  }
   &:first-child {
     padding-left: 0;
   }

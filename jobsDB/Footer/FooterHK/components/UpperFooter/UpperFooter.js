@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './UpperFooter.less';
 import PartnerSites from '../PartnerSites/PartnerSites';
-import { Columns, ListItem, Section, Text, FacebookIcon, TwitterIcon, AppleIcon, AndroidIcon } from 'seek-asia-style-guide/react';
+import { Columns, ListItem, Section, Text, FacebookIcon, TwitterIcon, AppleIcon, AndroidIcon, Hidden } from 'seek-asia-style-guide/react';
 
 const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompanyProfile }) => {
   return (
@@ -13,22 +13,26 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
           <Text waving semiStrong className={styles.title}>
             {messages['FooterHK.titleAboutJobsDB']}
           </Text>
-          {wordpressLink(
+          <Hidden mobile={true}>{ wordpressLink(
             <ListItem value={messages['FooterHK.aboutJobsDB']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.aboutJobsDBLink']
-          )}
-          {cfsLink(
+          )}</Hidden>
+          <Hidden mobile={true}>{cfsLink(
             <ListItem value={messages['FooterHK.faq']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.faqLink']
-          )}
+          )}</Hidden>
           {cfsLink(
             <ListItem value={messages['FooterHK.career']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.careerLink']
           )}
-          {wordpressLink(
+          <Hidden desktop={false} tablet={false} mobile={true}>{wordpressLink(
             <ListItem value={messages['FooterHK.contactUs']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.contactUsLink']
-          )}
+          )}</Hidden>
+          <Hidden desktop={true} tablet={true} mobile={false}>{externalLink(
+            <ListItem value={messages['FooterHK.contactUs']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            messages['FooterHK.contactUsLinkMsite']
+          )}</Hidden>
           <PartnerSites messages={messages} externalLink={externalLink} />
         </Section>
         <Section className={styles.category}>
@@ -39,14 +43,14 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
             <ListItem value={messages['FooterHK.browseJobs']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.browseJobsLink']
           )}
-          {cfsLink(
+          {<Hidden mobile={true}>{cfsLink(
             <ListItem value={messages['FooterHK.resumes']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.resumesLink']
-          )}
-          {cfsLink(
+          )}</Hidden>}
+          <Hidden mobile={true}>{cfsLink(
             <ListItem value={messages['FooterHK.jobAlerts']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.jobAlertsLink']
-          )}
+          )}</Hidden>
           {cfsLink(
             <ListItem value={messages['FooterHK.myJobsDBTitle']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
             messages['FooterHK.myJobsDBUrl']

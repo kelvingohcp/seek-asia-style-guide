@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import styles from './Hidden.less';
 
-const Hidden = ({ children, component, className, print, screen, mobile, desktop, ...restprops }) => {
+const Hidden = ({ children, component, className, print, screen, mobile, desktop, tablet, ...restprops }) => {
   const props = {
     ...restprops,
     className: classNames({
@@ -13,7 +13,8 @@ const Hidden = ({ children, component, className, print, screen, mobile, desktop
       [styles.desktop]: desktop,
       [styles.mobile]: mobile,
       [styles.print]: print,
-      [styles.screen]: screen
+      [styles.screen]: screen,
+      [styles.tablet]: tablet
     })
   };
 
@@ -30,7 +31,8 @@ Hidden.propTypes = {
   desktop: PropTypes.bool,
   mobile: PropTypes.bool,
   print: PropTypes.bool,
-  screen: PropTypes.bool
+  screen: PropTypes.bool,
+  tablet: PropTypes.bool
 };
 
 Hidden.defaultProps = {
@@ -39,7 +41,8 @@ Hidden.defaultProps = {
   desktop: false,
   mobile: false,
   print: false,
-  screen: false
+  screen: false,
+  tablet: false
 };
 
 export default Hidden;

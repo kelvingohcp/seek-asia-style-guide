@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Text, ChevronIcon } from 'seek-asia-style-guide/react';
 
+const LEFT = 'left';
+const RIGHT = 'right';
+
 export default class DropdownList extends Component {
   constructor() {
     super();
@@ -22,8 +25,7 @@ export default class DropdownList extends Component {
   }
 
   render() {
-    const { value, noShadow, className, children, compact, chevronAlignment, lowerLevel, ...restProps } = this.props;
-
+    const { value, noShadow, className, children, compact, chevronAlignment, lowerLevel, iconPosition, ...restProps } = this.props;
     return (
       <div
         className={classnames({
@@ -33,11 +35,13 @@ export default class DropdownList extends Component {
           [styles.lowerLevel]: lowerLevel,
           [className]: className
         })} >
-        <div className={styles.toggler} onClick={this.toggleDropdown.bind(this)} >
+        <div
+          className={classnames({ [styles.toggler]: true, [styles.position]: iconPosition === LEFT })}
+          onClick={this.toggleDropdown.bind(this)} >
           <Text
             shouting={!compact}
             baseline={false}
-            className={styles.description}
+            className={classnames({ [styles.description]: true, [styles.padding]: iconPosition === LEFT })}
             raw={true}
             {...restProps}>
             {value}
@@ -47,6 +51,7 @@ export default class DropdownList extends Component {
               [styles.chevron]: true,
               [styles[`${chevronAlignment}`]]: true
             })}
+            svgClassName={styles.chevronSvg}
             direction={this.state.chevronDirection}
           />
         </div>
@@ -65,12 +70,14 @@ DropdownList.propTypes = {
   noShadow: PropTypes.bool,
   compact: PropTypes.bool,
   chevronAlignment: PropTypes.oneOf(['top', 'center', 'bottom']),
-  lowerLevel: PropTypes.bool
+  lowerLevel: PropTypes.bool,
+  iconPosition: PropTypes.oneOf([LEFT, RIGHT])
 };
 
 DropdownList.defaultProps = {
   noShadow: false,
   compact: false,
   chevronAlignment: 'top',
-  lowerLevel: false
+  lowerLevel: false,
+  iconPosition: RIGHT
 };

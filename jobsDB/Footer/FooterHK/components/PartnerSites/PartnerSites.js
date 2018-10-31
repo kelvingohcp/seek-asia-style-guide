@@ -12,7 +12,9 @@ const PartnerSites = ({ messages, externalLink }) => {
       className={styles.content}
       semiStrong
       whistling
-      chevronAlignment='center'>
+      compact
+      chevronAlignment='top'
+      iconPosition="left">
 
       {externalLink(
         <ListItem value='Bdjobs (Bandladesh)' disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,

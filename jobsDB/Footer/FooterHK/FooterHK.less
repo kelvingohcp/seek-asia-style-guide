@@ -1,16 +1,20 @@
 @import (reference) "~seek-asia-style-guide/theme";
-@container-horizontal-padding: @grid-base * 4;
+@import (reference) "~seek-asia-style-guide/react/Header/components/ActionTray/ActionTray.less";
 @wrapper-up-padding-top: @grid-base * 8;
-@wrapper-low-vertical-padding: @grid-base * 10;
-@copyright-padding-top: @grid-base * 5;
+@wrapper-low-vertical-padding: @grid-base * 3;
 
 .container {
   cursor: default;
   margin: 0 auto;
   background-color: @saGrey6;
-  padding: 0 @container-horizontal-padding;
   width: 100%;
   font-weight: @sa-semi-bold;
+}
+
+.headerActionTrayOffset {
+  @media @mobile {
+    margin-bottom: @actionTrayHeight;
+  }
 }
 
 .link {
@@ -19,22 +23,69 @@
 
 .upperWrapper {
   padding-top: @wrapper-up-padding-top;
-  padding-bottom: @wrapper-low-vertical-padding;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &.hidden {
+    max-height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
 }
 
 .lowerWrapper {
-  display: block;
-  padding: 0 0 @wrapper-low-vertical-padding;
-  @media @desktop {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: @wrapper-low-vertical-padding 0;
+  align-items: end;
+  @media @tablet {
+    padding: 0;
+    align-items: center;
   }
 }
 
-.copyright {
-  text-align: center;
-  padding-top: @copyright-padding-top;
+.lowerWrapperLinks {
+  display: flex;
+  flex-direction: column;
+  line-height: @grid-base * 4;
+  padding-left: @grid-base * 2;
+  @media @tablet {
+    flex-direction: row;
+    line-height: normal;
+    padding-bottom: @grid-base;
+  }
   @media @desktop {
-    padding-top: 0;
+    padding-bottom: @grid-base;
   }
 }
+
+.collapsed {
+  padding-left: @grid-base * 4;
+  @media @desktop {
+    padding-left: @grid-base * 6;
+  }
+}
+
+.chevronSvg {
+  height: @grid-base * 3;
+  width: @grid-base * 3;
+}
+
+.chevronIcon {
+  cursor: pointer;
+  padding: @grid-base * 3 @grid-base * 4 @grid-base * 16 @grid-base * 8;
+  color: @saBlue2;
+  @media @tablet {
+    padding: @grid-base * 3 @grid-base * 4 @grid-base * 3 @grid-base * 8;
+  }
+  @media @desktop {
+    padding-right: @grid-base * 6;
+    padding-left: @grid-base * 12;
+  }
+}
+
