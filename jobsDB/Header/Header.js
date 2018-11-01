@@ -8,7 +8,7 @@ import { getLocalization } from '../localization';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/private/authStatusTypes';
 
 const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage, messages }) => {
-  const baseUrl = `https://${country}.${domainUrl}`;
+  const baseUrl = ``;
 
   let icon = LightbulbIcon;
 
