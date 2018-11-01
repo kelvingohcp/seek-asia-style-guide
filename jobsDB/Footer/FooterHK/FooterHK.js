@@ -7,6 +7,7 @@ import UpperFooter from './components/UpperFooter/UpperFooter';
 import { Text, PageBlock, ListItem, ChevronIcon } from 'seek-asia-style-guide/react';
 import { getLocalization } from './localization';
 import classnames from 'classnames';
+import smoothScroll from 'seek-asia-style-guide/react/private/smoothScroll';
 
 export const makeDefaultLinkRenderer = () => {
   const DefaultLinkRenderer = ({ href, children, ...props }) => (
@@ -40,6 +41,8 @@ const makeDefaultHrefLink = baseUrl => {
   return DefaultHrefLink;
 };
 
+const pageBottom = 'pageBottom';
+
 class FooterHK extends Component {
   constructor(props) {
     super(props);
@@ -49,9 +52,13 @@ class FooterHK extends Component {
   }
 
   handleClick() {
+    const shouldOpen = !this.state.isOpen;
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: shouldOpen
     });
+    if (shouldOpen) {
+      smoothScroll(pageBottom, { speed: 0.3 });
+    }
   }
 
   render() {
@@ -88,7 +95,7 @@ class FooterHK extends Component {
             </div>
             { !isExpandedVersion &&
             <div className={styles.chevronIcon} onClick={e => this.handleClick(e)}>
-              <ChevronIcon svgClassName={styles.chevronSvg} direction={isOpen ? 'up' : 'down'} />
+              <ChevronIcon id={pageBottom} svgClassName={styles.chevronSvg} direction={isOpen ? 'up' : 'down'} />
             </div>
             }
           </div>
