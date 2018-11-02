@@ -3,6 +3,7 @@
 // Base
 @base-font-stack: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 @base-font-size: 10;
+
 // Descender height has been adjusted to cater for both Roboto and
 // Helvetica Neue being as close to the baseline as possible:
 @font-descender-height-scale: 0.1365;
@@ -10,77 +11,75 @@
 // SEEK ASIA HIERARCHY
 
 // Heading specific
-// - line-height equal to 'font-size' plus 8
 @screaming-type-scale: 3.4;
 @screaming-type-row-span: ceil(@screaming-type-scale * @base-font-size / @grid-base) + 2;
 @screaming-type-weight: @sa-bold;
-@screaming-type-scale-mobile: 3.4;
+@screaming-type-scale-mobile: 2.8;
 @screaming-type-row-span-mobile: ceil(@screaming-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @screaming-type-weight-mobile: @sa-bold;
 
-@yelling-type-scale: 2.4;
+@yelling-type-scale: 2.8;
 @yelling-type-row-span: ceil(@yelling-type-scale * @base-font-size / @grid-base) + 2;
 @yelling-type-weight: @sk-regular;
 @yelling-type-scale-mobile: 2.4;
 @yelling-type-row-span-mobile: ceil(@yelling-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @yelling-type-weight-mobile: @sa-bold;
 
-@shouting-type-scale: 2;
+@shouting-type-scale: 2.4;
 @shouting-type-row-span: ceil(@shouting-type-scale * @base-font-size / @grid-base) + 2;
 @shouting-type-weight: @sk-regular;
 @shouting-type-scale-mobile: 2;
 @shouting-type-row-span-mobile: ceil(@shouting-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @shouting-type-weight-mobile: @sa-bold;
 
-@waving-type-scale: 1.6;
+@waving-type-scale: 2;
 @waving-type-row-span: ceil(@waving-type-scale * @base-font-size / @grid-base) + 2;
 @waving-type-weight: @sa-bold;
-@waving-type-scale-mobile: 1.6;
-@waving-type-row-span-mobile: ceil(@waving-type-scale-mobile * @base-font-size / @grid-base) + 2;
+@waving-type-scale-mobile: 1.8;
+@waving-type-row-span-mobile: floor(@waving-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @waving-type-weight-mobile: @sa-bold;
 
-@whistling-type-scale: 1.4;
+@whistling-type-scale: 1.6;
 @whistling-type-row-span: ceil(@whistling-type-scale * @base-font-size / @grid-base) + 2;
 @whistling-type-weight: @sa-bold;
-@whistling-type-scale-mobile: 1.4;
+@whistling-type-scale-mobile: 1.6;
 @whistling-type-row-span-mobile: ceil(@whistling-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @whistling-type-weight-mobile: @sa-bold;
 
-@whisperingTitle-type-scale: 1.2;
-@whisperingTitle-type-row-span: ceil(@whisperingTitle-type-scale * @base-font-size / @grid-base) + 2;
+@whisperingTitle-type-scale: 1.4;
+@whisperingTitle-type-row-span: floor(@whisperingTitle-type-scale * @base-font-size / @grid-base) + 2;
 @whisperingTitle-type-weight: @sa-bold;
-@whisperingTitle-type-scale-mobile: 1.2;
-@whisperingTitle-type-row-span-mobile: ceil(@whisperingTitle-type-scale-mobile * @base-font-size / @grid-base) + 2;
+@whisperingTitle-type-scale-mobile: 1.4;
+@whisperingTitle-type-row-span-mobile: floor(@whisperingTitle-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @whisperingTitle-type-weight-mobile: @sa-bold;
 
 // Copy specific
-// - line-height equal to 'font-size' plus 4
 @loud-type-scale: 2;
-@loud-type-row-span: ceil(@loud-type-scale * @base-font-size / @grid-base) + 1;
+@loud-type-row-span: ceil(@loud-type-scale * @base-font-size / @grid-base) + 2;
 @loud-type-weight: @sk-regular;
-@loud-type-scale-mobile: 2;
-@loud-type-row-span-mobile: ceil(@loud-type-scale-mobile * @base-font-size / @grid-base) + 1;
+@loud-type-scale-mobile: 1.8;
+@loud-type-row-span-mobile: floor(@loud-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @loud-type-weight-mobile: @sk-regular;
 
 @conversational-type-scale: 1.6;
-@conversational-type-row-span: ceil(@conversational-type-scale * @base-font-size / @grid-base) + 1;
+@conversational-type-row-span: ceil(@conversational-type-scale * @base-font-size / @grid-base) + 2;
 @conversational-type-weight: @sk-regular;
 @conversational-type-scale-mobile: 1.6;
-@conversational-type-row-span-mobile: ceil(@conversational-type-scale-mobile * @base-font-size / @grid-base) + 1;
+@conversational-type-row-span-mobile: floor(@conversational-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @conversational-type-weight-mobile: @sk-regular;
 
 @intimate-type-scale: 1.4;
-@intimate-type-row-span: ceil(@intimate-type-scale * @base-font-size / @grid-base) + 1;
+@intimate-type-row-span: floor(@intimate-type-scale * @base-font-size / @grid-base) + 2;
 @intimate-type-weight: @sk-regular;
 @intimate-type-scale-mobile: 1.4;
-@intimate-type-row-span-mobile: ceil(@intimate-type-scale-mobile * @base-font-size / @grid-base) + 1;
+@intimate-type-row-span-mobile: floor(@intimate-type-scale-mobile * @base-font-size / @grid-base) + 2;
 @intimate-type-weight-mobile: @sk-regular;
 
 @whispering-type-scale: 1.2;
-@whispering-type-row-span: ceil(@whispering-type-scale * @base-font-size / @grid-base) + 1;
+@whispering-type-row-span: floor(@whispering-type-scale * @base-font-size / @grid-base) + 1;
 @whispering-type-weight: @sk-regular;
 @whispering-type-scale-mobile: 1.2;
-@whispering-type-row-span-mobile: ceil(@whispering-type-scale-mobile * @base-font-size / @grid-base) + 1;
+@whispering-type-row-span-mobile: floor(@whispering-type-scale-mobile * @base-font-size / @grid-base) + 1;
 @whispering-type-weight-mobile: @sk-regular;
 
 @compact-interaction-type-scale: 1.4;

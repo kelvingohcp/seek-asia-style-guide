@@ -42,6 +42,7 @@
 }
 
 .touchableText(@font-scale: @interaction-type-scale; @border-width: 0) {
+
   .rawText(@font-scale);
   line-height: @touchableTextHeight - (@border-width * 2);
   height: @touchableTextHeight;
@@ -81,6 +82,7 @@
   // Define responsive text breakpoint limits
   @max-breakpoint: (@responsive-breakpoint - 1);
   @min-breakpoint: @responsive-breakpoint;
+
   // Concatenate type hierarchy variable name
   @type-scale: "@{variant}-type-scale";
   @row-span: "@{variant}-type-row-span";
