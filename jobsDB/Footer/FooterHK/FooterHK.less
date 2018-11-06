@@ -42,10 +42,9 @@
   display: flex;
   justify-content: space-between;
   padding: @wrapper-low-vertical-padding 0;
-  align-items: end;
+  align-items: stretch;
   @media @tablet {
     padding: 0;
-    align-items: center;
   }
 }
 
@@ -78,10 +77,12 @@
 
 .chevronIcon {
   cursor: pointer;
-  padding: @grid-base * 3 @grid-base * 4 @grid-base * 16 @grid-base * 8;
+  padding: @grid-base * 3 @grid-base * 4 0 @grid-base * 8;
   color: @saBlue2;
   @media @tablet {
-    padding: @grid-base * 3 @grid-base * 4 @grid-base * 3 @grid-base * 8;
+    display: flex;
+    align-items: center;
+    padding: 0 @grid-base * 4 0 @grid-base * 8;
   }
   @media @desktop {
     padding-right: @grid-base * 6;
