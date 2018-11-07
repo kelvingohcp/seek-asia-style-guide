@@ -5,30 +5,39 @@
 .screamingTextResponsive(@baseline: true) {
   .__responsiveType("screaming"; @baseline);
 }
+
 .yellingTextResponsive(@baseline: true) {
   .__responsiveType("yelling"; @baseline);
 }
+
 .shoutingTextResponsive(@baseline: true) {
   .__responsiveType("shouting"; @baseline);
 }
+
 .wavingTextResponsive(@baseline: true) {
   .__responsiveType("waving"; @baseline);
 }
+
 .whistlingTextResponsive(@baseline: true) {
   .__responsiveType("whistling"; @baseline);
 }
+
 .whisperingTitleTextResponsive(@baseline: true) {
   .__responsiveType("whisperingTitle"; @baseline);
 }
+
 .loudTextResponsive(@baseline: true) {
   .__responsiveType("loud"; @baseline);
 }
+
 .conversationalTextResponsive(@baseline: true) {
   .__responsiveType("conversational"; @baseline);
 }
+
 .intimateTextResponsive(@baseline: true) {
   .__responsiveType("intimate"; @baseline);
 }
+
 .whisperingTextResponsive(@baseline: true) {
   .__responsiveType("whispering"; @baseline);
 }
@@ -79,11 +88,11 @@
 }
 
 .__responsiveType(@variant; @baseline) when (isstring(@variant)) {
-  // Define responsive text breakpoint limits
+  /* Define responsive text breakpoint limits */
   @max-breakpoint: (@responsive-breakpoint - 1);
   @min-breakpoint: @responsive-breakpoint;
 
-  // Concatenate type hierarchy variable name
+  /* Concatenate type hierarchy variable name */
   @type-scale: "@{variant}-type-scale";
   @row-span: "@{variant}-type-row-span";
   @weight: "@{variant}-type-weight";
