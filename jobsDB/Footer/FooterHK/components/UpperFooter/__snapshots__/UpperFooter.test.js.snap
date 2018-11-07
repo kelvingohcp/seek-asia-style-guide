@@ -15,7 +15,6 @@ exports[`UpperFooter: should render columns with messages and linking functions 
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         About JobsDB
       </Text>
@@ -135,7 +134,6 @@ exports[`UpperFooter: should render columns with messages and linking functions 
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         Job Seekers
       </Text>
@@ -172,7 +170,6 @@ exports[`UpperFooter: should render columns with messages and linking functions 
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         Employers
       </Text>
@@ -187,7 +184,6 @@ exports[`UpperFooter: should render columns with messages and linking functions 
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         Connect
       </Text>
@@ -211,7 +207,6 @@ exports[`UpperFooter: should render with company profile link 1`] = `
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         About JobsDB
       </Text>
@@ -331,7 +326,6 @@ exports[`UpperFooter: should render with company profile link 1`] = `
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         Job Seekers
       </Text>
@@ -368,7 +362,6 @@ exports[`UpperFooter: should render with company profile link 1`] = `
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         Employers
       </Text>
@@ -383,7 +376,6 @@ exports[`UpperFooter: should render with company profile link 1`] = `
         baseline={true}
         className="title"
         semiStrong={true}
-        waving={true}
       >
         Connect
       </Text>

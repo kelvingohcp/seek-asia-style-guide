@@ -9,7 +9,7 @@ const FooterLinks = ({ messages, cfsLink, wordpressLink }) => {
     <div className={styles.list}>
       <div className={styles.item}>
         {wordpressLink(
-          <Text className={styles.copyright} whistling secondary semiStrong>
+          <Text className={styles.copyright} intimate secondary semiStrong>
             {messages['FooterHK.privacyLinkText']}
           </Text>,
           messages['FooterHK.privacyLink']
@@ -17,7 +17,7 @@ const FooterLinks = ({ messages, cfsLink, wordpressLink }) => {
       </div>
       <div className={styles.item}>
         {wordpressLink(
-          <Text className={styles.copyright} whistling secondary semiStrong>
+          <Text className={styles.copyright} intimate secondary semiStrong>
             {messages['FooterHK.termsLinkText']}
           </Text>,
           messages['FooterHK.termsLink']
@@ -25,7 +25,7 @@ const FooterLinks = ({ messages, cfsLink, wordpressLink }) => {
       </div>
       <div className={styles.item}>
         {cfsLink(
-          <Text className={styles.copyright} whistling secondary semiStrong>
+          <Text className={styles.copyright} intimate secondary semiStrong>
             {messages['FooterHK.siteMapLinkText']}
           </Text>,
           messages['FooterHK.siteMapLink']

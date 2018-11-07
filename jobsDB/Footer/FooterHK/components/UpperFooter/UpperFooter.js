@@ -10,7 +10,7 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
     <Columns>
       <div className={styles.columnGroup}>
         <Section className={styles.firstCategory}>
-          <Text waving semiStrong className={styles.title}>
+          <Text semiStrong className={styles.title}>
             {messages['FooterHK.titleAboutJobsDB']}
           </Text>
           <Hidden mobile={true}>{ wordpressLink(
@@ -36,7 +36,7 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
           <PartnerSites messages={messages} externalLink={externalLink} />
         </Section>
         <Section className={styles.category}>
-          <Text waving semiStrong className={styles.title}>
+          <Text semiStrong className={styles.title}>
             {messages['FooterHK.titleJobSeeker']}
           </Text>
           {cfsLink(
@@ -63,7 +63,7 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
       </div>
       <div className={styles.columnGroup}>
         <Section className={styles.category}>
-          <Text waving semiStrong className={styles.title}>
+          <Text semiStrong className={styles.title}>
             {messages['FooterHK.titleEmployer']}
           </Text>
           {wordpressLink(
@@ -84,7 +84,7 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
           )}
         </Section>
         <Section className={styles.category}>
-          <Text waving semiStrong className={styles.title}>
+          <Text semiStrong className={styles.title}>
             {messages['FooterHK.titleConnect']}
           </Text>
           {externalLink(

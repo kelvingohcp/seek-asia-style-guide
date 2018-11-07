@@ -160,9 +160,9 @@ exports[`FooterHK component should render with "Best Companies" ListItem 1`] = `
         />
         <Text
           baseline={true}
+          intimate={true}
           secondary={true}
           semiStrong={true}
-          whistling={true}
         >
           © jobsDB. All Rights Reserved
         </Text>
@@ -343,9 +343,9 @@ exports[`FooterHK component should render with custom href link 1`] = `
         />
         <Text
           baseline={true}
+          intimate={true}
           secondary={true}
           semiStrong={true}
-          whistling={true}
         >
           © jobsDB. All Rights Reserved
         </Text>
@@ -526,9 +526,9 @@ exports[`FooterHK component should render with custom link renderer 1`] = `
         />
         <Text
           baseline={true}
+          intimate={true}
           secondary={true}
           semiStrong={true}
-          whistling={true}
         >
           © jobsDB. All Rights Reserved
         </Text>
@@ -709,9 +709,9 @@ exports[`FooterHK component should render with default props 1`] = `
         />
         <Text
           baseline={true}
+          intimate={true}
           secondary={true}
           semiStrong={true}
-          whistling={true}
         >
           © jobsDB. All Rights Reserved
         </Text>
