@@ -261,6 +261,16 @@ export default {
             ...props,
             isSelected: true
           })
+        },
+        {
+          label: 'Borderless Root',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            job: {
+              ...props.job
+            },
+            borderlessRoot: true
+          })
         }
       ]
     },

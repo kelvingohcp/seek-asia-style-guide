@@ -60,7 +60,8 @@ export default class JobCard extends React.Component {
       applied = false,
       isSelected,
       bookmarked,
-      onBookmarkClick
+      onBookmarkClick,
+      borderlessRoot = false
     } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
     return (
@@ -68,6 +69,8 @@ export default class JobCard extends React.Component {
         <Bookmark bookmarked={bookmarked} onBookmarkClick={onBookmarkClick} />
         <Card
           className={classnames(styles.root, {
+            [styles.borderRoot]: !borderlessRoot,
+            [styles.borderlessRoot]: borderlessRoot,
             [styles.highlightedBg]: jobAdTypeOption.showHighlightedBg,
             [styles.selected]: isSelected
           })}>
@@ -269,5 +272,6 @@ JobCard.propTypes = {
   viewed: PropTypes.bool,
   applied: PropTypes.bool,
   bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
-  onBookmarkClick: PropTypes.func
+  onBookmarkClick: PropTypes.func,
+  borderlessRoot: PropTypes.bool
 };

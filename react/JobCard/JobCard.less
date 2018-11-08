@@ -16,9 +16,6 @@
 .root {
   width: 100%;
   margin-bottom: 0;
-  border-style: solid;
-  border-bottom-width: 1px;
-  border-color: @saGrey4;
   @media @desktop {
     padding: 0;
   }
@@ -31,6 +28,16 @@
     grid-gap: @grid-base;
   }
   word-break: break-word;
+}
+
+.borderRoot {
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-color: @saGrey4;
+}
+
+.borderlessRoot {
+  border-bottom-width: 0;
 }
 
 .headerSection {
