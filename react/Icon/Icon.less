@@ -1,0 +1,89 @@
+@import (reference) '~seek-asia-style-guide/theme';
+
+.root {
+  display: inline-block;
+  width: @grid-base * 6;
+  height: @grid-base * 6;
+  line-height: 1;
+}
+
+.small {
+  width: @grid-base * 4;
+  height: @grid-base * 4;
+}
+
+.large {
+  width: @grid-base * 9;
+  height: @grid-base * 9;
+}
+
+.smoothRotate {
+  transition: transform 0.3s;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.rotate90cc {
+  transform: rotate(-90deg);
+}
+
+.rotate180cc {
+  transform: rotate(-180deg);
+}
+
+.smallBounce {
+  animation: bounce 0.3s both;
+}
+
+@keyframes bounce {
+  from,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  50% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -6px, 0);
+  }
+}
+
+@keyframes rotate90 {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate90cc {
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate180 {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate180cc {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.popIn {
+  animation: popIn 0.3s ease-in-out;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

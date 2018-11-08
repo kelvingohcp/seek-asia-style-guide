@@ -2,37 +2,25 @@ import styles from './IconPreview.less';
 
 import React from 'react';
 import {
-  IconAlert,
-  IconBookmark,
-  IconCompany,
-  IconEducation,
-  IconEmployer,
-  IconExperience,
-  IconHome,
-  IconJobAd,
-  IconMail,
-  IconNegative,
-  IconPositive,
-  IconResume,
-  IconSearch
+  Icon
 } from 'seek-asia-style-guide/react';
 
 export default function IconPreview() {
   return (
     <div className={styles.root}>
-      <IconEducation className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconExperience className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconResume className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconJobAd className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconCompany className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconSearch className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconEmployer className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconHome className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconBookmark className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconAlert className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconNegative className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconPositive className={styles.icon} svgClassName={styles.iconSvg} />
-      <IconMail className={styles.icon} svgClassName={styles.iconSvg} />
+      <Icon type="education" size="large" />
+      <Icon type="experience" size="large" />
+      <Icon type="resume" size="large" />
+      <Icon type="jobAd" size="large" />
+      <Icon type="company" size="large" />
+      <Icon type="search" size="large" />
+      <Icon type="employer" size="large" />
+      <Icon type="home" size="large" />
+      <Icon type="bookmark" size="large" />
+      <Icon type="alert" size="large" />
+      <Icon type="negative" size="large" />
+      <Icon type="positive" size="large" />
+      <Icon type="mail" size="large" />
     </div>
   );
 }

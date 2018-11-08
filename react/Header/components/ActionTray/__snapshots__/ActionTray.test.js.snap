@@ -11,8 +11,13 @@ exports[`ActionTray should not render home link if showHome prop is explicitly f
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>
@@ -42,8 +47,13 @@ exports[`ActionTray should not render search link if showSearch prop is explicit
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>
@@ -65,8 +75,13 @@ exports[`ActionTray should render with country hk 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>
@@ -86,8 +101,13 @@ exports[`ActionTray should render with default props 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>
@@ -100,9 +120,13 @@ exports[`ActionTray should render with home tab active 1`] = `
   <div
     className="actionTrayTab"
   >
-    <Icons
-      iconName="home"
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg activeActionTrayIcon"
+      type="home"
     />
   </div>
   <div
@@ -112,8 +136,13 @@ exports[`ActionTray should render with home tab active 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>
@@ -133,8 +162,13 @@ exports[`ActionTray should render with login available 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>
@@ -148,9 +182,13 @@ exports[`ActionTray should render with menu open 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <Icons
-      iconName="home"
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="home"
     />
   </div>
   <div
@@ -160,8 +198,13 @@ exports[`ActionTray should render with menu open 1`] = `
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg activeActionTrayIcon"
+      type="menu"
     />
   </div>
 </div>
@@ -177,17 +220,26 @@ exports[`ActionTray should render with search tab active 1`] = `
   <div
     className="actionTrayTab"
   >
-    <Icons
-      iconName="search"
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg activeActionTrayIcon"
+      type="search"
     />
   </div>
   <div
     className="menuToggle"
     onClick={[MockFunction]}
   >
-    <HamburgerIcon
+    <Icon
+      animation=""
+      rotation=""
+      size=""
+      smoothRotate={false}
       svgClassName="svg"
+      type="menu"
     />
   </div>
 </div>

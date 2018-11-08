@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { Icons, HamburgerIcon, Constants } from 'seek-asia-style-guide/react';
+import { Icon, Constants } from 'seek-asia-style-guide/react';
 import styles from './ActionTray.less';
 
 const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, showFlag, handleToggleMenu, linkRenderer, title, iconName }) => {
@@ -10,9 +10,9 @@ const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, sh
       <div
         onClick={(menuOpen && activeTab === tabName) ? handleToggleMenu : undefined} // eslint-disable-line no-undefined
         className={menuOpen ? styles.menuToggle : styles.actionTrayTab}>
-        <Icons
+        <Icon
           title={title}
-          iconName={iconName}
+          type={iconName}
           svgClassName={classnames(styles.svg, {
             [brandStyles.activeActionTrayIcon]: !menuOpen
           })}
@@ -24,7 +24,7 @@ const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, sh
           linkRenderer({
             href: linkUrl,
             className: styles.actionTrayLink,
-            children: <Icons title={title} iconName={iconName} svgClassName={styles.svg} />
+            children: <Icon title={title} type={iconName} svgClassName={styles.svg} />
           })
         }
       </div>
@@ -66,7 +66,7 @@ const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOp
         }
         {showMenu && (
           <div onClick={handleToggleMenu} className={styles.menuToggle}>
-            <HamburgerIcon svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} />
+            <Icon type="menu" svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} />
           </div>
         )}
       </div>

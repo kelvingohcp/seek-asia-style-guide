@@ -1,0 +1,376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon renders with default props 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className=""
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon renders with title 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className=""
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      title
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 90 deg counter-clockwise rotate animated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate90cc smoothRotate"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 90 deg counter-clockwise rotated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate90cc"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 90 deg rotate animated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate90 smoothRotate"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 90 deg rotated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate90"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 180 deg counter-clockwise rotate animated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate180cc smoothRotate"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 180 deg counter-clockwise rotate animated style 2`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate180cc smoothRotate"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 180 deg counter-clockwise rotated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate180cc"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 180 deg rotate animated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate180 smoothRotate"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the 180 deg rotated style 1`] = `
+<span
+  className="root"
+>
+  <svg
+    aria-hidden="true"
+    className="rotate180"
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the bounce animation 1`] = `
+<span
+  className="root smallBounce"
+>
+  <svg
+    aria-hidden="true"
+    className=""
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the large style 1`] = `
+<span
+  className="root large"
+>
+  <svg
+    aria-hidden="true"
+    className=""
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the popIn animation 1`] = `
+<span
+  className="root popIn"
+>
+  <svg
+    aria-hidden="true"
+    className=""
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Icon should render the small style 1`] = `
+<span
+  className="root small"
+>
+  <svg
+    aria-hidden="true"
+    className=""
+    focusable="false"
+    preserveAspectRatio="xMidyMid"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+      fill="currentColor"
+      role="presentation"
+    />
+  </svg>
+</span>
+`;

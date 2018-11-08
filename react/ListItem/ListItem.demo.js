@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
 import * as sketch from './ListItem.sketch';
-import { Icons, Checkbox } from 'seek-asia-style-guide/react';
+import { Icon, Checkbox } from 'seek-asia-style-guide/react';
 export default {
   route: '/listItem',
   title: 'List Item',
@@ -43,7 +43,7 @@ export default {
             ...props,
             secondLevel: false,
             icon: (
-              <Icons iconName="skills" />
+              <Icon type="skills" size="small" />
             )
           })
         },
@@ -53,7 +53,7 @@ export default {
             ...props,
             secondLevel: false,
             icon: (
-              <Icons iconName="company" />
+              <Icon type="company" size="small" />
             )
           })
         }
