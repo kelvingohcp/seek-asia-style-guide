@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Header.less';
 import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
-import { PortalIcon, LightbulbIcon, ResourcesIcon, JobFunctionIcon, ProfileIcon, JobInvitationIcon, EducationIcon, EventIcon, IconResume, IconBookmark, Icons } from 'seek-asia-style-guide/react';
+import { PortalIcon, LightbulbIcon, ResourcesIcon, JobFunctionIcon, ProfileIcon, JobInvitationIcon, EducationIcon, EventIcon, IconResume, IconBookmark, Icon } from 'seek-asia-style-guide/react';
 import { getLocalization } from '../localization';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/private/authStatusTypes';
 
@@ -27,14 +27,14 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
   {
     title: messages['header.myJobsDBApplicationHistoryListTitle'],
     ItemIcon: props => {
-      return <Icons iconName='applicationHistory' {...props} />;
+      return <Icon type='applicationHistory' {...props} />;
     },
     url: baseUrl + messages['header.myJobsDBApplicationHistoryListUrl']
   },
   {
     title: messages['header.myJobsDBJobAlertsListTitle'],
     ItemIcon: props => {
-      return <Icons iconName='jobAlert' {...props} />;
+      return <Icon type='jobAlert' {...props} />;
     },
     url: baseUrl + messages['header.myJobsDBJobAlertsListUrl']
   },

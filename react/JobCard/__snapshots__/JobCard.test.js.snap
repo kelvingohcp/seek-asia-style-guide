@@ -6,7 +6,7 @@ exports[`JobCard should not render shelf section 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -156,7 +156,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -320,7 +320,7 @@ exports[`JobCard should pass through bookmark props 1`] = `
     onBookmarkClick={[Function]}
   />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection withBookmark"
@@ -549,7 +549,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -779,7 +779,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -1008,7 +1008,7 @@ exports[`JobCard should render job title component 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -1238,7 +1238,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -1467,7 +1467,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
 >
   <Bookmark />
   <Card
-    className="root highlightedBg"
+    className="root borderRoot highlightedBg"
   >
     <Section
       className="headerSection"
@@ -1711,7 +1711,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -1940,7 +1940,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -2177,7 +2177,7 @@ exports[`JobCard should render plain company label 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -2404,7 +2404,7 @@ exports[`JobCard should render selected style 1`] = `
 >
   <Bookmark />
   <Card
-    className="root selected"
+    className="root borderRoot selected"
   >
     <Section
       className="headerSection"
@@ -2633,7 +2633,7 @@ exports[`JobCard should render tag links 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -2882,7 +2882,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -3117,7 +3117,7 @@ exports[`JobCard should render with applied badge 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -3353,7 +3353,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -3576,7 +3576,7 @@ exports[`JobCard should render with default props 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -3805,7 +3805,7 @@ exports[`JobCard should render with expired badge 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -4043,7 +4043,7 @@ exports[`JobCard should render with featured label 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -4281,7 +4281,7 @@ exports[`JobCard should render with selling points props 1`] = `
 >
   <Bookmark />
   <Card
-    className="root"
+    className="root borderRoot"
   >
     <Section
       className="headerSection"
@@ -4324,6 +4324,235 @@ exports[`JobCard should render with selling points props 1`] = `
               "Our company supports a fun yet balanced working environment",
               "We support a safe environment for our employees",
             ],
+            "shelf": Object {
+              "shelfLinks": Array [
+                Object {
+                  "items": Array [
+                    Object {
+                      "link": "/jobCard",
+                      "name": "Accountant",
+                    },
+                  ],
+                  "label": "Job function",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "link": "/jobCard",
+                      "name": "Accounting / Audit / Tax Services",
+                    },
+                  ],
+                  "label": "Industry",
+                },
+              ],
+            },
+          }
+        }
+        keyword=""
+      />
+    </Section>
+    <Section
+      className="bodySection"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <div
+        className="bodyDetailsWrapper"
+      >
+        <Text
+          baseline={false}
+          className="company"
+          intimate={true}
+        >
+          <CompanyLink
+            company={
+              Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              }
+            }
+            keyword=""
+          />
+        </Text>
+      </div>
+    </Section>
+    <Section
+      className="footerSection"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <div
+        className="footerLeft"
+      >
+        <div
+          className="jobInfoContainer"
+        >
+          <div
+            className="jobInfoList"
+          >
+            <Text
+              baseline={false}
+              className="jobInfo"
+              whispering={true}
+            >
+              <LocationIcon
+                className="jobInfoIcon"
+              />
+              <LocationGroup
+                locations={
+                  Array [
+                    Object {
+                      "link": "/jobCard",
+                      "name": "Pahang",
+                    },
+                    Object {
+                      "child": Object {
+                        "child": Object {
+                          "name": "Near Leisure Mall",
+                        },
+                        "link": "/jobCard",
+                        "name": "Cheras",
+                      },
+                      "link": "/jobCard",
+                      "name": "Selangor",
+                    },
+                  ]
+                }
+              />
+            </Text>
+            <Text
+              baseline={false}
+              className="jobInfo"
+              whispering={true}
+            >
+              <MoneyIcon
+                className="jobInfoIcon"
+              />
+              <span>
+                RM99999 - RM999999
+              </span>
+            </Text>
+          </div>
+          <div>
+            <Text
+              baseline={false}
+              className="postingDuration"
+              whispering={true}
+            >
+              1 hour ago
+            </Text>
+            <span
+              className="shelfToggleContainer"
+            >
+              <Text
+                baseline={false}
+                className="separatorDot"
+                whispering={true}
+              >
+                •
+              </Text>
+              <Button
+                className="shelfToggle"
+                color="hyperlink"
+                component="button"
+                onClick={[Function]}
+              >
+                <Text
+                  baseline={false}
+                  className="shelfToggleText"
+                  whispering={true}
+                >
+                  more
+                   
+                  <ChevronIcon
+                    className=""
+                    direction="down"
+                    svgClassName="shelfToggleIcon"
+                  />
+                </Text>
+              </Button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <ShelfSection
+      shelf={
+        Object {
+          "shelfLinks": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accountant",
+                },
+              ],
+              "label": "Job function",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accounting / Audit / Tax Services",
+                },
+              ],
+              "label": "Industry",
+            },
+          ],
+        }
+      }
+      showShelfSection={false}
+    />
+  </Card>
+</div>
+`;
+
+exports[`JobCard should render without border 1`] = `
+<div
+  className="container"
+>
+  <Bookmark />
+  <Card
+    className="root borderlessRoot"
+  >
+    <Section
+      className="headerSection"
+      header={false}
+      pullout={false}
+      slim={false}
+    >
+      <JobTitleLink
+        job={
+          Object {
+            "company": Object {
+              "link": "/jobCard",
+              "name": "SEEK Asia",
+            },
+            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "jobTitle": "Senior Software Engineer (6 months Contract)",
+            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+            "locations": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Pahang",
+              },
+              Object {
+                "child": Object {
+                  "child": Object {
+                    "name": "Near Leisure Mall",
+                  },
+                  "link": "/jobCard",
+                  "name": "Cheras",
+                },
+                "link": "/jobCard",
+                "name": "Selangor",
+              },
+            ],
+            "postingDuration": "1 hour ago",
+            "salary": "RM99999 - RM999999",
             "shelf": Object {
               "shelfLinks": Array [
                 Object {
