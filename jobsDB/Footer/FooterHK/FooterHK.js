@@ -89,7 +89,7 @@ class FooterHK extends Component {
                 [styles.collapsed]: isExpandedVersion ? false : !isOpen,
                 [styles.lowerWrapperLinks]: true })}>
               <FooterLinks messages={messages} baseUrl={baseUrl} cfsLink={cfsLink} wordpressLink={wordpressLink} />
-              <Text whistling secondary semiStrong>
+              <Text intimate secondary semiStrong>
                 {messages['FooterHK.copyright']}
               </Text>
             </div>

@@ -11,7 +11,7 @@ const PartnerSites = ({ messages, externalLink }) => {
       noShadow
       className={styles.content}
       semiStrong
-      whistling
+      intimate
       compact
       chevronAlignment='top'
       iconPosition="left">

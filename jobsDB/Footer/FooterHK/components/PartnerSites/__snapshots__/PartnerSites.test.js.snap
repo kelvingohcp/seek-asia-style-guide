@@ -6,10 +6,10 @@ exports[`PartnerSites: should render list with messages and linking function 1`]
   className="content"
   compact={true}
   iconPosition="left"
+  intimate={true}
   lowerLevel={false}
   noShadow={true}
   semiStrong={true}
   value="International partners"
-  whistling={true}
 />
 `;
