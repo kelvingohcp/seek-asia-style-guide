@@ -17,19 +17,22 @@ export const LocationsPropTypes = PropTypes.arrayOf(PropTypes.shape({
   })
 }));
 
-const renderLocation = ({ link, name, title, child, LinkComponent, key }) => {
+const renderLocation = ({ link, name, title, child, LinkComponent, showShortenedLocation, key }) => {
   const locationLink = (link) ?
     (<LinkComponent link={link} className={styles.locationLink} key={key} title={title}>{name}</LinkComponent>) :
     (<span className={styles.locationName} key={key}>{name}</span>);
   if (child) {
-    return [locationLink, ' > ', ...renderLocation({ ...child, LinkComponent, key: `${key}1` })];
+    if (showShortenedLocation) {
+      return [...renderLocation({ ...child, LinkComponent, showShortenedLocation, key: `${key}1` })];
+    }
+    return [locationLink, ' > ', ...renderLocation({ ...child, LinkComponent, showShortenedLocation, key: `${key}1` })];
   }
   return [locationLink];
 };
 
-const LocationGroup = ({ locations, LinkComponent = defaultLink }) => {
+const LocationGroup = ({ locations, LinkComponent = defaultLink, showShortenedLocation }) => {
   return locations.map((location, index) =>
-    renderLocation({ ...location, LinkComponent, key: index })
+    renderLocation({ ...location, LinkComponent, showShortenedLocation, key: index })
   ).reduce((prev, curr) => [prev, ', ', ...curr]);
 };
 
@@ -37,5 +40,6 @@ export default LocationGroup;
 
 LocationGroup.propTypes = {
   locations: LocationsPropTypes.isRequired,
-  LinkComponent: PropTypes.func
+  LinkComponent: PropTypes.func,
+  showShortenedLocation: PropTypes.bool
 };

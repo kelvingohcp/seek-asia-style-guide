@@ -61,6 +61,7 @@ export default class JobCard extends React.Component {
       isSelected,
       bookmarked,
       onBookmarkClick,
+      showShortenedLocation,
       borderlessRoot = false
     } = this.props;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
@@ -170,6 +171,7 @@ export default class JobCard extends React.Component {
                       <LocationGroup
                         locations={job.locations}
                         LinkComponent={LinkComponent}
+                        showShortenedLocation={showShortenedLocation}
                       />
                     )}
                   </Text>
@@ -273,5 +275,6 @@ JobCard.propTypes = {
   applied: PropTypes.bool,
   bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
   onBookmarkClick: PropTypes.func,
+  showShortenedLocation: PropTypes.bool,
   borderlessRoot: PropTypes.bool
 };

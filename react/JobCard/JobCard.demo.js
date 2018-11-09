@@ -263,6 +263,13 @@ export default {
           })
         },
         {
+          label: 'Shortened Location',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            showShortenedLocation: true
+          })
+        },
+        {
           label: 'Borderless Root',
           transformProps: ({ className, ...props }) => ({
             ...props,
