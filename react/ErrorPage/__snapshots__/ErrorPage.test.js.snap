@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage should render correctly 1`] = `
+<Card
+  className="card"
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Icon
+      className=""
+      markup="mock svg"
+      svgClassName="failIcon"
+    />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      screaming={true}
+    >
+      Hmm... we can't seem to load the screen
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      Keep calm and retry first
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
