@@ -31,3 +31,21 @@ Array [
   />,
 ]
 `;
+
+exports[`JobCard - LocationGroup should render with only last child location 1`] = `
+Array [
+  Array [
+    <Link
+      className="locationLink"
+      key="0"
+      link="/jobCard"
+      title="Limit result to Pahang"
+    />,
+  ],
+  ", ",
+  <span
+    className="locationName"
+    key="111"
+  />,
+]
+`;

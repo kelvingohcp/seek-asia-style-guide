@@ -29,4 +29,9 @@ describe('JobCard - LocationGroup', () => {
     const wrapper = shallow(<LocationGroup locations={defaultLocations} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with only last child location', () => {
+    const wrapper = shallow(<LocationGroup locations={defaultLocations} showShortenedLocation={true} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
