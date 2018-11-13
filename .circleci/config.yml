@@ -22,6 +22,7 @@ jobs:
        - run: npm install
        - run: npm run build
        - run: npm run deploy-surge -- -d seek-asia-style-guide--$CIRCLE_SHA1.surge.sh
+       - run: npm run post-commit-status
   deploy:
     docker:
       - image: circleci/node:8.5
