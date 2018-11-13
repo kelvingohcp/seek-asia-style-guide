@@ -5,7 +5,7 @@ import Icon from '../private/Icon/Icon';
 
 const getIconSvg = (getItem, title) => {
   return (
-    `<svg width="24" height="24" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+    `<svg width="24" height="24" viewBox="0 0 100 100">
       <title>${title ? title : getItem.name}</title>
       <path d="${getItem.path}" fill="currentColor" />
     </svg>`
