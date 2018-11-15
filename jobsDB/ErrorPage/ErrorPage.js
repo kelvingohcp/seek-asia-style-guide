@@ -1,16 +1,25 @@
 import ErrorIcon from './ErrorIcon.svg';
+import PropTypes from 'prop-types';
 import styles from './ErrorPage.less';
 import React from 'react';
-import Icon from '../../react/private/Icon/Icon';
 import { Card, Section, Text, Button } from 'seek-asia-style-guide/react';
 
-const retry = () => location.reload();
+const reload = () => location.reload();
 
-export default function JobsDBErrorPage() {
+const ErrorSVG = () => {
+  const svgWithClasses = ErrorIcon
+    .replace('<svg ', `<svg class="${styles.failIcon}" `);
+
   return (
-    <Card className={styles.card}>
+    <span dangerouslySetInnerHTML={{ __html: svgWithClasses }} /> // eslint-disable-line react/no-danger
+  );
+};
+
+export default function JobsDBErrorPage({ onRetryClick }) {
+  return (
+    <Card transparent>
       <Section className={styles.section}>
-        <Icon markup={ErrorIcon} svgClassName={styles.failIcon} />
+        <ErrorSVG />
       </Section>
       <Section className={styles.section}>
         <Text yelling>
@@ -25,12 +34,16 @@ export default function JobsDBErrorPage() {
           color="callToAction"
           isJobsDB
           className={styles.retryButton}
-          onClick={retry}>
+          onClick={onRetryClick || reload}>
             Retry
         </Button>
       </Section>
     </Card>
   );
 }
+
+JobsDBErrorPage.propTypes = {
+  onRetryClick: PropTypes.function
+};
 
 JobsDBErrorPage.displayName = 'JobsDBErrorPage';

@@ -8,4 +8,9 @@ describe('JobsDB Error Page', () => {
     const wrapper = shallow(<ErrorPage />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render correctly', () => {
+    const wrapper = shallow(<ErrorPage onRetryClick={() => ({ abc: 'a' })} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

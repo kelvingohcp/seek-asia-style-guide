@@ -21,5 +21,21 @@ export default {
   title: 'JobsDB Error Page',
   component: ErrorPage,
   initialProps: {},
-  options: [ ]
+  options: [
+    {
+      label: 'onRetryClick',
+      type: 'checklist',
+      states: [
+        {
+          label: 'onRetryClick',
+          transformProps: props => ({
+            ...props,
+            onRetryClick: () => {
+              alert('hi'); // eslint-disable-line no-alert
+            }
+          })
+        }
+      ]
+    }
+  ]
 };
