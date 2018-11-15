@@ -27,7 +27,6 @@ export default function Icon({
       })}>
       <svg
         xmlns={'http://www.w3.org/2000/svg'}
-        preserveAspectRatio={'xMidyMid'}
         aria-hidden={'true'}
         focusable={'false'}
         {...restProps}
