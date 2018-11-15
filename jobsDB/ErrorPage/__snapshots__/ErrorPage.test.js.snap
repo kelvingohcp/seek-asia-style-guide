@@ -2,7 +2,7 @@
 
 exports[`JobsDB Error Page should render correctly 1`] = `
 <Card
-  className="card"
+  transparent={true}
 >
   <Section
     className="section"
@@ -10,11 +10,59 @@ exports[`JobsDB Error Page should render correctly 1`] = `
     pullout={false}
     slim={false}
   >
-    <Icon
-      className=""
-      markup="mock svg"
-      svgClassName="failIcon"
-    />
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      Hmm... we can't seem to load the screen
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      Keep calm and retry first
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly 2`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
   </Section>
   <Section
     className="section"

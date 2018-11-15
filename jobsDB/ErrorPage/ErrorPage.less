@@ -1,12 +1,20 @@
 @import (reference) '~seek-asia-style-guide/theme';
 
 .failIcon {
-  width: @grid-base * 70;
-  height: @grid-base * 70;
+  width: @grid-base * 35;
+  height: @grid-base * 17.5;
+  @media @desktop {
+    width: @grid-base * 70;
+    height: @grid-base * 70;
+  }
 }
 
 .section {
   text-align: center;
+  padding: (@grid-row-height * 2) @grid-gutter-width;
+  @media @desktop {
+    padding: (@grid-row-height * 3) @grid-gutter-width;
+  }
 }
 
 .retryButton {

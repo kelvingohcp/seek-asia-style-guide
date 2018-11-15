@@ -1,1 +1,53 @@
-<svg viewBox="0 0 175 175" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="4.8671%" y1="0%" y2="100%" id="a"><stop stop-opacity=".556" offset="0%"/><stop stop-opacity=".1644" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M-73-96h320v568H-73z"/><path fill="#EEE" d="M-73-32h320v504H-73z"/><path fill="#FFF" d="M-73-32h320v455H-73z"/><g><path fill="#FFF" d="M0 .4972h175v174.0057H0z"/><g opacity=".9224" transform="rotate(11 -350.3956 564.4945)"><g><rect fill="#90BBFD" x=".9975" y="-.0003" width="32" height="52" rx="2"/><circle fill="#F8F8FA" cx="17" cy="49" r="2"/><rect fill="#F8F8FA" x="3.0003" y="2.0044" width="28" height="44" rx="2"/><path d="M3.0001 21.0034h28v23c0 1.1046-.8954 2-2 2h-24c-1.1046 0-2-.8954-2-2v-23z" fill="#3D6095"/></g><g fill="#FFF"><path d="M11.6003 27.6003c.7455-.7456 1.9543-.7456 2.6998 0l8.0996 8.0996c.7456.7455.7456 1.9543 0 2.6998-.7455.7456-1.9543.7456-2.6998 0l-8.0996-8.0996c-.7456-.7455-.7456-1.9543 0-2.6998z"/><path d="M22.3997 27.6003c.7456.7455.7456 1.9543 0 2.6998l-8.0996 8.0996c-.7455.7456-1.9543.7456-2.6998 0-.7456-.7455-.7456-1.9543 0-2.6998l8.0996-8.0996c.7455-.7456 1.9543-.7456 2.6998 0z"/></g><rect fill="#CCC" x="16" y="8" width="12" height="1.5" rx=".75"/><rect fill="#CCC" x="13" y="11" width="15" height="1.5" rx=".75"/><path d="M18.75 14h8.5a.75.75 0 1 1 0 1.5h-8.5a.75.75 0 1 1 0-1.5z" fill="#CCC"/><path d="M2.1351 9.144l25.9607 42.9094-25.1398-.0126c-1.1046-.0005-1.9996-.8964-1.999-2.001a2 2 0 0 1 .0008-.0566L2.135 9.1441z" fill="url(#a)"/></g><rect fill-opacity=".1637" fill="#90BBFD" y="134" width="175" height="4" rx="2"/><g transform="rotate(-15 221.403 -52.7236)"><g transform="translate(10 10)"><path d="M4 0h52c2.2091 0 4 1.7909 4 4v67c0 2.2091-1.7909 4-4 4H4c-2.2091 0-4-1.7909-4-4V4c0-2.2091 1.7909-4 4-4z" fill="#90BBFD"/><path d="M8 4h44c2.2091 0 4 1.7909 4 4v53c0 2.2091-1.7909 4-4 4H8c-2.2091 0-4-1.7909-4-4V8c0-2.2091 1.7909-4 4-4z" fill="#F8F8FA"/><path d="M8 4h44c2.2091 0 4 1.7909 4 4v39H4V8c0-2.2091 1.7909-4 4-4z" fill="#3D6095"/><circle fill="#F8F8FA" cx="30" cy="70" r="3"/></g><rect fill="#CCC" x="18" y="61" width="24" height="2" rx="1"/><rect fill="#CCC" x="18" y="65" width="32" height="2" rx="1"/><rect fill="#CCC" x="18" y="69" width="15" height="2" rx="1"/><g transform="translate(29 25)" fill="#FFF"><rect transform="rotate(-45 11 11)" x="8" y="-1" width="6" height="24" rx="3"/><rect transform="rotate(45 11 11)" x="8" y="-1" width="6" height="24" rx="3"/></g><rect fill="#3D6095" x="13" width="3" height="7" rx="1.5"/><path d="M4.0607 3.0607c.5857-.5858 1.5355-.5858 2.1213 0L9.0104 5.889c.5858.5858.5858 1.5355 0 2.1213-.5858.5858-1.5355.5858-2.1213 0L4.0607 5.182c-.5858-.5858-.5858-1.5356 0-2.1213zM.1307 13.4943c.0722-.8253.7998-1.4358 1.625-1.3636l3.9848.3487c.8253.0722 1.4358.7997 1.3636 1.625-.0722.8253-.7998 1.4357-1.625 1.3635l-3.9848-.3486c-.8253-.0722-1.4358-.7997-1.3636-1.625z" fill="#3D6095"/></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="90px" viewBox="0 0 175 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>fail_graphic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.86710495%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.556046196" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.164373868" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Tour-&amp;-Onboarding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iOS---Page-Fail-State-(General)" transform="translate(-73.000000, -144.000000)">
+            <g id="fail_graphic" transform="translate(73.000000, 133.000000)">
+                <g id="small-phone" opacity="0.922377232" transform="translate(112.413291, 69.391465) rotate(11.000000) translate(-112.413291, -69.391465) translate(95.913291, 42.891465)">
+                    <g id="Group-2" transform="translate(0.000000, -0.000000)">
+                        <rect id="Rectangle-19" fill="#90BBFD" x="0.997452885" y="-0.000326541086" width="32" height="52" rx="2"></rect>
+                        <circle id="Oval-7" fill="#F8F8FA" cx="17" cy="49" r="2"></circle>
+                        <rect id="Rectangle" fill="#F8F8FA" x="3.00028996" y="2.00435182" width="28" height="44" rx="2"></rect>
+                        <path d="M3.00011392,21.0034462 L31.0001139,21.0034462 L31.0001139,44.0034462 C31.0001139,45.1080157 30.1046834,46.0034462 29.0001139,46.0034462 L5.00011392,46.0034462 C3.89554442,46.0034462 3.00011392,45.1080157 3.00011392,44.0034462 L3.00011392,21.0034462 Z" id="Rectangle-Copy" fill="#3D6095"></path>
+                    </g>
+                    <g id="Group-3" transform="translate(10.000000, 26.000000)" fill="#FFFFFF">
+                        <path d="M7,-0.636363636 L7,-0.636363636 C8.0543618,-0.636363636 8.90909091,0.218365478 8.90909091,1.27272727 L8.90909091,12.7272727 C8.90909091,13.7816345 8.0543618,14.6363636 7,14.6363636 L7,14.6363636 C5.9456382,14.6363636 5.09090909,13.7816345 5.09090909,12.7272727 L5.09090909,1.27272727 C5.09090909,0.218365478 5.9456382,-0.636363636 7,-0.636363636 Z" id="Rectangle-24" transform="translate(7.000000, 7.000000) rotate(-45.000000) translate(-7.000000, -7.000000) "></path>
+                        <path d="M7,-0.636363636 L7,-0.636363636 C8.0543618,-0.636363636 8.90909091,0.218365478 8.90909091,1.27272727 L8.90909091,12.7272727 C8.90909091,13.7816345 8.0543618,14.6363636 7,14.6363636 L7,14.6363636 C5.9456382,14.6363636 5.09090909,13.7816345 5.09090909,12.7272727 L5.09090909,1.27272727 C5.09090909,0.218365478 5.9456382,-0.636363636 7,-0.636363636 Z" id="Rectangle-24-Copy" transform="translate(7.000000, 7.000000) rotate(45.000000) translate(-7.000000, -7.000000) "></path>
+                    </g>
+                    <rect id="Rectangle-4" fill="#CCCCCC" x="16" y="8" width="12" height="1.5" rx="0.75"></rect>
+                    <rect id="Rectangle-4-Copy" fill="#CCCCCC" x="13" y="11" width="15" height="1.5" rx="0.75"></rect>
+                    <path d="M18.75,14 L27.25,14 C27.6642136,14 28,14.3357864 28,14.75 L28,14.75 C28,15.1642136 27.6642136,15.5 27.25,15.5 L18.75,15.5 C18.3357864,15.5 18,15.1642136 18,14.75 L18,14.75 C18,14.3357864 18.3357864,14 18.75,14 Z" id="Rectangle-4-Copy-2" fill="#CCCCCC"></path>
+                    <path d="M2.13514771,9.14406543 L28.0957631,52.0533825 L2.95595678,52.0408485 C1.85138742,52.0402978 0.956403467,51.144421 0.956954171,50.0398517 C0.956963585,50.0209695 0.9572404,50.0020885 0.957784532,49.9832142 L2.13514771,9.14406543 Z" id="Rectangle-5" fill="url(#linearGradient-1)"></path>
+                </g>
+                <rect id="Rectangle-20" fill-opacity="0.16369452" fill="#90BBFD" x="0" y="97" width="175" height="4" rx="2"></rect>
+                <g id="big-phone" transform="translate(65.997216, 50.500000) rotate(-15.000000) translate(-65.997216, -50.500000) translate(30.997216, 8.000000)">
+                    <g id="Group" transform="translate(10.000000, 10.000000)">
+                        <path d="M4,0 L56,0 C58.209139,-4.05812251e-16 60,1.790861 60,4 L60,71 C60,73.209139 58.209139,75 56,75 L4,75 C1.790861,75 2.705415e-16,73.209139 0,71 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="Rectangle-17" fill="#90BBFD"></path>
+                        <path d="M8,4 L52,4 C54.209139,4 56,5.790861 56,8 L56,61 C56,63.209139 54.209139,65 52,65 L8,65 C5.790861,65 4,63.209139 4,61 L4,8 C4,5.790861 5.790861,4 8,4 Z" id="Rectangle-18" fill="#F8F8FA"></path>
+                        <path d="M8,4 L52,4 C54.209139,4 56,5.790861 56,8 L56,47 L4,47 L4,8 C4,5.790861 5.790861,4 8,4 Z" id="Rectangle-18-Copy" fill="#3D6095"></path>
+                        <circle id="Oval-7" fill="#F8F8FA" cx="30" cy="70" r="3"></circle>
+                    </g>
+                    <rect id="Rectangle-23" fill="#CCCCCC" x="18" y="61" width="24" height="2" rx="1"></rect>
+                    <rect id="Rectangle-23-Copy" fill="#CCCCCC" x="18" y="65" width="32" height="2" rx="1"></rect>
+                    <rect id="Rectangle-23-Copy-2" fill="#CCCCCC" x="18" y="69" width="15" height="2" rx="1"></rect>
+                    <g id="Group-3" transform="translate(29.000000, 25.000000)" fill="#FFFFFF">
+                        <rect id="Rectangle-24" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " x="8" y="-1" width="6" height="24" rx="3"></rect>
+                        <rect id="Rectangle-24-Copy" transform="translate(11.000000, 11.000000) rotate(45.000000) translate(-11.000000, -11.000000) " x="8" y="-1" width="6" height="24" rx="3"></rect>
+                    </g>
+                    <rect id="Rectangle-25" fill="#3D6095" x="13" y="0" width="3" height="7" rx="1.5"></rect>
+                    <path d="M6.53553391,2.03553391 L6.53553391,2.03553391 C7.36396103,2.03553391 8.03553391,2.70710678 8.03553391,3.53553391 L8.03553391,7.53553391 C8.03553391,8.36396103 7.36396103,9.03553391 6.53553391,9.03553391 L6.53553391,9.03553391 C5.70710678,9.03553391 5.03553391,8.36396103 5.03553391,7.53553391 L5.03553391,3.53553391 C5.03553391,2.70710678 5.70710678,2.03553391 6.53553391,2.03553391 Z" id="Rectangle-25-Copy" fill="#3D6095" transform="translate(6.535534, 5.535534) rotate(-45.000000) translate(-6.535534, -5.535534) "></path>
+                    <path d="M3.61741506,10.2993371 L3.61741506,10.2993371 C4.44584218,10.2993371 5.11741506,10.97091 5.11741506,11.7993371 L5.11741506,15.7993371 C5.11741506,16.6277643 4.44584218,17.2993371 3.61741506,17.2993371 L3.61741506,17.2993371 C2.78898793,17.2993371 2.11741506,16.6277643 2.11741506,15.7993371 L2.11741506,11.7993371 C2.11741506,10.97091 2.78898793,10.2993371 3.61741506,10.2993371 Z" id="Rectangle-25-Copy-2" fill="#3D6095" transform="translate(3.617415, 13.799337) rotate(275.000000) translate(-3.617415, -13.799337) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
