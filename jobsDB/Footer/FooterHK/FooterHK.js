@@ -57,7 +57,7 @@ class FooterHK extends Component {
       isOpen: shouldOpen
     });
     if (shouldOpen) {
-      smoothScroll(pageBottom, { speed: 0.3 });
+      smoothScroll(pageBottom);
     }
   }
 
