@@ -290,7 +290,7 @@ exports[`Icon should render the bounce animation 1`] = `
 
 exports[`Icon should render the large style 1`] = `
 <span
-  className="root large"
+  className="root sizeLarge"
 >
   <svg
     aria-hidden="true"
@@ -338,7 +338,7 @@ exports[`Icon should render the popIn animation 1`] = `
 
 exports[`Icon should render the small style 1`] = `
 <span
-  className="root small"
+  className="root sizeSmall"
 >
   <svg
     aria-hidden="true"

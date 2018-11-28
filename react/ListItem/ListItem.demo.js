@@ -43,7 +43,7 @@ export default {
             ...props,
             secondLevel: false,
             icon: (
-              <Icon type="skills" size="small" />
+              <Icon type="skills" size="small" lineHeight="conventional" />
             )
           })
         },
@@ -53,7 +53,7 @@ export default {
             ...props,
             secondLevel: false,
             icon: (
-              <Icon type="company" size="small" />
+              <Icon type="company" size="small" lineHeight="conventional" />
             )
           })
         }
