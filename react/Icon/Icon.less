@@ -2,17 +2,26 @@
 
 .root {
   display: inline-block;
-  width: @grid-base * 6;
-  height: @grid-base * 6;
+  width: 1em;
+  height: 1em;
   line-height: 1;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.small {
+.sizeSmall {
   width: @grid-base * 4;
   height: @grid-base * 4;
 }
 
-.large {
+.sizeNormal {
+  width: @grid-base * 6;
+  height: @grid-base * 6;
+}
+
+.sizeLarge {
   width: @grid-base * 9;
   height: @grid-base * 9;
 }
@@ -86,4 +95,75 @@
   0% { transform: scale(0.6); }
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
+}
+
+.iconLineHeight(ceil, @factor, @offset: 2) {
+  line-height: ceil((@factor * @base-font-size / @grid-base) + @offset) * @grid-base * 1px;
+}
+
+.iconLineHeight(floor, @factor, @offset: 2) {
+  line-height: floor((@factor * @base-font-size / @grid-base) + @offset) * @grid-base * 1px;
+}
+
+.lineHeightConversational {
+  .iconLineHeight(floor, @conversational-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(floor, @conversational-type-scale);
+  }
+}
+
+.lineHeightIntimate {
+  .iconLineHeight(floor, @intimate-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(floor, @intimate-type-scale);
+  }
+}
+
+.lineHeightLoud {
+  .iconLineHeight(floor, @loud-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(ceil, @loud-type-scale);
+  }
+}
+
+.lineHeightScreaming {
+  .iconLineHeight(ceil, @screaming-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(ceil, @screaming-type-scale);
+  }
+}
+
+.lineHeightShouting {
+  .iconLineHeight(ceil, @shouting-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(ceil, @shouting-type-scale);
+  }
+}
+
+.lineHeightWaving {
+  .iconLineHeight(floor, @waving-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(ceil, @waving-type-scale);
+  }
+}
+
+.lineHeightWhispering {
+  .iconLineHeight(floor, @whispering-type-scale-mobile, 1);
+  @media @desktop {
+    .iconLineHeight(floor, @whispering-type-scale, 1);
+  }
+}
+
+.lineHeightWhistling {
+  .iconLineHeight(ceil, @whistling-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(ceil, @whistling-type-scale);
+  }
+}
+
+.lineHeightYelling {
+  .iconLineHeight(ceil, @yelling-type-scale-mobile);
+  @media @desktop {
+    .iconLineHeight(ceil, @yelling-type-scale);
+  }
 }

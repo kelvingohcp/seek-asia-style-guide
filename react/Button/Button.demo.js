@@ -187,7 +187,7 @@ export default {
             ...props,
             children: (
               <span>
-                <Icon type="medical" small popIn />
+                <Icon type="medical" size="small" animation="popIn" lineHeight="waving" />
                 &nbsp;Click here
               </span>
             )
@@ -199,7 +199,7 @@ export default {
             ...props,
             children: (
               <span>
-                <Icon type="pastApplication" small popIn />
+                <Icon type="pastApplication" size="small" animation="popIn" lineHeight="waving" />
                 &nbsp;Click here
               </span>
             )

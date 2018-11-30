@@ -13,6 +13,7 @@ exports[`ActionTray should not render home link if showHome prop is explicitly f
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -49,6 +50,7 @@ exports[`ActionTray should not render search link if showSearch prop is explicit
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -77,6 +79,7 @@ exports[`ActionTray should render with country hk 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -103,6 +106,7 @@ exports[`ActionTray should render with default props 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -122,6 +126,7 @@ exports[`ActionTray should render with home tab active 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -138,6 +143,7 @@ exports[`ActionTray should render with home tab active 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -164,6 +170,7 @@ exports[`ActionTray should render with login available 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -184,6 +191,7 @@ exports[`ActionTray should render with menu open 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -200,6 +208,7 @@ exports[`ActionTray should render with menu open 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -222,6 +231,7 @@ exports[`ActionTray should render with search tab active 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -235,6 +245,7 @@ exports[`ActionTray should render with search tab active 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}

@@ -5,13 +5,14 @@ import styles from './Icon.less';
 import classnames from 'classnames';
 
 export default function Icon({
-  type,
-  className,
-  size,
-  title,
-  rotation,
   animation,
+  className,
+  lineHeight,
+  rotation,
+  size,
   smoothRotate,
+  title,
+  type,
   ...restProps
 }) {
   const iconData = IconPack.find(x => x.name === type);
@@ -20,10 +21,20 @@ export default function Icon({
     <span
       className={classnames({
         [styles.root]: true,
-        [styles.small]: size === 'small',
-        [styles.large]: size === 'large',
+        [styles.sizeSmall]: size === 'small',
+        [styles.sizeNormal]: size === 'normal',
+        [styles.sizeLarge]: size === 'large',
         [styles.smallBounce]: animation === 'bounce',
-        [styles.popIn]: animation === 'popIn'
+        [styles.popIn]: animation === 'popIn',
+        [styles.conversational]: lineHeight === 'conversational',
+        [styles.lineHeightIntimate]: lineHeight === 'intimate',
+        [styles.lineHeightLoud]: lineHeight === 'loud',
+        [styles.lineHeightScreaming]: lineHeight === 'screaming',
+        [styles.lineHeightShouting]: lineHeight === 'shouting',
+        [styles.lineHeightWaving]: lineHeight === 'waving',
+        [styles.lineHeightWhispering]: lineHeight === 'whispering',
+        [styles.lineHeightWhistling]: lineHeight === 'whistling',
+        [styles.lineHeightYelling]: lineHeight === 'yelling'
       })}>
       <svg
         xmlns={'http://www.w3.org/2000/svg'}
@@ -46,6 +57,12 @@ export default function Icon({
 }
 
 Icon.propTypes = {
+  animation: PropTypes.oneOf(['', 'bounce', 'popIn']),
+  className: PropTypes.string,
+  lineHeight: PropTypes.oneOf(['', 'conversational', 'intimate', 'loud', 'screaming', 'shouting', 'waving', 'whispering', 'whistling', 'yelling']),
+  rotation: PropTypes.oneOf(['', '90deg', '-90deg', '180deg', '-180deg']),
+  size: PropTypes.oneOf(['', 'large', 'normal', 'small']),
+  smoothRotate: PropTypes.bool,
   title: PropTypes.string,
   type: PropTypes.oneOf([
     'add',
@@ -130,19 +147,15 @@ Icon.propTypes = {
     'unlocked',
     'upload',
     'youtube'
-  ]),
-  className: PropTypes.string,
-  size: PropTypes.oneOf(['', 'small', 'large']),
-  rotation: PropTypes.oneOf(['', '90deg', '-90deg', '180deg', '-180deg']),
-  animation: PropTypes.oneOf(['', 'bounce', 'popIn']),
-  smoothRotate: PropTypes.bool
+  ])
 };
 
 Icon.defaultProps = {
-  type: '',
-  size: '',
-  rotation: '',
   animation: '',
-  smoothRotate: false
+  lineHeight: '',
+  rotation: '',
+  size: '',
+  smoothRotate: false,
+  type: ''
 };
 
