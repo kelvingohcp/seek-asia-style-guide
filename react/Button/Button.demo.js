@@ -132,6 +132,13 @@ export default {
           })
         },
         {
+          label: 'Tertiary',
+          transformProps: props => ({
+            ...props,
+            color: 'tertiary'
+          })
+        },
+        {
           label: 'Tertiary - DB Hirer',
           transformProps: props => ({
             ...props,

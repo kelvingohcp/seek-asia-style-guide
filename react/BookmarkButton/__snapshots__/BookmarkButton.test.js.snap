@@ -2,10 +2,13 @@
 
 exports[`BookmarkButton should render bookmarked 1`] = `
 <Button
+  aria-pressed={false}
   className="button bookmarkFilled"
   color="hyperlink"
   component="button"
   onClick={[Function]}
+  role="button"
+  tabindex={0}
 >
   <BookmarkIcon
     isBookmarked={true}
@@ -16,10 +19,13 @@ exports[`BookmarkButton should render bookmarked 1`] = `
 
 exports[`BookmarkButton should render with class 1`] = `
 <Button
+  aria-pressed={false}
   className="button aClassyClass"
   color="hyperlink"
   component="button"
   onClick={[Function]}
+  role="button"
+  tabindex={0}
 >
   <BookmarkIcon
     onBookmarkClick={[Function]}
@@ -29,10 +35,13 @@ exports[`BookmarkButton should render with class 1`] = `
 
 exports[`BookmarkButton should render with default props 1`] = `
 <Button
+  aria-pressed={false}
   className="button"
   color="hyperlink"
   component="button"
   onClick={[Function]}
+  role="button"
+  tabindex={0}
 >
   <BookmarkIcon
     onBookmarkClick={[Function]}

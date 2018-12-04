@@ -5,9 +5,12 @@ exports[`ButtonGroup: should combine className when passed in 1`] = `
   className="combineMe group"
 >
   <Button
+    aria-pressed={false}
     className=""
     color="callToAction"
     component="button"
+    role="button"
+    tabindex={0}
   >
     <h5>
       SEEK
@@ -21,9 +24,12 @@ exports[`ButtonGroup: should render a button group with node 1`] = `
   className="group"
 >
   <Button
+    aria-pressed={false}
     className=""
     color="callToAction"
     component="button"
+    role="button"
+    tabindex={0}
   >
     <h5>
       SEEK

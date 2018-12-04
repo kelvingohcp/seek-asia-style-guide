@@ -40,11 +40,14 @@ exports[`JobsDB Error Page should render correctly 1`] = `
     slim={false}
   >
     <Button
+      aria-pressed={false}
       className="retryButton"
       color="callToAction"
       component="button"
       isJobsDB={true}
       onClick={[Function]}
+      role="button"
+      tabindex={0}
     >
       Retry
     </Button>
@@ -92,11 +95,14 @@ exports[`JobsDB Error Page should render correctly 2`] = `
     slim={false}
   >
     <Button
+      aria-pressed={false}
       className="retryButton"
       color="callToAction"
       component="button"
       isJobsDB={true}
       onClick={[Function]}
+      role="button"
+      tabindex={0}
     >
       Retry
     </Button>

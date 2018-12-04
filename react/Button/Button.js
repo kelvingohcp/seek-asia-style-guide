@@ -8,28 +8,34 @@ export default class Button extends Component {
   static displayName = 'Button';
 
   static propTypes = {
-    color: PropTypes.oneOf([
-      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary'
-    ]).isRequired,
+    'aria-pressed': PropTypes.bool,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node
     ]).isRequired,
     className: PropTypes.string,
+    color: PropTypes.oneOf([
+      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary'
+    ]).isRequired,
+    compact: PropTypes.bool,
     component: PropTypes.oneOfType([
       PropTypes.func,
       PropTypes.string
     ]),
+    disabled: PropTypes.bool,
     isJobsDB: PropTypes.bool,
     isJobStreet: PropTypes.bool,
-    compact: PropTypes.bool,
-    disabled: PropTypes.bool,
-    isSelected: PropTypes.bool
+    isSelected: PropTypes.bool,
+    role: PropTypes.string,
+    tabindex: PropTypes.number
   };
 
   static defaultProps = {
+    'aria-pressed': false,
     className: '',
-    component: 'button'
+    component: 'button',
+    role: 'button',
+    tabindex: 0
   };
 
   storeButtonReference = button => {
@@ -48,9 +54,9 @@ export default class Button extends Component {
         [styles.jobsDB]: isJobsDB || tenant.isJobsDB,
         [styles.jobStreet]: isJobStreet || tenant.isJobStreet,
         [styles.root_callToAction]: color === 'callToAction',
+        [styles.root_hyperlink]: color === 'hyperlink',
         [styles.root_primary]: color === 'primary',
         [styles.root_secondary]: color === 'secondary',
-        [styles.root_hyperlink]: color === 'hyperlink',
         [styles.root_tertiary]: color === 'tertiary',
         [styles.selected]: isSelected
       }),

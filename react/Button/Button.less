@@ -50,7 +50,7 @@
   text-align: center;
   border: 1px solid transparent;
   padding: 0 (@grid-base * 4 - 1);
-  border-radius: 3px;
+  border-radius: @grid-base;
   transition:
     background-color 0.2s,
     transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
@@ -58,46 +58,48 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  vertical-align: middle;
   font-weight: bold;
   .activeState({outline: none;});
+  height: @grid-base * 8;
+  @media @desktop {
+    height: @grid-base * 10;
+  }
+  &.disabled {
+    .disabled();
+  }
+  &.compact {
+    .compactTouchableText(@whispering-type-scale, 1px);
+    &.selected {
+      .compactTouchableText(@whistling-type-scale, 1px);
+    }
+  }
 }
 
-.compact {
-  .compactTouchableText(@whispering-type-scale, 1px);
-}
-
-.disabled:not(.root_hyperlink) {
+.disabled:not(.root_hyperlink):not(.root_tertiary) {
   .buttonColor(@saGrey5, @saGrey4);
   cursor: default;
 }
 
 .root_callToAction {
   .buttonColor(@saWhite, @saBlue);
+
+  &.jobsDB {
+    .buttonColor(@saWhite, @actionOrange);
+    &.selected {
+      .selectedState({background-color: darken(@actionOrange, 5%); color: @saWhite;});
+    }
+  }
+
+  &.jobStreet {
+    .buttonColor(@sk-black, @actionYellow);
+    &.selected {
+      .selectedState({background-color: darken(@actionYellow, 5%); color: @sk-black;});
+    }
+  }
+
   &.selected {
     .selectedState({background-color: darken(@saBlue, 5%); color: @saWhite;});
-  }
-  &.disabled {
-    .disabled();
-  }
-}
-
-.jobStreet.root_callToAction {
-  .buttonColor(@sk-black, @actionYellow);
-  &.selected {
-    .selectedState({background-color: darken(@actionYellow, 5%); color: @sk-black;});
-  }
-  &.disabled {
-    .disabled();
-  }
-}
-
-.jobsDB.root_callToAction {
-  .buttonColor(@saWhite, @actionOrange);
-  &.selected {
-    .selectedState({background-color: darken(@actionOrange, 5%); color: @saWhite;});
-  }
-  &.disabled {
-    .disabled();
   }
 }
 
@@ -111,13 +113,6 @@
     .selectedState({background-color: @saBlue2; border-color: @saBlue1; color: @saWhite;});
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
-
-    &.compact {
-      .compactTouchableText(@whistling-type-scale, 1px);
-    }
-  }
-  &.disabled {
-    .disabled();
   }
   &:focus,
   &.focused {
@@ -135,13 +130,6 @@
     .selectedState({background-color: @saBlue4; border-color: @saBlue3; color: @saBlue2;});
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
-
-    &.compact {
-      .compactTouchableText(@whistling-type-scale, 1px);
-    }
-  }
-  &.disabled {
-    .disabled();
   }
   &:focus,
   &.focused {
@@ -150,8 +138,9 @@
 }
 
 .root_hyperlink {
-  .touchableText(@conversational-type-scale);
+  .touchableText(@conversational-type-scale, 1px);
   color: @hyperlink;
+  display: inline-block;
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
@@ -160,41 +149,31 @@
 
   .activeState({transform: none;});
 
+  &.compact {
+    .compactTouchableText(@whistling-type-scale, 1px);
+  }
+
   &.disabled {
     .disabledLink();
   }
 }
 
-.root_hyperlink.compact {
-  .compactTouchableText(@whistling-type-scale);
-}
+.root_tertiary {
+  .buttonColor(@saWhite, transparent, currentColor);
 
-.jobStreet.root_tertiary {
-  .buttonColor(@jsHirerGreen, @saWhite);
-  border-color: currentColor;
+  &.jobsDB {
+    .buttonColor(@dbHirer, @saWhite, currentColor);
+    .hoverState({background-color: fade(@dbHirer, 10%); color: @dbHirer; border-color: currentColor;});
+  }
 
-  .hoverState({background-color: fade(@jsHirerGreen, 10%); color: @jsHirerGreen; border-color: currentColor;});
-  border: 1px solid @jsHirerGreen;
-  padding-bottom: 10px;
+  &.jobStreet {
+    .buttonColor(@jsHirerGreen, @saWhite, currentColor);
+    .hoverState({background-color: fade(@jsHirerGreen, 10%); color: @jsHirerGreen; border-color: currentColor;});
+  }
 
   &.disabled {
-    .disabledGhost();
+    .disabledTertiary();
   }
-}
-
-.jobsDB.root_tertiary {
-  .buttonColor(@dbHirer, @saWhite);
-
-  .hoverState({background-color: fade(@dbHirer, 10%); color: @dbHirer; border-color: currentColor;});
-  border: 1px solid @dbHirer;
-  padding-bottom: 10px;
-  &.disabled {
-    .disabledGhost();
-  }
-}
-
-.root_tertiary.compact {
-  padding-bottom: 7px;
 }
 
 .group {
@@ -234,11 +213,11 @@
   cursor: not-allowed;
   pointer-events: none;
 }
-.disabledGhost() {
-  background-color: @saWhite;
-  border-color: @saGrey5;
-  color: @saGrey4;
-  cursor: not-allowed;
+.disabledTertiary() {
+  background-color: @saWhite !important;
+  border-color: @saGrey5 !important;
+  color: @saGrey4 !important;
+  cursor: not-allowed !important;
 }
 .disabledLink() {
   background-color: transparent;
