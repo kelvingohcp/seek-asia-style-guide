@@ -52,7 +52,7 @@ exports[`JobsDB Error Page should render correctly 1`] = `
 </Card>
 `;
 
-exports[`JobsDB Error Page should render correctly 2`] = `
+exports[`JobsDB Error Page should render correctly, with customeButton props onClick 1`] = `
 <Card
   transparent={true}
 >
@@ -104,7 +104,111 @@ exports[`JobsDB Error Page should render correctly 2`] = `
 </Card>
 `;
 
-exports[`JobsDB Error Page should render correctly, with custome headline 1`] = `
+exports[`JobsDB Error Page should render correctly, with customeButton props onClick and text 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      Hmm... we can't seem to load the screen
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      Keep calm and retry first
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Search Again
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with customeButton props text 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      Hmm... we can't seem to load the screen
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      Keep calm and retry first
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Search Again
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with customeText props headline 1`] = `
 <Card
   transparent={true}
 >
@@ -154,7 +258,7 @@ exports[`JobsDB Error Page should render correctly, with custome headline 1`] = 
 </Card>
 `;
 
-exports[`JobsDB Error Page should render correctly, with custome headline and subline 1`] = `
+exports[`JobsDB Error Page should render correctly, with customeText props headline and subline 1`] = `
 <Card
   transparent={true}
 >
@@ -206,7 +310,7 @@ exports[`JobsDB Error Page should render correctly, with custome headline and su
 </Card>
 `;
 
-exports[`JobsDB Error Page should render correctly, with custome subline 1`] = `
+exports[`JobsDB Error Page should render correctly, with customeText props subline 1`] = `
 <Card
   transparent={true}
 >
@@ -235,58 +339,6 @@ exports[`JobsDB Error Page should render correctly, with custome subline 1`] = `
       secondary={true}
     >
       keep calm
-    </Text>
-  </Section>
-  <Section
-    className="section"
-    header={false}
-    pullout={false}
-    slim={false}
-  >
-    <Button
-      className="retryButton"
-      color="callToAction"
-      component="button"
-      isJobsDB={true}
-      onClick={[Function]}
-    >
-      Retry
-    </Button>
-  </Section>
-</Card>
-`;
-
-exports[`JobsDB Error Page should render correctly, with onClick 1`] = `
-<Card
-  transparent={true}
->
-  <Section
-    className="section"
-    header={false}
-    pullout={false}
-    slim={false}
-  >
-    <ErrorSVG />
-  </Section>
-  <Section
-    className="section"
-    header={false}
-    pullout={false}
-    slim={false}
-  >
-    <Text
-      baseline={true}
-      yelling={true}
-    >
-      Hmm... we can't seem to load the screen
-    </Text>
-    <Text
-      baseline={true}
-      className="subTitle"
-      loud={true}
-      secondary={true}
-    >
-      Keep calm and retry first
     </Text>
   </Section>
   <Section

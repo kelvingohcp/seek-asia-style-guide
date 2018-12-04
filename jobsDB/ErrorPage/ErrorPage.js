@@ -38,7 +38,7 @@ const getMessage = (part, customeText) => {
   return '';
 };
 
-export default function JobsDBErrorPage({ onClick, customeText, buttonText }) {
+export default function JobsDBErrorPage({ customeText, customeButton }) {
   return (
     <Card transparent>
       <Section className={styles.section}>
@@ -57,8 +57,8 @@ export default function JobsDBErrorPage({ onClick, customeText, buttonText }) {
           color="callToAction"
           isJobsDB
           className={styles.retryButton}
-          onClick={onClick || reload}>
-          {buttonText || 'Retry'}
+          onClick={(customeButton && customeButton.onClick) || reload}>
+          {(customeButton && customeButton.text) || 'Retry'}
         </Button>
       </Section>
     </Card>
@@ -66,9 +66,8 @@ export default function JobsDBErrorPage({ onClick, customeText, buttonText }) {
 }
 
 JobsDBErrorPage.propTypes = {
-  onClick: PropTypes.function,
   customeText: PropTypes.object,
-  buttonText: PropTypes.string
+  customeButton: PropTypes.object
 };
 
 JobsDBErrorPage.displayName = 'JobsDBErrorPage';

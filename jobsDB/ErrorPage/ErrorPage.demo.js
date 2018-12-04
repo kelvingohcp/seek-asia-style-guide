@@ -23,21 +23,6 @@ export default {
   initialProps: {},
   options: [
     {
-      label: 'onClick',
-      type: 'checklist',
-      states: [
-        {
-          label: 'onClick',
-          transformProps: props => ({
-            ...props,
-            onClick: () => {
-              alert('hi'); // eslint-disable-line no-alert
-            }
-          })
-        }
-      ]
-    },
-    {
       label: 'customeText',
       type: 'radio',
       states: [
@@ -88,10 +73,35 @@ export default {
           })
         },
         {
-          label: 'Custome button text',
+          label: 'Custome text button',
           transformProps: props => ({
             ...props,
-            buttonText: 'Search again'
+            customeButton: {
+              text: 'Search again'
+            }
+          })
+        },
+        {
+          label: 'Custome onClick button',
+          transformProps: props => ({
+            ...props,
+            customeButton: {
+              onClick: () => {
+                alert('hi'); // eslint-disable-line no-alert
+              }
+            }
+          })
+        },
+        {
+          label: 'Custome onClick and text button',
+          transformProps: props => ({
+            ...props,
+            customeButton: {
+              text: 'Search again',
+              onClick: () => {
+                alert('hi'); // eslint-disable-line no-alert
+              }
+            }
           })
         }
       ]
