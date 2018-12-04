@@ -23,16 +23,75 @@ export default {
   initialProps: {},
   options: [
     {
-      label: 'onRetryClick',
+      label: 'onClick',
       type: 'checklist',
       states: [
         {
-          label: 'onRetryClick',
+          label: 'onClick',
           transformProps: props => ({
             ...props,
-            onRetryClick: () => {
+            onClick: () => {
               alert('hi'); // eslint-disable-line no-alert
             }
+          })
+        }
+      ]
+    },
+    {
+      label: 'customeText',
+      type: 'radio',
+      states: [
+        {
+          label: 'Default Headline and Subline',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'Custome Headline only',
+          transformProps: props => ({
+            ...props,
+            customeText: {
+              headline: 'This job ad is currently unavailable'
+            }
+          })
+        },
+        {
+          label: 'Custome Subline only',
+          transformProps: props => ({
+            ...props,
+            customeText: {
+              subline: 'This job ad is currently unavailable'
+            }
+          })
+        },
+        {
+          label: 'Custome Headline and Subline',
+          transformProps: props => ({
+            ...props,
+            customeText: {
+              headline: 'This job ad is currently unavailable',
+              subline: 'Keep calm and search again'
+            }
+          })
+        }
+      ]
+    },
+    {
+      label: 'buttonText',
+      type: 'radio',
+      states: [
+        {
+          label: 'Default button text',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'Custome button text',
+          transformProps: props => ({
+            ...props,
+            buttonText: 'Search again'
           })
         }
       ]

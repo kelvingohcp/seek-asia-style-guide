@@ -103,3 +103,207 @@ exports[`JobsDB Error Page should render correctly 2`] = `
   </Section>
 </Card>
 `;
+
+exports[`JobsDB Error Page should render correctly, with custome headline 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      keep calm
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with custome headline and subline 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      keep calm
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      try again
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with custome subline 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    />
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      keep calm
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with onClick 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      Hmm... we can't seem to load the screen
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      Keep calm and retry first
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;

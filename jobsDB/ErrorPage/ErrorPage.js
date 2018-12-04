@@ -5,6 +5,10 @@ import React from 'react';
 import { Card, Section, Text, Button } from 'seek-asia-style-guide/react';
 
 const reload = () => location.reload();
+const PARTS = {
+  HEADLINE: 'headLine',
+  SUBLINE: 'subLine'
+};
 
 const ErrorSVG = () => {
   const svgWithClasses = ErrorIcon
@@ -15,7 +19,26 @@ const ErrorSVG = () => {
   );
 };
 
-export default function JobsDBErrorPage({ onRetryClick }) {
+const getMessage = (part, customeText) => {
+  const defaultHeadLine = 'Hmm... we can\'t seem to load the screen';
+  const defaultSubLine = 'Keep calm and retry first';
+
+  if (customeText) {
+    if (part === PARTS.HEADLINE) {
+      return customeText.headline || '';
+    } else if (part === PARTS.SUBLINE) {
+      return customeText.subline || '';
+    }
+  } else if (part === PARTS.HEADLINE) {
+    return defaultHeadLine;
+  } else if (part === PARTS.SUBLINE) {
+    return defaultSubLine;
+  }
+
+  return '';
+};
+
+export default function JobsDBErrorPage({ onClick, customeText, buttonText }) {
   return (
     <Card transparent>
       <Section className={styles.section}>
@@ -23,10 +46,10 @@ export default function JobsDBErrorPage({ onRetryClick }) {
       </Section>
       <Section className={styles.section}>
         <Text yelling>
-            Hmm... we can't seem to load the screen
+          { getMessage(PARTS.HEADLINE, customeText) }
         </Text>
         <Text secondary loud className={styles.subTitle}>
-            Keep calm and retry first
+          { getMessage(PARTS.SUBLINE, customeText) }
         </Text>
       </Section>
       <Section className={styles.section}>
@@ -34,8 +57,8 @@ export default function JobsDBErrorPage({ onRetryClick }) {
           color="callToAction"
           isJobsDB
           className={styles.retryButton}
-          onClick={onRetryClick || reload}>
-            Retry
+          onClick={onClick || reload}>
+          {buttonText || 'Retry'}
         </Button>
       </Section>
     </Card>
@@ -43,7 +66,9 @@ export default function JobsDBErrorPage({ onRetryClick }) {
 }
 
 JobsDBErrorPage.propTypes = {
-  onRetryClick: PropTypes.function
+  onClick: PropTypes.function,
+  customeText: PropTypes.object,
+  buttonText: PropTypes.string
 };
 
 JobsDBErrorPage.displayName = 'JobsDBErrorPage';
