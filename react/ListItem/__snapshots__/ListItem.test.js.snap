@@ -138,6 +138,7 @@ exports[`ListItem: should render icon 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -180,6 +181,7 @@ exports[`ListItem: should render icon in compact mode 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -222,6 +224,7 @@ exports[`ListItem: should render icon in hasHoverState mode 1`] = `
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}
@@ -264,6 +267,7 @@ exports[`ListItem: should render icon with badge with hasHoverState and compact 
   >
     <Icon
       animation=""
+      lineHeight=""
       rotation=""
       size=""
       smoothRotate={false}

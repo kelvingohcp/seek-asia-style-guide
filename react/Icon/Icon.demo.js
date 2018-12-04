@@ -49,21 +49,101 @@ export default {
       type: 'radio',
       states: [
         {
-          label: 'Normal size',
+          label: 'Size unset',
           transformProps: props => props
         },
         {
-          label: 'Small size',
+          label: 'Small',
           transformProps: props => ({
             ...props,
             size: 'small'
           })
         },
         {
-          label: 'Large size',
+          label: 'Normal',
+          transformProps: props => ({
+            ...props,
+            size: 'normal'
+          })
+        },
+        {
+          label: 'Large',
           transformProps: props => ({
             ...props,
             size: 'large'
+          })
+        }
+      ]
+    },
+    {
+      label: 'Line height',
+      type: 'radio',
+      states: [
+        {
+          label: 'Line height',
+          transformProps: props => props
+        },
+        {
+          label: 'Conversational',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'conversational'
+          })
+        },
+        {
+          label: 'Intimate',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'intimate'
+          })
+        },
+        {
+          label: 'Loud',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'loud'
+          })
+        },
+        {
+          label: 'Screaming',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'screaming'
+          })
+        },
+        {
+          label: 'Shouting',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'shouting'
+          })
+        },
+        {
+          label: 'Waving',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'waving'
+          })
+        },
+        {
+          label: 'Whispering',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'whispering'
+          })
+        },
+        {
+          label: 'Whistling',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'whistling'
+          })
+        },
+        {
+          label: 'Yelling',
+          transformProps: props => ({
+            ...props,
+            lineHeight: 'yelling'
           })
         }
       ]

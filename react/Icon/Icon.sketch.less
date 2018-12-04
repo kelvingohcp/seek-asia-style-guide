@@ -1,0 +1,12 @@
+@import (reference) '~seek-asia-style-guide/theme';
+
+.demoInline {
+  display: flex;
+  align-items: flex-start;
+  @supports (display: grid) {
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;
+    grid-gap: @grid-base;
+  }
+}
