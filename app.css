@@ -673,7 +673,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   border-radius: 4px;
   background-color: #000000;
 }
-.Swatches__backgroundSAAccent___3RDrp {
+.Swatches__backgroundSaBlue___2paoy {
   background-color: #0D3880;
   padding: 8px;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -681,7 +681,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   border-radius: 4px;
   color: #ffffff;
 }
-.Swatches__colorSAAccent___2Qo2Q {
+.Swatches__colorSaBlue___3wXxg {
   color: #0D3880;
   padding: 8px;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -800,6 +800,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
           box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   background-color: #000000;
+}
+.Swatches__backgroundVisited___kaJxy {
+  background-color: #6c488f;
+  padding: 8px;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.Swatches__colorVisited___3g80D {
+  color: #6c488f;
+  padding: 8px;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 .Swatches__backgroundBlack___1yo9P {
   background-color: #000000;
