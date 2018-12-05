@@ -47,6 +47,7 @@ export default function Icon({
           [styles.rotate90cc]: rotation === '-90deg',
           [styles.rotate180]: rotation === '180deg',
           [styles.rotate180cc]: rotation === '-180deg',
+          [styles.rotateReset]: rotation === 'reset',
           [styles.smoothRotate]: smoothRotate
         })} viewBox="0 0 100 100" role="img">
         <title>{title ? title : iconData.label}</title>
@@ -60,13 +61,15 @@ Icon.propTypes = {
   animation: PropTypes.oneOf(['', 'bounce', 'popIn']),
   className: PropTypes.string,
   lineHeight: PropTypes.oneOf(['', 'conversational', 'intimate', 'loud', 'screaming', 'shouting', 'waving', 'whispering', 'whistling', 'yelling']),
-  rotation: PropTypes.oneOf(['', '90deg', '-90deg', '180deg', '-180deg']),
+  rotation: PropTypes.oneOf(['', '90deg', '-90deg', '180deg', '-180deg', 'reset']),
   size: PropTypes.oneOf(['', 'large', 'normal', 'small']),
   smoothRotate: PropTypes.bool,
   title: PropTypes.string,
   type: PropTypes.oneOf([
     'add',
     'alert',
+    'android',
+    'apple',
     'application',
     'applicationHistory',
     'birthdate',
@@ -158,4 +161,3 @@ Icon.defaultProps = {
   smoothRotate: false,
   type: ''
 };
-
