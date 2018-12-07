@@ -15,27 +15,29 @@ const ErrorSVG = () => {
   );
 };
 
-export default function JobsDBErrorPage({ onRetryClick }) {
+export default function JobsDBErrorPage({ texts, button }) {
   return (
     <Card transparent>
       <Section className={styles.section}>
         <ErrorSVG />
       </Section>
-      <Section className={styles.section}>
-        <Text yelling>
-            Hmm... we can't seem to load the screen
-        </Text>
-        <Text secondary loud className={styles.subTitle}>
-            Keep calm and retry first
-        </Text>
-      </Section>
+      {
+        texts ? <Section className={styles.section}>
+          <Text yelling>
+            { texts.headline || '' }
+          </Text>
+          <Text secondary loud className={styles.subTitle}>
+            { texts.subline || '' }
+          </Text>
+        </Section> : null
+      }
       <Section className={styles.section}>
         <Button
           color="callToAction"
           isJobsDB
           className={styles.retryButton}
-          onClick={onRetryClick || reload}>
-            Retry
+          onClick={(button && button.onClick) || reload}>
+          {(button && button.text) || 'Retry'}
         </Button>
       </Section>
     </Card>
@@ -43,7 +45,8 @@ export default function JobsDBErrorPage({ onRetryClick }) {
 }
 
 JobsDBErrorPage.propTypes = {
-  onRetryClick: PropTypes.function
+  texts: PropTypes.object,
+  button: PropTypes.object
 };
 
 JobsDBErrorPage.displayName = 'JobsDBErrorPage';
