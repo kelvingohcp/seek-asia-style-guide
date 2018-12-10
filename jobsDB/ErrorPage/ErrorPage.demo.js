@@ -23,15 +23,94 @@ export default {
   initialProps: {},
   options: [
     {
-      label: 'onRetryClick',
-      type: 'checklist',
+      label: 'texts',
+      type: 'radio',
       states: [
         {
-          label: 'onRetryClick',
+          label: 'empty',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'custom Headline only',
           transformProps: props => ({
             ...props,
-            onRetryClick: () => {
-              alert('hi'); // eslint-disable-line no-alert
+            texts: {
+              headline: 'This job ad is currently unavailable'
+            }
+          })
+        },
+        {
+          label: 'custom Subline only',
+          transformProps: props => ({
+            ...props,
+            texts: {
+              subline: 'This job ad is currently unavailable'
+            }
+          })
+        },
+        {
+          label: 'Retry Error Message',
+          transformProps: props => ({
+            ...props,
+            texts: {
+              headline: 'Hmm... we can\'t seem to load the screen',
+              subline: 'Keep calm and retry first'
+            }
+          })
+        },
+        {
+          label: 'Job Detail Error Message',
+          transformProps: props => ({
+            ...props,
+            texts: {
+              headline: 'This job ad is currently unavailable',
+              subline: 'Keep calm and search again'
+            }
+          })
+        }
+      ]
+    },
+    {
+      label: 'buttonText',
+      type: 'radio',
+      states: [
+        {
+          label: 'Default button',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'custom text button',
+          transformProps: props => ({
+            ...props,
+            button: {
+              text: 'Search again'
+            }
+          })
+        },
+        {
+          label: 'custom onClick button',
+          transformProps: props => ({
+            ...props,
+            button: {
+              onClick: () => {
+                alert('hi'); // eslint-disable-line no-alert
+              }
+            }
+          })
+        },
+        {
+          label: 'custom onClick and text button',
+          transformProps: props => ({
+            ...props,
+            button: {
+              text: 'Search again',
+              onClick: () => {
+                alert('hi'); // eslint-disable-line no-alert
+              }
             }
           })
         }

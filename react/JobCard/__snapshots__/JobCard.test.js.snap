@@ -488,10 +488,13 @@ exports[`JobCard should pass through bookmark props 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -718,10 +721,13 @@ exports[`JobCard should pass through viewed prop 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -947,10 +953,13 @@ exports[`JobCard should render company with bold keyword 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -1177,10 +1186,13 @@ exports[`JobCard should render job title component 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -1406,10 +1418,13 @@ exports[`JobCard should render job title with bold keyword 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -1646,10 +1661,13 @@ exports[`JobCard should render jobStreet standout style 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -1879,10 +1897,13 @@ exports[`JobCard should render jobsDB default style 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -2116,10 +2137,13 @@ exports[`JobCard should render only applied badge, when both applied and expired
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -2343,10 +2367,13 @@ exports[`JobCard should render plain company label 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -2572,10 +2599,13 @@ exports[`JobCard should render selected style 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -2811,10 +2841,13 @@ exports[`JobCard should render tag links 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -3056,10 +3089,13 @@ exports[`JobCard should render with Classified in grey label 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -3292,10 +3328,13 @@ exports[`JobCard should render with applied badge 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -3515,10 +3554,13 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -3744,10 +3786,13 @@ exports[`JobCard should render with default props 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -3982,10 +4027,13 @@ exports[`JobCard should render with expired badge 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -4220,10 +4268,13 @@ exports[`JobCard should render with featured label 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -4454,10 +4505,13 @@ exports[`JobCard should render with selling points props 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}
@@ -4683,10 +4737,13 @@ exports[`JobCard should render without border 1`] = `
                 •
               </Text>
               <Button
+                aria-pressed={false}
                 className="shelfToggle"
                 color="hyperlink"
                 component="button"
                 onClick={[Function]}
+                role="button"
+                tabindex={0}
               >
                 <Text
                   baseline={false}

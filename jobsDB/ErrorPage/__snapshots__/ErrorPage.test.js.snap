@@ -18,20 +18,33 @@ exports[`JobsDB Error Page should render correctly 1`] = `
     pullout={false}
     slim={false}
   >
-    <Text
-      baseline={true}
-      yelling={true}
+    <Button
+      aria-pressed={false}
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+      role="button"
+      tabindex={0}
     >
-      Hmm... we can't seem to load the screen
-    </Text>
-    <Text
-      baseline={true}
-      className="subTitle"
-      loud={true}
-      secondary={true}
-    >
-      Keep calm and retry first
-    </Text>
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with button props onClick 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
   </Section>
   <Section
     className="section"
@@ -40,11 +53,14 @@ exports[`JobsDB Error Page should render correctly 1`] = `
     slim={false}
   >
     <Button
+      aria-pressed={false}
       className="retryButton"
       color="callToAction"
       component="button"
       isJobsDB={true}
       onClick={[Function]}
+      role="button"
+      tabindex={0}
     >
       Retry
     </Button>
@@ -52,7 +68,75 @@ exports[`JobsDB Error Page should render correctly 1`] = `
 </Card>
 `;
 
-exports[`JobsDB Error Page should render correctly 2`] = `
+exports[`JobsDB Error Page should render correctly, with button props onClick and text 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      aria-pressed={false}
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+      role="button"
+      tabindex={0}
+    >
+      Search Again
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with button props text 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      aria-pressed={false}
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+      role="button"
+      tabindex={0}
+    >
+      Search Again
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with texts props headline 1`] = `
 <Card
   transparent={true}
 >
@@ -74,7 +158,60 @@ exports[`JobsDB Error Page should render correctly 2`] = `
       baseline={true}
       yelling={true}
     >
-      Hmm... we can't seem to load the screen
+      keep calm
+    </Text>
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      aria-pressed={false}
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+      role="button"
+      tabindex={0}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with texts props headline and subline 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    >
+      keep calm
     </Text>
     <Text
       baseline={true}
@@ -82,7 +219,7 @@ exports[`JobsDB Error Page should render correctly 2`] = `
       loud={true}
       secondary={true}
     >
-      Keep calm and retry first
+      try again
     </Text>
   </Section>
   <Section
@@ -92,11 +229,67 @@ exports[`JobsDB Error Page should render correctly 2`] = `
     slim={false}
   >
     <Button
+      aria-pressed={false}
       className="retryButton"
       color="callToAction"
       component="button"
       isJobsDB={true}
       onClick={[Function]}
+      role="button"
+      tabindex={0}
+    >
+      Retry
+    </Button>
+  </Section>
+</Card>
+`;
+
+exports[`JobsDB Error Page should render correctly, with texts props subline 1`] = `
+<Card
+  transparent={true}
+>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <ErrorSVG />
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      yelling={true}
+    />
+    <Text
+      baseline={true}
+      className="subTitle"
+      loud={true}
+      secondary={true}
+    >
+      keep calm
+    </Text>
+  </Section>
+  <Section
+    className="section"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Button
+      aria-pressed={false}
+      className="retryButton"
+      color="callToAction"
+      component="button"
+      isJobsDB={true}
+      onClick={[Function]}
+      role="button"
+      tabindex={0}
     >
       Retry
     </Button>

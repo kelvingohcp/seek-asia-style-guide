@@ -16,6 +16,7 @@ const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, sh
           svgClassName={classnames(styles.svg, {
             [brandStyles.activeActionTrayIcon]: !menuOpen
           })}
+          size="normal"
         />
       </div>
     ) : (
@@ -24,7 +25,7 @@ const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, sh
           linkRenderer({
             href: linkUrl,
             className: styles.actionTrayLink,
-            children: <Icon title={title} type={iconName} svgClassName={styles.svg} />
+            children: <Icon title={title} type={iconName} svgClassName={styles.svg} size="normal" />
           })
         }
       </div>
@@ -66,7 +67,7 @@ const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOp
         }
         {showMenu && (
           <div onClick={handleToggleMenu} className={styles.menuToggle}>
-            <Icon type="menu" svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} />
+            <Icon type="menu" svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
           </div>
         )}
       </div>

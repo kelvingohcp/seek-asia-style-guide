@@ -91,23 +91,29 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
     className="tagLinksContainer"
   >
     <Button
+      aria-pressed={false}
       className="tagLink"
       color="primary"
       compact={true}
       component="a"
       href="/jobCard"
       key="0"
+      role="button"
+      tabindex={0}
       title="Limit result to Keyword 1"
     >
       keyword 1
     </Button>
     <Button
+      aria-pressed={false}
       className="tagLink"
       color="primary"
       compact={true}
       component="a"
       href="/jobCard"
       key="1"
+      role="button"
+      tabindex={0}
       title="Limit result to Keyword 2"
     >
       keyword 2
@@ -207,23 +213,29 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
     className="tagLinksContainer"
   >
     <Button
+      aria-pressed={false}
       className="tagLink"
       color="primary"
       compact={true}
       component="a"
       href="/jobCard"
       key="0"
+      role="button"
+      tabindex={0}
       title="Limit result to Keyword 1"
     >
       keyword 1
     </Button>
     <Button
+      aria-pressed={false}
       className="tagLink"
       color="primary"
       compact={true}
       component="a"
       href="/jobCard"
       key="1"
+      role="button"
+      tabindex={0}
       title="Limit result to Keyword 2"
     >
       keyword 2

@@ -67,6 +67,11 @@ describe('Icon', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render the rotation resetted post-animation style', () => {
+    const wrapper = shallow(<Icon rotation="reset" smoothRotate {...defaultProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render the 180 deg counter-clockwise rotate animated style', () => {
     const wrapper = shallow(<Icon rotation="-180deg" smoothRotate {...defaultProps} />);
     expect(wrapper).toMatchSnapshot();

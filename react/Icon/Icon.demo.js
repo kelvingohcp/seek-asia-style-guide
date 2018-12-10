@@ -185,6 +185,14 @@ export default {
           })
         },
         {
+          label: 'reset (animated)',
+          transformProps: props => ({
+            ...props,
+            smoothRotate: true,
+            rotation: 'reset'
+          })
+        },
+        {
           label: '90 deg (animated)',
           transformProps: props => ({
             ...props,

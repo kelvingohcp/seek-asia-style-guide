@@ -14,6 +14,10 @@ export const symbols = {
   'Button/Secondary/Compact': <Button color="secondary" compact>Button</Button>,
   'Button/Hyperlink/Standard': <Button color="hyperlink">Button</Button>,
   'Button/Hyperlink/Compact': <Button color="hyperlink" compact>Button</Button>,
-  'Button/Tertiary/jobsDB Hirer/Standard': <Button color="tertiary">Button</Button>,
-  'Button/Tertiary/jobsDB Hirer/Compact': <Button color="tertiary" compact>Button</Button>
+  'Button/Tertiary/Standard': <Button color="tertiary">Button</Button>,
+  'Button/Tertiary/Compact': <Button color="tertiary" compact>Button</Button>,
+  'Button/Tertiary/jobsDB Hirer/Standard': <Button color="tertiary" isJobsDB>Button</Button>,
+  'Button/Tertiary/jobsDB Hirer/Compact': <Button color="tertiary" compact isJobsDB>Button</Button>,
+  'Button/Tertiary/jobStreet Hirer/Standard': <Button color="tertiary" isJobStreet>Button</Button>,
+  'Button/Tertiary/jobStreet Hirer/Compact': <Button color="tertiary" compact isJobStreet>Button</Button>
 };
