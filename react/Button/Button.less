@@ -45,6 +45,7 @@
 .root {
   .touchableText(@whistling-type-scale, 1px);
   display: inline-block;
+  line-height: 1.5;
   text-decoration: none;
   user-select: none;
   text-align: center;
@@ -70,8 +71,10 @@
   }
   &.compact {
     .compactTouchableText(@whispering-type-scale, 1px);
+    line-height: 1.5;
     &.selected {
       .compactTouchableText(@whistling-type-scale, 1px);
+      line-height: 1.5;
     }
   }
 }
@@ -138,7 +141,6 @@
 }
 
 .root_hyperlink {
-  .touchableText(@conversational-type-scale, 1px);
   color: @hyperlink;
   display: inline-block;
   background-color: transparent;
