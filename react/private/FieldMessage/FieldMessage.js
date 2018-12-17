@@ -48,6 +48,7 @@ export default class FieldMessage extends Component {
       return (
         <Text
           {...restMessageProps}
+          intimate
           critical={(valid === false && !secondary) || critical}
           positive={(valid === true && !secondary) || positive}
           secondary={typeof valid === 'undefined' || secondary}>
