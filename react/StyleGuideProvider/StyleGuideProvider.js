@@ -7,7 +7,7 @@ import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import jobsDBLocalization from './localization/jobsdb';
 import jobStreetLocalization from './localization/jobstreet';
 
-const defaultPageTitle = 'SEEK Asia';
+const defaultPageTitle = 'SEEK Asia Style Guide';
 
 const getLocalisedPageTitle = (country, language, tenant) => {
   const brandLocalization = tenant === 'jobStreet' ? jobStreetLocalization : jobsDBLocalization;

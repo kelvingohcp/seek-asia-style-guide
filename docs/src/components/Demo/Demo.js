@@ -1,4 +1,5 @@
 import styles from './Demo.less';
+import { Helmet } from 'react-helmet';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
@@ -132,9 +133,19 @@ export default class Demo extends Component {
       tenantPath
     } = this.props.spec;
     const codeElement = <DemoComponent {...this.calculateProps()} />;
+    const siteTitle = 'SEEK Asia Style Guide';
 
     return (
       <div className={styles.root}>
+        <Helmet>
+          {
+            title ? (
+              <title>{title} - {siteTitle} </title>
+            ) : (
+              <title>{siteTitle}</title>
+            )
+          }
+        </Helmet>
         <PageBlock>
           {
             title ? (

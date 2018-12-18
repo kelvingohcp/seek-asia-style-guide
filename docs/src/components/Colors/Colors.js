@@ -1,4 +1,5 @@
 import styles from './Swatches/Swatches.less';
+import { Helmet } from 'react-helmet';
 import Swatches from './Swatches/Swatches';
 import React from 'react';
 import {
@@ -192,11 +193,16 @@ export const colorSwatchesRenderer = () => {
   return colorSwatches;
 };
 
+const pageTitle = 'Colors and theming - SEEK Asia style guide';
+
 const colors = () => (
   <div>
     <ScreenReaderOnly>
-      <h1>SEEK Style Guide</h1>
+      <h1>{pageTitle}</h1>
     </ScreenReaderOnly>
+    <Helmet>
+      <title>{pageTitle}</title>
+    </Helmet>
     <PageBlock>
       <Section>
         <h1>
