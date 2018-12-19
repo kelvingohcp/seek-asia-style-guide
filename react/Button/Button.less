@@ -1,5 +1,13 @@
 @import (reference) '~seek-asia-style-guide/theme';
 
+@componentHeightMobile: @grid-base * 10;
+@componentHeightDesktop: @grid-base * 8;
+
+.setTextVerticalPlacement(@val, @borderWidth) {
+  line-height: @val - (@borderWidth * 2);
+  height: @val;
+}
+
 .hoverState(@rules) {
   @media (hover: hover) {
     &:hover,
@@ -30,6 +38,18 @@
   }
 }
 
+.textVerticalPlacement (@borderWidth: 1px) {
+  .setTextVerticalPlacement (@componentHeightMobile, @borderWidth);
+  @media @desktop {
+    .setTextVerticalPlacement (@componentHeightDesktop, @borderWidth);
+  }
+}
+
+.textVerticalPlacementCompact (@borderWidth: 1px) {
+  // Use for compatibility purpose, there shouldn't be any manual compact button anymore
+  .setTextVerticalPlacement (@componentHeightDesktop, @borderWidth);
+}
+
 .buttonColor(@color, @background-color) {
   background-color: @background-color;
   border-color: @background-color;
@@ -47,7 +67,6 @@
 .root {
   .touchableText(@whistling-type-scale, 1px);
   display: inline-block;
-  line-height: 1.5;
   text-decoration: none;
   user-select: none;
   text-align: center;
@@ -64,19 +83,17 @@
   vertical-align: middle;
   font-weight: bold;
   .activeState({outline: none;});
-  height: @grid-base * 10;
-  @media @desktop {
-    height: @grid-base * 8;
-  }
+  .textVerticalPlacement();
+
   &.disabled {
     .disabled();
   }
   &.compact {
     .compactTouchableText(@whispering-type-scale, 1px);
-    line-height: 1.5;
+    .textVerticalPlacementCompact();
     &.selected {
-      .compactTouchableText(@whistling-type-scale, 1px);
-      line-height: 1.5;
+      .compactTouchableText(@whispering-type-scale, 1px);
+      .textVerticalPlacementCompact();
     }
   }
 }
@@ -114,7 +131,6 @@
   transition: box-shadow 0.15s ease-in-out;
   will-change: auto;
   &.selected {
-    .touchableText(@waving-type-scale, 1px);
     .selectedState({background-color: @saBlue2; border-color: @saBlue1; color: @saWhite;});
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
@@ -131,7 +147,6 @@
   transition: box-shadow 0.15s ease-in-out;
   will-change: auto;
   &.selected {
-    .touchableText(@waving-type-scale, 1px);
     .selectedState({background-color: @saBlue4; border-color: @saBlue3; color: @saBlue2;});
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
@@ -154,7 +169,8 @@
   .activeState({transform: none;});
 
   &.compact {
-    .compactTouchableText(@whistling-type-scale, 1px);
+    .compactTouchableText(@whispering-type-scale, 1px);
+    .textVerticalPlacementCompact();
   }
 
   &.disabled {
