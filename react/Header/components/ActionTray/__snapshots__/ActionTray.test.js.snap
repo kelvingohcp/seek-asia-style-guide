@@ -13,11 +13,11 @@ exports[`ActionTray should not render home link if showHome prop is explicitly f
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
@@ -50,11 +50,11 @@ exports[`ActionTray should not render search link if showSearch prop is explicit
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
@@ -79,11 +79,11 @@ exports[`ActionTray should render with country hk 1`] = `
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
@@ -106,11 +106,11 @@ exports[`ActionTray should render with default props 1`] = `
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
@@ -126,11 +126,11 @@ exports[`ActionTray should render with home tab active 1`] = `
   >
     <Icon
       animation=""
+      className="svg activeActionTrayIcon"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg activeActionTrayIcon"
       type="home"
     />
   </div>
@@ -143,11 +143,11 @@ exports[`ActionTray should render with home tab active 1`] = `
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
@@ -170,11 +170,11 @@ exports[`ActionTray should render with login available 1`] = `
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
@@ -191,11 +191,11 @@ exports[`ActionTray should render with menu open 1`] = `
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="home"
     />
   </div>
@@ -208,11 +208,11 @@ exports[`ActionTray should render with menu open 1`] = `
   >
     <Icon
       animation=""
+      className="svg activeActionTrayIcon"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg activeActionTrayIcon"
       type="menu"
     />
   </div>
@@ -231,11 +231,11 @@ exports[`ActionTray should render with search tab active 1`] = `
   >
     <Icon
       animation=""
+      className="svg activeActionTrayIcon"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg activeActionTrayIcon"
       type="search"
     />
   </div>
@@ -245,11 +245,11 @@ exports[`ActionTray should render with search tab active 1`] = `
   >
     <Icon
       animation=""
+      className="svg"
       lineHeight=""
       rotation=""
       size="normal"
       smoothRotate={false}
-      svgClassName="svg"
       type="menu"
     />
   </div>
