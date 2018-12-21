@@ -82,14 +82,15 @@ class FooterHK extends Component {
               [styles.upperWrapper]: true
             })}>
             <UpperFooter messages={messages} cfsLink={cfsLink} wordpressLink={wordpressLink} externalLink={externalLink} hasCompanyProfile={hasCompanyProfile} />
+            <FooterLinks messages={messages} baseUrl={baseUrl} cfsLink={cfsLink} wordpressLink={wordpressLink} />
           </div>
           <div className={styles.lowerWrapper} >
             <div
               className={classnames({
                 [styles.collapsed]: isExpandedVersion ? false : !isOpen,
                 [styles.lowerWrapperLinks]: true })}>
-              <FooterLinks messages={messages} baseUrl={baseUrl} cfsLink={cfsLink} wordpressLink={wordpressLink} />
-              <Text intimate secondary semiStrong>
+              <FooterLinks messages={messages} baseUrl={baseUrl} cfsLink={cfsLink} wordpressLink={wordpressLink} displayInDesktop />
+              <Text whispering secondary semiStrong>
                 {messages['FooterHK.copyright']}
               </Text>
             </div>

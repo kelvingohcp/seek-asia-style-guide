@@ -1,7 +1,7 @@
 @import (reference) "~seek-asia-style-guide/theme";
 @import (reference) "~seek-asia-style-guide/react/Header/components/ActionTray/ActionTray.less";
 @wrapper-up-padding-top: @grid-base * 8;
-@wrapper-low-vertical-padding: @grid-base * 3;
+@wrapper-up-padding-bottom: @grid-base * 3;
 
 .container {
   cursor: default;
@@ -23,6 +23,7 @@
 
 .upperWrapper {
   padding-top: @wrapper-up-padding-top;
+  padding-bottom: @wrapper-up-padding-bottom;
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -33,6 +34,7 @@
   &.hidden {
     max-height: 0;
     padding-top: 0;
+    padding-bottom: 0;
     overflow: hidden;
     opacity: 0;
   }
@@ -41,11 +43,7 @@
 .lowerWrapper {
   display: flex;
   justify-content: space-between;
-  padding: @wrapper-low-vertical-padding 0;
   align-items: stretch;
-  @media @tablet {
-    padding: 0;
-  }
 }
 
 .lowerWrapperLinks {
@@ -77,13 +75,11 @@
 
 .chevronIcon {
   cursor: pointer;
-  padding: @grid-base * 3 @grid-base * 4 0 @grid-base * 8;
+  padding-right: @grid-base * 4;
+  padding-left: @grid-base * 8;
+  display: flex;
+  align-items: center;
   color: @saBlue2;
-  @media @tablet {
-    display: flex;
-    align-items: center;
-    padding: 0 @grid-base * 4 0 @grid-base * 8;
-  }
   @media @desktop {
     padding-right: @grid-base * 6;
     padding-left: @grid-base * 12;
