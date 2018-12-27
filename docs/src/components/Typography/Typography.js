@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import {
   PageBlock,
@@ -12,6 +13,7 @@ import {
   Critical,
   Secondary
 } from 'seek-asia-style-guide/react';
+import { ScreenReaderOnly } from 'seek-asia-style-guide/react';
 import Demo from '../Demo/Demo';
 import textDemoSpec from 'seek-asia-style-guide/react/Text/Text.demo';
 
@@ -36,8 +38,16 @@ const loremIpsum = [
 
 const loremIpsumShort = `${loremIpsum.split(',')[0]}.`;
 
+const pageTitle = 'Typography - SEEK Asia Style Guide';
+
 export default () => (
   <div>
+    <ScreenReaderOnly>
+      <h1>{pageTitle}</h1>
+    </ScreenReaderOnly>
+    <Helmet>
+      <title>{pageTitle}</title>
+    </Helmet>
     <PageBlock>
       <Section header>
         <Text screaming>Typography</Text>

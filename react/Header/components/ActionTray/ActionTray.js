@@ -8,12 +8,12 @@ const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, sh
   if (showFlag) {
     return activeTab === tabName ? (
       <div
-        onClick={(menuOpen && activeTab === tabName) ? handleToggleMenu : undefined} // eslint-disable-line no-undefined
+        onClick={menuOpen ? handleToggleMenu : undefined} // eslint-disable-line no-undefined
         className={menuOpen ? styles.menuToggle : styles.actionTrayTab}>
         <Icon
           title={title}
           type={iconName}
-          svgClassName={classnames(styles.svg, {
+          className={classnames(styles.svg, {
             [brandStyles.activeActionTrayIcon]: !menuOpen
           })}
           size="normal"
@@ -67,7 +67,7 @@ const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOp
         }
         {showMenu && (
           <div onClick={handleToggleMenu} className={styles.menuToggle}>
-            <Icon type="menu" svgClassName={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
+            <Icon type="menu" className={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
           </div>
         )}
       </div>

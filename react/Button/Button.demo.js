@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, HeartIcon, StarIcon, Icon } from 'seek-asia-style-guide/react';
+import { Button, Icon } from 'seek-asia-style-guide/react';
 import * as sketch from './Button.sketch';
 import styles from './Button.less';
 import classnames from 'classnames';
@@ -165,36 +165,12 @@ export default {
           transformProps: props => props
         },
         {
-          label: 'Heart Icon',
-          transformProps: props => ({
-            ...props,
-            children: (
-              <span>
-                <HeartIcon filled={true} />
-                &nbsp;Click here
-              </span>
-            )
-          })
-        },
-        {
-          label: 'Star Icon',
-          transformProps: props => ({
-            ...props,
-            children: (
-              <span>
-                <StarIcon filled={true} />
-                &nbsp;Click here
-              </span>
-            )
-          })
-        },
-        {
           label: 'Medical',
           transformProps: props => ({
             ...props,
             children: (
               <span>
-                <Icon type="medical" size="small" animation="popIn" lineHeight="waving" />
+                <Icon type="medical" animation="popIn" lineHeight="waving" />
                 &nbsp;Click here
               </span>
             )
@@ -206,7 +182,7 @@ export default {
             ...props,
             children: (
               <span>
-                <Icon type="pastApplication" size="small" animation="popIn" lineHeight="waving" />
+                <Icon type="pastApplication" animation="popIn" lineHeight="waving" />
                 &nbsp;Click here
               </span>
             )

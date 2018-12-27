@@ -82,8 +82,6 @@ export default class Header extends Component {
                       <Card transparent className={styles.componentList}>
                         <Text shouting regular className={styles.componentListItem}><Link className={styles.link} to="./colors">Colors</Link></Text>
                         <Text shouting regular className={styles.componentListItem}><Link className={styles.link} to="./typography">Typography</Link></Text>
-                        <Text shouting regular className={styles.componentListItem}>Spacing Guidelines</Text>
-                        <Text shouting regular className={styles.componentListItem}>Logos</Text>
                       </Card>
 
                       <Card transparent>
