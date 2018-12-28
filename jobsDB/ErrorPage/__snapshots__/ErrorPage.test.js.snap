@@ -26,7 +26,7 @@ exports[`JobsDB Error Page should render correctly 1`] = `
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Retry
     </Button>
@@ -60,7 +60,7 @@ exports[`JobsDB Error Page should render correctly, with button props onClick 1`
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Retry
     </Button>
@@ -94,7 +94,7 @@ exports[`JobsDB Error Page should render correctly, with button props onClick an
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Search Again
     </Button>
@@ -128,7 +128,7 @@ exports[`JobsDB Error Page should render correctly, with button props text 1`] =
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Search Again
     </Button>
@@ -181,7 +181,7 @@ exports[`JobsDB Error Page should render correctly, with texts props headline 1`
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Retry
     </Button>
@@ -236,7 +236,7 @@ exports[`JobsDB Error Page should render correctly, with texts props headline an
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Retry
     </Button>
@@ -289,7 +289,7 @@ exports[`JobsDB Error Page should render correctly, with texts props subline 1`]
       isJobsDB={true}
       onClick={[Function]}
       role="button"
-      tabindex={0}
+      tabIndex={0}
     >
       Retry
     </Button>

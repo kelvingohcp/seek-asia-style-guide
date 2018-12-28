@@ -8,7 +8,7 @@ exports[`BookmarkButton should render bookmarked 1`] = `
   component="button"
   onClick={[Function]}
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   <BookmarkIcon
     isBookmarked={true}
@@ -25,7 +25,7 @@ exports[`BookmarkButton should render with class 1`] = `
   component="button"
   onClick={[Function]}
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   <BookmarkIcon
     onBookmarkClick={[Function]}
@@ -41,7 +41,7 @@ exports[`BookmarkButton should render with default props 1`] = `
   component="button"
   onClick={[Function]}
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   <BookmarkIcon
     onBookmarkClick={[Function]}

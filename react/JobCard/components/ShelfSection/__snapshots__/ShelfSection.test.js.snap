@@ -99,7 +99,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       href="/jobCard"
       key="0"
       role="button"
-      tabindex={0}
+      tabIndex={0}
       title="Limit result to Keyword 1"
     >
       keyword 1
@@ -113,7 +113,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       href="/jobCard"
       key="1"
       role="button"
-      tabindex={0}
+      tabIndex={0}
       title="Limit result to Keyword 2"
     >
       keyword 2
@@ -221,7 +221,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       href="/jobCard"
       key="0"
       role="button"
-      tabindex={0}
+      tabIndex={0}
       title="Limit result to Keyword 1"
     >
       keyword 1
@@ -235,7 +235,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       href="/jobCard"
       key="1"
       role="button"
-      tabindex={0}
+      tabIndex={0}
       title="Limit result to Keyword 2"
     >
       keyword 2

@@ -27,7 +27,7 @@ export default class Button extends Component {
     isJobStreet: PropTypes.bool,
     isSelected: PropTypes.bool,
     role: PropTypes.string,
-    tabindex: PropTypes.number
+    tabIndex: PropTypes.number
   };
 
   static defaultProps = {
@@ -35,7 +35,7 @@ export default class Button extends Component {
     className: '',
     component: 'button',
     role: 'button',
-    tabindex: 0
+    tabIndex: 0
   };
 
   storeButtonReference = button => {

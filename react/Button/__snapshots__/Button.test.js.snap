@@ -5,7 +5,7 @@ exports[`Button: color variants: should render JobStreet callToAction button 1`]
   aria-pressed={false}
   className="root jobStreet root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -16,7 +16,7 @@ exports[`Button: color variants: should render JobsDB callToAction button 1`] = 
   aria-pressed={false}
   className="root jobsDB root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -27,7 +27,7 @@ exports[`Button: color variants: should render callToAction button 1`] = `
   aria-pressed={false}
   className="root root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -38,7 +38,7 @@ exports[`Button: color variants: should render hyperlink color button 1`] = `
   aria-pressed={false}
   className="root root_hyperlink"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -49,7 +49,7 @@ exports[`Button: color variants: should render primary button 1`] = `
   aria-pressed={false}
   className="root root_primary"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -60,7 +60,7 @@ exports[`Button: color variants: should render secondary button 1`] = `
   aria-pressed={false}
   className="root root_secondary"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -72,7 +72,7 @@ exports[`Button: should render as an anchor with href="https://www.seek.com.au" 
   className="root root_hyperlink"
   href="https://www.seek.com.au"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </a>
@@ -83,7 +83,7 @@ exports[`Button: should render as div 1`] = `
   aria-pressed={false}
   className="root root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </div>
@@ -94,7 +94,7 @@ exports[`Button: should render compact font size 1`] = `
   aria-pressed={false}
   className="root compact root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -105,7 +105,7 @@ exports[`Button: should render custom component based on it’s reference 1`] = 
   aria-pressed={false}
   className="root root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </CustomComponent>
@@ -116,7 +116,7 @@ exports[`Button: should render disabled 1`] = `
   aria-pressed={false}
   className="root disabled root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -127,7 +127,7 @@ exports[`Button: should render with array of nodes 1`] = `
   aria-pressed={false}
   className="root root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   <span>
     SEEK
@@ -143,7 +143,7 @@ exports[`Button: should render with className 1`] = `
   aria-pressed={false}
   className="root foo root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -154,7 +154,7 @@ exports[`Button: should render with isSelected style 1`] = `
   aria-pressed={false}
   className="root root_callToAction selected"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   SEEK
 </button>
@@ -165,7 +165,7 @@ exports[`Button: should render with node 1`] = `
   aria-pressed={false}
   className="root root_callToAction"
   role="button"
-  tabindex={0}
+  tabIndex={0}
 >
   <h5>
     SEEK
