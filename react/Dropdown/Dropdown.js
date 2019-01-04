@@ -21,6 +21,7 @@ export default class Dropdown extends Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
     className: PropTypes.string,
+    disabled: PropTypes.bool,
     valid: PropTypes.bool,
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
@@ -68,8 +69,9 @@ export default class Dropdown extends Component {
   }
 
   renderSelect() {
-    const { id, value, onChange, onFocus, onBlur, inputProps, options, placeholder } = this.props;
+    const { id, value, onChange, onFocus, onBlur, inputProps, options, placeholder, disabled } = this.props;
     const inputStyles = classnames({
+      [styles.disabled]: disabled,
       [styles.dropdown]: true,
       [styles.placeholderSelected]: !value && !inputProps.value && placeholder
     });
@@ -84,7 +86,7 @@ export default class Dropdown extends Component {
     };
 
     return (
-      <select {...allInputProps}>
+      <select {...allInputProps} disabled={this.props.disabled}>
         <option value="" disabled={!this.props.placeholderSelectable} className={classnames({ [styles.noPlaceholder]: !placeholder })}>
           {placeholder}
         </option>
