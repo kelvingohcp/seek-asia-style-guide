@@ -39,15 +39,15 @@
 }
 
 .textVerticalPlacement (@borderWidth: 1px) {
-  .setTextVerticalPlacement (@componentHeightMobile, @borderWidth);
+  .setTextVerticalPlacement(@componentHeightMobile, @borderWidth);
   @media @desktop {
-    .setTextVerticalPlacement (@componentHeightDesktop, @borderWidth);
+    .setTextVerticalPlacement(@componentHeightDesktop, @borderWidth);
   }
 }
 
 .textVerticalPlacementCompact (@borderWidth: 1px) {
   // Use for compatibility purpose, there shouldn't be any manual compact button anymore
-  .setTextVerticalPlacement (@componentHeightDesktop, @borderWidth);
+  .setTextVerticalPlacement(@componentHeightDesktop, @borderWidth);
 }
 
 .buttonColor(@color, @background-color) {
@@ -176,6 +176,13 @@
 
   &.disabled {
     .disabledLink();
+  }
+}
+
+.root_ghost_white {
+  .buttonColor(@saWhite, transparent, currentColor);
+  &.disabled {
+    .disabledTertiary();
   }
 }
 

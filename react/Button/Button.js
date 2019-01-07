@@ -58,6 +58,7 @@ export default class Button extends Component {
         [styles.root_primary]: color === 'primary',
         [styles.root_secondary]: color === 'secondary',
         [styles.root_tertiary]: color === 'tertiary',
+        [styles.root_ghost_white]: color === 'ghostWhite',
         [styles.selected]: isSelected
       }),
       ref: this.storeButtonReference,
