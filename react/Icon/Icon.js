@@ -34,15 +34,15 @@ export default function Icon({
         [styles.lineHeightWaving]: lineHeight === 'waving',
         [styles.lineHeightWhispering]: lineHeight === 'whispering',
         [styles.lineHeightWhistling]: lineHeight === 'whistling',
-        [styles.lineHeightYelling]: lineHeight === 'yelling'
-      })}>
+        [styles.lineHeightYelling]: lineHeight === 'yelling',
+        [className]: className
+      })} role="presentation">
       <svg
         xmlns={'http://www.w3.org/2000/svg'}
         aria-hidden={'true'}
         focusable={'false'}
         {...restProps}
         className={classnames({
-          [className]: className,
           [styles.rotate90]: rotation === '90deg',
           [styles.rotate90cc]: rotation === '-90deg',
           [styles.rotate180]: rotation === '180deg',
@@ -51,7 +51,7 @@ export default function Icon({
           [styles.smoothRotate]: smoothRotate
         })} viewBox="0 0 100 100" role="img">
         <title>{title ? title : iconData.label}</title>
-        <path d={iconData.path} fill="currentColor" role="presentation" />
+        <path d={iconData.path} />
       </svg>
     </span>
   );
