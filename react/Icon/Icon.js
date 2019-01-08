@@ -84,6 +84,7 @@ Icon.propTypes = {
     'comments',
     'company',
     'companyProfile',
+    'country',
     'currentStatus',
     'dentalInsurance',
     'doublePay',
