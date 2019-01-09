@@ -86,9 +86,6 @@
   .activeState({outline: none;});
   .textVerticalPlacement();
 
-  &.disabled {
-    .disabled();
-  }
   &.compact {
     .compactTouchableText(@whispering-type-scale, 1px);
     .textVerticalPlacementCompact();
@@ -100,6 +97,7 @@
 }
 
 .disabled:not(.root_hyperlink):not(.root_tertiary) {
+  .disabled();
   .buttonColor(@saGrey5, @saGrey4);
   cursor: default;
 }
