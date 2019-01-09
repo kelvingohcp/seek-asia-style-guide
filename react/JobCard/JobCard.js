@@ -6,11 +6,10 @@ import Text from '../Text/Text';
 import Button from '../Button/Button';
 import Card from '../Card/Card';
 import Section from '../Section/Section';
+import Icon from '../Icon/Icon';
 import ChevronIcon from '../ChevronIcon/ChevronIcon';
 import LocationIcon from '../LocationIcon/LocationIcon';
 import MoneyIcon from '../MoneyIcon/MoneyIcon';
-import Bookmark from './components/Bookmark/Bookmark';
-import { BOOKMARKED, NOT_BOOKMARKED } from './components/Bookmark/Bookmark';
 import styles from './JobCard.less';
 import classnames from 'classnames';
 import { getJobAdTypeOption } from './jobCardHelper.js';
@@ -24,6 +23,9 @@ import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import ShelfSection, {
   ShelfSectionPropTypes
 } from './components/ShelfSection/ShelfSection';
+
+const BOOKMARKED = 'bookmarked';
+const NOT_BOOKMARKED = 'notBookmarked';
 
 export default class JobCard extends React.Component {
   constructor() {
@@ -67,7 +69,15 @@ export default class JobCard extends React.Component {
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
     return (
       <div className={styles.container}>
-        <Bookmark bookmarked={bookmarked} onBookmarkClick={onBookmarkClick} />
+        {bookmarked && (
+          <Button className={(styles.bookmarkButton)} bookmarked={bookmarked} onBookmarkClick={onBookmarkClick}>
+            {
+              bookmarked === BOOKMARKED ?
+                (<Icon animation="bounce" size="small" type="bookmark" className={(styles.bookmarked)} />) :
+                (<Icon size="small" type="bookmark" />)
+            }
+          </Button>
+        )}
         <Card
           className={classnames(styles.root, {
             [styles.borderRoot]: !borderlessRoot,
