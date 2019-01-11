@@ -7,8 +7,14 @@ describe('Icon', () => {
   const defaultProps = {
     type: 'chevron'
   };
+
   it('renders with default props', () => {
     const wrapper = shallow(<Icon {...defaultProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders with className and svgClassName', () => {
+    const wrapper = shallow(<Icon {...defaultProps} className="foo" svgClassName="bar" />);
     expect(wrapper).toMatchSnapshot();
   });
 

@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Icon renders with className and svgClassName 1`] = `
+<span
+  className="root foo"
+  role="presentation"
+>
+  <svg
+    aria-hidden="true"
+    className="bar"
+    focusable="false"
+    role="img"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      Chevron
+    </title>
+    <path
+      d="M7.5 81.5l-6.3-6.7c-1.7-1.7-1.7-4.2 0-5.8L50 17.3 98.8 69c1.7 1.7 1.7 4.2 0 5.8l-6.3 6.7c-1.7 1.7-4.2 1.7-5.8 0L50 42.7 13.3 81.5c-1.6 1.6-4.1 1.6-5.8 0z"
+    />
+  </svg>
+</span>
+`;
+
 exports[`Icon renders with default props 1`] = `
 <span
   className="root"
