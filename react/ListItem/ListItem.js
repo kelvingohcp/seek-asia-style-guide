@@ -24,7 +24,8 @@ export default function ListItem({
   className,
   activeState,
   disableBackground,
-  checkbox
+  checkbox,
+  checked
 }) {
   return (
 
@@ -64,7 +65,7 @@ export default function ListItem({
           {badge && <span className={styles.listItemBadge}><Badge {... { ...defaultBadgeProps, ...badge }} /></span>}
         </div>
       </div>
-      {checkbox && <div className={styles.listItemCheckbox}><Checkbox compact onChange={function() {}} /></div>}
+      {checkbox && <div className={styles.listItemCheckbox}><Checkbox compact checked={checked} onChange={function() {}} /></div>}
     </div>
   );
 }
@@ -82,7 +83,8 @@ ListItem.propTypes = {
   descriptionProps: PropTypes.object,
   activeState: PropTypes.bool,
   disableBackground: PropTypes.bool,
-  checkbox: PropTypes.bool
+  checkbox: PropTypes.bool,
+  checked: PropTypes.bool
 };
 
 ListItem.defaultProps = {

@@ -143,5 +143,17 @@ exports[`Tabs should render with no content 1`] = `
       </Text>
     </Tab>
   </TabList>
+  <TabPanel
+    className="tabPanel"
+    forceRender={false}
+    key="0"
+    selectedClassName="react-tabs__tab-panel--selected"
+  />
+  <TabPanel
+    className="tabPanel"
+    forceRender={false}
+    key="1"
+    selectedClassName="react-tabs__tab-panel--selected"
+  />
 </Tabs>
 `;

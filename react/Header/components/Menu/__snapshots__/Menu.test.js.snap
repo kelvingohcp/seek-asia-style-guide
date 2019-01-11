@@ -1,26 +1,229 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu should render when authenticated 1`] = `
-<span
-  authenticationstatus="authenticated"
-  class="root baseline"
-  username="Olivia"
+<div
+  className="root"
 >
-  <span
-    class=""
-  />
-</span>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+       
+      OLIVIA
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={[Function]}
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      linkUrl="http://seekasia.comundefined"
+    >
+      <Text
+        baseline={true}
+      >
+        Header Profile Title
+      </Text>
+    </MenuItem>
+    <MenuItem
+      ItemIcon={[Function]}
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      linkUrl="http://seekasia.comundefined"
+    >
+      <Text
+        baseline={true}
+      >
+        Header Invitation Title
+      </Text>
+    </MenuItem>
+  </div>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+      SETTINGS
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={[Function]}
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      className="countryAndLanguage"
+      handleClick={[Function]}
+    >
+      <div>
+        <Text
+          baseline={true}
+          className="countryLanguageText"
+        >
+          Country & Language
+        </Text>
+        <Text
+          baseline={true}
+          className="currentLocale"
+          intimate={true}
+        >
+          Hong Kong (English)
+        </Text>
+      </div>
+    </MenuItem>
+  </div>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      itemClass="loginSignup"
+    >
+      <Text
+        baseline={true}
+      >
+        Header Logout Title
+      </Text>
+    </MenuItem>
+  </div>
+  <div
+    className="subMenu"
+  >
+    <MenuItem
+      ItemIcon={[Function]}
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      handleClick={[Function]}
+      iconProps={
+        Object {
+          "direction": "left",
+          "svgClassName": "backChevron",
+        }
+      }
+      itemClass="backLink"
+    >
+      <Text
+        baseline={true}
+      >
+        Get back!
+      </Text>
+    </MenuItem>
+    <MenuItem
+      ItemIcon={[Function]}
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      itemClass="selectedLocaleItem"
+    >
+      <span
+        className="selectedLocale"
+      >
+        <Text
+          baseline={true}
+        >
+          Hong Kong (English)
+        </Text>
+        <CheckMarkIcon
+          className="selectedLocaleCheck"
+          svgClassName="selectedLocaleCheckIcon"
+        />
+      </span>
+    </MenuItem>
+    <MenuItem
+      ItemIcon={[Function]}
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      key="1"
+      linkUrl="https://id.jobsdb.com/id"
+    >
+      <Text
+        baseline={true}
+      >
+        Indonesia (English)
+      </Text>
+    </MenuItem>
+  </div>
+</div>
 `;
 
 exports[`Menu should render when unauthenticated 1`] = `
-<span
-  authenticationstatus="unauthenticated"
-  class="root baseline"
->
-  <span
-    class=""
-  />
-</span>
+Object {
+  "authenticationStatus": "unauthenticated",
+  "baseUrl": "http://seekasia.com",
+  "brandStyles": Object {
+    "employerLink": "employerLink",
+  },
+  "linkUrl": "/test",
+  "locales": Array [
+    Object {
+      "ItemIcon": [Function],
+      "country": "hk",
+      "language": "en",
+      "title": "Hong Kong (English)",
+      "url": "https://hk.jobsdb.com/hk",
+    },
+    Object {
+      "ItemIcon": [Function],
+      "country": "id",
+      "language": "en",
+      "title": "Indonesia (English)",
+      "url": "https://id.jobsdb.com/id",
+    },
+  ],
+  "messages": Object {
+    "header.employerSiteTitle": "Awesome employers click here",
+    "header.employerSiteUrl": "http://brand.seekasia.com",
+    "header.invitationTitle": "Header Invitation Title",
+    "header.loginTitle": "Header Login Title",
+    "header.loginUrl": "/hk/en/login/jobseekerlogin",
+    "header.logoutTitle": "Header Logout Title",
+    "header.profileTitle": "Header Profile Title",
+    "header.signupTitle": "Header Signup Title",
+    "header.signupUrl": "/hk/en/jobseeker/registration",
+    "menu.backToMenu": "Get back!",
+    "menu.countryAndLanguage": "Country & Language",
+    "menu.jobSeekerHeader": "JOB SEEKER",
+    "menu.more": "More",
+    "menu.moreHeader": "MORE",
+    "menu.settingsHeader": "SETTINGS",
+  },
+  "userName": "Olivia",
+}
 `;
 
 exports[`Menu should render with default props 1`] = `
@@ -696,7 +899,9 @@ exports[`Menu should render with sub links 1`] = `
   <div
     className="menuBody"
   >
-    <div>
+    <div
+      key="0"
+    >
       <MenuItem
         ItemIcon={[Function]}
         brandStyles={

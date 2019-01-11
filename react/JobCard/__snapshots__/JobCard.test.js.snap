@@ -22,6 +22,7 @@ exports[`JobCard should not render shelf section 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -171,6 +172,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -350,6 +352,7 @@ exports[`JobCard should pass through bookmark props 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -581,6 +584,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -813,6 +817,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -1045,6 +1050,7 @@ exports[`JobCard should render job title component 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -1276,6 +1282,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -1507,6 +1514,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -1753,6 +1761,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -2222,6 +2231,7 @@ exports[`JobCard should render plain company label 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -2452,6 +2462,7 @@ exports[`JobCard should render selected style 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -2683,6 +2694,7 @@ exports[`JobCard should render tag links 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -2935,6 +2947,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -3178,6 +3191,7 @@ exports[`JobCard should render with applied badge 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -3407,6 +3421,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "confidentialLabel": "Company Confidential",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -3634,6 +3649,7 @@ exports[`JobCard should render with default props 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -4106,6 +4122,7 @@ exports[`JobCard should render with featured label 1`] = `
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
             "featuredLabel": "Feature",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -4345,6 +4362,7 @@ exports[`JobCard should render with selling points props 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [
@@ -4581,6 +4599,7 @@ exports[`JobCard should render without border 1`] = `
             },
             "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+            "isExpired": false,
             "jobTitle": "Senior Software Engineer (6 months Contract)",
             "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
             "locations": Array [

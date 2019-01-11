@@ -249,8 +249,8 @@ export default class Playground extends Component {
               </Section>
 
               <Section>
-                <TextField id="email" label="Email address" inputProps={{ type: 'email' }} className={styles.fullWidthTextField} />
-                <TextField id="password" label="Password" inputProps={{ type: 'password' }} className={styles.fullWidthTextField} />
+                <TextField value="" id="email" label="Email address" inputProps={{ type: 'email' }} className={styles.fullWidthTextField} />
+                <TextField value="" id="password" label="Password" inputProps={{ type: 'password' }} className={styles.fullWidthTextField} />
                 <div>
                   <TextLink href="https://www.seek.com.au">Forgot your password?</TextLink>
                 </div>
@@ -273,11 +273,11 @@ export default class Playground extends Component {
               </Section>
               <Section>
                 <Columns>
-                  <TextField id="fname" label="First name" inputProps={{ type: 'text' }} className={styles.fullWidthTextField} />
-                  <TextField id="lname" label="Last name" inputProps={{ type: 'text' }} className={styles.fullWidthTextField} />
+                  <TextField value="" id="fname" label="First name" inputProps={{ type: 'text' }} className={styles.fullWidthTextField} />
+                  <TextField value="" id="lname" label="Last name" inputProps={{ type: 'text' }} className={styles.fullWidthTextField} />
                 </Columns>
-                <TextField id="email" label="Email address" inputProps={{ type: 'email' }} className={styles.fullWidthTextField} />
-                <TextField id="password" label="Password" inputProps={{ type: 'password' }} className={styles.fullWidthTextField} />
+                <TextField value="" id="email" label="Email address" inputProps={{ type: 'email' }} className={styles.fullWidthTextField} />
+                <TextField value="" id="password" label="Password" inputProps={{ type: 'password' }} className={styles.fullWidthTextField} />
                 <Text secondary>By registering you agree to the <TextLink href="https://www.seek.com.au">SEEK privacy policy</TextLink></Text>
                 <Button color="pink">Register</Button>
                 <Text>Already have an account? <TextLink href="https://www.seek.com.au">Sign in</TextLink></Text>

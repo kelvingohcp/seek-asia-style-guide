@@ -31,7 +31,7 @@ const tenant = process.env.APP_TENANT;
 
 export default () => (
   <StyleGuideProvider fullScreen={true} enableWebFont={true}>
-    <Header tenant={tenant} />
+    <Header tenant={tenant} country="hk" />
     <Route path="/" exact component={Home} />
     <Route path="/typography" component={Typography} />
     <Route path="/Colors" component={Colors} />

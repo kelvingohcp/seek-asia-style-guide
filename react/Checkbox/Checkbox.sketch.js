@@ -18,17 +18,17 @@ export const symbols = {
   ),
   'Checkbox/Standard/Unchecked': (
     <Container>
-      <Checkbox id="checkbox1" label="Checkbox" checked={false} onChange={noop} />
+      <Checkbox id="checkbox1" label="Checkbox" onChange={noop} />
     </Container>
   ),
   'Checkbox/Compact/Checked': (
     <Container>
-      <Checkbox id="checkbox2" label="Checkbox" compact inputProps={{ checked: true, onChange: noop }} />
+      <Checkbox id="checkbox2" label="Checkbox" compact checked onChange={noop} />
     </Container>
   ),
   'Checkbox/Compact/Unchecked': (
     <Container>
-      <Checkbox id="checkbox1" label="Checkbox" compact inputProps={{ checked: false, onChange: noop }} />
+      <Checkbox id="checkbox1" label="Checkbox" compact onChange={noop} />
     </Container>
   ),
   'Checkbox/Button/Checked': (
@@ -38,7 +38,7 @@ export const symbols = {
   ),
   'Checkbox/Button/Unchecked': (
     <Container>
-      <Checkbox id="checkbox2" label="Checkbox" type="button" checked={false} onChange={noop} />
+      <Checkbox id="checkbox2" label="Checkbox" type="button" onChange={noop} />
     </Container>
   )
 };

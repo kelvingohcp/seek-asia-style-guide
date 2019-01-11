@@ -63,7 +63,7 @@ describe('Alert:', () => {
   });
 
   it('should render a close button', () => {
-    const alert = renderAlert({ onClose: true });
+    const alert = renderAlert({ onClose: () => {} });
     expect(alert).toMatchSnapshot();
   });
 

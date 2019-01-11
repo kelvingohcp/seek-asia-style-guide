@@ -70,11 +70,11 @@ export default class Checkbox extends Component {
   }
 
   renderCheckBox(currentPosition) {
-    const { position, inputProps: { checked } } = this.props;
+    const { position, inputProps: { checked: inputPropsCheck }, checked } = this.props;
     const checkBoxStyle = classnames(
       styles.checkBox,
       position === LEFT ? styles.checkBoxLeft : styles.checkBoxRight,
-      checked ? styles.checked : null
+      checked || inputPropsCheck ? styles.checked : null
     );
 
     return position === currentPosition && (

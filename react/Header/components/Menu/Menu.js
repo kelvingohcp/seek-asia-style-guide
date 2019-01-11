@@ -28,7 +28,7 @@ export default class Menu extends Component {
     if (links && links.map) {
       const menuItems = links.map((link, index) => (
         link.children ? (
-          <div>
+          <div key={index}>
             <MenuItem handleClick={this.toggleSubMenu.bind(this)} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               <Text>{link.title}</Text>
             </MenuItem>
