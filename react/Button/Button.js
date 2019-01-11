@@ -15,7 +15,7 @@ export default class Button extends Component {
     ]).isRequired,
     className: PropTypes.string,
     color: PropTypes.oneOf([
-      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary'
+      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary', 'ghostWhite'
     ]).isRequired,
     compact: PropTypes.bool,
     component: PropTypes.oneOfType([
