@@ -69,6 +69,7 @@ Icon.propTypes = {
     'add',
     'alert',
     'android',
+    'appDownload',
     'apple',
     'application',
     'applicationHistory',
