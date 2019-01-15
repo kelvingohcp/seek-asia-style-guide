@@ -317,10 +317,9 @@ exports[`JobCard should pass through bookmark props 1`] = `
 >
   <Button
     aria-pressed={false}
-    bookmarked="bookmarked"
     className="bookmarkButton"
     component="button"
-    onBookmarkClick={[Function]}
+    onClick={[Function]}
     role="button"
     tabIndex={0}
   >

@@ -12,7 +12,7 @@ import LocationIcon from '../LocationIcon/LocationIcon';
 import MoneyIcon from '../MoneyIcon/MoneyIcon';
 import styles from './JobCard.less';
 import classnames from 'classnames';
-import { getJobAdTypeOption } from './jobCardHelper.js';
+import { getJobAdTypeOption, BOOKMARKED, NOT_BOOKMARKED } from './jobCardHelper.js';
 import LocationGroup, {
   LocationsPropTypes
 } from './components/LocationGroup/LocationGroup';
@@ -23,9 +23,6 @@ import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import ShelfSection, {
   ShelfSectionPropTypes
 } from './components/ShelfSection/ShelfSection';
-
-const BOOKMARKED = 'bookmarked';
-const NOT_BOOKMARKED = 'notBookmarked';
 
 export default class JobCard extends React.Component {
   constructor() {
@@ -70,7 +67,7 @@ export default class JobCard extends React.Component {
     return (
       <div className={styles.container}>
         {bookmarked && (
-          <Button className={(styles.bookmarkButton)} bookmarked={bookmarked} onBookmarkClick={onBookmarkClick}>
+          <Button className={(styles.bookmarkButton)} onClick={onBookmarkClick}>
             {
               bookmarked === BOOKMARKED ?
                 (<Icon animation="bounce" size="small" type="bookmark" className={(styles.bookmarked)} />) :

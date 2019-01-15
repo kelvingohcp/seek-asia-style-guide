@@ -59,3 +59,6 @@ export const getParts = (text, query) => {
   }
   return parse(text, matches);
 };
+
+export const BOOKMARKED = 'bookmarked';
+export const NOT_BOOKMARKED = 'notBookmarked';

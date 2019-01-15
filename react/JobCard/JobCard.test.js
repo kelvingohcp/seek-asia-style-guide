@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 
 import JobCard from './JobCard';
 import { Constants, Text } from 'seek-asia-style-guide/react';
+import { BOOKMARKED } from './jobCardHelper.js';
 
 const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
 
@@ -250,7 +251,7 @@ describe('JobCard', () => {
   });
 
   it('should pass through bookmark props', () => {
-    const wrapper = shallow(<JobCard job={defaultJob} bookmarked={'bookmarked'} onBookmarkClick={() => {}} />);
+    const wrapper = shallow(<JobCard job={defaultJob} bookmarked={BOOKMARKED} onBookmarkClick={() => {}} />);
     expect(wrapper).toMatchSnapshot();
   });
 
