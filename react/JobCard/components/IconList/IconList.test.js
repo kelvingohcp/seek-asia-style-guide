@@ -5,7 +5,7 @@ import IconList from './IconList';
 
 const LIST = [
   { iconType: 'careerLevel', content: 'Text Only' },
-  { iconType: 'careerLevel', content: <div>Text Only</div> }
+  { iconType: 'careerLevel', content: <div>Text Only Test</div> }
 ];
 
 describe('Itemlist - Icon', () => {

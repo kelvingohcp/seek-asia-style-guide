@@ -54,7 +54,7 @@ exports[`Itemlist - Icon should render item list with icon 1`] = `
       whispering={true}
     >
       <div>
-        Text Only
+        Text Only Test
       </div>
     </Text>
   </div>
