@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shelf Button should render default shelf button 1`] = `
+<div
+  className="flexRow section"
+>
+  <Text
+    baseline={false}
+    className="shelfLinkText"
+    whispering={true}
+  >
+    1 hour ago
+  </Text>
+</div>
+`;
+
+exports[`Shelf Button should render shelf button with applied date 1`] = `
+<div
+  className="flexRow section"
+>
+  <Text
+    baseline={false}
+    className="shelfLinkText"
+    whispering={true}
+  >
+    1 hour ago
+  </Text>
+</div>
+`;
+
+exports[`Shelf Button should render shelf button with featured label 1`] = `
+<div
+  className="flexRow section"
+>
+  <Text
+    baseline={false}
+    className="shelfLinkText"
+    whispering={true}
+  >
+    1 hour ago
+  </Text>
+</div>
+`;
+
+exports[`Shelf Button should render shelf button with shelf 1`] = `
+<div
+  className="flexRow section"
+>
+  <Text
+    baseline={false}
+    className="shelfLinkText"
+    whispering={true}
+  >
+    1 hour ago
+  </Text>
+  <div
+    className="desktopOnly"
+  >
+    <Text
+      baseline={false}
+      className="separatorDot"
+      whispering={true}
+    >
+      •
+    </Text>
+    <Text
+      baseline={false}
+      className="shelfLinkText shelfToggle"
+      onClick={[Function]}
+      whispering={true}
+    >
+      more
+       
+      <ChevronIcon
+        className=""
+        direction="down"
+        svgClassName="shelfToggleIcon"
+      />
+    </Text>
+  </div>
+</div>
+`;
+
+exports[`Shelf Button should render shelf button with shelf and openned style 1`] = `
+<div
+  className="flexRow section"
+>
+  <Text
+    baseline={false}
+    className="shelfLinkText"
+    whispering={true}
+  >
+    1 hour ago
+  </Text>
+  <div
+    className="desktopOnly"
+  >
+    <Text
+      baseline={false}
+      className="separatorDot"
+      whispering={true}
+    >
+      •
+    </Text>
+    <Text
+      baseline={false}
+      className="shelfLinkText shelfToggle"
+      onClick={[Function]}
+      whispering={true}
+    >
+      less
+       
+      <ChevronIcon
+        className=""
+        direction="up"
+        svgClassName="shelfToggleIcon"
+      />
+    </Text>
+  </div>
+</div>
+`;

@@ -62,7 +62,12 @@ export default {
         'We practice a vibrant & energetic office culture',
         'Our company supports a fun yet balanced working environment',
         'We support a safe environment for our employees'
-      ]
+      ],
+      isExpired: false,
+      qualification: 'Qualification Not Specified',
+      careerLevel: 'Entry Level',
+      workExperience: '3 Years of Experience',
+      employmentTerm: 'Full Time'
     },
     jobAdType: JOBADTYPE_JOBSDB_DEFAULT,
     onBookmarkClick: () => {
@@ -74,6 +79,13 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
+        {
+          label: 'Variation',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            isVariation: true
+          })
+        },
         {
           label: 'Applied',
           transformProps: ({ className, ...props }) => ({
@@ -117,7 +129,7 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: '',
+              company: {},
               confidentialLabel: 'Company Confidential'
             }
           })
@@ -140,6 +152,20 @@ export default {
               ...props.job,
               salary: null
             }
+          })
+        },
+        {
+          label: 'No selling point',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            hideSellingPoint: true
+          })
+        },
+        {
+          label: 'Hide Salary',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            hideSalary: true
           })
         },
         {

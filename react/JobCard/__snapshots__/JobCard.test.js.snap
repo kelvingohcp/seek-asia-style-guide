@@ -1,535 +1,157 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JobCard should not render shelf section 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": null,
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
-  </Card>
-</div>
+    </div>
+    <ShelfSection
+      shelf={null}
+      showShelfSection={false}
+    />
+  </div>
+</Card>
 `;
 
 exports[`JobCard should not render shelf section when none of the shelf links has substantial items 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
+      <div
+        className="leftContent"
+      >
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
+      </div>
+      <div
+        className="rightContent"
+      >
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+      </div>
+    </div>
+    <ShelfSection
+      shelf={
+        Object {
+          "shelfLinks": Array [
+            Object {
+              "items": Array [],
+              "label": "Job Details",
             },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [],
-                  "label": "Job Details",
-                },
-                Object {
-                  "items": Array [],
-                  "label": "Industry",
-                },
-              ],
+            Object {
+              "items": Array [],
+              "label": "Industry",
             },
-          }
+          ],
         }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <div
-        className="bodyDetailsWrapper"
-      >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
-      </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <div
-        className="footerLeft"
-      >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-          </div>
-        </div>
-      </div>
-    </Section>
-  </Card>
-</div>
+      }
+      showShelfSection={false}
+    />
+  </div>
+</Card>
 `;
 
 exports[`JobCard should pass through bookmark props 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Button
-    aria-pressed={false}
-    className="bookmarkButton"
-    component="button"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+  <div
+    className="leftContainer"
   >
-    <Icon
-      animation="bounce"
-      className="bookmarked"
-      lineHeight=""
-      rotation=""
-      size="small"
-      smoothRotate={false}
-      type="bookmark"
-    />
-  </Button>
-  <Card
-    className="root borderRoot"
-  >
-    <Section
-      className="headerSection withBookmark"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Button
+      aria-pressed={false}
+      className="bookmarkButton"
+      component="button"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
+      <Icon
+        animation="bounce"
+        className="bookmarked"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="bookmark"
       />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    </Button>
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -557,212 +179,45 @@ exports[`JobCard should pass through bookmark props 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should pass through viewed prop 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-        viewed={true}
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -790,211 +245,45 @@ exports[`JobCard should pass through viewed prop 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render company with bold keyword 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword="Seek"
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword="Seek"
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -1022,212 +311,45 @@ exports[`JobCard should render company with bold keyword 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render job title component 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        LinkComponent={[Function]}
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -1255,211 +377,45 @@ exports[`JobCard should render job title component 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render job title with bold keyword 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword="Seek Senior Engineer"
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword="Seek Senior Engineer"
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -1487,226 +443,77 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render jobStreet standout style 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot highlightedBg"
 >
-  <Card
-    className="root borderRoot highlightedBg"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword="Seek"
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": true,
+              "showCompanyPic": true,
+              "showDescription": true,
+              "showHighlightedBg": true,
+              "showSellingPoint": true,
             }
-            keyword="Seek"
-          />
-        </Text>
-        <div
-          className="jobDescriptionSection"
-        >
-          <Text
-            baseline={false}
-            className="bodyDescriptionText"
-            whispering={true}
-          >
-            Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...
-          </Text>
-        </div>
+          }
+        />
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": true,
+              "showCompanyPic": true,
+              "showDescription": true,
+              "showHighlightedBg": true,
+              "showSellingPoint": true,
+            }
+          }
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": true,
+              "showCompanyPic": true,
+              "showDescription": true,
+              "showHighlightedBg": true,
+              "showSellingPoint": true,
+            }
+          }
+        />
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": true,
+              "showCompanyPic": true,
+              "showDescription": true,
+              "showHighlightedBg": true,
+              "showSellingPoint": true,
+            }
+          }
+        />
       </div>
-      <img
-        className="companyLogo"
-        src="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
-      />
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -1734,211 +541,77 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render jobsDB default style 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword="Seek"
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": false,
+              "showCompanyPic": false,
+              "showDescription": false,
+              "showHighlightedBg": false,
+              "showSellingPoint": true,
             }
-            keyword="Seek"
-          />
-        </Text>
+          }
+        />
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": false,
+              "showCompanyPic": false,
+              "showDescription": false,
+              "showHighlightedBg": false,
+              "showSellingPoint": true,
+            }
+          }
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": false,
+              "showCompanyPic": false,
+              "showDescription": false,
+              "showHighlightedBg": false,
+              "showSellingPoint": true,
+            }
+          }
+        />
+        <Component
+          jobAdTypeOption={
+            Object {
+              "showCompanyLogo": false,
+              "showCompanyPic": false,
+              "showDescription": false,
+              "showHighlightedBg": false,
+              "showSellingPoint": true,
+            }
+          }
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -1966,218 +639,45 @@ exports[`JobCard should render jobsDB default style 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render only applied badge, when both applied and expired states are active 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
-      <span
-        className="titleBadge"
+      <div
+        className="leftContent"
       >
-        <Badge
-          label="Applied"
+        <Component
+          jobAdTypeOption={Object {}}
         />
-      </span>
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": true,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <div
-        className="bodyDetailsWrapper"
-      >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -2205,209 +705,45 @@ exports[`JobCard should render only applied badge, when both applied and expired
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render plain company label 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "name": "Seek Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "name": "Seek Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -2435,211 +771,45 @@ exports[`JobCard should render plain company label 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render selected style 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot selected"
 >
-  <Card
-    className="root borderRoot selected"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -2667,221 +837,45 @@ exports[`JobCard should render selected style 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render tag links 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-              "tagLinks": Array [
-                Object {
-                  "child": "keyword 1",
-                  "link": "/jobCard",
-                },
-                Object {
-                  "child": "keyword 2",
-                  "link": "/jobCard",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -2919,217 +913,45 @@ exports[`JobCard should render tag links 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with Classified in grey label 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "classifiedLabel": "Classified",
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <span
-            className="classifiedLabel"
-          >
-            Classified
-          </span>
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -3157,218 +979,45 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with applied badge 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
-      <span
-        className="titleBadge"
+      <div
+        className="leftContent"
       >
-        <Badge
-          label="Applied"
+        <Component
+          jobAdTypeOption={Object {}}
         />
-      </span>
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <div
-        className="bodyDetailsWrapper"
-      >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -3396,205 +1045,45 @@ exports[`JobCard should render with applied badge 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with company confidential in grey label 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": null,
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "confidentialLabel": "Company Confidential",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <span
-            className="confidentialLabel"
-          >
-            Company Confidential
-          </span>
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -3622,211 +1111,45 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with default props 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -3854,219 +1177,45 @@ exports[`JobCard should render with default props 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with expired badge 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
-      <span
-        className="titleBadge"
+      <div
+        className="leftContent"
       >
-        <Badge
-          color="expired"
-          label="Expired"
+        <Component
+          jobAdTypeOption={Object {}}
         />
-      </span>
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": true,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <div
-        className="bodyDetailsWrapper"
-      >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -4094,220 +1243,45 @@ exports[`JobCard should render with expired badge 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with featured label 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "featuredLabel": "Feature",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <span
-              className="featuredLabel"
-            >
-              <Badge
-                color="new"
-                label="Feature"
-              />
-            </span>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -4335,216 +1309,45 @@ exports[`JobCard should render with featured label 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render with selling points props 1`] = `
-<div
-  className="container"
+<Card
+  className="container borderRoot"
 >
-  <Card
-    className="root borderRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "sellingPoints": Array [
-              "We practice a vibrant & energetic office culture",
-              "Our company supports a fun yet balanced working environment",
-              "We support a safe environment for our employees",
-            ],
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -4572,211 +1375,45 @@ exports[`JobCard should render with selling points props 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;
 
 exports[`JobCard should render without border 1`] = `
-<div
+<Card
   className="container"
 >
-  <Card
-    className="root borderlessRoot"
+  <div
+    className="leftContainer"
   >
-    <Section
-      className="headerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
-      <JobTitleLink
-        job={
-          Object {
-            "company": Object {
-              "link": "/jobCard",
-              "name": "SEEK Asia",
-            },
-            "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-            "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-            "isExpired": false,
-            "jobTitle": "Senior Software Engineer (6 months Contract)",
-            "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-            "locations": Array [
-              Object {
-                "link": "/jobCard",
-                "name": "Pahang",
-              },
-              Object {
-                "child": Object {
-                  "child": Object {
-                    "name": "Near Leisure Mall",
-                  },
-                  "link": "/jobCard",
-                  "name": "Cheras",
-                },
-                "link": "/jobCard",
-                "name": "Selangor",
-              },
-            ],
-            "postingDuration": "1 hour ago",
-            "salary": "RM99999 - RM999999",
-            "shelf": Object {
-              "shelfLinks": Array [
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accountant",
-                    },
-                  ],
-                  "label": "Job function",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Accounting / Audit / Tax Services",
-                    },
-                  ],
-                  "label": "Industry",
-                },
-              ],
-            },
-          }
-        }
-        keyword=""
-      />
-    </Section>
-    <Section
-      className="bodySection"
-      header={false}
-      pullout={false}
-      slim={false}
+    <Component />
+    <Component />
+    <div
+      className="flexRow"
     >
       <div
-        className="bodyDetailsWrapper"
+        className="leftContent"
       >
-        <Text
-          baseline={false}
-          className="company"
-          intimate={true}
-        >
-          <CompanyLink
-            company={
-              Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              }
-            }
-            keyword=""
-          />
-        </Text>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component />
+        <Component />
       </div>
-    </Section>
-    <Section
-      className="footerSection"
-      header={false}
-      pullout={false}
-      slim={false}
-    >
       <div
-        className="footerLeft"
+        className="rightContent"
       >
-        <div
-          className="jobInfoContainer"
-        >
-          <div
-            className="jobInfoList"
-          >
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <LocationIcon
-                className="jobInfoIcon"
-              />
-              <LocationGroup
-                locations={
-                  Array [
-                    Object {
-                      "link": "/jobCard",
-                      "name": "Pahang",
-                    },
-                    Object {
-                      "child": Object {
-                        "child": Object {
-                          "name": "Near Leisure Mall",
-                        },
-                        "link": "/jobCard",
-                        "name": "Cheras",
-                      },
-                      "link": "/jobCard",
-                      "name": "Selangor",
-                    },
-                  ]
-                }
-              />
-            </Text>
-            <Text
-              baseline={false}
-              className="jobInfo"
-              whispering={true}
-            >
-              <MoneyIcon
-                className="jobInfoIcon"
-              />
-              <span>
-                RM99999 - RM999999
-              </span>
-            </Text>
-          </div>
-          <div>
-            <Text
-              baseline={false}
-              className="postingDuration"
-              whispering={true}
-            >
-              1 hour ago
-            </Text>
-            <span
-              className="shelfToggleContainer"
-            >
-              <Text
-                baseline={false}
-                className="separatorDot"
-                whispering={true}
-              >
-                •
-              </Text>
-              <Button
-                aria-pressed={false}
-                className="shelfToggle"
-                color="hyperlink"
-                component="button"
-                onClick={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <Text
-                  baseline={false}
-                  className="shelfToggleText"
-                  whispering={true}
-                >
-                  more
-                   
-                  <ChevronIcon
-                    className=""
-                    direction="down"
-                    svgClassName="shelfToggleIcon"
-                  />
-                </Text>
-              </Button>
-            </span>
-          </div>
-        </div>
+        <Component
+          jobAdTypeOption={Object {}}
+        />
+        <Component
+          jobAdTypeOption={Object {}}
+        />
       </div>
-    </Section>
+    </div>
     <ShelfSection
       shelf={
         Object {
@@ -4804,6 +1441,6 @@ exports[`JobCard should render without border 1`] = `
       }
       showShelfSection={false}
     />
-  </Card>
-</div>
+  </div>
+</Card>
 `;

@@ -38,6 +38,10 @@ const defaultJob = {
   companyLogoUrl:
     'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
   postingDuration: '1 hour ago',
+  qualification: 'Qualification Not Specified',
+  careerLevel: 'Entry Level',
+  workExperience: '3 Years of Experience',
+  employmentTerm: 'Full Time',
   salary: 'RM99999 - RM999999',
   shelf: {
     shelfLinks: [

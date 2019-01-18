@@ -7,31 +7,11 @@ import ButtonGroup from '../../../ButtonGroup/ButtonGroup';
 import defaultLink from '../Link/Link';
 import styles from './ShelfSection.less';
 import classnames from 'classnames';
+import { hasShelfLinks, ShelfSectionPropTypes } from '../../jobCardHelper.js';
 
-export const ShelfSectionPropTypes = PropTypes.shape({
-  shelfLinks: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string,
-      link: PropTypes.string,
-      title: PropTypes.string,
-      children: PropTypes.arrayOf(PropTypes.shape({
-        name: PropTypes.string,
-        link: PropTypes.string,
-        title: PropTypes.string
-      }))
-    }))
-  })),
-  tagLinks: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    link: PropTypes.string,
-    title: PropTypes.string
-  }))
-});
-
-const ShelfSection = ({ shelf, LinkComponent = defaultLink, showShelfSection = false }) => {
+const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSection = false }) => {
   const { shelfLinks, tagLinks } = shelf;
-  if (!shelfLinks && !tagLinks) {
+  if (!shelfLinks && !tagLinks || !hasShelfLinks(shelf.shelfLinks)) {
     return null;
   }
   return (<Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>

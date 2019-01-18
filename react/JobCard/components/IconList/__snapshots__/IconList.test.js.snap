@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Itemlist - Icon should render item list with icon 1`] = `
+<React.Fragment>
+  <div
+    className="container"
+    key="0"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="careerLevel"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="0"
+      whispering={true}
+    >
+      <span>
+        Text Only
+      </span>
+    </Text>
+  </div>
+  <div
+    className="container last"
+    key="1"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="careerLevel"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="1"
+      whispering={true}
+    >
+      <div>
+        Text Only
+      </div>
+    </Text>
+  </div>
+</React.Fragment>
+`;
