@@ -89,8 +89,8 @@ export default class JobCard extends React.Component {
   }
 
   RenderSellingPoint = ({ jobAdTypeOption }) => {
-    const { job, hideSellingPoint } = this.props;
-    return jobAdTypeOption.showSellingPoint && !hideSellingPoint && job.sellingPoints && (
+    const { job, isSplitView } = this.props;
+    return jobAdTypeOption.showSellingPoint && !isSplitView && job.sellingPoints && (
       <ul className={styles.sellingPoints}>
         {job.sellingPoints.map((sellingPoint, i) => (
           <li key={i}>
@@ -154,7 +154,8 @@ export default class JobCard extends React.Component {
       onBookmarkClick,
       LinkComponent,
       borderlessRoot = false,
-      isVariation
+      isVariation,
+      isSplitView
     } = this.props;
     const { shelfSectionOpen } = this.state;
     const jobAdTypeOption = getJobAdTypeOption(jobAdType);
@@ -183,12 +184,12 @@ export default class JobCard extends React.Component {
               { isVariation && <this.RenderMainPoint /> }
               <this.RenderSellingPoint jobAdTypeOption={jobAdTypeOption} />
               { !isVariation && <this.RenderMainPoint />}
-              <this.RenderShelfLink mobileOnly={isVariation} />
+              <this.RenderShelfLink mobileOnly={isVariation && !isSplitView} />
             </div>
             <div className={styles.rightContent}>
               <this.RenderCompanyLogo jobAdTypeOption={jobAdTypeOption} />
               <this.RenderCompanyPic jobAdTypeOption={jobAdTypeOption} />
-              { isVariation && <this.RenderShelfLink desktopOnly /> }
+              { isVariation && !isSplitView && <this.RenderShelfLink desktopOnly /> }
             </div>
           </div>
           <ShelfSection
@@ -198,7 +199,7 @@ export default class JobCard extends React.Component {
           />
         </div>
         {
-          isVariation &&
+          isVariation && !isSplitView &&
           <div className={styles.rightContainer}>
             <IconList
               className={styles.structuredData}
@@ -249,7 +250,7 @@ JobCard.propTypes = {
   onBookmarkClick: PropTypes.func,
   showShortenedLocation: PropTypes.bool,
   borderlessRoot: PropTypes.bool,
-  hideSellingPoint: PropTypes.bool,
   hideSalary: PropTypes.bool,
+  isSplitView: PropTypes.bool,
   isVariation: PropTypes.bool
 };

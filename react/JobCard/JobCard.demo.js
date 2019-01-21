@@ -87,6 +87,13 @@ export default {
           })
         },
         {
+          label: 'Split View',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            isSplitView: true
+          })
+        },
+        {
           label: 'Applied',
           transformProps: ({ className, ...props }) => ({
             ...props,
@@ -152,13 +159,6 @@ export default {
               ...props.job,
               salary: null
             }
-          })
-        },
-        {
-          label: 'No selling point',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            hideSellingPoint: true
           })
         },
         {
