@@ -15,22 +15,88 @@ exports[`JobsDB Header renders with default props 1`] = `
   links={
     Array [
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="myJobsDB"
+        />,
         "automationId": "myjobsDB",
         "title": "My jobsDB",
         "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="resources"
+        />,
         "automationId": "resources",
         "title": "Resources",
         "url": "https://hk.jobsdb.com/en-hk/career-recruitment-advice/",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="careerInsight"
+        />,
         "automationId": "career-insights",
         "title": "Career Insights",
         "url": "https://hk.jobsdb.com/hk/en/career-insights",
+      },
+      Object {
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="appDownload"
+        />,
+        "automationId": "download-app",
+        "children": Array [
+          Object {
+            "ItemIcon": <Icon
+              animation=""
+              className="menuIcon"
+              lineHeight="conventional"
+              rotation=""
+              size="small"
+              smoothRotate={false}
+              type="android"
+            />,
+            "title": "Google Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+          },
+          Object {
+            "ItemIcon": <Icon
+              animation=""
+              className="menuIcon"
+              lineHeight="conventional"
+              rotation=""
+              size="small"
+              smoothRotate={false}
+              type="apple"
+            />,
+            "title": "App Store",
+            "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+          },
+        ],
+        "hideInDesktop": true,
+        "title": "Download Our App",
       },
     ]
   }
@@ -89,6 +155,8 @@ exports[`JobsDB Header renders with default props 1`] = `
   loginAvailable={false}
   messages={
     Object {
+      "header.appStore": "App Store",
+      "header.appStoreUrl": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
       "header.careerInsightsTitle": "Career Insights",
       "header.careerInsightsUrl": "/hk/en/career-insights",
       "header.countryList": Array [
@@ -141,6 +209,7 @@ exports[`JobsDB Header renders with default props 1`] = `
           "url": "https://th.jobsdb.com/th/th",
         },
       ],
+      "header.downloadApp": "Download Our App",
       "header.employerSiteTitle": "For Employers",
       "header.employerSiteUrl": "/hk/en/home/employerindex",
       "header.homeTitle": "Home",
@@ -165,6 +234,8 @@ exports[`JobsDB Header renders with default props 1`] = `
       "header.myJobsDBTitle": "My jobsDB",
       "header.myJobsDBUrl": "/hk/en/MyJobsDB",
       "header.myJobsDBUrlLoggedIn": "/hk/en/MyJobsDB",
+      "header.playStore": "Google Play Store",
+      "header.playStoreUrl": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
       "header.profileTitle": "View profile",
       "header.profileUrl": "/hk/en/MyJobsDB/profile",
       "header.resourcesTitle": "Resources",
@@ -185,22 +256,54 @@ exports[`JobsDB Header renders with default props 1`] = `
   profileItems={
     Array [
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="resume"
+        />,
         "title": "Resumes and Documents",
         "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/resumes-and-documents",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="applicationHistory"
+        />,
         "title": "Application History",
         "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/ApplictationHistoryList",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="jobAlert"
+        />,
         "title": "Job Alerts",
         "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/JobAlertsList",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          className="menuIcon"
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="bookmark"
+        />,
         "title": "Save Jobs",
         "url": "https://m.jobsdb.com/en-hk/saveJobs.do",
       },

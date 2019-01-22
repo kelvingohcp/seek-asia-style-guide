@@ -1,27 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { Button } from 'seek-asia-style-guide/react';
+import { ListItem } from 'seek-asia-style-guide/react';
 import styles from './MenuItem.less';
 
-const withIcon = ({ ItemIcon, children, brandStyles, itemClass, iconProps = {} }) => {
-  iconProps.svgClassName = iconProps.svgClassName ? classnames(iconProps.svgClassName) : brandStyles.menuIcon;
-
-  return [
-    ...(ItemIcon ? [(<ItemIcon key="icon" className={styles.icon} {...iconProps} />)] : []),
-    <span key={'children'} className={itemClass}>{children}</span>
-
-  ];
-};
-
-const interactionButton = ({ ItemIcon, children, iconProps, brandStyles, itemClass, linkUrl, linkRenderer, ...restProps }) => {
+const interactionButton = ({ ItemIcon, children, linkUrl, linkRenderer, ...restProps }) => {
   return (
     linkRenderer({
       href: linkUrl !== '' || typeof(linkUrl) !== 'undefined' ? linkUrl : '',
       className: styles.menuText,
-      children: <Button {...restProps}>
-        {withIcon({ ItemIcon, children, iconProps, brandStyles, itemClass, linkRenderer, linkUrl })}
-      </Button>
+      children: (
+        <ListItem
+          value={children}
+          icon={ItemIcon}
+          hasHoverState
+          {...restProps}
+        />
+      )
     })
   );
 };
@@ -29,23 +24,17 @@ const interactionButton = ({ ItemIcon, children, iconProps, brandStyles, itemCla
 interactionButton.propTypes = {
   ItemIcon: PropTypes.func,
   children: PropTypes.any,
-  iconProps: PropTypes.object,
-  brandStyles: PropTypes.object,
-  itemClass: PropTypes.string,
   linkUrl: PropTypes.string,
   linkRenderer: PropTypes.func
 };
 
-const renderInteraction = ({ linkUrl, handleClick, children, ItemIcon, itemClass, iconProps, brandStyles, linkRenderer }) => {
+const MenuItem = ({ linkUrl, handleClick, children, ItemIcon, linkRenderer, className, title, ...restProps }) => {
   const interactionProps = {
-    color: 'hyperlink',
-    className: styles.item,
+    className: classnames(styles.root, className),
     children,
     ItemIcon,
-    iconProps,
-    brandStyles,
-    itemClass,
     linkUrl,
+    title,
     linkRenderer
   };
 
@@ -61,35 +50,23 @@ const renderInteraction = ({ linkUrl, handleClick, children, ItemIcon, itemClass
   }
 
   return (
-    <span className={styles.item}>
-      { withIcon({ ItemIcon, children, iconProps, brandStyles, itemClass }) }
-    </span>
-  );
-};
-
-renderInteraction.propTypes = {
-  linkUrl: PropTypes.string,
-  handleClick: PropTypes.func,
-  children: PropTypes.any,
-  ItemIcon: PropTypes.func,
-  itemClass: PropTypes.string,
-  iconProps: PropTypes.object,
-  brandStyles: PropTypes.object,
-  linkRenderer: PropTypes.func
-};
-
-const MenuItem = ({ className, ...restProps }) => {
-  return (
-    <div className={classnames(styles.root, className)}>
-      {renderInteraction({ ...restProps })}
-    </div>
+    <ListItem
+      className={styles.root}
+      value={children}
+      icon={ItemIcon}
+      {...restProps}
+    />
   );
 };
 
 MenuItem.propTypes = {
+  linkUrl: PropTypes.string,
+  handleClick: PropTypes.func,
+  children: PropTypes.any,
+  ItemIcon: PropTypes.element,
+  linkRenderer: PropTypes.func,
   className: PropTypes.string,
-  userAccMenuItems: PropTypes.array,
-  linkRenderer: PropTypes.func
+  title: PropTypes.string
 };
 
 export default MenuItem;

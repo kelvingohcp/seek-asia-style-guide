@@ -3,53 +3,67 @@ import PropTypes from 'prop-types';
 import styles from './Header.less';
 import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
-import { PortalIcon, LightbulbIcon, ResourcesIcon, JobFunctionIcon, ProfileIcon, JobInvitationIcon, EducationIcon, EventIcon, IconResume, IconBookmark, Icon } from 'seek-asia-style-guide/react';
+import { JobFunctionIcon, ProfileIcon, JobInvitationIcon, Icon } from 'seek-asia-style-guide/react';
 import { getLocalization } from '../localization';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/private/authStatusTypes';
 
 const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage, messages }) => {
   const baseUrl = `https://${country}.${domainUrl}`;
 
-  let icon = LightbulbIcon;
+  const iconRenderer = icon => {
+    return <Icon type={icon} lineHeight='conventional' size='small' className={styles.menuIcon} />;
+  };
+
+  let icon = iconRenderer('careerInsight');
 
   if (country === 'th') {
-    icon = EducationIcon;
+    icon = iconRenderer('education');
   } else if (country === 'id') {
-    icon = EventIcon;
+    icon = iconRenderer('calendar');
   }
 
   const profileItems =
   [{
     title: messages['header.myJobsDBResumesAndDocumentsTitle'],
-    ItemIcon: IconResume,
+    ItemIcon: iconRenderer('resume'),
     url: baseUrl + messages['header.myJobsDBResumesAndDocumentsUrl']
   },
   {
     title: messages['header.myJobsDBApplicationHistoryListTitle'],
-    ItemIcon: props => {
-      return <Icon type='applicationHistory' {...props} />;
-    },
+    ItemIcon: iconRenderer('applicationHistory'),
     url: baseUrl + messages['header.myJobsDBApplicationHistoryListUrl']
   },
   {
     title: messages['header.myJobsDBJobAlertsListTitle'],
-    ItemIcon: props => {
-      return <Icon type='jobAlert' {...props} />;
-    },
+    ItemIcon: iconRenderer('jobAlert'),
     url: baseUrl + messages['header.myJobsDBJobAlertsListUrl']
   },
   {
     title: messages['header.myJobsDBSaveJobsTitle'],
-    ItemIcon: IconBookmark,
+    ItemIcon: iconRenderer('bookmark'),
     url: messages['header.myJobsDBSaveJobsUrl']
   }];
 
+  const downloadItems = [
+    {
+      title: messages['header.playStore'],
+      ItemIcon: iconRenderer('android'),
+      url: messages['header.playStoreUrl']
+    },
+    {
+      title: messages['header.appStore'],
+      ItemIcon: iconRenderer('apple'),
+      url: messages['header.appStoreUrl']
+    }
+  ];
+
   const links = [
     authenticationStatus === AUTHENTICATED ?
-      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrlLoggedIn'], ItemIcon: PortalIcon, children: profileItems, automationId: 'myjobsDB' }) :
-      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrl'], ItemIcon: PortalIcon, automationId: 'myjobsDB' }),
-    { title: messages['header.resourcesTitle'], url: baseUrl + messages['header.resourcesUrl'], ItemIcon: ResourcesIcon, automationId: 'resources' },
-    { title: messages['header.careerInsightsTitle'], url: baseUrl + messages['header.careerInsightsUrl'], ItemIcon: icon, automationId: 'career-insights' }
+      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrlLoggedIn'], ItemIcon: iconRenderer('myJobsDB'), children: profileItems, automationId: 'myjobsDB' }) :
+      ({ title: messages['header.myJobsDBTitle'], url: baseUrl + messages['header.myJobsDBUrl'], ItemIcon: iconRenderer('myJobsDB'), automationId: 'myjobsDB' }),
+    { title: messages['header.resourcesTitle'], url: baseUrl + messages['header.resourcesUrl'], ItemIcon: iconRenderer('resources'), automationId: 'resources' },
+    { title: messages['header.careerInsightsTitle'], url: baseUrl + messages['header.careerInsightsUrl'], ItemIcon: icon, automationId: 'career-insights' },
+    { title: messages['header.downloadApp'], children: downloadItems, ItemIcon: iconRenderer('appDownload'), automationId: 'download-app', hideInDesktop: true }
   ];
 
   const userAccMenuItems = [

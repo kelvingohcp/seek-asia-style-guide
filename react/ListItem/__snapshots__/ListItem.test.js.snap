@@ -99,6 +99,7 @@ exports[`ListItem: should render custom left padding with light font weight and 
 exports[`ListItem: should render custom left padding with light font weight, secondary text and onclick function 1`] = `
 <div
   className="root"
+  onClick={[Function]}
 >
   <div
     className="listItemContent"
@@ -367,6 +368,30 @@ exports[`ListItem: should render value 1`] = `
 exports[`ListItem: should render with className 1`] = `
 <div
   className="root"
+>
+  <div
+    className="listItemContent"
+  >
+    <div
+      className="listItemValue"
+    >
+      <Text
+        baseline={false}
+        className="displayInline"
+        intimate={false}
+        semiStrong={false}
+      >
+        testValue
+      </Text>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem: should render with onClick 1`] = `
+<div
+  className="root"
+  onClick={[Function]}
 >
   <div
     className="listItemContent"

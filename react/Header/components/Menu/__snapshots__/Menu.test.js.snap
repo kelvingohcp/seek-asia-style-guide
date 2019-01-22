@@ -22,34 +22,36 @@ exports[`Menu should render when authenticated 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="profileMale"
+        />
       }
       linkUrl="http://seekasia.comundefined"
     >
-      <Text
-        baseline={true}
-      >
-        Header Profile Title
-      </Text>
+      Header Profile Title
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="jobInvitation"
+        />
       }
       linkUrl="http://seekasia.comundefined"
     >
-      <Text
-        baseline={true}
-      >
-        Header Invitation Title
-      </Text>
+      Header Invitation Title
     </MenuItem>
   </div>
   <Section
@@ -69,30 +71,26 @@ exports[`Menu should render when authenticated 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
         }
       }
-      className="countryAndLanguage"
       handleClick={[Function]}
+      title="Country & Language"
     >
-      <div>
-        <Text
-          baseline={true}
-          className="countryLanguageText"
-        >
-          Country & Language
-        </Text>
-        <Text
-          baseline={true}
-          className="currentLocale"
-          intimate={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </div>
+      Hong Kong (English)
     </MenuItem>
   </div>
   <div
@@ -104,65 +102,52 @@ exports[`Menu should render when authenticated 1`] = `
           "employerLink": "employerLink",
         }
       }
-      itemClass="loginSignup"
+      className="loginSignup"
     >
-      <Text
-        baseline={true}
-      >
-        Header Logout Title
-      </Text>
+      Header Logout Title
     </MenuItem>
   </div>
   <div
     className="subMenu"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      handleClick={[Function]}
-      iconProps={
-        Object {
-          "direction": "left",
-          "svgClassName": "backChevron",
-        }
-      }
-      itemClass="backLink"
-    >
-      <Text
-        baseline={true}
-      >
-        Get back!
-      </Text>
-    </MenuItem>
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="selectedLocaleItem"
-    >
-      <span
-        className="selectedLocale"
-      >
-        <Text
-          baseline={true}
-        >
-          Hong Kong (English)
-        </Text>
-        <CheckMarkIcon
-          className="selectedLocaleCheck"
-          svgClassName="selectedLocaleCheckIcon"
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
         />
-      </span>
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Get back!
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
@@ -171,11 +156,7 @@ exports[`Menu should render when authenticated 1`] = `
       key="1"
       linkUrl="https://id.jobsdb.com/id"
     >
-      <Text
-        baseline={true}
-      >
-        Indonesia (English)
-      </Text>
+      Indonesia (English)
     </MenuItem>
   </div>
 </div>
@@ -261,82 +242,69 @@ exports[`Menu should render with default props 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
         }
       }
-      className="countryAndLanguage"
       handleClick={[Function]}
+      title="Country & Language"
     >
-      <div>
-        <Text
-          baseline={true}
-          className="countryLanguageText"
-        >
-          Country & Language
-        </Text>
-        <Text
-          baseline={true}
-          className="currentLocale"
-          intimate={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </div>
+      Hong Kong (English)
     </MenuItem>
   </div>
   <div
     className="subMenu"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      handleClick={[Function]}
-      iconProps={
-        Object {
-          "direction": "left",
-          "svgClassName": "backChevron",
-        }
-      }
-      itemClass="backLink"
-    >
-      <Text
-        baseline={true}
-      >
-        Get back!
-      </Text>
-    </MenuItem>
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="selectedLocaleItem"
-    >
-      <span
-        className="selectedLocale"
-      >
-        <Text
-          baseline={true}
-        >
-          Hong Kong (English)
-        </Text>
-        <CheckMarkIcon
-          className="selectedLocaleCheck"
-          svgClassName="selectedLocaleCheckIcon"
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
         />
-      </span>
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Get back!
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
@@ -345,11 +313,7 @@ exports[`Menu should render with default props 1`] = `
       key="1"
       linkUrl="https://id.jobsdb.com/id"
     >
-      <Text
-        baseline={true}
-      >
-        Indonesia (English)
-      </Text>
+      Indonesia (English)
     </MenuItem>
   </div>
 </div>
@@ -386,11 +350,7 @@ exports[`Menu should render with links list 1`] = `
       key="0"
       linkUrl="http://seekasia.com/home"
     >
-      <Text
-        baseline={true}
-      >
-        Home
-      </Text>
+      Home
     </MenuItem>
     <MenuItem
       ItemIcon={[Function]}
@@ -402,11 +362,7 @@ exports[`Menu should render with links list 1`] = `
       key="1"
       linkUrl="http://seekasia.com/myPortal"
     >
-      <Text
-        baseline={true}
-      >
-        MyPortal
-      </Text>
+      MyPortal
     </MenuItem>
     <MenuItem
       ItemIcon={[Function]}
@@ -418,11 +374,7 @@ exports[`Menu should render with links list 1`] = `
       key="2"
       linkUrl="http://seekasia.com/resources"
     >
-      <Text
-        baseline={true}
-      >
-        Resources
-      </Text>
+      Resources
     </MenuItem>
     <MenuItem
       ItemIcon={[Function]}
@@ -434,11 +386,7 @@ exports[`Menu should render with links list 1`] = `
       key="3"
       linkUrl="http://seekasia.com/career-insights"
     >
-      <Text
-        baseline={true}
-      >
-        CareerInsights
-      </Text>
+      CareerInsights
     </MenuItem>
   </div>
   <Section
@@ -458,82 +406,69 @@ exports[`Menu should render with links list 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
         }
       }
-      className="countryAndLanguage"
       handleClick={[Function]}
+      title="Country & Language"
     >
-      <div>
-        <Text
-          baseline={true}
-          className="countryLanguageText"
-        >
-          Country & Language
-        </Text>
-        <Text
-          baseline={true}
-          className="currentLocale"
-          intimate={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </div>
+      Hong Kong (English)
     </MenuItem>
   </div>
   <div
     className="subMenu"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      handleClick={[Function]}
-      iconProps={
-        Object {
-          "direction": "left",
-          "svgClassName": "backChevron",
-        }
-      }
-      itemClass="backLink"
-    >
-      <Text
-        baseline={true}
-      >
-        Get back!
-      </Text>
-    </MenuItem>
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="selectedLocaleItem"
-    >
-      <span
-        className="selectedLocale"
-      >
-        <Text
-          baseline={true}
-        >
-          Hong Kong (English)
-        </Text>
-        <CheckMarkIcon
-          className="selectedLocaleCheck"
-          svgClassName="selectedLocaleCheckIcon"
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
         />
-      </span>
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Get back!
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
@@ -542,11 +477,7 @@ exports[`Menu should render with links list 1`] = `
       key="1"
       linkUrl="https://id.jobsdb.com/id"
     >
-      <Text
-        baseline={true}
-      >
-        Indonesia (English)
-      </Text>
+      Indonesia (English)
     </MenuItem>
   </div>
 </div>
@@ -587,82 +518,69 @@ exports[`Menu should render with menu open 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
         }
       }
-      className="countryAndLanguage"
       handleClick={[Function]}
+      title="Country & Language"
     >
-      <div>
-        <Text
-          baseline={true}
-          className="countryLanguageText"
-        >
-          Country & Language
-        </Text>
-        <Text
-          baseline={true}
-          className="currentLocale"
-          intimate={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </div>
+      Hong Kong (English)
     </MenuItem>
   </div>
   <div
     className="subMenu"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      handleClick={[Function]}
-      iconProps={
-        Object {
-          "direction": "left",
-          "svgClassName": "backChevron",
-        }
-      }
-      itemClass="backLink"
-    >
-      <Text
-        baseline={true}
-      >
-        Get back!
-      </Text>
-    </MenuItem>
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="selectedLocaleItem"
-    >
-      <span
-        className="selectedLocale"
-      >
-        <Text
-          baseline={true}
-        >
-          Hong Kong (English)
-        </Text>
-        <CheckMarkIcon
-          className="selectedLocaleCheck"
-          svgClassName="selectedLocaleCheckIcon"
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
         />
-      </span>
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Get back!
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
@@ -671,11 +589,7 @@ exports[`Menu should render with menu open 1`] = `
       key="1"
       linkUrl="https://id.jobsdb.com/id"
     >
-      <Text
-        baseline={true}
-      >
-        Indonesia (English)
-      </Text>
+      Indonesia (English)
     </MenuItem>
   </div>
 </div>
@@ -712,11 +626,7 @@ exports[`Menu should render with more links 1`] = `
       key="0"
       linkUrl="http://seekasia.com/home"
     >
-      <Text
-        baseline={true}
-      >
-        Home
-      </Text>
+      Home
     </MenuItem>
     <MenuItem
       ItemIcon={[Function]}
@@ -728,11 +638,7 @@ exports[`Menu should render with more links 1`] = `
       key="1"
       linkUrl="http://seekasia.com/myPortal"
     >
-      <Text
-        baseline={true}
-      >
-        MyPortal
-      </Text>
+      MyPortal
     </MenuItem>
     <MenuItem
       ItemIcon={[Function]}
@@ -744,11 +650,7 @@ exports[`Menu should render with more links 1`] = `
       key="2"
       linkUrl="http://seekasia.com/resources"
     >
-      <Text
-        baseline={true}
-      >
-        Resources
-      </Text>
+      Resources
     </MenuItem>
     <MenuItem
       ItemIcon={[Function]}
@@ -760,11 +662,7 @@ exports[`Menu should render with more links 1`] = `
       key="3"
       linkUrl="http://seekasia.com/career-insights"
     >
-      <Text
-        baseline={true}
-      >
-        CareerInsights
-      </Text>
+      CareerInsights
     </MenuItem>
   </div>
   <Section
@@ -784,82 +682,69 @@ exports[`Menu should render with more links 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
         }
       }
-      className="countryAndLanguage"
       handleClick={[Function]}
+      title="Country & Language"
     >
-      <div>
-        <Text
-          baseline={true}
-          className="countryLanguageText"
-        >
-          Country & Language
-        </Text>
-        <Text
-          baseline={true}
-          className="currentLocale"
-          intimate={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </div>
+      Hong Kong (English)
     </MenuItem>
   </div>
   <div
     className="subMenu"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      handleClick={[Function]}
-      iconProps={
-        Object {
-          "direction": "left",
-          "svgClassName": "backChevron",
-        }
-      }
-      itemClass="backLink"
-    >
-      <Text
-        baseline={true}
-      >
-        Get back!
-      </Text>
-    </MenuItem>
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="selectedLocaleItem"
-    >
-      <span
-        className="selectedLocale"
-      >
-        <Text
-          baseline={true}
-        >
-          Hong Kong (English)
-        </Text>
-        <CheckMarkIcon
-          className="selectedLocaleCheck"
-          svgClassName="selectedLocaleCheckIcon"
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
         />
-      </span>
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Get back!
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
@@ -868,11 +753,7 @@ exports[`Menu should render with more links 1`] = `
       key="1"
       linkUrl="https://id.jobsdb.com/id"
     >
-      <Text
-        baseline={true}
-      >
-        Indonesia (English)
-      </Text>
+      Indonesia (English)
     </MenuItem>
   </div>
 </div>
@@ -899,9 +780,7 @@ exports[`Menu should render with sub links 1`] = `
   <div
     className="menuBody"
   >
-    <div
-      key="0"
-    >
+    <div>
       <MenuItem
         ItemIcon={[Function]}
         brandStyles={
@@ -911,36 +790,27 @@ exports[`Menu should render with sub links 1`] = `
         }
         handleClick={[Function]}
       >
-        <Text
-          baseline={true}
-        >
-          Title
-        </Text>
+        Title
       </MenuItem>
       <div
         className="subMenu"
       >
         <MenuItem
-          ItemIcon={[Function]}
-          brandStyles={
-            Object {
-              "employerLink": "employerLink",
-            }
+          ItemIcon={
+            <Icon
+              animation=""
+              className="backLink"
+              lineHeight="loud"
+              rotation="-90deg"
+              size="small"
+              smoothRotate={false}
+              type="chevron"
+            />
           }
+          className="backLink"
           handleClick={[Function]}
-          iconProps={
-            Object {
-              "direction": "left",
-              "svgClassName": "backChevron",
-            }
-          }
-          itemClass="backLink"
         >
-          <Text
-            baseline={true}
-          >
-            Get back!
-          </Text>
+          Get back!
         </MenuItem>
         <MenuItem
           ItemIcon={[Function]}
@@ -949,15 +819,11 @@ exports[`Menu should render with sub links 1`] = `
               "employerLink": "employerLink",
             }
           }
-          itemClass="subItem"
+          className="subItem"
           key="0"
           linkUrl="http://seekasia.com/home"
         >
-          <Text
-            baseline={true}
-          >
-            Home
-          </Text>
+          Home
         </MenuItem>
         <MenuItem
           ItemIcon={[Function]}
@@ -966,15 +832,11 @@ exports[`Menu should render with sub links 1`] = `
               "employerLink": "employerLink",
             }
           }
-          itemClass="subItem"
+          className="subItem"
           key="1"
           linkUrl="http://seekasia.com/myPortal"
         >
-          <Text
-            baseline={true}
-          >
-            MyPortal
-          </Text>
+          MyPortal
         </MenuItem>
         <MenuItem
           ItemIcon={[Function]}
@@ -983,15 +845,11 @@ exports[`Menu should render with sub links 1`] = `
               "employerLink": "employerLink",
             }
           }
-          itemClass="subItem"
+          className="subItem"
           key="2"
           linkUrl="http://seekasia.com/resources"
         >
-          <Text
-            baseline={true}
-          >
-            Resources
-          </Text>
+          Resources
         </MenuItem>
         <MenuItem
           ItemIcon={[Function]}
@@ -1000,15 +858,11 @@ exports[`Menu should render with sub links 1`] = `
               "employerLink": "employerLink",
             }
           }
-          itemClass="subItem"
+          className="subItem"
           key="3"
           linkUrl="http://seekasia.com/career-insights"
         >
-          <Text
-            baseline={true}
-          >
-            CareerInsights
-          </Text>
+          CareerInsights
         </MenuItem>
       </div>
     </div>
@@ -1030,82 +884,69 @@ exports[`Menu should render with sub links 1`] = `
     className="menuBody"
   >
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <Icon
+          animation=""
+          className={undefined}
+          lineHeight="conventional"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
         }
       }
-      className="countryAndLanguage"
       handleClick={[Function]}
+      title="Country & Language"
     >
-      <div>
-        <Text
-          baseline={true}
-          className="countryLanguageText"
-        >
-          Country & Language
-        </Text>
-        <Text
-          baseline={true}
-          className="currentLocale"
-          intimate={true}
-        >
-          Hong Kong (English)
-        </Text>
-      </div>
+      Hong Kong (English)
     </MenuItem>
   </div>
   <div
     className="subMenu"
   >
     <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      handleClick={[Function]}
-      iconProps={
-        Object {
-          "direction": "left",
-          "svgClassName": "backChevron",
-        }
-      }
-      itemClass="backLink"
-    >
-      <Text
-        baseline={true}
-      >
-        Get back!
-      </Text>
-    </MenuItem>
-    <MenuItem
-      ItemIcon={[Function]}
-      brandStyles={
-        Object {
-          "employerLink": "employerLink",
-        }
-      }
-      itemClass="selectedLocaleItem"
-    >
-      <span
-        className="selectedLocale"
-      >
-        <Text
-          baseline={true}
-        >
-          Hong Kong (English)
-        </Text>
-        <CheckMarkIcon
-          className="selectedLocaleCheck"
-          svgClassName="selectedLocaleCheckIcon"
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
         />
-      </span>
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Get back!
     </MenuItem>
     <MenuItem
-      ItemIcon={[Function]}
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
       brandStyles={
         Object {
           "employerLink": "employerLink",
@@ -1114,11 +955,7 @@ exports[`Menu should render with sub links 1`] = `
       key="1"
       linkUrl="https://id.jobsdb.com/id"
     >
-      <Text
-        baseline={true}
-      >
-        Indonesia (English)
-      </Text>
+      Indonesia (English)
     </MenuItem>
   </div>
 </div>

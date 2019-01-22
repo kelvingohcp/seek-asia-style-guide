@@ -59,4 +59,9 @@ describe('ListItem:', () => {
     const wrapper = shallow(<ListItem value="testValue" className={styles.root} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with onClick', () => {
+    const wrapper = shallow(<ListItem value="testValue" onClick={() => {}} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
