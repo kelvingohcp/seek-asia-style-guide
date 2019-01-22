@@ -71,7 +71,10 @@ export default {
     },
     jobAdType: JOBADTYPE_JOBSDB_DEFAULT,
     onBookmarkClick: () => {
-      alert('hi'); // eslint-disable-line no-alert
+      alert('bookmark clicked'); // eslint-disable-line no-alert
+    },
+    onShelfSectionLinkClick: ({ searchMethod }) => {
+      alert(`send '${searchMethod}' to omniture`); // eslint-disable-line no-alert
     }
   },
   options: [
@@ -189,6 +192,7 @@ export default {
                 shelfLinks: [
                   {
                     label: 'Job function',
+                    searchMethod: 'Browse Job Function - SRP',
                     items: [
                       {
                         name: 'Accounting',
@@ -228,6 +232,7 @@ export default {
                   },
                   {
                     label: 'Industry',
+                    searchMethod: 'Browse Job Industry - SRP',
                     items: [{
                       name: 'Accounting / Audit / Tax Services',
                       link: '/jobCard',

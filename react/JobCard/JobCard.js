@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Badge from '../Badge/Badge';
 import Text from '../Text/Text';
 import Card from '../Card/Card';
@@ -110,8 +109,7 @@ export default class JobCard extends React.Component {
     const { job } = this.props;
     return jobAdTypeOption.showCompanyLogo ?
       <img className={styles.companyLogo} src={job.companyLogoUrl} /> :
-      <div className={styles.companyLogo} />
-    ;
+      <div className={styles.companyLogo} />;
   }
 
   RenderCompanyPic = ({ jobAdTypeOption }) => {
@@ -152,6 +150,7 @@ export default class JobCard extends React.Component {
       isSelected,
       bookmarked,
       onBookmarkClick,
+      onShelfSectionLinkClick,
       LinkComponent,
       borderlessRoot = false,
       isVariation,
@@ -181,21 +180,22 @@ export default class JobCard extends React.Component {
           <div className={styles.flexRow}>
             <div className={styles.leftContent}>
               <this.RenderDescription jobAdTypeOption={jobAdTypeOption} />
-              { isVariation && <this.RenderMainPoint /> }
+              {isVariation && <this.RenderMainPoint />}
               <this.RenderSellingPoint jobAdTypeOption={jobAdTypeOption} />
-              { !isVariation && <this.RenderMainPoint />}
+              {!isVariation && <this.RenderMainPoint />}
               <this.RenderShelfLink mobileOnly={isVariation && !isSplitView} />
             </div>
             <div className={styles.rightContent}>
               <this.RenderCompanyLogo jobAdTypeOption={jobAdTypeOption} />
               <this.RenderCompanyPic jobAdTypeOption={jobAdTypeOption} />
-              { isVariation && !isSplitView && <this.RenderShelfLink desktopOnly /> }
+              {isVariation && !isSplitView && <this.RenderShelfLink desktopOnly />}
             </div>
           </div>
           <ShelfSection
             shelf={job.shelf}
             LinkComponent={LinkComponent}
             showShelfSection={shelfSectionOpen}
+            onShelfSectionLinkClick={onShelfSectionLinkClick}
           />
         </div>
         {
@@ -248,6 +248,7 @@ JobCard.propTypes = {
   applied: PropTypes.bool,
   bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
   onBookmarkClick: PropTypes.func,
+  onShelfSectionLinkClick: PropTypes.func,
   showShortenedLocation: PropTypes.bool,
   borderlessRoot: PropTypes.bool,
   hideSalary: PropTypes.bool,
