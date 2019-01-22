@@ -103,8 +103,14 @@ export default class Dropdown extends Component {
   }
 
   renderChevron() {
+    const { disabled } = this.props;
+    const classNames = classnames({
+      [styles.chevron]: true,
+      [styles.disabled]: disabled
+    });
+
     return (
-      <div className={styles.chevron}>
+      <div className={classNames}>
         <ChevronIcon svgClassName={styles.chevronSvg} direction="down" />
       </div>
     );

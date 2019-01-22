@@ -36,6 +36,8 @@
     .focus();
   }
   &.disabled {
+    background-color: @saGrey5;
+    color: @saGrey4;
     cursor: not-allowed;
   }
   .invalid & {
@@ -70,6 +72,9 @@
   align-items: center;
   pointer-events: none;
   color: @sk-black;
+  &.disabled {
+    color: @saGrey3;
+  }
 }
 
 .chevronSvg {
