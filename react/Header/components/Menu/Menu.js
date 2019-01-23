@@ -95,10 +95,10 @@ export default class Menu extends Component {
         </Section>
         {
           authenticationStatus === AUTHENTICATED && (<div className={styles.menuBody}>
-            <MenuItem linkUrl={baseUrl + messages['header.profileUrl']} ItemIcon={<Icon type='profileMale' lineHeight='conventional' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
+            <MenuItem linkUrl={baseUrl + messages['header.profileUrl']} ItemIcon={<Icon type='profileMale' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
               {messages['header.profileTitle']}
             </MenuItem>
-            <MenuItem linkUrl={baseUrl + messages['header.invitationUrl']} ItemIcon={<Icon type='jobInvitation' lineHeight='conventional' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
+            <MenuItem linkUrl={baseUrl + messages['header.invitationUrl']} ItemIcon={<Icon type='jobInvitation' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
               {messages['header.invitationTitle']}
             </MenuItem>
           </div>)
@@ -106,7 +106,7 @@ export default class Menu extends Component {
         {this.renderMenuLinks({ messages, brandStyles, linkRenderer }, links)}
         {
           authenticationStatus === UNAUTHENTICATED && employerSite && (<div className={styles.menuBody}>
-            <MenuItem linkUrl={baseUrl + messages['header.employerSiteUrl']} ItemIcon={<Icon type='employer' lineHeight='conventional' size='small' className={styles.employer} />} linkRenderer={linkRenderer}>
+            <MenuItem linkUrl={baseUrl + messages['header.employerSiteUrl']} ItemIcon={<Icon type='employer' lineHeight='conversational' size='small' className={styles.employer} />} linkRenderer={linkRenderer}>
               {messages['header.employerSiteTitle']}
             </MenuItem>
           </div>)
@@ -116,7 +116,7 @@ export default class Menu extends Component {
         </Section>
         <div className={styles.menuBody}>
           {locales && locales.length && (
-            <MenuItem title={messages['menu.countryAndLanguage']} handleClick={this.toggleLocalesMenu} ItemIcon={<Icon type='country' lineHeight='conventional' size='small' className={brandStyles.menuIcon} />} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+            <MenuItem title={messages['menu.countryAndLanguage']} handleClick={this.toggleLocalesMenu} ItemIcon={<Icon type='country' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               {selectedLocale.title}
             </MenuItem>
           )}

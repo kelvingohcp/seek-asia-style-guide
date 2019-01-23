@@ -11,7 +11,7 @@ const getJobsDBProps = ({ country, domainUrl, authenticationStatus, currentPage,
   const baseUrl = `https://${country}.${domainUrl}`;
 
   const iconRenderer = icon => {
-    return <Icon type={icon} lineHeight='conventional' size='small' className={styles.menuIcon} />;
+    return <Icon type={icon} lineHeight='conversational' size='small' className={styles.menuIcon} />;
   };
 
   let icon = iconRenderer('careerInsight');
