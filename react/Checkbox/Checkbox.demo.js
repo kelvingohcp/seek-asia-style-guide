@@ -84,6 +84,15 @@ export default {
             ...props,
             compact: true
           })
+        },
+        {
+          label: 'Disabled',
+          transformProps: props => ({
+            ...props,
+            inputProps: {
+              disabled: true
+            }
+          })
         }
       ]
     },

@@ -57,6 +57,11 @@
       height: auto;
     }
   }
+
+  .input:disabled + .label & {
+    color: @saGrey2;
+    cursor: not-allowed;
+  }
 }
 
 .standardLabel {
@@ -73,6 +78,10 @@
   padding-bottom: 0;
   color: @saGrey1;
   display: inline;
+
+  .input:disabled + .label & {
+    color: @saGrey2;
+  }
 }
 
 .checkBox {
@@ -97,6 +106,11 @@
       height: @grid-row-height * 5;
       padding: @field-border-radius / 2;
     }
+  }
+
+  .input:disabled + .label & {
+    background-color: @saGrey5;
+    border-color: @sk-mid-gray-light;
   }
 }
 
@@ -136,6 +150,12 @@
   .input:checked + .label & {
     color: @saWhite;
     background-color: @actionBlue;
+  }
+
+  .input:disabled + .label & {
+    color: @saGrey2;
+    background-color: @saGrey5;
+    cursor: not-allowed;
   }
 
   .compact & {
