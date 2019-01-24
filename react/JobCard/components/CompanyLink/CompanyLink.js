@@ -33,7 +33,7 @@ const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink }) => 
   </span>);
 
   if (link) {
-    return (<LinkComponent link={link} className={styles.companyLink} title={title} id="company-link">{companyText}</LinkComponent>);
+    return (<LinkComponent link={link} className={styles.companyLink} title={title} linkType="company-link">{companyText}</LinkComponent>);
   }
 
   return companyText;

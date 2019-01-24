@@ -3,8 +3,8 @@
 exports[`JobCard - JobTitleLink should bold keyword 1`] = `
 <Link
   className="jobTitleLink"
-  id="job-title-link"
   link="/jobCard"
+  linkType="job-title-link"
   rel="noopener noreferrer"
 >
   <Text
@@ -21,8 +21,8 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
 exports[`JobCard - JobTitleLink should change className for viewed job 1`] = `
 <Link
   className="jobTitleLinkVisited"
-  id="job-title-link"
   link="/jobCard"
+  linkType="job-title-link"
   rel="noopener noreferrer"
 >
   <Text
@@ -39,8 +39,8 @@ exports[`JobCard - JobTitleLink should change className for viewed job 1`] = `
 exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 1`] = `
 <LinkComponent
   className="jobTitleLink"
-  id="job-title-link"
   link="/jobCard"
+  linkType="job-title-link"
   rel="noopener noreferrer"
 >
   <Text
@@ -57,8 +57,8 @@ exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 
 exports[`JobCard - JobTitleLink should render correctly 1`] = `
 <Link
   className="jobTitleLink"
-  id="job-title-link"
   link="/jobCard"
+  linkType="job-title-link"
   rel="noopener noreferrer"
 >
   <Text

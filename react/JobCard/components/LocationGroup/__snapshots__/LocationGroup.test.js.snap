@@ -5,26 +5,26 @@ Array [
   Array [
     <Link
       className="locationLink"
-      id="location-link"
       key="0"
       link="/jobCard"
+      linkType="location-link"
       title="Limit result to Pahang"
     />,
   ],
   ", ",
   <Link
     className="locationLink"
-    id="location-link"
     key="1"
     link="/jobCard"
+    linkType="location-link"
     title="Limit result to Selangor"
   />,
   " > ",
   <Link
     className="locationLink"
-    id="location-link"
     key="11"
     link="/jobCard"
+    linkType="location-link"
     title="Limit result to Cheras in Selangor"
   />,
   " > ",
@@ -40,9 +40,9 @@ Array [
   Array [
     <Link
       className="locationLink"
-      id="location-link"
       key="0"
       link="/jobCard"
+      linkType="location-link"
       title="Limit result to Pahang"
     />,
   ],

@@ -30,8 +30,8 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
                       className={styles.shelfLink}
                       key={j}
                       title={item.title}
-                      id={item.id}
-                      payload={shelfItem}>
+                      linkType={shelfItem.linkType}
+                      payload={item}>
                       {item.name}
                     </LinkComponent>);
                     if (item.children && item.children.length) {
@@ -44,8 +44,8 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
                             className={styles.shelfLink}
                             key={`${j}${k}`}
                             title={child.title}
-                            id={child.id}
-                            payload={shelfItem}>
+                            linkType={shelfItem.linkType}
+                            payload={child}>
                             {child.name}
                           </LinkComponent>
                         )).reduce((prev, curr) => [prev, ' | ', curr])

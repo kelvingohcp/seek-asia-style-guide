@@ -3,7 +3,6 @@
 exports[`JobCard - Link should render correctly 1`] = `
 <a
   href="/JobCard"
-  onClick={[Function]}
 >
   link
 </a>
