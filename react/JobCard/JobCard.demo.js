@@ -72,9 +72,6 @@ export default {
     jobAdType: JOBADTYPE_JOBSDB_DEFAULT,
     onBookmarkClick: () => {
       alert('bookmark clicked'); // eslint-disable-line no-alert
-    },
-    onShelfSectionLinkClick: ({ searchMethod }) => {
-      alert(`send '${searchMethod}' to omniture`); // eslint-disable-line no-alert
     }
   },
   options: [
