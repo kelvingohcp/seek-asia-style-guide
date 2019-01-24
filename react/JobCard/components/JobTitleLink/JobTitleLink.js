@@ -35,7 +35,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
     );
   }
 
-  return <LinkComponent link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer">{title}</LinkComponent>;
+  return <LinkComponent id="JobTitleLink" link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer">{title}</LinkComponent>;
 };
 
 JobTitleLink.propTypes = {

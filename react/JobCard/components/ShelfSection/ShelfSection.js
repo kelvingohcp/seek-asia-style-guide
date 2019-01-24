@@ -9,7 +9,7 @@ import styles from './ShelfSection.less';
 import classnames from 'classnames';
 import { hasShelfLinks, ShelfSectionPropTypes } from '../../jobCardHelper.js';
 
-const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSection = false, onShelfSectionLinkClick = () => { } }) => {
+const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSection = false }) => {
   const { shelfLinks, tagLinks } = shelf;
   if (!shelfLinks && !tagLinks || !hasShelfLinks(shelf.shelfLinks)) {
     return null;
@@ -30,7 +30,8 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
                       className={styles.shelfLink}
                       key={j}
                       title={item.title}
-                      onClick={() => onShelfSectionLinkClick({ searchMethod: shelfItem.searchMethod })}>
+                      id={item.id}
+                      payload={shelfItem}>
                       {item.name}
                     </LinkComponent>);
                     if (item.children && item.children.length) {
@@ -43,7 +44,8 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
                             className={styles.shelfLink}
                             key={`${j}${k}`}
                             title={child.title}
-                            onClick={() => onShelfSectionLinkClick({ searchMethod: shelfItem.searchMethod })}>
+                            id={item.id}
+                            payload={shelfItem}>
                             {child.name}
                           </LinkComponent>
                         )).reduce((prev, curr) => [prev, ' | ', curr])
@@ -76,6 +78,5 @@ export default ShelfSection;
 ShelfSection.propTypes = {
   shelf: ShelfSectionPropTypes,
   LinkComponent: PropTypes.func,
-  showShelfSection: PropTypes.bool,
-  onShelfSectionLinkClick: PropTypes.func
+  showShelfSection: PropTypes.bool
 };

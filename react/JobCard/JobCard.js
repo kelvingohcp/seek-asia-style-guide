@@ -150,7 +150,6 @@ export default class JobCard extends React.Component {
       isSelected,
       bookmarked,
       onBookmarkClick,
-      onShelfSectionLinkClick,
       LinkComponent,
       borderlessRoot = false,
       isVariation,
@@ -195,7 +194,6 @@ export default class JobCard extends React.Component {
             shelf={job.shelf}
             LinkComponent={LinkComponent}
             showShelfSection={shelfSectionOpen}
-            onShelfSectionLinkClick={onShelfSectionLinkClick}
           />
         </div>
         {
@@ -248,7 +246,6 @@ JobCard.propTypes = {
   applied: PropTypes.bool,
   bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
   onBookmarkClick: PropTypes.func,
-  onShelfSectionLinkClick: PropTypes.func,
   showShortenedLocation: PropTypes.bool,
   borderlessRoot: PropTypes.bool,
   hideSalary: PropTypes.bool,

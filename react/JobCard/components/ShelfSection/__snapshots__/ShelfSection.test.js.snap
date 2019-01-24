@@ -23,7 +23,47 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Accounting"
       >
         Accounting
@@ -33,7 +73,47 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="00"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Accountant in Accounting"
       >
         Accountant
@@ -43,7 +123,47 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="01"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Audit in Accounting"
       >
         Audit
@@ -53,7 +173,47 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="02"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Others in Accounting"
       >
         Others
@@ -63,7 +223,47 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="1"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Admin & HR"
       >
         Admin & HR
@@ -73,7 +273,47 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="10"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Receptionist in Admin & HR"
       >
         Receptionist
@@ -87,7 +327,18 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+                "title": "Limit result to Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          }
+        }
         title="Limit result to Accounting / Audit / Tax Services"
       >
         Accounting / Audit / Tax Services
@@ -152,7 +403,47 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Accounting"
       >
         Accounting
@@ -162,7 +453,47 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="00"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Accountant in Accounting"
       >
         Accountant
@@ -172,7 +503,47 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="01"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Audit in Accounting"
       >
         Audit
@@ -182,7 +553,47 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="02"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Others in Accounting"
       >
         Others
@@ -192,7 +603,47 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="1"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Admin & HR"
       >
         Admin & HR
@@ -202,7 +653,47 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="10"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                    "title": "Limit result to Accountant in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Audit",
+                    "title": "Limit result to Audit in Accounting",
+                  },
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Others",
+                    "title": "Limit result to Others in Accounting",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Accounting",
+                "title": "Limit result to Accounting",
+              },
+              Object {
+                "children": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Receptionist",
+                    "title": "Limit result to Receptionist in Admin & HR",
+                  },
+                ],
+                "link": "/jobCard",
+                "name": "Admin & HR",
+                "title": "Limit result to Admin & HR",
+              },
+            ],
+            "label": "Job function",
+          }
+        }
         title="Limit result to Receptionist in Admin & HR"
       >
         Receptionist
@@ -216,7 +707,18 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
         className="shelfLink"
         key="0"
         link="/jobCard"
-        onClick={[Function]}
+        payload={
+          Object {
+            "items": Array [
+              Object {
+                "link": "/jobCard",
+                "name": "Accounting / Audit / Tax Services",
+                "title": "Limit result to Accounting / Audit / Tax Services",
+              },
+            ],
+            "label": "Industry",
+          }
+        }
         title="Limit result to Accounting / Audit / Tax Services"
       >
         Accounting / Audit / Tax Services
