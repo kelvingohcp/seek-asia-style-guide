@@ -5,7 +5,7 @@ Array [
   Array [
     <Link
       className="locationLink"
-      id="LocationLink"
+      id="location-link"
       key="0"
       link="/jobCard"
       title="Limit result to Pahang"
@@ -14,7 +14,7 @@ Array [
   ", ",
   <Link
     className="locationLink"
-    id="LocationLink"
+    id="location-link"
     key="1"
     link="/jobCard"
     title="Limit result to Selangor"
@@ -22,7 +22,7 @@ Array [
   " > ",
   <Link
     className="locationLink"
-    id="LocationLink"
+    id="location-link"
     key="11"
     link="/jobCard"
     title="Limit result to Cheras in Selangor"
@@ -40,7 +40,7 @@ Array [
   Array [
     <Link
       className="locationLink"
-      id="LocationLink"
+      id="location-link"
       key="0"
       link="/jobCard"
       title="Limit result to Pahang"
