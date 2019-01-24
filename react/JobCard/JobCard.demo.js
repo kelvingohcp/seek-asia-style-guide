@@ -189,7 +189,7 @@ export default {
                 shelfLinks: [
                   {
                     label: 'Job function',
-                    linkType: 'Browse Job Function - SRP',
+                    linkType: 'jobFunction',
                     items: [
                       {
                         name: 'Accounting',
@@ -229,7 +229,7 @@ export default {
                   },
                   {
                     label: 'Industry',
-                    linkType: 'Browse Job Industry - SRP',
+                    linkType: 'jobIndustry',
                     items: [{
                       name: 'Accounting / Audit / Tax Services',
                       link: '/jobCard',

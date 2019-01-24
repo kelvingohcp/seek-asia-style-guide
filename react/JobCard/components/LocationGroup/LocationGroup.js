@@ -19,7 +19,7 @@ export const LocationsPropTypes = PropTypes.arrayOf(PropTypes.shape({
 
 const renderLocation = ({ link, name, title, child, LinkComponent, showShortenedLocation, key }) => {
   const locationLink = (link) ?
-    (<LinkComponent link={link} className={styles.locationLink} key={key} title={title} linkType="location-link">{name}</LinkComponent>) :
+    (<LinkComponent link={link} className={styles.locationLink} key={key} title={title} linkType="locationLink">{name}</LinkComponent>) :
     (<span className={styles.locationName} key={key}>{name}</span>);
   if (child) {
     if (showShortenedLocation) {
