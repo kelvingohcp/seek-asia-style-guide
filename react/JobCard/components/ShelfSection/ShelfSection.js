@@ -44,7 +44,7 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
                             className={styles.shelfLink}
                             key={`${j}${k}`}
                             title={child.title}
-                            id={item.id}
+                            id={child.id}
                             payload={shelfItem}>
                             {child.name}
                           </LinkComponent>

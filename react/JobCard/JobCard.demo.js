@@ -192,21 +192,25 @@ export default {
                     searchMethod: 'Browse Job Function - SRP',
                     items: [
                       {
+                        id: '0',
                         name: 'Accounting',
                         link: '/jobCard',
                         title: 'Limit result to Accounting',
                         children: [
                           {
+                            id: '1',
                             name: 'Accountant',
                             link: '/jobCard',
                             title: 'Limit result to Accountant in Accounting'
                           },
                           {
+                            id: '2',
                             name: 'Audit',
                             link: '/jobCard',
                             title: 'Limit result to Audit in Accounting'
                           },
                           {
+                            id: '3',
                             name: 'Others',
                             link: '/jobCard',
                             title: 'Limit result to Others in Accounting'
@@ -219,6 +223,7 @@ export default {
                         title: 'Limit result to Admin & HR',
                         children: [
                           {
+                            id: '4',
                             name: 'Receptionist',
                             link: '/jobCard',
                             title: 'Limit result to Receptionist in Admin & HR'
@@ -231,6 +236,7 @@ export default {
                     label: 'Industry',
                     searchMethod: 'Browse Job Industry - SRP',
                     items: [{
+                      id: '5',
                       name: 'Accounting / Audit / Tax Services',
                       link: '/jobCard',
                       title: 'Limit result to Accounting / Audit / Tax Services'
