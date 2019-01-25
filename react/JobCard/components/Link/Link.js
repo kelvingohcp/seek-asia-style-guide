@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Link = ({ link, children, ...restProps }) => {
+const Link = ({ link, payload, linkType, children, ...restProps }) => {
   return (<a href={link} {...restProps}>{children}</a>);
 };
 
