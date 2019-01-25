@@ -39,3 +39,6 @@ export const actionPastelBlue = '#DDF1FA'; // Alias, equivalent to "saBlue4"
 export const actionTurquoise = '#0E7E8B';
 
 export const lightBlue = '#EEF8FC'; // Alias, equivalent to "saBlue5"
+
+// Border width
+export const borderWidthButton = '1px';
