@@ -19,6 +19,11 @@ import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
 
+export const linkType = {
+  jobTitle: 'jobTitle',
+  company: 'company',
+  location: 'location'
+};
 export default class JobCard extends React.Component {
   state = {
     shelfSectionOpen: false

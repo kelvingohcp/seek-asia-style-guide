@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './CompanyLink.less';
 import { getParts } from '../../jobCardHelper.js';
 import defaultLink from '../Link/Link';
+import { linkType } from '../../JobCard';
 
 export const CompanyLinkPropTypes = PropTypes.shape({
   name: PropTypes.string,
@@ -33,7 +34,7 @@ const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink }) => 
   </span>);
 
   if (link) {
-    return (<LinkComponent link={link} className={styles.companyLink} title={title} linkType="companyLink">{companyText}</LinkComponent>);
+    return (<LinkComponent link={link} className={styles.companyLink} title={title} linkType={linkType.company}>{companyText}</LinkComponent>);
   }
 
   return companyText;

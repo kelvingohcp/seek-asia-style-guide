@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { getParts } from '../../jobCardHelper.js';
 import { Text } from 'seek-asia-style-guide/react';
 import defaultLink from '../Link/Link';
+import { linkType } from '../../JobCard';
 
 const JobTitleLinkPropTypes = PropTypes.shape({
   jobTitle: PropTypes.string,
@@ -35,7 +36,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
     );
   }
 
-  return <LinkComponent linkType="jobTitleLink" link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer">{title}</LinkComponent>;
+  return <LinkComponent linkType={linkType.jobTitle} link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer">{title}</LinkComponent>;
 };
 
 JobTitleLink.propTypes = {

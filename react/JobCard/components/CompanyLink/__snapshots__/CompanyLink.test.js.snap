@@ -4,7 +4,7 @@ exports[`JobCard - CompanyLink should bold keyword 1`] = `
 <Link
   className="companyLink"
   link="/jobCard"
-  linkType="companyLink"
+  linkType="company"
   title="Jobs at Seek Asia"
 >
   <span
@@ -30,7 +30,7 @@ exports[`JobCard - CompanyLink should render correctly 1`] = `
 <Link
   className="companyLink"
   link="/jobCard"
-  linkType="companyLink"
+  linkType="company"
   title="Jobs at Seek Asia"
 >
   <span
