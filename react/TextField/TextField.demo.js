@@ -87,6 +87,46 @@ export default {
       ]
     },
     ...fieldMessageOptions,
-    ...fieldLabelOptions
+    ...fieldLabelOptions,
+    {
+      label: 'Masked Input',
+      type: 'radio',
+      states: [
+        {
+          label: 'No masking',
+          transformProps: props => props
+        },
+        {
+          label: '1111 1111 1111 1111',
+          transformProps: props => ({
+            ...props,
+            mask: '1111 1111 1111 1111',
+            inputProps: {
+              placeholder: '____ ____ ____ ____'
+            }
+          })
+        },
+        {
+          label: '11/1111',
+          transformProps: props => ({
+            ...props,
+            mask: '11/1111',
+            inputProps: {
+              placeholder: 'mm/yyyy'
+            }
+          })
+        },
+        {
+          label: 'AAA 1111',
+          transformProps: props => ({
+            ...props,
+            mask: 'AAA 1111',
+            inputProps: {
+              placeholder: 'ABC 1234'
+            }
+          })
+        }
+      ]
+    }
   ]
 };

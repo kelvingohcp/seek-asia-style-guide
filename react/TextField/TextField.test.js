@@ -21,6 +21,10 @@ describe('TextField', () => {
     expect(shallow(<TextField {...requiredProps} />)).toMatchSnapshot();
   });
 
+  it('should render with mask', () => {
+    expect(shallow(<TextField mask="11/1111" {...requiredProps} />)).toMatchSnapshot();
+  });
+
   it('should pass through the type', () => {
     const wrapper = shallow(<TextField {...requiredProps} type="search" />);
     const inputType = wrapper.find('input').prop('type');

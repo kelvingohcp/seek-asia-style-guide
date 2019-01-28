@@ -2,6 +2,7 @@ import styles from './TextField.less';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import MaskedInput from 'react-maskedinput';
 import ClearField from '../ClearField/ClearField';
 import FieldMessage from '../private/FieldMessage/FieldMessage';
 import FieldLabel from '../private/FieldLabel/FieldLabel';
@@ -34,6 +35,7 @@ export default class TextField extends Component {
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
     type: PropTypes.string,
+    mask: PropTypes.string,
     className: PropTypes.string,
     valid: PropTypes.bool,
     inputProps: PropTypes.object,
@@ -74,7 +76,7 @@ export default class TextField extends Component {
   }
 
   renderInput() {
-    const { id, value, onChange, onFocus, onBlur, type, inputProps = {} } = this.props;
+    const { id, value, onChange, onFocus, onBlur, type, mask, inputProps = {} } = this.props;
     const { ref } = inputProps;
     const allInputProps = {
       id,
@@ -88,7 +90,9 @@ export default class TextField extends Component {
       'aria-describedby': `${id}-message`
     };
 
-    return (
+    return mask ? (
+      <MaskedInput mask={mask} {...allInputProps} />
+    ) : (
       <input {...allInputProps} />
     );
   }

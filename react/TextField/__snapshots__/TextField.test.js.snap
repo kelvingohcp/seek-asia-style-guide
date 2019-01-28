@@ -381,6 +381,45 @@ exports[`TextField should render with input props 1`] = `
 </div>
 `;
 
+exports[`TextField should render with mask 1`] = `
+<div
+  className="root"
+>
+  <FieldLabel
+    id="testTextField"
+    label=""
+    raw={false}
+    secondaryLabel=""
+    tertiaryLabel=""
+  />
+  <MaskedInput
+    aria-describedby="testTextField-message"
+    className="input"
+    id="testTextField"
+    mask="11/1111"
+    onChange={[Function]}
+    value=""
+  />
+  <span
+    className="clearField"
+    onMouseDown={[Function]}
+  >
+    <ClearField />
+  </span>
+  <FieldMessage
+    id="testTextField-message"
+    message=""
+    messageProps={
+      Object {
+        "critical": false,
+        "positive": false,
+        "secondary": false,
+      }
+    }
+  />
+</div>
+`;
+
 exports[`TextField should render with valid false 1`] = `
 <div
   className="root invalid"

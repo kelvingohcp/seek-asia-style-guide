@@ -33,5 +33,10 @@ export const symbols = {
     <Container>
       <TextField id="firstName4" label="Label" value="" onChange={noop} message="Positive text" valid={true} />
     </Container>
+  ),
+  'TextField/With Date Input Masking': (
+    <Container>
+      <TextField id="startDate" label="Start date" value="" onChange={noop} mask="11/1111" inputProps={{ placeholder: 'mm/yyyy' }} />
+    </Container>
   )
 };
