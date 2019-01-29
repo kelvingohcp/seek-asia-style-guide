@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Section from '../../../Section/Section';
 import Text from '../../../Text/Text';
 import Button from '../../../Button/Button';
@@ -7,49 +6,49 @@ import ButtonGroup from '../../../ButtonGroup/ButtonGroup';
 import defaultLink from '../Link/Link';
 import styles from './ShelfSection.less';
 import classnames from 'classnames';
-import { hasShelfLinks, ShelfSectionPropTypes } from '../../jobCardHelper.js';
+import { hasShelfLinks } from '../../jobCardHelper.js';
+import { ShelfSectionPropTypes } from './ShelfSectionPropTypes';
 
-const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSection = false, onShelfSectionLinkClick = () => { } }) => {
+const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSection = false, trackLinkClicked = () => {} }) => {
   const { shelfLinks, tagLinks } = shelf;
   if (!shelfLinks && !tagLinks || !hasShelfLinks(shelf.shelfLinks)) {
     return null;
   }
-  return (<Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
-    <div className={styles.shelfDivider} />
-    {shelfLinks && shelfLinks.length &&
+
+  const rednerLink = (linkObject, trackOmniture) => (
+    <LinkComponent
+      key={linkObject.name}
+      {...linkObject}
+      className={styles.shelfLink}
+      onClick={trackOmniture}>
+      {linkObject.name}
+    </LinkComponent>
+  );
+
+  return (
+    <Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
+      <div className={styles.shelfDivider} />
+      {shelfLinks && shelfLinks.length &&
       <Text whispering className={styles.shelfLinksContainer}>
-        {shelfLinks.map((shelfItem, i) => {
+        {shelfLinks.map(shelfItem => {
+          const trackOmniture = () => trackLinkClicked(shelfItem.searchMethod);
+
           if (shelfItem && shelfItem.items && shelfItem.items.length) {
             return (
-              <div key={i}>
+              <div key={shelfItem.label}>
                 {`${shelfItem.label}: `}
                 {
-                  shelfItem.items.map((item, j) => {
-                    const link = (<LinkComponent
-                      link={item.link}
-                      className={styles.shelfLink}
-                      key={j}
-                      title={item.title}
-                      onClick={() => onShelfSectionLinkClick({ searchMethod: shelfItem.searchMethod })}>
-                      {item.name}
-                    </LinkComponent>);
+                  shelfItem.items.map(item => {
                     if (item.children && item.children.length) {
                       return [
-                        link,
+                        rednerLink(item, trackOmniture),
                         ' > ',
-                        item.children.map((child, k) => (
-                          <LinkComponent
-                            link={child.link}
-                            className={styles.shelfLink}
-                            key={`${j}${k}`}
-                            title={child.title}
-                            onClick={() => onShelfSectionLinkClick({ searchMethod: shelfItem.searchMethod })}>
-                            {child.name}
-                          </LinkComponent>
-                        )).reduce((prev, curr) => [prev, ' | ', curr])
+                        item.children
+                          .map(child => rednerLink(child, trackOmniture))
+                          .reduce((prev, curr) => [prev, ' | ', curr])
                       ];
                     }
-                    return [link];
+                    return [rednerLink(item, trackOmniture)];
                   }).reduce((prev, curr) => [prev, ', ', curr])
                 }
               </div>);
@@ -57,25 +56,27 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
           return null;
         })}
       </Text >
-    }
-
-    {
-      tagLinks &&
-      <ButtonGroup className={styles.tagLinksContainer}>
-        {tagLinks.map((item, i) => (
-          <Button color="primary" compact component="a" href={item.link} className={styles.tagLink} key={i} title={item.title}>
-            {item.name}
-          </Button>
-        ))}
-      </ButtonGroup>
-    }
-  </Section >);
+      }
+      {tagLinks &&
+        <ButtonGroup className={styles.tagLinksContainer}>
+          {tagLinks.map(item => (
+            <Button
+              color="primary"
+              compact
+              component="a"
+              href={item.link}
+              className={styles.tagLink}
+              key={item.title}
+              title={item.title}>
+              {item.name}
+            </Button>
+          ))}
+        </ButtonGroup>
+      }
+    </Section>
+  );
 };
+
+ShelfSection.propTypes = ShelfSectionPropTypes;
 
 export default ShelfSection;
-ShelfSection.propTypes = {
-  shelf: ShelfSectionPropTypes,
-  LinkComponent: PropTypes.func,
-  showShelfSection: PropTypes.bool,
-  onShelfSectionLinkClick: PropTypes.func
-};

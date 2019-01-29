@@ -1,7 +1,6 @@
 import Constants from '../Constants/Constants';
 import match from 'autosuggest-highlight/match';
 import parse from 'autosuggest-highlight/parse';
-import PropTypes from 'prop-types';
 
 const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSDB_BRANDED, JOBADTYPE_JOBSTREET_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
 
@@ -70,25 +69,5 @@ export const hasShelfLinks = shelfLinks => {
   );
 };
 
-export const ShelfSectionPropTypes = PropTypes.shape({
-  shelfLinks: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string,
-      link: PropTypes.string,
-      title: PropTypes.string,
-      children: PropTypes.arrayOf(PropTypes.shape({
-        name: PropTypes.string,
-        link: PropTypes.string,
-        title: PropTypes.string
-      }))
-    }))
-  })),
-  tagLinks: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    link: PropTypes.string,
-    title: PropTypes.string
-  }))
-});
 export const BOOKMARKED = 'bookmarked';
 export const NOT_BOOKMARKED = 'notBookmarked';

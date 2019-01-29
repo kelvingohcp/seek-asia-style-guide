@@ -16,13 +16,14 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
     whispering={true}
   >
     <div
-      key="0"
+      key="Job function"
     >
       Job function: 
       <Link
         className="shelfLink"
-        key="0"
+        key="Accounting"
         link="/jobCard"
+        name="Accounting"
         onClick={[Function]}
         title="Limit result to Accounting"
       >
@@ -31,8 +32,9 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
        &gt; 
       <Link
         className="shelfLink"
-        key="00"
+        key="Accountant"
         link="/jobCard"
+        name="Accountant"
         onClick={[Function]}
         title="Limit result to Accountant in Accounting"
       >
@@ -41,8 +43,9 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
        | 
       <Link
         className="shelfLink"
-        key="01"
+        key="Audit"
         link="/jobCard"
+        name="Audit"
         onClick={[Function]}
         title="Limit result to Audit in Accounting"
       >
@@ -51,8 +54,9 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
        | 
       <Link
         className="shelfLink"
-        key="02"
+        key="Others"
         link="/jobCard"
+        name="Others"
         onClick={[Function]}
         title="Limit result to Others in Accounting"
       >
@@ -61,8 +65,9 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       , 
       <Link
         className="shelfLink"
-        key="1"
+        key="Admin & HR"
         link="/jobCard"
+        name="Admin & HR"
         onClick={[Function]}
         title="Limit result to Admin & HR"
       >
@@ -71,8 +76,9 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
        &gt; 
       <Link
         className="shelfLink"
-        key="10"
+        key="Receptionist"
         link="/jobCard"
+        name="Receptionist"
         onClick={[Function]}
         title="Limit result to Receptionist in Admin & HR"
       >
@@ -80,13 +86,14 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       </Link>
     </div>
     <div
-      key="1"
+      key="Industry"
     >
       Industry: 
       <Link
         className="shelfLink"
-        key="0"
+        key="Accounting / Audit / Tax Services"
         link="/jobCard"
+        name="Accounting / Audit / Tax Services"
         onClick={[Function]}
         title="Limit result to Accounting / Audit / Tax Services"
       >
@@ -104,7 +111,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       compact={true}
       component="a"
       href="/jobCard"
-      key="0"
+      key="Limit result to Keyword 1"
       role="button"
       tabIndex={0}
       title="Limit result to Keyword 1"
@@ -118,7 +125,7 @@ exports[`JobCard - ShelfSection should render correctly 1`] = `
       compact={true}
       component="a"
       href="/jobCard"
-      key="1"
+      key="Limit result to Keyword 2"
       role="button"
       tabIndex={0}
       title="Limit result to Keyword 2"
@@ -145,13 +152,14 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
     whispering={true}
   >
     <div
-      key="0"
+      key="Job function"
     >
       Job function: 
       <customLink
         className="shelfLink"
-        key="0"
+        key="Accounting"
         link="/jobCard"
+        name="Accounting"
         onClick={[Function]}
         title="Limit result to Accounting"
       >
@@ -160,8 +168,9 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
        &gt; 
       <customLink
         className="shelfLink"
-        key="00"
+        key="Accountant"
         link="/jobCard"
+        name="Accountant"
         onClick={[Function]}
         title="Limit result to Accountant in Accounting"
       >
@@ -170,8 +179,9 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
        | 
       <customLink
         className="shelfLink"
-        key="01"
+        key="Audit"
         link="/jobCard"
+        name="Audit"
         onClick={[Function]}
         title="Limit result to Audit in Accounting"
       >
@@ -180,8 +190,9 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
        | 
       <customLink
         className="shelfLink"
-        key="02"
+        key="Others"
         link="/jobCard"
+        name="Others"
         onClick={[Function]}
         title="Limit result to Others in Accounting"
       >
@@ -190,8 +201,9 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       , 
       <customLink
         className="shelfLink"
-        key="1"
+        key="Admin & HR"
         link="/jobCard"
+        name="Admin & HR"
         onClick={[Function]}
         title="Limit result to Admin & HR"
       >
@@ -200,8 +212,9 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
        &gt; 
       <customLink
         className="shelfLink"
-        key="10"
+        key="Receptionist"
         link="/jobCard"
+        name="Receptionist"
         onClick={[Function]}
         title="Limit result to Receptionist in Admin & HR"
       >
@@ -209,13 +222,14 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       </customLink>
     </div>
     <div
-      key="1"
+      key="Industry"
     >
       Industry: 
       <customLink
         className="shelfLink"
-        key="0"
+        key="Accounting / Audit / Tax Services"
         link="/jobCard"
+        name="Accounting / Audit / Tax Services"
         onClick={[Function]}
         title="Limit result to Accounting / Audit / Tax Services"
       >
@@ -233,7 +247,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       compact={true}
       component="a"
       href="/jobCard"
-      key="0"
+      key="Limit result to Keyword 1"
       role="button"
       tabIndex={0}
       title="Limit result to Keyword 1"
@@ -247,7 +261,7 @@ exports[`JobCard - ShelfSection should render custom link 1`] = `
       compact={true}
       component="a"
       href="/jobCard"
-      key="1"
+      key="Limit result to Keyword 2"
       role="button"
       tabIndex={0}
       title="Limit result to Keyword 2"

@@ -6,7 +6,8 @@ import jobCardStyles from '../../JobCard.less';
 import classnames from 'classnames';
 import ChevronIcon from '../../../ChevronIcon/ChevronIcon';
 import Badge from '../../../Badge/Badge';
-import { hasShelfLinks, ShelfSectionPropTypes } from '../../jobCardHelper.js';
+import { hasShelfLinks } from '../../jobCardHelper.js';
+import { ShelfPropTypes } from '../ShelfSection/ShelfSectionPropTypes';
 
 const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
   return (
@@ -57,7 +58,7 @@ ShelfButton.propTypes = {
     featuredLabel: PropTypes.string,
     appliedDate: PropTypes.string,
     postingDuration: PropTypes.string,
-    shelf: ShelfSectionPropTypes
+    shelf: ShelfPropTypes
   }),
   onClick: PropTypes.func,
   isOpen: PropTypes.bool

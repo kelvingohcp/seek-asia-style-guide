@@ -18,6 +18,58 @@ JobCardContainer.propTypes = {
   componentProps: PropTypes.object
 };
 
+const shelfLinks = [
+  {
+    label: 'Job function',
+    searchMethod: 'Browse Job Function - SRP',
+    items: [
+      {
+        name: 'Accounting',
+        link: '/jobCard',
+        title: 'Limit result to Accounting',
+        children: [
+          {
+            name: 'Accountant',
+            link: '/jobCard',
+            title: 'Limit result to Accountant in Accounting'
+          },
+          {
+            name: 'Audit',
+            link: '/jobCard',
+            title: 'Limit result to Audit in Accounting'
+          },
+          {
+            name: 'Others',
+            link: '/jobCard',
+            title: 'Limit result to Others in Accounting'
+          }
+        ]
+      },
+      {
+        name: 'Admin & HR',
+        link: '/jobCard',
+        title: 'Limit result to Admin & HR',
+        children: [
+          {
+            name: 'Receptionist',
+            link: '/jobCard',
+            title: 'Limit result to Receptionist in Admin & HR'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    label: 'Industry',
+    searchMethod: 'Browse Job Industry - SRP',
+    items: [{
+      name: 'Accounting / Audit / Tax Services',
+      link: '/jobCard',
+      title: 'Limit result to Accounting / Audit / Tax Services'
+    }]
+  }
+];
+
 /* eslint-disable react/prop-types */
 export default {
   route: '/jobCard',
@@ -73,8 +125,8 @@ export default {
     onBookmarkClick: () => {
       alert('bookmark clicked'); // eslint-disable-line no-alert
     },
-    onShelfSectionLinkClick: ({ searchMethod }) => {
-      alert(`send '${searchMethod}' to omniture`); // eslint-disable-line no-alert
+    trackLinkClicked: args => {
+      console.log(`send '${args}' to omniture`); // eslint-disable-line no-alert
     }
   },
   options: [
@@ -189,57 +241,7 @@ export default {
               ...props.job,
               shelf: {
                 ...props.job.shelf,
-                shelfLinks: [
-                  {
-                    label: 'Job function',
-                    searchMethod: 'Browse Job Function - SRP',
-                    items: [
-                      {
-                        name: 'Accounting',
-                        link: '/jobCard',
-                        title: 'Limit result to Accounting',
-                        children: [
-                          {
-                            name: 'Accountant',
-                            link: '/jobCard',
-                            title: 'Limit result to Accountant in Accounting'
-                          },
-                          {
-                            name: 'Audit',
-                            link: '/jobCard',
-                            title: 'Limit result to Audit in Accounting'
-                          },
-                          {
-                            name: 'Others',
-                            link: '/jobCard',
-                            title: 'Limit result to Others in Accounting'
-                          }
-                        ]
-                      },
-                      {
-                        name: 'Admin & HR',
-                        link: '/jobCard',
-                        title: 'Limit result to Admin & HR',
-                        children: [
-                          {
-                            name: 'Receptionist',
-                            link: '/jobCard',
-                            title: 'Limit result to Receptionist in Admin & HR'
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    label: 'Industry',
-                    searchMethod: 'Browse Job Industry - SRP',
-                    items: [{
-                      name: 'Accounting / Audit / Tax Services',
-                      link: '/jobCard',
-                      title: 'Limit result to Accounting / Audit / Tax Services'
-                    }]
-                  }
-                ]
+                shelfLinks
               }
             }
           })
@@ -281,10 +283,14 @@ export default {
           label: 'Job Title Component',
           transformProps: ({ className, ...props }) => ({
             ...props,
-            TitleLinkComponent: ({ link, children, ...restProps }) => (
-              <span {...restProps}>
-                {children}
-              </span>)
+            trackLinkClicked: console.log,
+            TitleLinkComponent: ({ link, children, ...restProps }) => {
+              return (
+                <span {...restProps}>
+                  {children}
+                </span>
+              );
+            }
           })
         },
         {

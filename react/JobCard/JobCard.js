@@ -7,7 +7,7 @@ import Icon from '../Icon/Icon';
 import Button from '../Button/Button';
 import styles from './JobCard.less';
 import classnames from 'classnames';
-import { getJobAdTypeOption, BOOKMARKED, NOT_BOOKMARKED, ShelfSectionPropTypes } from './jobCardHelper.js';
+import { getJobAdTypeOption, BOOKMARKED, NOT_BOOKMARKED } from './jobCardHelper.js';
 import LocationGroup, {
   LocationsPropTypes
 } from './components/LocationGroup/LocationGroup';
@@ -18,6 +18,7 @@ import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
+import { ShelfPropTypes } from './components/ShelfSection/ShelfSectionPropTypes';
 
 export default class JobCard extends React.Component {
   state = {
@@ -150,7 +151,7 @@ export default class JobCard extends React.Component {
       isSelected,
       bookmarked,
       onBookmarkClick,
-      onShelfSectionLinkClick,
+      trackLinkClicked,
       LinkComponent,
       borderlessRoot = false,
       isVariation,
@@ -195,7 +196,7 @@ export default class JobCard extends React.Component {
             shelf={job.shelf}
             LinkComponent={LinkComponent}
             showShelfSection={shelfSectionOpen}
-            onShelfSectionLinkClick={onShelfSectionLinkClick}
+            trackLinkClicked={trackLinkClicked}
           />
         </div>
         {
@@ -216,6 +217,7 @@ export default class JobCard extends React.Component {
     );
   }
 }
+
 JobCard.propTypes = {
   keyword: PropTypes.string,
   job: PropTypes.shape({
@@ -232,7 +234,7 @@ JobCard.propTypes = {
     featuredLabel: PropTypes.string,
     classifiedLabel: PropTypes.string,
     confidentialLabel: PropTypes.string,
-    shelf: ShelfSectionPropTypes,
+    shelf: ShelfPropTypes,
     appliedDate: PropTypes.string,
     isExpired: PropTypes.bool.isRequired,
     qualification: PropTypes.string,
@@ -248,7 +250,7 @@ JobCard.propTypes = {
   applied: PropTypes.bool,
   bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
   onBookmarkClick: PropTypes.func,
-  onShelfSectionLinkClick: PropTypes.func,
+  trackLinkClicked: PropTypes.func,
   showShortenedLocation: PropTypes.bool,
   borderlessRoot: PropTypes.bool,
   hideSalary: PropTypes.bool,
