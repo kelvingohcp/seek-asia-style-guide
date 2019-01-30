@@ -97,32 +97,36 @@ export default {
           transformProps: props => props
         },
         {
-          label: '1111 1111 1111 1111',
+          label: 'Credit card',
           transformProps: props => ({
             ...props,
-            mask: '1111 1111 1111 1111',
+            mask: [/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/],
             inputProps: {
-              placeholder: '____ ____ ____ ____'
+              placeholder: '____ ____ ____ ____',
+              keepCharPositions: true
             }
           })
         },
         {
-          label: '11/1111',
+          label: 'Date',
           transformProps: props => ({
             ...props,
-            mask: '11/1111',
+            mask: [/\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
             inputProps: {
-              placeholder: 'mm/yyyy'
+              placeholder: 'mm/yyyy',
+              keepCharPositions: true
             }
           })
         },
         {
-          label: 'AAA 1111',
+          label: 'Car plate',
           transformProps: props => ({
             ...props,
-            mask: 'AAA 1111',
+            mask: [/[A-Z]/i, /[A-Z]/i, /[A-Z]/i, ' ', /\d/, /\d/, /\d/, /\d/],
             inputProps: {
-              placeholder: 'ABC 1234'
+              placeholder: 'ABC 1234',
+              keepCharPositions: true,
+              pipe: conformedValue => conformedValue.toUpperCase()
             }
           })
         }

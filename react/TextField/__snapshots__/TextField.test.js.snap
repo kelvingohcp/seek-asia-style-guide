@@ -392,12 +392,23 @@ exports[`TextField should render with mask 1`] = `
     secondaryLabel=""
     tertiaryLabel=""
   />
-  <MaskedInput
+  <t
     aria-describedby="testTextField-message"
     className="input"
     id="testTextField"
-    mask="11/1111"
+    mask={
+      Array [
+        /\\\\d/,
+        /\\\\d/,
+        "/",
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+        /\\\\d/,
+      ]
+    }
     onChange={[Function]}
+    render={[Function]}
     value=""
   />
   <span

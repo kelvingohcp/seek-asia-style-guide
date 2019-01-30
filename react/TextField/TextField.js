@@ -2,7 +2,7 @@ import styles from './TextField.less';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import MaskedInput from 'react-maskedinput';
+import MaskedInput from 'react-text-mask';
 import ClearField from '../ClearField/ClearField';
 import FieldMessage from '../private/FieldMessage/FieldMessage';
 import FieldLabel from '../private/FieldLabel/FieldLabel';
@@ -35,7 +35,7 @@ export default class TextField extends Component {
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
     type: PropTypes.string,
-    mask: PropTypes.string,
+    mask: PropTypes.array,
     className: PropTypes.string,
     valid: PropTypes.bool,
     inputProps: PropTypes.object,
@@ -65,7 +65,11 @@ export default class TextField extends Component {
 
   storeInputReference(input) {
     if (input !== null) {
-      this.input = input;
+      if (input.inputElement instanceof HTMLInputElement) {
+        this.input = input.inputElement;
+      } else {
+        this.input = input;
+      }
     }
   }
 
@@ -91,7 +95,7 @@ export default class TextField extends Component {
     };
 
     return mask ? (
-      <MaskedInput mask={mask} {...allInputProps} />
+      <MaskedInput mask={mask} {...allInputProps} /> // https://github.com/text-mask/text-mask
     ) : (
       <input {...allInputProps} />
     );

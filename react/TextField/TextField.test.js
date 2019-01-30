@@ -22,7 +22,7 @@ describe('TextField', () => {
   });
 
   it('should render with mask', () => {
-    expect(shallow(<TextField mask="11/1111" {...requiredProps} />)).toMatchSnapshot();
+    expect(shallow(<TextField mask={[/\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]} {...requiredProps} />)).toMatchSnapshot();
   });
 
   it('should pass through the type', () => {
