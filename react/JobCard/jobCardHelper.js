@@ -33,19 +33,11 @@ const jobstreetStandout = {
   showDescription: true
 };
 
-export const getJobAdTypeOption = jobAdType => {
-  switch (jobAdType) {
-    case JOBADTYPE_JOBSDB_DEFAULT:
-      return jobsdbDefault;
-    case JOBADTYPE_JOBSDB_BRANDED:
-      return jobsdbBranded;
-    case JOBADTYPE_JOBSTREET_DEFAULT:
-      return jobstreetDefault;
-    case JOBADTYPE_JOBSTREET_STANDOUT:
-      return jobstreetStandout;
-    default:
-      return {};
-  }
+export const jobAdTypeOption = {
+  [JOBADTYPE_JOBSDB_DEFAULT]: jobsdbDefault,
+  [JOBADTYPE_JOBSDB_BRANDED]: jobsdbBranded,
+  [JOBADTYPE_JOBSTREET_DEFAULT]: jobstreetDefault,
+  [JOBADTYPE_JOBSTREET_STANDOUT]: jobstreetStandout
 };
 
 export const getParts = (text, query) => {

@@ -12,7 +12,7 @@ export { default as Logo } from './Logo/Logo';
 export { default as LogoRainbow } from './LogoRainbow/LogoRainbow';
 export { default as Rating } from './Rating/Rating';
 export { default as NavigationBar } from './NavigationBar/NavigationBar';
-export { default as JobCard } from './JobCard/JobCard';
+export { default as JobCard, trackLinkType } from './JobCard/JobCard';
 export { default as JobCardLoader } from './JobCardLoader/JobCardLoader';
 export { default as CardLoader } from './CardLoader/CardLoader';
 export { default as CardLoadingBar } from './CardLoadingBar/CardLoadingBar';
