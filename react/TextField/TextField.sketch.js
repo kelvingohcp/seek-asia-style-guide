@@ -48,5 +48,15 @@ export const symbols = {
         }}
       />
     </Container>
+  ),
+  'TextField/Email': (
+    <Container>
+      <TextField id="email1" label="Email" value="someone@somewhere.net" onChange={noop} />
+    </Container>
+  ),
+  'TextField/Tel': (
+    <Container>
+      <TextField id="tel1" label="Mobile" value="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={noop} />
+    </Container>
   )
 };

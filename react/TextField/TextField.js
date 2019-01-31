@@ -34,19 +34,24 @@ export default class TextField extends Component {
     onChange: PropTypes.func.isRequired,
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
-    type: PropTypes.string,
+    type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'search', 'tel', 'url']),
     mask: PropTypes.array,
     className: PropTypes.string,
     valid: PropTypes.bool,
     inputProps: PropTypes.object,
     onClear: PropTypes.func,
-    compact: PropTypes.bool
+    compact: PropTypes.bool,
+    pattern: PropTypes.string,
+    placeholder: PropTypes.string,
+    required: PropTypes.bool
   };
 
   static defaultProps = {
     className: '',
     inputProps: {},
-    compact: false
+    compact: false,
+    required: false,
+    type: 'text'
   };
 
   constructor() {
@@ -80,7 +85,7 @@ export default class TextField extends Component {
   }
 
   renderInput() {
-    const { id, value, onChange, onFocus, onBlur, type, mask, inputProps = {} } = this.props;
+    const { id, value, onChange, onFocus, onBlur, type, mask, pattern, placeholder, inputProps = {} } = this.props;
     const { ref } = inputProps;
     const allInputProps = {
       id,
@@ -89,6 +94,8 @@ export default class TextField extends Component {
       onFocus,
       onBlur,
       type,
+      pattern,
+      placeholder,
       ...combineClassNames(inputProps, styles.input),
       ref: attachRefs(this.storeInputReference, ref),
       'aria-describedby': `${id}-message`
@@ -112,7 +119,7 @@ export default class TextField extends Component {
   }
 
   render() {
-    const { id, value, compact, className, valid, onClear, inputProps = {} } = this.props;
+    const { id, value, compact, className, valid, onClear, inputProps = {}, type } = this.props;
     const resolvedValue = value || inputProps.value || '';
     const hasValue = resolvedValue.length > 0;
     const canClear = hasValue && (typeof onClear === 'function');
@@ -121,7 +128,8 @@ export default class TextField extends Component {
       [styles.invalid]: valid === false,
       [styles.canClear]: canClear,
       [styles.compact]: compact,
-      [className]: className
+      [className]: className,
+      [styles.noScrollArrows]: type === 'number'
     });
 
     // eslint-disable-next-line react/prop-types
