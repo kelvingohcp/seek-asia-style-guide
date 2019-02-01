@@ -178,6 +178,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
+  onMenuOpen={[Function]}
 />
 `;
 
@@ -354,5 +355,6 @@ exports[`JobStreet Header renders with default props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
+  onMenuOpen={[Function]}
 />
 `;

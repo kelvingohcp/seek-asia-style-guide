@@ -217,5 +217,6 @@ Header.propTypes = {
 Header.defaultProps = {
   linkRenderer: defaultLinkRenderer,
   authenticationStatus: UNAUTHENTICATED,
-  homeUrl: '/'
+  homeUrl: '/',
+  onMenuOpen: () => {}
 };

@@ -253,6 +253,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       "menu.settingsHeader": "SETTINGS",
     }
   }
+  onMenuOpen={[Function]}
   profileItems={
     Array [
       Object {
