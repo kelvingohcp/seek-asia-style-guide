@@ -22,7 +22,7 @@ export const JobCardPropTypes = {
     confidentialLabel: PropTypes.string,
     shelf: ShelfPropTypes,
     appliedDate: PropTypes.string,
-    isExpired: PropTypes.bool.isRequired,
+    isExpired: PropTypes.bool,
     qualification: PropTypes.string,
     careerLevel: PropTypes.string,
     workExperience: PropTypes.string,

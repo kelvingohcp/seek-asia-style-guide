@@ -7,29 +7,21 @@ import { Text, Section, Icon } from 'seek-asia-style-guide/react';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
 export default class Menu extends Component {
-  constructor() {
-    super();
+  state = {
+    subMenuOpen: false,
+    subMenuOpenIndex: 0,
+    localesMenuOpen: false
+  };
 
-    this.state = {
-      subMenuOpen: false,
-      subMenuOpenIndex: 0,
-      localesMenuOpen: false
-    };
-
-    this.openSubMenu = this.openSubMenu.bind(this);
-    this.toggleSubMenu = this.toggleSubMenu.bind(this);
-    this.toggleLocalesMenu = this.toggleLocalesMenu.bind(this);
-  }
-
-  openSubMenu(i) {
+  openSubMenu = i => {
     this.setState({ subMenuOpenIndex: i });
   }
 
-  toggleSubMenu() {
+  toggleSubMenu = () => {
     this.setState({ subMenuOpen: !this.state.subMenuOpen });
   }
 
-  toggleLocalesMenu() {
+  toggleLocalesMenu = () => {
     this.setState({ localesMenuOpen: !this.state.localesMenuOpen });
   }
 
@@ -37,7 +29,7 @@ export default class Menu extends Component {
     if (links && links.map) {
       const menuItems = links.map((link, index) => (
         link.children ? (
-          <div>
+          <div key={index}>
             <MenuItem
               handleClick={() => {
                 this.openSubMenu(index);

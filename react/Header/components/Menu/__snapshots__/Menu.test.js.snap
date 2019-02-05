@@ -780,7 +780,9 @@ exports[`Menu should render with sub links 1`] = `
   <div
     className="menuBody"
   >
-    <div>
+    <div
+      key="0"
+    >
       <MenuItem
         ItemIcon={[Function]}
         brandStyles={

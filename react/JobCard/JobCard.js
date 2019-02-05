@@ -81,7 +81,7 @@ export const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalar
           content: <LocationGroup locations={job.locations} LinkComponent={LinkComponent} showShortenedLocation={showShortenedLocation} trackLinkClicked={trackLinkClicked} />,
           iconType: 'location'
         },
-        { content: job.salary, iconType: 'salary', show: job.salary && !hideSalary }
+        { content: job.salary, iconType: 'salary', show: Boolean(job.salary && !hideSalary) }
       ]}
     />
   );
