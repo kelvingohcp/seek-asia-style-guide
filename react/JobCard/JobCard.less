@@ -2,6 +2,7 @@
 @job-card-section-space: @grid-base * 2;
 @job-card-label-indent: @grid-base;
 @job-card-section-bottom-space: @grid-base * 2;
+@job-card-right-area-width: @grid-base * 66;
 
 .text {
   color: @saGrey1;
@@ -54,7 +55,8 @@
   .rightContainer {
     .flexCol();
     padding: @grid-base * 4;
-    width: @grid-base * 66;
+    width: @job-card-right-area-width;
+    min-width: @job-card-right-area-width;
     background-color: @saGrey6;
     justify-content: center;
     .desktopOnly();
