@@ -92,7 +92,7 @@ export const SellingPoint = ({ jobAdType, job, isSplitView }) => {
   return jobAdTypeOption[jobAdType].showSellingPoint && !isSplitView && job.sellingPoints && (
     <ul className={styles.sellingPoints}>
       {job.sellingPoints.map((sellingPoint, i) => (
-        <li key={i}>
+        <li key={i} className={styles.sellingPoint}>
           <Text
             whispering
             baseline={false}

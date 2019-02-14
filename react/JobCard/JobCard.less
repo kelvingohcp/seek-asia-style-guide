@@ -111,10 +111,23 @@
 
 .sellingPoints {
   .rawText();
-  list-style: disc;
-  padding-left: @grid-base * 6;
   padding-bottom: @job-card-section-bottom-space - @grid-base;
   color: @saGrey3;
+  list-style: none;
+}
+
+.sellingPoint {
+  display: flex;
+
+  &::before {
+    content: "\2022";
+    width: @grid-base * 4;
+    text-align: center;
+    margin-right: @grid-base * 2;
+    display: inline-block;
+    flex: 0 0 auto;
+    line-height: @grid-base * 3;
+  }
 }
 
 .companyPicWrapper {
