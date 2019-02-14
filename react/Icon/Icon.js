@@ -85,6 +85,7 @@ Icon.propTypes = {
     'certifications',
     'check',
     'chevron',
+    'chime',
     'comments',
     'company',
     'companyProfile',
