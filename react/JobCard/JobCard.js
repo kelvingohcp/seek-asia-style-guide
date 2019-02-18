@@ -7,7 +7,7 @@ import Button from '../Button/Button';
 import styles from './JobCard.less';
 import classnames from 'classnames';
 import Constants from '../Constants/Constants';
-import { jobAdTypeOption, BOOKMARKED } from './jobCardHelper.js';
+import { jobAdTypeOption } from './jobCardHelper.js';
 import LocationGroup from './components/LocationGroup/LocationGroup';
 import CompanyLink from './components/CompanyLink/CompanyLink';
 import JobTitleLink from './components/JobTitleLink/JobTitleLink';
@@ -22,10 +22,13 @@ export const trackLinkType = {
   company: 'company'
 };
 
-export const JobTitle = ({ applied = false, bookmarked, TitleLinkComponent, viewed, keyword, job, trackLinkClicked }) => {
+export const JobTitle = ({ applied = false, TitleLinkComponent, viewed, keyword, job, trackLinkClicked }) => {
   return (
     <div
-      className={classnames(styles.jobTitle, bookmarked && styles.withBookmark)}
+      className={classnames({
+        [styles.jobTitle]: true,
+        [styles.withBookmark]: job.isSaved
+      })}
       data-automation="job-title">
       {(applied || job.isExpired) && (
         <span className={styles.badgeWrapper}>
@@ -152,13 +155,13 @@ export default class JobCard extends React.Component {
       job,
       jobAdType,
       isSelected,
-      bookmarked,
       onBookmarkClick,
       trackLinkClicked,
       LinkComponent,
       borderlessRoot = false,
       isVariation,
-      isSplitView
+      isSplitView,
+      showSavedStatus
     } = this.props;
     const { shelfSectionOpen } = this.state;
     const { showHighlightedBg } = jobAdTypeOption[jobAdType];
@@ -170,10 +173,10 @@ export default class JobCard extends React.Component {
           [styles.selected]: isSelected
         })}>
         <div className={styles.leftContainer}>
-          {bookmarked && (
+          {showSavedStatus && (
             <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
               {
-                bookmarked === BOOKMARKED ?
+                job.isSaved ?
                   (<Icon animation="bounce" size="small" type="bookmark" className={styles.bookmarked} />) :
                   (<Icon size="small" type="bookmark" />)
               }

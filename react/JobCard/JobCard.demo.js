@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { JobCard, PageBlock, Constants } from 'seek-asia-style-guide/react';
-import { BOOKMARKED, NOT_BOOKMARKED } from './jobCardHelper.js';
 
 const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSDB_BRANDED, JOBADTYPE_JOBSTREET_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
 
@@ -333,14 +332,22 @@ export default {
           label: 'Bookmarked',
           transformProps: props => ({
             ...props,
-            bookmarked: BOOKMARKED
+            showSavedStatus: true,
+            job: {
+              ...props.job,
+              isSaved: true
+            }
           })
         },
         {
           label: 'Not bookmarked',
           transformProps: props => ({
             ...props,
-            bookmarked: NOT_BOOKMARKED
+            showSavedStatus: true,
+            job: {
+              ...props.job,
+              isSaved: false
+            }
           })
         }
       ]

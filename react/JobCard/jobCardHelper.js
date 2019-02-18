@@ -60,6 +60,3 @@ export const hasShelfLinks = shelfLinks => {
     )
   );
 };
-
-export const BOOKMARKED = 'bookmarked';
-export const NOT_BOOKMARKED = 'notBookmarked';

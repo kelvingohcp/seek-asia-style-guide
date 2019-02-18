@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { LocationsPropTypes } from './components/LocationGroup/LocationGroup';
 import { CompanyLinkPropTypes } from './components/CompanyLink/CompanyLink';
 import { ShelfPropTypes } from './components/ShelfSection/ShelfSectionPropTypes';
-import { BOOKMARKED, NOT_BOOKMARKED } from './jobCardHelper.js';
 
 export const JobCardPropTypes = {
   keyword: PropTypes.string,
@@ -34,7 +33,6 @@ export const JobCardPropTypes = {
   isSelected: PropTypes.bool,
   viewed: PropTypes.bool,
   applied: PropTypes.bool,
-  bookmarked: PropTypes.oneOf([BOOKMARKED, NOT_BOOKMARKED]),
   onBookmarkClick: PropTypes.func,
   trackLinkClicked: PropTypes.func,
   showShortenedLocation: PropTypes.bool,

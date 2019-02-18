@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 
 import JobCard from './JobCard';
 import { Constants, Text } from 'seek-asia-style-guide/react';
-import { BOOKMARKED } from './jobCardHelper.js';
 
 const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
 
@@ -243,9 +242,21 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should pass through bookmark props', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} bookmarked={BOOKMARKED} onBookmarkClick={() => {}} />);
-    expect(wrapper).toMatchSnapshot();
+  it('should render with bookmark when job is saved', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={{ ...defaultJob, isSaved: true }} showSavedStatus onBookmarkClick={() => {}} />);
+    expect(wrapper.find('[className="bookmarkButton"]')).toHaveLength(1);
+    expect(wrapper.find('[type="bookmark"]').props().className).toBe('bookmarked');
+  });
+
+  it('should render with bookmark when job is not saved', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={{ ...defaultJob, isSaved: false }} showSavedStatus onBookmarkClick={() => {}} />);
+    expect(wrapper.find('[className="bookmarkButton"]')).toHaveLength(1);
+    expect(wrapper.find('[type="bookmark"]').props().className).not.toBe('bookmarked');
+  });
+
+  it('should not show bookmark if job is saved, but showSavedStatus is disabled', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={{ ...defaultJob, isSaved: false }} showSavedStatus={false} onBookmarkClick={() => {}} />);
+    expect(wrapper.find('[className="bookmarkButton"]')).toHaveLength(0);
   });
 
   it('should render with applied badge', () => {
