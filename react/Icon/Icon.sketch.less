@@ -16,3 +16,25 @@
   width: 22px;
   height: 22px;
 }
+
+.iconGroup {
+  display: flex;
+  flex-wrap: wrap;
+  @supports (display: grid) {
+    display: grid;
+    grid-column-gap: @grid-base * 4;
+    grid-row-gap: @grid-base * 8;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  }
+}
+
+.iconGroupItem {
+  flex-basis: 10em;
+  font-size: @grid-base * 3 * 1px;
+  @supports (display: grid) {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: @grid-base * 2;
+    grid-auto-rows: (@grid-base * 6) 1fr;
+  }
+}

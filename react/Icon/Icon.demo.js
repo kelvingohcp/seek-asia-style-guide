@@ -21,6 +21,7 @@ IconContainer.propTypes = {
 const getSvgPaths = IconPack.map(obj => {
   const rObj = {
     label: obj.label,
+    groupBy: obj.category,
     transformProps: props => ({
       ...props,
       type: obj.name
@@ -34,9 +35,7 @@ export default {
   component: Icon,
   sketch,
   initialProps: {
-    type: 'birthdate',
-    size: '',
-    animation: ''
+    type: 'language'
   },
   options: [
     {

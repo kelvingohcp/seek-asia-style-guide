@@ -27,47 +27,70 @@ export default class Demo extends Component {
     };
   }
 
+  renderRadioOption = ({ states, label }) => {
+    const { activeStates } = this.state;
+    return states.map((state, i) => {
+      const selected = (activeStates[label] === state.label);
+      return (
+        <option key={i} value={state.label} defaultValue={selected}>
+          {state.label}
+        </option>
+      );
+    });
+  }
+
+  groupBy = states => {
+    const groupdStates = states.reduce((p, c) => ({
+      ...p,
+      [c.groupBy]: [
+        ...p[c.groupBy] || [],
+        c
+      ]
+    }), {});
+    return Object.keys(groupdStates).map(stateKey => (
+      <optgroup label={stateKey} key={stateKey}>
+        {this.renderRadioOption({ states: groupdStates[stateKey], label: stateKey })}
+      </optgroup>
+    ));
+  }
+
   renderOption = option => {
     const { activeStates } = this.state;
 
-    return option.type === 'radio' ? (
-      <select className={styles.select} onChange={this.makeSelectChangeHandler(option)}>
-        {
+    switch (option.type) {
+      case 'radio':
+        return (
+          <select className={styles.select} onChange={this.makeSelectChangeHandler(option)}>
+            {
+              option.states[0].groupBy ?
+                this.groupBy(option.states) :
+                this.renderRadioOption(option)
+            }
+          </select>
+        );
+      default:
+        return (
           option.states.map((state, i) => {
-            const selected = (activeStates[option.label] === state.label);
+            const checked = Boolean(
+              activeStates[option.label] &&
+              activeStates[option.label].indexOf(state.label) > -1
+            );
 
             return (
-              <option
-                key={i}
-                value={state.label}
-                selected={selected}>
-                { state.label }
-              </option>
+              <Text key={i}>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={checked}
+                    onChange={this.makeCheckboxChangeHandler(option, state)}
+                  />
+                  {state.label}
+                </label>
+              </Text>
             );
           })
-        }
-      </select>
-    ) : (
-      option.states.map((state, i) => {
-        const checked = Boolean(
-          activeStates[option.label] &&
-          activeStates[option.label].indexOf(state.label) > -1
         );
-
-        return (
-          <Text key={i}>
-            <label>
-              <input
-                type="checkbox"
-                checked={checked}
-                onChange={this.makeCheckboxChangeHandler(option, state)}
-              />
-              { state.label }
-            </label>
-          </Text>
-        );
-      })
-    );
+    }
   };
 
   makeCheckboxChangeHandler = (option, state) => event => {
