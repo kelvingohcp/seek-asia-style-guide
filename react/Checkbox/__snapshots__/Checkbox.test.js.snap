@@ -8,6 +8,7 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
     checked={false}
     className="input"
     data-automation="first-name-field"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -19,14 +20,30 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
     <div
       className="standard"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
+      <span
+        className="mainLabel"
+      >
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={false}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
     </div>
   </label>
@@ -40,6 +57,7 @@ exports[`Checkbox should render full width checkbox 1`] = `
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -51,14 +69,30 @@ exports[`Checkbox should render full width checkbox 1`] = `
     <div
       className="standard"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
+      <span
+        className="mainLabel"
+      >
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={false}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
     </div>
   </label>
@@ -72,16 +106,17 @@ exports[`Checkbox should render with button style 1`] = `
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="label"
+    className="label btn"
     htmlFor="testCheckbox"
   >
     <span
-      className="button"
+      className="mainLabel"
     >
       Still in role
     </span>
@@ -89,13 +124,14 @@ exports[`Checkbox should render with button style 1`] = `
 </div>
 `;
 
-exports[`Checkbox should render with checkbox on left hand side 1`] = `
+exports[`Checkbox should render with checkbox put at the end of component 1`] = `
 <div
   className="root"
 >
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -105,49 +141,33 @@ exports[`Checkbox should render with checkbox on left hand side 1`] = `
     htmlFor="testCheckbox"
   >
     <div
-      className="standard"
+      className="standard rtl"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
-      </span>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Checkbox should render with checkbox on right hand side 1`] = `
-<div
-  className="root"
->
-  <input
-    checked={false}
-    className="input"
-    id="testCheckbox"
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
-  >
-    <div
-      className="standard"
-    >
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
       <span
-        className="standardLabel"
+        className="mainLabel"
       >
-        Still in role
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={false}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
-      <CheckMarkIcon
-        className="checkBox checkBoxRight"
-        svgClassName="checkMark"
-      />
     </div>
   </label>
 </div>
@@ -160,6 +180,7 @@ exports[`Checkbox should render with className 1`] = `
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -171,14 +192,30 @@ exports[`Checkbox should render with className 1`] = `
     <div
       className="standard"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
+      <span
+        className="mainLabel"
+      >
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={false}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
     </div>
   </label>
@@ -187,11 +224,12 @@ exports[`Checkbox should render with className 1`] = `
 
 exports[`Checkbox should render with compact checkbox style 1`] = `
 <div
-  className="root"
+  className="root compact"
 >
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -203,14 +241,30 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
     <div
       className="standard"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
+      <span
+        className="mainLabel"
+      >
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={true}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
     </div>
   </label>
@@ -224,6 +278,7 @@ exports[`Checkbox should render with simple props 1`] = `
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -235,14 +290,30 @@ exports[`Checkbox should render with simple props 1`] = `
     <div
       className="standard"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
+      <span
+        className="mainLabel"
+      >
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={false}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
     </div>
   </label>
@@ -256,6 +327,7 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
   <input
     checked={false}
     className="input"
+    disabled={false}
     id="testCheckbox"
     onChange={[Function]}
     type="checkbox"
@@ -267,14 +339,30 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
     <div
       className="standard"
     >
-      <CheckMarkIcon
-        className="checkBox checkBoxLeft"
-        svgClassName="checkMark"
-      />
-      <span
-        className="standardLabel"
+      <div
+        className="checkBox"
       >
-        Still in role
+        <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size=""
+          smoothRotate={false}
+          svgClassName="checkMark"
+          type="check"
+        />
+      </div>
+      <span
+        className="mainLabel"
+      >
+        <Text
+          baseline={false}
+          className="standardLabel"
+          intimate={false}
+          strong={false}
+        >
+          Still in role
+        </Text>
       </span>
     </div>
   </label>

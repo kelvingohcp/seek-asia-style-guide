@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Checkbox.less';
-import CheckMarkIcon from '../CheckMarkIcon/CheckMarkIcon';
 import classnames from 'classnames';
-import { Text } from 'seek-asia-style-guide/react';
+import { Icon, Text } from 'seek-asia-style-guide/react';
 
 const STANDARD = 'standard';
 const BUTTON = 'button';
-const LEFT = 'left';
-const RIGHT = 'right';
 
 function combineClassNames(props = {}, ...classNames) {
   const { className, ...restProps } = props;
@@ -34,62 +31,66 @@ export default class Checkbox extends Component {
     onBlur: PropTypes.func,
     inputProps: PropTypes.object,
     type: PropTypes.oneOf([STANDARD, BUTTON]),
-    position: PropTypes.oneOf([LEFT, RIGHT]),
+    rtl: PropTypes.bool,
     fullWidth: PropTypes.bool,
-    compact: PropTypes.bool
+    compact: PropTypes.bool,
+    disabled: PropTypes.bool
   };
 
   static defaultProps = {
-    className: '',
     checked: false,
     inputProps: {},
     type: STANDARD,
-    position: LEFT,
+    rtl: false,
     fullWidth: false,
-    compact: false
+    compact: false,
+    disabled: false
   };
 
   renderButton(label) {
     return (
-      <span className={styles.button}>
+      <span className={styles.mainLabel}>
         {label}
       </span>
     );
   }
 
-  renderStandard(label, extraLabel) {
+  renderStandard(label, extraLabel, compact, checked, rtl) {
+    const standardStyle = classnames({
+      [styles.standard]: true,
+      [styles.rtl]: rtl
+    });
     return (
-      <div className={styles.standard}>
-        {this.renderCheckBox(LEFT)}
-        <span className={styles.standardLabel}>{label}
-          {extraLabel && <Text baseline={false} className={styles.extraLabel} whispering>{extraLabel}</Text>}
+      <div className={standardStyle}>
+        {this.renderCheckBox()}
+        <span className={styles.mainLabel}>
+          <Text baseline={false} className={styles.standardLabel} intimate={compact} strong={checked}>{label}</Text>
+          {extraLabel && <Text baseline={false} className={styles.extraLabel} whispering strong={checked}>{extraLabel}</Text>}
         </span>
-        {this.renderCheckBox(RIGHT)}
       </div>
     );
   }
 
-  renderCheckBox(currentPosition) {
-    const { position, inputProps: { checked: inputPropsCheck }, checked } = this.props;
-    const checkBoxStyle = classnames(
-      styles.checkBox,
-      position === LEFT ? styles.checkBoxLeft : styles.checkBoxRight,
-      checked || inputPropsCheck ? styles.checked : null
-    );
-
-    return position === currentPosition && (
-      <CheckMarkIcon svgClassName={styles.checkMark} className={checkBoxStyle} />
+  renderCheckBox() {
+    return (
+      <div className={styles.checkBox}>
+        <Icon type="check" svgClassName={styles.checkMark} />
+      </div>
     );
   }
 
   renderLabel() {
-    const { label, id, type, extraLabel } = this.props;
+    const { label, id, type, extraLabel, compact, checked, rtl } = this.props;
+    const componentType = classnames({
+      [styles.label]: true,
+      [styles.btn]: type === BUTTON
+    });
 
     return (
-      <label className={styles.label} htmlFor={id}>
+      <label className={componentType} htmlFor={id}>
         {
           type === STANDARD ?
-            this.renderStandard(label, extraLabel) :
+            this.renderStandard(label, extraLabel, compact, checked, rtl) :
             this.renderButton(label)
         }
       </label>
@@ -97,12 +98,13 @@ export default class Checkbox extends Component {
   }
 
   renderInput() {
-    const { id, value, checked, onChange, onFocus, onBlur, inputProps } = this.props;
+    const { id, value, checked, disabled, onChange, onFocus, onBlur, inputProps } = this.props;
 
     const allInputProps = {
       id,
       value,
       checked,
+      disabled,
       onChange,
       onFocus,
       onBlur,
@@ -116,12 +118,13 @@ export default class Checkbox extends Component {
   }
 
   render() {
-    const { className, fullWidth, compact } = this.props;
+    const { className, fullWidth, checked, compact } = this.props;
 
     const rootClassNames = classnames({
       [styles.root]: true,
       [className]: className,
       [styles.fullWidth]: fullWidth,
+      [styles.checked]: checked,
       [styles.compact]: compact
     });
 

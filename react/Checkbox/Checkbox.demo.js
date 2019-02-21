@@ -120,15 +120,14 @@ export default {
         {
           label: 'Left',
           transformProps: props => ({
-            ...props,
-            position: 'left'
+            ...props
           })
         },
         {
           label: 'Right',
           transformProps: props => ({
             ...props,
-            position: 'right'
+            rtl: true
           })
         }
       ]

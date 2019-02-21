@@ -39,7 +39,7 @@ describe('Checkbox', () => {
   });
 
   it('should render with compact checkbox style', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} type="standard" standard />);
+    const wrapper = shallow(<Checkbox {...requiredProps} type="standard" compact />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -48,13 +48,8 @@ describe('Checkbox', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render with checkbox on left hand side', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} position="left" />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with checkbox on right hand side', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} position="right" />);
+  it('should render with checkbox put at the end of component', () => {
+    const wrapper = shallow(<Checkbox {...requiredProps} rtl={true} />);
     expect(wrapper).toMatchSnapshot();
   });
 
