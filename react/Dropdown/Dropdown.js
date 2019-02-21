@@ -2,9 +2,9 @@ import styles from './Dropdown.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import ChevronIcon from '../ChevronIcon/ChevronIcon';
 import FieldMessage from '../private/FieldMessage/FieldMessage';
 import FieldLabel from '../private/FieldLabel/FieldLabel';
+import { Icon } from 'seek-asia-style-guide/react';
 
 function combineClassNames(props = {}, ...classNames) {
   const { className, ...restProps } = props;
@@ -111,7 +111,7 @@ export default class Dropdown extends Component {
 
     return (
       <div className={classNames}>
-        <ChevronIcon svgClassName={styles.chevronSvg} direction="down" />
+        <Icon rotation="180deg" size="small" svgClassName={styles.chevronSvg} type="chevron" />
       </div>
     );
   }

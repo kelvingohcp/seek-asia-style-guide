@@ -1,7 +1,7 @@
 import styles from './UserAccountMenu.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Text, ChevronIcon, Card, Section, CardGroup } from 'seek-asia-style-guide/react';
+import { Icon, Text, Card, Section, CardGroup } from 'seek-asia-style-guide/react';
 
 const renderLinks = ({ userAccMenuItems, linkRenderer }) => {
   if (userAccMenuItems && userAccMenuItems.map) {
@@ -82,7 +82,7 @@ export default class UserAccountMenu extends Component {
         <div className={styles.currentLocale} show={dropdownOpen} onClick={e => this.handleDropdownToggle(e)}>
           <Text className={styles.userName}>{userName}</Text>
           <div className={styles.chevron}>
-            <ChevronIcon svgClassName={styles.chevronSvg} direction="down" />
+            <Icon rotation="180deg" size="small" ssvgClassName={styles.chevronSvg} type="chevron" />
           </div>
         </div>
 

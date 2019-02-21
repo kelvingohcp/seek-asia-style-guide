@@ -71,10 +71,14 @@ exports[`Shelf Button should render shelf button with shelf 1`] = `
     >
       more
        
-      <ChevronIcon
-        className=""
-        direction="down"
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size="small"
+        smoothRotate={true}
         svgClassName="shelfToggleIcon"
+        type="chevron"
       />
     </Text>
   </div>
@@ -110,10 +114,14 @@ exports[`Shelf Button should render shelf button with shelf and openned style 1`
     >
       less
        
-      <ChevronIcon
-        className=""
-        direction="up"
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="reset"
+        size="small"
+        smoothRotate={true}
         svgClassName="shelfToggleIcon"
+        type="chevron"
       />
     </Text>
   </div>

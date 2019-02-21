@@ -18,27 +18,62 @@ exports[`JobStreet Header passes through optional props 1`] = `
   links={
     Array [
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="home"
+        />,
         "title": "Home",
         "url": "https://jobstreet.com.my",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="myJobsDB"
+        />,
         "title": "MyJobStreet",
         "url": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="company"
+        />,
         "title": "Company Profiles",
         "url": "https://jobstreet.com.my/en/companies/",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="careerInsight"
+        />,
         "title": "Career Insights",
         "url": "https://jobstreet.com.my/en/career-insights",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="education"
+        />,
         "title": "Education",
         "url": "https://jobstreet.com.my/en/career-insights",
       },
@@ -195,27 +230,62 @@ exports[`JobStreet Header renders with default props 1`] = `
   links={
     Array [
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="home"
+        />,
         "title": "Home",
         "url": "https://jobstreet.com.my",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="myJobsDB"
+        />,
         "title": "MyJobStreet",
         "url": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="company"
+        />,
         "title": "Company Profiles",
         "url": "https://jobstreet.com.my/en/companies/",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="careerInsight"
+        />,
         "title": "Career Insights",
         "url": "https://jobstreet.com.my/en/career-insights",
       },
       Object {
-        "ItemIcon": [Function],
+        "ItemIcon": <Icon
+          animation=""
+          lineHeight=""
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="education"
+        />,
         "title": "Education",
         "url": "https://jobstreet.com.my/en/career-insights",
       },

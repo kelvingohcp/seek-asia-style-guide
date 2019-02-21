@@ -2,7 +2,7 @@ import styles from './TextLink.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ChevronIcon from 'seek-asia-style-guide/react/ChevronIcon/ChevronIcon';
+import { Icon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 
 const renderChevron = chevron => {
@@ -10,11 +10,28 @@ const renderChevron = chevron => {
     return null;
   }
 
+  let rotation = 'reset';
+  switch (chevron) {
+    case 'left':
+      rotation = '-90deg';
+      break;
+    case 'right':
+      rotation = '90deg';
+      break;
+    case 'down':
+      rotation = '180deg';
+      break;
+    default:
+      rotation = 'reset';
+  }
+
   return (
-    <ChevronIcon
+    <Icon
       className={styles.chevron}
-      direction={chevron}
+      rotation={rotation}
+      size="small"
       svgClassName={styles.chevronSvg}
+      type="chevron"
     />
   );
 };

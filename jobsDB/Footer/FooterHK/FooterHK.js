@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import UpperFooter from './components/UpperFooter/UpperFooter';
-import { Text, PageBlock, ListItem, ChevronIcon } from 'seek-asia-style-guide/react';
+import { Icon, Text, PageBlock, ListItem } from 'seek-asia-style-guide/react';
 import { getLocalization } from './localization';
 import classnames from 'classnames';
 import smoothScroll from 'seek-asia-style-guide/react/private/smoothScroll';
@@ -96,7 +96,7 @@ class FooterHK extends Component {
             </div>
             { !isExpandedVersion &&
             <div className={styles.chevronIcon} onClick={e => this.handleClick(e)}>
-              <ChevronIcon id={pageBottom} svgClassName={styles.chevronSvg} direction={isOpen ? 'up' : 'down'} />
+              <Icon id={pageBottom} rotation={isOpen ? 'reset' : '-180deg'} size="small" smoothRotate type="chevron" />
             </div>
             }
           </div>
