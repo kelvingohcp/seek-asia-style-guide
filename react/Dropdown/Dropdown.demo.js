@@ -91,6 +91,13 @@ export default {
             ...props,
             placeholderSelectable: !props.placeholderSelectable
           })
+        },
+        {
+          label: 'Disabled',
+          transformProps: props => ({
+            ...props,
+            disabled: true
+          })
         }
       ]
     },

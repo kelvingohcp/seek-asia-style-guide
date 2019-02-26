@@ -76,6 +76,11 @@ export default class Header extends Component {
   }
 
   handleToggleMenu() {
+    const { onMenuOpen } = this.props;
+    const { menuOpen } = this.state;
+    if (!menuOpen) {
+      onMenuOpen();
+    }
     this.setState({ menuOpen: !this.state.menuOpen });
   }
 
@@ -198,6 +203,7 @@ Header.propTypes = {
   employerSite: PropTypes.bool,
   linkRenderer: PropTypes.func,
   selectCountry: PropTypes.bool,
+  onMenuOpen: PropTypes.func,
   authenticationStatus: PropTypes.oneOf([
     AUTHENTICATED,
     UNAUTHENTICATED,
@@ -211,5 +217,6 @@ Header.propTypes = {
 Header.defaultProps = {
   linkRenderer: defaultLinkRenderer,
   authenticationStatus: UNAUTHENTICATED,
-  homeUrl: '/'
+  homeUrl: '/',
+  onMenuOpen: () => {}
 };

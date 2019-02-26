@@ -12,7 +12,7 @@
 }
 
 .dropdown {
-  .touchableText();
+  .touchableText(@conversational-type-scale);
   width: 100%;
   display: block;
   padding: 0 @chevronWidth 0 @field-gutter-width;
@@ -35,7 +35,11 @@
     border-color: transparent;
     .focus();
   }
-
+  &.disabled {
+    background-color: @saGrey5;
+    color: @saGrey4;
+    cursor: not-allowed;
+  }
   .invalid & {
     border-color: transparent;
     box-shadow: 0 0 0 @field-border-width @sk-pink;
@@ -68,6 +72,9 @@
   align-items: center;
   pointer-events: none;
   color: @sk-black;
+  &.disabled {
+    color: @saGrey3;
+  }
 }
 
 .chevronSvg {

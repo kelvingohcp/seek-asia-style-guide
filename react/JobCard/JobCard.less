@@ -1,33 +1,82 @@
 @import (reference) '~seek-asia-style-guide/theme';
-@job-card-section-space: 0;
+@job-card-section-space: @grid-base * 2;
 @job-card-label-indent: @grid-base;
-@job-card-list-indent: @grid-gutter-width;
-@job-card-text-space: 0;
-@job-card-bottom-text-space: @grid-base;
-@job-card-logo-indent: @grid-base;
+@job-card-section-bottom-space: @grid-base * 2;
+@job-card-right-area-width: @grid-base * 66;
 
-.container {
-  position: relative;
-  &:hover .root {
-    background-color: @saHover;
+.text {
+  color: @saGrey1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-bottom: @grid-base;
+}
+
+.section {
+  padding-bottom: @job-card-section-bottom-space;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.desktopOnly {
+  display: none;
+  @media @desktop {
+    display: flex;
   }
 }
 
-.root {
-  width: 100%;
-  margin-bottom: 0;
+.mobileOnly {
+  display: flex;
   @media @desktop {
-    padding: 0;
+    display: none;
   }
-  &:hover {
-    background-color: @saHover;
+}
+
+.container {
+  .flexRow();
+  margin-bottom: 0;
+  cursor: pointer;
+  &:hover .jobTitle {
+    text-decoration: underline;
   }
-  @supports (display: grid) {
-    display: grid;
-    padding: (@grid-base * 3) (@grid-base * 4);
-    grid-gap: @grid-base;
+  .leftContainer {
+    .flexCol();
+    flex-grow: 1;
+    padding: @grid-base*3 @grid-base*4 (@grid-base*4 - @job-card-section-bottom-space) @grid-base*4;
+    position: relative;
   }
-  word-break: break-word;
+  .rightContainer {
+    .flexCol();
+    padding: @grid-base * 4;
+    width: @job-card-right-area-width;
+    min-width: @job-card-right-area-width;
+    background-color: @saGrey6;
+    justify-content: center;
+    .desktopOnly();
+  }
+}
+
+.leftContent {
+  .flexCol();
+  flex-grow: 1;
+}
+
+.rightContent {
+  .flexCol();
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.structuredData {
+  padding-bottom: @grid-base * 1.5;
+  padding-top: @grid-base * 1.5;
 }
 
 .borderRoot {
@@ -36,202 +85,59 @@
   border-color: @saGrey4;
 }
 
-.borderlessRoot {
-  border-bottom-width: 0;
+.highlightedBg {
+  background-color: @actionPastelBlue;
 }
 
-.headerSection {
-  padding-bottom: @job-card-section-space;
-  display: flex;
-  @supports (display: grid) {
-    padding: @job-card-section-space;
-  }
+.selected {
+  background-color: @saHover;
 }
 
 .withBookmark {
   margin-right: @grid-base * 7;
 }
 
-.highlightedBg {
-  background-color: @actionPastelBlue;
-}
-
-.company {
-  padding-bottom: @grid-base;
-  color: @saGrey1;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.badgeWrapper {
+  margin-right: @grid-base;
+  vertical-align: text-top;
 }
 
 .greyLabel {
-  padding: @job-card-text-space @job-card-label-indent;
+  padding: 0 @job-card-label-indent;
   margin-right: @job-card-label-indent;
   background-color: @saGrey5;
   color: @saGrey2;
 }
 
-.classifiedLabel {
-  &:extend(.greyLabel);
-}
-
-.confidentialLabel {
-  &:extend(.greyLabel);
-}
-
-.featuredLabel {
-  margin-right: @job-card-label-indent;
-
-  & ~ .applyDate,
-  & ~ .postingDuration {
-    display: none;
-  }
-}
-
 .sellingPoints {
   .rawText();
-  list-style: disc;
-  padding-left: @job-card-list-indent;
+  padding-bottom: @job-card-section-bottom-space - @grid-base;
   color: @saGrey3;
-  margin-left: @grid-base * 3 / 2;
+  list-style: none;
 }
 
 .sellingPoint {
-  color: @saGrey1;
-  padding-bottom: @job-card-text-space;
-}
-
-.sellingPointsSection {
-  padding-top: @job-card-section-space;
-}
-
-.jobDescriptionSection {
-  display: none;
-  @media @desktop {
-    padding-top: @job-card-section-space;
-    display: flex;
-  }
-}
-
-.withDescription {
-  padding-bottom: @grid-base * 2;
-}
-
-.bodyDescriptionText {
-  color: @saGrey1;
-  padding-bottom: @job-card-text-space;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-}
-
-.bodySection {
-  padding-bottom: @job-card-section-space;
   display: flex;
-  justify-content: space-between;
 
-  .headerSection & {
-    padding-top: @job-card-section-space;
+  &::before {
+    content: "\2022";
+    width: @grid-base * 4;
+    text-align: center;
+    margin-right: @grid-base * 2;
+    display: inline-block;
+    flex: 0 0 auto;
+    line-height: @grid-base * 3;
   }
-  @supports (display: grid) {
-    padding: @job-card-section-space;
-  }
-}
-
-.bodyDetailsWrapper {
-  // Without this, the flex child containing the other text elements
-  // won't narrow past the "implied width" of those text elements.
-  min-width: 0;
-  width: 100%;
-}
-
-.footerSection {
-  padding-top: @grid-base;
-  padding-bottom: @grid-base * 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  @supports (display: grid) {
-    display: grid;
-    grid-gap: @job-card-logo-indent;
-    grid-template-columns: 1fr auto;
-    padding: @grid-base @job-card-section-space @job-card-section-space;
-  }
-}
-
-.footerLeft {
-  // this is the flex-grow 9999 hack: https://joren.co/flex-grow-9999-hack/
-  // as we set logo with flex-grow:1, this footerLeft will always make use of
-  // all possible available space
-  // [TODO] revisit and replace them all with well structured css-grid
-  flex-grow: 9999;
-  overflow: hidden;
-  @media @mobile {
-    margin-bottom: @job-card-logo-indent;
-  }
-  @media @desktop {
-    margin-right: @job-card-logo-indent;
-  }
-  @supports (display: grid) {
-    margin: 0;
-  }
-}
-
-.jobInfoContainer {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.jobInfoList {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: (@grid-base * 2);
-}
-
-.jobInfo {
-  padding-bottom: @job-card-text-space;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: @saGrey1;
-  /* stylelint-disable-next-line */
-  & span {
-    vertical-align: middle;
-  }
-}
-
-.jobInfoIcon {
-  color: @saGrey4;
-  width: @grid-base * 4;
-  height: @grid-base * 4;
-  margin-right: @grid-base * 2;
-  line-height: @grid-base * 5;
-}
-
-.applyDate,
-.postingDuration {
-  display: inline;
-  padding-bottom: @job-card-bottom-text-space;
-  margin-right: @grid-base * 2;
-}
-
-.applyDate {
-  color: @saGrey1;
-}
-
-.postingDuration {
-  color: @saGrey2;
 }
 
 .companyPicWrapper {
-  display: none;
+  .desktopOnly();
   @media @desktop {
     width: @grid-base * 50;
     min-width: @grid-base * 50;
     max-width: 100%;
     height: @grid-base * 35;
     max-height: 100%;
-    display: flex;
     justify-content: flex-end;
     padding-left: @grid-base * 2;
     flex: 1;
@@ -251,70 +157,17 @@
   max-width: @grid-base * 30;
 }
 
-.positionTitle {
-  padding-bottom: @job-card-text-space;
-  display: inline;
-}
-
-.positionLink {
-  .link(@actionBlue, true);
-  text-decoration: none;
-  pointer-events: auto;
-
-  .titleKeyword {
-    color: darken(@actionBlue, 10%);
-  }
-}
-
-.positionLink:visited {
-  .link(@saVisitedLink, true);
-
-  .titleKeyword {
-    color: darken(@saVisitedLink, 10%);
-  }
-}
-
-.shelfToggleContainer {
-  display: none;
-  @media @desktop {
-    display: inline-block;
-  }
-}
-
-.shelfToggle {
-  .link(@saGrey2);
-
-  line-height: unset;
-  height: unset;
-  &:focus {
-    outline: none;
-  }
-}
-
-.shelfToggleText {
-  padding-bottom: @grid-base;
-}
-
-.shelfToggleIcon {
-  width: @grid-base * 2;
-  height: @grid-base * 2;
-}
-
-.separatorDot {
+.bookmarkButton {
+  background-color: transparent;
   color: @saGrey4;
-  display: inline;
-  padding-right: @grid-base * 2;
+  width: @grid-base * 12;
+  height: @grid-base * 12;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
 }
 
-.selected {
-  background-color: @saHover;
-}
-
-.visitedLink {
-  text-transform: uppercase;
-}
-
-.titleBadge {
-  margin-right: @grid-base;
-  vertical-align: text-top;
+.bookmarked {
+  color: @saBlue2;
 }

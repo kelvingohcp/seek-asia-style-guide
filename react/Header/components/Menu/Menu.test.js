@@ -1,8 +1,7 @@
 import React from 'react';
-import { shallow, render } from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Menu from './Menu';
-import { Text } from 'seek-asia-style-guide/react';
 
 describe('Menu', () => {
   const FakeIcon = () => {
@@ -24,7 +23,12 @@ describe('Menu', () => {
       'menu.moreHeader': 'MORE',
       'menu.countryAndLanguage': 'Country & Language',
       'header.loginUrl': '/hk/en/login/jobseekerlogin',
-      'header.signupUrl': '/hk/en/jobseeker/registration'
+      'header.signupUrl': '/hk/en/jobseeker/registration',
+      'header.profileTitle': 'Header Profile Title',
+      'header.invitationTitle': 'Header Invitation Title',
+      'header.logoutTitle': 'Header Logout Title',
+      'header.loginTitle': 'Header Login Title',
+      'header.signupTitle': 'Header Signup Title'
     },
     locales: [{
       title: 'Hong Kong (English)',
@@ -98,13 +102,21 @@ describe('Menu', () => {
   });
 
   it('should render when authenticated', () => {
-    const renderTitle = props => render(<Text {...props} />);
-    expect(renderTitle({ authenticationStatus: 'authenticated', userName: 'Olivia' })).toMatchSnapshot();
+    const testProps = {
+      ...defaultProps,
+      authenticationStatus: 'authenticated',
+      userName: 'Olivia'
+    };
+    const wrapper = shallow(<Menu {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render when unauthenticated', () => {
-    const renderTitle = props => render(<Text {...props} />);
-    expect(renderTitle({ authenticationStatus: 'unauthenticated' })).toMatchSnapshot();
+    const testProps = {
+      ...defaultProps,
+      authenticationStatus: 'unauthenticated'
+    };
+    expect(testProps).toMatchSnapshot();
   });
 });
 

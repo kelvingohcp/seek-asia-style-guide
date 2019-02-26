@@ -34,6 +34,8 @@ export default {
               company: {
                 name: 'SEEK Asia'
               },
+              isExpired: false,
+              jobUrl: 'https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J',
               jobTitle: 'Senior Software Engineer (6 months Contract)',
               locations: [
                 {

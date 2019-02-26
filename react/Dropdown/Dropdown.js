@@ -2,9 +2,9 @@ import styles from './Dropdown.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import ChevronIcon from '../ChevronIcon/ChevronIcon';
 import FieldMessage from '../private/FieldMessage/FieldMessage';
 import FieldLabel from '../private/FieldLabel/FieldLabel';
+import { Icon } from 'seek-asia-style-guide/react';
 
 function combineClassNames(props = {}, ...classNames) {
   const { className, ...restProps } = props;
@@ -21,6 +21,7 @@ export default class Dropdown extends Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
     className: PropTypes.string,
+    disabled: PropTypes.bool,
     valid: PropTypes.bool,
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
@@ -68,8 +69,9 @@ export default class Dropdown extends Component {
   }
 
   renderSelect() {
-    const { id, value, onChange, onFocus, onBlur, inputProps, options, placeholder } = this.props;
+    const { id, value, onChange, onFocus, onBlur, inputProps, options, placeholder, disabled } = this.props;
     const inputStyles = classnames({
+      [styles.disabled]: disabled,
       [styles.dropdown]: true,
       [styles.placeholderSelected]: !value && !inputProps.value && placeholder
     });
@@ -84,7 +86,7 @@ export default class Dropdown extends Component {
     };
 
     return (
-      <select {...allInputProps}>
+      <select {...allInputProps} disabled={this.props.disabled}>
         <option value="" disabled={!this.props.placeholderSelectable} className={classnames({ [styles.noPlaceholder]: !placeholder })}>
           {placeholder}
         </option>
@@ -101,9 +103,15 @@ export default class Dropdown extends Component {
   }
 
   renderChevron() {
+    const { disabled } = this.props;
+    const classNames = classnames({
+      [styles.chevron]: true,
+      [styles.disabled]: disabled
+    });
+
     return (
-      <div className={styles.chevron}>
-        <ChevronIcon svgClassName={styles.chevronSvg} direction="down" />
+      <div className={classNames}>
+        <Icon rotation="180deg" size="small" svgClassName={styles.chevronSvg} type="chevron" />
       </div>
     );
   }

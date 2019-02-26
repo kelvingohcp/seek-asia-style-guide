@@ -15,8 +15,8 @@ export default class Button extends Component {
     ]).isRequired,
     className: PropTypes.string,
     color: PropTypes.oneOf([
-      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary'
-    ]).isRequired,
+      'callToAction', 'primary', 'secondary', 'hyperlink', 'tertiary', 'ghostWhite'
+    ]),
     compact: PropTypes.bool,
     component: PropTypes.oneOfType([
       PropTypes.func,
@@ -27,7 +27,7 @@ export default class Button extends Component {
     isJobStreet: PropTypes.bool,
     isSelected: PropTypes.bool,
     role: PropTypes.string,
-    tabindex: PropTypes.number
+    tabIndex: PropTypes.number
   };
 
   static defaultProps = {
@@ -35,7 +35,7 @@ export default class Button extends Component {
     className: '',
     component: 'button',
     role: 'button',
-    tabindex: 0
+    tabIndex: 0
   };
 
   storeButtonReference = button => {
@@ -58,6 +58,7 @@ export default class Button extends Component {
         [styles.root_primary]: color === 'primary',
         [styles.root_secondary]: color === 'secondary',
         [styles.root_tertiary]: color === 'tertiary',
+        [styles.root_ghost_white]: color === 'ghostWhite',
         [styles.selected]: isSelected
       }),
       ref: this.storeButtonReference,

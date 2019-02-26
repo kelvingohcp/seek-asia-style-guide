@@ -15,7 +15,9 @@ import BrowserRouter from './BrowserRouter';
 
 const appElement = document.getElementById('app');
 
-hydrate(
+const renderMethod = module.hot ? render : hydrate;
+
+renderMethod(
   <AppContainer>
     <BrowserRouter />
   </AppContainer>,

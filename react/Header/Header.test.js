@@ -77,7 +77,8 @@ describe('Header', () => {
       more: [{ title: 'Space Piracy Jobs', url: 'http://seekasia.com/space-piracy' }],
       actionTrayProps: {
         showMenu: false
-      }
+      },
+      onMenuOpen: () => {}
     };
     const wrapper = shallow(<Header {...testProps} />);
     expect(wrapper).toMatchSnapshot();

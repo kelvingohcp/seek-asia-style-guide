@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './CountryDropdown.less';
-import { Text, Card, Section, CardGroup, TickIcon } from 'seek-asia-style-guide/react';
+import { Text, Card, Section, CardGroup, Icon } from 'seek-asia-style-guide/react';
 
 const renderLinks = ({ links, checked, linkRenderer }) => {
   const cards = links.map((key, index) => {
@@ -20,8 +20,10 @@ const renderLinks = ({ links, checked, linkRenderer }) => {
               <Text intimate>{key.title}</Text>
             )}
             {index === checked && (
-              <TickIcon
+              <Icon
                 className={classnames([styles.icon, styles.checkMark])}
+                size="small"
+                type="check"
               />
             )}
           </Section>

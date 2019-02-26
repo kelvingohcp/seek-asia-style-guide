@@ -27,9 +27,24 @@ exports[`Autosuggest should render with compact prop 1`] = `
           class="root"
         >
           <span
-            class="root clearRoot"
+            class="root sizeSmall clearRoot"
+            role="presentation"
           >
-            mock svg
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="img"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Negative
+              </title>
+              <path
+                d="M100 50c0 27.6-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0s50 22.4 50 50zm-44.3 0l12.6-12.6c.8-.8.8-2.1 0-2.8l-2.8-2.8c-.8-.8-2.1-.8-2.8 0L50 44.3 37.4 31.7c-.8-.8-2.1-.8-2.8 0l-2.8 2.8c-.8.8-.8 2.1 0 2.8L44.3 50 31.7 62.6c-.8.8-.8 2.1 0 2.8l2.8 2.8c.8.8 2.1.8 2.8 0L50 55.7l12.6 12.6c.8.8 2.1.8 2.8 0l2.8-2.8c.8-.8.8-2.1 0-2.8L55.7 50z"
+              />
+            </svg>
           </span>
         </div>
       </span>
@@ -96,9 +111,24 @@ exports[`Autosuggest should render with label 1`] = `
           class="root"
         >
           <span
-            class="root clearRoot"
+            class="root sizeSmall clearRoot"
+            role="presentation"
           >
-            mock svg
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="img"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Negative
+              </title>
+              <path
+                d="M100 50c0 27.6-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0s50 22.4 50 50zm-44.3 0l12.6-12.6c.8-.8.8-2.1 0-2.8l-2.8-2.8c-.8-.8-2.1-.8-2.8 0L50 44.3 37.4 31.7c-.8-.8-2.1-.8-2.8 0l-2.8 2.8c-.8.8-.8 2.1 0 2.8L44.3 50 31.7 62.6c-.8.8-.8 2.1 0 2.8l2.8 2.8c.8.8 2.1.8 2.8 0L50 55.7l12.6 12.6c.8.8 2.1.8 2.8 0l2.8-2.8c.8-.8.8-2.1 0-2.8L55.7 50z"
+              />
+            </svg>
           </span>
         </div>
       </span>
@@ -165,9 +195,24 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
           class="root"
         >
           <span
-            class="root clearRoot"
+            class="root sizeSmall clearRoot"
+            role="presentation"
           >
-            mock svg
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="img"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Negative
+              </title>
+              <path
+                d="M100 50c0 27.6-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0s50 22.4 50 50zm-44.3 0l12.6-12.6c.8-.8.8-2.1 0-2.8l-2.8-2.8c-.8-.8-2.1-.8-2.8 0L50 44.3 37.4 31.7c-.8-.8-2.1-.8-2.8 0l-2.8 2.8c-.8.8-.8 2.1 0 2.8L44.3 50 31.7 62.6c-.8.8-.8 2.1 0 2.8l2.8 2.8c.8.8 2.1.8 2.8 0L50 55.7l12.6 12.6c.8.8 2.1.8 2.8 0l2.8-2.8c.8-.8.8-2.1 0-2.8L55.7 50z"
+              />
+            </svg>
           </span>
         </div>
       </span>
@@ -234,9 +279,24 @@ exports[`Autosuggest should render with mobile full width 1`] = `
           class="root"
         >
           <span
-            class="root clearRoot"
+            class="root sizeSmall clearRoot"
+            role="presentation"
           >
-            mock svg
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="img"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Negative
+              </title>
+              <path
+                d="M100 50c0 27.6-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0s50 22.4 50 50zm-44.3 0l12.6-12.6c.8-.8.8-2.1 0-2.8l-2.8-2.8c-.8-.8-2.1-.8-2.8 0L50 44.3 37.4 31.7c-.8-.8-2.1-.8-2.8 0l-2.8 2.8c-.8.8-.8 2.1 0 2.8L44.3 50 31.7 62.6c-.8.8-.8 2.1 0 2.8l2.8 2.8c.8.8 2.1.8 2.8 0L50 55.7l12.6 12.6c.8.8 2.1.8 2.8 0l2.8-2.8c.8-.8.8-2.1 0-2.8L55.7 50z"
+              />
+            </svg>
           </span>
         </div>
       </span>
@@ -283,9 +343,24 @@ exports[`Autosuggest should render with simple props 1`] = `
           class="root"
         >
           <span
-            class="root clearRoot"
+            class="root sizeSmall clearRoot"
+            role="presentation"
           >
-            mock svg
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="img"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Negative
+              </title>
+              <path
+                d="M100 50c0 27.6-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0s50 22.4 50 50zm-44.3 0l12.6-12.6c.8-.8.8-2.1 0-2.8l-2.8-2.8c-.8-.8-2.1-.8-2.8 0L50 44.3 37.4 31.7c-.8-.8-2.1-.8-2.8 0l-2.8 2.8c-.8.8-.8 2.1 0 2.8L44.3 50 31.7 62.6c-.8.8-.8 2.1 0 2.8l2.8 2.8c.8.8 2.1.8 2.8 0L50 55.7l12.6 12.6c.8.8 2.1.8 2.8 0l2.8-2.8c.8-.8.8-2.1 0-2.8L55.7 50z"
+              />
+            </svg>
           </span>
         </div>
       </span>
@@ -332,9 +407,24 @@ exports[`Autosuggest should render with suggestions 1`] = `
           class="root"
         >
           <span
-            class="root clearRoot"
+            class="root sizeSmall clearRoot"
+            role="presentation"
           >
-            mock svg
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="img"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Negative
+              </title>
+              <path
+                d="M100 50c0 27.6-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0s50 22.4 50 50zm-44.3 0l12.6-12.6c.8-.8.8-2.1 0-2.8l-2.8-2.8c-.8-.8-2.1-.8-2.8 0L50 44.3 37.4 31.7c-.8-.8-2.1-.8-2.8 0l-2.8 2.8c-.8.8-.8 2.1 0 2.8L44.3 50 31.7 62.6c-.8.8-.8 2.1 0 2.8l2.8 2.8c.8.8 2.1.8 2.8 0L50 55.7l12.6 12.6c.8.8 2.1.8 2.8 0l2.8-2.8c.8-.8.8-2.1 0-2.8L55.7 50z"
+              />
+            </svg>
           </span>
         </div>
       </span>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Header.less';
 import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
-import { HomeIcon, PortalIcon, CompanyIcon, LightbulbIcon, EducationIcon, MoreIcon } from 'seek-asia-style-guide/react';
+import { Icon, MoreIcon } from 'seek-asia-style-guide/react';
 import { getLocalization, locales } from '../localization';
 
 const getJobStreetProps = ({ country, language }) => {
@@ -16,11 +16,11 @@ const getJobStreetProps = ({ country, language }) => {
   ];
 
   const links = [
-    { title: messages['header.homeTitle'], url: messages['header.homeUrl'], ItemIcon: HomeIcon },
-    { title: messages['header.myJobStreetTitle'], url: messages['header.myJobStreetUrl'], ItemIcon: PortalIcon },
-    { title: messages['header.companyProfilesTitle'], url: messages['header.companyProfilesUrl'], ItemIcon: CompanyIcon },
-    { title: messages['header.careerInsightsTitle'], url: messages['header.careerInsightsUrl'], ItemIcon: LightbulbIcon },
-    { title: messages['header.educationTitle'], url: messages['header.educationUrl'], ItemIcon: EducationIcon },
+    { title: messages['header.homeTitle'], url: messages['header.homeUrl'], ItemIcon: <Icon type="home" size="small" /> },
+    { title: messages['header.myJobStreetTitle'], url: messages['header.myJobStreetUrl'], ItemIcon: <Icon type="myJobsDB" size="small" /> },
+    { title: messages['header.companyProfilesTitle'], url: messages['header.companyProfilesUrl'], ItemIcon: <Icon type="company" size="small" /> },
+    { title: messages['header.careerInsightsTitle'], url: messages['header.careerInsightsUrl'], ItemIcon: <Icon type="careerInsight" size="small" /> },
+    { title: messages['header.educationTitle'], url: messages['header.educationUrl'], ItemIcon: <Icon type="education" size="small" /> },
     { title: messages['menu.more'], url: '', ItemIcon: MoreIcon, children: more, hideInDesktop: true }
   ];
 

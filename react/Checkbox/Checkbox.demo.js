@@ -84,6 +84,15 @@ export default {
             ...props,
             compact: true
           })
+        },
+        {
+          label: 'Disabled',
+          transformProps: props => ({
+            ...props,
+            inputProps: {
+              disabled: true
+            }
+          })
         }
       ]
     },
@@ -111,15 +120,14 @@ export default {
         {
           label: 'Left',
           transformProps: props => ({
-            ...props,
-            position: 'left'
+            ...props
           })
         },
         {
           label: 'Right',
           transformProps: props => ({
             ...props,
-            position: 'right'
+            rtl: true
           })
         }
       ]

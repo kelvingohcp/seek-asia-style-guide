@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './CompanyLink.less';
 import { getParts } from '../../jobCardHelper.js';
 import defaultLink from '../Link/Link';
+import { trackLinkType } from '../../JobCard';
 
 export const CompanyLinkPropTypes = PropTypes.shape({
   name: PropTypes.string,
@@ -10,7 +11,7 @@ export const CompanyLinkPropTypes = PropTypes.shape({
   title: PropTypes.string
 });
 
-const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink }) => {
+const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink, trackLinkClicked }) => {
   const { name, link, title } = company;
   if (!name) {
     return null;
@@ -33,7 +34,7 @@ const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink }) => 
   </span>);
 
   if (link) {
-    return (<LinkComponent link={link} className={styles.companyLink} title={title}>{companyText}</LinkComponent>);
+    return (<LinkComponent link={link} className={styles.companyLink} title={title} onClick={() => trackLinkClicked(trackLinkType.company)}>{companyText}</LinkComponent>);
   }
 
   return companyText;
@@ -44,5 +45,6 @@ export default CompanyLink;
 CompanyLink.propTypes = {
   company: CompanyLinkPropTypes.isRequired,
   keyword: PropTypes.string,
-  LinkComponent: PropTypes.func
+  LinkComponent: PropTypes.func,
+  trackLinkClicked: PropTypes.func
 };

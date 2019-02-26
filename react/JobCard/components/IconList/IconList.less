@@ -1,0 +1,25 @@
+@import (reference) '~seek-asia-style-guide/theme';
+@import (reference) '../../JobCard.less';
+
+.container {
+  .flexRow();
+  padding-bottom: @grid-base;
+}
+
+.last {
+  padding-bottom: @job-card-section-bottom-space;
+}
+
+.textWrapper {
+  .text();
+  padding-bottom: 0;
+}
+
+.iconWrapper {
+  display: flex;
+  margin-right: @grid-base * 2;
+}
+
+.icon {
+  color: @saGrey4;
+}

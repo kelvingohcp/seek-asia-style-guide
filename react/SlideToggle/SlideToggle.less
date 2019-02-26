@@ -28,7 +28,7 @@
   }
 
   &:checked ~ .slider .slideButton {
-    left: 21px;
+    left: 24px;
 
     &::before {
       background-color: @sk-highlight;
@@ -68,8 +68,7 @@
 .slider {
   position: relative;
   display: inline-block;
-  left: 0;
-  width: 48px;
+  width: @grid-row-height * 12;
   height: @grid-row-height * 6;
   border-radius: @grid-row-height * 3;
   background-color: @sk-mid-gray-light;
@@ -79,7 +78,12 @@
 .slideButton {
   position: relative;
   left: 0;
+  width: @grid-row-height * 6;
+  height: @grid-row-height * 6;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &::before {
     content: '';
@@ -94,9 +98,6 @@
 }
 
 .icon {
-  position: absolute;
-  width: @grid-row-height * 6;
-  height: @grid-row-height * 6;
   text-align: center;
 }
 
@@ -105,5 +106,4 @@
   opacity: 0;
   transition: opacity 0.15s;
   position: relative;
-  top: 5px;
 }

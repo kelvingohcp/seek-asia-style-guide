@@ -10,7 +10,7 @@ exports[`ButtonGroup: should combine className when passed in 1`] = `
     color="callToAction"
     component="button"
     role="button"
-    tabindex={0}
+    tabIndex={0}
   >
     <h5>
       SEEK
@@ -29,7 +29,7 @@ exports[`ButtonGroup: should render a button group with node 1`] = `
     color="callToAction"
     component="button"
     role="button"
-    tabindex={0}
+    tabIndex={0}
   >
     <h5>
       SEEK

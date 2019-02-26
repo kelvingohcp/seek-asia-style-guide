@@ -18,7 +18,7 @@ export const symbols = {
     <ButtonGroup>
       <Button color="callToAction">Button 1</Button>
       <Button color="hyperlink">Button 2</Button>
-      <Button color="transparent">Button 3</Button>
+      <Button color="ghostWhite">Button 3</Button>
     </ButtonGroup>
   )
 };

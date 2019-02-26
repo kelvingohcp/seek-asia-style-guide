@@ -21,10 +21,22 @@ describe('TextField', () => {
     expect(shallow(<TextField {...requiredProps} />)).toMatchSnapshot();
   });
 
+  it('should render with mask', () => {
+    expect(shallow(<TextField mask={[/\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]} {...requiredProps} />)).toMatchSnapshot();
+  });
+
   it('should pass through the type', () => {
-    const wrapper = shallow(<TextField {...requiredProps} type="search" />);
-    const inputType = wrapper.find('input').prop('type');
-    expect(inputType).toEqual('search');
+    const types = ['text', 'password', 'email', 'number', 'search', 'tel', 'url'];
+    const wrapper = shallow((
+      <div>
+        { types.map(type =>
+          <TextField {...requiredProps} type={type} key={type} />
+        )}
+      </div>
+    ));
+    wrapper.find('input').forEach((node, index) => {
+      expect(node.prop('type')).toEqual(types[index]);
+    });
   });
 
   it('should pass through the value', () => {

@@ -25,13 +25,11 @@ export default function Tabs({ items, className }) {
           </Text>
         </ReactTab>
       );
-      if (item.content) {
-        tabsContent.push(
-          <ReactTabPanel key={index} className={styles.tabPanel}>
-            {item.content}
-          </ReactTabPanel>
-        );
-      }
+      tabsContent.push(
+        <ReactTabPanel key={index} className={styles.tabPanel}>
+          {item.content}
+        </ReactTabPanel>
+      );
     }
   });
   return (

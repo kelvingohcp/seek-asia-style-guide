@@ -153,6 +153,13 @@ export default {
             color: 'tertiary',
             isJobStreet: true
           })
+        },
+        {
+          label: 'Ghost white',
+          transformProps: props => ({
+            ...props,
+            color: 'ghostWhite'
+          })
         }
       ]
     },

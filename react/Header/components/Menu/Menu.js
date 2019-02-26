@@ -3,24 +3,25 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './Menu.less';
 import MenuItem from './components/MenuItem/MenuItem';
-import { Text, Section, ChevronIcon, CheckMarkIcon, GlobeIcon, EmployerIcon, ProfileIcon, JobInvitationIcon } from 'seek-asia-style-guide/react';
+import { Text, Section, Icon } from 'seek-asia-style-guide/react';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
 export default class Menu extends Component {
-  constructor() {
-    super();
+  state = {
+    subMenuOpen: false,
+    subMenuOpenIndex: 0,
+    localesMenuOpen: false
+  };
 
-    this.state = {
-      subMenuOpen: false,
-      localesMenuOpen: false
-    };
+  openSubMenu = i => {
+    this.setState({ subMenuOpenIndex: i });
   }
 
-  toggleSubMenu() {
+  toggleSubMenu = () => {
     this.setState({ subMenuOpen: !this.state.subMenuOpen });
   }
 
-  toggleLocalesMenu() {
+  toggleLocalesMenu = () => {
     this.setState({ localesMenuOpen: !this.state.localesMenuOpen });
   }
 
@@ -28,28 +29,41 @@ export default class Menu extends Component {
     if (links && links.map) {
       const menuItems = links.map((link, index) => (
         link.children ? (
-          <div>
-            <MenuItem handleClick={this.toggleSubMenu.bind(this)} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <Text>{link.title}</Text>
+          <div key={index}>
+            <MenuItem
+              handleClick={() => {
+                this.openSubMenu(index);
+                this.toggleSubMenu();
+              }}
+              ItemIcon={link.ItemIcon}
+              brandStyles={brandStyles}
+              linkRenderer={linkRenderer}>
+              {link.title}
             </MenuItem>
-            <div className={this.state.subMenuOpen ? styles.showSubMenu : styles.subMenu}>
-              <MenuItem handleClick={this.toggleSubMenu.bind(this)} itemClass={styles.backLink} ItemIcon={ChevronIcon} iconProps={{ direction: 'left', svgClassName: styles.backChevron }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-                <Text>{messages['menu.backToMenu']}</Text>
-              </MenuItem>
-              {
-                link.children && link.children.map((sublink, i) => {
-                  return (
-                    <MenuItem key={i} linkUrl={sublink.url} itemClass={styles.subItem} ItemIcon={sublink.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-                      <Text>{sublink.title}</Text>
-                    </MenuItem>
-                  );
-                })
-              }
-            </div>
+            {this.state.subMenuOpenIndex === index && (
+              <div className={this.state.subMenuOpen ? styles.showSubMenu : styles.subMenu}>
+                <MenuItem
+                  handleClick={this.toggleSubMenu}
+                  className={styles.backLink}
+                  ItemIcon={<Icon type='chevron' lineHeight='loud' size='small' rotation="-90deg" className={styles.backLink} />}
+                  linkRenderer={linkRenderer}>
+                  {messages['menu.backToMenu']}
+                </MenuItem>
+                {
+                  link.children && link.children.map((sublink, i) => {
+                    return (
+                      <MenuItem key={i} linkUrl={sublink.url} className={styles.subItem} ItemIcon={sublink.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+                        {sublink.title}
+                      </MenuItem>
+                    );
+                  })
+                }
+              </div>
+            )}
           </div>
         ) : (
           <MenuItem key={index} linkUrl={link.url} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-            <Text>{link.title}</Text>
+            {link.title}
           </MenuItem>
         )
       ));
@@ -65,6 +79,7 @@ export default class Menu extends Component {
   }
   render() {
     const { messages, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, baseUrl, userName, linkRenderer, loginAvailable } = this.props;
+    const selectedLocale = locales[0];
     return (
       <div className={classnames(styles.root, { [styles.showMenu]: shouldShowMenu })}>
         <Section className={styles.headerMenu}>
@@ -72,19 +87,19 @@ export default class Menu extends Component {
         </Section>
         {
           authenticationStatus === AUTHENTICATED && (<div className={styles.menuBody}>
-            <MenuItem linkUrl={baseUrl + messages['header.profileUrl']} ItemIcon={ProfileIcon} brandStyles={brandStyles} linkRenderer={linkRenderer} >
-              <Text>{messages['header.profileTitle']}</Text>
+            <MenuItem linkUrl={baseUrl + messages['header.profileUrl']} ItemIcon={<Icon type='profileMale' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
+              {messages['header.profileTitle']}
             </MenuItem>
-            <MenuItem linkUrl={baseUrl + messages['header.invitationUrl']} ItemIcon={JobInvitationIcon} brandStyles={brandStyles} linkRenderer={linkRenderer} >
-              <Text>{messages['header.invitationTitle']}</Text>
+            <MenuItem linkUrl={baseUrl + messages['header.invitationUrl']} ItemIcon={<Icon type='jobInvitation' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
+              {messages['header.invitationTitle']}
             </MenuItem>
           </div>)
         }
         {this.renderMenuLinks({ messages, brandStyles, linkRenderer }, links)}
         {
           authenticationStatus === UNAUTHENTICATED && employerSite && (<div className={styles.menuBody}>
-            <MenuItem linkUrl={baseUrl + messages['header.employerSiteUrl']} ItemIcon={EmployerIcon} iconProps={{ svgClassName: styles.employer }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <Text>{messages['header.employerSiteTitle']}</Text>
+            <MenuItem linkUrl={baseUrl + messages['header.employerSiteUrl']} ItemIcon={<Icon type='employer' lineHeight='conversational' size='small' className={styles.employer} />} linkRenderer={linkRenderer}>
+              {messages['header.employerSiteTitle']}
             </MenuItem>
           </div>)
         }
@@ -93,50 +108,48 @@ export default class Menu extends Component {
         </Section>
         <div className={styles.menuBody}>
           {locales && locales.length && (
-            <MenuItem className={styles.countryAndLanguage} handleClick={this.toggleLocalesMenu.bind(this)} ItemIcon={GlobeIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <div>
-                <Text className={styles.countryLanguageText}>{messages['menu.countryAndLanguage']}</Text>
-                <Text intimate className={styles.currentLocale}>{locales[0].title}</Text>
-              </div>
+            <MenuItem title={messages['menu.countryAndLanguage']} handleClick={this.toggleLocalesMenu} ItemIcon={<Icon type='country' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {selectedLocale.title}
             </MenuItem>
           )}
         </div>
         {
           authenticationStatus === AUTHENTICATED && (<div className={styles.menuBody}>
-            <MenuItem itemClass={styles.loginSignup} linkUrl={messages['header.mobileLogoutUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <Text>{messages['header.logoutTitle']}</Text>
+            <MenuItem className={styles.loginSignup} linkUrl={messages['header.mobileLogoutUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {messages['header.logoutTitle']}
             </MenuItem>
           </div>)
         }
         {
           authenticationStatus === UNAUTHENTICATED && loginAvailable && (
-            <MenuItem itemClass={styles.loginSignup} linkUrl={messages['header.mobileLoginUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <Text>{messages['header.loginTitle']}</Text>
+            <MenuItem className={styles.loginSignup} linkUrl={messages['header.mobileLoginUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {messages['header.loginTitle']}
             </MenuItem>
           )
         }
         {
           authenticationStatus === UNAUTHENTICATED && loginAvailable && (
-            <MenuItem itemClass={styles.loginSignup} linkUrl={baseUrl + messages['header.signupUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              <Text>{messages['header.signupTitle']}</Text>
+            <MenuItem className={styles.loginSignup} linkUrl={baseUrl + messages['header.signupUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {messages['header.signupTitle']}
             </MenuItem>
           )
         }
         <div className={this.state.localesMenuOpen ? styles.showSubMenu : styles.subMenu}>
-          <MenuItem handleClick={this.toggleLocalesMenu.bind(this)} itemClass={styles.backLink} ItemIcon={ChevronIcon} iconProps={{ direction: 'left', svgClassName: styles.backChevron }} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-            <Text>{messages['menu.backToMenu']}</Text>
+          <MenuItem
+            handleClick={this.toggleLocalesMenu}
+            className={styles.backLink}
+            ItemIcon={<Icon type='chevron' lineHeight='loud' size='small' rotation="-90deg" className={styles.backLink} />}
+            linkRenderer={linkRenderer}>
+            {messages['menu.backToMenu']}
           </MenuItem>
-          <MenuItem ItemIcon={locales[0].ItemIcon} itemClass={styles.selectedLocaleItem} brandStyles={brandStyles}>
-            <span className={styles.selectedLocale}>
-              <Text>{locales[0].title}</Text>
-              <CheckMarkIcon className={styles.selectedLocaleCheck} svgClassName={styles.selectedLocaleCheckIcon} />
-            </span>
+          <MenuItem ItemIcon={<selectedLocale.ItemIcon className={styles.flag} />} descriptionProps={{ strong: true, className: styles.selectedLocale }}>
+            {selectedLocale.title}
           </MenuItem>
           {locales && locales.map && locales.map((link, index) => {
             if (index > 0) {
               return (
-                <MenuItem key={index} linkUrl={link.url} ItemIcon={link.ItemIcon} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-                  <Text>{link.title}</Text>
+                <MenuItem key={index} linkUrl={link.url} ItemIcon={<link.ItemIcon className={styles.flag} />} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+                  {link.title}
                 </MenuItem>
               );
             }

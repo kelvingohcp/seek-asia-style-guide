@@ -13,6 +13,7 @@ export default function Icon({
   smoothRotate,
   title,
   type,
+  svgClassName,
   ...restProps
 }) {
   const iconData = IconPack.find(x => x.name === type);
@@ -34,15 +35,16 @@ export default function Icon({
         [styles.lineHeightWaving]: lineHeight === 'waving',
         [styles.lineHeightWhispering]: lineHeight === 'whispering',
         [styles.lineHeightWhistling]: lineHeight === 'whistling',
-        [styles.lineHeightYelling]: lineHeight === 'yelling'
-      })}>
+        [styles.lineHeightYelling]: lineHeight === 'yelling',
+        [className]: className
+      })} role="presentation">
       <svg
         xmlns={'http://www.w3.org/2000/svg'}
         aria-hidden={'true'}
         focusable={'false'}
         {...restProps}
         className={classnames({
-          [className]: className,
+          [svgClassName]: svgClassName,
           [styles.rotate90]: rotation === '90deg',
           [styles.rotate90cc]: rotation === '-90deg',
           [styles.rotate180]: rotation === '180deg',
@@ -51,7 +53,7 @@ export default function Icon({
           [styles.smoothRotate]: smoothRotate
         })} viewBox="0 0 100 100" role="img">
         <title>{title ? title : iconData.label}</title>
-        <path d={iconData.path} fill="currentColor" role="presentation" />
+        <path d={iconData.path} />
       </svg>
     </span>
   );
@@ -60,6 +62,7 @@ export default function Icon({
 Icon.propTypes = {
   animation: PropTypes.oneOf(['', 'bounce', 'popIn']),
   className: PropTypes.string,
+  svgClassName: PropTypes.string,
   lineHeight: PropTypes.oneOf(['', 'conversational', 'intimate', 'loud', 'screaming', 'shouting', 'waving', 'whispering', 'whistling', 'yelling']),
   rotation: PropTypes.oneOf(['', '90deg', '-90deg', '180deg', '-180deg', 'reset']),
   size: PropTypes.oneOf(['', 'large', 'normal', 'small']),
@@ -69,6 +72,7 @@ Icon.propTypes = {
     'add',
     'alert',
     'android',
+    'appDownload',
     'apple',
     'application',
     'applicationHistory',
@@ -81,9 +85,11 @@ Icon.propTypes = {
     'certifications',
     'check',
     'chevron',
+    'chime',
     'comments',
     'company',
     'companyProfile',
+    'country',
     'currentStatus',
     'dentalInsurance',
     'doublePay',

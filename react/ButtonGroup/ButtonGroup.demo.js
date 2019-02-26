@@ -23,7 +23,7 @@ export default {
   block: true,
   sketch,
   initialProps: {
-    children: <Button color="pink">Create a Profile</Button>
+    children: <Button color="callToAction">Create a Profile</Button>
   },
   options: [
     {
@@ -34,7 +34,7 @@ export default {
           label: 'One Button',
           transformProps: props => ({
             ...props,
-            children: <Button color="pink">Create a Profile</Button>
+            children: <Button color="callToAction">Create a Profile</Button>
           })
         },
         {
@@ -42,8 +42,8 @@ export default {
           transformProps: props => ({
             ...props,
             children: [
-              <Button key="1" color="pink">Create a Profile</Button>,
-              <Button key="2" color="transparent">Cancel</Button>
+              <Button key="1" color="callToAction">Create a Profile</Button>,
+              <Button key="2" color="ghostWhite">Cancel</Button>
             ]
           })
         },
@@ -52,9 +52,9 @@ export default {
           transformProps: props => ({
             ...props,
             children: [
-              <Button key="1" color="pink">Create a Profile</Button>,
-              <Button key="2" color="transparent">Clear</Button>,
-              <Button key="3" color="transparent">Cancel</Button>
+              <Button key="1" color="callToAction">Create a Profile</Button>,
+              <Button key="2" color="ghostWhite">Clear</Button>,
+              <Button key="3" color="ghostWhite">Cancel</Button>
             ]
           })
         }

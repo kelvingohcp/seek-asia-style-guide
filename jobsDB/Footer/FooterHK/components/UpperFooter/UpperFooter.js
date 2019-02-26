@@ -3,9 +3,24 @@ import PropTypes from 'prop-types';
 
 import styles from './UpperFooter.less';
 import PartnerSites from '../PartnerSites/PartnerSites';
-import { Columns, ListItem, Section, Text, FacebookIcon, TwitterIcon, AppleIcon, AndroidIcon, Hidden } from 'seek-asia-style-guide/react';
+import { Columns, Icon, ListItem, Section, Text, Hidden } from 'seek-asia-style-guide/react';
 
 const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompanyProfile }) => {
+  const FooterLink = ({ messageKey, iconType }) => (
+    <ListItem
+      compact
+      descriptionProps={{ semiStrong: true, whistling: true }}
+      disableBackground
+      icon={iconType && <Icon size="small" type={iconType} className={styles.content} />}
+      noShadow
+      value={messages[messageKey]}
+    />
+  );
+  FooterLink.propTypes = {
+    iconType: PropTypes.string,
+    messageKey: PropTypes.string
+  };
+
   return (
     <Columns>
       <div className={styles.columnGroup}>
@@ -14,23 +29,23 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
             {messages['FooterHK.titleAboutJobsDB']}
           </Text>
           <Hidden mobile={true}>{ wordpressLink(
-            <ListItem value={messages['FooterHK.aboutJobsDB']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.aboutJobsDB'} />,
             messages['FooterHK.aboutJobsDBLink']
           )}</Hidden>
           <Hidden mobile={true}>{cfsLink(
-            <ListItem value={messages['FooterHK.faq']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.faq'} />,
             messages['FooterHK.faqLink']
           )}</Hidden>
           {cfsLink(
-            <ListItem value={messages['FooterHK.career']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.career'} />,
             messages['FooterHK.careerLink']
           )}
           <Hidden desktop={false} tablet={false} mobile={true}>{wordpressLink(
-            <ListItem value={messages['FooterHK.contactUs']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.contactUs'} />,
             messages['FooterHK.contactUsLink']
           )}</Hidden>
           <Hidden desktop={true} tablet={true} mobile={false}>{externalLink(
-            <ListItem value={messages['FooterHK.contactUs']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.contactUs'} />,
             messages['FooterHK.contactUsLinkMsite']
           )}</Hidden>
           <PartnerSites messages={messages} externalLink={externalLink} />
@@ -40,23 +55,23 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
             {messages['FooterHK.titleJobSeeker']}
           </Text>
           {cfsLink(
-            <ListItem value={messages['FooterHK.browseJobs']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.browseJobs'} />,
             messages['FooterHK.browseJobsLink']
           )}
           {<Hidden mobile={true}>{cfsLink(
-            <ListItem value={messages['FooterHK.resumes']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.resumes'} />,
             messages['FooterHK.resumesLink']
           )}</Hidden>}
           <Hidden mobile={true}>{cfsLink(
-            <ListItem value={messages['FooterHK.jobAlerts']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.jobAlerts'} />,
             messages['FooterHK.jobAlertsLink']
           )}</Hidden>
           {cfsLink(
-            <ListItem value={messages['FooterHK.myJobsDBTitle']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.myJobsDBTitle'} />,
             messages['FooterHK.myJobsDBUrl']
           )}
           {cfsLink(
-            <ListItem value={messages['FooterHK.careerInsightsTitle']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.careerInsightsTitle'} />,
             messages['FooterHK.careerInsightsUrl']
           )}
         </Section>
@@ -67,19 +82,19 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
             {messages['FooterHK.titleEmployer']}
           </Text>
           {wordpressLink(
-            <ListItem value={messages['FooterHK.postJob']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.postJob'} />,
             messages['FooterHK.postJobLink']
           )}
           {wordpressLink(
-            <ListItem value={messages['FooterHK.searchCandidates']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.searchCandidates'} />,
             messages['FooterHK.searchCandidatesLink']
           )}
           {wordpressLink(
-            <ListItem value={messages['FooterHK.advertise']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.advertise'} />,
             messages['FooterHK.advertiseLink']
           )}
           {hasCompanyProfile && cfsLink(
-            <ListItem value={messages['FooterHK.bestCompanies']} disableBackground compact noShadow descriptionProps={{ semiStrong: true, whistling: true }} />,
+            <FooterLink messageKey={'FooterHK.bestCompanies'} />,
             messages['FooterHK.bestCompaniesLink']
           )}
         </Section>
@@ -88,47 +103,19 @@ const UpperFooter = ({ messages, wordpressLink, cfsLink, externalLink, hasCompan
             {messages['FooterHK.titleConnect']}
           </Text>
           {externalLink(
-            <ListItem
-              value={messages['FooterHK.facebook']}
-              disableBackground
-              icon={<FacebookIcon className={styles.content} square />}
-              compact
-              noShadow
-              descriptionProps={{ semiStrong: true, whistling: true }}
-            />,
+            <FooterLink messageKey={'FooterHK.facebook'} iconType={'facebook'} />,
             messages['FooterHK.facebookLink']
           )}
           {externalLink(
-            <ListItem
-              value={messages['FooterHK.twitter']}
-              disableBackground
-              icon={<TwitterIcon className={styles.content} generic />}
-              compact
-              noShadow
-              descriptionProps={{ semiStrong: true, whistling: true }}
-            />,
+            <FooterLink messageKey={'FooterHK.twitter'} iconType={'twitter'} />,
             messages['FooterHK.twitterLink']
           )}
           {externalLink(
-            <ListItem
-              value={messages['FooterHK.appStore']}
-              disableBackground
-              icon={<AppleIcon className={styles.content} />}
-              compact
-              noShadow
-              descriptionProps={{ semiStrong: true, whistling: true }}
-            />,
+            <FooterLink messageKey={'FooterHK.appStore'} iconType={'apple'} />,
             messages['FooterHK.appStoreLink']
           )}
           {externalLink(
-            <ListItem
-              value={messages['FooterHK.googlePlay']}
-              disableBackground
-              icon={<AndroidIcon className={styles.content} />}
-              compact
-              noShadow
-              descriptionProps={{ semiStrong: true, whistling: true }}
-            />,
+            <FooterLink messageKey={'FooterHK.googlePlay'} iconType={'android'} />,
             messages['FooterHK.googlePlayLink']
           )}
         </Section>

@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 
 import classnames from 'classnames';
 import pad from 'pad-left';
-
-import ChevronIcon from '../../ChevronIcon/ChevronIcon';
+import { Icon } from 'seek-asia-style-guide/react';
 
 const makeMonthString = ({ month, year }) => {
   if (month && year) {
@@ -81,10 +80,12 @@ export default class NativeMonthPicker extends Component {
 
     return (
       <div className={rootClasses}>
-        <ChevronIcon
+        <Icon
           className={styles.chevron}
           svgClassName={styles.chevronSvg}
-          direction="down"
+          rotation="180deg"
+          type="chevron"
+          size="small"
         />
         <input
           {...(id ? { id } : {})}

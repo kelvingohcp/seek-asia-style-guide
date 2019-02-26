@@ -5,10 +5,15 @@ exports[`TextLink should render with chevron 1`] = `
   className="link"
 >
   Google
-  <ChevronIcon
+  <Icon
+    animation=""
     className="chevron"
-    direction="right"
+    lineHeight=""
+    rotation="90deg"
+    size="small"
+    smoothRotate={false}
     svgClassName="chevronSvg"
+    type="chevron"
   />
 </a>
 `;

@@ -87,6 +87,115 @@ export default {
       ]
     },
     ...fieldMessageOptions,
-    ...fieldLabelOptions
+    ...fieldLabelOptions,
+    {
+      label: 'Type',
+      type: 'radio',
+      states: [
+        {
+          label: 'Text',
+          transformProps: props => props
+        },
+        {
+          label: 'Password',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            type: 'password'
+          })
+        },
+        {
+          label: 'Email',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            type: 'email'
+          })
+        },
+        {
+          label: 'Number',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            type: 'number'
+          })
+        },
+        {
+          label: 'Search',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            type: 'search'
+          })
+        },
+        {
+          label: 'Tel',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            type: 'tel'
+          })
+        },
+        {
+          label: 'Url',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            type: 'url'
+          })
+        }
+      ]
+    },
+    {
+      label: 'States',
+      type: 'checklist',
+      states: [
+        {
+          label: 'Placeholder',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            placeholder: 'Text field'
+          })
+        }
+      ]
+    },
+    {
+      label: 'Masked Input',
+      type: 'radio',
+      states: [
+        {
+          label: 'No masking',
+          transformProps: props => props
+        },
+        {
+          label: 'Credit card',
+          transformProps: props => ({
+            ...props,
+            mask: [/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/],
+            inputProps: {
+              placeholder: '____ ____ ____ ____',
+              keepCharPositions: true
+            }
+          })
+        },
+        {
+          label: 'Date',
+          transformProps: props => ({
+            ...props,
+            mask: [/\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+            inputProps: {
+              placeholder: 'mm/yyyy',
+              keepCharPositions: true
+            }
+          })
+        },
+        {
+          label: 'Car plate',
+          transformProps: props => ({
+            ...props,
+            mask: [/[A-Z]/i, /[A-Z]/i, /[A-Z]/i, ' ', /\d/, /\d/, /\d/, /\d/],
+            inputProps: {
+              placeholder: 'ABC 1234',
+              keepCharPositions: true,
+              pipe: conformedValue => conformedValue.toUpperCase()
+            }
+          })
+        }
+      ]
+    }
   ]
 };

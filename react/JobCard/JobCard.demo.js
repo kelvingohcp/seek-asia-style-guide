@@ -17,6 +17,58 @@ JobCardContainer.propTypes = {
   componentProps: PropTypes.object
 };
 
+const shelfLinks = [
+  {
+    label: 'Job function',
+    searchMethod: 'Browse Job Function - SRP',
+    items: [
+      {
+        name: 'Accounting',
+        link: '/jobCard',
+        title: 'Limit result to Accounting',
+        children: [
+          {
+            name: 'Accountant',
+            link: '/jobCard',
+            title: 'Limit result to Accountant in Accounting'
+          },
+          {
+            name: 'Audit',
+            link: '/jobCard',
+            title: 'Limit result to Audit in Accounting'
+          },
+          {
+            name: 'Others',
+            link: '/jobCard',
+            title: 'Limit result to Others in Accounting'
+          }
+        ]
+      },
+      {
+        name: 'Admin & HR',
+        link: '/jobCard',
+        title: 'Limit result to Admin & HR',
+        children: [
+          {
+            name: 'Receptionist',
+            link: '/jobCard',
+            title: 'Limit result to Receptionist in Admin & HR'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    label: 'Industry',
+    searchMethod: 'Browse Job Industry - SRP',
+    items: [{
+      name: 'Accounting / Audit / Tax Services',
+      link: '/jobCard',
+      title: 'Limit result to Accounting / Audit / Tax Services'
+    }]
+  }
+];
+
 /* eslint-disable react/prop-types */
 export default {
   route: '/jobCard',
@@ -61,11 +113,19 @@ export default {
         'We practice a vibrant & energetic office culture',
         'Our company supports a fun yet balanced working environment',
         'We support a safe environment for our employees'
-      ]
+      ],
+      isExpired: false,
+      qualification: 'Qualification Not Specified',
+      careerLevel: 'Entry Level',
+      workExperience: '3 Years of Experience',
+      employmentTerm: 'Full Time'
     },
     jobAdType: JOBADTYPE_JOBSDB_DEFAULT,
     onBookmarkClick: () => {
-      alert('hi'); // eslint-disable-line no-alert
+      alert('bookmark clicked'); // eslint-disable-line no-alert
+    },
+    trackLinkClicked: args => {
+      console.log(`send '${args}' to omniture`); // eslint-disable-line no-alert
     }
   },
   options: [
@@ -73,6 +133,20 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
+        {
+          label: 'Variation',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            isVariation: true
+          })
+        },
+        {
+          label: 'Split View',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            isSplitView: true
+          })
+        },
         {
           label: 'Applied',
           transformProps: ({ className, ...props }) => ({
@@ -116,7 +190,7 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: '',
+              company: {},
               confidentialLabel: 'Company Confidential'
             }
           })
@@ -142,6 +216,13 @@ export default {
           })
         },
         {
+          label: 'Hide Salary',
+          transformProps: ({ className, ...props }) => ({
+            ...props,
+            hideSalary: true
+          })
+        },
+        {
           label: 'Highlight Keyword',
           transformProps: ({ className, ...props }) => ({
             ...props,
@@ -159,55 +240,7 @@ export default {
               ...props.job,
               shelf: {
                 ...props.job.shelf,
-                shelfLinks: [
-                  {
-                    label: 'Job function',
-                    items: [
-                      {
-                        name: 'Accounting',
-                        link: '/jobCard',
-                        title: 'Limit result to Accounting',
-                        children: [
-                          {
-                            name: 'Accountant',
-                            link: '/jobCard',
-                            title: 'Limit result to Accountant in Accounting'
-                          },
-                          {
-                            name: 'Audit',
-                            link: '/jobCard',
-                            title: 'Limit result to Audit in Accounting'
-                          },
-                          {
-                            name: 'Others',
-                            link: '/jobCard',
-                            title: 'Limit result to Others in Accounting'
-                          }
-                        ]
-                      },
-                      {
-                        name: 'Admin & HR',
-                        link: '/jobCard',
-                        title: 'Limit result to Admin & HR',
-                        children: [
-                          {
-                            name: 'Receptionist',
-                            link: '/jobCard',
-                            title: 'Limit result to Receptionist in Admin & HR'
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    label: 'Industry',
-                    items: [{
-                      name: 'Accounting / Audit / Tax Services',
-                      link: '/jobCard',
-                      title: 'Limit result to Accounting / Audit / Tax Services'
-                    }]
-                  }
-                ]
+                shelfLinks
               }
             }
           })
@@ -249,10 +282,14 @@ export default {
           label: 'Job Title Component',
           transformProps: ({ className, ...props }) => ({
             ...props,
-            TitleLinkComponent: ({ link, children, ...restProps }) => (
-              <span {...restProps}>
-                {children}
-              </span>)
+            trackLinkClicked: console.log,
+            TitleLinkComponent: ({ link, children, ...restProps }) => {
+              return (
+                <span {...restProps}>
+                  {children}
+                </span>
+              );
+            }
           })
         },
         {
@@ -295,16 +332,22 @@ export default {
           label: 'Bookmarked',
           transformProps: props => ({
             ...props,
-            bookmarked: 'bookmarked',
-            onBookmarkClick: () => {}
+            showSavedStatus: true,
+            job: {
+              ...props.job,
+              isSaved: true
+            }
           })
         },
         {
           label: 'Not bookmarked',
           transformProps: props => ({
             ...props,
-            bookmarked: 'notBookmarked',
-            onBookmarkClick: () => {}
+            showSavedStatus: true,
+            job: {
+              ...props.job,
+              isSaved: false
+            }
           })
         }
       ]

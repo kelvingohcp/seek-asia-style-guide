@@ -5,13 +5,14 @@ import classnames from 'classnames';
 import { getParts } from '../../jobCardHelper.js';
 import { Text } from 'seek-asia-style-guide/react';
 import defaultLink from '../Link/Link';
+import { trackLinkType } from '../../JobCard';
 
 const JobTitleLinkPropTypes = PropTypes.shape({
   jobTitle: PropTypes.string,
   jobUrl: PropTypes.string
 });
 
-const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink, viewed }) => {
+const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink, viewed, trackLinkClicked }) => {
   let title = (<Text whistling strong className={styles.jobTitle}>{jobTitle}</Text>);
   const keywordParts = getParts(jobTitle, keyword);
 
@@ -35,7 +36,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
     );
   }
 
-  return <LinkComponent link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer">{title}</LinkComponent>;
+  return <LinkComponent link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer" onClick={() => trackLinkClicked(trackLinkType.jobTitle)}>{title}</LinkComponent>;
 };
 
 JobTitleLink.propTypes = {
@@ -44,7 +45,8 @@ JobTitleLink.propTypes = {
   isDesktop: PropTypes.bool,
   job: JobTitleLinkPropTypes.isRequired,
   LinkComponent: PropTypes.func,
-  viewed: PropTypes.bool
+  viewed: PropTypes.bool,
+  trackLinkClicked: PropTypes.func
 };
 
 export default JobTitleLink;

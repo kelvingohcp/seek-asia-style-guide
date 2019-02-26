@@ -1,0 +1,31 @@
+@import (reference) '~seek-asia-style-guide/theme';
+@import (reference) '../../JobCard.less';
+
+.shelfToggleIcon {
+  width: @grid-base * 2;
+  height: @grid-base * 2;
+}
+
+.separatorDot {
+  color: @saGrey4;
+  display: inline;
+  padding: 0 @grid-base * 2;
+}
+
+.shelfToggle {
+  .link(@saGrey2);
+  height: unset;
+  &:focus {
+    outline: none;
+  }
+}
+
+.shelfLinkText {
+  padding-bottom: 0;
+  color: @saGrey2;
+  white-space: nowrap;
+}
+
+.applyDate {
+  color: @saGrey1;
+}

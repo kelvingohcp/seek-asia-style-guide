@@ -14,6 +14,7 @@ const defaultJob = {
   jobTitle: 'Senior Software Engineer (6 months Contract)',
   jobUrl:
     'https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J',
+  isExpired: false,
   locations: [
     {
       name: 'Pahang',
@@ -36,6 +37,10 @@ const defaultJob = {
   companyLogoUrl:
     'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
   postingDuration: '1 hour ago',
+  qualification: 'Qualification Not Specified',
+  careerLevel: 'Entry Level',
+  workExperience: '3 Years of Experience',
+  employmentTerm: 'Full Time',
   salary: 'RM99999 - RM999999',
   shelf: {
     shelfLinks: [
@@ -61,19 +66,14 @@ const defaultJob = {
   }
 };
 
+const defaultProps = {
+  job: defaultJob,
+  jobAdType: JOBADTYPE_JOBSDB_DEFAULT
+};
+
 describe('JobCard', () => {
   it('should render with default props', () => {
-    const wrapper = shallow(<JobCard job={defaultJob} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with featured label', () => {
-    const descriptionJob = {
-      ...defaultJob,
-      featuredLabel: 'Feature'
-    };
-
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -84,7 +84,7 @@ describe('JobCard', () => {
       company: null
     };
 
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -94,7 +94,7 @@ describe('JobCard', () => {
       classifiedLabel: 'Classified'
     };
 
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -108,15 +108,16 @@ describe('JobCard', () => {
       ]
     };
 
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
+
   it('should render job title with bold keyword', () => {
     const descriptionJob = {
       ...defaultJob
     };
     const keyword = 'Seek Senior Engineer';
-    const wrapper = shallow(<JobCard job={descriptionJob} keyword={keyword} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} keyword={keyword} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -125,19 +126,14 @@ describe('JobCard', () => {
       ...defaultJob
     };
     const keyword = 'Seek';
-    const wrapper = shallow(<JobCard job={descriptionJob} keyword={keyword} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} keyword={keyword} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render jobsDB default style', () => {
-    const descriptionJob = {
-      ...defaultJob
-    };
-    const keyword = 'Seek';
     const wrapper = shallow(
       <JobCard
-        job={descriptionJob}
-        keyword={keyword}
+        {...defaultProps}
         jobAdType={JOBADTYPE_JOBSDB_DEFAULT}
       />
     );
@@ -145,14 +141,9 @@ describe('JobCard', () => {
   });
 
   it('should render jobStreet standout style', () => {
-    const descriptionJob = {
-      ...defaultJob
-    };
-    const keyword = 'Seek';
     const wrapper = shallow(
       <JobCard
-        job={descriptionJob}
-        keyword={keyword}
+        {...defaultProps}
         jobAdType={JOBADTYPE_JOBSTREET_STANDOUT}
       />
     );
@@ -166,7 +157,7 @@ describe('JobCard', () => {
         name: 'Seek Asia'
       }
     };
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -187,7 +178,7 @@ describe('JobCard', () => {
         ]
       }
     };
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -196,7 +187,7 @@ describe('JobCard', () => {
       ...defaultJob,
       shelf: null
     };
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -210,13 +201,14 @@ describe('JobCard', () => {
         ]
       }
     };
-    const wrapper = shallow(<JobCard job={descriptionJob} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render job title component', () => {
     const wrapper = shallow(
       <JobCard
+        {...defaultProps}
         job={defaultJob}
         TitleLinkComponent={() => (
           <Text waving semiStrong>
@@ -231,6 +223,7 @@ describe('JobCard', () => {
   it('should render selected style', () => {
     const wrapper = shallow(
       <JobCard
+        {...defaultProps}
         job={defaultJob}
         isSelected
       />
@@ -241,6 +234,7 @@ describe('JobCard', () => {
   it('should pass through viewed prop', () => {
     const wrapper = shallow(
       <JobCard
+        {...defaultProps}
         job={defaultJob}
         viewed
       />
@@ -248,13 +242,25 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should pass through bookmark props', () => {
-    const wrapper = shallow(<JobCard job={defaultJob} bookmarked={'bookmarked'} onBookmarkClick={() => {}} />);
-    expect(wrapper).toMatchSnapshot();
+  it('should render with bookmark when job is saved', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={{ ...defaultJob, isSaved: true }} showSavedStatus onBookmarkClick={() => {}} />);
+    expect(wrapper.find('[className="bookmarkButton"]')).toHaveLength(1);
+    expect(wrapper.find('[type="bookmark"]').props().className).toBe('bookmarked');
+  });
+
+  it('should render with bookmark when job is not saved', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={{ ...defaultJob, isSaved: false }} showSavedStatus onBookmarkClick={() => {}} />);
+    expect(wrapper.find('[className="bookmarkButton"]')).toHaveLength(1);
+    expect(wrapper.find('[type="bookmark"]').props().className).not.toBe('bookmarked');
+  });
+
+  it('should not show bookmark if job is saved, but showSavedStatus is disabled', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={{ ...defaultJob, isSaved: false }} showSavedStatus={false} onBookmarkClick={() => {}} />);
+    expect(wrapper.find('[className="bookmarkButton"]')).toHaveLength(0);
   });
 
   it('should render with applied badge', () => {
-    const wrapper = shallow(<JobCard job={defaultJob} applied />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} applied />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -263,7 +269,7 @@ describe('JobCard', () => {
       ...defaultJob,
       isExpired: true
     };
-    const wrapper = shallow(<JobCard job={jobThatsExpired} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={jobThatsExpired} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -272,12 +278,19 @@ describe('JobCard', () => {
       ...defaultJob,
       isExpired: true
     };
-    const wrapper = shallow(<JobCard job={jobThatsExpired} applied />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={jobThatsExpired} applied />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render without border', () => {
-    const wrapper = shallow(<JobCard job={defaultJob} borderlessRoot={true} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} borderlessRoot={true} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('render with trackLinkClicked', () => {
+    const spy = jest.fn();
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} trackLinkClicked={spy} />);
+
     expect(wrapper).toMatchSnapshot();
   });
 });

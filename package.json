@@ -69,6 +69,7 @@
     "react-isolated-scroll": "^0.1.1",
     "react-scrolllock": "^2.0.1",
     "react-tabs": "^2.2.2",
+    "react-text-mask": "^5.4.3",
     "webfontloader": "^1.6.28"
   },
   "peerDependencies": {
