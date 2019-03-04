@@ -2,7 +2,7 @@ import styles from './DropdownList.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { Icon, Text } from 'seek-asia-style-guide/react';
+import { Text, ChevronIcon } from 'seek-asia-style-guide/react';
 
 const LEFT = 'left';
 const RIGHT = 'right';
@@ -46,16 +46,13 @@ export default class DropdownList extends Component {
             {...restProps}>
             {value}
           </Text>
-          <Icon
+          <ChevronIcon
             className={classnames({
               [styles.chevron]: true,
               [styles[`${chevronAlignment}`]]: true
             })}
             svgClassName={styles.chevronSvg}
-            rotation={this.state.chevronDirection === 'down' ? '-180deg' : 'reset'}
-            size="small"
-            smoothRotate
-            type="chevron"
+            direction={this.state.chevronDirection}
           />
         </div>
         <div className={this.state.isDropdownOpen ? styles.dropdown : styles.dropdownNoShow}>

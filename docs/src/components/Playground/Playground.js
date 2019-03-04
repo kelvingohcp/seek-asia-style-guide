@@ -8,6 +8,7 @@ import {
   Button,
   ButtonGroup,
   StarIcon,
+  MailIcon,
   PageBlock,
   Section,
   AsidedLayout,
@@ -18,8 +19,7 @@ import {
   Positive,
   Critical,
   Secondary,
-  Strong,
-  Icon
+  Strong
 } from 'seek-asia-style-guide/react';
 
 import JobStreetHeader from 'seek-asia-style-guide/jobStreet/Header/Header';
@@ -109,7 +109,7 @@ const renderJobDetailMetadata = () => (
         </Text>
         <Columns tight>
           <Button color="gray" className={styles.fullWidthTextField}><StarIcon /> Save Job</Button>
-          <Button color="gray" className={styles.fullWidthTextField}><Icon type="mail" size="small" /> Send Job</Button>
+          <Button color="gray" className={styles.fullWidthTextField}><MailIcon /> Send Job</Button>
         </Columns>
       </Section>
     </Card>

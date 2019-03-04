@@ -1,12 +1,12 @@
 import styles from './ClearField.less';
 
 import React from 'react';
-import { Icon } from 'seek-asia-style-guide/react';
+import ClearIcon from '../ClearIcon/ClearIcon';
 
 export default function ClearField() {
   return (
     <div className={styles.root}>
-      <Icon className={styles.clearRoot} size="small" type="negative" />
+      <ClearIcon className={styles.clearRoot} />
     </div>
   );
 }

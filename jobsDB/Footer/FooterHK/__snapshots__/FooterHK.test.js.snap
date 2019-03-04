@@ -243,14 +243,11 @@ exports[`FooterHK component should render with "Best Companies" ListItem 1`] = `
         className="chevronIcon"
         onClick={[Function]}
       >
-        <Icon
-          animation=""
+        <ChevronIcon
+          className=""
+          direction="down"
           id="pageBottom"
-          lineHeight=""
-          rotation="-180deg"
-          size="small"
-          smoothRotate={true}
-          type="chevron"
+          svgClassName="chevronSvg"
         />
       </div>
     </div>
@@ -501,14 +498,11 @@ exports[`FooterHK component should render with custom href link 1`] = `
         className="chevronIcon"
         onClick={[Function]}
       >
-        <Icon
-          animation=""
+        <ChevronIcon
+          className=""
+          direction="down"
           id="pageBottom"
-          lineHeight=""
-          rotation="-180deg"
-          size="small"
-          smoothRotate={true}
-          type="chevron"
+          svgClassName="chevronSvg"
         />
       </div>
     </div>
@@ -759,14 +753,11 @@ exports[`FooterHK component should render with custom link renderer 1`] = `
         className="chevronIcon"
         onClick={[Function]}
       >
-        <Icon
-          animation=""
+        <ChevronIcon
+          className=""
+          direction="down"
           id="pageBottom"
-          lineHeight=""
-          rotation="-180deg"
-          size="small"
-          smoothRotate={true}
-          type="chevron"
+          svgClassName="chevronSvg"
         />
       </div>
     </div>
@@ -1017,14 +1008,11 @@ exports[`FooterHK component should render with default props 1`] = `
         className="chevronIcon"
         onClick={[Function]}
       >
-        <Icon
-          animation=""
+        <ChevronIcon
+          className=""
+          direction="down"
           id="pageBottom"
-          lineHeight=""
-          rotation="-180deg"
-          size="small"
-          smoothRotate={true}
-          type="chevron"
+          svgClassName="chevronSvg"
         />
       </div>
     </div>

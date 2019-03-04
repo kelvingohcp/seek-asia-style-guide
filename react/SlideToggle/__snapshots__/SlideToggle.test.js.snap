@@ -21,15 +21,9 @@ exports[`Slide toggle: should render a checked state 1`] = `
       <div
         className="slideButton"
       >
-        <Icon
-          animation=""
+        <TickIcon
           className="icon"
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
           svgClassName="svg"
-          type="check"
         />
       </div>
     </div>
@@ -67,15 +61,9 @@ exports[`Slide toggle: should render with default props 1`] = `
       <div
         className="slideButton"
       >
-        <Icon
-          animation=""
+        <TickIcon
           className="icon"
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
           svgClassName="svg"
-          type="check"
         />
       </div>
     </div>
@@ -113,15 +101,9 @@ exports[`Slide toggle: should render with the label hidden 1`] = `
       <div
         className="slideButton"
       >
-        <Icon
-          animation=""
+        <TickIcon
           className="icon"
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
           svgClassName="svg"
-          type="check"
         />
       </div>
     </div>
@@ -159,15 +141,9 @@ exports[`Slide toggle: should render with the label on the left 1`] = `
       <div
         className="slideButton"
       >
-        <Icon
-          animation=""
+        <TickIcon
           className="icon"
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
           svgClassName="svg"
-          type="check"
         />
       </div>
     </div>
