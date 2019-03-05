@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Itemlist - Icon should render item list with icon 1`] = `
-<React.Fragment>
+<Fragment>
   <div
     className="container"
     key="0"
@@ -58,5 +58,5 @@ exports[`Itemlist - Icon should render item list with icon 1`] = `
       </div>
     </Text>
   </div>
-</React.Fragment>
+</Fragment>
 `;

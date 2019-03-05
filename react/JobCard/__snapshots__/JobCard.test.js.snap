@@ -66,7 +66,6 @@ exports[`JobCard render with trackLinkClicked 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[MockFunction]}
     />
     <Company
@@ -128,7 +127,6 @@ exports[`JobCard render with trackLinkClicked 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[MockFunction]}
     />
     <div
@@ -138,128 +136,11 @@ exports[`JobCard render with trackLinkClicked 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[MockFunction]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[MockFunction]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -320,7 +201,11 @@ exports[`JobCard render with trackLinkClicked 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[MockFunction]}
         />
         <ShelfLink
@@ -448,8 +333,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[MockFunction]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -510,8 +394,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[MockFunction]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -592,7 +475,6 @@ exports[`JobCard should not render shelf section 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -633,7 +515,6 @@ exports[`JobCard should not render shelf section 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -643,86 +524,11 @@ exports[`JobCard should not render shelf section 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": null,
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": null,
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -762,7 +568,11 @@ exports[`JobCard should not render shelf section 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -848,8 +658,7 @@ exports[`JobCard should not render shelf section 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -889,8 +698,7 @@ exports[`JobCard should not render shelf section 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -959,7 +767,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -1011,7 +818,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -1021,108 +827,11 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [],
-                    "label": "Job Details",
-                  },
-                  Object {
-                    "items": Array [],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [],
-                    "label": "Job Details",
-                  },
-                  Object {
-                    "items": Array [],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -1173,7 +882,11 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -1281,8 +994,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -1333,8 +1045,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -1426,7 +1137,6 @@ exports[`JobCard should pass through viewed prop 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
       viewed={true}
     />
@@ -1489,9 +1199,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
-      viewed={true}
     />
     <div
       className="flexRow"
@@ -1500,130 +1208,11 @@ exports[`JobCard should pass through viewed prop 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
-          viewed={true}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
-          viewed={true}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -1684,7 +1273,11 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
           viewed={true}
         />
@@ -1813,9 +1406,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
-          viewed={true}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -1876,9 +1467,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
-          viewed={true}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -1980,7 +1569,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       keyword="Seek"
       trackLinkClicked={[Function]}
     />
@@ -2043,7 +1631,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       keyword="Seek"
       trackLinkClicked={[Function]}
     />
@@ -2054,130 +1641,11 @@ exports[`JobCard should render company with bold keyword 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          keyword="Seek"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          keyword="Seek"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -2238,8 +1706,12 @@ exports[`JobCard should render company with bold keyword 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
           keyword="Seek"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -2367,9 +1839,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          keyword="Seek"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -2430,9 +1900,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          keyword="Seek"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -2535,11 +2003,9 @@ exports[`JobCard should render job title component 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
-      TitleLinkComponent={[Function]}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -2598,7 +2064,6 @@ exports[`JobCard should render job title component 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -2608,130 +2073,11 @@ exports[`JobCard should render job title component 1`] = `
         className="leftContent"
       >
         <Description
-          TitleLinkComponent={[Function]}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          TitleLinkComponent={[Function]}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           TitleLinkComponent={[Function]}
@@ -2793,7 +2139,11 @@ exports[`JobCard should render job title component 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -2863,7 +2213,6 @@ exports[`JobCard should render job title component 1`] = `
         className="rightContent"
       >
         <CompanyLogo
-          TitleLinkComponent={[Function]}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -2922,11 +2271,9 @@ exports[`JobCard should render job title component 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
-          TitleLinkComponent={[Function]}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -2985,8 +2332,7 @@ exports[`JobCard should render job title component 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -3088,7 +2434,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       keyword="Seek Senior Engineer"
       trackLinkClicked={[Function]}
     />
@@ -3151,7 +2496,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       keyword="Seek Senior Engineer"
       trackLinkClicked={[Function]}
     />
@@ -3162,130 +2506,11 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          keyword="Seek Senior Engineer"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          keyword="Seek Senior Engineer"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -3346,8 +2571,12 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
           keyword="Seek Senior Engineer"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -3475,9 +2704,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          keyword="Seek Senior Engineer"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -3538,9 +2765,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          keyword="Seek Senior Engineer"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -3578,7 +2803,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
 
 exports[`JobCard should render jobStreet standout style 1`] = `
 <Card
-  className="container borderRoot highlightedBg"
+  className="container borderRoot"
 >
   <div
     className="leftContainer"
@@ -3642,7 +2867,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobstreetStandout"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -3704,7 +2928,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobstreetStandout"
       trackLinkClicked={[Function]}
     />
     <div
@@ -3714,128 +2937,11 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobstreetStandout"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobstreetStandout"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -3896,7 +3002,11 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobstreetStandout"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -4024,8 +3134,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobstreetStandout"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -4086,8 +3195,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobstreetStandout"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -4189,7 +3297,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -4251,7 +3358,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -4261,128 +3367,11 @@ exports[`JobCard should render jobsDB default style 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -4443,7 +3432,11 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -4571,8 +3564,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -4633,8 +3625,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -4737,11 +3728,9 @@ exports[`JobCard should render only applied badge, when both applied and expired
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
-      applied={true}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -4800,7 +3789,6 @@ exports[`JobCard should render only applied badge, when both applied and expired
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -4810,130 +3798,11 @@ exports[`JobCard should render only applied badge, when both applied and expired
         className="leftContent"
       >
         <Description
-          applied={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": true,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          applied={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": true,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           applied={true}
@@ -4995,7 +3864,11 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -5065,7 +3938,6 @@ exports[`JobCard should render only applied badge, when both applied and expired
         className="rightContent"
       >
         <CompanyLogo
-          applied={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -5124,11 +3996,9 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
-          applied={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -5187,8 +4057,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -5289,7 +4158,6 @@ exports[`JobCard should render plain company label 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -5350,7 +4218,6 @@ exports[`JobCard should render plain company label 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -5360,126 +4227,11 @@ exports[`JobCard should render plain company label 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "name": "Seek Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "name": "Seek Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -5539,7 +4291,11 @@ exports[`JobCard should render plain company label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -5665,8 +4421,7 @@ exports[`JobCard should render plain company label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -5726,8 +4481,7 @@ exports[`JobCard should render plain company label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -5771,7 +4525,6 @@ exports[`JobCard should render selected style 1`] = `
     className="leftContainer"
   >
     <JobTitle
-      isSelected={true}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -5830,11 +4583,9 @@ exports[`JobCard should render selected style 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
-      isSelected={true}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -5893,7 +4644,6 @@ exports[`JobCard should render selected style 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -5903,130 +4653,11 @@ exports[`JobCard should render selected style 1`] = `
         className="leftContent"
       >
         <Description
-          isSelected={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          isSelected={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           isSelected={true}
@@ -6088,7 +4719,11 @@ exports[`JobCard should render selected style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -6158,7 +4793,6 @@ exports[`JobCard should render selected style 1`] = `
         className="rightContent"
       >
         <CompanyLogo
-          isSelected={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -6217,11 +4851,9 @@ exports[`JobCard should render selected style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
-          isSelected={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -6280,8 +4912,7 @@ exports[`JobCard should render selected style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -6393,7 +5024,6 @@ exports[`JobCard should render tag links 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -6465,7 +5095,6 @@ exports[`JobCard should render tag links 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -6475,148 +5104,11 @@ exports[`JobCard should render tag links 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-                "tagLinks": Array [
-                  Object {
-                    "child": "keyword 1",
-                    "link": "/jobCard",
-                  },
-                  Object {
-                    "child": "keyword 2",
-                    "link": "/jobCard",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-                "tagLinks": Array [
-                  Object {
-                    "child": "keyword 1",
-                    "link": "/jobCard",
-                  },
-                  Object {
-                    "child": "keyword 2",
-                    "link": "/jobCard",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -6687,7 +5179,11 @@ exports[`JobCard should render tag links 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -6835,8 +5331,7 @@ exports[`JobCard should render tag links 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -6907,8 +5402,7 @@ exports[`JobCard should render tag links 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -7021,7 +5515,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -7084,7 +5577,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -7094,130 +5586,11 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "classifiedLabel": "Classified",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "classifiedLabel": "Classified",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -7279,7 +5652,11 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -7409,8 +5786,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -7472,8 +5848,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -7576,11 +5951,9 @@ exports[`JobCard should render with applied badge 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
-      applied={true}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -7639,7 +6012,6 @@ exports[`JobCard should render with applied badge 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -7649,130 +6021,11 @@ exports[`JobCard should render with applied badge 1`] = `
         className="leftContent"
       >
         <Description
-          applied={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          applied={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           applied={true}
@@ -7834,7 +6087,11 @@ exports[`JobCard should render with applied badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -7904,7 +6161,6 @@ exports[`JobCard should render with applied badge 1`] = `
         className="rightContent"
       >
         <CompanyLogo
-          applied={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -7963,11 +6219,9 @@ exports[`JobCard should render with applied badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
-          applied={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -8026,8 +6280,7 @@ exports[`JobCard should render with applied badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -8127,7 +6380,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -8187,7 +6439,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -8197,124 +6448,11 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": null,
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "confidentialLabel": "Company Confidential",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": null,
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "confidentialLabel": "Company Confidential",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -8373,7 +6511,11 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -8497,8 +6639,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -8557,8 +6698,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -8660,7 +6800,6 @@ exports[`JobCard should render with default props 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -8722,7 +6861,6 @@ exports[`JobCard should render with default props 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -8732,128 +6870,11 @@ exports[`JobCard should render with default props 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -8914,7 +6935,11 @@ exports[`JobCard should render with default props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -9042,8 +7067,7 @@ exports[`JobCard should render with default props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -9104,8 +7128,7 @@ exports[`JobCard should render with default props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -9207,7 +7230,6 @@ exports[`JobCard should render with expired badge 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -9269,7 +7291,6 @@ exports[`JobCard should render with expired badge 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -9279,128 +7300,11 @@ exports[`JobCard should render with expired badge 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": true,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": true,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -9461,7 +7365,11 @@ exports[`JobCard should render with expired badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -9589,8 +7497,7 @@ exports[`JobCard should render with expired badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -9651,8 +7558,7 @@ exports[`JobCard should render with expired badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -9759,7 +7665,6 @@ exports[`JobCard should render with selling points props 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
@@ -9826,7 +7731,6 @@ exports[`JobCard should render with selling points props 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -9836,138 +7740,18 @@ exports[`JobCard should render with selling points props 1`] = `
         className="leftContent"
       >
         <Description
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "sellingPoints": Array [
-                "We practice a vibrant & energetic office culture",
-                "Our company supports a fun yet balanced working environment",
-                "We support a safe environment for our employees",
-              ],
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "sellingPoints": Array [
-                "We practice a vibrant & energetic office culture",
-                "Our company supports a fun yet balanced working environment",
-                "We support a safe environment for our employees",
-              ],
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
+          sellingPoints={
+            Array [
+              "We practice a vibrant & energetic office culture",
+              "Our company supports a fun yet balanced working environment",
+              "We support a safe environment for our employees",
+            ]
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           job={
@@ -10033,7 +7817,11 @@ exports[`JobCard should render with selling points props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -10171,8 +7959,7 @@ exports[`JobCard should render with selling points props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
           job={
@@ -10238,8 +8025,7 @@ exports[`JobCard should render with selling points props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>
@@ -10283,7 +8069,6 @@ exports[`JobCard should render without border 1`] = `
     className="leftContainer"
   >
     <JobTitle
-      borderlessRoot={true}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -10342,11 +8127,9 @@ exports[`JobCard should render without border 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <Company
-      borderlessRoot={true}
       job={
         Object {
           "careerLevel": "Entry Level",
@@ -10405,7 +8188,6 @@ exports[`JobCard should render without border 1`] = `
           "workExperience": "3 Years of Experience",
         }
       }
-      jobAdType="jobsdbDefault"
       trackLinkClicked={[Function]}
     />
     <div
@@ -10415,130 +8197,11 @@ exports[`JobCard should render without border 1`] = `
         className="leftContent"
       >
         <Description
-          borderlessRoot={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
         />
         <SellingPoint
-          borderlessRoot={true}
-          job={
-            Object {
-              "careerLevel": "Entry Level",
-              "company": Object {
-                "link": "/jobCard",
-                "name": "SEEK Asia",
-              },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
-              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
-              "employmentTerm": "Full Time",
-              "isExpired": false,
-              "jobTitle": "Senior Software Engineer (6 months Contract)",
-              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
-              "locations": Array [
-                Object {
-                  "link": "/jobCard",
-                  "name": "Pahang",
-                },
-                Object {
-                  "child": Object {
-                    "child": Object {
-                      "name": "Near Leisure Mall",
-                    },
-                    "link": "/jobCard",
-                    "name": "Cheras",
-                  },
-                  "link": "/jobCard",
-                  "name": "Selangor",
-                },
-              ],
-              "postingDuration": "1 hour ago",
-              "qualification": "Qualification Not Specified",
-              "salary": "RM99999 - RM999999",
-              "shelf": Object {
-                "shelfLinks": Array [
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accountant",
-                      },
-                    ],
-                    "label": "Job function",
-                  },
-                  Object {
-                    "items": Array [
-                      Object {
-                        "link": "/jobCard",
-                        "name": "Accounting / Audit / Tax Services",
-                      },
-                    ],
-                    "label": "Industry",
-                  },
-                ],
-              },
-              "workExperience": "3 Years of Experience",
-            }
-          }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showSellingPoint={true}
         />
         <MainPoint
           borderlessRoot={true}
@@ -10600,7 +8263,11 @@ exports[`JobCard should render without border 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
           trackLinkClicked={[Function]}
         />
         <ShelfLink
@@ -10670,7 +8337,6 @@ exports[`JobCard should render without border 1`] = `
         className="rightContent"
       >
         <CompanyLogo
-          borderlessRoot={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -10729,11 +8395,9 @@ exports[`JobCard should render without border 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyLogo={false}
         />
         <CompanyPic
-          borderlessRoot={true}
           job={
             Object {
               "careerLevel": "Entry Level",
@@ -10792,8 +8456,7 @@ exports[`JobCard should render without border 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
-          jobAdType="jobsdbDefault"
-          trackLinkClicked={[Function]}
+          showCompanyPic={false}
         />
       </div>
     </div>

@@ -25,7 +25,7 @@ exports[`Menu should render when authenticated 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -41,7 +41,7 @@ exports[`Menu should render when authenticated 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -74,7 +74,7 @@ exports[`Menu should render when authenticated 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -245,7 +245,7 @@ exports[`Menu should render with default props 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -409,7 +409,7 @@ exports[`Menu should render with links list 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -521,7 +521,7 @@ exports[`Menu should render with menu open 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -685,7 +685,7 @@ exports[`Menu should render with more links 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"
@@ -889,7 +889,7 @@ exports[`Menu should render with sub links 1`] = `
       ItemIcon={
         <Icon
           animation=""
-          className={undefined}
+          className=""
           lineHeight="conversational"
           rotation=""
           size="small"

@@ -25,6 +25,7 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""
@@ -74,6 +75,7 @@ exports[`Checkbox should render full width checkbox 1`] = `
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""
@@ -148,6 +150,7 @@ exports[`Checkbox should render with checkbox put at the end of component 1`] = 
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""
@@ -197,6 +200,7 @@ exports[`Checkbox should render with className 1`] = `
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""
@@ -246,6 +250,7 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""
@@ -295,6 +300,7 @@ exports[`Checkbox should render with simple props 1`] = `
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""
@@ -344,6 +350,7 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
       >
         <Icon
           animation=""
+          className=""
           lineHeight=""
           rotation=""
           size=""

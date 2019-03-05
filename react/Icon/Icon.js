@@ -161,6 +161,7 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   animation: '',
+  className: '',
   lineHeight: '',
   rotation: '',
   size: '',

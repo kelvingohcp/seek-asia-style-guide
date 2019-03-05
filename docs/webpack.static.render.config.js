@@ -1,4 +1,5 @@
 // Alias 'seek-asia-style-guide' so 'seek-asia-style-guide-webpack' works correctly
+const jsdom = require('jsdom');
 const path = require('path');
 require('module-alias').addAlias('seek-asia-style-guide', path.join(__dirname, '..'));
 
@@ -13,7 +14,6 @@ const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin'
 const templatePath = path.resolve(__dirname, 'index.ejs');
 const template = ejs.compile(fs.readFileSync(templatePath, 'utf-8')); // eslint-disable-line no-sync
 
-var jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 const exposedProperties = ['window', 'navigator', 'document'];
 const { document } = (new JSDOM('')).window;
