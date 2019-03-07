@@ -27,13 +27,14 @@ const JobTitle = ({
   viewed,
   keyword,
   job,
-  trackLinkClicked
+  trackLinkClicked,
+  showSavedStatus
 }) => {
   return (
     <div
       className={classnames({
         [styles.jobTitle]: true,
-        [styles.withBookmark]: job.isSaved
+        [styles.withBookmark]: showSavedStatus
       })}
       data-automation="job-title">
       {(applied || job.isExpired) && (
@@ -61,7 +62,8 @@ JobTitle.propTypes = {
   viewed: JobCardPropTypes.viewed,
   keyword: JobCardPropTypes.keyword,
   job: JobCardPropTypes.job,
-  trackLinkClicked: JobCardPropTypes.trackLinkClicked
+  trackLinkClicked: JobCardPropTypes.trackLinkClicked,
+  showSavedStatus: JobCardPropTypes.showSavedStatus
 };
 
 const Company = ({ company, keyword, LinkComponent, trackLinkClicked }) => {
@@ -239,7 +241,8 @@ export default class JobCard extends React.Component {
               viewed,
               keyword,
               job,
-              trackLinkClicked
+              trackLinkClicked,
+              showSavedStatus
             }}
           />
           <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />

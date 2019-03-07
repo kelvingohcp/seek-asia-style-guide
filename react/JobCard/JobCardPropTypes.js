@@ -50,6 +50,7 @@ export const JobCardPropTypes = {
   showHighlightedBg: PropTypes.bool,
   showSellingPoint: PropTypes.bool,
   showShortenedLocation: PropTypes.bool,
+  showSavedStatus: PropTypes.bool,
   TitleLinkComponent: PropTypes.func,
   trackLinkClicked: PropTypes.func,
   viewed: PropTypes.bool
