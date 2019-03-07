@@ -228,11 +228,7 @@ export default class JobCard extends React.Component {
         <div className={styles.leftContainer}>
           {showSavedStatus && (
             <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
-              {
-                job.isSaved ?
-                  <Icon animation="bounce" size="small" type="bookmark" className={styles.bookmarked} /> :
-                  <Icon size="small" type="bookmark" />
-              }
+              <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
             </Button>
           )}
           <JobTitle
