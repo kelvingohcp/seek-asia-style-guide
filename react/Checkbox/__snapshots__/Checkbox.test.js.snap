@@ -55,7 +55,6 @@ exports[`Checkbox should render full width checkbox 1`] = `
   className="root fullWidth"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
@@ -104,7 +103,6 @@ exports[`Checkbox should render with button style 1`] = `
   className="root"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
@@ -129,7 +127,6 @@ exports[`Checkbox should render with checkbox put at the end of component 1`] = 
   className="root"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
@@ -178,7 +175,6 @@ exports[`Checkbox should render with className 1`] = `
   className="root testClassname"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
@@ -227,7 +223,6 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
   className="root compact"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
@@ -276,7 +271,6 @@ exports[`Checkbox should render with simple props 1`] = `
   className="root"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
@@ -325,7 +319,6 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
   className="root"
 >
   <input
-    checked={false}
     className="input"
     disabled={false}
     id="testCheckbox"
