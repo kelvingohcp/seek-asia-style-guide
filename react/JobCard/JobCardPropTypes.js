@@ -1,10 +1,16 @@
 import PropTypes from 'prop-types';
 import { LocationsPropTypes } from './components/LocationGroup/LocationGroup';
-import { CompanyLinkPropTypes } from './components/CompanyLink/CompanyLink';
 import { ShelfPropTypes } from './components/ShelfSection/ShelfSectionPropTypes';
 
+export const CompanyPropTypes = {
+  name: PropTypes.string,
+  link: PropTypes.string,
+  title: PropTypes.string,
+  isPrivate: PropTypes.bool
+};
+
 export const JobType = {
-  company: CompanyLinkPropTypes,
+  company: PropTypes.shape(CompanyPropTypes),
   jobTitle: PropTypes.string.isRequired,
   jobUrl: PropTypes.string.isRequired,
   sellingPoints: PropTypes.arrayOf(PropTypes.string),

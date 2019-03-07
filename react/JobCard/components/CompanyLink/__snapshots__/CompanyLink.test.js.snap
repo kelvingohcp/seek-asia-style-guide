@@ -17,7 +17,7 @@ exports[`JobCard - CompanyLink should bold keyword 1`] = `
       Seek
     </span>
     <span
-      className={null}
+      className=""
       key="1"
     >
        Asia

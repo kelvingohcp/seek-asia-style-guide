@@ -1,37 +1,26 @@
 import React from 'react';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './CompanyLink.less';
 import { getParts } from '../../jobCardHelper.js';
 import defaultLink from '../Link/Link';
 import { trackLinkType } from '../../JobCard';
+import { CompanyPropTypes } from '../../JobCardPropTypes';
 
-export const CompanyLinkPropTypes = PropTypes.shape({
-  name: PropTypes.string,
-  link: PropTypes.string,
-  title: PropTypes.string
-});
-
-const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink, trackLinkClicked }) => {
-  const { name, link, title } = company;
-  if (!name) {
-    return null;
-  }
-
+const CompanyLink = ({ name, link, title, keyword = '', LinkComponent = defaultLink, trackLinkClicked }) => {
   const companyParts = getParts(name, keyword);
+  const renderedParts = companyParts && companyParts.map((part, index) => (
+    <span
+      className={classnames({ [styles.highlight]: part.highlight })}
+      key={index}>
+      {part.text}
+    </span>
+  ));
 
-  const companyText = (<span className={link ? styles.companyName : null}>
-    {
-      companyParts && companyParts.map((part, index) => {
-        return (
-          <span
-            className={part.highlight ? styles.highlight : null}
-            key={index}>
-            {part.text}
-          </span>
-        );
-      }) || name
-    }
-  </span>);
+  const companyText = (
+    <span className={classnames({ [styles.companyName]: link })}>
+      {renderedParts || name}
+    </span>);
 
   if (link) {
     return (<LinkComponent link={link} className={styles.companyLink} title={title} onClick={() => trackLinkClicked(trackLinkType.company)}>{companyText}</LinkComponent>);
@@ -43,7 +32,7 @@ const CompanyLink = ({ company, keyword = '', LinkComponent = defaultLink, track
 export default CompanyLink;
 
 CompanyLink.propTypes = {
-  company: CompanyLinkPropTypes.isRequired,
+  ...CompanyPropTypes,
   keyword: PropTypes.string,
   LinkComponent: PropTypes.func,
   trackLinkClicked: PropTypes.func

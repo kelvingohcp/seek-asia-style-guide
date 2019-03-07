@@ -211,13 +211,15 @@ export default {
           })
         },
         {
-          label: 'Company Confidential',
+          label: 'Private advertiser',
           transformProps: ({ className, ...props }) => ({
             ...props,
             job: {
               ...props.job,
-              company: {},
-              confidentialLabel: 'Company Confidential'
+              company: {
+                name: 'Company Confidential',
+                isPrivate: true
+              }
             }
           })
         },

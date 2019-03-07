@@ -81,8 +81,10 @@ describe('JobCard', () => {
   it('should render with company confidential in grey label', () => {
     const descriptionJob = {
       ...defaultJob,
-      confidentialLabel: 'Company Confidential',
-      company: null
+      company: {
+        name: 'Company Confidential',
+        isPrivate: true
+      }
     };
 
     const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);

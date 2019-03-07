@@ -12,7 +12,8 @@ import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
-import { JobCardPropTypes, JobType } from './JobCardPropTypes';
+import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
+import PropTypes from 'prop-types';
 
 export const trackLinkType = {
   jobTitle: 'jobTitle',
@@ -63,17 +64,18 @@ JobTitle.propTypes = {
   trackLinkClicked: JobCardPropTypes.trackLinkClicked
 };
 
-const Company = ({ job, keyword, LinkComponent, trackLinkClicked }) => {
-  const companyLabel = job.classifiedLabel || job.confidentialLabel;
+const Company = ({ company, keyword, LinkComponent, trackLinkClicked }) => {
   return (
     <Text intimate baseline={false} className={classnames(styles.text, styles.section)}>
-      {companyLabel && <span className={styles.greyLabel}>{companyLabel}</span>}
-      {job.company && job.company.name && <CompanyLink company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />}
+      { company.isPrivate ?
+        <span className={styles.greyLabel}>{company.name}</span> :
+        <CompanyLink {...company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+      }
     </Text>
   );
 };
 Company.propTypes = {
-  job: JobCardPropTypes.job,
+  company: PropTypes.shape(CompanyPropTypes).isRequired,
   keyword: JobCardPropTypes.keyword,
   LinkComponent: JobCardPropTypes.LinkComponent,
   trackLinkClicked: JobCardPropTypes.trackLinkClicked
@@ -244,7 +246,7 @@ export default class JobCard extends React.Component {
               trackLinkClicked
             }}
           />
-          <Company job={job} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+          <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
           <div className={styles.flexRow}>
             <div className={styles.leftContent}>
               <Description description={job.description} showDescription={showDescription} />
