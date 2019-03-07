@@ -56,6 +56,9 @@
   :checked + & {
     font-weight: @sa-semi-bold;
   }
+  @supports (display: grid) {
+    .horizontalPadding(0);
+  }
 }
 
 .standard {
@@ -99,6 +102,7 @@
     grid-gap: @checkbox-atom-gap;
     grid-template-columns: @checkbox-side-length 1fr;
     grid-template-areas: "checkbox labels";
+    .horizontalMargin(0);
     & > * {
       .horizontalPadding(0);
     }
