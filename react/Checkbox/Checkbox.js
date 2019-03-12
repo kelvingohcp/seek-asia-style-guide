@@ -47,6 +47,16 @@ export default class Checkbox extends Component {
     disabled: false
   };
 
+  state = {
+    checked: false
+  }
+
+  static getDerivedStateFromProps(props) {
+    return {
+      checked: props.checked || props.inputProps && props.inputProps.checked
+    };
+  }
+
   renderButton(label) {
     return (
       <span className={styles.mainLabel}>
@@ -98,12 +108,12 @@ export default class Checkbox extends Component {
   }
 
   renderInput() {
-    const { id, value, checked, disabled, onChange, onFocus, onBlur, inputProps } = this.props;
+    const { id, value, disabled, onChange, onFocus, onBlur, inputProps } = this.props;
 
     const allInputProps = {
       id,
       value,
-      checked,
+      checked: this.state.checked,
       disabled,
       onChange,
       onFocus,
@@ -118,13 +128,12 @@ export default class Checkbox extends Component {
   }
 
   render() {
-    const { className, fullWidth, checked, compact } = this.props;
-
+    const { className, fullWidth, compact } = this.props;
     const rootClassNames = classnames({
       [styles.root]: true,
       [className]: className,
       [styles.fullWidth]: fullWidth,
-      [styles.checked]: checked,
+      [styles.checked]: this.state.checked,
       [styles.compact]: compact
     });
 

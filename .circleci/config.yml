@@ -12,7 +12,7 @@ jobs:
            command: npm run lint
       - run:
          name: Run unit test
-         command: npm run test-unit
+         command: npm run test:ci
   surge:
      docker:
        - image: circleci/node:8.5

@@ -6,15 +6,14 @@ import Icon from '../Icon/Icon';
 import Button from '../Button/Button';
 import styles from './JobCard.less';
 import classnames from 'classnames';
-import Constants from '../Constants/Constants';
-import { jobAdTypeOption } from './jobCardHelper.js';
 import LocationGroup from './components/LocationGroup/LocationGroup';
 import CompanyLink from './components/CompanyLink/CompanyLink';
 import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
-import { JobCardPropTypes } from './JobCardPropTypes';
+import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
+import PropTypes from 'prop-types';
 
 export const trackLinkType = {
   jobTitle: 'jobTitle',
@@ -22,12 +21,20 @@ export const trackLinkType = {
   company: 'company'
 };
 
-export const JobTitle = ({ applied = false, TitleLinkComponent, viewed, keyword, job, trackLinkClicked }) => {
+const JobTitle = ({
+  applied = false,
+  TitleLinkComponent,
+  viewed,
+  keyword,
+  job,
+  trackLinkClicked,
+  showSavedStatus
+}) => {
   return (
     <div
       className={classnames({
         [styles.jobTitle]: true,
-        [styles.withBookmark]: job.isSaved
+        [styles.withBookmark]: showSavedStatus
       })}
       data-automation="job-title">
       {(applied || job.isExpired) && (
@@ -49,34 +56,55 @@ export const JobTitle = ({ applied = false, TitleLinkComponent, viewed, keyword,
     </div>
   );
 };
-JobTitle.propTypes = JobCardPropTypes;
+JobTitle.propTypes = {
+  applied: JobCardPropTypes.applied,
+  TitleLinkComponent: JobCardPropTypes.TitleLinkComponent,
+  viewed: JobCardPropTypes.viewed,
+  keyword: JobCardPropTypes.keyword,
+  job: JobCardPropTypes.job,
+  trackLinkClicked: JobCardPropTypes.trackLinkClicked,
+  showSavedStatus: JobCardPropTypes.showSavedStatus
+};
 
-export const Company = ({ job, keyword, LinkComponent, trackLinkClicked }) => {
-  const companyLabel = job.classifiedLabel || job.confidentialLabel;
+const Company = ({ company, keyword, LinkComponent, trackLinkClicked }) => {
   return (
     <Text intimate baseline={false} className={classnames(styles.text, styles.section)}>
-      {companyLabel && <span className={styles.greyLabel}>{companyLabel}</span>}
-      {job.company && job.company.name && <CompanyLink company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />}
+      { company.isPrivate ?
+        <span className={styles.greyLabel}>{company.name}</span> :
+        <CompanyLink {...company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+      }
     </Text>
   );
 };
-Company.propTypes = JobCardPropTypes;
+Company.propTypes = {
+  company: PropTypes.shape(CompanyPropTypes).isRequired,
+  keyword: JobCardPropTypes.keyword,
+  LinkComponent: JobCardPropTypes.LinkComponent,
+  trackLinkClicked: JobCardPropTypes.trackLinkClicked
+};
 
-export const Description = ({ job, jobAdType }) => {
-  return jobAdTypeOption[jobAdType].showDescription && job.description && (
+const Description = ({ description, showDescription }) => {
+  if (!(showDescription && description)) {
+    return null;
+  }
+
+  return (
     <div className={styles.desktopOnly}>
       <Text
         whispering
         baseline={false}
         className={styles.text}>
-        {job.description}
+        {description}
       </Text>
     </div>
   );
 };
-Description.propTypes = JobCardPropTypes;
+Description.propTypes = {
+  description: JobType.description,
+  showDescription: JobCardPropTypes.showDescription
+};
 
-export const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trackLinkClicked }) => {
+const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trackLinkClicked }) => {
   return (
     <IconList
       list={[
@@ -91,10 +119,14 @@ export const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalar
 };
 MainPoint.propTypes = JobCardPropTypes;
 
-export const SellingPoint = ({ jobAdType, job, isSplitView }) => {
-  return jobAdTypeOption[jobAdType].showSellingPoint && !isSplitView && job.sellingPoints && (
+const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint }) => {
+  if (!showSellingPoint || isSplitView || !sellingPoints) {
+    return null;
+  }
+
+  return (
     <ul className={styles.sellingPoints}>
-      {job.sellingPoints.map((sellingPoint, i) => (
+      {sellingPoints.map((sellingPoint, i) => (
         <li key={i} className={styles.sellingPoint}>
           <Text
             whispering
@@ -107,17 +139,28 @@ export const SellingPoint = ({ jobAdType, job, isSplitView }) => {
     </ul>
   );
 };
-SellingPoint.propTypes = JobCardPropTypes;
+SellingPoint.propTypes = {
+  sellingPoints: JobType.sellingPoints,
+  isSplitView: JobCardPropTypes.isSplitView,
+  showSellingPoint: JobCardPropTypes.showSellingPoint
+};
 
-export const CompanyLogo = ({ jobAdType, job }) => {
-  return jobAdTypeOption[jobAdType].showCompanyLogo ?
+const CompanyLogo = ({ job, showCompanyLogo }) => {
+  return showCompanyLogo ?
     <img className={styles.companyLogo} src={job.companyLogoUrl} /> :
     <div className={styles.companyLogo} />;
 };
-CompanyLogo.propTypes = JobCardPropTypes;
+CompanyLogo.propTypes = {
+  job: JobCardPropTypes.job,
+  showCompanyLogo: JobCardPropTypes.showCompanyLogo
+};
 
-export const CompanyPic = ({ jobAdType, job }) => {
-  return jobAdTypeOption[jobAdType].showCompanyPic && job.companyPictureUrl && (
+const CompanyPic = ({ job, showCompanyPic }) => {
+  if (!(showCompanyPic && job.companyPictureUrl)) {
+    return null;
+  }
+
+  return (
     <div className={styles.companyPicWrapper}>
       <img
         className={styles.companyPic}
@@ -126,7 +169,10 @@ export const CompanyPic = ({ jobAdType, job }) => {
     </div>
   );
 };
-CompanyPic.propTypes = JobCardPropTypes;
+CompanyPic.propTypes = {
+  job: JobCardPropTypes.job,
+  showCompanyPic: JobCardPropTypes.showCompanyPic
+};
 
 export const ShelfLink = ({ mobileOnly, desktopOnly, job, shelfSectionOpen, onClick }) => {
   return (
@@ -152,19 +198,28 @@ export default class JobCard extends React.Component {
 
   render() {
     const {
-      job,
-      jobAdType,
-      isSelected,
-      onBookmarkClick,
-      trackLinkClicked,
-      LinkComponent,
+      applied,
       borderlessRoot = false,
-      isVariation,
+      isSelected,
       isSplitView,
-      showSavedStatus
+      isVariation,
+      job,
+      keyword,
+      LinkComponent,
+      onBookmarkClick,
+      showSellingPoint,
+      showCompanyLogo,
+      showCompanyPic,
+      showDescription,
+      showHighlightedBg,
+      showSavedStatus,
+      TitleLinkComponent,
+      trackLinkClicked,
+      viewed
     } = this.props;
+
     const { shelfSectionOpen } = this.state;
-    const { showHighlightedBg } = jobAdTypeOption[jobAdType];
+
     return (
       <Card
         className={classnames(styles.container, {
@@ -175,20 +230,27 @@ export default class JobCard extends React.Component {
         <div className={styles.leftContainer}>
           {showSavedStatus && (
             <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
-              {
-                job.isSaved ?
-                  (<Icon animation="bounce" size="small" type="bookmark" className={styles.bookmarked} />) :
-                  (<Icon size="small" type="bookmark" />)
-              }
+              <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
             </Button>
           )}
-          <JobTitle {...this.props} />
-          <Company {...this.props} />
+          <JobTitle
+            {
+            ...{
+              applied,
+              TitleLinkComponent,
+              viewed,
+              keyword,
+              job,
+              trackLinkClicked,
+              showSavedStatus
+            }}
+          />
+          <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
           <div className={styles.flexRow}>
             <div className={styles.leftContent}>
-              <Description {...this.props} />
+              <Description description={job.description} showDescription={showDescription} />
               {isVariation && <MainPoint {...this.props} />}
-              <SellingPoint {...this.props} />
+              <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} />
               {!isVariation && <MainPoint {...this.props} />}
               <ShelfLink
                 job={job}
@@ -198,8 +260,8 @@ export default class JobCard extends React.Component {
               />
             </div>
             <div className={styles.rightContent}>
-              <CompanyLogo {...this.props} />
-              <CompanyPic {...this.props} />
+              <CompanyLogo job={job} showCompanyLogo={showCompanyLogo} />
+              <CompanyPic job={job} showCompanyPic={showCompanyPic} />
               {isVariation && !isSplitView &&
                 <ShelfLink
                   job={job}
@@ -236,8 +298,7 @@ export default class JobCard extends React.Component {
 }
 
 JobCard.defaultProps = {
-  trackLinkClicked: () => {},
-  jobAdType: Constants.JOBADTYPE_JOBSDB_DEFAULT
+  trackLinkClicked: () => {}
 };
 
 JobCard.propTypes = JobCardPropTypes;

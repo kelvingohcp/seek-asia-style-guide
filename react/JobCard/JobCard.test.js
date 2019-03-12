@@ -1,10 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import JobCard from './JobCard';
-import { Constants, Text } from 'seek-asia-style-guide/react';
-
-const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
+import { Text } from 'seek-asia-style-guide/react';
 
 const defaultJob = {
   company: {
@@ -68,7 +65,11 @@ const defaultJob = {
 
 const defaultProps = {
   job: defaultJob,
-  jobAdType: JOBADTYPE_JOBSDB_DEFAULT
+  showCompanyLogo: false,
+  showCompanyPic: false,
+  showHighlightedBg: false,
+  showSellingPoint: true,
+  showDescription: false
 };
 
 describe('JobCard', () => {
@@ -80,8 +81,10 @@ describe('JobCard', () => {
   it('should render with company confidential in grey label', () => {
     const descriptionJob = {
       ...defaultJob,
-      confidentialLabel: 'Company Confidential',
-      company: null
+      company: {
+        name: 'Company Confidential',
+        isPrivate: true
+      }
     };
 
     const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
@@ -134,7 +137,6 @@ describe('JobCard', () => {
     const wrapper = shallow(
       <JobCard
         {...defaultProps}
-        jobAdType={JOBADTYPE_JOBSDB_DEFAULT}
       />
     );
     expect(wrapper).toMatchSnapshot();
@@ -144,7 +146,6 @@ describe('JobCard', () => {
     const wrapper = shallow(
       <JobCard
         {...defaultProps}
-        jobAdType={JOBADTYPE_JOBSTREET_STANDOUT}
       />
     );
     expect(wrapper).toMatchSnapshot();

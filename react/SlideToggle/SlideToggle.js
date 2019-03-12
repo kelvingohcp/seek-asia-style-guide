@@ -1,9 +1,9 @@
 import styles from './SlideToggle.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import TickIcon from '../TickIcon/TickIcon';
 import Text from '../Text/Text';
 import classnames from 'classnames';
-import { Icon } from 'seek-asia-style-guide/react';
 
 const LEFT = 'left';
 const RIGHT = 'right';
@@ -63,10 +63,9 @@ export default class SlideToggle extends Component {
           {this.renderLabel(LEFT)}
           <div className={styles.slider}>
             <div className={styles.slideButton}>
-              <Icon
+              <TickIcon
                 className={styles.icon}
                 svgClassName={styles.svg}
-                type="check"
               />
             </div>
           </div>

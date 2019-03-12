@@ -4,10 +4,10 @@ import Text from '../../../Text/Text';
 import styles from './ShelfButton.less';
 import jobCardStyles from '../../JobCard.less';
 import classnames from 'classnames';
+import ChevronIcon from '../../../ChevronIcon/ChevronIcon';
 import Badge from '../../../Badge/Badge';
 import { hasShelfLinks } from '../../jobCardHelper.js';
 import { ShelfPropTypes } from '../ShelfSection/ShelfSectionPropTypes';
-import { Icon } from 'seek-asia-style-guide/react';
 
 const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
   return (
@@ -40,12 +40,9 @@ const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
             baseline={false}
             onClick={onClick}>
             {isOpen ? 'less' : 'more'}{' '}
-            <Icon
+            <ChevronIcon
+              direction={isOpen ? 'up' : 'down'}
               svgClassName={styles.shelfToggleIcon}
-              rotation={isOpen ? 'reset' : '-180deg'}
-              smoothRotate
-              size="small"
-              type="chevron"
             />
           </Text>
         </div>

@@ -33,7 +33,7 @@
 
 .inlineBlockLineheight(@lh) {
   line-height: @lh;
-  min-height: @lh;
+  height: auto;
 }
 
 .root {
@@ -55,6 +55,9 @@
   .horizontalPadding(@checkbox-atom-gap);
   :checked + & {
     font-weight: @sa-semi-bold;
+  }
+  @supports (display: grid) {
+    .horizontalPadding(0);
   }
 }
 
@@ -99,6 +102,7 @@
     grid-gap: @checkbox-atom-gap;
     grid-template-columns: @checkbox-side-length 1fr;
     grid-template-areas: "checkbox labels";
+    .horizontalMargin(0);
     & > * {
       .horizontalPadding(0);
     }

@@ -1,7 +1,7 @@
 import styles from './ShowMore.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Icon } from 'seek-asia-style-guide/react';
+import { Button, ChevronIcon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 
 export default class ShowMore extends Component {
@@ -82,7 +82,7 @@ export default class ShowMore extends Component {
                 <span>
                   {isPanelOpened ? lblShowLess : lblShowMore}
                 </span>
-                <span> <span><Icon rotation={isPanelOpened ? 'reset' : '-180deg'} size="small" smoothRotate type="chevron" /></span></span>
+                <span> <span><ChevronIcon direction={isPanelOpened ? 'up' : 'down'} /></span></span>
               </Button>
             </div>
           )

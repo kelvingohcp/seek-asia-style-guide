@@ -2,15 +2,15 @@
 
 exports[`JobCard - LocationGroup should render correctly 1`] = `
 Array [
-  Array [
-    <Link
-      className="locationLink"
-      key="0"
-      link="/jobCard"
-      onClick={[Function]}
-      title="Limit result to Pahang"
-    />,
-  ],
+  <Link
+    className="locationLink"
+    key="0"
+    link="/jobCard"
+    onClick={[Function]}
+    title="Limit result to Pahang"
+  >
+    Pahang
+  </Link>,
   ", ",
   <Link
     className="locationLink"
@@ -18,7 +18,9 @@ Array [
     link="/jobCard"
     onClick={[Function]}
     title="Limit result to Selangor"
-  />,
+  >
+    Selangor
+  </Link>,
   " > ",
   <Link
     className="locationLink"
@@ -26,30 +28,36 @@ Array [
     link="/jobCard"
     onClick={[Function]}
     title="Limit result to Cheras in Selangor"
-  />,
+  >
+    Cheras
+  </Link>,
   " > ",
   <span
     className="locationName"
     key="111"
-  />,
+  >
+    Near Leisure Mall
+  </span>,
 ]
 `;
 
 exports[`JobCard - LocationGroup should render with only last child location 1`] = `
 Array [
-  Array [
-    <Link
-      className="locationLink"
-      key="0"
-      link="/jobCard"
-      onClick={[Function]}
-      title="Limit result to Pahang"
-    />,
-  ],
+  <Link
+    className="locationLink"
+    key="0"
+    link="/jobCard"
+    onClick={[Function]}
+    title="Limit result to Pahang"
+  >
+    Pahang
+  </Link>,
   ", ",
   <span
     className="locationName"
     key="111"
-  />,
+  >
+    Near Leisure Mall
+  </span>,
 ]
 `;

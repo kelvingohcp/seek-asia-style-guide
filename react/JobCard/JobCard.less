@@ -51,6 +51,7 @@
     flex-grow: 1;
     padding: @grid-base*3 @grid-base*4 (@grid-base*4 - @job-card-section-bottom-space) @grid-base*4;
     position: relative;
+    flex-basis: 100%;
   }
   .rightContainer {
     .flexCol();
@@ -158,10 +159,14 @@
 }
 
 .bookmarkButton {
+  align-items: center;
   background-color: transparent;
   color: @saGrey4;
+  display: flex;
+  justify-content: center;
   width: @grid-base * 12;
   height: @grid-base * 12;
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;

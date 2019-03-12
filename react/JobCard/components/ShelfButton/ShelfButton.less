@@ -4,16 +4,26 @@
 .shelfToggleIcon {
   width: @grid-base * 2;
   height: @grid-base * 2;
+  margin-left: @grid-base;
+  @supports (display: grid) {
+    margin-left: unset;
+  }
 }
 
 .separatorDot {
   color: @saGrey4;
   display: inline;
   padding: 0 @grid-base * 2;
+  @supports (display: grid) {
+    padding: 0;
+    margin-left: @grid-base;
+  }
 }
 
 .shelfToggle {
   .link(@saGrey2);
+  align-items: center;
+  display: flex;
   height: unset;
   &:focus {
     outline: none;

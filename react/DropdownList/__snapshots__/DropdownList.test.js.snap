@@ -16,15 +16,10 @@ exports[`DropdownList: should render as lower level child 1`] = `
     >
       testValue
     </Text>
-    <Icon
-      animation=""
+    <ChevronIcon
       className="chevron top"
-      lineHeight=""
-      rotation="-180deg"
-      size="small"
-      smoothRotate={true}
+      direction="down"
       svgClassName="chevronSvg"
-      type="chevron"
     />
   </div>
   <div
@@ -60,15 +55,10 @@ exports[`DropdownList: should render in compact mode 1`] = `
     >
       testValue
     </Text>
-    <Icon
-      animation=""
+    <ChevronIcon
       className="chevron top"
-      lineHeight=""
-      rotation="-180deg"
-      size="small"
-      smoothRotate={true}
+      direction="down"
       svgClassName="chevronSvg"
-      type="chevron"
     />
   </div>
   <div
@@ -95,15 +85,10 @@ exports[`DropdownList: should render value with children 1`] = `
     >
       testValue
     </Text>
-    <Icon
-      animation=""
+    <ChevronIcon
       className="chevron top"
-      lineHeight=""
-      rotation="-180deg"
-      size="small"
-      smoothRotate={true}
+      direction="down"
       svgClassName="chevronSvg"
-      type="chevron"
     />
   </div>
   <div
@@ -130,15 +115,10 @@ exports[`DropdownList: should render with center-aligned chevron 1`] = `
     >
       testValue
     </Text>
-    <Icon
-      animation=""
+    <ChevronIcon
       className="chevron center"
-      lineHeight=""
-      rotation="-180deg"
-      size="small"
-      smoothRotate={true}
+      direction="down"
       svgClassName="chevronSvg"
-      type="chevron"
     />
   </div>
   <div
@@ -165,15 +145,10 @@ exports[`DropdownList: should render with className 1`] = `
     >
       testValue
     </Text>
-    <Icon
-      animation=""
+    <ChevronIcon
       className="chevron top"
-      lineHeight=""
-      rotation="-180deg"
-      size="small"
-      smoothRotate={true}
+      direction="down"
       svgClassName="chevronSvg"
-      type="chevron"
     />
   </div>
   <div
@@ -200,15 +175,10 @@ exports[`DropdownList: should render without shadow 1`] = `
     >
       testValue
     </Text>
-    <Icon
-      animation=""
+    <ChevronIcon
       className="chevron top"
-      lineHeight=""
-      rotation="-180deg"
-      size="small"
-      smoothRotate={true}
+      direction="down"
       svgClassName="chevronSvg"
-      type="chevron"
     />
   </div>
   <div

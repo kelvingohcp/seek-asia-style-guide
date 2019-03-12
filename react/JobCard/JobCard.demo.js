@@ -1,8 +1,61 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { JobCard, PageBlock, Constants } from 'seek-asia-style-guide/react';
+import { JobCard, PageBlock } from 'seek-asia-style-guide/react';
 
-const { JOBADTYPE_JOBSDB_DEFAULT, JOBADTYPE_JOBSDB_BRANDED, JOBADTYPE_JOBSTREET_DEFAULT, JOBADTYPE_JOBSTREET_STANDOUT } = Constants;
+const booleanProps = [
+  {
+    label: 'Show highlighted background',
+    prop: 'showHighlightedBg'
+  },
+  {
+    label: 'Show selling points',
+    prop: 'showSellingPoint'
+  },
+  {
+    label: 'Show description',
+    prop: 'showDescription'
+  },
+  {
+    label: 'Hide Salary',
+    prop: 'hideSalary'
+  },
+  {
+    label: 'Visited',
+    prop: 'viewed'
+  },
+  {
+    label: 'Variation',
+    prop: 'isVariation'
+  },
+  {
+    label: 'Split View',
+    prop: 'isSplitView'
+  },
+  {
+    label: 'Selected',
+    prop: 'isSelected'
+  },
+  {
+    label: 'Shortened Location',
+    prop: 'showShortenedLocation'
+  },
+  {
+    label: 'Applied',
+    prop: 'applied'
+  },
+  {
+    label: 'Borderless Root',
+    prop: 'borderlessRoot'
+  }
+];
+
+const renderBooleanProp = item => ({
+  label: item.label,
+  transformProps: ({ className, ...props }) => ({
+    ...props,
+    [item.prop]: true
+  })
+});
 
 const JobCardContainer = ({ component: DemoComponent, componentProps }) => {
   return (
@@ -120,7 +173,11 @@ export default {
       workExperience: '3 Years of Experience',
       employmentTerm: 'Full Time'
     },
-    jobAdType: JOBADTYPE_JOBSDB_DEFAULT,
+    showCompanyLogo: false,
+    showCompanyPic: false,
+    showHighlightedBg: false,
+    showSellingPoint: false,
+    showDescription: false,
     onBookmarkClick: () => {
       alert('bookmark clicked'); // eslint-disable-line no-alert
     },
@@ -134,30 +191,6 @@ export default {
       type: 'checklist',
       states: [
         {
-          label: 'Variation',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            isVariation: true
-          })
-        },
-        {
-          label: 'Split View',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            isSplitView: true
-          })
-        },
-        {
-          label: 'Applied',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            job: {
-              ...props.job
-            },
-            applied: true
-          })
-        },
-        {
           label: 'AppliedDate',
           transformProps: ({ className, ...props }) => ({
             ...props,
@@ -165,13 +198,6 @@ export default {
               ...props.job,
               appliedDate: 'Applied on 20-Jul-2018'
             }
-          })
-        },
-        {
-          label: 'Visited',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            viewed: true
           })
         },
         {
@@ -185,13 +211,15 @@ export default {
           })
         },
         {
-          label: 'Company Confidential',
+          label: 'Private advertiser',
           transformProps: ({ className, ...props }) => ({
             ...props,
             job: {
               ...props.job,
-              company: {},
-              confidentialLabel: 'Company Confidential'
+              company: {
+                name: 'Company Confidential',
+                isPrivate: true
+              }
             }
           })
         },
@@ -215,13 +243,7 @@ export default {
             }
           })
         },
-        {
-          label: 'Hide Salary',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            hideSalary: true
-          })
-        },
+        ...booleanProps.map(renderBooleanProp),
         {
           label: 'Highlight Keyword',
           transformProps: ({ className, ...props }) => ({
@@ -291,30 +313,6 @@ export default {
               );
             }
           })
-        },
-        {
-          label: 'Selected',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            isSelected: true
-          })
-        },
-        {
-          label: 'Shortened Location',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            showShortenedLocation: true
-          })
-        },
-        {
-          label: 'Borderless Root',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            job: {
-              ...props.job
-            },
-            borderlessRoot: true
-          })
         }
       ]
     },
@@ -353,37 +351,10 @@ export default {
       ]
     },
     {
-      label: 'JobAd Type',
-      type: 'radio',
+      label: 'States',
+      type: 'checklist',
       states: [
-        {
-          label: 'jobsDB standard',
-          transformProps: props => ({
-            ...props,
-            jobAdType: JOBADTYPE_JOBSDB_DEFAULT
-          })
-        },
-        {
-          label: 'jobsDB Branded',
-          transformProps: props => ({
-            ...props,
-            jobAdType: JOBADTYPE_JOBSDB_BRANDED
-          })
-        },
-        {
-          label: 'jobStreet Default',
-          transformProps: props => ({
-            ...props,
-            jobAdType: JOBADTYPE_JOBSTREET_DEFAULT
-          })
-        },
-        {
-          label: 'jobStreet Standout',
-          transformProps: props => ({
-            ...props,
-            jobAdType: JOBADTYPE_JOBSTREET_STANDOUT
-          })
-        }
+        renderBooleanProp({ label: 'Show company logo', prop: 'showCompanyLogo' })
       ]
     },
     {
@@ -430,6 +401,13 @@ export default {
             }
           })
         }
+      ]
+    },
+    {
+      label: 'States',
+      type: 'checklist',
+      states: [
+        renderBooleanProp({ label: 'Show company pic', prop: 'showCompanyPic' })
       ]
     },
     {

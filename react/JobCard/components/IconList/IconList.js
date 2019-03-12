@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Text from '../../../Text/Text';
 import Icon from '../../../Icon/Icon';
@@ -7,7 +7,7 @@ import classnames from 'classnames';
 
 const IconList = ({ list, className }) => {
   return (
-    <React.Fragment>
+    <Fragment>
       {
         list.filter(({ show = true }) => show).map(({ iconType, content }, i, filteredList) => (
           <div
@@ -26,7 +26,7 @@ const IconList = ({ list, className }) => {
           </div>
         ))
       }
-    </React.Fragment>
+    </Fragment>
   );
 };
 
