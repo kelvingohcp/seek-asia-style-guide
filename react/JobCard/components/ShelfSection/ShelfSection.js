@@ -15,10 +15,10 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
     return null;
   }
 
-  const rednerLink = (linkObject, trackOmniture) => (
+  const renderLink = trackOmniture => linkObject => (
     <LinkComponent
-      key={linkObject.name}
       {...linkObject}
+      key={`${linkObject.title}-${linkObject.name}`}
       className={styles.shelfLink}
       onClick={trackOmniture}>
       {linkObject.name}
@@ -28,45 +28,51 @@ const ShelfSection = ({ shelf = {}, LinkComponent = defaultLink, showShelfSectio
   return (
     <Section className={classnames(styles.root, { [styles.showShelfSection]: showShelfSection })}>
       <div className={styles.shelfDivider} />
-      {shelfLinks && shelfLinks.length &&
-      <Text whispering className={styles.shelfLinksContainer}>
-        {shelfLinks.map(shelfItem => {
-          const trackOmniture = () => trackLinkClicked(shelfItem.searchMethod);
+      {shelfLinks && shelfLinks.length && (
+        <Text whispering className={styles.shelfLinksContainer}>
+          {shelfLinks.map(shelfLink => {
+            
+            const trackOmniture = () => trackLinkClicked(shelfLink.searchMethod);
+            const renderLinkWithOmnitureTracking = renderLink(trackOmniture);
 
-          if (shelfItem && shelfItem.items && shelfItem.items.length) {
-            return (
-              <div key={shelfItem.label}>
-                {`${shelfItem.label}: `}
-                {
-                  shelfItem.items.map(item => {
-                    if (item.children && item.children.length) {
-                      return [
-                        rednerLink(item, trackOmniture),
-                        ' > ',
-                        item.children
-                          .map(child => rednerLink(child, trackOmniture))
-                          .reduce((prev, curr) => [prev, ' | ', curr])
-                      ];
-                    }
-                    return [rednerLink(item, trackOmniture)];
-                  }).reduce((prev, curr) => [prev, ', ', curr])
-                }
-              </div>);
-          }
-          return null;
-        })}
-      </Text >
-      }
+            if (shelfLink && shelfLink.items && shelfLink.items.length) {
+              return (
+                <div key={shelfLink.label}>
+                  {`${shelfLink.label}: `}
+                  {
+                    shelfLink.items
+                      .map(item => {
+                        const renderedLink = renderLinkWithOmnitureTracking(item);
+                        const renderedLinks = [renderedLink];
+
+                        if (item.children && item.children.length) {
+                          const childLinks = item.children
+                            .map(renderLinkWithOmnitureTracking)
+                            .reduce((prev, curr) => [prev, ' | ', curr]);
+                          
+                            renderedLinks.push(' > ');
+                            renderedLinks.push(childLinks);
+                        }
+                        return renderedLinks;
+                      })
+                      .reduce((prev, curr) => [prev, ', ', curr])
+                  }
+                </div>);
+            }
+            return null;
+          })}
+        </Text >
+      )}
       {tagLinks &&
         <ButtonGroup className={styles.tagLinksContainer}>
-          {tagLinks.map(item => (
+          {tagLinks.map((item) => (
             <Button
               color="primary"
               compact
               component="a"
               href={item.link}
               className={styles.tagLink}
-              key={item.title}
+              key={`${item.title}-${item.name}`}
               title={item.title}>
               {item.name}
             </Button>
