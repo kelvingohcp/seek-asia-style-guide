@@ -155,6 +155,24 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
+const CompanyBanner = ({ bannerUrl, showCompanyBanner, isVariation }) => {
+  return showCompanyBanner && bannerUrl ?
+    <img
+      className={
+        classnames({
+          [styles.companyBannerOnMobile]: !isVariation,
+          [styles.companyBannerOnDesktop]: isVariation
+        })
+      }
+      src={bannerUrl}
+    /> : null;
+};
+CompanyBanner.propTypes = {
+  bannerUrl: PropTypes.string,
+  showCompanyBanner: JobCardPropTypes.showCompanyBanner,
+  isVariation: PropTypes.bool
+};
+
 const CompanyPic = ({ job, showCompanyPic }) => {
   if (!(showCompanyPic && job.companyPictureUrl)) {
     return null;
@@ -210,6 +228,7 @@ export default class JobCard extends React.Component {
       showSellingPoint,
       showCompanyLogo,
       showCompanyPic,
+      showCompanyBanner,
       showDescription,
       showHighlightedBg,
       showSavedStatus,
@@ -225,7 +244,8 @@ export default class JobCard extends React.Component {
         className={classnames(styles.container, {
           [styles.borderRoot]: !borderlessRoot,
           [styles.highlightedBg]: showHighlightedBg,
-          [styles.selected]: isSelected
+          [styles.selected]: isSelected,
+          [styles.sideHighlightBorder]: showCompanyBanner
         })}>
         <div className={styles.leftContainer}>
           {showSavedStatus && (
@@ -233,6 +253,7 @@ export default class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
             </Button>
           )}
+          <CompanyBanner bannerUrl={job.bannerUrl} showCompanyBanner={showCompanyBanner} />
           <JobTitle
             {
             ...{
@@ -259,7 +280,15 @@ export default class JobCard extends React.Component {
                 onClick={this.handleShelfSectionToggle}
               />
             </div>
-            <div className={styles.rightContent}>
+            <div
+              className={
+                classnames(
+                  {
+                    [styles.rightContent]: !(showCompanyBanner && isVariation && !isSplitView),
+                    [styles.rightContentWithBanner]: showCompanyBanner && isVariation && !isSplitView
+                  }
+                )
+              }>
               <CompanyLogo job={job} showCompanyLogo={showCompanyLogo} />
               <CompanyPic job={job} showCompanyPic={showCompanyPic} />
               {isVariation && !isSplitView &&
@@ -281,6 +310,7 @@ export default class JobCard extends React.Component {
         {
           isVariation && !isSplitView &&
           <div className={styles.rightContainer}>
+            <CompanyBanner bannerUrl={job.bannerUrl} showCompanyBanner={showCompanyBanner} isVariation={isVariation} />
             <IconList
               className={styles.structuredData}
               list={[

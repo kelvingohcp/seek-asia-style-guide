@@ -16,6 +16,10 @@ const booleanProps = [
     prop: 'showDescription'
   },
   {
+    label: 'Show Company Banner',
+    prop: 'showCompanyBanner'
+  },
+  {
     label: 'Hide Salary',
     prop: 'hideSalary'
   },
@@ -171,13 +175,15 @@ export default {
       qualification: 'Qualification Not Specified',
       careerLevel: 'Entry Level',
       workExperience: '3 Years of Experience',
-      employmentTerm: 'Full Time'
+      employmentTerm: 'Full Time',
+      bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
     },
     showCompanyLogo: false,
     showCompanyPic: false,
     showHighlightedBg: false,
     showSellingPoint: false,
     showDescription: false,
+    showCompanyBanner: false,
     onBookmarkClick: () => {
       alert('bookmark clicked'); // eslint-disable-line no-alert
     },

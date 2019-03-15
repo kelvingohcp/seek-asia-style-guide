@@ -1,5 +1,1271 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`JobCard render show company banner 1`] = `
+<Card
+  className="container borderRoot sideHighlightBorder"
+>
+  <div
+    className="leftContainer"
+  >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={true}
+    />
+    <JobTitle
+      job={
+        Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+          "careerLevel": "Entry Level",
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "employmentTerm": "Full Time",
+          "isExpired": false,
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "qualification": "Qualification Not Specified",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+          "workExperience": "3 Years of Experience",
+        }
+      }
+      trackLinkClicked={[Function]}
+    />
+    <Company
+      company={
+        Object {
+          "link": "/jobCard",
+          "name": "SEEK Asia",
+        }
+      }
+      trackLinkClicked={[Function]}
+    />
+    <div
+      className="flexRow"
+    >
+      <div
+        className="leftContent"
+      >
+        <Description
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
+        />
+        <SellingPoint
+          showSellingPoint={true}
+        />
+        <MainPoint
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyBanner={true}
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
+          trackLinkClicked={[Function]}
+        />
+        <ShelfLink
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          onClick={[Function]}
+          shelfSectionOpen={false}
+        />
+      </div>
+      <div
+        className="rightContent"
+      >
+        <CompanyLogo
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyLogo={false}
+        />
+        <CompanyPic
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyPic={false}
+        />
+      </div>
+    </div>
+    <ShelfSection
+      shelf={
+        Object {
+          "shelfLinks": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accountant",
+                },
+              ],
+              "label": "Job function",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accounting / Audit / Tax Services",
+                },
+              ],
+              "label": "Industry",
+            },
+          ],
+        }
+      }
+      showShelfSection={false}
+      trackLinkClicked={[Function]}
+    />
+  </div>
+</Card>
+`;
+
+exports[`JobCard render show company banner and isVariation  1`] = `
+<Card
+  className="container borderRoot sideHighlightBorder"
+>
+  <div
+    className="leftContainer"
+  >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={true}
+    />
+    <JobTitle
+      job={
+        Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+          "careerLevel": "Entry Level",
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "employmentTerm": "Full Time",
+          "isExpired": false,
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "qualification": "Qualification Not Specified",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+          "workExperience": "3 Years of Experience",
+        }
+      }
+      trackLinkClicked={[Function]}
+    />
+    <Company
+      company={
+        Object {
+          "link": "/jobCard",
+          "name": "SEEK Asia",
+        }
+      }
+      trackLinkClicked={[Function]}
+    />
+    <div
+      className="flexRow"
+    >
+      <div
+        className="leftContent"
+      >
+        <Description
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
+        />
+        <MainPoint
+          isVariation={true}
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyBanner={true}
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
+          trackLinkClicked={[Function]}
+        />
+        <SellingPoint
+          showSellingPoint={true}
+        />
+        <ShelfLink
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          mobileOnly={true}
+          onClick={[Function]}
+          shelfSectionOpen={false}
+        />
+      </div>
+      <div
+        className="rightContentWithBanner"
+      >
+        <CompanyLogo
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyLogo={false}
+        />
+        <CompanyPic
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyPic={false}
+        />
+        <ShelfLink
+          desktopOnly={true}
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          onClick={[Function]}
+          shelfSectionOpen={false}
+        />
+      </div>
+    </div>
+    <ShelfSection
+      shelf={
+        Object {
+          "shelfLinks": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accountant",
+                },
+              ],
+              "label": "Job function",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accounting / Audit / Tax Services",
+                },
+              ],
+              "label": "Industry",
+            },
+          ],
+        }
+      }
+      showShelfSection={false}
+      trackLinkClicked={[Function]}
+    />
+  </div>
+  <div
+    className="rightContainer"
+  >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      isVariation={true}
+      showCompanyBanner={true}
+    />
+    <IconList
+      className="structuredData"
+      list={
+        Array [
+          Object {
+            "content": "Entry Level",
+            "iconType": "careerLevel",
+          },
+          Object {
+            "content": "3 Years of Experience",
+            "iconType": "experience",
+          },
+          Object {
+            "content": "Qualification Not Specified",
+            "iconType": "education",
+          },
+          Object {
+            "content": "Full Time",
+            "iconType": "employmentType",
+          },
+        ]
+      }
+    />
+  </div>
+</Card>
+`;
+
+exports[`JobCard render show company banner and isVariation and isSplitView  1`] = `
+<Card
+  className="container borderRoot sideHighlightBorder"
+>
+  <div
+    className="leftContainer"
+  >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={true}
+    />
+    <JobTitle
+      job={
+        Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+          "careerLevel": "Entry Level",
+          "company": Object {
+            "link": "/jobCard",
+            "name": "SEEK Asia",
+          },
+          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+          "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+          "employmentTerm": "Full Time",
+          "isExpired": false,
+          "jobTitle": "Senior Software Engineer (6 months Contract)",
+          "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+          "locations": Array [
+            Object {
+              "link": "/jobCard",
+              "name": "Pahang",
+            },
+            Object {
+              "child": Object {
+                "child": Object {
+                  "name": "Near Leisure Mall",
+                },
+                "link": "/jobCard",
+                "name": "Cheras",
+              },
+              "link": "/jobCard",
+              "name": "Selangor",
+            },
+          ],
+          "postingDuration": "1 hour ago",
+          "qualification": "Qualification Not Specified",
+          "salary": "RM99999 - RM999999",
+          "shelf": Object {
+            "shelfLinks": Array [
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accountant",
+                  },
+                ],
+                "label": "Job function",
+              },
+              Object {
+                "items": Array [
+                  Object {
+                    "link": "/jobCard",
+                    "name": "Accounting / Audit / Tax Services",
+                  },
+                ],
+                "label": "Industry",
+              },
+            ],
+          },
+          "workExperience": "3 Years of Experience",
+        }
+      }
+      trackLinkClicked={[Function]}
+    />
+    <Company
+      company={
+        Object {
+          "link": "/jobCard",
+          "name": "SEEK Asia",
+        }
+      }
+      trackLinkClicked={[Function]}
+    />
+    <div
+      className="flexRow"
+    >
+      <div
+        className="leftContent"
+      >
+        <Description
+          description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
+          showDescription={false}
+        />
+        <MainPoint
+          isSplitView={true}
+          isVariation={true}
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyBanner={true}
+          showCompanyLogo={false}
+          showCompanyPic={false}
+          showDescription={false}
+          showHighlightedBg={false}
+          showSellingPoint={true}
+          trackLinkClicked={[Function]}
+        />
+        <SellingPoint
+          isSplitView={true}
+          showSellingPoint={true}
+        />
+        <ShelfLink
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          mobileOnly={false}
+          onClick={[Function]}
+          shelfSectionOpen={false}
+        />
+      </div>
+      <div
+        className="rightContent"
+      >
+        <CompanyLogo
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyLogo={false}
+        />
+        <CompanyPic
+          job={
+            Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
+              "careerLevel": "Entry Level",
+              "company": Object {
+                "link": "/jobCard",
+                "name": "SEEK Asia",
+              },
+              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
+              "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
+              "employmentTerm": "Full Time",
+              "isExpired": false,
+              "jobTitle": "Senior Software Engineer (6 months Contract)",
+              "jobUrl": "https://www-dev.jobstreet.com.my/en/job/20171002-3-senior-front-end-developer-update-x-2-6100835/origin/dev/sources/3?fr=J",
+              "locations": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Pahang",
+                },
+                Object {
+                  "child": Object {
+                    "child": Object {
+                      "name": "Near Leisure Mall",
+                    },
+                    "link": "/jobCard",
+                    "name": "Cheras",
+                  },
+                  "link": "/jobCard",
+                  "name": "Selangor",
+                },
+              ],
+              "postingDuration": "1 hour ago",
+              "qualification": "Qualification Not Specified",
+              "salary": "RM99999 - RM999999",
+              "shelf": Object {
+                "shelfLinks": Array [
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accountant",
+                      },
+                    ],
+                    "label": "Job function",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "link": "/jobCard",
+                        "name": "Accounting / Audit / Tax Services",
+                      },
+                    ],
+                    "label": "Industry",
+                  },
+                ],
+              },
+              "workExperience": "3 Years of Experience",
+            }
+          }
+          showCompanyPic={false}
+        />
+      </div>
+    </div>
+    <ShelfSection
+      shelf={
+        Object {
+          "shelfLinks": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accountant",
+                },
+              ],
+              "label": "Job function",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "link": "/jobCard",
+                  "name": "Accounting / Audit / Tax Services",
+                },
+              ],
+              "label": "Industry",
+            },
+          ],
+        }
+      }
+      showShelfSection={false}
+      trackLinkClicked={[Function]}
+    />
+  </div>
+</Card>
+`;
+
 exports[`JobCard render with trackLinkClicked 1`] = `
 <Card
   className="container borderRoot"
@@ -7,9 +1273,14 @@ exports[`JobCard render with trackLinkClicked 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -93,6 +1364,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -149,6 +1421,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -159,6 +1432,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -225,6 +1499,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -286,6 +1561,7 @@ exports[`JobCard render with trackLinkClicked 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -385,9 +1661,14 @@ exports[`JobCard should not render shelf section 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -450,6 +1731,7 @@ exports[`JobCard should not render shelf section 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -485,6 +1767,7 @@ exports[`JobCard should not render shelf section 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -495,6 +1778,7 @@ exports[`JobCard should not render shelf section 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -540,6 +1824,7 @@ exports[`JobCard should not render shelf section 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -580,6 +1865,7 @@ exports[`JobCard should not render shelf section 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -635,9 +1921,14 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -711,6 +2002,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -757,6 +2049,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -767,6 +2060,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -823,6 +2117,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -874,6 +2169,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -953,9 +2249,14 @@ exports[`JobCard should pass through viewed prop 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -1040,6 +2341,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1096,6 +2398,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -1107,6 +2410,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1173,6 +2477,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1234,6 +2539,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1333,9 +2639,14 @@ exports[`JobCard should render company with bold keyword 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -1421,6 +2732,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1478,6 +2790,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
             }
           }
           keyword="Seek"
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -1488,6 +2801,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1554,6 +2868,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1615,6 +2930,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1714,10 +3030,15 @@ exports[`JobCard should render job title component 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       TitleLinkComponent={[Function]}
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -1802,6 +3123,7 @@ exports[`JobCard should render job title component 1`] = `
           TitleLinkComponent={[Function]}
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1858,6 +3180,7 @@ exports[`JobCard should render job title component 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -1868,6 +3191,7 @@ exports[`JobCard should render job title component 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1934,6 +3258,7 @@ exports[`JobCard should render job title component 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -1995,6 +3320,7 @@ exports[`JobCard should render job title component 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2094,9 +3420,14 @@ exports[`JobCard should render job title with bold keyword 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -2182,6 +3513,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2239,6 +3571,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
             }
           }
           keyword="Seek Senior Engineer"
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -2249,6 +3582,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2315,6 +3649,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2376,6 +3711,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2475,9 +3811,14 @@ exports[`JobCard should render jobStreet standout style 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -2561,6 +3902,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2617,6 +3959,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -2627,6 +3970,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2693,6 +4037,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2754,6 +4099,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2853,9 +4199,14 @@ exports[`JobCard should render jobsDB default style 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -2939,6 +4290,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -2995,6 +4347,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -3005,6 +4358,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3071,6 +4425,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3132,6 +4487,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3231,10 +4587,15 @@ exports[`JobCard should render only applied badge, when both applied and expired
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       applied={true}
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -3319,6 +4680,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
           applied={true}
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3375,6 +4737,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -3385,6 +4748,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3451,6 +4815,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3512,6 +4877,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -3611,9 +4977,14 @@ exports[`JobCard should render plain company label 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "name": "Seek Asia",
@@ -3695,6 +5066,7 @@ exports[`JobCard should render plain company label 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "name": "Seek Asia",
@@ -3750,6 +5122,7 @@ exports[`JobCard should render plain company label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -3760,6 +5133,7 @@ exports[`JobCard should render plain company label 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "name": "Seek Asia",
@@ -3825,6 +5199,7 @@ exports[`JobCard should render plain company label 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "name": "Seek Asia",
@@ -3885,6 +5260,7 @@ exports[`JobCard should render plain company label 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "name": "Seek Asia",
@@ -3983,9 +5359,14 @@ exports[`JobCard should render selected style 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -4070,6 +5451,7 @@ exports[`JobCard should render selected style 1`] = `
           isSelected={true}
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4126,6 +5508,7 @@ exports[`JobCard should render selected style 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -4136,6 +5519,7 @@ exports[`JobCard should render selected style 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4202,6 +5586,7 @@ exports[`JobCard should render selected style 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4263,6 +5648,7 @@ exports[`JobCard should render selected style 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4362,9 +5748,14 @@ exports[`JobCard should render tag links 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -4458,6 +5849,7 @@ exports[`JobCard should render tag links 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4524,6 +5916,7 @@ exports[`JobCard should render tag links 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -4534,6 +5927,7 @@ exports[`JobCard should render tag links 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4610,6 +6004,7 @@ exports[`JobCard should render tag links 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4681,6 +6076,7 @@ exports[`JobCard should render tag links 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -4800,9 +6196,14 @@ exports[`JobCard should render with Classified in grey label 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "classifiedLabel": "Classified",
           "company": Object {
@@ -4887,6 +6288,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "classifiedLabel": "Classified",
               "company": Object {
@@ -4944,6 +6346,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -4954,6 +6357,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "classifiedLabel": "Classified",
               "company": Object {
@@ -5021,6 +6425,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "classifiedLabel": "Classified",
               "company": Object {
@@ -5083,6 +6488,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "classifiedLabel": "Classified",
               "company": Object {
@@ -5183,10 +6589,15 @@ exports[`JobCard should render with applied badge 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       applied={true}
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -5271,6 +6682,7 @@ exports[`JobCard should render with applied badge 1`] = `
           applied={true}
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -5327,6 +6739,7 @@ exports[`JobCard should render with applied badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -5337,6 +6750,7 @@ exports[`JobCard should render with applied badge 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -5403,6 +6817,7 @@ exports[`JobCard should render with applied badge 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -5464,6 +6879,7 @@ exports[`JobCard should render with applied badge 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -5563,9 +6979,14 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "isPrivate": true,
@@ -5649,6 +7070,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "isPrivate": true,
@@ -5705,6 +7127,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -5715,6 +7138,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "isPrivate": true,
@@ -5781,6 +7205,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "isPrivate": true,
@@ -5842,6 +7267,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "isPrivate": true,
@@ -5941,9 +7367,14 @@ exports[`JobCard should render with default props 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -6027,6 +7458,7 @@ exports[`JobCard should render with default props 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6083,6 +7515,7 @@ exports[`JobCard should render with default props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -6093,6 +7526,7 @@ exports[`JobCard should render with default props 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6159,6 +7593,7 @@ exports[`JobCard should render with default props 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6220,6 +7655,7 @@ exports[`JobCard should render with default props 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6319,9 +7755,14 @@ exports[`JobCard should render with expired badge 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -6405,6 +7846,7 @@ exports[`JobCard should render with expired badge 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6461,6 +7903,7 @@ exports[`JobCard should render with expired badge 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -6471,6 +7914,7 @@ exports[`JobCard should render with expired badge 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6537,6 +7981,7 @@ exports[`JobCard should render with expired badge 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6598,6 +8043,7 @@ exports[`JobCard should render with expired badge 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6697,9 +8143,14 @@ exports[`JobCard should render with selling points props 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -6795,6 +8246,7 @@ exports[`JobCard should render with selling points props 1`] = `
         <MainPoint
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6856,6 +8308,7 @@ exports[`JobCard should render with selling points props 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -6866,6 +8319,7 @@ exports[`JobCard should render with selling points props 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -6937,6 +8391,7 @@ exports[`JobCard should render with selling points props 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -7003,6 +8458,7 @@ exports[`JobCard should render with selling points props 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -7107,9 +8563,14 @@ exports[`JobCard should render without border 1`] = `
   <div
     className="leftContainer"
   >
+    <CompanyBanner
+      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
+      showCompanyBanner={false}
+    />
     <JobTitle
       job={
         Object {
+          "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevel": "Entry Level",
           "company": Object {
             "link": "/jobCard",
@@ -7194,6 +8655,7 @@ exports[`JobCard should render without border 1`] = `
           borderlessRoot={true}
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -7250,6 +8712,7 @@ exports[`JobCard should render without border 1`] = `
               "workExperience": "3 Years of Experience",
             }
           }
+          showCompanyBanner={false}
           showCompanyLogo={false}
           showCompanyPic={false}
           showDescription={false}
@@ -7260,6 +8723,7 @@ exports[`JobCard should render without border 1`] = `
         <ShelfLink
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -7326,6 +8790,7 @@ exports[`JobCard should render without border 1`] = `
         <CompanyLogo
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
@@ -7387,6 +8852,7 @@ exports[`JobCard should render without border 1`] = `
         <CompanyPic
           job={
             Object {
+              "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevel": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
