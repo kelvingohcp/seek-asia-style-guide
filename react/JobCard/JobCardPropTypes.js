@@ -40,6 +40,7 @@ export const JobCardPropTypes = {
   isSelected: PropTypes.bool,
   isSplitView: PropTypes.bool,
   isVariation: PropTypes.bool,
+  enableBrandedAd: PropTypes.bool,
   job: PropTypes.shape(JobType).isRequired,
   jobAdType: PropTypes.string,
   keyword: PropTypes.string,

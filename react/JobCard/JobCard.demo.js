@@ -16,8 +16,8 @@ const booleanProps = [
     prop: 'showDescription'
   },
   {
-    label: 'Show Company Banner',
-    prop: 'showCompanyBanner'
+    label: 'Enable branded Ad',
+    prop: 'enableBrandedAd'
   },
   {
     label: 'Hide Salary',
@@ -183,7 +183,7 @@ export default {
     showHighlightedBg: false,
     showSellingPoint: false,
     showDescription: false,
-    showCompanyBanner: false,
+    enableBrandedAd: false,
     onBookmarkClick: () => {
       alert('bookmark clicked'); // eslint-disable-line no-alert
     },

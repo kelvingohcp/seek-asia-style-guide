@@ -71,7 +71,7 @@ const defaultProps = {
   showHighlightedBg: false,
   showSellingPoint: true,
   showDescription: false,
-  showCompanyBanner: false
+  enableBrandedAd: false
 };
 
 describe('JobCard', () => {
@@ -298,19 +298,19 @@ describe('JobCard', () => {
   });
 
   it('render show company banner', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} showCompanyBanner={true} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
   it('render show company banner and isVariation ', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} showCompanyBanner={true} isVariation={true} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
   it('render show company banner and isVariation and isSplitView ', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} showCompanyBanner={true} isVariation={true} isSplitView={true} />);
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} isSplitView={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
