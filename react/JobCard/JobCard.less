@@ -3,6 +3,8 @@
 @job-card-label-indent: @grid-base;
 @job-card-section-bottom-space: @grid-base * 2;
 @job-card-right-area-width: @grid-base * 66;
+@max-banner-height: @grid-row-height * 22;
+@min-height-right-content: @grid-row-height * 16;
 
 .text {
   color: @saGrey1;
@@ -73,7 +75,14 @@
   .flexCol();
   align-items: flex-end;
   justify-content: space-between;
-  min-height: @grid-row-height * 16;
+  min-height: @min-height-right-content;
+}
+
+.rightContentWithBanner {
+  .rightContent();
+  @media @desktop {
+    min-height: @min-height-right-content + @max-banner-height;
+  }
 }
 
 .structuredData {
@@ -146,6 +155,10 @@
   }
 }
 
+.sideHighlightBorder {
+  border-left: @grid-base solid @dbBrand;
+}
+
 .companyPic {
   max-width: 100%;
   max-height: 100%;
@@ -157,6 +170,21 @@
 
 .companyLogo {
   max-width: @grid-base * 30;
+}
+
+.companyBannerOnMobile {
+  width: 100%;
+  @media @desktop {
+    display: none;
+  }
+}
+
+.companyBannerOnDesktop {
+  display: none;
+  @media @desktop {
+    display: inline;
+    max-height: @max-banner-height;
+  }
 }
 
 .bookmarkButton {

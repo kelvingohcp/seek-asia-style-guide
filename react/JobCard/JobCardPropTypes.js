@@ -29,7 +29,8 @@ export const JobType = {
   qualification: PropTypes.string,
   careerLevel: PropTypes.string,
   workExperience: PropTypes.string,
-  employmentTerm: PropTypes.string
+  employmentTerm: PropTypes.string,
+  bannerUrl: PropTypes.string
 };
 
 export const JobCardPropTypes = {
@@ -39,6 +40,7 @@ export const JobCardPropTypes = {
   isSelected: PropTypes.bool,
   isSplitView: PropTypes.bool,
   isVariation: PropTypes.bool,
+  enableBrandedAd: PropTypes.bool,
   job: PropTypes.shape(JobType).isRequired,
   jobAdType: PropTypes.string,
   keyword: PropTypes.string,

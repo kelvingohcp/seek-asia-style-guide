@@ -145,18 +145,36 @@ SellingPoint.propTypes = {
   showSellingPoint: JobCardPropTypes.showSellingPoint
 };
 
-const CompanyLogo = ({ job, showCompanyLogo }) => {
-  return showCompanyLogo ?
-    <img className={styles.companyLogo} src={job.companyLogoUrl} /> :
+const CompanyLogo = ({ companyLogoUrl, showCompanyLogo }) => {
+  return companyLogoUrl && showCompanyLogo ?
+    <img className={styles.companyLogo} src={companyLogoUrl} /> :
     <div className={styles.companyLogo} />;
 };
 CompanyLogo.propTypes = {
-  job: JobCardPropTypes.job,
+  companyLogoUrl: JobType.companyLogoUrl,
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-const CompanyPic = ({ job, showCompanyPic }) => {
-  if (!(showCompanyPic && job.companyPictureUrl)) {
+const CompanyBanner = ({ bannerUrl, enableBrandedAd, isVariation }) => {
+  return enableBrandedAd && bannerUrl ?
+    <img
+      className={
+        classnames({
+          [styles.companyBannerOnMobile]: !isVariation,
+          [styles.companyBannerOnDesktop]: isVariation
+        })
+      }
+      src={bannerUrl}
+    /> : null;
+};
+CompanyBanner.propTypes = {
+  bannerUrl: JobType.bannerUrl,
+  enableBrandedAd: JobCardPropTypes.enableBrandedAd,
+  isVariation: JobCardPropTypes.isVariation
+};
+
+const CompanyPic = ({ companyPictureUrl, showCompanyPic }) => {
+  if (!(showCompanyPic && companyPictureUrl)) {
     return null;
   }
 
@@ -164,13 +182,13 @@ const CompanyPic = ({ job, showCompanyPic }) => {
     <div className={styles.companyPicWrapper}>
       <img
         className={styles.companyPic}
-        src={job.companyPictureUrl}
+        src={companyPictureUrl}
       />
     </div>
   );
 };
 CompanyPic.propTypes = {
-  job: JobCardPropTypes.job,
+  companyPictureUrl: JobType.companyPictureUrl,
   showCompanyPic: JobCardPropTypes.showCompanyPic
 };
 
@@ -203,6 +221,7 @@ export default class JobCard extends React.Component {
       isSelected,
       isSplitView,
       isVariation,
+      enableBrandedAd,
       job,
       keyword,
       LinkComponent,
@@ -225,7 +244,8 @@ export default class JobCard extends React.Component {
         className={classnames(styles.container, {
           [styles.borderRoot]: !borderlessRoot,
           [styles.highlightedBg]: showHighlightedBg,
-          [styles.selected]: isSelected
+          [styles.selected]: isSelected,
+          [styles.sideHighlightBorder]: enableBrandedAd
         })}>
         <div className={styles.leftContainer}>
           {showSavedStatus && (
@@ -233,6 +253,7 @@ export default class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
             </Button>
           )}
+          <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
           <JobTitle
             {
             ...{
@@ -259,9 +280,17 @@ export default class JobCard extends React.Component {
                 onClick={this.handleShelfSectionToggle}
               />
             </div>
-            <div className={styles.rightContent}>
-              <CompanyLogo job={job} showCompanyLogo={showCompanyLogo} />
-              <CompanyPic job={job} showCompanyPic={showCompanyPic} />
+            <div
+              className={
+                classnames(
+                  {
+                    [styles.rightContent]: !(enableBrandedAd && isVariation && !isSplitView),
+                    [styles.rightContentWithBanner]: enableBrandedAd && isVariation && !isSplitView
+                  }
+                )
+              }>
+              <CompanyLogo companyLogoUrl={job.companyLogoUrl} showCompanyLogo={showCompanyLogo} />
+              <CompanyPic companyPictureUrl={job.companyPictureUrl} showCompanyPic={showCompanyPic} />
               {isVariation && !isSplitView &&
                 <ShelfLink
                   job={job}
@@ -281,6 +310,7 @@ export default class JobCard extends React.Component {
         {
           isVariation && !isSplitView &&
           <div className={styles.rightContainer}>
+            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} isVariation={isVariation} />
             <IconList
               className={styles.structuredData}
               list={[

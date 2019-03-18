@@ -39,6 +39,7 @@ const defaultJob = {
   workExperience: '3 Years of Experience',
   employmentTerm: 'Full Time',
   salary: 'RM99999 - RM999999',
+  bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png',
   shelf: {
     shelfLinks: [
       {
@@ -69,7 +70,8 @@ const defaultProps = {
   showCompanyPic: false,
   showHighlightedBg: false,
   showSellingPoint: true,
-  showDescription: false
+  showDescription: false,
+  enableBrandedAd: false
 };
 
 describe('JobCard', () => {
@@ -291,6 +293,24 @@ describe('JobCard', () => {
   it('render with trackLinkClicked', () => {
     const spy = jest.fn();
     const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} trackLinkClicked={spy} />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('render show company banner', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('render show company banner and isVariation ', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('render show company banner and isVariation and isSplitView ', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} isSplitView={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
