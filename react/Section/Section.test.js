@@ -2,11 +2,13 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Section, { TONE, LEVEL } from './Section';
 
+jest.mock('../StyleGuideProvider/StyleGuideProvider');
+
 const renderSection = props => shallow(
   <Section {...props} >
     Test content
   </Section>
-);
+).dive();
 
 describe('Section:', () => {
   describe('types:', () => {

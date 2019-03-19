@@ -13,7 +13,8 @@ import CriticalIcon from '../CriticalIcon/CriticalIcon';
 import HelpIcon from '../HelpIcon/HelpIcon';
 import CrossIcon from '../CrossIcon/CrossIcon';
 import { TONE, LEVEL } from '../Section/Section';
-import { isJobsDB, isJobStreet } from '../private/tenant';
+import getTenant from '../private/tenant';
+import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
 
 const ICONS = {
   [TONE.POSITIVE]: TickCircleIcon,
@@ -52,7 +53,7 @@ export default class Alert extends Component {
       <div className={styles.alert}>
         {(!hideIcon && Icon) && <Icon className={styles.icon} />}
         <div className={styles.text}>
-          { message && (<Text raw baseline={false}>{message}</Text>)}
+          {message && (<Text raw baseline={false}>{message}</Text>)}
           {children}
         </div>
         {onClose && (
@@ -71,26 +72,32 @@ export default class Alert extends Component {
 
     const isTertiary = level === LEVEL.TERTIARY;
 
-    const rootClasses = classnames({
-      [styles.root]: true,
-      [styles[tone]]: tone && isTertiary,
-      [styles.jobsDB]: isJobsDB,
-      [styles.jobStreet]: isJobStreet
-    });
-
-    return isTertiary ? (
-      <div className={rootClasses} {...additionalProps}>
-        {this.renderContents()}
-      </div>
-    ) : (
-      <Section
-        tone={tone}
-        level={level}
-        pullout={pullout}
-        className={rootClasses}
-        {...additionalProps}>
-        {this.renderContents()}
-      </Section>
+    return (
+      <StyleGuideContext.Consumer>
+        {({ tenant }) => {
+          const { isJobsDB, isJobStreet } = getTenant(tenant);
+          const rootClasses = classnames({
+            [styles.root]: true,
+            [styles[tone]]: tone && isTertiary,
+            [styles.jobsDB]: isJobsDB,
+            [styles.jobStreet]: isJobStreet
+          });
+          return isTertiary ? (
+            <div className={rootClasses} {...additionalProps}>
+              {this.renderContents()}
+            </div>
+          ) : (
+            <Section
+              tone={tone}
+              level={level}
+              pullout={pullout}
+              className={rootClasses}
+              {...additionalProps}>
+              {this.renderContents()}
+            </Section>
+          );
+        }}
+      </StyleGuideContext.Consumer>
     );
   }
 }

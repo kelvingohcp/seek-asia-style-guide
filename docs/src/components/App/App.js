@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
-import { StyleGuideProvider } from 'seek-asia-style-guide/react';
+import { StyleGuideProvider, Constants } from 'seek-asia-style-guide/react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from 'Home/Home';
@@ -27,27 +27,37 @@ const demoRoutes = demoSpecs.map(demoSpec => {
   return <Route key={demoSpec.title} path={demoSpec.route} component={DemoRoute} />;
 });
 
-const tenant = process.env.APP_TENANT;
+export default class App extends Component {
+  state = {
+    tenant: Constants.SEEKASIA
+  };
 
-export default () => (
-  <StyleGuideProvider fullScreen={true} enableWebFont={true}>
-    <Header tenant={tenant} country="hk" />
-    <Route path="/" exact component={Home} />
-    <Route path="/typography" component={Typography} />
-    <Route path="/Colors" component={Colors} />
-    <Route path="/page-layout" component={PageLayout} />
-    <Route path="/playground" component={Playground} />
-    <Route
-      path="/sandbox"
-      render={props => (
-        <LoadSandbox {...props} brandedComponents={{ JobsDBFooter, JobsDBHeader, JobStreetHeader, JobStreetFooter }} />
-      )}
-    />
-    <Route path="/sketch-exports" component={SketchExports} />
-    { demoRoutes }
-    <Switch>
-      <Route path="/sandbox" render={() => null} />
-      <Route component={Footer} />
-    </Switch>
-  </StyleGuideProvider>
-);
+  changeTenant = tenant => {
+    this.setState({ tenant });
+  }
+
+  render() {
+    const { tenant } = this.state;
+    return (
+      <StyleGuideProvider fullScreen={true} enableWebFont={true} tenant={tenant} >
+        <Header country="hk" changeTenant={this.changeTenant} />
+        <Route path="/" exact component={Home} />
+        <Route path="/typography" component={Typography} />
+        <Route path="/Colors" component={Colors} />
+        <Route path="/page-layout" component={PageLayout} />
+        <Route path="/playground" component={Playground} />
+        <Route
+          path="/sandbox"
+          render={props => (
+            <LoadSandbox {...props} brandedComponents={{ JobsDBFooter, JobsDBHeader, JobStreetHeader, JobStreetFooter }} />
+          )}
+        />
+        <Route path="/sketch-exports" component={SketchExports} />
+        {demoRoutes}
+        <Switch>
+          <Route path="/sandbox" render={() => null} />
+          <Route component={Footer} />
+        </Switch>
+      </StyleGuideProvider>);
+  }
+}

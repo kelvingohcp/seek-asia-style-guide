@@ -1,17 +1,20 @@
 import logoMarkup from './logo.svg';
 import jobsDBLogoMarkup from './jobsdb_logo.svg';
 import jobStreetLogoMarkup from './jobstreet_logo.svg';
+import { Constants } from 'seek-asia-style-guide/react';
 
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import classnames from 'classnames';
 
+const { JOBSTREET, JOBSDB } = Constants;
+
 export default function Logo({ svgClassName, tenant, ...restProps }) {
   let brandedlogoMarkup = logoMarkup;
-  if (tenant === 'jobsDB') {
+  if (tenant === JOBSDB) {
     brandedlogoMarkup = jobsDBLogoMarkup;
-  } else if (tenant === 'jobStreet') {
+  } else if (tenant === JOBSTREET) {
     brandedlogoMarkup = jobStreetLogoMarkup;
   }
   const svgWithClasses = brandedlogoMarkup

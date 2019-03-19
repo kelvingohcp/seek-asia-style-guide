@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import styles from './Section.less';
-import { isJobsDB, isJobStreet } from '../private/tenant';
+import getTenant from '../private/tenant';
+import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
 
 export const TONE = {
   POSITIVE: 'positive',
@@ -29,21 +30,27 @@ export default function Section({
   ...restProps
 }) {
   return (
-    <div
-      {...restProps}
-      className={classnames({
-        [className]: className,
-        [styles.root]: true,
-        [styles.header]: header,
-        [styles.pullout]: pullout,
-        [styles.slim]: slim,
-        [styles[tone]]: tone,
-        [styles[level]]: level,
-        [styles.jobsDB]: isJobsDB,
-        [styles.jobStreet]: isJobStreet
-      })}>
-      {children}
-    </div>
+    <StyleGuideContext.Consumer>
+      {({ tenant }) => {
+        const { isJobsDB, isJobStreet } = getTenant(tenant);
+        const classesName = classnames({
+          [className]: className,
+          [styles.root]: true,
+          [styles.header]: header,
+          [styles.pullout]: pullout,
+          [styles.slim]: slim,
+          [styles[tone]]: tone,
+          [styles[level]]: level,
+          [styles.jobsDB]: isJobsDB,
+          [styles.jobStreet]: isJobStreet
+        });
+        return (<div
+          {...restProps}
+          className={classesName}>
+          {children}
+        </div>);
+      }}
+    </StyleGuideContext.Consumer>
   );
 }
 

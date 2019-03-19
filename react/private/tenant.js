@@ -1,3 +1,6 @@
-export const tenant = process.env.APP_TENANT;
-export const isJobStreet = tenant === 'jobStreet';
-export const isJobsDB = tenant === 'jobsDB';
+import Constants from '../Constants/Constants';
+const { JOBSTREET, JOBSDB } = Constants;
+export default tenant => ({
+  isJobStreet: tenant === JOBSTREET,
+  isJobsDB: tenant === JOBSDB
+});

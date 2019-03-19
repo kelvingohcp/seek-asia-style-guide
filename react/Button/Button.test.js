@@ -2,10 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Button from './Button';
 
+jest.mock('../StyleGuideProvider/StyleGuideProvider');
+
 describe('Button:', () => {
   describe('color variants:', () => {
     it('should render callToAction button', () => {
-      const wrapper = shallow(<Button color="callToAction">SEEK</Button>);
+      const wrapper = shallow(<Button color="callToAction">SEEK</Button>).dive();
       expect(wrapper).toMatchSnapshot();
     });
 
@@ -14,7 +16,7 @@ describe('Button:', () => {
         <Button isJobsDB color="callToAction">
           SEEK
         </Button>
-      );
+      ).dive();
       expect(wrapper).toMatchSnapshot();
     });
 
@@ -23,22 +25,22 @@ describe('Button:', () => {
         <Button isJobStreet color="callToAction">
           SEEK
         </Button>
-      );
+      ).dive();
       expect(wrapper).toMatchSnapshot();
     });
 
     it('should render hyperlink color button', () => {
-      const wrapper = shallow(<Button color="hyperlink">SEEK</Button>);
+      const wrapper = shallow(<Button color="hyperlink">SEEK</Button>).dive();
       expect(wrapper).toMatchSnapshot();
     });
 
     it('should render primary button', () => {
-      const wrapper = shallow(<Button color="primary">SEEK</Button>);
+      const wrapper = shallow(<Button color="primary">SEEK</Button>).dive();
       expect(wrapper).toMatchSnapshot();
     });
 
     it('should render secondary button', () => {
-      const wrapper = shallow(<Button color="secondary">SEEK</Button>);
+      const wrapper = shallow(<Button color="secondary">SEEK</Button>).dive();
       expect(wrapper).toMatchSnapshot();
     });
   });
@@ -48,7 +50,7 @@ describe('Button:', () => {
       <Button color="callToAction">
         <h5>SEEK</h5>
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -58,7 +60,7 @@ describe('Button:', () => {
         <span>SEEK</span>
         <span>AU</span>
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -67,7 +69,7 @@ describe('Button:', () => {
       <Button color="hyperlink" component="a" href="https://www.seek.com.au">
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -76,7 +78,7 @@ describe('Button:', () => {
       <Button color="callToAction" className="foo">
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -85,7 +87,7 @@ describe('Button:', () => {
       <Button color="callToAction" compact>
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -95,7 +97,7 @@ describe('Button:', () => {
       <Button color="callToAction" component={CustomComponent}>
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -104,7 +106,7 @@ describe('Button:', () => {
       <Button color="callToAction" disabled>
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -113,7 +115,7 @@ describe('Button:', () => {
       <Button component="div" color="callToAction">
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -122,7 +124,7 @@ describe('Button:', () => {
       <Button color="callToAction" isSelected>
         SEEK
       </Button>
-    );
+    ).dive();
     expect(wrapper).toMatchSnapshot();
   });
 });

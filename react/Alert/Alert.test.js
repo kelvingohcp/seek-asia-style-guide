@@ -3,6 +3,8 @@ import { shallow } from 'enzyme';
 import Alert from './Alert';
 import { TONE, LEVEL } from '../Section/Section';
 
+jest.mock('../StyleGuideProvider/StyleGuideProvider');
+
 const renderAlert = props => shallow(
   <Alert
     tone={TONE.POSITIVE}
@@ -10,7 +12,7 @@ const renderAlert = props => shallow(
     message="Test message"
     {...props}
   />
-);
+).dive();
 
 describe('Alert:', () => {
   describe('types:', () => {
@@ -63,7 +65,7 @@ describe('Alert:', () => {
   });
 
   it('should render a close button', () => {
-    const alert = renderAlert({ onClose: () => {} });
+    const alert = renderAlert({ onClose: () => { } });
     expect(alert).toMatchSnapshot();
   });
 

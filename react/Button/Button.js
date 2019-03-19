@@ -2,7 +2,8 @@ import styles from './Button.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import * as tenant from '../private/tenant';
+import getTenant from '../private/tenant';
+import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
 
 export default class Button extends Component {
   static displayName = 'Button';
@@ -47,24 +48,30 @@ export default class Button extends Component {
   render() {
     const { color, compact, className, children, component, disabled, isJobsDB, isJobStreet, isSelected, ...restProps } = this.props;
 
-    const combinedProps = {
-      className: classnames(styles.root, className, {
-        [styles.compact]: compact,
-        [styles.disabled]: disabled,
-        [styles.jobsDB]: isJobsDB || tenant.isJobsDB,
-        [styles.jobStreet]: isJobStreet || tenant.isJobStreet,
-        [styles.root_callToAction]: color === 'callToAction',
-        [styles.root_hyperlink]: color === 'hyperlink',
-        [styles.root_primary]: color === 'primary',
-        [styles.root_secondary]: color === 'secondary',
-        [styles.root_tertiary]: color === 'tertiary',
-        [styles.root_ghost_white]: color === 'ghostWhite',
-        [styles.selected]: isSelected
-      }),
-      ref: this.storeButtonReference,
-      ...restProps
-    };
-
-    return React.createElement(component, combinedProps, children);
+    return (
+      <StyleGuideContext.Consumer>
+        { ({ tenant }) => {
+          const appTenant = getTenant(tenant);
+          const combinedProps = {
+            className: classnames(styles.root, className, {
+              [styles.compact]: compact,
+              [styles.disabled]: disabled,
+              [styles.jobsDB]: isJobsDB || appTenant.isJobsDB,
+              [styles.jobStreet]: isJobStreet || appTenant.isJobStreet,
+              [styles.root_callToAction]: color === 'callToAction',
+              [styles.root_hyperlink]: color === 'hyperlink',
+              [styles.root_primary]: color === 'primary',
+              [styles.root_secondary]: color === 'secondary',
+              [styles.root_tertiary]: color === 'tertiary',
+              [styles.root_ghost_white]: color === 'ghostWhite',
+              [styles.selected]: isSelected
+            }),
+            ref: this.storeButtonReference,
+            ...restProps
+          };
+          return React.createElement(component, combinedProps, children);
+        }}
+      </StyleGuideContext.Consumer>
+    );
   }
 }

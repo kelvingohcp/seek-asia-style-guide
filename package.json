@@ -9,8 +9,6 @@
   "scripts": {
     "start": "BASE_HREF=/ node docs/server",
     "start-standalone": "IS_STANDALONE=true BASE_HREF=/ node docs/server",
-    "start-jobsdb": "BASE_HREF=/ node docs/server -t jobsDB",
-    "start-jobstreet": "BASE_HREF=/ node docs/server -t jobStreet",
     "start-in-window": "node docs/server",
     "test": "npm run test-unit && npm run lint && npm run build && npm run html-sketchapp",
     "test-unit": "BABEL_ENV=test jest --config ./jest.config.json",
@@ -162,7 +160,7 @@
     "stylelint": "^8.2.0",
     "stylelint-config-css-modules": "^1.2.0",
     "stylelint-config-standard": "^18.2.0",
-    "superstatic": "^4.0.3",
+    "superstatic": "^6.0.4",
     "surge": "^0.20.1",
     "svgo": "^1.0.5",
     "svgo-loader": "^2.0.0",
