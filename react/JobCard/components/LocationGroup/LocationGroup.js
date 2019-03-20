@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './LocationGroup.less';
 import defaultLink from '../Link/Link';
 import { trackLinkType } from '../../JobCard';
+import isEmpty from 'lodash/isEmpty';
 
 export const LocationsPropTypes = PropTypes.arrayOf(PropTypes.shape({
   name: PropTypes.string,
@@ -32,6 +33,10 @@ const renderLocation = ({ link, name, title, child, LinkComponent, showShortened
 };
 
 const LocationGroup = ({ locations, LinkComponent = defaultLink, showShortenedLocation, trackLinkClicked }) => {
+  if (isEmpty(locations)) {
+    return null;
+  }
+
   return locations.map((location, index) =>
     renderLocation({ ...location, LinkComponent, showShortenedLocation, key: index, trackLinkClicked })
   ).reduce((prev, curr) => [prev, ', ', ...curr]);

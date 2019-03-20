@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`JobCard - LocationGroup should not error if locations is empty 1`] = `""`;
+
 exports[`JobCard - LocationGroup should render correctly 1`] = `
 Array [
   <Link

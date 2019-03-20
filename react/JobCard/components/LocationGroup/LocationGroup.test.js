@@ -25,6 +25,11 @@ const defaultLocations = [
 ];
 
 describe('JobCard - LocationGroup', () => {
+  it('should not error if locations is empty', () => {
+    const wrapper = shallow(<LocationGroup locations={[]} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render correctly', () => {
     const wrapper = shallow(<LocationGroup locations={defaultLocations} />);
     expect(wrapper).toMatchSnapshot();
