@@ -20,7 +20,9 @@ jobs:
      steps:
        - checkout
        - run: npm install
-       - run: npm run build
+       - run: 
+          command: npm run build
+              timeout: 1200
        - run: npm run deploy-surge -- -d seek-asia-style-guide--$CIRCLE_SHA1.surge.sh
        - run: npm run post-commit-status
   deploy:
@@ -32,7 +34,9 @@ jobs:
       - run: npm install
       - run: git config --global user.name "Circle-CI";
       - run: git config --global user.email "srp-dev@seekasia.com";
-      - run: npm run build-gh-pages
+      - run: 
+          command: npm run build-gh-pages
+              timeout: 1200
       - run: npm run deploy-gh-pages
       - run: npm run semantic-release
 workflows:
