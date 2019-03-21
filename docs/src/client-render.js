@@ -8,31 +8,44 @@ import 'core-js/fn/string/includes';
 import 'core-js/fn/string/starts-with';
 import 'core-js/fn/object/get-own-property-symbols';
 
+// import React from 'react';
+// import { hydrate, render } from 'react-dom';
+// import { AppContainer } from 'react-hot-loader';
+// import BrowserRouter from './BrowserRouter';
+
+// const appElement = document.getElementById('app');
+
+// const renderMethod = module.hot ? render : hydrate;
+
+// renderMethod(
+//   <AppContainer>
+//     <BrowserRouter />
+//   </AppContainer>,
+//   appElement
+// );
+
+// if (module.hot) {
+//   module.hot.accept('./BrowserRouter', () => {
+//     const NextBrowserRouter = require('./BrowserRouter').default;
+
+//     render(
+//       <AppContainer>
+//         <NextBrowserRouter />
+//       </AppContainer>,
+//       appElement
+//     );
+//   });
+// }
+
+
 import React from 'react';
-import { hydrate, render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import BrowserRouter from './BrowserRouter';
+import { hydrate } from 'react-dom';
 
-const appElement = document.getElementById('app');
+import App from './components/App/App';
 
-const renderMethod = module.hot ? render : hydrate;
-
-renderMethod(
-  <AppContainer>
-    <BrowserRouter />
-  </AppContainer>,
-  appElement
-);
-
-if (module.hot) {
-  module.hot.accept('./BrowserRouter', () => {
-    const NextBrowserRouter = require('./BrowserRouter').default;
-
-    render(
-      <AppContainer>
-        <NextBrowserRouter />
-      </AppContainer>,
-      appElement
-    );
-  });
-}
+export default () => {
+  hydrate(
+    <App />,
+    document.getElementById('app'),
+  );
+};

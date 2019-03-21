@@ -1,17 +1,31 @@
 import React from 'react';
-import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
-import App from 'App/App';
+import { renderToString } from 'react-dom/server';
+import App from './components/App/App';
 
-const baseHref = process.env.BASE_HREF || '/';
+export default {
+  renderApp: ({ SkuProvider, route }) =>
+    renderToString(
+      <SkuProvider>
+        <StaticRouter location={route} context={{}}>
+          <App  />
+        </StaticRouter>
+      </SkuProvider>,
+    ),
 
-// Static site renderer
-export default ({ path, template }) => {
-  const html = renderToString(
-    <StaticRouter location={path} context={{}}>
-      <App />
-    </StaticRouter>
-  );
-
-  return template({ html, baseHref });
+  renderDocument: ({ app, bodyTags, headTags }) => `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>My Awesome Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        ${headTags}
+      </head>
+      <body>
+        <div id="app">${app}</div>
+        ${bodyTags}
+      </body>
+    </html>
+  `,
 };

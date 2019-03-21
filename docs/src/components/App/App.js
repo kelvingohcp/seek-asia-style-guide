@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
-import { StyleGuideProvider, Constants } from 'seek-asia-style-guide/react';
+import { StyleGuideProvider, Constants } from '../../../../react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from 'Home/Home';
