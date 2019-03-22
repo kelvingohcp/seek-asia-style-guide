@@ -276,6 +276,16 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render with viewed badge', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} viewed viewedDate='1 hour ago' />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should not render with viewed badge if viewed date is undefined', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} viewed />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render only applied badge, when both applied and expired states are active', () => {
     const jobThatsExpired = {
       ...defaultJob,

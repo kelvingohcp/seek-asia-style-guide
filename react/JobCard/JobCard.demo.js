@@ -184,6 +184,7 @@ export default {
     showSellingPoint: false,
     showDescription: false,
     enableBrandedAd: false,
+    viewedDate: '1 hour ago',
     onBookmarkClick: () => {
       alert('bookmark clicked'); // eslint-disable-line no-alert
     },

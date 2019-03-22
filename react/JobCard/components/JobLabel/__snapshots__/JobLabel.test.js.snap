@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobLabel test should render ONLY with applied badge 1`] = `
+<span
+  className="badgeWrapper"
+>
+  <Badge
+    label="Applied"
+  />
+</span>
+`;
+
+exports[`JobLabel test should render ONLY with expired badge 1`] = `
+<span
+  className="badgeWrapper"
+>
+  <Badge
+    color="expired"
+    label="Expired"
+  />
+</span>
+`;
+
+exports[`JobLabel test should render correctly 1`] = `""`;
+
+exports[`JobLabel test should render with applied badge 1`] = `
+<span
+  className="badgeWrapper"
+>
+  <Badge
+    label="Applied"
+  />
+</span>
+`;
+
+exports[`JobLabel test should render with expired badge 1`] = `
+<span
+  className="badgeWrapper"
+>
+  <Badge
+    color="expired"
+    label="Expired"
+  />
+</span>
+`;
+
+exports[`JobLabel test should render with viewed label 1`] = `
+<span
+  className="badgeWrapper"
+>
+  <Badge
+    color="expired"
+    label="Viewed 1 hour ago"
+  />
+</span>
+`;

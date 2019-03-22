@@ -55,5 +55,6 @@ export const JobCardPropTypes = {
   showSavedStatus: PropTypes.bool,
   TitleLinkComponent: PropTypes.func,
   trackLinkClicked: PropTypes.func,
-  viewed: PropTypes.bool
+  viewed: PropTypes.bool,
+  viewedDate: PropTypes.string
 };

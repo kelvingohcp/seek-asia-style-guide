@@ -1,5 +1,4 @@
 import React from 'react';
-import Badge from '../Badge/Badge';
 import Text from '../Text/Text';
 import Card from '../Card/Card';
 import Icon from '../Icon/Icon';
@@ -13,6 +12,7 @@ import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
 import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
+import JobLabel from './components/JobLabel/JobLabel';
 import PropTypes from 'prop-types';
 
 export const trackLinkType = {
@@ -22,7 +22,6 @@ export const trackLinkType = {
 };
 
 const JobTitle = ({
-  applied = false,
   TitleLinkComponent,
   viewed,
   keyword,
@@ -37,15 +36,6 @@ const JobTitle = ({
         [styles.withBookmark]: showSavedStatus
       })}
       data-automation="job-title">
-      {(applied || job.isExpired) && (
-        <span className={styles.badgeWrapper}>
-          {
-            applied ?
-              (<Badge label="Applied" />) :
-              (<Badge label="Expired" color="expired" />)
-          }
-        </span>
-      )}
       <JobTitleLink
         LinkComponent={TitleLinkComponent}
         viewed={viewed}
@@ -57,7 +47,6 @@ const JobTitle = ({
   );
 };
 JobTitle.propTypes = {
-  applied: JobCardPropTypes.applied,
   TitleLinkComponent: JobCardPropTypes.TitleLinkComponent,
   viewed: JobCardPropTypes.viewed,
   keyword: JobCardPropTypes.keyword,
@@ -234,7 +223,8 @@ export default class JobCard extends React.Component {
       showSavedStatus,
       TitleLinkComponent,
       trackLinkClicked,
-      viewed
+      viewed,
+      viewedDate
     } = this.props;
 
     const { shelfSectionOpen } = this.state;
@@ -306,6 +296,8 @@ export default class JobCard extends React.Component {
             showShelfSection={shelfSectionOpen}
             trackLinkClicked={trackLinkClicked}
           />
+
+          <JobLabel applied={applied} expired={job.isExpired} viewed={viewed && viewedDate && `Viewed ${viewedDate}`} />
         </div>
         {
           isVariation && !isSplitView &&
