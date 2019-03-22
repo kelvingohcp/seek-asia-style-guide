@@ -22,7 +22,7 @@ const interactionButton = ({ ItemIcon, children, linkUrl, linkRenderer, ...restP
 };
 
 interactionButton.propTypes = {
-  ItemIcon: PropTypes.func,
+  ItemIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   children: PropTypes.any,
   linkUrl: PropTypes.string,
   linkRenderer: PropTypes.func
@@ -63,7 +63,7 @@ MenuItem.propTypes = {
   linkUrl: PropTypes.string,
   handleClick: PropTypes.func,
   children: PropTypes.any,
-  ItemIcon: PropTypes.element,
+  ItemIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   linkRenderer: PropTypes.func,
   className: PropTypes.string,
   title: PropTypes.string

@@ -75,7 +75,7 @@ ListItem.propTypes = {
   title: PropTypes.string,
   value: PropTypes.string.isRequired,
   className: PropTypes.string,
-  icon: PropTypes.node,
+  icon: PropTypes.oneOfType([PropTypes.func, PropTypes.node, PropTypes.object]),
   badge: PropTypes.object,
   compact: PropTypes.bool,
   hasHoverState: PropTypes.bool,
