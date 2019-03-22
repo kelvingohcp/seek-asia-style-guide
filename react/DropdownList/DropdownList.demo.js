@@ -20,6 +20,7 @@ export default {
   route: '/DropdownList',
   title: 'Dropdown List',
   component: DropdownList,
+  seekComponent: true,
   sketch,
   initialProps: {
     value: 'Category',
