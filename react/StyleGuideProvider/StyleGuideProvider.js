@@ -1,5 +1,5 @@
 import styles from './StyleGuideProvider.less';
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Helmet from 'react-helmet';
@@ -39,21 +39,23 @@ export default function StyleGuideProvider({
   tenant,
   enableWebFont
 }) {
+  useEffect(() => {
+    if (enableWebFont) {
+      if (typeof window !== 'undefined') {
+        const WebFont = require('webfontloader');
+        WebFont.load({
+          google: {
+            families: ['Muli:300,400,600,700']
+          }
+        });
+      }
+    }
+  }, []);
+
   const className = classnames({
     [styles.root]: true,
     [styles.fullScreen]: fullScreen
   });
-
-  if (enableWebFont) {
-    if (typeof window !== 'undefined') {
-      const WebFont = require('webfontloader');
-      WebFont.load({
-        google: {
-          families: ['Muli:300,400,600,700']
-        }
-      });
-    }
-  }
 
   const pageTitle = title || getLocalisedPageTitle(country, language, tenant);
 
