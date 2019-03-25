@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button: color variants: should render JobStreet callToAction button 1`] = `
-<button
-  aria-pressed={false}
-  className="root jobStreet root_callToAction"
-  role="button"
-  tabIndex={0}
->
-  SEEK
-</button>
-`;
-
-exports[`Button: color variants: should render JobsDB callToAction button 1`] = `
-<button
-  aria-pressed={false}
-  className="root jobsDB root_callToAction"
-  role="button"
-  tabIndex={0}
->
-  SEEK
-</button>
-`;
-
 exports[`Button: color variants: should render callToAction button 1`] = `
 <button
   aria-pressed={false}
@@ -81,7 +59,7 @@ exports[`Button: should render as an anchor with href="https://www.seek.com.au" 
 exports[`Button: should render as div 1`] = `
 <div
   aria-pressed={false}
-  className="root root_callToAction"
+  className="root root_primary"
   role="button"
   tabIndex={0}
 >
@@ -92,7 +70,7 @@ exports[`Button: should render as div 1`] = `
 exports[`Button: should render compact font size 1`] = `
 <button
   aria-pressed={false}
-  className="root compact root_callToAction"
+  className="root compact root_primary"
   role="button"
   tabIndex={0}
 >
@@ -103,7 +81,7 @@ exports[`Button: should render compact font size 1`] = `
 exports[`Button: should render custom component based on it’s reference 1`] = `
 <CustomComponent
   aria-pressed={false}
-  className="root root_callToAction"
+  className="root root_primary"
   role="button"
   tabIndex={0}
 >
@@ -114,7 +92,7 @@ exports[`Button: should render custom component based on it’s reference 1`] = 
 exports[`Button: should render disabled 1`] = `
 <button
   aria-pressed={false}
-  className="root disabled root_callToAction"
+  className="root disabled root_primary"
   role="button"
   tabIndex={0}
 >
@@ -125,7 +103,7 @@ exports[`Button: should render disabled 1`] = `
 exports[`Button: should render with array of nodes 1`] = `
 <button
   aria-pressed={false}
-  className="root root_callToAction"
+  className="root root_primary"
   role="button"
   tabIndex={0}
 >
@@ -141,7 +119,7 @@ exports[`Button: should render with array of nodes 1`] = `
 exports[`Button: should render with className 1`] = `
 <button
   aria-pressed={false}
-  className="root foo root_callToAction"
+  className="root foo root_primary"
   role="button"
   tabIndex={0}
 >
@@ -152,7 +130,7 @@ exports[`Button: should render with className 1`] = `
 exports[`Button: should render with isSelected style 1`] = `
 <button
   aria-pressed={false}
-  className="root root_callToAction selected"
+  className="root root_primary selected"
   role="button"
   tabIndex={0}
 >
@@ -163,7 +141,7 @@ exports[`Button: should render with isSelected style 1`] = `
 exports[`Button: should render with node 1`] = `
 <button
   aria-pressed={false}
-  className="root root_callToAction"
+  className="root root_primary"
   role="button"
   tabIndex={0}
 >

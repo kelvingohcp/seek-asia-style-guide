@@ -1,6 +1,7 @@
 import styles from './Button.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Constants } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 import getTenant from '../private/tenant';
 import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
@@ -46,18 +47,23 @@ export default class Button extends Component {
   }
 
   render() {
-    const { color, compact, className, children, component, disabled, isJobsDB, isJobStreet, isSelected, ...restProps } = this.props;
+    const { color, compact, className, children, component, disabled, isSelected, ...restProps } = this.props;
 
     return (
       <StyleGuideContext.Consumer>
         { ({ tenant }) => {
-          const appTenant = getTenant(tenant);
+          const { isJobsDB, isJobStreet } = getTenant(tenant);
+
+          if (Constants.SEEKASIA === tenant && ['callToAction', 'ghostWhite'].includes(color)) {
+            return <div>Not exist for SEEKASIA theme</div>;
+          }
+
           const combinedProps = {
             className: classnames(styles.root, className, {
               [styles.compact]: compact,
               [styles.disabled]: disabled,
-              [styles.jobsDB]: isJobsDB || appTenant.isJobsDB,
-              [styles.jobStreet]: isJobStreet || appTenant.isJobStreet,
+              [styles.jobsDB]: isJobsDB,
+              [styles.jobStreet]: isJobStreet,
               [styles.root_callToAction]: color === 'callToAction',
               [styles.root_hyperlink]: color === 'hyperlink',
               [styles.root_primary]: color === 'primary',

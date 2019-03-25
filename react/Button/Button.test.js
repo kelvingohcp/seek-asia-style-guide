@@ -6,48 +6,30 @@ jest.mock('../StyleGuideProvider/StyleGuideProvider');
 
 describe('Button:', () => {
   describe('color variants:', () => {
-    it('should render callToAction button', () => {
-      const wrapper = shallow(<Button color="callToAction">SEEK</Button>).dive();
-      expect(wrapper).toMatchSnapshot();
-    });
-
-    it('should render JobsDB callToAction button', () => {
-      const wrapper = shallow(
-        <Button isJobsDB color="callToAction">
-          SEEK
-        </Button>
-      ).dive();
-      expect(wrapper).toMatchSnapshot();
-    });
-
-    it('should render JobStreet callToAction button', () => {
-      const wrapper = shallow(
-        <Button isJobStreet color="callToAction">
-          SEEK
-        </Button>
-      ).dive();
-      expect(wrapper).toMatchSnapshot();
-    });
-
-    it('should render hyperlink color button', () => {
-      const wrapper = shallow(<Button color="hyperlink">SEEK</Button>).dive();
-      expect(wrapper).toMatchSnapshot();
-    });
-
     it('should render primary button', () => {
-      const wrapper = shallow(<Button color="primary">SEEK</Button>).dive();
+      const wrapper = shallow(<Button color='primary'>SEEK</Button>).dive();
       expect(wrapper).toMatchSnapshot();
     });
 
     it('should render secondary button', () => {
-      const wrapper = shallow(<Button color="secondary">SEEK</Button>).dive();
+      const wrapper = shallow(<Button color='secondary'>SEEK</Button>).dive();
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render callToAction button', () => {
+      const wrapper = shallow(<Button color='callToAction'>SEEK</Button>).dive();
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render hyperlink color button', () => {
+      const wrapper = shallow(<Button color='hyperlink'>SEEK</Button>).dive();
       expect(wrapper).toMatchSnapshot();
     });
   });
 
   it('should render with node', () => {
     const wrapper = shallow(
-      <Button color="callToAction">
+      <Button color='primary'>
         <h5>SEEK</h5>
       </Button>
     ).dive();
@@ -56,7 +38,7 @@ describe('Button:', () => {
 
   it('should render with array of nodes', () => {
     const wrapper = shallow(
-      <Button color="callToAction">
+      <Button color='primary'>
         <span>SEEK</span>
         <span>AU</span>
       </Button>
@@ -66,7 +48,7 @@ describe('Button:', () => {
 
   it('should render as an anchor with href="https://www.seek.com.au"', () => {
     const wrapper = shallow(
-      <Button color="hyperlink" component="a" href="https://www.seek.com.au">
+      <Button color='hyperlink' component='a' href='https://www.seek.com.au'>
         SEEK
       </Button>
     ).dive();
@@ -75,7 +57,7 @@ describe('Button:', () => {
 
   it('should render with className', () => {
     const wrapper = shallow(
-      <Button color="callToAction" className="foo">
+      <Button color='primary' className='foo'>
         SEEK
       </Button>
     ).dive();
@@ -84,7 +66,7 @@ describe('Button:', () => {
 
   it('should render compact font size', () => {
     const wrapper = shallow(
-      <Button color="callToAction" compact>
+      <Button color='primary' compact>
         SEEK
       </Button>
     ).dive();
@@ -92,9 +74,9 @@ describe('Button:', () => {
   });
 
   it('should render custom component based on it’s reference', () => {
-    const CustomComponent = props => <a {...props} someProp="kraken" />;
+    const CustomComponent = props => <a {...props} someProp='kraken' />;
     const wrapper = shallow(
-      <Button color="callToAction" component={CustomComponent}>
+      <Button color='primary' component={CustomComponent}>
         SEEK
       </Button>
     ).dive();
@@ -103,7 +85,7 @@ describe('Button:', () => {
 
   it('should render disabled', () => {
     const wrapper = shallow(
-      <Button color="callToAction" disabled>
+      <Button color='primary' disabled>
         SEEK
       </Button>
     ).dive();
@@ -112,7 +94,7 @@ describe('Button:', () => {
 
   it('should render as div', () => {
     const wrapper = shallow(
-      <Button component="div" color="callToAction">
+      <Button component='div' color='primary'>
         SEEK
       </Button>
     ).dive();
@@ -121,7 +103,7 @@ describe('Button:', () => {
 
   it('should render with isSelected style', () => {
     const wrapper = shallow(
-      <Button color="callToAction" isSelected>
+      <Button color='primary' isSelected>
         SEEK
       </Button>
     ).dive();

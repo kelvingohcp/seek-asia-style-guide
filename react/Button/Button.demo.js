@@ -11,7 +11,7 @@ export default {
   sketch,
   initialProps: {
     children: 'Hello world',
-    color: 'callToAction'
+    color: 'primary'
   },
   options: [
     {
@@ -88,29 +88,6 @@ export default {
       type: 'radio',
       states: [
         {
-          label: 'Call To Action if no tenant on env variable or prop',
-          transformProps: props => ({
-            ...props,
-            color: 'callToAction'
-          })
-        },
-        {
-          label: 'Call To Action(JobStreet)',
-          transformProps: props => ({
-            ...props,
-            color: 'callToAction',
-            isJobStreet: true
-          })
-        },
-        {
-          label: 'Call To Action(JobsDB)',
-          transformProps: props => ({
-            ...props,
-            color: 'callToAction',
-            isJobsDB: true
-          })
-        },
-        {
           label: 'Primary',
           transformProps: props => ({
             ...props,
@@ -125,10 +102,11 @@ export default {
           })
         },
         {
-          label: 'Hyperlink',
+          label: 'Call To Action',
           transformProps: props => ({
             ...props,
-            color: 'hyperlink'
+            color: 'callToAction',
+            isJobStreet: true
           })
         },
         {
@@ -139,19 +117,10 @@ export default {
           })
         },
         {
-          label: 'Tertiary - DB Hirer',
+          label: 'Hyperlink',
           transformProps: props => ({
             ...props,
-            color: 'tertiary',
-            isJobsDB: true
-          })
-        },
-        {
-          label: 'Tertiary - JS Hirer (SiVA)',
-          transformProps: props => ({
-            ...props,
-            color: 'tertiary',
-            isJobStreet: true
+            color: 'hyperlink'
           })
         },
         {

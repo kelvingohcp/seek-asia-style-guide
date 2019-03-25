@@ -103,8 +103,6 @@
 }
 
 .root_callToAction {
-  .buttonColor(@saWhite, @saBlue);
-
   &.jobsDB {
     .buttonColor(@saWhite, @actionOrange);
     &.selected {
@@ -117,10 +115,6 @@
     &.selected {
       .selectedState({background-color: darken(@actionYellow, 5%); color: @sk-black;});
     }
-  }
-
-  &.selected {
-    .selectedState({background-color: darken(@saBlue, 5%); color: @saWhite;});
   }
 }
 
