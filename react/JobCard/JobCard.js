@@ -108,8 +108,8 @@ const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trac
 };
 MainPoint.propTypes = JobCardPropTypes;
 
-const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint }) => {
-  if (!showSellingPoint || isSplitView || !sellingPoints) {
+const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint, enableBrandedAd }) => {
+  if (!showSellingPoint || (isSplitView && !enableBrandedAd) || !sellingPoints) {
     return null;
   }
 
@@ -131,7 +131,8 @@ const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint }) => {
 SellingPoint.propTypes = {
   sellingPoints: JobType.sellingPoints,
   isSplitView: JobCardPropTypes.isSplitView,
-  showSellingPoint: JobCardPropTypes.showSellingPoint
+  showSellingPoint: JobCardPropTypes.showSellingPoint,
+  enableBrandedAd: JobCardPropTypes.enableBrandedAd
 };
 
 const CompanyLogo = ({ companyLogoUrl, showCompanyLogo }) => {
@@ -261,7 +262,7 @@ export default class JobCard extends React.Component {
             <div className={styles.leftContent}>
               <Description description={job.description} showDescription={showDescription} />
               {isVariation && <MainPoint {...this.props} />}
-              <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} />
+              <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
               {!isVariation && <MainPoint {...this.props} />}
               <ShelfLink
                 job={job}

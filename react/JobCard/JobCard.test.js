@@ -74,6 +74,12 @@ const defaultProps = {
   enableBrandedAd: false
 };
 
+const sellingPoints = [
+  'We practice a vibrant & energetic office culture',
+  'Our company supports a fun yet balanced working environment',
+  'We support a safe environment for our employees'
+];
+
 describe('JobCard', () => {
   it('should render with default props', () => {
     const wrapper = shallow(<JobCard {...defaultProps} />);
@@ -106,11 +112,7 @@ describe('JobCard', () => {
   it('should render with selling points props', () => {
     const descriptionJob = {
       ...defaultJob,
-      sellingPoints: [
-        'We practice a vibrant & energetic office culture',
-        'Our company supports a fun yet balanced working environment',
-        'We support a safe environment for our employees'
-      ]
+      sellingPoints
     };
 
     const wrapper = shallow(<JobCard {...defaultProps} job={descriptionJob} />);
@@ -321,6 +323,18 @@ describe('JobCard', () => {
 
   it('render show company banner and isVariation and isSplitView ', () => {
     const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} isSplitView={true} />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('render isVariation and isSplitView and with three sellings point', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} isVariation={true} isSplitView={true} />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('render show company banner and isVariation and isSplitView and with three sellings point', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} enableBrandedAd={true} isVariation={true} isSplitView={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
