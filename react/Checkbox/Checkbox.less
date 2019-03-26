@@ -53,7 +53,7 @@
 .label {
   display: flex;
   .horizontalPadding(@checkbox-atom-gap);
-  :checked + & {
+  .checked & {
     font-weight: @sa-semi-bold;
   }
   @supports (display: grid) {
@@ -76,7 +76,7 @@
   & > * {
     .horizontalPadding(@checkbox-atom-gap);
   }
-  &.rtl {
+  .rtl & {
     flex-direction: row-reverse;
   }
   .compact & {
@@ -92,7 +92,7 @@
     justify-content: space-between;
     width: 100%;
   }
-  .input:disabled + .label & {
+  .disabled & {
     color: @saGrey2;
     cursor: not-allowed;
   }
@@ -110,54 +110,6 @@
       grid-template-columns: 1fr @checkbox-side-length;
       grid-template-areas: "labels checkbox";
     }
-  }
-}
-
-.btn {
-  align-items: center;
-  background-color: @saBlue4;
-  border: 1px solid transparent;
-  border-radius: @checkbox-border-radius;
-  color: @saBlue2;
-  cursor: pointer;
-  display: flex;
-  font-size: @base-font-size * @whistling-type-scale * 1px;
-  font-weight: @sa-bold;
-  height: @grid-base * 10;
-  justify-content: center;
-  line-height: 1.4;
-  .horizontalPadding(@grid-base * 4 - @checkbox-border-width);
-  text-align: center;
-  text-decoration: none;
-  transition:
-    background-color 0.2s,
-    border-color 0.2s,
-    transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: auto;
-  will-change: auto;
-  @media @desktop {
-    height: @grid-base * 8;
-  }
-  .checked & {
-    background-color: @saBlue2;
-    color: @saWhite;
-  }
-  .compact & {
-    font-size: @base-font-size * @whispering-type-scale * 1px;
-    height: @grid-base * 8;
-  }
-  :disabled + & {
-    color: @saGrey4;
-    background-color: @saWhite;
-    border-color: @saGrey5;
-    cursor: not-allowed;
-  }
-  .checked :disabled + & {
-    background-color: @saGrey4;
-    color: @saGrey5;
   }
 }
 
@@ -185,9 +137,12 @@
     height: @checkbox-side-length-compact;
   }
 
-  .input:disabled + .label & {
+  .disabled & {
     background-color: @saGrey5;
     border-color: @saGrey4;
+  }
+  .checked.disabled & {
+    background-color: @saGrey4;
   }
 }
 
@@ -224,7 +179,7 @@
       .inlineBlockLineheight(@checkbox-side-length-compact);
     }
   }
-  .input:disabled + .label & {
+  .disabled & {
     color: @saGrey3;
   }
 }
@@ -233,10 +188,4 @@
   align-items: baseline;
   display: flex;
   grid-area: labels;
-  .btn & {
-    display: inline-block;
-    font-weight: @sa-semi-bold;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }

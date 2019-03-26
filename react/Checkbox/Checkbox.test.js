@@ -34,17 +34,12 @@ describe('Checkbox', () => {
   });
 
   it('should render with standard checkbox style', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} type="standard" />);
+    const wrapper = shallow(<Checkbox {...requiredProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render with compact checkbox style', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} type="standard" compact />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with button style', () => {
-    const wrapper = shallow(<Checkbox {...requiredProps} type="button" />);
+    const wrapper = shallow(<Checkbox {...requiredProps} compact />);
     expect(wrapper).toMatchSnapshot();
   });
 

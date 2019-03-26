@@ -4,9 +4,6 @@ import styles from './Checkbox.less';
 import classnames from 'classnames';
 import { Icon, Text } from 'seek-asia-style-guide/react';
 
-const STANDARD = 'standard';
-const BUTTON = 'button';
-
 function combineClassNames(props = {}, ...classNames) {
   const { className, ...restProps } = props;
 
@@ -30,7 +27,6 @@ export default class Checkbox extends Component {
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
     inputProps: PropTypes.object,
-    type: PropTypes.oneOf([STANDARD, BUTTON]),
     rtl: PropTypes.bool,
     fullWidth: PropTypes.bool,
     compact: PropTypes.bool,
@@ -40,7 +36,6 @@ export default class Checkbox extends Component {
   static defaultProps = {
     checked: false,
     inputProps: {},
-    type: STANDARD,
     rtl: false,
     fullWidth: false,
     compact: false,
@@ -48,26 +43,21 @@ export default class Checkbox extends Component {
   };
 
   state = {
-    checked: false
+    checked: false,
+    disabled: false
   }
 
   static getDerivedStateFromProps(props) {
     return {
-      checked: props.checked || props.inputProps && props.inputProps.checked
+      checked: props.checked || props.inputProps && props.inputProps.checked,
+      disabled: props.disabled || props.inputProps && props.inputProps.disabled
     };
   }
 
-  renderButton(label) {
-    return (
-      <span className={styles.mainLabel}>
-        {label}
-      </span>
-    );
-  }
-
-  renderStandard(label, extraLabel, compact, checked, rtl) {
+  renderStandard(label, extraLabel, compact, checked, disabled, rtl) {
     const standardStyle = classnames({
       [styles.standard]: true,
+      [styles.disabled]: disabled,
       [styles.rtl]: rtl
     });
     return (
@@ -90,18 +80,15 @@ export default class Checkbox extends Component {
   }
 
   renderLabel() {
-    const { label, id, type, extraLabel, compact, checked, rtl } = this.props;
+    const { label, id, extraLabel, compact, checked, disabled, rtl } = this.props;
     const componentType = classnames({
-      [styles.label]: true,
-      [styles.btn]: type === BUTTON
+      [styles.label]: true
     });
 
     return (
       <label className={componentType} htmlFor={id}>
         {
-          type === STANDARD ?
-            this.renderStandard(label, extraLabel, compact, checked, rtl) :
-            this.renderButton(label)
+          this.renderStandard(label, extraLabel, compact, checked, disabled, rtl)
         }
       </label>
     );
@@ -134,6 +121,7 @@ export default class Checkbox extends Component {
       [className]: className,
       [styles.fullWidth]: fullWidth,
       [styles.checked]: this.state.checked,
+      [styles.disabled]: this.state.disabled,
       [styles.compact]: compact
     });
 

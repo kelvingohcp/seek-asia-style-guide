@@ -60,35 +60,5 @@ export const symbols = {
     <Container>
       <Checkbox id="checkbox1" label="Checkbox" compact onChange={noop} />
     </Container>
-  ),
-  'Checkbox/Button/Checked': (
-    <Container>
-      <Checkbox id="checkbox2" label="Checkbox" type="button" checked={true} onChange={noop} />
-    </Container>
-  ),
-  'Checkbox/Button/Unchecked': (
-    <Container>
-      <Checkbox id="checkbox2" label="Checkbox" type="button" onChange={noop} />
-    </Container>
-  ),
-  'Checkbox/Button/Long label': (
-    <Container>
-      <Checkbox id="checkbox1" label="Nullam sodales quis velit nec accumsan. Vivamus quis ex euismod." type="button" onChange={noop} />
-    </Container>
-  ),
-  'Checkbox/Button/Uncheck and disabled': (
-    <Container>
-      <Checkbox id="checkbox2" label="Checkbox" type="button" disabled onChange={noop} />
-    </Container>
-  ),
-  'Checkbox/Button/Checked and disabled': (
-    <Container>
-      <Checkbox id="checkbox2" label="Checkbox" type="button" checked disabled onChange={noop} />
-    </Container>
-  ),
-  'Checkbox/Button/Full width and checked': (
-    <Container>
-      <Checkbox id="checkbox2" label="Checkbox" type="button" checked fullWidth onChange={noop} />
-    </Container>
   )
 };

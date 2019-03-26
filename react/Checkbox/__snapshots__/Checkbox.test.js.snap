@@ -98,30 +98,6 @@ exports[`Checkbox should render full width checkbox 1`] = `
 </div>
 `;
 
-exports[`Checkbox should render with button style 1`] = `
-<div
-  className="root"
->
-  <input
-    className="input"
-    disabled={false}
-    id="testCheckbox"
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <label
-    className="label btn"
-    htmlFor="testCheckbox"
-  >
-    <span
-      className="mainLabel"
-    >
-      Still in role
-    </span>
-  </label>
-</div>
-`;
-
 exports[`Checkbox should render with checkbox put at the end of component 1`] = `
 <div
   className="root"

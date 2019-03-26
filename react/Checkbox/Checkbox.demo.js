@@ -55,7 +55,6 @@ export default {
     id: 'stillInRole',
     label: 'Still in role',
     extraLabel: '(All)',
-    type: 'standard',
     // Documentation only:
     checked: false,
     onChange: () => {}
@@ -92,23 +91,6 @@ export default {
             inputProps: {
               disabled: true
             }
-          })
-        }
-      ]
-    },
-    {
-      label: 'Type',
-      type: 'radio',
-      states: [
-        {
-          label: 'Standard',
-          transformProps: props => props
-        },
-        {
-          label: 'Button',
-          transformProps: props => ({
-            ...props,
-            type: 'button'
           })
         }
       ]
