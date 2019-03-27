@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Badge from '../../../Badge/Badge';
+import Badge from '../Badge/Badge';
 import styles from './JobLabel.less';
 
 const JobLabel = ({ applied, expired, viewed }) => {

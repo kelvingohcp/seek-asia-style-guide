@@ -12,7 +12,7 @@ import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
 import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
-import JobLabel from './components/JobLabel/JobLabel';
+import JobLabel from '../JobLabel/JobLabel';
 import PropTypes from 'prop-types';
 
 export const trackLinkType = {
@@ -272,6 +272,7 @@ export default class JobCard extends React.Component {
                 mobileOnly={isVariation && !isSplitView}
                 onClick={this.handleShelfSectionToggle}
               />
+              <JobLabel applied={applied} expired={job.isExpired} viewed={viewed && viewedDate && `Viewed ${viewedDate}`} />
             </div>
             <div
               className={
@@ -299,8 +300,6 @@ export default class JobCard extends React.Component {
             showShelfSection={shelfSectionOpen}
             trackLinkClicked={trackLinkClicked}
           />
-
-          <JobLabel applied={applied} expired={job.isExpired} viewed={viewed && viewedDate && `Viewed ${viewedDate}`} />
         </div>
         {
           isVariation && !isSplitView &&

@@ -14,6 +14,7 @@ export { default as Rating } from './Rating/Rating';
 export { default as NavigationBar } from './NavigationBar/NavigationBar';
 export { default as JobCard, trackLinkType } from './JobCard/JobCard';
 export { default as JobCardLoader } from './JobCardLoader/JobCardLoader';
+export { default as JobLabel } from './JobLabel/JobLabel';
 export { default as CardLoader } from './CardLoader/CardLoader';
 export { default as CardLoadingBar } from './CardLoadingBar/CardLoadingBar';
 export { default as Header } from './Header/Header';

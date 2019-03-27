@@ -234,6 +234,9 @@ exports[`JobCard render isVariation and isSplitView and with three sellings poin
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -274,9 +277,6 @@ exports[`JobCard render isVariation and isSplitView and with three sellings poin
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -509,6 +509,9 @@ exports[`JobCard render show company banner 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -549,9 +552,6 @@ exports[`JobCard render show company banner 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -786,6 +786,9 @@ exports[`JobCard render show company banner and isVariation  1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContentWithBanner"
@@ -890,9 +893,6 @@ exports[`JobCard render show company banner and isVariation  1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
   <div
@@ -1157,6 +1157,9 @@ exports[`JobCard render show company banner and isVariation and isSplitView  1`]
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -1197,9 +1200,6 @@ exports[`JobCard render show company banner and isVariation and isSplitView  1`]
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -1439,6 +1439,9 @@ exports[`JobCard render show company banner and isVariation and isSplitView and 
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -1479,9 +1482,6 @@ exports[`JobCard render show company banner and isVariation and isSplitView and 
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -1714,6 +1714,9 @@ exports[`JobCard render with trackLinkClicked 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -1754,9 +1757,6 @@ exports[`JobCard render with trackLinkClicked 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[MockFunction]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -1926,6 +1926,9 @@ exports[`JobCard should not render shelf section 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -1943,9 +1946,6 @@ exports[`JobCard should not render shelf section 1`] = `
       shelf={null}
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -2148,6 +2148,9 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -2178,9 +2181,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -2415,6 +2415,9 @@ exports[`JobCard should not render with viewed badge if viewed date is undefined
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -2455,9 +2458,6 @@ exports[`JobCard should not render with viewed badge if viewed date is undefined
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -2692,6 +2692,9 @@ exports[`JobCard should pass through viewed prop 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -2732,9 +2735,6 @@ exports[`JobCard should pass through viewed prop 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -2970,6 +2970,9 @@ exports[`JobCard should render company with bold keyword 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -3010,9 +3013,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -3247,6 +3247,9 @@ exports[`JobCard should render job title component 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -3287,9 +3290,6 @@ exports[`JobCard should render job title component 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -3525,6 +3525,9 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -3565,9 +3568,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -3800,6 +3800,9 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -3840,9 +3843,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -4075,6 +4075,9 @@ exports[`JobCard should render jobsDB default style 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -4115,9 +4118,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -4352,6 +4352,10 @@ exports[`JobCard should render only applied badge, when both applied and expired
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          applied={true}
+          expired={true}
+        />
       </div>
       <div
         className="rightContent"
@@ -4392,10 +4396,6 @@ exports[`JobCard should render only applied badge, when both applied and expired
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      applied={true}
-      expired={true}
     />
   </div>
 </Card>
@@ -4624,6 +4624,9 @@ exports[`JobCard should render plain company label 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -4664,9 +4667,6 @@ exports[`JobCard should render plain company label 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -4900,6 +4900,9 @@ exports[`JobCard should render selected style 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -4940,9 +4943,6 @@ exports[`JobCard should render selected style 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -5205,6 +5205,9 @@ exports[`JobCard should render tag links 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -5255,9 +5258,6 @@ exports[`JobCard should render tag links 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -5493,6 +5493,9 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -5533,9 +5536,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -5770,6 +5770,10 @@ exports[`JobCard should render with applied badge 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          applied={true}
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -5810,10 +5814,6 @@ exports[`JobCard should render with applied badge 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      applied={true}
-      expired={false}
     />
   </div>
 </Card>
@@ -6046,6 +6046,9 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -6086,9 +6089,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -6321,6 +6321,9 @@ exports[`JobCard should render with default props 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -6361,9 +6364,6 @@ exports[`JobCard should render with default props 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -6596,6 +6596,9 @@ exports[`JobCard should render with expired badge 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={true}
+        />
       </div>
       <div
         className="rightContent"
@@ -6636,9 +6639,6 @@ exports[`JobCard should render with expired badge 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={true}
     />
   </div>
 </Card>
@@ -6893,6 +6893,9 @@ exports[`JobCard should render with selling points props 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -6933,9 +6936,6 @@ exports[`JobCard should render with selling points props 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
@@ -7171,6 +7171,10 @@ exports[`JobCard should render with viewed badge 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+          viewed="Viewed 1 hour ago"
+        />
       </div>
       <div
         className="rightContent"
@@ -7211,10 +7215,6 @@ exports[`JobCard should render with viewed badge 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
-      viewed="Viewed 1 hour ago"
     />
   </div>
 </Card>
@@ -7448,6 +7448,9 @@ exports[`JobCard should render without border 1`] = `
           onClick={[Function]}
           shelfSectionOpen={false}
         />
+        <JobLabel
+          expired={false}
+        />
       </div>
       <div
         className="rightContent"
@@ -7488,9 +7491,6 @@ exports[`JobCard should render without border 1`] = `
       }
       showShelfSection={false}
       trackLinkClicked={[Function]}
-    />
-    <JobLabel
-      expired={false}
     />
   </div>
 </Card>
