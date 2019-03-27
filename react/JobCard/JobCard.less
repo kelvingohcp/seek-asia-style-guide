@@ -5,6 +5,7 @@
 @job-card-right-area-width: @grid-base * 66;
 @max-banner-height: @grid-row-height * 22;
 @min-height-right-content: @grid-row-height * 16;
+@banner-bottom-padding: @grid-row-height * 4;
 
 .text {
   color: @saGrey1;
@@ -81,13 +82,13 @@
 .rightContentWithBanner {
   .rightContent();
   @media @desktop {
-    min-height: @min-height-right-content + @max-banner-height;
+    min-height: @min-height-right-content + @max-banner-height + @banner-bottom-padding;
   }
 }
 
 .structuredData {
-  padding-bottom: @grid-base * 1.5;
-  padding-top: @grid-base * 1.5;
+  padding-bottom: @grid-base;
+  padding-top: @grid-base;
 }
 
 .borderRoot {
@@ -185,6 +186,7 @@
   @media @desktop {
     display: inline;
     max-height: @max-banner-height;
+    padding-bottom: @banner-bottom-padding;
   }
 }
 
