@@ -263,7 +263,7 @@ export default class JobCard extends React.Component {
               {isVariation && <MainPoint {...this.props} />}
               <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
               {!isVariation && <MainPoint {...this.props} />}
-              {!isSplitView && 
+              {!isSplitView &&
                 <Description description={job.description} showDescription={showDescription} />
               }
               <ShelfLink
