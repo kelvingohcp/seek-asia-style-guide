@@ -78,7 +78,7 @@ const Description = ({ description, showDescription }) => {
   }
 
   return (
-    <div className={styles.desktopOnly}>
+    <div className={classnames(styles.desktopOnly, styles.description)}>
       <Text
         whispering
         baseline={false}
@@ -260,10 +260,12 @@ export default class JobCard extends React.Component {
           <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
           <div className={styles.flexRow}>
             <div className={styles.leftContent}>
-              <Description description={job.description} showDescription={showDescription} />
               {isVariation && <MainPoint {...this.props} />}
               <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
               {!isVariation && <MainPoint {...this.props} />}
+              {!isSplitView && 
+                <Description description={job.description} showDescription={showDescription} />
+              }
               <ShelfLink
                 job={job}
                 shelfSectionOpen={shelfSectionOpen}
