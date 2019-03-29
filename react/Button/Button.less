@@ -180,14 +180,15 @@
 
 .root_tertiary {
   .buttonColor(@saWhite, transparent, currentColor);
+  .hoverState({background-color: fade(@saWhite, 10%); color: @saWhite; border-color: currentColor;});
 
   &.jobsDB {
-    .buttonColor(@dbHirer, @saWhite, currentColor);
+    .buttonColor(@dbHirer, transparent, currentColor);
     .hoverState({background-color: fade(@dbHirer, 10%); color: @dbHirer; border-color: currentColor;});
   }
 
   &.jobStreet {
-    .buttonColor(@jsHirerGreen, @saWhite, currentColor);
+    .buttonColor(@jsHirerGreen, transparent, currentColor);
     .hoverState({background-color: fade(@jsHirerGreen, 10%); color: @jsHirerGreen; border-color: currentColor;});
   }
 
