@@ -4,95 +4,41 @@ exports[`FooterLinks component should render supplied messages 1`] = `
 <ul
   className="list"
 >
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://www.jobstreet.com"
-    >
-      JobStreet International
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/sitemap.htm"
-    >
-      Site Map
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/en/about-us/"
-    >
-      About Us
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/career/JobStreet.htm"
-    >
-      Work With Us
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/en/about-us/terms-of-use/"
-    >
-      Term of Use
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/en/about-us/privacy-policy/"
-    >
-      Privacy Policy
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/en/about-us/safe-job-search-guide/"
-    >
-      Safe Job Search Guide
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://jobstreet.com.my/en/user/"
-    >
-      Help
-    </a>
-  </li>
-  <li
-    className="item"
-  >
-    <a
-      className="link"
-      href="https://myjobstreet.jobstreet.com.my/home/feedback.php?site=my&sub=feedback"
-    >
-      Send Feedback
-    </a>
-  </li>
+  <ListLinks
+    title="JobStreet International"
+    url="https://www.jobstreet.com"
+  />
+  <ListLinks
+    title="Site Map"
+    url="https://jobstreet.com.my/sitemap.htm"
+  />
+  <ListLinks
+    title="About Us"
+    url="https://jobstreet.com.my/en/about-us/"
+  />
+  <ListLinks
+    title="Work With Us"
+    url="https://jobstreet.com.my/en/career/JobStreet.htm"
+  />
+  <ListLinks
+    title="Term of Use"
+    url="https://jobstreet.com.my/en/about-us/terms-of-use/"
+  />
+  <ListLinks
+    title="Privacy Policy"
+    url="https://jobstreet.com.my/en/about-us/privacy-policy/"
+  />
+  <ListLinks
+    title="Safe Job Search Guide"
+    url="https://jobstreet.com.my/en/about-us/safe-job-search-guide/"
+  />
+  <ListLinks
+    title="Help"
+    url="https://jobstreet.com.my/en/user/"
+  />
+  <ListLinks
+    title="Send Feedback"
+    url="https://myjobstreet.jobstreet.co.my/home/feedback.php?site=id&sub=feedback"
+  />
 </ul>
 `;

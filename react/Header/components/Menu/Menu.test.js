@@ -1,5 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import headerMessage from '../../mock/headerMessage';
+import menuMessage from '../../mock/menuMessage';
 
 import Menu from './Menu';
 
@@ -45,7 +47,9 @@ describe('Menu', () => {
     }],
     authenticationStatus: 'unauthenticated',
     userName: 'Olivia',
-    baseUrl: 'http://seekasia.com'
+    baseUrl: 'http://seekasia.com',
+    menuMessage,
+    headerMessage
   };
 
   const mockLinks = [

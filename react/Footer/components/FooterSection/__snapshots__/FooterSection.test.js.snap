@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterSection render footer section with hideInMobile 1`] = `
+<Section
+  className=""
+  header={false}
+  pullout={false}
+  slim={false}
+>
+  <Text
+    baseline={true}
+    className="title"
+    semiStrong={true}
+  >
+    About JobsDB
+  </Text>
+  <span
+    key="contactUs"
+  />
+</Section>
+`;
+
+exports[`FooterSection render footer section with icon 1`] = `""`;
+
+exports[`FooterSection render footer section with subSessionMessage 1`] = `
+<Section
+  className=""
+  header={false}
+  pullout={false}
+  slim={false}
+>
+  <Text
+    baseline={true}
+    className="title"
+    semiStrong={true}
+  >
+    About JobsDB
+  </Text>
+  <span
+    key="contactUs"
+  />
+  <SubFooterSection
+    linkRenderer={[Function]}
+    message={
+      Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "title": "International partners",
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      }
+    }
+  />
+</Section>
+`;
+
+exports[`FooterSection render footer section with wrong message 1`] = `""`;

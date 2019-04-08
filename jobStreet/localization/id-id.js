@@ -2,57 +2,99 @@ const baseUrl = 'https://jobstreet.co.id';
 const baseUrlWithLanguage = `${baseUrl}/id`;
 
 export default {
-  'footer.copyright': 'Hak Cipta © {year} JobStreet.com',
-  'footer.link': 'https://www.jobstreet.com',
-  'footer.linkText': 'JobStreet Internasional',
-  'footer.siteMapLink': `${baseUrl}/sitemap.htm`,
-  'footer.siteMapLinkText': 'Site Map',
-  'footer.aboutLink': `${baseUrlWithLanguage}/about-us/`,
-  'footer.aboutLinkText': 'Tentang Kami',
-  'footer.profilesLink': `${baseUrl}/en/companies/778589-jobstreet`,
-  'footer.profilesLinkText': 'Berkarier bersama Kami',
-  'footer.termsLink': `${baseUrlWithLanguage}/about-us/ketentuan-penggunaan/`,
-  'footer.termsLinkText': 'Ketentuan Penggunaan',
-  'footer.privacyLink': `${baseUrlWithLanguage}/about-us/kebijakan-privasi/`,
-  'footer.privacyLinkText': 'Kebijakan Kerahasiaan',
-  'footer.safeLink': `${baseUrlWithLanguage}/about-us/panduan-dan-tips-mencari-kerja-online-secara-aman/`,
-  'footer.safeLinkText': 'Panduan Mencari Kerja Secara Aman',
-  'footer.helpLink': `${baseUrlWithLanguage}/user/`,
-  'footer.helpLinkText': 'Bantuan',
-  'footer.feedbackLink':
-    'https://myjobstreet.jobstreet.co.id/home/feedback.php?site=id&sub=feedback',
-  'footer.feedbackLinkText': 'Kirim Saran',
-  'header.homeTitle': 'Home',
-  'header.homeUrlText': 'JobStreet.com',
-  'header.homeUrl': baseUrl,
-  'header.myJobStreetTitle': 'MyJobStreet',
-  'header.myJobStreetUrl': 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',
-  'header.companyProfilesTitle': 'Company Profiles',
-  'header.companyProfilesUrl': `${baseUrlWithLanguage}/companies/`,
-  'header.careerInsightsTitle': 'Career Insights',
-  'header.careerInsightsUrl': `${baseUrlWithLanguage}/career-insights`,
-  'header.educationTitle': 'Education',
-  'header.educationUrl': `${baseUrlWithLanguage}/career-insights`,
-  'header.myAccountTitle': 'My Account',
-  'header.myAccountUrl': 'https://myjobstreet.jobstreet.com.my/resume/preview-resume.php?',
-  'header.employerSiteTitle': 'Employer Site',
-  'header.employerLinkPrefix': 'Looking to hire? Check out our ',
-  'header.employerSiteUrl': `${baseUrlWithLanguage}/cms/employer`,
-  'header.overseasJobsTitle': 'Overseas Jobs',
-  'header.overseasJobsUrl': `${baseUrlWithLanguage}/job-search/browse/find-overseas-jobs`,
-  'header.freshGradJobsTitle': 'Fresh Grad Jobs',
-  'header.freshGradJobsUrl': `${baseUrlWithLanguage}/job-search/campus/job-vacancy.php`,
-  'header.classifiedJobsTitle': 'Classified Jobs',
-  'header.classifiedJobsUrl': `${baseUrlWithLanguage}/job-search/classified-ads.php`,
-  'header.loginTitle': 'Log in',
-  'header.loginUrl': 'https://myjobstreet.jobstreet.com.my/login',
-  'header.signupTitle': 'Sign up',
-  'header.signupUrl': 'https://myjobstreet.jobstreet.com.my/signup',
-  'header.seperatorOr': 'or',
-  'menu.jobSeekerHeader': 'JOB SEEKER',
-  'menu.settingsHeader': 'SETTINGS',
-  'menu.more': 'More',
-  'menu.moreHeader': 'MORE',
-  'menu.countryAndLanguage': 'Country & Language',
-  'menu.backToMenu': 'Back to Menu'
+  footer: {
+    copyright: 'Hak Cipta © {year} JobStreet.com',
+    link: {
+      title: 'JobStreet International',
+      url: 'https://www.jobstreet.com'
+    },
+    siteMap: {
+      title: 'Site Map',
+      url: `${baseUrl}/sitemap.htm`
+    },
+    about: {
+      title: 'Tentang Kami',
+      url: `${baseUrlWithLanguage}/about-us/`
+    },
+    profile: {
+      title: 'Berkarier bersama Kami',
+      url: `${baseUrl}/en/companies/778589-jobstreet`
+    },
+    terms: {
+      title: 'Ketentuan Penggunaan',
+      url: `${baseUrlWithLanguage}/about-us/ketentuan-penggunaan/`
+    },
+    privacy: {
+      title: 'Kebijakan Kerahasiaan',
+      url: `${baseUrlWithLanguage}/about-us/kebijakan-privasi/`
+    },
+    safe: {
+      title: 'Panduan Mencari Kerja Secara Aman',
+      url: `${baseUrlWithLanguage}/about-us/panduan-dan-tips-mencari-kerja-online-secara-aman/`
+    },
+    help: {
+      title: 'Bantuan',
+      url: `${baseUrlWithLanguage}/user/`
+    },
+    feedback: {
+      title: 'Kirim Saran',
+      url: 'https://myjobstreet.jobstreet.co.id/home/feedback.php?site=id&sub=feedback'
+    }
+  },
+  header: {
+    overseasJobs: {
+      title: 'Overseas Jobs',
+      url: `${baseUrlWithLanguage}/job-search/browse/find-overseas-jobs`
+    },
+    freshGradJobs: {
+      title: 'Fresh Grad Jobs',
+      url: `${baseUrlWithLanguage}/job-search/campus/job-vacancy.php`
+    },
+    classifiedJobs: {
+      title: 'Classified Jobs',
+      url: `${baseUrlWithLanguage}/job-search/classified-ads.php`
+    },
+    home: {
+      title: 'Home',
+      url: baseUrl
+    },
+    myJobStreet: {
+      title: 'MyJobStreet',
+      url: 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my'
+    },
+    companyProfiles: {
+      title: 'Company Profiles',
+      url: `${baseUrlWithLanguage}/companies/`
+    },
+    careerInsights: {
+      title: 'Career Insights',
+      url: `${baseUrlWithLanguage}/career-insights`
+    },
+    education: {
+      title: 'Education',
+      url: 'https://www.jobstreeteducation.com.my/'
+    },
+    signUp: {
+      title: 'Sign up',
+      url: 'https://myjobstreet.jobstreet.com.my/signup'
+    },
+    login: {
+      title: 'Log in',
+      url: 'https://myjobstreet.jobstreet.com.my/login'
+    },
+    employer: {
+      title: 'Employer Site',
+      url: `${baseUrlWithLanguage}/cms/employer`
+    },
+    homeUrlText: 'JobStreet.com',
+    seperatorOr: 'or'
+  },
+  menu: {
+    jobSeekerHeader: 'JOB SEEKER',
+    settingsHeader: 'SETTINGS',
+    more: 'More',
+    moreHeader: 'MORE',
+    countryAndLanguage: 'Country & Language',
+    backToMenu: 'Back to Menu'
+  }
 };

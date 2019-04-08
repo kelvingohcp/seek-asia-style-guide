@@ -5,29 +5,28 @@ import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
 import { HomeIcon, PortalIcon, CompanyIcon, LightbulbIcon, EducationIcon, MoreIcon } from 'seek-asia-style-guide/react';
 import { getLocalization, locales } from '../localization';
+import _get from 'lodash/get';
 
 const getJobStreetProps = ({ country, language }) => {
   const messages = getLocalization({ country, language });
+  const headerMessage = _get(messages, 'header');
 
-  const more = [
-    { title: messages['header.overseasJobsTitle'], url: messages['header.overseasJobsUrl'] },
-    { title: messages['header.freshGradJobsTitle'], url: messages['header.freshGradJobsUrl'] },
-    { title: messages['header.classifiedJobsTitle'], url: messages['header.classifiedJobsUrl'] }
-  ];
+  const more = [ _get(headerMessage, 'overseasJobs'), _get(headerMessage, 'freshGradJobs'), _get(headerMessage, 'classifiedJobs')];
 
   const links = [
-    { title: messages['header.homeTitle'], url: messages['header.homeUrl'], ItemIcon: HomeIcon },
-    { title: messages['header.myJobStreetTitle'], url: messages['header.myJobStreetUrl'], ItemIcon: PortalIcon },
-    { title: messages['header.companyProfilesTitle'], url: messages['header.companyProfilesUrl'], ItemIcon: CompanyIcon },
-    { title: messages['header.careerInsightsTitle'], url: messages['header.careerInsightsUrl'], ItemIcon: LightbulbIcon },
-    { title: messages['header.educationTitle'], url: messages['header.educationUrl'], ItemIcon: EducationIcon },
-    { title: messages['menu.more'], url: '', ItemIcon: MoreIcon, children: more, hideInDesktop: true }
+    { ..._get(headerMessage, 'home'), ItemIcon: HomeIcon },
+    { ..._get(headerMessage, 'myJobStreet'), ItemIcon: PortalIcon },
+    { ..._get(headerMessage, 'companyProfiles'), ItemIcon: CompanyIcon },
+    { ..._get(headerMessage, 'careerInsights'), ItemIcon: LightbulbIcon },
+    { ..._get(headerMessage, 'education'), ItemIcon: EducationIcon },
+    { title: 'Menu', url: '', ItemIcon: MoreIcon, children: more, hideInDesktop: true }
   ];
 
   return {
     links,
-    messages,
-    locales
+    headerMessage,
+    locales,
+    menuMessage: _get(messages, 'menu')
   };
 };
 

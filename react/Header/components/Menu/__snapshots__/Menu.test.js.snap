@@ -32,9 +32,9 @@ exports[`Menu should render when authenticated 1`] = `
           type="profileMale"
         />
       }
-      linkUrl="http://seekasia.comundefined"
+      linkUrl="/hk/en/MyJobsDB/profile"
     >
-      Header Profile Title
+      View profile
     </MenuItem>
     <MenuItem
       ItemIcon={
@@ -47,9 +47,9 @@ exports[`Menu should render when authenticated 1`] = `
           type="jobInvitation"
         />
       }
-      linkUrl="http://seekasia.comundefined"
+      linkUrl="/hk/en/Invitations/InvitationList"
     >
-      Header Invitation Title
+      Job invitations
     </MenuItem>
   </div>
   <Section
@@ -100,8 +100,9 @@ exports[`Menu should render when authenticated 1`] = `
         }
       }
       className="loginSignup"
+      linkUrl="/logout.do"
     >
-      Header Logout Title
+      Log out
     </MenuItem>
   </div>
   <div
@@ -122,7 +123,7 @@ exports[`Menu should render when authenticated 1`] = `
       className="backLink"
       handleClick={[Function]}
     >
-      Get back!
+      Back to menu
     </MenuItem>
     <MenuItem
       ItemIcon={
@@ -166,6 +167,76 @@ Object {
   "brandStyles": Object {
     "employerLink": "employerLink",
   },
+  "headerMessage": Object {
+    "appStore": Object {
+      "title": "App Store",
+      "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+    },
+    "applicationHistoryList": Object {
+      "title": "Application History",
+      "url": "/hk/en/MyJobsDB/ApplictationHistoryList",
+    },
+    "careerInsights": Object {
+      "title": "Career Insights",
+      "url": "/hk/en/career-insights",
+    },
+    "downloadApp": "Download Our App",
+    "employer": Object {
+      "title": "For Employers",
+      "url": "/hk/en/home/employerindex",
+    },
+    "homeTitle": "Home",
+    "homeUrl": "/hk",
+    "homeUrlText": "jobsDB.com",
+    "invitation": Object {
+      "title": "Job invitations",
+      "url": "/hk/en/Invitations/InvitationList",
+    },
+    "jobAlertsList": Object {
+      "title": "Job Alerts",
+      "url": "/hk/en/MyJobsDB/JobAlertsList",
+    },
+    "jobsDBTitle": Object {
+      "title": "My jobsDB",
+      "url": "/hk/en/MyJobsDB",
+    },
+    "login": Object {
+      "title": "Log in",
+      "url": "/hk/en/login/jobseekerlogin?from=header",
+    },
+    "logout": Object {
+      "title": "Log out",
+      "url": "/hk/en/login/jobseekerlogoff",
+    },
+    "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+    "mobileLogoutUrl": "/logout.do",
+    "playStore": Object {
+      "title": "Google Play Store",
+      "url": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+    },
+    "profile": Object {
+      "title": "View profile",
+      "url": "/hk/en/MyJobsDB/profile",
+    },
+    "resources": Object {
+      "title": "Resources",
+      "url": "/en-hk/career-recruitment-advice/",
+    },
+    "resumesAndDocuments": Object {
+      "title": "Resumes and Documents",
+      "url": "/hk/en/MyJobsDB/resumes-and-documents",
+    },
+    "saveJobs": Object {
+      "title": "Save Jobs",
+      "url": "/saveJobs.do",
+    },
+    "searchUrl": "/hk/en/search/getsearchresult",
+    "seperatorOr": "or",
+    "signUp": Object {
+      "title": "Sign up",
+      "url": "/hk/en/jobseeker/registration",
+    },
+  },
   "linkUrl": "/test",
   "locales": Array [
     Object {
@@ -183,6 +254,65 @@ Object {
       "url": "https://id.jobsdb.com/id",
     },
   ],
+  "menuMessage": Object {
+    "backToMenu": "Back to menu",
+    "countryAndLanguage": "Country & Language",
+    "countryList": Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "",
+      },
+    ],
+    "jobSeekerHeader": "JOB SEEKER",
+    "jobSeekerProfile": "PROFILE",
+    "more": "More",
+    "moreHeader": "MORE",
+    "settingsHeader": "SETTINGS",
+  },
   "messages": Object {
     "header.employerSiteTitle": "Awesome employers click here",
     "header.employerSiteUrl": "http://brand.seekasia.com",
@@ -278,7 +408,7 @@ exports[`Menu should render with default props 1`] = `
       className="backLink"
       handleClick={[Function]}
     >
-      Get back!
+      Back to menu
     </MenuItem>
     <MenuItem
       ItemIcon={
@@ -441,7 +571,7 @@ exports[`Menu should render with links list 1`] = `
       className="backLink"
       handleClick={[Function]}
     >
-      Get back!
+      Back to menu
     </MenuItem>
     <MenuItem
       ItemIcon={
@@ -552,7 +682,7 @@ exports[`Menu should render with menu open 1`] = `
       className="backLink"
       handleClick={[Function]}
     >
-      Get back!
+      Back to menu
     </MenuItem>
     <MenuItem
       ItemIcon={
@@ -715,7 +845,7 @@ exports[`Menu should render with more links 1`] = `
       className="backLink"
       handleClick={[Function]}
     >
-      Get back!
+      Back to menu
     </MenuItem>
     <MenuItem
       ItemIcon={
@@ -805,7 +935,7 @@ exports[`Menu should render with sub links 1`] = `
           className="backLink"
           handleClick={[Function]}
         >
-          Get back!
+          Back to menu
         </MenuItem>
         <MenuItem
           ItemIcon={[Function]}
@@ -918,7 +1048,7 @@ exports[`Menu should render with sub links 1`] = `
       className="backLink"
       handleClick={[Function]}
     >
-      Get back!
+      Back to menu
     </MenuItem>
     <MenuItem
       ItemIcon={

@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpperFooter: should render columns with messages and linking functions 1`] = `
+<Columns>
+  <div
+    className="columnGroup"
+  >
+    <FooterSection
+      hideInMobile={
+        Array [
+          "aboutJobsDB",
+          "faq",
+        ]
+      }
+      linkRenderer={[Function]}
+      sessionClass="firstCategory"
+      sessionMessage={
+        Object {
+          "aboutJobsDB": Object {
+            "title": "About jobsDB",
+            "url": "/pages/aboutus",
+          },
+          "contactUs": Object {
+            "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+            "title": "Contact us",
+            "url": "/pages/regional-coverage",
+          },
+          "title": "About JobsDB",
+        }
+      }
+      subSessionMessage={
+        Object {
+          "bdjobs": Object {
+            "title": "Bdjobs (Bandladesh)",
+            "url": "https://www.bdjobs.com/",
+          },
+          "brighterMonday": Object {
+            "title": "Brighter Monday (East Africa)",
+            "url": "https://www.brightermonday.com/",
+          },
+          "catho": Object {
+            "title": "Catho (Brazil)",
+            "url": "https://www.catho.com.br/",
+          },
+          "title": "International partners",
+          "zhaopin": Object {
+            "title": "Zhaopin (China)",
+            "url": "https://www.zhaopin.com/",
+          },
+        }
+      }
+    />
+    <FooterSection
+      hideInMobile={
+        Array [
+          "resumes",
+          "jobAlerts",
+        ]
+      }
+      linkRenderer={[Function]}
+      sessionClass="category"
+    />
+  </div>
+  <div
+    className="columnGroup"
+  >
+    <FooterSection
+      linkRenderer={[Function]}
+      sessionClass="category"
+    />
+    <FooterSection
+      linkRenderer={[Function]}
+      sessionClass="category"
+      sessionMessage={
+        Object {
+          "appStore": Object {
+            "icon": "apple",
+            "title": "jobsDB @ App Store",
+            "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+          },
+          "playStore": Object {
+            "icon": "android",
+            "title": "jobsDB @ Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+          },
+          "title": "Connect",
+        }
+      }
+    />
+  </div>
+</Columns>
+`;
+
+exports[`UpperFooter: should render with company profile link 1`] = `
+<Columns>
+  <div
+    className="columnGroup"
+  >
+    <FooterSection
+      hideInMobile={
+        Array [
+          "aboutJobsDB",
+          "faq",
+        ]
+      }
+      linkRenderer={[Function]}
+      sessionClass="firstCategory"
+      sessionMessage={
+        Object {
+          "aboutJobsDB": Object {
+            "title": "About jobsDB",
+            "url": "/pages/aboutus",
+          },
+          "contactUs": Object {
+            "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+            "title": "Contact us",
+            "url": "/pages/regional-coverage",
+          },
+          "title": "About JobsDB",
+        }
+      }
+      subSessionMessage={
+        Object {
+          "bdjobs": Object {
+            "title": "Bdjobs (Bandladesh)",
+            "url": "https://www.bdjobs.com/",
+          },
+          "brighterMonday": Object {
+            "title": "Brighter Monday (East Africa)",
+            "url": "https://www.brightermonday.com/",
+          },
+          "catho": Object {
+            "title": "Catho (Brazil)",
+            "url": "https://www.catho.com.br/",
+          },
+          "title": "International partners",
+          "zhaopin": Object {
+            "title": "Zhaopin (China)",
+            "url": "https://www.zhaopin.com/",
+          },
+        }
+      }
+    />
+    <FooterSection
+      hideInMobile={
+        Array [
+          "resumes",
+          "jobAlerts",
+        ]
+      }
+      linkRenderer={[Function]}
+      sessionClass="category"
+    />
+  </div>
+  <div
+    className="columnGroup"
+  >
+    <FooterSection
+      linkRenderer={[Function]}
+      sessionClass="category"
+    />
+    <FooterSection
+      linkRenderer={[Function]}
+      sessionClass="category"
+      sessionMessage={
+        Object {
+          "appStore": Object {
+            "icon": "apple",
+            "title": "jobsDB @ App Store",
+            "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+          },
+          "playStore": Object {
+            "icon": "android",
+            "title": "jobsDB @ Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+          },
+          "title": "Connect",
+        }
+      }
+    />
+  </div>
+</Columns>
+`;

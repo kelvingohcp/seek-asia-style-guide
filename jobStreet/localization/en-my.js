@@ -2,58 +2,100 @@ const baseUrl = 'https://jobstreet.com.my';
 const baseUrlWithLanguage = `${baseUrl}/en`;
 
 export default {
-  'footer.copyright': 'Copyright © {year} JobStreet.com',
-  'footer.link': 'https://www.jobstreet.com',
-  'footer.linkText': 'JobStreet International',
-  'footer.siteMapLink': `${baseUrl}/sitemap.htm`,
-  'footer.siteMapLinkText': 'Site Map',
-  'footer.aboutLink': `${baseUrlWithLanguage}/about-us/`,
-  'footer.aboutLinkText': 'About Us',
-  'footer.profilesLink': `${baseUrl}/career/JobStreet.htm`,
-  'footer.profilesLinkText': 'Work With Us',
-  'footer.termsLink': `${baseUrlWithLanguage}/about-us/terms-of-use/`,
-  'footer.termsLinkText': 'Term of Use',
-  'footer.privacyLink': `${baseUrlWithLanguage}/about-us/privacy-policy/`,
-  'footer.privacyLinkText': 'Privacy Policy',
-  'footer.safeLink': `${baseUrlWithLanguage}/about-us/safe-job-search-guide/`,
-  'footer.safeLinkText': 'Safe Job Search Guide',
-  'footer.helpLink': `${baseUrlWithLanguage}/user/`,
-  'footer.helpLinkText': 'Help',
-  'footer.feedbackLink':
-    'https://myjobstreet.jobstreet.com.my/home/feedback.php?site=my&sub=feedback',
-  'footer.feedbackLinkText': 'Send Feedback',
-  'header.homeTitle': 'Home',
-  'header.homeUrlText': 'JobStreet.com',
-  'header.homeUrl': baseUrl,
-  'header.myJobStreetTitle': 'MyJobStreet',
-  'header.myJobStreetUrl': 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my',
-  'header.companyProfilesTitle': 'Company Profiles',
-  'header.companyProfilesUrl': `${baseUrlWithLanguage}/companies/`,
-  'header.careerInsightsTitle': 'Career Insights',
-  'header.careerInsightsUrl': `${baseUrlWithLanguage}/career-insights`,
-  'header.educationTitle': 'Education',
-  'header.educationUrl': `${baseUrlWithLanguage}/career-insights`,
-  'header.myAccountTitle': 'My Account',
-  'header.myAccountUrl': 'https://myjobstreet.jobstreet.com.my/resume/preview-resume.php?',
-  'header.employerSiteTitle': 'Employer Site',
-  'header.employerLinkPrefix': 'Looking to hire? Check out our ',
-  'header.employerSiteUrl': `${baseUrlWithLanguage}/cms/employer`,
-  'header.overseasJobsTitle': 'Overseas Jobs',
-  'header.overseasJobsUrl': `${baseUrlWithLanguage}/job-search/browse/find-overseas-jobs`,
-  'header.freshGradJobsTitle': 'Fresh Grad Jobs',
-  'header.freshGradJobsUrl': `${baseUrlWithLanguage}/job-search/campus/job-vacancy.php`,
-  'header.classifiedJobsTitle': 'Classified Jobs',
-  'header.classifiedJobsUrl': `${baseUrlWithLanguage}/job-search/classified-ads.php`,
-  'header.loginTitle': 'Log in',
-  'header.loginUrl': 'https://myjobstreet.jobstreet.com.my/login',
-  'header.signupTitle': 'Sign up',
-  'header.signupUrl': 'https://myjobstreet.jobstreet.com.my/signup',
-  'header.seperatorOr': 'or',
-  'menu.jobSeekerHeader': 'JOB SEEKER',
-  'menu.settingsHeader': 'SETTINGS',
-  'menu.more': 'More',
-  'menu.moreHeader': 'MORE',
-  'menu.countryAndLanguage': 'Country & Language',
-  'menu.backToMenu': 'Back to Menu'
+  footer: {
+    copyright: 'Copyright © {year} JobStreet.com',
+    link: {
+      title: 'JobStreet International',
+      url: 'https://www.jobstreet.com'
+    },
+    siteMap: {
+      title: 'Site Map',
+      url: `${baseUrl}/sitemap.htm`
+    },
+    about: {
+      title: 'About Us',
+      url: `${baseUrlWithLanguage}/about-us/`
+    },
+    profile: {
+      title: 'Work With Us',
+      url: `${baseUrlWithLanguage}/career/JobStreet.htm`
+    },
+    terms: {
+      title: 'Term of Use',
+      url: `${baseUrlWithLanguage}/about-us/terms-of-use/`
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      url: `${baseUrlWithLanguage}/about-us/privacy-policy/`
+    },
+    safe: {
+      title: 'Safe Job Search Guide',
+      url: `${baseUrlWithLanguage}/about-us/safe-job-search-guide/`
+    },
+    help: {
+      title: 'Help',
+      url: `${baseUrlWithLanguage}/user/`
+    },
+    feedback: {
+      title: 'Send Feedback',
+      url: 'https://myjobstreet.jobstreet.co.my/home/feedback.php?site=id&sub=feedback'
+    }
+  },
+  header: {
+    overseasJobs: {
+      title: 'Overseas Jobs',
+      url: `${baseUrlWithLanguage}/job-search/browse/find-overseas-jobs`
+    },
+    freshGradJobs: {
+      title: 'Fresh Grad Jobs',
+      url: `${baseUrlWithLanguage}/job-search/campus/job-vacancy.php`
+    },
+    classifiedJobs: {
+      title: 'Classified Jobs',
+      url: `${baseUrlWithLanguage}/job-search/classified-ads.php`
+    },
+    home: {
+      title: 'Home',
+      url: baseUrl
+    },
+    myJobStreet: {
+      title: 'MyJobStreet',
+      url: 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my'
+    },
+    companyProfiles: {
+      title: 'Company Profiles',
+      url: `${baseUrlWithLanguage}/companies/`
+    },
+    careerInsights: {
+      title: 'Career Insights',
+      url: `${baseUrlWithLanguage}/career-insights`
+    },
+    education: {
+      title: 'Education',
+      url: 'https://www.jobstreeteducation.com.my/'
+    },
+    signUp: {
+      title: 'Sign up',
+      url: 'https://myjobstreet.jobstreet.com.my/signup'
+    },
+    login: {
+      title: 'Log in',
+      url: 'https://myjobstreet.jobstreet.com.my/login'
+    },
+    employer: {
+      title: 'Employer Site',
+      url: `${baseUrlWithLanguage}/cms/employer`
+    },
+    homeUrlText: 'JobStreet.com',
+    seperatorOr: 'or'
+  },
+  menu: {
+    jobSeekerHeader: 'JOB SEEKER',
+    settingsHeader: 'SETTINGS',
+    more: 'More',
+    moreHeader: 'MORE',
+    countryAndLanguage: 'Country & Language',
+    backToMenu: 'Back to Menu'
+  }
 };
 

@@ -9,6 +9,78 @@ exports[`JobsDB Header renders with default props 1`] = `
   brandStyles={null}
   country="hk"
   employerSite={true}
+  headerMessage={
+    Object {
+      "appStore": Object {
+        "title": "App Store",
+        "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+      },
+      "applicationHistoryList": Object {
+        "title": "Application History",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/ApplictationHistoryList",
+      },
+      "careerInsights": Object {
+        "title": "Career Insights",
+        "url": "https://hk.jobsdb.com/hk/en/career-insights",
+      },
+      "downloadApp": "Download Our App",
+      "employer": Object {
+        "title": "For Employers",
+        "url": "https://hk.jobsdb.com/hk/en/home/employerindex",
+      },
+      "homeTitle": "Home",
+      "homeUrl": "/hk",
+      "homeUrlText": "jobsDB.com",
+      "invitation": Object {
+        "title": "Job invitations",
+        "url": "https://hk.jobsdb.com/hk/en/Invitations/InvitationList",
+      },
+      "jobAlertsList": Object {
+        "title": "Job Alerts",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/JobAlertsList",
+      },
+      "jobsDBTitle": Object {
+        "title": "My jobsDB",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
+      },
+      "login": Object {
+        "title": "Log in",
+        "url": "https://hk.jobsdb.com/hk/en/login/jobseekerlogin?from=header",
+      },
+      "logout": Object {
+        "title": "Log out",
+        "url": "https://hk.jobsdb.com/hk/en/login/jobseekerlogoff",
+      },
+      "mobileLoginUrl": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
+      "mobileLogoutUrl": "https://m.jobsdb.com/en-hk/logout.do",
+      "playStore": Object {
+        "title": "Google Play Store",
+        "url": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+      },
+      "profile": Object {
+        "title": "View profile",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/profile",
+      },
+      "resources": Object {
+        "title": "Resources",
+        "url": "https://hk.jobsdb.com/en-hk/career-recruitment-advice/",
+      },
+      "resumesAndDocuments": Object {
+        "title": "Resumes and Documents",
+        "url": "https://hk.jobsdb.com/hk/en/MyJobsDB/resumes-and-documents",
+      },
+      "saveJobs": Object {
+        "title": "Save Jobs",
+        "url": "https://m.jobsdb.com/en-hk/saveJobs.do",
+      },
+      "searchUrl": "/hk/en/search/getsearchresult",
+      "seperatorOr": "or",
+      "signUp": Object {
+        "title": "Sign up",
+        "url": "https://hk.jobsdb.com/hk/en/jobseeker/registration",
+      },
+    }
+  }
   homeUrl="/hk"
   language="en"
   linkRenderer={[Function]}
@@ -153,13 +225,11 @@ exports[`JobsDB Header renders with default props 1`] = `
     ]
   }
   loginAvailable={false}
-  messages={
+  menuMessage={
     Object {
-      "header.appStore": "App Store",
-      "header.appStoreUrl": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
-      "header.careerInsightsTitle": "Career Insights",
-      "header.careerInsightsUrl": "/hk/en/career-insights",
-      "header.countryList": Array [
+      "backToMenu": "Back to menu",
+      "countryAndLanguage": "Country & Language",
+      "countryList": Array [
         Object {
           "ItemIcon": [Function],
           "country": "hk",
@@ -209,48 +279,11 @@ exports[`JobsDB Header renders with default props 1`] = `
           "url": "https://th.jobsdb.com/th/th",
         },
       ],
-      "header.downloadApp": "Download Our App",
-      "header.employerSiteTitle": "For Employers",
-      "header.employerSiteUrl": "/hk/en/home/employerindex",
-      "header.homeTitle": "Home",
-      "header.homeUrl": "/hk",
-      "header.homeUrlText": "jobsDB.com",
-      "header.invitationTitle": "Job invitations",
-      "header.invitationUrl": "/hk/en/Invitations/InvitationList",
-      "header.loginTitle": "Log in",
-      "header.loginUrl": "/hk/en/login/jobseekerlogin?from=header",
-      "header.logoutTitle": "Log out",
-      "header.logoutUrl": "/hk/en/login/jobseekerlogoff",
-      "header.mobileLoginUrl": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
-      "header.mobileLogoutUrl": "https://m.jobsdb.com/en-hk/logout.do",
-      "header.myJobsDBApplicationHistoryListTitle": "Application History",
-      "header.myJobsDBApplicationHistoryListUrl": "/hk/en/MyJobsDB/ApplictationHistoryList",
-      "header.myJobsDBJobAlertsListTitle": "Job Alerts",
-      "header.myJobsDBJobAlertsListUrl": "/hk/en/MyJobsDB/JobAlertsList",
-      "header.myJobsDBResumesAndDocumentsTitle": "Resumes and Documents",
-      "header.myJobsDBResumesAndDocumentsUrl": "/hk/en/MyJobsDB/resumes-and-documents",
-      "header.myJobsDBSaveJobsTitle": "Save Jobs",
-      "header.myJobsDBSaveJobsUrl": "https://m.jobsdb.com/en-hk/saveJobs.do",
-      "header.myJobsDBTitle": "My jobsDB",
-      "header.myJobsDBUrl": "/hk/en/MyJobsDB",
-      "header.myJobsDBUrlLoggedIn": "/hk/en/MyJobsDB",
-      "header.playStore": "Google Play Store",
-      "header.playStoreUrl": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
-      "header.profileTitle": "View profile",
-      "header.profileUrl": "/hk/en/MyJobsDB/profile",
-      "header.resourcesTitle": "Resources",
-      "header.resourcesUrl": "/en-hk/career-recruitment-advice/",
-      "header.searchUrl": "/hk/en/search/getsearchresult",
-      "header.seperatorOr": "or",
-      "header.signupTitle": "Sign up",
-      "header.signupUrl": "/hk/en/jobseeker/registration",
-      "menu.backToMenu": "Back to menu",
-      "menu.countryAndLanguage": "Country & Language",
-      "menu.jobSeekerHeader": "JOB SEEKER",
-      "menu.jobSeekerProfile": "PROFILE",
-      "menu.more": "More",
-      "menu.moreHeader": "MORE",
-      "menu.settingsHeader": "SETTINGS",
+      "jobSeekerHeader": "JOB SEEKER",
+      "jobSeekerProfile": "PROFILE",
+      "more": "More",
+      "moreHeader": "MORE",
+      "settingsHeader": "SETTINGS",
     }
   }
   onMenuOpen={[Function]}
@@ -311,6 +344,7 @@ exports[`JobsDB Header renders with default props 1`] = `
     ]
   }
   selectCountry={true}
+  showCountryLanguage={false}
   userAccMenuItems={
     Array [
       Object {

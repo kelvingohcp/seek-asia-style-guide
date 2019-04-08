@@ -34,7 +34,8 @@ export default {
     selectCountry: true,
     domainUrl: domain,
     linkRenderer: makeDummyLinkRendererForPath(ROUTE),
-    authenticationStatus: UNAUTHENTICATED
+    authenticationStatus: UNAUTHENTICATED,
+    showCountryLanguage: true
   },
   options: [{
     label: 'States',
@@ -57,6 +58,12 @@ export default {
             ...props.actionTrayProps,
             showHome: false
           }
+        })
+      }, {
+        label: 'Hide Country',
+        transformProps: props => ({
+          ...props,
+          showCountryLanguage: false
         })
       }, {
         label: 'Hide Search',

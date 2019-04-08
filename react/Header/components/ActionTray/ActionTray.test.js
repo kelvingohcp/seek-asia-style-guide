@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 
 import ActionTray from './ActionTray';
 import { Constants } from 'seek-asia-style-guide/react';
+import headerMessage from '../../mock/headerMessage';
 
 const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH } = Constants;
 
@@ -16,7 +17,8 @@ describe('ActionTray', () => {
       'header.homeUrl': 'header.homeUrl',
       'header.searchUrl': 'header.searchUrl'
     },
-    linkRenderer: jest.fn()
+    linkRenderer: jest.fn(),
+    headerMessage
   };
 
   it('should render with default props', () => {

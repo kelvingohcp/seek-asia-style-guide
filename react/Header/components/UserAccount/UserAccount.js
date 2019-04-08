@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../../private/authStatusTypes';
 import styles from './UserAccount.less';
 import UserAccountMenu from '../UserAccountMenu/UserAccountMenu';
+import _get from 'lodash/get';
 
 export default class UserAccount extends Component {
   static defaultProps = {
@@ -32,7 +33,7 @@ export default class UserAccount extends Component {
       authenticationStatus,
       userName,
       userAccMenuItems,
-      messages,
+      headerMessage,
       baseUrl,
       linkRenderer
     } = this.props;
@@ -52,33 +53,33 @@ export default class UserAccount extends Component {
           return (
             <div className={styles.secondaryNav}>
               {linkRenderer({
-                href: `${baseUrl + messages['header.loginUrl']}`,
+                href: `${baseUrl + _get(headerMessage, 'login.url')}`,
                 children: <Button
                   className={styles.userAcclink}
                   color='hyperlink'
                   data-automation='log-in'>
-                  {`${messages['header.loginTitle']}`}
+                  {`${_get(headerMessage, 'login.title')}`}
                 </Button>
               })}
-              <Text className={styles.displayText}>{messages['header.seperatorOr']}</Text>
+              <Text className={styles.displayText}>{_get(headerMessage, 'seperatorOr')}</Text>
               {linkRenderer({
-                href: `${baseUrl + messages['header.signupUrl']}`,
+                href: `${baseUrl + _get(headerMessage, 'signUp.url')}`,
                 children: <Button
                   className={styles.signup}
                   color='hyperlink'
                   data-automation='sign-up'>
-                  {`${messages['header.signupTitle']}`}
+                  {`${_get(headerMessage, 'signUp.title')}`}
                 </Button>
               })}
               {
                 linkRenderer({
-                  href: `${baseUrl + messages['header.employerSiteUrl']}`,
+                  href: `${baseUrl + _get(headerMessage, 'employer.url')}`,
                   children: <Button
                     className={styles.userAcclink}
                     color='tertiary'
                     compact
                     data-automation='employer-site'>
-                    {`${messages['header.employerSiteTitle']}`}
+                    {`${_get(headerMessage, 'employer.title')}`}
                   </Button>
                 })}
             </div>
@@ -107,6 +108,6 @@ UserAccount.propTypes = {
   userAccMenuItems: PropTypes.array,
   onMenuToggle: PropTypes.func,
   baseUrl: PropTypes.string,
-  messages: PropTypes.object.isRequired,
+  headerMessage: PropTypes.object.isRequired,
   linkRenderer: PropTypes.func
 };

@@ -1,0 +1,121 @@
+@import (reference) "~seek-asia-style-guide/theme";
+@import (reference) "~seek-asia-style-guide/react/Header/components/ActionTray/ActionTray.less";
+@wrapper-up-padding-top: @grid-base * 8;
+@wrapper-up-padding-bottom: @grid-base * 3;
+
+.container {
+  cursor: default;
+  margin: 0 auto;
+  background-color: @saGrey6;
+  width: 100%;
+  font-weight: @sa-semi-bold;
+}
+
+.headerActionTrayOffset {
+  @media @mobile {
+    margin-bottom: @actionTrayHeight;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.upperWrapper {
+  padding-top: @wrapper-up-padding-top;
+  padding-bottom: @wrapper-up-padding-bottom;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &.hidden {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+.lowerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.lowerWrapperLinks {
+  display: flex;
+  flex-direction: column;
+  line-height: @grid-base * 4;
+  padding-left: @grid-base * 2;
+  width: 100%;
+  @media @tablet {
+    flex-direction: row;
+    line-height: normal;
+    padding-bottom: @grid-base;
+    width: 100%;
+  }
+  @media @desktop {
+    padding-bottom: @grid-base;
+    width: auto;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.collapsed {
+  padding-left: @grid-base * 4;
+  @media @desktop {
+    padding-left: @grid-base * 6;
+  }
+}
+
+.chevronSvg {
+  height: @grid-base * 3;
+  width: @grid-base * 3;
+}
+
+.chevronIcon {
+  cursor: pointer;
+  padding-right: @grid-base * 4;
+  padding-left: @grid-base * 8;
+  display: flex;
+  align-items: center;
+  color: @saBlue2;
+  @media @desktop {
+    padding-right: @grid-base * 6;
+    padding-left: @grid-base * 12;
+  }
+}
+
+.endOfLine {
+  display: flex;
+  width: 100%;
+  @media @tablet {
+    width: 100%;
+  }
+  @media @desktop {
+    width: auto;
+  }
+}
+
+.endOfLineWithoutCountry {
+  display: flex;
+  width: 100%;
+}
+
+.localeIcon {
+  margin: @grid-base @grid-base 0 0;
+}
+
+.currentLocale {
+  display: none;
+  @media @desktop {
+    display: flex;
+  }
+}

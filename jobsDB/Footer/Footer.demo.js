@@ -78,13 +78,6 @@ export default {
           })
         },
         {
-          label: 'Singapore',
-          transformProps: props => ({
-            ...props,
-            country: 'sg'
-          })
-        },
-        {
           label: 'Indonesia',
           transformProps: props => ({
             ...props,
@@ -114,14 +107,14 @@ export default {
       ]
     },
     {
-      label: 'With Company Profile',
+      label: 'Hide Country Language',
       type: 'checklist',
       states: [
         {
-          label: 'hasCompanyProfile',
+          label: 'Hide Country Language',
           transformProps: props => ({
             ...props,
-            hasCompanyProfile: true
+            showCountryLanguage: false
           })
         }
       ]

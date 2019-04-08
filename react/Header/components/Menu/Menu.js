@@ -5,6 +5,7 @@ import styles from './Menu.less';
 import MenuItem from './components/MenuItem/MenuItem';
 import { Text, Section, Icon } from 'seek-asia-style-guide/react';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
+import _get from 'lodash/get';
 
 export default class Menu extends Component {
   state = {
@@ -25,7 +26,7 @@ export default class Menu extends Component {
     this.setState({ localesMenuOpen: !this.state.localesMenuOpen });
   }
 
-  renderMenuLinks = ({ messages, brandStyles, linkRenderer }, links) => {
+  renderMenuLinks = ({ menuMessage, brandStyles, linkRenderer }, links) => {
     if (links && links.map) {
       const menuItems = links.map((link, index) => (
         link.children ? (
@@ -47,7 +48,7 @@ export default class Menu extends Component {
                   className={styles.backLink}
                   ItemIcon={<Icon type='chevron' lineHeight='loud' size='small' rotation="-90deg" className={styles.backLink} />}
                   linkRenderer={linkRenderer}>
-                  {messages['menu.backToMenu']}
+                  {_get(menuMessage, 'backToMenu')}
                 </MenuItem>
                 {
                   link.children && link.children.map((sublink, i) => {
@@ -78,59 +79,59 @@ export default class Menu extends Component {
     return null;
   }
   render() {
-    const { messages, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, baseUrl, userName, linkRenderer, loginAvailable } = this.props;
+    const { menuMessage, headerMessage, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, userName, linkRenderer, loginAvailable } = this.props;
     const selectedLocale = locales[0];
     return (
       <div className={classnames(styles.root, { [styles.showMenu]: shouldShowMenu })}>
         <Section className={styles.headerMenu}>
-          <Text whisperingTitle> {authenticationStatus === AUTHENTICATED ? userName.toUpperCase() : messages['menu.jobSeekerHeader']}</Text>
+          <Text whisperingTitle> {authenticationStatus === AUTHENTICATED ? userName.toUpperCase() : _get(menuMessage, 'jobSeekerHeader')}</Text>
         </Section>
         {
           authenticationStatus === AUTHENTICATED && (<div className={styles.menuBody}>
-            <MenuItem linkUrl={baseUrl + messages['header.profileUrl']} ItemIcon={<Icon type='profileMale' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
-              {messages['header.profileTitle']}
+            <MenuItem linkUrl={_get(headerMessage, 'profile.url')} ItemIcon={<Icon type='profileMale' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
+              {_get(headerMessage, 'profile.title')}
             </MenuItem>
-            <MenuItem linkUrl={baseUrl + messages['header.invitationUrl']} ItemIcon={<Icon type='jobInvitation' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
-              {messages['header.invitationTitle']}
+            <MenuItem linkUrl={_get(headerMessage, 'invitation.url')} ItemIcon={<Icon type='jobInvitation' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} linkRenderer={linkRenderer} >
+              {_get(headerMessage, 'invitation.title')}
             </MenuItem>
           </div>)
         }
-        {this.renderMenuLinks({ messages, brandStyles, linkRenderer }, links)}
+        {this.renderMenuLinks({ menuMessage, brandStyles, linkRenderer }, links)}
         {
           authenticationStatus === UNAUTHENTICATED && employerSite && (<div className={styles.menuBody}>
-            <MenuItem linkUrl={baseUrl + messages['header.employerSiteUrl']} ItemIcon={<Icon type='employer' lineHeight='conversational' size='small' className={styles.employer} />} linkRenderer={linkRenderer}>
-              {messages['header.employerSiteTitle']}
+            <MenuItem linkUrl={_get(headerMessage, 'employer.url')} ItemIcon={<Icon type='employer' lineHeight='conversational' size='small' className={styles.employer} />} linkRenderer={linkRenderer}>
+              {_get(headerMessage, 'employer.title')}
             </MenuItem>
           </div>)
         }
         <Section className={styles.headerMenu}>
-          <Text whisperingTitle>{messages['menu.settingsHeader']}</Text>
+          <Text whisperingTitle>{_get(menuMessage, 'settingsHeader')}</Text>
         </Section>
         <div className={styles.menuBody}>
           {locales && locales.length && (
-            <MenuItem title={messages['menu.countryAndLanguage']} handleClick={this.toggleLocalesMenu} ItemIcon={<Icon type='country' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+            <MenuItem title={_get(menuMessage, 'countryAndLanguage')} handleClick={this.toggleLocalesMenu} ItemIcon={<Icon type='country' lineHeight='conversational' size='small' className={brandStyles.menuIcon} />} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               {selectedLocale.title}
             </MenuItem>
           )}
         </div>
         {
           authenticationStatus === AUTHENTICATED && (<div className={styles.menuBody}>
-            <MenuItem className={styles.loginSignup} linkUrl={messages['header.mobileLogoutUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              {messages['header.logoutTitle']}
+            <MenuItem className={styles.loginSignup} linkUrl={_get(headerMessage, 'mobileLogoutUrl')} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {_get(headerMessage, 'logout.title')}
             </MenuItem>
           </div>)
         }
         {
           authenticationStatus === UNAUTHENTICATED && loginAvailable && (
-            <MenuItem className={styles.loginSignup} linkUrl={messages['header.mobileLoginUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              {messages['header.loginTitle']}
+            <MenuItem className={styles.loginSignup} linkUrl={_get(headerMessage, 'mobileLoginUrl')} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {_get(headerMessage, 'login.title')}
             </MenuItem>
           )
         }
         {
           authenticationStatus === UNAUTHENTICATED && loginAvailable && (
-            <MenuItem className={styles.loginSignup} linkUrl={baseUrl + messages['header.signupUrl']} brandStyles={brandStyles} linkRenderer={linkRenderer}>
-              {messages['header.signupTitle']}
+            <MenuItem className={styles.loginSignup} linkUrl={_get(headerMessage, 'signUp.url')} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+              {_get(headerMessage, 'signUp.title')}
             </MenuItem>
           )
         }
@@ -140,7 +141,7 @@ export default class Menu extends Component {
             className={styles.backLink}
             ItemIcon={<Icon type='chevron' lineHeight='loud' size='small' rotation="-90deg" className={styles.backLink} />}
             linkRenderer={linkRenderer}>
-            {messages['menu.backToMenu']}
+            {_get(menuMessage, 'backToMenu')}
           </MenuItem>
           <MenuItem ItemIcon={<selectedLocale.ItemIcon className={styles.flag} />} descriptionProps={{ strong: true, className: styles.selectedLocale }}>
             {selectedLocale.title}
@@ -162,7 +163,8 @@ export default class Menu extends Component {
 }
 
 Menu.propTypes = {
-  messages: PropTypes.object.isRequired,
+  headerMessage: PropTypes.object.isRequired,
+  menuMessage: PropTypes.object.isRequired,
   shouldShowMenu: PropTypes.bool,
   links: PropTypes.array,
   locales: PropTypes.array.isRequired,
@@ -176,7 +178,6 @@ Menu.propTypes = {
     UNAUTHENTICATED,
     AUTH_PENDING
   ]).isRequired,
-  baseUrl: PropTypes.string,
   linkRenderer: PropTypes.func,
   userName: PropTypes.string,
   loginAvailable: PropTypes.bool

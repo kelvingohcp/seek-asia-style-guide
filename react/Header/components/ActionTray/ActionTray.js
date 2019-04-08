@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { Icon, Constants } from 'seek-asia-style-guide/react';
 import styles from './ActionTray.less';
+import _get from 'lodash/get';
 
 const actionTrayLink = ({ linkUrl, activeTab, tabName, menuOpen, brandStyles, showFlag, handleToggleMenu, linkRenderer, title, iconName }) => {
   if (showFlag) {
@@ -48,7 +49,7 @@ actionTrayLink.propTypes = {
   iconName: PropTypes.string
 };
 
-const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOpen, showTray = true, showHome = true, showSearch = true, showMenu = true, baseUrl, country, linkRenderer }) => {
+const ActionTray = ({ brandStyles, headerMessage, handleToggleMenu, activeTab, menuOpen, showTray = true, showHome = true, showSearch = true, showMenu = true, baseUrl, country, linkRenderer }) => {
   const actionTrayLinkProps = {
     brandStyles,
     activeTab,
@@ -60,10 +61,10 @@ const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOp
   if (showTray) {
     return (
       <div className={styles.root}>
-        {actionTrayLink({ showFlag: showHome, iconName: 'home', linkUrl: baseUrl + messages['header.homeUrl'], tabName: ACTIVE_TAB_HOME, ...actionTrayLinkProps })}
+        {actionTrayLink({ showFlag: showHome, iconName: 'home', linkUrl: baseUrl + _get(headerMessage, 'homeUrl'), tabName: ACTIVE_TAB_HOME, ...actionTrayLinkProps })}
         { country === 'hk' ?
-          actionTrayLink({ showFlag: showSearch, iconName: 'search', linkUrl: baseUrl + messages['header.searchUrl'], title: 'Search HK Jobs', tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps }) :
-          actionTrayLink({ showFlag: showSearch, iconName: 'search', linkUrl: baseUrl + messages['header.searchUrl'], tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps })
+          actionTrayLink({ showFlag: showSearch, iconName: 'search', linkUrl: baseUrl + _get(headerMessage, 'searchUrl'), title: 'Search HK Jobs', tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps }) :
+          actionTrayLink({ showFlag: showSearch, iconName: 'search', linkUrl: baseUrl + _get(headerMessage, 'searchUrl'), tabName: ACTIVE_TAB_SEARCH, ...actionTrayLinkProps })
         }
         {showMenu && (
           <div onClick={handleToggleMenu} className={styles.menuToggle}>
@@ -78,7 +79,7 @@ const ActionTray = ({ brandStyles, messages, handleToggleMenu, activeTab, menuOp
 
 ActionTray.propTypes = {
   brandStyles: PropTypes.object.isRequired,
-  messages: PropTypes.object.isRequired,
+  headerMessage: PropTypes.object.isRequired,
   handleToggleMenu: PropTypes.func.isRequired,
   activeTab: PropTypes.string,
   menuOpen: PropTypes.bool,

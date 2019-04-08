@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
+import headerMessage from './mock/headerMessage';
+import menuMessage from './mock/menuMessage';
 import Header from './Header';
 
 describe('Header', () => {
@@ -17,7 +18,6 @@ describe('Header', () => {
       'header.homeUrl': 'http://seekasia.com/home',
       'header.employerSiteUrl': 'http://brand.seekasia.com',
       'header.employerSiteTitle': 'click here',
-      'header.employerLinkPrefix': 'Awesome employers should ',
       'header.homeUrlText': 'awesome'
     },
     locales: [{
@@ -35,7 +35,9 @@ describe('Header', () => {
     }],
     LogoComponent: FakeComponent,
     country: 'hk',
-    language: 'en'
+    language: 'en',
+    headerMessage,
+    menuMessage
   };
 
   const mockLinks = [
@@ -54,6 +56,15 @@ describe('Header', () => {
     const testProps = {
       ...defaultProps,
       loginAvailable: true
+    };
+    const wrapper = shallow(<Header {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render with hide country', () => {
+    const testProps = {
+      ...defaultProps,
+      showCountryLanguage: false
     };
     const wrapper = shallow(<Header {...testProps} />);
     expect(wrapper).toMatchSnapshot();

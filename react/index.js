@@ -18,6 +18,7 @@ export { default as JobLabel } from './JobLabel/JobLabel';
 export { default as CardLoader } from './CardLoader/CardLoader';
 export { default as CardLoadingBar } from './CardLoadingBar/CardLoadingBar';
 export { default as Header } from './Header/Header';
+export { default as Footer } from './Footer/Footer';
 export { default as ShowMore } from './ShowMore/ShowMore';
 export { default as TitledCard } from './TitledCard/TitledCard';
 export { default as Icon } from './Icon/Icon';
