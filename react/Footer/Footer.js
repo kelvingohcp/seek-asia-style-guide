@@ -30,7 +30,6 @@ export const makeDefaultLinkRenderer = () => {
 
 const currentLocale = ({ title, ItemIcon }) => {
   if (title) {
-    console.log('currentLocale => ', { title, ItemIcon });
     return (
       <span className={styles.currentLocale}>
         <ItemIcon className={styles.localeIcon} />
