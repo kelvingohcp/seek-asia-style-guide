@@ -52,6 +52,7 @@
 
 .label {
   display: flex;
+  justify-content: stretch;
   .horizontalPadding(@checkbox-atom-gap);
   .checked & {
     font-weight: @sa-semi-bold;
@@ -66,6 +67,7 @@
   cursor: pointer;
   display: flex;
   flex-flow: nowrap;
+  flex-grow: 1;
   .horizontalMargin(@checkbox-atom-gap * -1);
   .inlineBlockLineheight(@checkbox-side-length);
   user-select: none;
@@ -187,5 +189,6 @@
 .mainLabel {
   align-items: baseline;
   display: flex;
+  flex-grow: 9999;
   grid-area: labels;
 }
