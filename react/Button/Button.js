@@ -25,8 +25,6 @@ export default class Button extends Component {
       PropTypes.string
     ]),
     disabled: PropTypes.bool,
-    isJobsDB: PropTypes.bool,
-    isJobStreet: PropTypes.bool,
     isSelected: PropTypes.bool,
     role: PropTypes.string,
     tabIndex: PropTypes.number
