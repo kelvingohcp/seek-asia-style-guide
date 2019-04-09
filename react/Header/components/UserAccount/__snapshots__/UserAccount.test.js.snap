@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserAccount should render is UNAUTHENTICATED 1`] = `
+<div
+  className="secondaryNav"
+>
+  <Text
+    baseline={true}
+    className="displayText"
+  >
+    or
+  </Text>
+</div>
+`;
+
+exports[`UserAccount should render with default props 1`] = `
+<div
+  className="secondaryNav"
+>
+  <span>
+    <UserAccountMenu
+      linkRenderer={[Function]}
+      userAccMenuItems={Array []}
+      userName="JObsDB"
+    />
+  </span>
+</div>
+`;

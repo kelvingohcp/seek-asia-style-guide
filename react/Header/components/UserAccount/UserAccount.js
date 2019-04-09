@@ -34,7 +34,6 @@ export default class UserAccount extends Component {
       userName,
       userAccMenuItems,
       headerMessage,
-      baseUrl,
       linkRenderer
     } = this.props;
 
@@ -53,7 +52,7 @@ export default class UserAccount extends Component {
           return (
             <div className={styles.secondaryNav}>
               {linkRenderer({
-                href: `${baseUrl + _get(headerMessage, 'login.url')}`,
+                href: _get(headerMessage, 'login.url'),
                 children: <Button
                   className={styles.userAcclink}
                   color='hyperlink'
@@ -63,7 +62,7 @@ export default class UserAccount extends Component {
               })}
               <Text className={styles.displayText}>{_get(headerMessage, 'seperatorOr')}</Text>
               {linkRenderer({
-                href: `${baseUrl + _get(headerMessage, 'signUp.url')}`,
+                href: _get(headerMessage, 'signUp.url'),
                 children: <Button
                   className={styles.signup}
                   color='hyperlink'
@@ -73,7 +72,7 @@ export default class UserAccount extends Component {
               })}
               {
                 linkRenderer({
-                  href: `${baseUrl + _get(headerMessage, 'employer.url')}`,
+                  href: _get(headerMessage, 'employer.url'),
                   children: <Button
                     className={styles.userAcclink}
                     color='tertiary'
@@ -100,14 +99,8 @@ UserAccount.propTypes = {
     AUTH_PENDING
   ]).isRequired,
   userName: PropTypes.string,
-  brandStyles: PropTypes.object,
-  loginTitle: PropTypes.string,
-  loginUrl: PropTypes.string,
-  signupTitle: PropTypes.string,
-  signupUrl: PropTypes.string,
   userAccMenuItems: PropTypes.array,
   onMenuToggle: PropTypes.func,
-  baseUrl: PropTypes.string,
   headerMessage: PropTypes.object.isRequired,
   linkRenderer: PropTypes.func
 };
