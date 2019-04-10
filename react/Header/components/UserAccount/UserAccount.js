@@ -60,7 +60,7 @@ export default class UserAccount extends Component {
                   {`${_get(headerMessage, 'login.title')}`}
                 </Button>
               })}
-              <Text className={styles.displayText}>{_get(headerMessage, 'seperatorOr')}</Text>
+              <Text baseline={false} className={styles.displayText}>{_get(headerMessage, 'seperatorOr')}</Text>
               {linkRenderer({
                 href: _get(headerMessage, 'signUp.url'),
                 children: <Button

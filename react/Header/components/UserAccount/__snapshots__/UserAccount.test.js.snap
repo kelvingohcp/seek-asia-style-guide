@@ -5,7 +5,7 @@ exports[`UserAccount should render is UNAUTHENTICATED 1`] = `
   className="secondaryNav"
 >
   <Text
-    baseline={true}
+    baseline={false}
     className="displayText"
   >
     or
