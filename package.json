@@ -2,9 +2,6 @@
   "name": "seek-asia-style-guide",
   "version": "0.0.0-development",
   "description": "Living style guide containing the building blocks and design principles for SEEK web applications",
-  "engines": {
-    "node": ">=6.0.0"
-  },
   "main": "index.js",
   "scripts": {
     "start": "BASE_HREF=/ node docs/server",
@@ -85,7 +82,9 @@
     "babel-loader": "^7.1.4",
     "babel-plugin-add-react-displayname": "^0.0.4",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-flow-react-proptypes": "^17.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
@@ -128,6 +127,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.1.0",
     "localforage": "^1.7.2",
+    "mini-css-extract-plugin": "0.5.0",
     "module-alias": "^2.0.6",
     "@octokit/rest": "^15.15.1",
     "opn": "^5.3.0",
@@ -149,7 +149,6 @@
     "rewrite-files": "^1.0.1",
     "rimraf": "^2.6.1",
     "scope-eval": "^1.0.0",
-    "seek-asia-style-guide-webpack": "github:seekinternational/seek-asia-style-guide-webpack",
     "semantic-release": "^7.0.2",
     "serialize-javascript": "^1.4.0",
     "sinon": "^4.4.6",
@@ -165,9 +164,11 @@
     "svgo": "^1.0.5",
     "svgo-loader": "^2.0.0",
     "validate-commit-msg": "^2.14.0",
-    "webpack": "^3.11.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^2.11.2",
     "webpack-fail-plugin": "^1.0.6",
+    "webpack-node-externals": "^1.6.0",
     "zip-folder": "^1.0.0"
   },
   "release": {

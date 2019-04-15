@@ -2,39 +2,39 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.5
+      - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
-      - run: npm install
+      - run: yarn --ignore-engines
       - run:
            name: Run lint
-           command: npm run lint
+           command: yarn run lint
       - run:
          name: Run unit test
-         command: npm run test:ci
+         command: yarn run test:ci
   surge:
      docker:
        - image: circleci/node:8.5
      working_directory: ~/repo
      steps:
        - checkout
-       - run: npm install
-       - run: npm run build
-       - run: npm run deploy-surge -- -d seek-asia-style-guide--$CIRCLE_SHA1.surge.sh
-       - run: npm run post-commit-status
+       - run: yarn --ignore-engines
+       - run: yarn run build
+       - run: yarn run deploy-surge -- -d seek-asia-style-guide--$CIRCLE_SHA1.surge.sh
+       - run: yarn run post-commit-status
   deploy:
     docker:
       - image: circleci/node:8.5
     working_directory: ~/repo
     steps:
       - checkout
-      - run: npm install
+      - run: yarn --ignore-engines
       - run: git config --global user.name "Circle-CI";
       - run: git config --global user.email "srp-dev@seekasia.com";
-      - run: npm run build-gh-pages
-      - run: npm run deploy-gh-pages
-      - run: npm run semantic-release
+      - run: yarn run build-gh-pages
+      - run: yarn run deploy-gh-pages
+      - run: yarn run semantic-release
 workflows:
   version: 2
   status-check:
