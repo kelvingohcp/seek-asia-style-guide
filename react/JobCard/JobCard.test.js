@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import JobCard from './JobCard';
 import { Text } from 'seek-asia-style-guide/react';
+import omit from 'lodash/omit';
 
 const defaultJob = {
   company: {
@@ -34,10 +35,10 @@ const defaultJob = {
   companyLogoUrl:
     'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
   postingDuration: '1 hour ago',
-  qualification: 'Qualification Not Specified',
-  careerLevel: 'Entry Level',
-  workExperience: '3 Years of Experience',
-  employmentTerm: 'Full Time',
+  qualificationName: 'Qualification Not Specified',
+  careerLevelName: 'Entry Level',
+  workExperienceName: '3 Years of Experience',
+  employmentTermName: 'Full Time',
   salary: 'RM99999 - RM999999',
   bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png',
   shelf: {
@@ -83,6 +84,11 @@ const sellingPoints = [
 describe('JobCard', () => {
   it('should render with default props', () => {
     const wrapper = shallow(<JobCard {...defaultProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render correctly with missing qualification', () => {
+    const wrapper = shallow(<JobCard {...omit(defaultProps, ['qualificationName'])} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -283,7 +289,7 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should not render with viewed badge if viewed date is undefined', () => {
+  it('should not render the viewed badge if viewed date is undefined', () => {
     const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} viewed />);
     expect(wrapper).toMatchSnapshot();
   });
@@ -302,39 +308,39 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render with trackLinkClicked', () => {
+  it('should render with trackLinkClicked', () => {
     const spy = jest.fn();
     const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} trackLinkClicked={spy} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render show company banner', () => {
+  it('should render with company banner', () => {
     const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render show company banner and isVariation ', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} />);
+  it('should render with company banner ', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render show company banner and isVariation and isSplitView ', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isVariation={true} isSplitView={true} />);
+  it('should render with company banner in split view ', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isSplitView={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render isVariation and isSplitView and with three sellings point', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} isVariation={true} isSplitView={true} />);
+  it('should render with selling points in split view', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} isSplitView={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render show company banner and isVariation and isSplitView and with three sellings point', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} enableBrandedAd={true} isVariation={true} isSplitView={true} />);
+  it('should render with company banner and selling points in split view', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} enableBrandedAd={true} isSplitView={true} />);
 
     expect(wrapper).toMatchSnapshot();
   });

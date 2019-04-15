@@ -26,10 +26,10 @@ export const JobType = {
   shelf: ShelfPropTypes,
   appliedDate: PropTypes.string,
   isExpired: PropTypes.bool,
-  qualification: PropTypes.string,
-  careerLevel: PropTypes.string,
-  workExperience: PropTypes.string,
-  employmentTerm: PropTypes.string,
+  qualificationName: PropTypes.string,
+  careerLevelName: PropTypes.string,
+  workExperienceName: PropTypes.string,
+  employmentTermName: PropTypes.string,
   bannerUrl: PropTypes.string
 };
 

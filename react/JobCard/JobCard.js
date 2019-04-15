@@ -145,22 +145,16 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-const CompanyBanner = ({ bannerUrl, enableBrandedAd, isVariation }) => {
+const CompanyBanner = ({ bannerUrl, enableBrandedAd }) => {
   return enableBrandedAd && bannerUrl ?
     <img
-      className={
-        classnames({
-          [styles.companyBannerOnMobile]: !isVariation,
-          [styles.companyBannerOnDesktop]: isVariation
-        })
-      }
+      className={styles.companyBannerOnDesktop}
       src={bannerUrl}
     /> : null;
 };
 CompanyBanner.propTypes = {
   bannerUrl: JobType.bannerUrl,
-  enableBrandedAd: JobCardPropTypes.enableBrandedAd,
-  isVariation: JobCardPropTypes.isVariation
+  enableBrandedAd: JobCardPropTypes.enableBrandedAd
 };
 
 const CompanyPic = ({ companyPictureUrl, showCompanyPic }) => {
@@ -210,7 +204,6 @@ export default class JobCard extends React.Component {
       borderlessRoot = false,
       isSelected,
       isSplitView,
-      isVariation,
       enableBrandedAd,
       job,
       keyword,
@@ -260,16 +253,15 @@ export default class JobCard extends React.Component {
           <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
           <div className={styles.flexRow}>
             <div className={styles.leftContent}>
-              {isVariation && <MainPoint {...this.props} />}
+              <MainPoint {...this.props} />
               <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
-              {!isVariation && <MainPoint {...this.props} />}
               {!isSplitView &&
                 <Description description={job.description} showDescription={showDescription} />
               }
               <ShelfLink
                 job={job}
                 shelfSectionOpen={shelfSectionOpen}
-                mobileOnly={isVariation && !isSplitView}
+                mobileOnly={!isSplitView}
                 onClick={this.handleShelfSectionToggle}
               />
               <JobLabel applied={applied} expired={job.isExpired} viewed={viewed && viewedDate && `Viewed ${viewedDate}`} />
@@ -278,14 +270,14 @@ export default class JobCard extends React.Component {
               className={
                 classnames(
                   {
-                    [styles.rightContent]: !(enableBrandedAd && isVariation && !isSplitView),
-                    [styles.rightContentWithBanner]: enableBrandedAd && isVariation && !isSplitView
+                    [styles.rightContent]: !(enableBrandedAd && !isSplitView),
+                    [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
                   }
                 )
               }>
               <CompanyLogo companyLogoUrl={job.companyLogoUrl} showCompanyLogo={showCompanyLogo} />
               <CompanyPic companyPictureUrl={job.companyPictureUrl} showCompanyPic={showCompanyPic} />
-              {isVariation && !isSplitView &&
+              {!isSplitView &&
                 <ShelfLink
                   job={job}
                   shelfSectionOpen={shelfSectionOpen}
@@ -302,17 +294,17 @@ export default class JobCard extends React.Component {
           />
         </div>
         {
-          isVariation && !isSplitView &&
+          !isSplitView &&
           <div className={styles.rightContainer}>
-            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} isVariation={isVariation} />
+            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
             <IconList
               className={styles.structuredData}
               list={[
-                { content: job.careerLevel, iconType: 'careerLevel' },
-                { content: job.workExperience, iconType: 'experience' },
-                { content: job.qualification, iconType: 'education' },
-                { content: job.employmentTerm, iconType: 'employmentType' }
-              ]}
+                { content: job.careerLevelName, iconType: 'careerLevel' },
+                { content: job.workExperienceName, iconType: 'experience' },
+                { content: job.qualificationName, iconType: 'education' },
+                { content: job.employmentTermName, iconType: 'employmentType' }
+              ].filter(item => item.content)}
             />
           </div>
         }

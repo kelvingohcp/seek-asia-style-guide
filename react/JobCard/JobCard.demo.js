@@ -28,10 +28,6 @@ const booleanProps = [
     prop: 'viewed'
   },
   {
-    label: 'Variation',
-    prop: 'isVariation'
-  },
-  {
     label: 'Split View',
     prop: 'isSplitView'
   },
@@ -172,10 +168,10 @@ export default {
         'We support a safe environment for our employees'
       ],
       isExpired: false,
-      qualification: 'Qualification Not Specified',
-      careerLevel: 'Entry Level',
-      workExperience: '3 Years of Experience',
-      employmentTerm: 'Full Time',
+      qualificationName: 'Qualification Not Specified',
+      careerLevelName: 'Entry Level',
+      workExperienceName: '3 Years of Experience',
+      employmentTermName: 'Full Time',
       bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
     },
     showCompanyLogo: false,
