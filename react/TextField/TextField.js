@@ -34,6 +34,7 @@ export default class TextField extends Component {
     onChange: PropTypes.func.isRequired,
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
+    onEnter: PropTypes.func,
     type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'search', 'tel', 'url']),
     mask: PropTypes.array,
     className: PropTypes.string,
@@ -60,6 +61,7 @@ export default class TextField extends Component {
     this.storeInputReference = this.storeInputReference.bind(this);
     this.renderInput = this.renderInput.bind(this);
     this.handleMouseDownOnClear = this.handleMouseDownOnClear.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
   storeContainerReference = textField => {
@@ -84,6 +86,16 @@ export default class TextField extends Component {
     this.input.focus();
   }
 
+  handleKeyDown(event) {
+    switch (event.keyCode) {
+      case 13: // Enter
+        invoke(this.props, 'onEnter', event);
+        break;
+      default:
+        break;
+    }
+  }
+
   renderInput() {
     const { id, value, onChange, onFocus, onBlur, type, mask, pattern, placeholder, inputProps = {} } = this.props;
     const { ref } = inputProps;
@@ -93,6 +105,7 @@ export default class TextField extends Component {
       onChange,
       onFocus,
       onBlur,
+      onKeyDown: this.handleKeyDown,
       type,
       pattern,
       placeholder,
