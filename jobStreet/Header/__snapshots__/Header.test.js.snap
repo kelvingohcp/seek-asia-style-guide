@@ -62,6 +62,7 @@ exports[`JobStreet Header passes through optional props 1`] = `
       },
     }
   }
+  hideNavMenu={false}
   homeUrl="/"
   language="en"
   linkRenderer={[Function]}
@@ -243,6 +244,7 @@ exports[`JobStreet Header renders with default props 1`] = `
       },
     }
   }
+  hideNavMenu={false}
   homeUrl="/"
   language="en"
   linkRenderer={[Function]}

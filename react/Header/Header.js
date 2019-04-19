@@ -105,7 +105,8 @@ export default class Header extends Component {
       userName,
       userAccMenuItems,
       baseUrl,
-      linkRenderer
+      linkRenderer,
+      hideNavMenu
     } = this.props;
     const menuOpen = this.state.menuOpen;
 
@@ -144,7 +145,7 @@ export default class Header extends Component {
               <LogoComponent {...logoProps} />
             </h1>
 
-            {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
+            {!hideNavMenu && renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
             {loginAvailable && <div className={styles.secondaryNav} />}
             <UserAccount
               userName={userName}
@@ -212,12 +213,14 @@ Header.propTypes = {
   ]),
   userName: PropTypes.string,
   userAccMenuItems: PropTypes.array,
-  baseUrl: PropTypes.string
+  baseUrl: PropTypes.string,
+  hideNavMenu: PropTypes.bool
 };
 
 Header.defaultProps = {
   linkRenderer: defaultLinkRenderer,
   authenticationStatus: UNAUTHENTICATED,
   homeUrl: '/',
-  onMenuOpen: () => {}
+  onMenuOpen: () => {},
+  hideNavMenu: false
 };

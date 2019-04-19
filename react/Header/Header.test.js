@@ -94,4 +94,13 @@ describe('Header', () => {
     const wrapper = shallow(<Header {...testProps} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render without navigation menu', () => {
+    const testProps = {
+      ...defaultProps,
+      showNavMenu: false
+    };
+    const wrapper = shallow(<Header {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

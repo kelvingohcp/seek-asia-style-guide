@@ -64,6 +64,13 @@ export default {
             showMenu: false
           }
         })
+      },
+      {
+        label: 'Hide Navigation',
+        transformProps: props => ({
+          ...props,
+          hideNavMenu: true
+        })
       }
     ]
   }, {

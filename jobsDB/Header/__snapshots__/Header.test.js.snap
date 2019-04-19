@@ -81,6 +81,7 @@ exports[`JobsDB Header renders with default props 1`] = `
       },
     }
   }
+  hideNavMenu={false}
   homeUrl="/hk"
   language="en"
   linkRenderer={[Function]}
