@@ -7,7 +7,8 @@ import omit from 'lodash/omit';
 const defaultJob = {
   company: {
     name: 'SEEK Asia',
-    link: '/jobCard'
+    link: '/jobCard',
+    logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
   },
   jobTitle: 'Senior Software Engineer (6 months Contract)',
   jobUrl:
@@ -32,8 +33,6 @@ const defaultJob = {
   ],
   description:
     'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
-  companyLogoUrl:
-    'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
   postingDuration: '1 hour ago',
   qualificationName: 'Qualification Not Specified',
   careerLevelName: 'Entry Level',

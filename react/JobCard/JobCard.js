@@ -14,6 +14,7 @@ import ShelfSection from './components/ShelfSection/ShelfSection';
 import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
 import JobLabel from '../JobLabel/JobLabel';
 import PropTypes from 'prop-types';
+import _get from 'lodash/get';
 
 export const trackLinkType = {
   jobTitle: 'jobTitle',
@@ -223,6 +224,8 @@ export default class JobCard extends React.Component {
 
     const { shelfSectionOpen } = this.state;
 
+    const { logoUrl } = _get(job, 'company', {});
+
     return (
       <Card
         className={classnames(styles.container, {
@@ -275,7 +278,7 @@ export default class JobCard extends React.Component {
                   }
                 )
               }>
-              <CompanyLogo companyLogoUrl={job.companyLogoUrl} showCompanyLogo={showCompanyLogo} />
+              <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
               <CompanyPic companyPictureUrl={job.companyPictureUrl} showCompanyPic={showCompanyPic} />
               {!isSplitView &&
                 <ShelfLink

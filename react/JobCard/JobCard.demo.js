@@ -133,7 +133,8 @@ export default {
       company: {
         name: 'SEEK Asia',
         link: '/jobCard',
-        title: 'Jobs at SEEK Asia'
+        title: 'Jobs at SEEK Asia',
+        logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
       },
       jobTitle: 'Senior Software Engineer (6 months Contract)',
       jobUrl: 'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
@@ -158,7 +159,6 @@ export default {
         }
       ],
       description: 'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
-      companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
       companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg',
       postingDuration: '1 hour ago',
       salary: 'RM99999 - RM999999',
@@ -370,7 +370,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+              company: {
+                ...props.job.company,
+                logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+              }
             }
           })
         },
@@ -380,7 +383,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
+              company: {
+                ...props.job.company,
+                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
+              }
             }
           })
         },
@@ -390,7 +396,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
+              company: {
+                ...props.job.company,
+                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
+              }
             }
           })
         },
@@ -400,7 +409,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
+              company: {
+                ...props.job.company,
+                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
+              }
             }
           })
         }

@@ -18,9 +18,9 @@ exports[`JobCard should not render shelf section 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -56,6 +56,7 @@ exports[`JobCard should not render shelf section 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -75,9 +76,9 @@ exports[`JobCard should not render shelf section 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -129,9 +130,9 @@ exports[`JobCard should not render shelf section 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -187,9 +188,9 @@ exports[`JobCard should not render shelf section 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -282,9 +283,9 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -331,6 +332,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -350,9 +352,9 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -415,9 +417,9 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -484,9 +486,9 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -603,9 +605,9 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -663,6 +665,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -682,9 +685,9 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -758,9 +761,9 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -837,9 +840,9 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -976,9 +979,9 @@ exports[`JobCard should pass through viewed prop 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -1036,6 +1039,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -1055,9 +1059,9 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1131,9 +1135,9 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1210,9 +1214,9 @@ exports[`JobCard should pass through viewed prop 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1349,9 +1353,9 @@ exports[`JobCard should render company with bold keyword 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -1409,6 +1413,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -1429,9 +1434,9 @@ exports[`JobCard should render company with bold keyword 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1505,9 +1510,9 @@ exports[`JobCard should render company with bold keyword 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1584,9 +1589,9 @@ exports[`JobCard should render company with bold keyword 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1723,9 +1728,9 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -1782,6 +1787,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -1801,9 +1807,9 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1876,9 +1882,9 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -1955,9 +1961,9 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2095,9 +2101,9 @@ exports[`JobCard should render job title component 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -2154,6 +2160,7 @@ exports[`JobCard should render job title component 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -2174,9 +2181,9 @@ exports[`JobCard should render job title component 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2249,9 +2256,9 @@ exports[`JobCard should render job title component 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2328,9 +2335,9 @@ exports[`JobCard should render job title component 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2467,9 +2474,9 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -2527,6 +2534,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -2547,9 +2555,9 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2623,9 +2631,9 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2702,9 +2710,9 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2841,9 +2849,9 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -2900,6 +2908,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -2919,9 +2928,9 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -2994,9 +3003,9 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -3073,9 +3082,9 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -3212,9 +3221,9 @@ exports[`JobCard should render jobsDB default style 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -3271,6 +3280,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -3290,9 +3300,9 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -3365,9 +3375,9 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -3444,9 +3454,9 @@ exports[`JobCard should render jobsDB default style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -3584,9 +3594,9 @@ exports[`JobCard should render only applied badge, when both applied and expired
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": true,
@@ -3643,6 +3653,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -3663,9 +3674,9 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": true,
@@ -3738,9 +3749,9 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": true,
@@ -3818,9 +3829,9 @@ exports[`JobCard should render only applied badge, when both applied and expired
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": true,
@@ -3958,7 +3969,6 @@ exports[`JobCard should render plain company label 1`] = `
           "company": Object {
             "name": "Seek Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -4034,7 +4044,6 @@ exports[`JobCard should render plain company label 1`] = `
               "company": Object {
                 "name": "Seek Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4108,7 +4117,6 @@ exports[`JobCard should render plain company label 1`] = `
               "company": Object {
                 "name": "Seek Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4171,7 +4179,6 @@ exports[`JobCard should render plain company label 1`] = `
         className="rightContent"
       >
         <CompanyLogo
-          companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
         <CompanyPic
@@ -4186,7 +4193,6 @@ exports[`JobCard should render plain company label 1`] = `
               "company": Object {
                 "name": "Seek Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4323,9 +4329,9 @@ exports[`JobCard should render selected style 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -4382,6 +4388,7 @@ exports[`JobCard should render selected style 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -4402,9 +4409,9 @@ exports[`JobCard should render selected style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4477,9 +4484,9 @@ exports[`JobCard should render selected style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4556,9 +4563,9 @@ exports[`JobCard should render selected style 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4695,9 +4702,9 @@ exports[`JobCard should render tag links 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -4764,6 +4771,7 @@ exports[`JobCard should render tag links 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -4783,9 +4791,9 @@ exports[`JobCard should render tag links 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4868,9 +4876,9 @@ exports[`JobCard should render tag links 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -4957,9 +4965,9 @@ exports[`JobCard should render tag links 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5117,9 +5125,9 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           "classifiedLabel": "Classified",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -5176,6 +5184,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -5196,9 +5205,9 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "classifiedLabel": "Classified",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5272,9 +5281,9 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "classifiedLabel": "Classified",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5352,9 +5361,9 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "classifiedLabel": "Classified",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5492,9 +5501,9 @@ exports[`JobCard should render with applied badge 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -5551,6 +5560,7 @@ exports[`JobCard should render with applied badge 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -5571,9 +5581,9 @@ exports[`JobCard should render with applied badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5646,9 +5656,9 @@ exports[`JobCard should render with applied badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5726,9 +5736,9 @@ exports[`JobCard should render with applied badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -5865,9 +5875,9 @@ exports[`JobCard should render with company banner  1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -5924,6 +5934,7 @@ exports[`JobCard should render with company banner  1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -5943,9 +5954,9 @@ exports[`JobCard should render with company banner  1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6018,9 +6029,9 @@ exports[`JobCard should render with company banner  1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6097,9 +6108,9 @@ exports[`JobCard should render with company banner  1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6236,9 +6247,9 @@ exports[`JobCard should render with company banner 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -6295,6 +6306,7 @@ exports[`JobCard should render with company banner 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -6314,9 +6326,9 @@ exports[`JobCard should render with company banner 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6389,9 +6401,9 @@ exports[`JobCard should render with company banner 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6468,9 +6480,9 @@ exports[`JobCard should render with company banner 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6607,9 +6619,9 @@ exports[`JobCard should render with company banner and selling points in split v
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -6666,6 +6678,7 @@ exports[`JobCard should render with company banner and selling points in split v
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -6686,9 +6699,9 @@ exports[`JobCard should render with company banner and selling points in split v
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6765,9 +6778,9 @@ exports[`JobCard should render with company banner and selling points in split v
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -6888,9 +6901,9 @@ exports[`JobCard should render with company banner in split view  1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -6947,6 +6960,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -6967,9 +6981,9 @@ exports[`JobCard should render with company banner in split view  1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7039,9 +7053,9 @@ exports[`JobCard should render with company banner in split view  1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7164,7 +7178,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
             "isPrivate": true,
             "name": "Company Confidential",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -7242,7 +7255,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
                 "isPrivate": true,
                 "name": "Company Confidential",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7317,7 +7329,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
                 "isPrivate": true,
                 "name": "Company Confidential",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7380,7 +7391,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         className="rightContent"
       >
         <CompanyLogo
-          companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
         <CompanyPic
@@ -7396,7 +7406,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
                 "isPrivate": true,
                 "name": "Company Confidential",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7533,9 +7542,9 @@ exports[`JobCard should render with default props 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -7592,6 +7601,7 @@ exports[`JobCard should render with default props 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -7611,9 +7621,9 @@ exports[`JobCard should render with default props 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7686,9 +7696,9 @@ exports[`JobCard should render with default props 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7765,9 +7775,9 @@ exports[`JobCard should render with default props 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -7904,9 +7914,9 @@ exports[`JobCard should render with expired badge 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": true,
@@ -7963,6 +7973,7 @@ exports[`JobCard should render with expired badge 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -7982,9 +7993,9 @@ exports[`JobCard should render with expired badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": true,
@@ -8057,9 +8068,9 @@ exports[`JobCard should render with expired badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": true,
@@ -8136,9 +8147,9 @@ exports[`JobCard should render with expired badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": true,
@@ -8275,9 +8286,9 @@ exports[`JobCard should render with selling points in split view 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -8334,6 +8345,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -8354,9 +8366,9 @@ exports[`JobCard should render with selling points in split view 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -8433,9 +8445,9 @@ exports[`JobCard should render with selling points in split view 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -8556,9 +8568,9 @@ exports[`JobCard should render with selling points props 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -8620,6 +8632,7 @@ exports[`JobCard should render with selling points props 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -8639,9 +8652,9 @@ exports[`JobCard should render with selling points props 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -8726,9 +8739,9 @@ exports[`JobCard should render with selling points props 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -8810,9 +8823,9 @@ exports[`JobCard should render with selling points props 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -8954,9 +8967,9 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -9013,6 +9026,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -9032,9 +9046,9 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9107,9 +9121,9 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9186,9 +9200,9 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9325,9 +9339,9 @@ exports[`JobCard should render with viewed badge 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -9385,6 +9399,7 @@ exports[`JobCard should render with viewed badge 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -9404,9 +9419,9 @@ exports[`JobCard should render with viewed badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9481,9 +9496,9 @@ exports[`JobCard should render with viewed badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9561,9 +9576,9 @@ exports[`JobCard should render with viewed badge 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9700,9 +9715,9 @@ exports[`JobCard should render without border 1`] = `
           "careerLevelName": "Entry Level",
           "company": Object {
             "link": "/jobCard",
+            "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
           },
-          "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
           "employmentTermName": "Full Time",
           "isExpired": false,
@@ -9759,6 +9774,7 @@ exports[`JobCard should render without border 1`] = `
       company={
         Object {
           "link": "/jobCard",
+          "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
           "name": "SEEK Asia",
         }
       }
@@ -9779,9 +9795,9 @@ exports[`JobCard should render without border 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9854,9 +9870,9 @@ exports[`JobCard should render without border 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,
@@ -9933,9 +9949,9 @@ exports[`JobCard should render without border 1`] = `
               "careerLevelName": "Entry Level",
               "company": Object {
                 "link": "/jobCard",
+                "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
               },
-              "companyLogoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
               "employmentTermName": "Full Time",
               "isExpired": false,

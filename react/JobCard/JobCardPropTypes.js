@@ -6,6 +6,7 @@ export const CompanyPropTypes = {
   name: PropTypes.string,
   link: PropTypes.string,
   title: PropTypes.string,
+  logoUrl: PropTypes.string,
   isPrivate: PropTypes.bool
 };
 
@@ -15,7 +16,6 @@ export const JobType = {
   jobUrl: PropTypes.string.isRequired,
   sellingPoints: PropTypes.arrayOf(PropTypes.string),
   companyPictureUrl: PropTypes.string,
-  companyLogoUrl: PropTypes.string,
   description: PropTypes.string,
   locations: LocationsPropTypes,
   salary: PropTypes.string,
