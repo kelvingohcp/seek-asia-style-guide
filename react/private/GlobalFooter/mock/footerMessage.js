@@ -19,9 +19,9 @@ export default {
     title: 'Legal terms',
     url: '/legal.do'
   },
-  aboutJobsDB: {
+  about: {
     title: 'About JobsDB',
-    aboutJobsDB: {
+    about: {
       title: 'About jobsDB',
       url: '/pages/aboutus'
     },

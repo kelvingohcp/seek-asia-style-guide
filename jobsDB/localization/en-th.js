@@ -1,4 +1,8 @@
-import { FlagHKIcon, FlagIDIcon, FlagSGIcon, FlagTHIcon } from 'seek-asia-style-guide/react';
+import FlagHKIcon from '../../react/FlagHKIcon/FlagHKIcon';
+import FlagIDIcon from '../../react/FlagIDIcon/FlagIDIcon';
+import FlagSGIcon from '../../react/FlagSGIcon/FlagSGIcon';
+import FlagTHIcon from '../../react/FlagTHIcon/FlagTHIcon';
+import partners from './partners';
 
 const baseUrl = 'https://th.jobsdb.com';
 const baseUrlWithLanguage = `${baseUrl}/th/en`;
@@ -148,9 +152,9 @@ export default {
       title: 'Legal terms',
       url: `${mUrlWithLanguage}/legal.do`
     },
-    aboutJobsDB: {
+    about: {
       title: 'About JobsDB',
-      aboutJobsDB: {
+      about: {
         title: 'About jobsDB',
         url: `${wpUrlWithLanguage}/pages/aboutus`
       },
@@ -194,7 +198,7 @@ export default {
     employers: {
       title: 'Employers',
       postJob: {
-        title: 'Post a job',
+        title: 'Post a Job Ad',
         url: `${wpUrlWithLanguage}/cms/employer/product-services/job-ads/`
       },
       searchCandidates: {
@@ -229,56 +233,6 @@ export default {
         url: 'https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432'
       }
     },
-    partners: {
-      title: 'International partners',
-      bdjobs: {
-        title: 'Bdjobs (Bandladesh)',
-        url: 'https://www.bdjobs.com/'
-      },
-      brighterMonday: {
-        title: 'Brighter Monday (East Africa)',
-        url: 'https://www.brightermonday.com/'
-      },
-      catho: {
-        title: 'Catho (Brazil)',
-        url: 'https://www.catho.com.br/'
-      },
-      jobberman: {
-        title: 'Jobberman (West Africa)',
-        url: 'https://www.jobberman.com/'
-      },
-      jobStreet: {
-        title: 'JobStreet (S.E. Asia)',
-        url: 'https://www.jobstreet.com/'
-      },
-      jora: {
-        title: 'Jora (Hong Kong)',
-        url: 'https://hk.jora.com/'
-      },
-      occ: {
-        title: 'OCC Mundial (Mexico)',
-        url: 'https://www.occ.com.mx/'
-      },
-      seaman: {
-        title: 'Seaman Jobsite (Philippines)',
-        url: 'https://www.seamanjobsite.com/'
-      },
-      seek: {
-        title: 'SEEK (Australia)',
-        url: 'https://www.seek.com.au/'
-      },
-      workAbroad: {
-        title: 'Work Abroad (Philippines)',
-        url: 'https://www.workabroad.ph/'
-      },
-      workana: {
-        title: 'Workana',
-        url: 'https://www.workana.com/'
-      },
-      zhaopin: {
-        title: 'Zhaopin (China)',
-        url: 'https://www.zhaopin.com/'
-      }
-    }
+    partners
   }
 };

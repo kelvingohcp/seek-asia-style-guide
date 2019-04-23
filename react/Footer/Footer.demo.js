@@ -25,12 +25,11 @@ export const makeDummyLinkRendererForPath = path => {
   return DummyLinkRenderer;
 };
 
-const ROUTE = '/jobsdb-footer';
+const ROUTE = '/footer';
 
 export default {
   route: ROUTE,
-  tenantPath: 'jobsDB',
-  title: 'JobsDB Footer',
+  title: 'Footer',
   component: Footer,
   sketch,
   initialProps: {
@@ -75,6 +74,13 @@ export default {
           transformProps: props => ({
             ...props,
             country: 'hk'
+          })
+        },
+        {
+          label: 'Singapore',
+          transformProps: props => ({
+            ...props,
+            country: 'sg'
           })
         },
         {

@@ -1,12 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import FooterLinks from './FooterLinks';
-import footerMessages from '../../mock/footerMessage';
 
 describe('FooterLinks:', () => {
-  it('should render links with messages and linking functions', () => {
+  it('should render links with messages', () => {
     const wrapper = shallow(
-      <FooterLinks footerMessages={footerMessages} linkRenderer={() => {}} />
+      <FooterLinks messages={{}} />
     );
     expect(wrapper).toMatchSnapshot();
   });

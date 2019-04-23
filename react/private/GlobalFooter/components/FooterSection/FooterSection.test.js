@@ -19,7 +19,7 @@ describe('FooterSection', () => {
     const wrapper = shallow(
       <FooterSection
         sessionClass={''}
-        sessionMessage={_get(footerMessage, 'aboutJobsDB')}
+        sessionMessage={_get(footerMessage, 'about')}
         subSessionMessage={_get(footerMessage, 'partners')}
         linkRenderer={() => {}}
       />
@@ -30,8 +30,8 @@ describe('FooterSection', () => {
     const wrapper = shallow(
       <FooterSection
         sessionClass={''}
-        sessionMessage={_get(footerMessage, 'aboutJobsDB')}
-        hideInMobile={['aboutJobsDB', 'faq']}
+        sessionMessage={_get(footerMessage, 'about')}
+        hideInMobile={['about', 'faq']}
         linkRenderer={() => {}}
       />
     );

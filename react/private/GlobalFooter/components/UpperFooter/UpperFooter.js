@@ -11,9 +11,9 @@ const UpperFooter = ({ footerMessages, linkRenderer }) => {
       <div className={styles.columnGroup}>
         <FooterSection
           sessionClass={styles.firstCategory}
-          sessionMessage={_get(footerMessages, 'aboutJobsDB')}
+          sessionMessage={_get(footerMessages, 'about')}
           subSessionMessage={_get(footerMessages, 'partners')}
-          hideInMobile={['aboutJobsDB', 'faq']}
+          hideInMobile={['about', 'faq']}
           linkRenderer={linkRenderer}
         />
         <FooterSection

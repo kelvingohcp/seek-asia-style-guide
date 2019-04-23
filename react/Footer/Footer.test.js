@@ -1,45 +1,59 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import footerMessages from './mock/footerMessage';
 import Footer from './Footer';
-import { FlagHKIcon } from 'seek-asia-style-guide/react';
 
 describe('Footer component', () => {
-  const defaultProps = {
-    country: 'hk',
-    language: 'en',
-    domainUrl: 'jobsdb.com',
-    footerMessages,
-    locales: [
-      {
-        title: 'Hong Kong (English)',
-        ItemIcon: FlagHKIcon,
-        url: '',
-        language: 'en',
-        country: 'hk',
-        languageDisplay: 'English'
-      }
-    ]
-  };
+  const _Date = Date;
 
-  it('should render with default props', () => {
-    const wrapper = shallow(<Footer {...defaultProps} />);
-    expect(wrapper).toMatchSnapshot();
+  beforeEach(() => {
+    const DATE = new Date('2017');
+    global.Date = jest.fn(() => DATE);
+    global.Date.getFullYear = _Date.getFullYear;
   });
 
-  it('should render with custom link renderer', () => {
-    const wrapper = shallow(<Footer linkRenderer={() => {}} {...defaultProps} />);
-    expect(wrapper).toMatchSnapshot();
+  afterEach(() => {
+    global.Date = _Date;
   });
 
-  it('should render with custom href link', () => {
-    const wrapper = shallow(
-      <Footer
-        hrefLink={({ link }) => {
-          return link;
-        }} {...defaultProps}
-      />
-    );
-    expect(wrapper).toMatchSnapshot();
+  describe('Localization', () => {
+    it('should render en-hk', () => {
+      const wrapper = shallow(<Footer language="en" country="hk" />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render en-id', () => {
+      const wrapper = shallow(<Footer language="en" country="id" />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render en-th', () => {
+      const wrapper = shallow(<Footer language="en" country="th" />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render en-sg', () => {
+      const wrapper = shallow(<Footer language="en" country="sg" />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render id-id', () => {
+      const wrapper = shallow(<Footer language="id" country="id" />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render th-th', () => {
+      const wrapper = shallow(<Footer language="th" country="th" />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render en-hk fat footer', () => {
+      const wrapper = shallow(<Footer language="en" country="hk" isExpandedVersion />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render without offset if prop is passed', () => {
+      const wrapper = shallow(<Footer language="en" country="hk" showHeaderActionTrayOffset={false} />);
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });

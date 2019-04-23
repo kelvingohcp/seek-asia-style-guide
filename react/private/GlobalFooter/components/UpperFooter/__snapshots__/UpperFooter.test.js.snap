@@ -8,7 +8,7 @@ exports[`UpperFooter: should render columns with messages and linking functions 
     <FooterSection
       hideInMobile={
         Array [
-          "aboutJobsDB",
+          "about",
           "faq",
         ]
       }
@@ -16,7 +16,7 @@ exports[`UpperFooter: should render columns with messages and linking functions 
       sessionClass="firstCategory"
       sessionMessage={
         Object {
-          "aboutJobsDB": Object {
+          "about": Object {
             "title": "About jobsDB",
             "url": "/pages/aboutus",
           },
@@ -99,7 +99,7 @@ exports[`UpperFooter: should render with company profile link 1`] = `
     <FooterSection
       hideInMobile={
         Array [
-          "aboutJobsDB",
+          "about",
           "faq",
         ]
       }
@@ -107,7 +107,7 @@ exports[`UpperFooter: should render with company profile link 1`] = `
       sessionClass="firstCategory"
       sessionMessage={
         Object {
-          "aboutJobsDB": Object {
+          "about": Object {
             "title": "About jobsDB",
             "url": "/pages/aboutus",
           },
