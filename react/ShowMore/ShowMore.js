@@ -11,7 +11,8 @@ export default class ShowMore extends Component {
     lblShowMore: PropTypes.string,
     lblShowLess: PropTypes.string,
     disable: PropTypes.bool,
-    onPanelOpen: PropTypes.func
+    onPanelOpen: PropTypes.func,
+    onPanelToggle: PropTypes.func
   };
 
   static defaultProps = {
@@ -47,15 +48,21 @@ export default class ShowMore extends Component {
   }
 
   handleClick(e) {
-    const { onPanelOpen = () => {} } = this.props;
+    const { isPanelOpened } = this.state;
+    const { onPanelOpen, onPanelToggle = () => {} } = this.props;
     e.preventDefault();
 
-    if (!this.state.isPanelOpened) {
-      onPanelOpen();
+    if (!isPanelOpened) {
+      if (typeof onPanelOpen === 'function') {
+        console.warn('Property of onPanelOpen has been deprecated. Use onPanelToggle instead.');
+        onPanelOpen();
+      }
     }
 
+    onPanelToggle({ status: (!isPanelOpened ? 'open' : 'close') });
+
     this.setState({
-      isPanelOpened: !this.state.isPanelOpened
+      isPanelOpened: !isPanelOpened
     });
   }
 
@@ -78,7 +85,7 @@ export default class ShowMore extends Component {
                 id='btnShowMore'
                 color='hyperlink'
                 className={styles.button}
-                onClick={this.handleClick} >
+                onClick={this.handleClick}>
                 <span>
                   {isPanelOpened ? lblShowLess : lblShowMore}
                 </span>

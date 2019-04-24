@@ -89,6 +89,21 @@ export default {
       ]
     },
     {
+      label: 'onPanelToggle',
+      type: 'checklist',
+      states: [
+        {
+          label: 'onPanelToggle',
+          transformProps: props => ({
+            ...props,
+            onPanelToggle: ({ status }) => {
+              alert(status); // eslint-disable-line no-alert
+            }
+          })
+        }
+      ]
+    },
+    {
       label: 'onPanelOpen',
       type: 'checklist',
       states: [
