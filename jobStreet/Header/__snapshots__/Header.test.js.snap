@@ -70,11 +70,6 @@ exports[`JobStreet Header passes through optional props 1`] = `
     Array [
       Object {
         "ItemIcon": [Function],
-        "title": "Home",
-        "url": "https://jobstreet.com.my",
-      },
-      Object {
-        "ItemIcon": [Function],
         "title": "MyJobStreet",
         "url": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
       },
@@ -85,33 +80,8 @@ exports[`JobStreet Header passes through optional props 1`] = `
       },
       Object {
         "ItemIcon": [Function],
-        "title": "Career Insights",
-        "url": "https://jobstreet.com.my/en/career-insights",
-      },
-      Object {
-        "ItemIcon": [Function],
         "title": "Education",
         "url": "https://www.jobstreeteducation.com.my/",
-      },
-      Object {
-        "ItemIcon": [Function],
-        "children": Array [
-          Object {
-            "title": "Overseas Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
-          },
-          Object {
-            "title": "Fresh Grad Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
-          },
-          Object {
-            "title": "Classified Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
-          },
-        ],
-        "hideInDesktop": true,
-        "title": "Menu",
-        "url": "",
       },
     ]
   }
@@ -252,11 +222,6 @@ exports[`JobStreet Header renders with default props 1`] = `
     Array [
       Object {
         "ItemIcon": [Function],
-        "title": "Home",
-        "url": "https://jobstreet.com.my",
-      },
-      Object {
-        "ItemIcon": [Function],
         "title": "MyJobStreet",
         "url": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
       },
@@ -267,33 +232,8 @@ exports[`JobStreet Header renders with default props 1`] = `
       },
       Object {
         "ItemIcon": [Function],
-        "title": "Career Insights",
-        "url": "https://jobstreet.com.my/en/career-insights",
-      },
-      Object {
-        "ItemIcon": [Function],
         "title": "Education",
         "url": "https://www.jobstreeteducation.com.my/",
-      },
-      Object {
-        "ItemIcon": [Function],
-        "children": Array [
-          Object {
-            "title": "Overseas Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
-          },
-          Object {
-            "title": "Fresh Grad Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
-          },
-          Object {
-            "title": "Classified Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
-          },
-        ],
-        "hideInDesktop": true,
-        "title": "Menu",
-        "url": "",
       },
     ]
   }

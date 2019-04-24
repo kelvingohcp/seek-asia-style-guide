@@ -60,27 +60,23 @@ export default {
     },
     myJobStreet: {
       title: 'MyJobStreet',
-      url: 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my'
+      url: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg'
     },
     companyProfiles: {
       title: 'Company Profiles',
-      url: `${baseUrlWithLanguage}/companies/`
-    },
-    careerInsights: {
-      title: 'Career Insights',
-      url: `${baseUrlWithLanguage}/career-insights`
+      url: `${baseUrlWithLanguage}/companies`
     },
     education: {
-      title: 'Education',
-      url: 'https://www.jobstreeteducation.com.my/'
+      title: 'Trainings',
+      url: 'https://www.jobstreet.com.sg/learning'
     },
     signUp: {
       title: 'Sign up',
-      url: 'https://myjobstreet.jobstreet.com.my/signup'
+      url: 'https://myjobstreet.jobstreet.com.sg/registration/simple-signup.php?site=sg&language_code=3'
     },
     login: {
       title: 'Log in',
-      url: 'https://myjobstreet.jobstreet.com.my/login'
+      url: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3'
     },
     employer: {
       title: 'Employer Site',
