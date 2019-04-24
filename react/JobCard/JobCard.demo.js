@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { JobCard, PageBlock } from 'seek-asia-style-guide/react';
+import omit from 'lodash/omit';
 
 const booleanProps = [
   {
@@ -168,7 +169,7 @@ export default {
         'We support a safe environment for our employees'
       ],
       isExpired: false,
-      qualificationName: 'Qualification Not Specified',
+      qualificationName: 'Degree',
       careerLevelName: 'Entry Level',
       workExperienceName: '3 Years of Experience',
       employmentTermName: 'Full Time',
@@ -231,7 +232,7 @@ export default {
           transformProps: ({ className, ...props }) => ({
             ...props,
             job: {
-              ...props.job,
+              ...omit(props.job, ['qualificationName', 'employmentTermName', 'workExperienceName', 'careerLevelName']),
               classifiedLabel: 'Classified'
             }
           })

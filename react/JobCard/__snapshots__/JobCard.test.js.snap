@@ -1754,7 +1754,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
             },
           ],
           "postingDuration": "1 hour ago",
-          "qualificationName": "Qualification Not Specified",
           "salary": "RM99999 - RM999999",
           "shelf": Object {
             "shelfLinks": Array [
@@ -1833,7 +1832,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
                 },
               ],
               "postingDuration": "1 hour ago",
-              "qualificationName": "Qualification Not Specified",
               "salary": "RM99999 - RM999999",
               "shelf": Object {
                 "shelfLinks": Array [
@@ -1908,7 +1906,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
                 },
               ],
               "postingDuration": "1 hour ago",
-              "qualificationName": "Qualification Not Specified",
               "salary": "RM99999 - RM999999",
               "shelf": Object {
                 "shelfLinks": Array [
@@ -1987,7 +1984,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
                 },
               ],
               "postingDuration": "1 hour ago",
-              "qualificationName": "Qualification Not Specified",
               "salary": "RM99999 - RM999999",
               "shelf": Object {
                 "shelfLinks": Array [
@@ -2068,7 +2064,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
             "iconType": "experience",
           },
           Object {
-            "content": "Qualification Not Specified",
+            "content": undefined,
             "iconType": "education",
           },
           Object {

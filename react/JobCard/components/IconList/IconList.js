@@ -9,7 +9,7 @@ const IconList = ({ list, className }) => {
   return (
     <Fragment>
       {
-        list.filter(({ show = true }) => show).map(({ iconType, content }, i, filteredList) => (
+        list.filter(({ show = true }) => show).map(({ iconType, content = 'Not specified' }, i, filteredList) => (
           <div
             key={i}
             className={classnames({

@@ -307,7 +307,7 @@ export default class JobCard extends React.Component {
                 { content: job.workExperienceName, iconType: 'experience' },
                 { content: job.qualificationName, iconType: 'education' },
                 { content: job.employmentTermName, iconType: 'employmentType' }
-              ].filter(item => item.content)}
+              ]}
             />
           </div>
         }

@@ -87,7 +87,14 @@ describe('JobCard', () => {
   });
 
   it('should render correctly with missing qualification', () => {
-    const wrapper = shallow(<JobCard {...omit(defaultProps, ['qualificationName'])} />);
+    const wrapper = shallow(
+      <JobCard
+        {...{
+          ...defaultProps,
+          job: omit(defaultProps.job, ['qualificationName'])
+        }}
+      />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
