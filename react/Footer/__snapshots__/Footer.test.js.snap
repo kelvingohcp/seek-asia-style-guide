@@ -673,7 +673,7 @@ exports[`Footer component Localization should render en-sg 1`] = `
       "about": Object {
         "about": Object {
           "title": "About Us",
-          "url": "https://www.jobstreet.com.sg/en/about-us",
+          "url": "https://www.jobstreet.com.sg/en/about-us/",
         },
         "career": Object {
           "title": "Career @ JobStreet",
@@ -689,7 +689,7 @@ exports[`Footer component Localization should render en-sg 1`] = `
         },
         "help": Object {
           "title": "FAQ",
-          "url": "https://www.jobstreet.com.sg/en/user",
+          "url": "https://www.jobstreet.com.sg/en/user/",
         },
         "news": Object {
           "title": "News & Events",

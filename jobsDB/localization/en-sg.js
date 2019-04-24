@@ -38,7 +38,7 @@ export default {
       title: 'About JobStreet',
       about: {
         title: 'About Us',
-        url: aboutUrl
+        url: `${aboutUrl}/`
       },
       career: {
         title: 'Career @ JobStreet',
@@ -54,7 +54,7 @@ export default {
       },
       help: {
         title: 'FAQ',
-        url: `${baseUrlWithLanguage}/user`
+        url: `${baseUrlWithLanguage}/user/`
       },
       feedback: {
         title: 'Send Feedback',
