@@ -9,7 +9,7 @@ const IconList = ({ list, className }) => {
   return (
     <Fragment>
       {
-        list.filter(({ show = true }) => show).map(({ iconType, content = 'Not specified' }, i, filteredList) => (
+        list.filter(({ show = true }) => show).map(({ iconType, content }, i, filteredList) => (
           <div
             key={i}
             className={classnames({
@@ -21,7 +21,7 @@ const IconList = ({ list, className }) => {
               <Icon type={iconType} className={styles.icon} size="small" />
             </div>
             <Text key={i} whispering baseline={false} className={styles.textWrapper}>
-              {React.isValidElement(content) ? content : <span>{content}</span>}
+              {content || 'Not specified'}
             </Text>
           </div>
         ))

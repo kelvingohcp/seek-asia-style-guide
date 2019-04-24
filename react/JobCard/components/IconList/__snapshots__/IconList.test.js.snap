@@ -25,9 +25,7 @@ exports[`Itemlist - Icon should render item list with icon 1`] = `
       key="0"
       whispering={true}
     >
-      <span>
-        Text Only
-      </span>
+      Text Only
     </Text>
   </div>
   <div
@@ -61,6 +59,37 @@ exports[`Itemlist - Icon should render item list with icon 1`] = `
 </Fragment>
 `;
 
+exports[`Itemlist - Icon should render with Not specified label if content is an empty string 1`] = `
+<Fragment>
+  <div
+    className="container last"
+    key="0"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="android"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="0"
+      whispering={true}
+    >
+      Not specified
+    </Text>
+  </div>
+</Fragment>
+`;
+
 exports[`Itemlist - Icon should render with Not specified label if content is missing 1`] = `
 <Fragment>
   <div
@@ -86,9 +115,7 @@ exports[`Itemlist - Icon should render with Not specified label if content is mi
       key="0"
       whispering={true}
     >
-      <span>
-        Text Only
-      </span>
+      Text Only
     </Text>
   </div>
   <div
@@ -142,9 +169,7 @@ exports[`Itemlist - Icon should render with Not specified label if content is mi
       key="2"
       whispering={true}
     >
-      <span>
-        Not specified
-      </span>
+      Not specified
     </Text>
   </div>
 </Fragment>

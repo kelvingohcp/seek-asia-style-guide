@@ -18,4 +18,9 @@ describe('Itemlist - Icon', () => {
     const wrapper = shallow((<IconList list={[...LIST, { iconType: 'android' }]} />));
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with Not specified label if content is an empty string', () => {
+    const wrapper = shallow((<IconList list={[{ iconType: 'android', content: '' }]} />));
+    expect(wrapper).toMatchSnapshot();
+  });
 });
