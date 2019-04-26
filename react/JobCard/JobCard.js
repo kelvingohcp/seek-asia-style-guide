@@ -240,7 +240,6 @@ export default class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
             </Button>
           )}
-          <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
           <JobTitle
             {
             ...{

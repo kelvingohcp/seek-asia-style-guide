@@ -7,10 +7,6 @@ exports[`JobCard should not render shelf section 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -272,10 +268,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -594,10 +586,6 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -968,10 +956,6 @@ exports[`JobCard should pass through viewed prop 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -1342,10 +1326,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -1717,10 +1697,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -2085,10 +2061,6 @@ exports[`JobCard should render job title component 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       TitleLinkComponent={[Function]}
       job={
@@ -2459,10 +2431,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -2834,10 +2802,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -3206,10 +3170,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -3578,10 +3538,6 @@ exports[`JobCard should render only applied badge, when both applied and expired
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       applied={true}
       job={
@@ -3953,10 +3909,6 @@ exports[`JobCard should render plain company label 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -4314,10 +4266,6 @@ exports[`JobCard should render selected style 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -4687,10 +4635,6 @@ exports[`JobCard should render tag links 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -5109,10 +5053,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -5485,10 +5425,6 @@ exports[`JobCard should render with applied badge 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       applied={true}
       job={
@@ -5860,10 +5796,6 @@ exports[`JobCard should render with company banner  1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={true}
-    />
     <JobTitle
       job={
         Object {
@@ -6232,10 +6164,6 @@ exports[`JobCard should render with company banner 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={true}
-    />
     <JobTitle
       job={
         Object {
@@ -6604,10 +6532,6 @@ exports[`JobCard should render with company banner and selling points in split v
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={true}
-    />
     <JobTitle
       job={
         Object {
@@ -6886,10 +6810,6 @@ exports[`JobCard should render with company banner in split view  1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={true}
-    />
     <JobTitle
       job={
         Object {
@@ -7161,10 +7081,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -7527,10 +7443,6 @@ exports[`JobCard should render with default props 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -7899,10 +7811,6 @@ exports[`JobCard should render with expired badge 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -8271,10 +8179,6 @@ exports[`JobCard should render with selling points in split view 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -8553,10 +8457,6 @@ exports[`JobCard should render with selling points props 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -8952,10 +8852,6 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -9324,10 +9220,6 @@ exports[`JobCard should render with viewed badge 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
@@ -9700,10 +9592,6 @@ exports[`JobCard should render without border 1`] = `
   <div
     className="leftContainer"
   >
-    <CompanyBanner
-      bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      enableBrandedAd={false}
-    />
     <JobTitle
       job={
         Object {
