@@ -15,6 +15,7 @@ import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes'
 import JobLabel from '../JobLabel/JobLabel';
 import PropTypes from 'prop-types';
 import _get from 'lodash/get';
+import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
 
 export const trackLinkType = {
   jobTitle: 'jobTitle',
@@ -59,7 +60,7 @@ JobTitle.propTypes = {
 const Company = ({ company, keyword, LinkComponent, trackLinkClicked }) => {
   return (
     <Text intimate baseline={false} className={classnames(styles.text, styles.section)}>
-      { company.isPrivate ?
+      {company.isPrivate ?
         <span className={styles.greyLabel}>{company.name}</span> :
         <CompanyLink {...company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
       }
@@ -189,7 +190,7 @@ export const ShelfLink = ({ mobileOnly, desktopOnly, job, shelfSectionOpen, onCl
   );
 };
 ShelfLink.propTypes = JobCardPropTypes;
-export default class JobCard extends React.Component {
+class JobCard extends React.Component {
   state = {
     shelfSectionOpen: false
   }
@@ -219,7 +220,8 @@ export default class JobCard extends React.Component {
       TitleLinkComponent,
       trackLinkClicked,
       viewed,
-      viewedDate
+      viewedDate,
+      tenant
     } = this.props;
 
     const { shelfSectionOpen } = this.state;
@@ -232,7 +234,7 @@ export default class JobCard extends React.Component {
           [styles.borderRoot]: !borderlessRoot,
           [styles.highlightedBg]: showHighlightedBg,
           [styles.selected]: isSelected,
-          [styles.sideHighlightBorder]: enableBrandedAd
+          [styles[`sideHighlightBorder-${tenant.toLowerCase()}`]]: enableBrandedAd
         })}>
         <div className={styles.leftContainer}>
           {showSavedStatus && (
@@ -315,8 +317,19 @@ export default class JobCard extends React.Component {
   }
 }
 
+export default props => (
+  <StyleGuideContext.Consumer>
+    {({ tenant = '' }) => {
+      return <JobCard {...props} tenant={tenant} />;
+    }}
+  </StyleGuideContext.Consumer>
+);
+
 JobCard.defaultProps = {
-  trackLinkClicked: () => {}
+  trackLinkClicked: () => { },
+  tenant: ''
 };
 
 JobCard.propTypes = JobCardPropTypes;
+
+export { JobCard as JobCardForTest };

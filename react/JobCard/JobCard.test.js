@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import JobCard from './JobCard';
+import { JobCardForTest as JobCard } from './JobCard';
 import { Text } from 'seek-asia-style-guide/react';
 import omit from 'lodash/omit';
 
@@ -71,7 +71,8 @@ const defaultProps = {
   showHighlightedBg: false,
   showSellingPoint: true,
   showDescription: false,
-  enableBrandedAd: false
+  enableBrandedAd: false,
+  tenant: 'jobsdb'
 };
 
 const sellingPoints = [

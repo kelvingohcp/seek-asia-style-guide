@@ -109,6 +109,7 @@ exports[`JobCard should not render shelf section 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -392,6 +393,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -731,6 +733,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
           viewed={true}
         />
@@ -1101,6 +1104,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
           viewed={true}
         />
@@ -1473,6 +1477,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -1839,6 +1844,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -2207,6 +2213,7 @@ exports[`JobCard should render job title component 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -2578,6 +2585,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -2946,6 +2954,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -3314,6 +3323,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -3684,6 +3694,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -4047,6 +4058,7 @@ exports[`JobCard should render plain company label 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -4411,6 +4423,7 @@ exports[`JobCard should render selected style 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -4799,6 +4812,7 @@ exports[`JobCard should render tag links 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -5199,6 +5213,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -5571,6 +5586,7 @@ exports[`JobCard should render with applied badge 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -5791,7 +5807,7 @@ exports[`JobCard should render with applied badge 1`] = `
 
 exports[`JobCard should render with company banner  1`] = `
 <Card
-  className="container borderRoot sideHighlightBorder"
+  className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
     className="leftContainer"
@@ -5940,6 +5956,7 @@ exports[`JobCard should render with company banner  1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -6159,7 +6176,7 @@ exports[`JobCard should render with company banner  1`] = `
 
 exports[`JobCard should render with company banner 1`] = `
 <Card
-  className="container borderRoot sideHighlightBorder"
+  className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
     className="leftContainer"
@@ -6308,6 +6325,7 @@ exports[`JobCard should render with company banner 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -6527,7 +6545,7 @@ exports[`JobCard should render with company banner 1`] = `
 
 exports[`JobCard should render with company banner and selling points in split view 1`] = `
 <Card
-  className="container borderRoot sideHighlightBorder"
+  className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
     className="leftContainer"
@@ -6684,6 +6702,7 @@ exports[`JobCard should render with company banner and selling points in split v
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -6805,7 +6824,7 @@ exports[`JobCard should render with company banner and selling points in split v
 
 exports[`JobCard should render with company banner in split view  1`] = `
 <Card
-  className="container borderRoot sideHighlightBorder"
+  className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
     className="leftContainer"
@@ -6955,6 +6974,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -7222,6 +7242,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -7587,6 +7608,7 @@ exports[`JobCard should render with default props 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -7955,6 +7977,7 @@ exports[`JobCard should render with expired badge 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -8331,6 +8354,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -8611,6 +8635,7 @@ exports[`JobCard should render with selling points props 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
@@ -8996,6 +9021,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[MockFunction]}
         />
         <SellingPoint
@@ -9365,6 +9391,7 @@ exports[`JobCard should render with viewed badge 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
           viewed={true}
           viewedDate="1 hour ago"
@@ -9737,6 +9764,7 @@ exports[`JobCard should render without border 1`] = `
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
+          tenant="jobsdb"
           trackLinkClicked={[Function]}
         />
         <SellingPoint
