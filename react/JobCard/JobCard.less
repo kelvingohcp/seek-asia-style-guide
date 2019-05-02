@@ -52,17 +52,20 @@
   .leftContainer {
     .flexCol();
     flex-grow: 1;
-    padding: @grid-base*3 @grid-base*4 (@grid-base*4 - @job-card-section-bottom-space) @grid-base*4;
+    @media @desktop {
+      padding: @grid-base*3 @grid-base*2 @grid-base*3 @grid-base*3;
+    }
+    padding: @grid-base*3 @grid-base*4 @grid-base*2 @grid-base*3;
     position: relative;
     flex-basis: 100%;
   }
   .rightContainer {
     .flexCol();
-    padding: @grid-base * 4;
+    padding: @grid-base * 3 @grid-base * 2 @grid-base * 4 @grid-base * 4;
     width: @job-card-right-area-width;
     min-width: @job-card-right-area-width;
     background-color: @saGrey6;
-    justify-content: center;
+    justify-content: start;
     .desktopOnly();
   }
 }
@@ -76,12 +79,14 @@
   .flexCol();
   align-items: flex-end;
   justify-content: space-between;
+  padding-left: @grid-base * 4;
   min-height: @min-height-right-content;
 }
 
 .rightContentWithBanner {
   .rightContent();
   @media @desktop {
+    padding-left: @grid-base * 20;
     min-height: @min-height-right-content + @max-banner-height + @banner-bottom-padding;
   }
 }
@@ -119,13 +124,15 @@
 .description {
   @media @desktop {
     margin-right: @grid-base * 4;
-    padding-top: @grid-base * 4;
   }
 }
 
 .sellingPoints {
   .rawText();
-  padding-bottom: @job-card-section-bottom-space - @grid-base;
+  @media @desktop {
+    padding: @grid-base * 3 0 @grid-base * 2;
+  }
+  padding: @grid-base * 2 0 @grid-base * 4;
   color: @saGrey3;
   list-style: none;
 }
@@ -176,7 +183,13 @@
 }
 
 .companyLogo {
-  max-width: @grid-base * 30;
+  max-width: @grid-base * 20;
+  max-height: @grid-base * 10;
+  @media @desktop {
+    max-width: @grid-base * 30;
+    max-height: @grid-base * 15;
+    padding-bottom: @grid-base *2;
+  }
 }
 
 .companyBanner {
