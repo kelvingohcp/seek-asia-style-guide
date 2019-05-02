@@ -1,6 +1,7 @@
 import React from 'react';
 import Text from '../Text/Text';
 import Card from '../Card/Card';
+import Hidden from '../Hidden/Hidden';
 import Icon from '../Icon/Icon';
 import Button from '../Button/Button';
 import styles from './JobCard.less';
@@ -147,15 +148,17 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-const CompanyBanner = ({ bannerUrl, enableBrandedAd }) => {
+const CompanyBanner = ({ bannerUrl, enableBrandedAd, className }) => {
   return enableBrandedAd && bannerUrl ?
     <img
-      className={styles.companyBannerOnDesktop}
+      className={classnames(className, styles.companyBanner)}
       src={bannerUrl}
     /> : null;
 };
+
 CompanyBanner.propTypes = {
   bannerUrl: JobType.bannerUrl,
+  className: JobType.className,
   enableBrandedAd: JobCardPropTypes.enableBrandedAd
 };
 
@@ -242,6 +245,9 @@ class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
             </Button>
           )}
+          <Hidden desktop>
+            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} className={styles.companyBannerOnMobile} />
+          </Hidden>
           <JobTitle
             {
             ...{
@@ -300,7 +306,7 @@ class JobCard extends React.Component {
         {
           !isSplitView &&
           <div className={styles.rightContainer}>
-            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
+            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} className={styles.companyBannerOnDesktop} />
             <IconList
               className={styles.structuredData}
               list={[

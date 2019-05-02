@@ -30,7 +30,8 @@ export const JobType = {
   careerLevelName: PropTypes.string,
   workExperienceName: PropTypes.string,
   employmentTermName: PropTypes.string,
-  bannerUrl: PropTypes.string
+  bannerUrl: PropTypes.string,
+  className: PropTypes.string
 };
 
 export const JobCardPropTypes = {
