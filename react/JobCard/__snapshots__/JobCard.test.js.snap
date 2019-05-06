@@ -8,7 +8,7 @@ exports[`JobCard should not render shelf section 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -18,8 +18,8 @@ exports[`JobCard should not render shelf section 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -248,7 +248,6 @@ exports[`JobCard should not render shelf section 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -286,7 +285,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -296,8 +295,8 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -583,7 +582,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -621,7 +619,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -631,8 +629,8 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -970,7 +968,6 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -1008,7 +1005,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -1018,8 +1015,8 @@ exports[`JobCard should pass through viewed prop 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -1357,7 +1354,6 @@ exports[`JobCard should pass through viewed prop 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -1395,7 +1391,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -1405,8 +1401,8 @@ exports[`JobCard should render company with bold keyword 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -1745,7 +1741,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -1783,7 +1778,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -1793,8 +1788,8 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -2126,7 +2121,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -2164,7 +2158,7 @@ exports[`JobCard should render job title component 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -2174,8 +2168,8 @@ exports[`JobCard should render job title component 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -2513,7 +2507,6 @@ exports[`JobCard should render job title component 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -2551,7 +2544,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -2561,8 +2554,8 @@ exports[`JobCard should render job title with bold keyword 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -2901,7 +2894,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -2939,7 +2931,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -2949,8 +2941,8 @@ exports[`JobCard should render jobStreet standout style 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -3286,7 +3278,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -3324,7 +3315,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -3334,8 +3325,8 @@ exports[`JobCard should render jobsDB default style 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -3671,7 +3662,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -3709,7 +3699,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -3719,8 +3709,8 @@ exports[`JobCard should render only applied badge, when both applied and expired
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -4059,7 +4049,6 @@ exports[`JobCard should render only applied badge, when both applied and expired
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -4097,7 +4086,7 @@ exports[`JobCard should render plain company label 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -4107,8 +4096,8 @@ exports[`JobCard should render plain company label 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -4433,7 +4422,6 @@ exports[`JobCard should render plain company label 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -4471,7 +4459,7 @@ exports[`JobCard should render selected style 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -4481,8 +4469,8 @@ exports[`JobCard should render selected style 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -4819,7 +4807,6 @@ exports[`JobCard should render selected style 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -4857,7 +4844,7 @@ exports[`JobCard should render tag links 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -4867,8 +4854,8 @@ exports[`JobCard should render tag links 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -5254,7 +5241,6 @@ exports[`JobCard should render tag links 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -5292,7 +5278,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -5302,8 +5288,8 @@ exports[`JobCard should render with Classified in grey label 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -5643,7 +5629,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -5681,7 +5666,7 @@ exports[`JobCard should render with applied badge 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -5691,8 +5676,8 @@ exports[`JobCard should render with applied badge 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -6031,7 +6016,6 @@ exports[`JobCard should render with applied badge 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -6069,7 +6053,7 @@ exports[`JobCard should render with company banner  1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -6079,8 +6063,8 @@ exports[`JobCard should render with company banner  1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={true}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -6416,7 +6400,6 @@ exports[`JobCard should render with company banner  1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={true}
     />
     <IconList
@@ -6454,7 +6437,7 @@ exports[`JobCard should render with company banner 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -6464,8 +6447,8 @@ exports[`JobCard should render with company banner 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={true}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -6801,7 +6784,6 @@ exports[`JobCard should render with company banner 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={true}
     />
     <IconList
@@ -6839,7 +6821,7 @@ exports[`JobCard should render with company banner and selling points in split v
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -6849,8 +6831,8 @@ exports[`JobCard should render with company banner and selling points in split v
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={true}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -7133,7 +7115,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -7143,8 +7125,8 @@ exports[`JobCard should render with company banner in split view  1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={true}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -7420,7 +7402,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -7430,8 +7412,8 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -7761,7 +7743,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -7799,7 +7780,7 @@ exports[`JobCard should render with default props 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -7809,8 +7790,8 @@ exports[`JobCard should render with default props 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -8146,7 +8127,6 @@ exports[`JobCard should render with default props 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -8184,7 +8164,7 @@ exports[`JobCard should render with expired badge 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -8194,8 +8174,8 @@ exports[`JobCard should render with expired badge 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -8531,7 +8511,6 @@ exports[`JobCard should render with expired badge 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -8569,7 +8548,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -8579,8 +8558,8 @@ exports[`JobCard should render with selling points in split view 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -8863,7 +8842,7 @@ exports[`JobCard should render with selling points props 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -8873,8 +8852,8 @@ exports[`JobCard should render with selling points props 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -9237,7 +9216,6 @@ exports[`JobCard should render with selling points props 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -9275,7 +9253,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -9285,8 +9263,8 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -9622,7 +9600,6 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -9660,7 +9637,7 @@ exports[`JobCard should render with viewed badge 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -9670,8 +9647,8 @@ exports[`JobCard should render with viewed badge 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -10011,7 +9988,6 @@ exports[`JobCard should render with viewed badge 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList
@@ -10049,7 +10025,7 @@ exports[`JobCard should render without border 1`] = `
     className="leftContainer"
   >
     <Hidden
-      className=""
+      className="alignCenter"
       component="span"
       desktop={true}
       mobile={false}
@@ -10059,8 +10035,8 @@ exports[`JobCard should render without border 1`] = `
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-        className="companyBannerOnMobile"
         enableBrandedAd={false}
+        isMobile={true}
       />
     </Hidden>
     <JobTitle
@@ -10397,7 +10373,6 @@ exports[`JobCard should render without border 1`] = `
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
-      className="companyBannerOnDesktop"
       enableBrandedAd={false}
     />
     <IconList

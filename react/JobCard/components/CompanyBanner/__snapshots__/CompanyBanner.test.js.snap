@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanyBanner should not render branded ad is not enabled 1`] = `""`;
+
+exports[`CompanyBanner should not render if banner url is not provided 1`] = `""`;
+
+exports[`CompanyBanner should render on desktop 1`] = `
+<img
+  className="companyBanner companyBannerOnDesktop"
+  src="/foo"
+/>
+`;
+
+exports[`CompanyBanner should render on mobile 1`] = `
+<img
+  className="companyBanner companyBannerOnMobile"
+  src="/foo"
+/>
+`;
