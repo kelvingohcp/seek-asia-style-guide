@@ -61,15 +61,6 @@ describe('Header', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render with hide country', () => {
-    const testProps = {
-      ...defaultProps,
-      showCountryLanguage: false
-    };
-    const wrapper = shallow(<Header {...testProps} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it('should render with links list', () => {
     const testProps = {
       ...defaultProps,

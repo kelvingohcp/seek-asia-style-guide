@@ -31,11 +31,9 @@ export default {
     country: 'hk',
     loginAvailable: true,
     activeTab: ACTIVE_TAB_HOME,
-    selectCountry: true,
     domainUrl: domain,
     linkRenderer: makeDummyLinkRendererForPath(ROUTE),
-    authenticationStatus: UNAUTHENTICATED,
-    showCountryLanguage: true
+    authenticationStatus: UNAUTHENTICATED
   },
   options: [{
     label: 'States',
@@ -58,12 +56,6 @@ export default {
             ...props.actionTrayProps,
             showHome: false
           }
-        })
-      }, {
-        label: 'Hide Country',
-        transformProps: props => ({
-          ...props,
-          showCountryLanguage: false
         })
       }, {
         label: 'Hide Search',
@@ -205,25 +197,6 @@ export default {
           ...props,
           returnUrl: '/jobs',
           loginAvailable: false
-        })
-      }
-    ]
-  }, {
-    label: 'Select Country',
-    type: 'radio',
-    states: [
-      {
-        label: 'Select Country',
-        transformProps: props => ({
-          ...props,
-          selectCountry: true
-        })
-      },
-      {
-        label: 'Not Select Country',
-        transformProps: props => ({
-          ...props,
-          selectCountry: false
         })
       }
     ]

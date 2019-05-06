@@ -50,20 +50,14 @@
   @media @desktop {
     justify-content: space-between;
     padding: 1px @grid-base * 6 0 @grid-base * 4;
+    height: @grid-base * 14;
   }
 }
 
 .primaryNavNoLogin {
-  &:extend(.primaryNav);
   justify-content: center;
   @media @desktop {
     justify-content: flex-start;
-  }
-}
-
-.primaryNavNoCountry {
-  @media @desktop {
-    height: @grid-base * 14;
   }
 }
 

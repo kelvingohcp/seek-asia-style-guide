@@ -5,7 +5,6 @@ import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import { Text, PageBlock } from 'seek-asia-style-guide/react';
 import Menu from './components/Menu/Menu';
 import ActionTray from './components/ActionTray/ActionTray';
-import CountryDropdown from './components/CountryDropdown/CountryDropdown';
 import styles from './Header.less';
 import UserAccount from './components/UserAccount/UserAccount';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
@@ -99,8 +98,6 @@ export default class Header extends Component {
       actionTrayProps,
       employerSite,
       loginAvailable = false,
-      selectCountry = true,
-      showCountryLanguage = true,
       authenticationStatus,
       userName,
       userAccMenuItems,
@@ -113,27 +110,7 @@ export default class Header extends Component {
     return (
       <header className={styles.root}>
         <PageBlock>
-          {showCountryLanguage &&
-          <div
-            className={styles.externalNav}>
-            {
-              // *** Country Selector ***
-              selectCountry &&
-              (
-                <CountryDropdown
-                  links={locales}
-                  checked={0}
-                  linkRenderer={linkRenderer}
-                />
-              ) ||
-              (
-                <div className={styles.locale}>
-                  {currentLocale(locales[0])}
-                </div>
-              )
-            }
-          </div>}
-          <div className={classnames(loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin, showCountryLanguage ? styles.primaryNavWithCountry : styles.primaryNavNoCountry)}>
+          <div className={classnames({ [styles.primaryNavNoLogin]: !loginAvailable }, styles.primaryNav)}>
             <h1 className={styles.logo}>
               {
                 linkRenderer({
@@ -203,8 +180,6 @@ Header.propTypes = {
   actionTrayProps: PropTypes.object,
   employerSite: PropTypes.bool,
   linkRenderer: PropTypes.func,
-  selectCountry: PropTypes.bool,
-  showCountryLanguage: PropTypes.bool,
   onMenuOpen: PropTypes.func,
   authenticationStatus: PropTypes.oneOf([
     AUTHENTICATED,

@@ -8,7 +8,7 @@ import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/privat
 import { getJobsDBHeaderProps, getLocalList } from '../helper';
 import _get from 'lodash/get';
 
-const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = false, selectCountry = true, showCountryLanguage = false, authenticationStatus = UNAUTHENTICATED, userName, domainUrl, currentPage, ...restProps }) => {
+const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = false, authenticationStatus = UNAUTHENTICATED, userName, domainUrl, currentPage, ...restProps }) => {
   const messages = getLocalization({ country, language });
   return (
     <GlobalHeader
@@ -22,9 +22,7 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
       country={country}
       language={language}
       employerSite={(authenticationStatus === UNAUTHENTICATED) || loginAvailable}
-      selectCountry={selectCountry}
       userName={userName}
-      showCountryLanguage={showCountryLanguage}
       authenticationStatus={authenticationStatus}
       homeUrl={_get(messages, 'header.homeUrl')}
       {...restProps}
@@ -37,7 +35,6 @@ Header.propTypes = {
   language: PropTypes.string.isRequired,
   activeTab: PropTypes.string,
   loginAvailable: PropTypes.bool,
-  selectCountry: PropTypes.bool,
   authenticationStatus: PropTypes.oneOf([
     AUTHENTICATED,
     UNAUTHENTICATED,
@@ -46,8 +43,7 @@ Header.propTypes = {
   userName: PropTypes.string,
   domainUrl: PropTypes.string,
   url: PropTypes.string,
-  currentPage: PropTypes.string,
-  showCountryLanguage: PropTypes.bool
+  currentPage: PropTypes.string
 };
 
 export default Header;
