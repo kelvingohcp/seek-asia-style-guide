@@ -5,7 +5,6 @@ export default {
   route: '/slidetoggle',
   title: 'Slide Toggle',
   component: SlideToggle,
-  seekComponent: true,
   sketch,
   initialProps: {
     onChange: () => {},
@@ -30,25 +29,12 @@ export default {
             ...props,
             hideLabel: true
           })
-        }
-      ]
-    },
-    {
-      label: 'Label position',
-      type: 'radio',
-      states: [
-        {
-          label: 'Right',
-          transformProps: props => ({
-            ...props,
-            position: 'right'
-          })
         },
         {
-          label: 'Left',
-          transformProps: props => ({
+          label: 'Toggle after label',
+          transformProps: ({ className, ...props }) => ({
             ...props,
-            position: 'left'
+            toggleAfterLabel: true
           })
         }
       ]

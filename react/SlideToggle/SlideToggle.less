@@ -1,109 +1,104 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
+@slide-focus-grow: @grid-base * 2;
+@slide-handle-side-length: @grid-base * 5;
+@slide-height: @grid-base * 10;
+@slide-label-line-height: @grid-base * 6;
+@slide-track-height: @grid-base * 6;
+@slide-track-width: @grid-base * 10;
+@slide-transition-duration: 0.3s;
+
+@slide-handle-margin: (@slide-track-height - @slide-handle-side-length) / 2;
+
 .root {
-  line-height: @grid-row-height * 6;
-  height: @grid-row-height * 10;
-  padding: (@grid-row-height * 2) 0;
   cursor: pointer;
   display: inline-block;
+  height: @slide-height;
+  line-height: @slide-label-line-height;
+  padding: ((@slide-height - @slide-label-line-height)/2) 0;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.label {
+  line-height: inherit;
+  padding-bottom: 0;
+  user-select: none;
+  @supports (display: inline-grid) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  :not(.toggleAfterLabel) > & {
+    margin-left: @grid-gutter-width / 2;
+  }
+  .toggleAfterLabel > & {
+    margin-right: @grid-gutter-width / 2;
+  }
+  .input:checked + & {
+    font-weight: @sk-bold;
+  }
+}
+
+.slider {
+  background-color: @saGrey4;
+  border-radius: @slide-label-line-height / 2;
+  display: inline-block;
+  height: @grid-row-height * 6;
+  left: 0;
+  position: relative;
+  transition: @slide-transition-duration;
+  width: @slide-track-width;
+  @supports (display: inline-grid) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  &::after,
+  &::before {
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+  }
+  &::before {
+    background-color: @saWhite;
+    height: @slide-handle-side-length;
+    left: 0;
+    text-align: center;
+    top: @slide-handle-margin;
+    transform: translateX(@slide-handle-margin);
+    transition: @slide-transition-duration;
+    width: @slide-handle-side-length;
+  }
+  &::after {
+    border-radius: @slide-label-line-height / 2;
+    bottom: 0;
+    box-shadow: 0 0 @slide-focus-grow 0 @saBlue2;
+    left: 0;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    transition: opacity @slide-transition-duration;
+  }
+  .input:checked + & {
+    background-color: @saBlue2;
+    &::before {
+      transform: translateX(@slide-track-width - @slide-handle-side-length - @slide-handle-margin);
+    }
+  }
+  .input:focus + & {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .switch {
   display: inline-flex;
   position: relative;
-}
-
-.input {
-  position: absolute;
-  left: 10px;
-  top: 5px;
-  margin: 0;
-
-  &:focus ~ .slider {
-    box-shadow: 0 0 10px 0 @sk-focus;
+  &.toggleAfterLabel {
+    flex-direction: row-reverse;
   }
-
-  &:active ~ .slider .slideButton::before {
-    transform: scale(1.15, 0.85);
-  }
-
-  &:checked ~ .slider .slideButton {
-    left: 21px;
-
-    &::before {
-      background-color: @sk-highlight;
-    }
-  }
-
-  &:checked ~ .slider .slideButton :global(svg) {
-    opacity: 1;
-  }
-
-  &:checked ~ .label {
-    font-weight: @sk-bold;
-  }
-}
-
-.inputLeft {
-  left: auto;
-  right: 10px;
-}
-
-.label {
-  padding: 0;
-}
-
-.labelLeft {
-  margin-right: @grid-gutter-width / 2;
-}
-
-.labelRight {
-  margin-left: @grid-gutter-width / 2;
-}
-
-.labelText {
-  line-height: @grid-row-height * 6;
-}
-
-.slider {
-  position: relative;
-  display: inline-block;
-  left: 0;
-  width: 48px;
-  height: @grid-row-height * 6;
-  border-radius: @grid-row-height * 3;
-  background-color: @sk-mid-gray-light;
-  transition: 0.3s;
-}
-
-.slideButton {
-  position: relative;
-  left: 0;
-  transition: 0.3s;
-
-  &::before {
-    content: '';
-    transition: 0.3s;
-    position: absolute;
-    height: @grid-row-height * 6;
-    width: @grid-row-height * 6;
-    border-radius: 50%;
-    background-color: @sk-mid-gray;
-    text-align: center;
-  }
-}
-
-.icon {
-  position: absolute;
-  width: @grid-row-height * 6;
-  height: @grid-row-height * 6;
-  text-align: center;
-}
-
-.svg {
-  fill: white;
-  opacity: 0;
-  transition: opacity 0.15s;
-  position: relative;
-  top: 5px;
 }
