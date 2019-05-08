@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import styles from './JobCard.less';
 
 import Text from '../Text/Text';
-import Card from '../Card/Card';
 import Hidden from '../Hidden/Hidden';
 import Icon from '../Icon/Icon';
 import Button from '../Button/Button';
@@ -222,7 +221,7 @@ class JobCard extends React.Component {
     const { logoUrl } = _get(job, 'company', {});
 
     return (
-      <Card
+      <div
         className={classnames(styles.container, {
           [styles.borderRoot]: !borderlessRoot,
           [styles.highlightedBg]: showHighlightedBg,
@@ -308,7 +307,7 @@ class JobCard extends React.Component {
             />
           </div>
         }
-      </Card>
+      </div>
     );
   }
 }

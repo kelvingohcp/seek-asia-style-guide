@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JobCard should not render shelf section 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -274,11 +274,11 @@ exports[`JobCard should not render shelf section 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should not render shelf section when none of the shelf links has substantial items 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -608,11 +608,11 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should not render the viewed badge if viewed date is undefined 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -994,11 +994,11 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should pass through viewed prop 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -1380,11 +1380,11 @@ exports[`JobCard should pass through viewed prop 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render company with bold keyword 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -1767,11 +1767,11 @@ exports[`JobCard should render company with bold keyword 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render correctly with missing qualification 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -2147,11 +2147,11 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render job title component 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -2533,11 +2533,11 @@ exports[`JobCard should render job title component 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render job title with bold keyword 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -2920,11 +2920,11 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render jobStreet standout style 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -3304,11 +3304,11 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render jobsDB default style 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -3688,11 +3688,11 @@ exports[`JobCard should render jobsDB default style 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render only applied badge, when both applied and expired states are active 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -4075,11 +4075,11 @@ exports[`JobCard should render only applied badge, when both applied and expired
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render plain company label 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -4448,11 +4448,11 @@ exports[`JobCard should render plain company label 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render selected style 1`] = `
-<Card
+<div
   className="container borderRoot selected"
 >
   <div
@@ -4833,11 +4833,11 @@ exports[`JobCard should render selected style 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render tag links 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -5267,11 +5267,11 @@ exports[`JobCard should render tag links 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with Classified in grey label 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -5655,11 +5655,11 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with applied badge 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -6042,11 +6042,11 @@ exports[`JobCard should render with applied badge 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with company banner  1`] = `
-<Card
+<div
   className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
@@ -6426,11 +6426,11 @@ exports[`JobCard should render with company banner  1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with company banner 1`] = `
-<Card
+<div
   className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
@@ -6810,11 +6810,11 @@ exports[`JobCard should render with company banner 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with company banner and selling points in split view 1`] = `
-<Card
+<div
   className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
@@ -7104,11 +7104,11 @@ exports[`JobCard should render with company banner and selling points in split v
       trackLinkClicked={[Function]}
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with company banner in split view  1`] = `
-<Card
+<div
   className="container borderRoot sideHighlightBorder-jobsdb"
 >
   <div
@@ -7391,11 +7391,11 @@ exports[`JobCard should render with company banner in split view  1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with company confidential in grey label 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -7769,11 +7769,11 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with default props 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -8153,11 +8153,11 @@ exports[`JobCard should render with default props 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with expired badge 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -8537,11 +8537,11 @@ exports[`JobCard should render with expired badge 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with selling points in split view 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -8831,11 +8831,11 @@ exports[`JobCard should render with selling points in split view 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with selling points props 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -9242,11 +9242,11 @@ exports[`JobCard should render with selling points props 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with trackLinkClicked 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -9626,11 +9626,11 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render with viewed badge 1`] = `
-<Card
+<div
   className="container borderRoot"
 >
   <div
@@ -10014,11 +10014,11 @@ exports[`JobCard should render with viewed badge 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
 
 exports[`JobCard should render without border 1`] = `
-<Card
+<div
   className="container"
 >
   <div
@@ -10399,5 +10399,5 @@ exports[`JobCard should render without border 1`] = `
       }
     />
   </div>
-</Card>
+</div>
 `;
