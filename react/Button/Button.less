@@ -2,6 +2,8 @@
 
 @componentHeightMobile: @grid-base * 10;
 @componentHeightDesktop: @grid-base * 8;
+@rippleRadius: @grid-base * 30;
+@rippleDuration: 0.7s;
 
 .setTextVerticalPlacement(@val, @borderWidth) {
   line-height: @val - (@borderWidth * 2);
@@ -45,8 +47,9 @@
   }
 }
 
+/* Use for compatibility purpose, there shouldn't be any manual compact button anymore */
+
 .textVerticalPlacementCompact (@borderWidth: 1px) {
-  // Use for compatibility purpose, there shouldn't be any manual compact button anymore
   .setTextVerticalPlacement(@componentHeightDesktop, @borderWidth);
 }
 
@@ -92,6 +95,36 @@
     &.selected {
       .compactTouchableText(@whispering-type-scale, 1px);
       .textVerticalPlacementCompact();
+    }
+  }
+
+  &.rippleOnClick {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: @rippleRadius;
+      height: @rippleRadius;
+      margin-left: (@rippleRadius / 2) * -1;
+      margin-top: (@rippleRadius / 2) * -1;
+      background: @saWhite;
+      border-radius: 100%;
+      opacity: 0.6;
+      transform: scale(0);
+      visibility: hidden;
+    }
+
+    &:not(:active)::after {
+      animation: ripple @rippleDuration ease-out;
+    }
+
+    &:focus::after {
+      visibility: visible;
     }
   }
 }
@@ -246,4 +279,17 @@
   color: @saGrey4;
   cursor: not-allowed;
   text-decoration: underline;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
 }

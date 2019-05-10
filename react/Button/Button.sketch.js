@@ -12,5 +12,6 @@ export const symbols = {
   'Button/Call To Action/Compact': <Button color="callToAction" compact>Button</Button>,
   'Button/Hyperlink/Compact': <Button color="hyperlink" compact>Button</Button>,
   'Button/Tertiary/Compact': <Button color="tertiary" compact>Button</Button>,
-  'Button/GhostWhite': <Button color="ghostWhite">Button</Button>
+  'Button/GhostWhite': <Button color="ghostWhite">Button</Button>,
+  'Button/Ripple on click': <Button color="primary" rippleOnClick>Button</Button>
 };

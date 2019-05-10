@@ -51,6 +51,13 @@ export default {
             ...props,
             disabled: true
           })
+        },
+        {
+          label: 'Ripple on click',
+          transformProps: props => ({
+            ...props,
+            rippleOnClick: true
+          })
         }
       ]
     },

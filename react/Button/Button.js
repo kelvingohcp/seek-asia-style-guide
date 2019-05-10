@@ -26,6 +26,7 @@ export default class Button extends Component {
     ]),
     disabled: PropTypes.bool,
     isSelected: PropTypes.bool,
+    rippleOnClick: PropTypes.bool,
     role: PropTypes.string,
     tabIndex: PropTypes.number
   };
@@ -45,7 +46,7 @@ export default class Button extends Component {
   }
 
   render() {
-    const { color, compact, className, children, component, disabled, isSelected, ...restProps } = this.props;
+    const { color, compact, className, children, component, disabled, isSelected, rippleOnClick, ...restProps } = this.props;
 
     return (
       <StyleGuideContext.Consumer>
@@ -68,7 +69,8 @@ export default class Button extends Component {
               [styles.root_secondary]: color === 'secondary',
               [styles.root_tertiary]: color === 'tertiary',
               [styles.root_ghost_white]: color === 'ghostWhite',
-              [styles.selected]: isSelected
+              [styles.selected]: isSelected,
+              [styles.rippleOnClick]: rippleOnClick && color !== 'hyperlink'
             }),
             ref: this.storeButtonReference,
             ...restProps
