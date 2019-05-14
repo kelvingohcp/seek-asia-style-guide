@@ -11,9 +11,9 @@ import LocationGroup from './components/LocationGroup/LocationGroup';
 import CompanyLink from './components/CompanyLink/CompanyLink';
 import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import IconList from './components/IconList/IconList';
-import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
 import CompanyBanner from './components/CompanyBanner/CompanyBanner';
+import ShelfLink from './components/ShelfLink/ShelfLink';
 import JobMeta from './components/JobMeta/JobMeta';
 import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
 import PropTypes from 'prop-types';
@@ -78,27 +78,6 @@ Company.propTypes = {
   trackLinkClicked: JobCardPropTypes.trackLinkClicked
 };
 
-const Description = ({ description, showDescription }) => {
-  if (!(showDescription && description)) {
-    return null;
-  }
-
-  return (
-    <div className={classnames(styles.desktopOnly, styles.description)}>
-      <Text
-        whispering
-        baseline={false}
-        className={styles.text}>
-        {description}
-      </Text>
-    </div>
-  );
-};
-Description.propTypes = {
-  description: JobType.description,
-  showDescription: JobCardPropTypes.showDescription
-};
-
 const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trackLinkClicked }) => {
   return (
     <IconList
@@ -113,33 +92,6 @@ const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trac
   );
 };
 MainPoint.propTypes = JobCardPropTypes;
-
-const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint, enableBrandedAd }) => {
-  if (!showSellingPoint || (isSplitView && !enableBrandedAd) || !sellingPoints) {
-    return null;
-  }
-
-  return (
-    <ul className={styles.sellingPoints}>
-      {sellingPoints.map((sellingPoint, i) => (
-        <li key={i} className={styles.sellingPoint}>
-          <Text
-            whispering
-            baseline={false}
-            className={styles.text}>
-            {sellingPoint}
-          </Text>
-        </li>
-      ))}
-    </ul>
-  );
-};
-SellingPoint.propTypes = {
-  sellingPoints: JobType.sellingPoints,
-  isSplitView: JobCardPropTypes.isSplitView,
-  showSellingPoint: JobCardPropTypes.showSellingPoint,
-  enableBrandedAd: JobCardPropTypes.enableBrandedAd
-};
 
 const CompanyLogo = ({ companyLogoUrl, showCompanyLogo }) => {
   return companyLogoUrl && showCompanyLogo ?
@@ -170,18 +122,6 @@ CompanyPic.propTypes = {
   showCompanyPic: JobCardPropTypes.showCompanyPic
 };
 
-export const ShelfLink = ({ mobileOnly, desktopOnly, job, shelfSectionOpen, onClick }) => {
-  return (
-    <ShelfButton
-      mobileOnly={mobileOnly}
-      desktopOnly={desktopOnly}
-      job={job}
-      onClick={onClick}
-      isOpen={shelfSectionOpen}
-    />
-  );
-};
-ShelfLink.propTypes = JobCardPropTypes;
 class JobCard extends React.Component {
   state = {
     shelfSectionOpen: false
