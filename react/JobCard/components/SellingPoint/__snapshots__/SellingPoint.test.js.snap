@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SellingPoint should not render selling points when no sellingPoints 1`] = `""`;
+
+exports[`SellingPoint should not render selling points when showSellingPoint is false 1`] = `""`;
+
+exports[`SellingPoint should render correctly 1`] = `
+<ul
+  className="sellingPoints"
+>
+  <li
+    className="sellingPoint"
+    key="0"
+  >
+    <Text
+      baseline={false}
+      className="text"
+      whispering={true}
+    >
+      sellingPoints 1
+    </Text>
+  </li>
+  <li
+    className="sellingPoint"
+    key="1"
+  >
+    <Text
+      baseline={false}
+      className="text"
+      whispering={true}
+    >
+      sellingPoints 2
+    </Text>
+  </li>
+  <li
+    className="sellingPoint"
+    key="2"
+  >
+    <Text
+      baseline={false}
+      className="text"
+      whispering={true}
+    >
+      sellingPoints 3
+    </Text>
+  </li>
+</ul>
+`;

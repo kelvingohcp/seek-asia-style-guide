@@ -14,8 +14,8 @@ import IconList from './components/IconList/IconList';
 import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
 import CompanyBanner from './components/CompanyBanner/CompanyBanner';
+import JobMeta from './components/JobMeta/JobMeta';
 import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
-import JobLabel from '../JobLabel/JobLabel';
 import PropTypes from 'prop-types';
 import _get from 'lodash/get';
 import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
@@ -250,20 +250,24 @@ class JobCard extends React.Component {
             }}
           />
           <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
-          <div className={styles.flexRow}>
+          <div className={classnames(styles.flexRow, styles.flexRowHeight)}>
             <div className={styles.leftContent}>
               <MainPoint {...this.props} />
-              <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
-              {!isSplitView &&
-                <Description description={job.description} showDescription={showDescription} />
-              }
-              <ShelfLink
-                job={job}
-                shelfSectionOpen={shelfSectionOpen}
-                mobileOnly={!isSplitView}
-                onClick={this.handleShelfSectionToggle}
-              />
-              <JobLabel applied={applied} expired={job.isExpired} viewed={viewed && viewedDate && `Viewed ${viewedDate}`} />
+              <Hidden mobile>
+                <JobMeta
+                  sellingPoints={job.sellingPoints}
+                  isSplitView={isSplitView}
+                  showSellingPoint={showSellingPoint}
+                  enableBrandedAd={enableBrandedAd}
+                  description={job.description}
+                  showDescription={showDescription}
+                  job={job} shelfSectionOpen={shelfSectionOpen}
+                  onClick={this.handleShelfSectionToggle}
+                  applied={applied}
+                  expired={job.isExpired}
+                  viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+                />
+              </Hidden>
             </div>
             <div
               className={
@@ -277,14 +281,29 @@ class JobCard extends React.Component {
               <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
               <CompanyPic companyPictureUrl={job.companyPictureUrl} showCompanyPic={showCompanyPic} />
               {!isSplitView &&
-                <ShelfLink
-                  job={job}
-                  shelfSectionOpen={shelfSectionOpen}
-                  desktopOnly
-                  onClick={this.handleShelfSectionToggle}
-                />}
+              <ShelfLink
+                job={job}
+                shelfSectionOpen={shelfSectionOpen}
+                desktopOnly
+                onClick={this.handleShelfSectionToggle}
+              />}
             </div>
           </div>
+          <Hidden desktop>
+            <JobMeta
+              sellingPoints={job.sellingPoints}
+              isSplitView={isSplitView}
+              showSellingPoint={showSellingPoint}
+              enableBrandedAd={enableBrandedAd}
+              description={job.description}
+              showDescription={showDescription}
+              job={job} shelfSectionOpen={shelfSectionOpen}
+              onClick={this.handleShelfSectionToggle}
+              applied={applied}
+              expired={job.isExpired}
+              viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+            />
+          </Hidden>
           <ShelfSection
             shelf={job.shelf}
             LinkComponent={LinkComponent}

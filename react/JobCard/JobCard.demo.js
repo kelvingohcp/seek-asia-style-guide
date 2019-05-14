@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { JobCard, PageBlock } from 'seek-asia-style-guide/react';
 import omit from 'lodash/omit';
+import { StyleGuideProvider, Constants } from 'seek-asia-style-guide/react';
 
 const booleanProps = [
   {
@@ -59,16 +60,20 @@ const renderBooleanProp = item => ({
 });
 
 const JobCardContainer = ({ component: DemoComponent, componentProps }) => {
+  const tenant = componentProps.tenant || Constants.JOBSDB;
   return (
     <PageBlock style={{ width: '100%' }}>
-      <DemoComponent {...componentProps} />
+      <StyleGuideProvider fullScreen={true} enableWebFont={true} tenant={tenant}>
+        <DemoComponent {...componentProps} />
+      </StyleGuideProvider>
     </PageBlock>
   );
 };
 
 JobCardContainer.propTypes = {
   component: PropTypes.func,
-  componentProps: PropTypes.object
+  componentProps: PropTypes.object,
+  tenant: PropTypes.string
 };
 
 const shelfLinks = [
@@ -468,6 +473,25 @@ export default {
               ...props.job,
               companyPictureUrl: 'https://siva.jsstatic.com/my/119697/images/photo/119697_photo_0_738574.jpg'
             }
+          })
+        }
+      ]
+    },
+    {
+      label: 'Tenant',
+      type: 'radio',
+      states: [
+        {
+          label: Constants.JOBSDB,
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: Constants.JOBSTREET,
+          transformProps: props => ({
+            ...props,
+            tenant: Constants.JOBSTREET
           })
         }
       ]

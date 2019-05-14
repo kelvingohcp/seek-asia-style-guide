@@ -27,6 +27,12 @@
   flex-direction: column;
 }
 
+.flexRowHeight {
+  @media @desktop {
+    flex-grow: 9999;
+  }
+}
+
 .flexRow {
   display: flex;
   flex-direction: row;
@@ -41,6 +47,7 @@
 
 .mobileOnly {
   display: flex;
+  padding-top: @grid-base * 2;
   @media @desktop {
     display: none;
   }
@@ -59,6 +66,7 @@
     flex-grow: 1;
     @media @desktop {
       padding: @grid-base*3 @grid-base*2 @grid-base*3 @grid-base*3;
+      justify-content: center;
     }
     padding: @grid-base*3 @grid-base*4 @grid-base*2 @grid-base*3;
     position: relative;
@@ -77,6 +85,7 @@
 
 .leftContent {
   .flexCol();
+  padding-top: @grid-base * 2;
   flex-grow: 1;
 }
 
@@ -123,22 +132,6 @@
   margin-right: @job-card-label-indent;
   background-color: @saGrey5;
   color: @saGrey2;
-}
-
-.description {
-  @media @desktop {
-    margin-right: @grid-base * 4;
-  }
-}
-
-.sellingPoints {
-  .rawText();
-  @media @desktop {
-    padding: @grid-base * 3 0 @grid-base * 2;
-  }
-  padding: @grid-base * 2 0 @grid-base * 4;
-  color: @saGrey3;
-  list-style: none;
 }
 
 .sellingPoint {
