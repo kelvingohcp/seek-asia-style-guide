@@ -27,7 +27,7 @@ exports[`JobCard should not render shelf section 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -85,7 +85,7 @@ exports[`JobCard should not render shelf section 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -120,7 +120,6 @@ exports[`JobCard should not render shelf section 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -144,7 +143,7 @@ exports[`JobCard should not render shelf section 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -192,16 +191,13 @@ exports[`JobCard should not render shelf section 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -257,7 +253,7 @@ exports[`JobCard should not render shelf section 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -364,7 +360,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -433,7 +429,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -479,7 +475,6 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -503,7 +498,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -562,16 +557,13 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -638,7 +630,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -769,7 +761,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -849,7 +841,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -905,7 +897,6 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -930,7 +921,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -999,16 +990,13 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -1085,7 +1073,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -1236,7 +1224,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -1316,7 +1304,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -1372,7 +1360,6 @@ exports[`JobCard should pass through viewed prop 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -1397,7 +1384,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -1466,16 +1453,13 @@ exports[`JobCard should pass through viewed prop 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -1552,7 +1536,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -1703,7 +1687,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -1784,7 +1768,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -1841,7 +1825,6 @@ exports[`JobCard should render company with bold keyword 1`] = `
           }
           keyword="Seek"
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -1865,7 +1848,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -1934,16 +1917,13 @@ exports[`JobCard should render company with bold keyword 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -2020,7 +2000,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -2171,7 +2151,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -2249,7 +2229,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -2304,7 +2284,6 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -2328,7 +2307,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -2396,16 +2375,13 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -2481,7 +2457,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -2632,7 +2608,7 @@ exports[`JobCard should render job title component 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -2712,7 +2688,7 @@ exports[`JobCard should render job title component 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -2768,7 +2744,6 @@ exports[`JobCard should render job title component 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -2792,7 +2767,7 @@ exports[`JobCard should render job title component 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -2861,16 +2836,13 @@ exports[`JobCard should render job title component 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -2947,7 +2919,7 @@ exports[`JobCard should render job title component 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -3098,7 +3070,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -3179,7 +3151,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -3236,7 +3208,6 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           }
           keyword="Seek Senior Engineer"
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -3260,7 +3231,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -3329,16 +3300,13 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -3415,7 +3383,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -3566,7 +3534,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -3645,7 +3613,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -3701,7 +3669,6 @@ exports[`JobCard should render jobStreet standout style 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -3725,7 +3692,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -3794,16 +3761,13 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -3880,7 +3844,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -4031,7 +3995,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -4110,7 +4074,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -4166,7 +4130,6 @@ exports[`JobCard should render jobsDB default style 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -4190,7 +4153,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -4259,16 +4222,13 @@ exports[`JobCard should render jobsDB default style 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -4345,7 +4305,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -4497,7 +4457,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -4577,7 +4537,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -4633,7 +4593,6 @@ exports[`JobCard should render only applied badge, when both applied and expired
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -4658,7 +4617,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -4727,16 +4686,13 @@ exports[`JobCard should render only applied badge, when both applied and expired
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -4814,7 +4770,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -4965,7 +4921,7 @@ exports[`JobCard should render plain company label 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "name": "Seek Asia",
           },
           "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
@@ -5040,7 +4996,7 @@ exports[`JobCard should render plain company label 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "name": "Seek Asia",
               },
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
@@ -5094,7 +5050,6 @@ exports[`JobCard should render plain company label 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -5118,7 +5073,7 @@ exports[`JobCard should render plain company label 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "name": "Seek Asia",
                 },
                 "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
@@ -5184,16 +5139,13 @@ exports[`JobCard should render plain company label 1`] = `
         <CompanyLogo
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "name": "Seek Asia",
               },
               "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
@@ -5268,7 +5220,7 @@ exports[`JobCard should render plain company label 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "name": "Seek Asia",
             },
             "description": "Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...",
@@ -5417,7 +5369,7 @@ exports[`JobCard should render selected style 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -5497,7 +5449,7 @@ exports[`JobCard should render selected style 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -5553,7 +5505,6 @@ exports[`JobCard should render selected style 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -5577,7 +5528,7 @@ exports[`JobCard should render selected style 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -5646,16 +5597,13 @@ exports[`JobCard should render selected style 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -5732,7 +5680,7 @@ exports[`JobCard should render selected style 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -5883,7 +5831,7 @@ exports[`JobCard should render tag links 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -5972,7 +5920,7 @@ exports[`JobCard should render tag links 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -6038,7 +5986,6 @@ exports[`JobCard should render tag links 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -6062,7 +6009,7 @@ exports[`JobCard should render tag links 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -6141,16 +6088,13 @@ exports[`JobCard should render tag links 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -6237,7 +6181,7 @@ exports[`JobCard should render tag links 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -6409,7 +6353,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
           "classifiedLabel": "Classified",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -6489,7 +6433,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
               "classifiedLabel": "Classified",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -6545,7 +6489,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -6570,7 +6513,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
                 "classifiedLabel": "Classified",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -6639,9 +6582,6 @@ exports[`JobCard should render with Classified in grey label 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
@@ -6649,7 +6589,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
               "classifiedLabel": "Classified",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -6727,7 +6667,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
             "classifiedLabel": "Classified",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -6879,7 +6819,7 @@ exports[`JobCard should render with applied badge 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -6959,7 +6899,7 @@ exports[`JobCard should render with applied badge 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -7015,7 +6955,6 @@ exports[`JobCard should render with applied badge 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -7040,7 +6979,7 @@ exports[`JobCard should render with applied badge 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -7109,16 +7048,13 @@ exports[`JobCard should render with applied badge 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -7196,7 +7132,7 @@ exports[`JobCard should render with applied badge 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -7347,7 +7283,7 @@ exports[`JobCard should render with company banner  1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -7426,7 +7362,7 @@ exports[`JobCard should render with company banner  1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -7482,7 +7418,6 @@ exports[`JobCard should render with company banner  1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -7506,7 +7441,7 @@ exports[`JobCard should render with company banner  1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -7575,16 +7510,13 @@ exports[`JobCard should render with company banner  1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -7661,7 +7593,7 @@ exports[`JobCard should render with company banner  1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -7812,7 +7744,7 @@ exports[`JobCard should render with company banner 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -7891,7 +7823,7 @@ exports[`JobCard should render with company banner 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -7947,7 +7879,6 @@ exports[`JobCard should render with company banner 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -7971,7 +7902,7 @@ exports[`JobCard should render with company banner 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -8040,16 +7971,13 @@ exports[`JobCard should render with company banner 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -8126,7 +8054,7 @@ exports[`JobCard should render with company banner 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -8277,7 +8205,7 @@ exports[`JobCard should render with company banner and selling points in split v
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -8357,7 +8285,7 @@ exports[`JobCard should render with company banner and selling points in split v
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -8420,7 +8348,6 @@ exports[`JobCard should render with company banner and selling points in split v
             ]
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -8445,7 +8372,7 @@ exports[`JobCard should render with company banner and selling points in split v
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -8514,9 +8441,6 @@ exports[`JobCard should render with company banner and selling points in split v
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
       </div>
     </div>
     <Hidden
@@ -8537,7 +8461,7 @@ exports[`JobCard should render with company banner and selling points in split v
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -8657,7 +8581,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -8737,7 +8661,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -8793,7 +8717,6 @@ exports[`JobCard should render with company banner in split view  1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -8818,7 +8741,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -8887,9 +8810,6 @@ exports[`JobCard should render with company banner in split view  1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
       </div>
     </div>
     <Hidden
@@ -8910,7 +8830,7 @@ exports[`JobCard should render with company banner in split view  1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -9030,7 +8950,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "isPrivate": true,
             "name": "Company Confidential",
           },
@@ -9107,7 +9027,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "isPrivate": true,
                 "name": "Company Confidential",
               },
@@ -9162,7 +9082,6 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -9186,7 +9105,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "isPrivate": true,
                   "name": "Company Confidential",
                 },
@@ -9253,16 +9172,13 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         <CompanyLogo
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "isPrivate": true,
                 "name": "Company Confidential",
               },
@@ -9338,7 +9254,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "isPrivate": true,
               "name": "Company Confidential",
             },
@@ -9488,7 +9404,7 @@ exports[`JobCard should render with default props 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -9567,7 +9483,7 @@ exports[`JobCard should render with default props 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -9623,7 +9539,6 @@ exports[`JobCard should render with default props 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -9647,7 +9562,7 @@ exports[`JobCard should render with default props 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -9716,16 +9631,13 @@ exports[`JobCard should render with default props 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -9802,7 +9714,7 @@ exports[`JobCard should render with default props 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -9953,7 +9865,7 @@ exports[`JobCard should render with expired badge 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -10032,7 +9944,7 @@ exports[`JobCard should render with expired badge 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -10088,7 +10000,6 @@ exports[`JobCard should render with expired badge 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -10112,7 +10023,7 @@ exports[`JobCard should render with expired badge 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -10181,16 +10092,13 @@ exports[`JobCard should render with expired badge 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -10267,7 +10175,7 @@ exports[`JobCard should render with expired badge 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -10418,7 +10326,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -10498,7 +10406,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -10561,7 +10469,6 @@ exports[`JobCard should render with selling points in split view 1`] = `
             ]
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -10586,7 +10493,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -10655,9 +10562,6 @@ exports[`JobCard should render with selling points in split view 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
       </div>
     </div>
     <Hidden
@@ -10678,7 +10582,7 @@ exports[`JobCard should render with selling points in split view 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -10798,7 +10702,7 @@ exports[`JobCard should render with selling points props 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -10882,7 +10786,7 @@ exports[`JobCard should render with selling points props 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -10943,7 +10847,6 @@ exports[`JobCard should render with selling points props 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -10967,7 +10870,7 @@ exports[`JobCard should render with selling points props 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -11048,16 +10951,13 @@ exports[`JobCard should render with selling points props 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -11139,7 +11039,7 @@ exports[`JobCard should render with selling points props 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -11302,7 +11202,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -11381,7 +11281,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -11437,7 +11337,6 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -11461,7 +11360,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -11530,16 +11429,13 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -11616,7 +11512,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -11767,7 +11663,7 @@ exports[`JobCard should render with viewed badge 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -11847,7 +11743,7 @@ exports[`JobCard should render with viewed badge 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -11903,7 +11799,6 @@ exports[`JobCard should render with viewed badge 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -11929,7 +11824,7 @@ exports[`JobCard should render with viewed badge 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -11999,16 +11894,13 @@ exports[`JobCard should render with viewed badge 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -12085,7 +11977,7 @@ exports[`JobCard should render with viewed badge 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",
@@ -12237,7 +12129,7 @@ exports[`JobCard should render without border 1`] = `
         Object {
           "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
           "careerLevelName": "Entry Level",
-          "company": Object {
+          "companyMeta": Object {
             "link": "/jobCard",
             "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
             "name": "SEEK Asia",
@@ -12317,7 +12209,7 @@ exports[`JobCard should render without border 1`] = `
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -12373,7 +12265,6 @@ exports[`JobCard should render without border 1`] = `
             }
           }
           showCompanyLogo={false}
-          showCompanyPic={false}
           showDescription={false}
           showHighlightedBg={false}
           showSellingPoint={true}
@@ -12397,7 +12288,7 @@ exports[`JobCard should render without border 1`] = `
               Object {
                 "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
                 "careerLevelName": "Entry Level",
-                "company": Object {
+                "companyMeta": Object {
                   "link": "/jobCard",
                   "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                   "name": "SEEK Asia",
@@ -12466,16 +12357,13 @@ exports[`JobCard should render without border 1`] = `
           companyLogoUrl="https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png"
           showCompanyLogo={false}
         />
-        <CompanyPic
-          showCompanyPic={false}
-        />
         <ShelfLink
           desktopOnly={true}
           job={
             Object {
               "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
               "careerLevelName": "Entry Level",
-              "company": Object {
+              "companyMeta": Object {
                 "link": "/jobCard",
                 "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
                 "name": "SEEK Asia",
@@ -12552,7 +12440,7 @@ exports[`JobCard should render without border 1`] = `
           Object {
             "bannerUrl": "https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png",
             "careerLevelName": "Entry Level",
-            "company": Object {
+            "companyMeta": Object {
               "link": "/jobCard",
               "logoUrl": "https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png",
               "name": "SEEK Asia",

@@ -136,7 +136,7 @@ export default {
   container: JobCardContainer,
   initialProps: {
     job: {
-      company: {
+      companyMeta: {
         name: 'SEEK Asia',
         link: '/jobCard',
         title: 'Jobs at SEEK Asia',
@@ -165,7 +165,6 @@ export default {
         }
       ],
       description: 'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
-      companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg',
       postingDuration: '1 hour ago',
       salary: 'RM99999 - RM999999',
       sellingPoints: [
@@ -181,7 +180,6 @@ export default {
       bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
     },
     showCompanyLogo: false,
-    showCompanyPic: false,
     showHighlightedBg: false,
     showSellingPoint: false,
     showDescription: false,
@@ -225,7 +223,7 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: {
+              companyMeta: {
                 name: 'Company Confidential',
                 isPrivate: true
               }
@@ -376,8 +374,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: {
-                ...props.job.company,
+              companyMeta: {
+                ...props.job.companyMeta,
                 logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
               }
             }
@@ -389,8 +387,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: {
-                ...props.job.company,
+              companyMeta: {
+                ...props.job.companyMeta,
                 logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
               }
             }
@@ -402,8 +400,8 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: {
-                ...props.job.company,
+              companyMeta: {
+                ...props.job.companyMeta,
                 logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
               }
             }
@@ -415,63 +413,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: {
-                ...props.job.company,
+              companyMeta: {
+                ...props.job.companyMeta,
                 logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
               }
-            }
-          })
-        }
-      ]
-    },
-    {
-      label: 'States',
-      type: 'checklist',
-      states: [
-        renderBooleanProp({ label: 'Show company pic', prop: 'showCompanyPic' })
-      ]
-    },
-    {
-      label: 'Company Pic',
-      type: 'radio',
-      states: [
-        {
-          label: 'Company Pic Size -- Normal',
-          transformProps: props => ({
-            ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg'
-            }
-          })
-        },
-        {
-          label: 'Very long',
-          transformProps: props => ({
-            ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/56932/images/photo/56932_photo_0_213672.jpg'
-            }
-          })
-        },
-        {
-          label: 'Vertical',
-          transformProps: props => ({
-            ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/86688/images/photo/86688_photo_0_400935.jpg'
-            }
-          })
-        },
-        {
-          label: 'Square',
-          transformProps: props => ({
-            ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/119697/images/photo/119697_photo_0_738574.jpg'
             }
           })
         }
@@ -484,7 +429,8 @@ export default {
         {
           label: Constants.JOBSDB,
           transformProps: props => ({
-            ...props
+            ...props,
+            tenant: Constants.JOBSDB
           })
         },
         {

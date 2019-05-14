@@ -5,7 +5,7 @@ import { Text } from 'seek-asia-style-guide/react';
 import omit from 'lodash/omit';
 
 const defaultJob = {
-  company: {
+  companyMeta: {
     name: 'SEEK Asia',
     link: '/jobCard',
     logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
@@ -67,7 +67,6 @@ const defaultJob = {
 const defaultProps = {
   job: defaultJob,
   showCompanyLogo: false,
-  showCompanyPic: false,
   showHighlightedBg: false,
   showSellingPoint: true,
   showDescription: false,
@@ -102,7 +101,7 @@ describe('JobCard', () => {
   it('should render with company confidential in grey label', () => {
     const descriptionJob = {
       ...defaultJob,
-      company: {
+      companyMeta: {
         name: 'Company Confidential',
         isPrivate: true
       }
@@ -171,7 +170,7 @@ describe('JobCard', () => {
   it('should render plain company label', () => {
     const descriptionJob = {
       ...defaultJob,
-      company: {
+      companyMeta: {
         name: 'Seek Asia'
       }
     };

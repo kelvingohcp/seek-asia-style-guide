@@ -103,25 +103,6 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-const CompanyPic = ({ companyPictureUrl, showCompanyPic }) => {
-  if (!(showCompanyPic && companyPictureUrl)) {
-    return null;
-  }
-
-  return (
-    <div className={styles.companyPicWrapper}>
-      <img
-        className={styles.companyPic}
-        src={companyPictureUrl}
-      />
-    </div>
-  );
-};
-CompanyPic.propTypes = {
-  companyPictureUrl: JobType.companyPictureUrl,
-  showCompanyPic: JobCardPropTypes.showCompanyPic
-};
-
 class JobCard extends React.Component {
   state = {
     shelfSectionOpen: false
@@ -139,13 +120,12 @@ class JobCard extends React.Component {
       isSelected,
       isSplitView,
       enableBrandedAd,
-      job,
+      job = {},
       keyword,
       LinkComponent,
       onBookmarkClick,
       showSellingPoint,
       showCompanyLogo,
-      showCompanyPic,
       showDescription,
       showHighlightedBg,
       showSavedStatus,
@@ -156,9 +136,11 @@ class JobCard extends React.Component {
       tenant
     } = this.props;
 
+    const { companyMeta = {}, isSaved, bannerUrl } = job;
+
     const { shelfSectionOpen } = this.state;
 
-    const { logoUrl } = _get(job, 'company', {});
+    const { logoUrl } = _get(job, 'companyMeta', {});
 
     return (
       <div
@@ -171,11 +153,11 @@ class JobCard extends React.Component {
         <div className={styles.leftContainer}>
           {showSavedStatus && (
             <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
-              <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
+              <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
             </Button>
           )}
           <Hidden desktop className={styles.alignCenter}>
-            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
+            <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
           </Hidden>
           <JobTitle
             {
@@ -189,7 +171,7 @@ class JobCard extends React.Component {
               showSavedStatus
             }}
           />
-          <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+          <Company company={companyMeta} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
           <div className={classnames(styles.flexRow, styles.flexRowHeight)}>
             <div className={styles.leftContent}>
               <MainPoint {...this.props} />
@@ -219,7 +201,6 @@ class JobCard extends React.Component {
                 )
               }>
               <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
-              <CompanyPic companyPictureUrl={job.companyPictureUrl} showCompanyPic={showCompanyPic} />
               {!isSplitView &&
               <ShelfLink
                 job={job}
