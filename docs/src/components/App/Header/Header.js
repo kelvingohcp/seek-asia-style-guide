@@ -88,7 +88,7 @@ export default class Header extends Component {
                     <Section header>
                       <Card transparent className={styles.components}>
                         <h2>
-                          <Text yelling regular>
+                          <Text screaming>
                             <Link className={styles.link} to='./'>
                               Home
                             </Link>
@@ -97,34 +97,27 @@ export default class Header extends Component {
                       </Card>
 
                       <Card transparent>
-                        <h2>
-                          <Text
-                            yelling
-                            className={styles.componentSectionTitle}>
-                            Tenants
-                          </Text>
+                        <h2 className={styles.componentSectionTitle}>
+                          <Text yelling strong>Tenants</Text>
                         </h2>
                       </Card>
                       <Card transparent className={styles.componentList}>
                         <Text
-                          shouting
-                          regular
+                          loud
                           className={styles.componentListItem}>
                           <Link className={styles.link} to='#' onClick={() => changeTenant(SEEKASIA)}>
                             SeekAsia
                           </Link>
                         </Text>
                         <Text
-                          shouting
-                          regular
+                          loud
                           className={styles.componentListItem}>
                           <Link className={styles.link} to='#' onClick={() => changeTenant(JOBSDB)}>
                             JobsDB
                           </Link>
                         </Text>
                         <Text
-                          shouting
-                          regular
+                          loud
                           className={styles.componentListItem}>
                           <Link className={styles.link} to='#' onClick={() => changeTenant(JOBSTREET)}>
                             JobStreet
@@ -133,26 +126,20 @@ export default class Header extends Component {
                       </Card>
 
                       <Card transparent>
-                        <h2>
-                          <Text
-                            yelling
-                            className={styles.componentSectionTitle}>
-                            SEEK Asia Style Basics
-                          </Text>
+                        <h2 className={styles.componentSectionTitle}>
+                          <Text yelling strong>Style Basics</Text>
                         </h2>
                       </Card>
                       <Card transparent className={styles.componentList}>
                         <Text
-                          shouting
-                          regular
+                          loud
                           className={styles.componentListItem}>
                           <Link className={styles.link} to='./colors'>
                             Colors
                           </Link>
                         </Text>
                         <Text
-                          shouting
-                          regular
+                          loud
                           className={styles.componentListItem}>
                           <Link className={styles.link} to='./typography'>
                             Typography
@@ -164,6 +151,7 @@ export default class Header extends Component {
                         <h2>
                           <Text
                             yelling
+                            strong
                             className={styles.componentSectionTitle}>
                             Tools
                           </Text>
@@ -171,8 +159,7 @@ export default class Header extends Component {
                       </Card>
                       <Card transparent className={styles.componentList}>
                         <Text
-                          shouting
-                          regular
+                          loud
                           className={styles.componentListItem}>
                           <Link className={styles.link} to='./sandbox'>
                             Sandbox
@@ -184,16 +171,16 @@ export default class Header extends Component {
                         <h2>
                           <Text
                             yelling
+                            strong
                             className={styles.componentSectionTitle}>
-                            SEEK Asia Components
+                            Components
                           </Text>
                         </h2>
                       </Card>
                       <Card transparent className={styles.componentList}>
                         {saDemoSpecs.map(demoSpec => (
                           <Text
-                            shouting
-                            regular
+                            loud
                             key={demoSpec.title}
                             className={styles.componentListItem}>
                             <Link className={styles.link} to={demoSpec.route}>
@@ -207,16 +194,16 @@ export default class Header extends Component {
                         <h2>
                           <Text
                             yelling
+                            strong
                             className={styles.componentSectionTitle}>
-                            SEEK Components
+                            Components (SEEK style guide)
                           </Text>
                         </h2>
                       </Card>
                       <Card transparent className={styles.componentList}>
                         {skDemoSpecs.map(demoSpec => (
                           <Text
-                            shouting
-                            regular
+                            loud
                             key={demoSpec.title}
                             className={styles.componentListItem}>
                             <Link className={styles.link} to={demoSpec.route}>
