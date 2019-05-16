@@ -1,6 +1,16 @@
 @import (reference) '~seek-asia-style-guide/theme';
 @import (reference) '../../JobCard.less';
 
+.root {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: @job-card-section-bottom-space;
+}
+
+.moreWrapper {
+  display: flex;
+}
+
 .shelfToggleIcon {
   width: @grid-base * 2;
   height: @grid-base * 2;

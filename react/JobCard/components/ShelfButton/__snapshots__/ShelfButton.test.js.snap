@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Shelf Button should render default shelf button 1`] = `
-<div
-  className="flexRow section"
+<Hidden
+  className="root"
+  component="span"
+  desktop={false}
+  mobile={false}
+  print={false}
+  screen={false}
+  tablet={false}
 >
   <Text
     baseline={false}
@@ -11,12 +17,18 @@ exports[`Shelf Button should render default shelf button 1`] = `
   >
     1 hour ago
   </Text>
-</div>
+</Hidden>
 `;
 
 exports[`Shelf Button should render shelf button with applied date 1`] = `
-<div
-  className="flexRow section"
+<Hidden
+  className="root"
+  component="span"
+  desktop={false}
+  mobile={false}
+  print={false}
+  screen={false}
+  tablet={false}
 >
   <Text
     baseline={false}
@@ -25,12 +37,18 @@ exports[`Shelf Button should render shelf button with applied date 1`] = `
   >
     1 hour ago
   </Text>
-</div>
+</Hidden>
 `;
 
 exports[`Shelf Button should render shelf button with featured label 1`] = `
-<div
-  className="flexRow section"
+<Hidden
+  className="root"
+  component="span"
+  desktop={false}
+  mobile={false}
+  print={false}
+  screen={false}
+  tablet={false}
 >
   <Text
     baseline={false}
@@ -39,12 +57,18 @@ exports[`Shelf Button should render shelf button with featured label 1`] = `
   >
     1 hour ago
   </Text>
-</div>
+</Hidden>
 `;
 
 exports[`Shelf Button should render shelf button with shelf 1`] = `
-<div
-  className="flexRow section"
+<Hidden
+  className="root"
+  component="span"
+  desktop={false}
+  mobile={false}
+  print={false}
+  screen={false}
+  tablet={false}
 >
   <Text
     baseline={false}
@@ -53,8 +77,14 @@ exports[`Shelf Button should render shelf button with shelf 1`] = `
   >
     1 hour ago
   </Text>
-  <div
-    className="desktopOnly"
+  <Hidden
+    className="moreWrapper"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <Text
       baseline={false}
@@ -77,13 +107,19 @@ exports[`Shelf Button should render shelf button with shelf 1`] = `
         svgClassName="shelfToggleIcon"
       />
     </Text>
-  </div>
-</div>
+  </Hidden>
+</Hidden>
 `;
 
 exports[`Shelf Button should render shelf button with shelf and openned style 1`] = `
-<div
-  className="flexRow section"
+<Hidden
+  className="root"
+  component="span"
+  desktop={false}
+  mobile={false}
+  print={false}
+  screen={false}
+  tablet={false}
 >
   <Text
     baseline={false}
@@ -92,8 +128,14 @@ exports[`Shelf Button should render shelf button with shelf and openned style 1`
   >
     1 hour ago
   </Text>
-  <div
-    className="desktopOnly"
+  <Hidden
+    className="moreWrapper"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <Text
       baseline={false}
@@ -116,6 +158,6 @@ exports[`Shelf Button should render shelf button with shelf and openned style 1`
         svgClassName="shelfToggleIcon"
       />
     </Text>
-  </div>
-</div>
+  </Hidden>
+</Hidden>
 `;

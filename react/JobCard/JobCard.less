@@ -22,7 +22,7 @@
   padding-bottom: @job-card-section-bottom-space;
 }
 
-.flexCol {
+.flexCol() {
   display: flex;
   flex-direction: column;
 }
@@ -36,21 +36,6 @@
 .flexRow {
   display: flex;
   flex-direction: row;
-}
-
-.desktopOnly {
-  display: none;
-  @media @desktop {
-    display: flex;
-  }
-}
-
-.mobileOnly {
-  display: flex;
-  padding-top: @grid-base * 2;
-  @media @desktop {
-    display: none;
-  }
 }
 
 .container {
@@ -79,7 +64,6 @@
     min-width: @job-card-right-area-width;
     background-color: @saGrey6;
     justify-content: start;
-    .desktopOnly();
   }
 }
 

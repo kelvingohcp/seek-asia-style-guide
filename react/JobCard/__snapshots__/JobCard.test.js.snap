@@ -10,11 +10,11 @@ exports[`JobCard should not render shelf section 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -239,11 +239,11 @@ exports[`JobCard should not render shelf section 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -299,8 +299,14 @@ exports[`JobCard should not render shelf section 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -329,7 +335,7 @@ exports[`JobCard should not render shelf section 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -343,11 +349,11 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -616,11 +622,11 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -700,8 +706,14 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -730,7 +742,7 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -744,11 +756,11 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -1059,11 +1071,11 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -1163,8 +1175,14 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -1193,7 +1211,7 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -1207,11 +1225,11 @@ exports[`JobCard should pass through viewed prop 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -1522,11 +1540,11 @@ exports[`JobCard should pass through viewed prop 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -1626,8 +1644,14 @@ exports[`JobCard should pass through viewed prop 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -1656,7 +1680,7 @@ exports[`JobCard should pass through viewed prop 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -1670,11 +1694,11 @@ exports[`JobCard should render company with bold keyword 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -1986,11 +2010,11 @@ exports[`JobCard should render company with bold keyword 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -2090,8 +2114,14 @@ exports[`JobCard should render company with bold keyword 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -2120,7 +2150,7 @@ exports[`JobCard should render company with bold keyword 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -2134,11 +2164,11 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -2443,11 +2473,11 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -2546,8 +2576,14 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -2576,7 +2612,7 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -2590,11 +2626,11 @@ exports[`JobCard should render job title component 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -2905,11 +2941,11 @@ exports[`JobCard should render job title component 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -3009,8 +3045,14 @@ exports[`JobCard should render job title component 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -3039,7 +3081,7 @@ exports[`JobCard should render job title component 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -3053,11 +3095,11 @@ exports[`JobCard should render job title with bold keyword 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -3369,11 +3411,11 @@ exports[`JobCard should render job title with bold keyword 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -3473,8 +3515,14 @@ exports[`JobCard should render job title with bold keyword 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -3503,7 +3551,7 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -3517,11 +3565,11 @@ exports[`JobCard should render jobStreet standout style 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -3830,11 +3878,11 @@ exports[`JobCard should render jobStreet standout style 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -3934,8 +3982,14 @@ exports[`JobCard should render jobStreet standout style 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -3964,7 +4018,7 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -3978,11 +4032,11 @@ exports[`JobCard should render jobsDB default style 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -4291,11 +4345,11 @@ exports[`JobCard should render jobsDB default style 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -4395,8 +4449,14 @@ exports[`JobCard should render jobsDB default style 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -4425,7 +4485,7 @@ exports[`JobCard should render jobsDB default style 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -4439,11 +4499,11 @@ exports[`JobCard should render only applied badge, when both applied and expired
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -4755,11 +4815,11 @@ exports[`JobCard should render only applied badge, when both applied and expired
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         applied={true}
@@ -4860,8 +4920,14 @@ exports[`JobCard should render only applied badge, when both applied and expired
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -4890,7 +4956,7 @@ exports[`JobCard should render only applied badge, when both applied and expired
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -4904,11 +4970,11 @@ exports[`JobCard should render plain company label 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -5206,11 +5272,11 @@ exports[`JobCard should render plain company label 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -5308,8 +5374,14 @@ exports[`JobCard should render plain company label 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -5338,7 +5410,7 @@ exports[`JobCard should render plain company label 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -5352,11 +5424,11 @@ exports[`JobCard should render selected style 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -5666,11 +5738,11 @@ exports[`JobCard should render selected style 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -5770,8 +5842,14 @@ exports[`JobCard should render selected style 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -5800,7 +5878,7 @@ exports[`JobCard should render selected style 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -5814,11 +5892,11 @@ exports[`JobCard should render tag links 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -6167,11 +6245,11 @@ exports[`JobCard should render tag links 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -6291,8 +6369,14 @@ exports[`JobCard should render tag links 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -6321,7 +6405,7 @@ exports[`JobCard should render tag links 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -6335,11 +6419,11 @@ exports[`JobCard should render with Classified in grey label 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -6652,11 +6736,11 @@ exports[`JobCard should render with Classified in grey label 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -6757,8 +6841,14 @@ exports[`JobCard should render with Classified in grey label 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -6787,7 +6877,7 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -6801,11 +6891,11 @@ exports[`JobCard should render with applied badge 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -7117,11 +7207,11 @@ exports[`JobCard should render with applied badge 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         applied={true}
@@ -7222,8 +7312,14 @@ exports[`JobCard should render with applied badge 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -7252,7 +7348,7 @@ exports[`JobCard should render with applied badge 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -7266,11 +7362,11 @@ exports[`JobCard should render with company banner  1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -7579,11 +7675,11 @@ exports[`JobCard should render with company banner  1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -7683,8 +7779,14 @@ exports[`JobCard should render with company banner  1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -7713,7 +7815,7 @@ exports[`JobCard should render with company banner  1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -7727,11 +7829,11 @@ exports[`JobCard should render with company banner 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -8040,11 +8142,11 @@ exports[`JobCard should render with company banner 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -8144,8 +8246,14 @@ exports[`JobCard should render with company banner 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -8174,7 +8282,7 @@ exports[`JobCard should render with company banner 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -8188,11 +8296,11 @@ exports[`JobCard should render with company banner and selling points in split v
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -8446,11 +8554,11 @@ exports[`JobCard should render with company banner and selling points in split v
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -8564,11 +8672,11 @@ exports[`JobCard should render with company banner in split view  1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -8815,11 +8923,11 @@ exports[`JobCard should render with company banner in split view  1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -8933,11 +9041,11 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -9240,11 +9348,11 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -9343,8 +9451,14 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -9373,7 +9487,7 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -9387,11 +9501,11 @@ exports[`JobCard should render with default props 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -9700,11 +9814,11 @@ exports[`JobCard should render with default props 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -9804,8 +9918,14 @@ exports[`JobCard should render with default props 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -9834,7 +9954,7 @@ exports[`JobCard should render with default props 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -9848,11 +9968,11 @@ exports[`JobCard should render with expired badge 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -10161,11 +10281,11 @@ exports[`JobCard should render with expired badge 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -10265,8 +10385,14 @@ exports[`JobCard should render with expired badge 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -10295,7 +10421,7 @@ exports[`JobCard should render with expired badge 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -10309,11 +10435,11 @@ exports[`JobCard should render with selling points in split view 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -10567,11 +10693,11 @@ exports[`JobCard should render with selling points in split view 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -10685,11 +10811,11 @@ exports[`JobCard should render with selling points props 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -11025,11 +11151,11 @@ exports[`JobCard should render with selling points props 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -11141,8 +11267,14 @@ exports[`JobCard should render with selling points props 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -11171,7 +11303,7 @@ exports[`JobCard should render with selling points props 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -11185,11 +11317,11 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -11498,11 +11630,11 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -11602,8 +11734,14 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
       trackLinkClicked={[MockFunction]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -11632,7 +11770,7 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -11646,11 +11784,11 @@ exports[`JobCard should render with viewed badge 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -11963,11 +12101,11 @@ exports[`JobCard should render with viewed badge 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -12068,8 +12206,14 @@ exports[`JobCard should render with viewed badge 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -12098,7 +12242,7 @@ exports[`JobCard should render with viewed badge 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;
 
@@ -12112,11 +12256,11 @@ exports[`JobCard should render without border 1`] = `
     <Hidden
       className="alignCenter"
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <CompanyBanner
         bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -12426,11 +12570,11 @@ exports[`JobCard should render without border 1`] = `
     <Hidden
       className=""
       component="span"
-      desktop={true}
+      desktop={false}
       mobile={false}
       print={false}
       screen={false}
-      tablet={false}
+      tablet={true}
     >
       <JobMeta
         description="Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include..."
@@ -12530,8 +12674,14 @@ exports[`JobCard should render without border 1`] = `
       trackLinkClicked={[Function]}
     />
   </div>
-  <div
+  <Hidden
     className="rightContainer"
+    component="span"
+    desktop={false}
+    mobile={true}
+    print={false}
+    screen={false}
+    tablet={false}
   >
     <CompanyBanner
       bannerUrl="https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png"
@@ -12560,6 +12710,6 @@ exports[`JobCard should render without border 1`] = `
         ]
       }
     />
-  </div>
+  </Hidden>
 </div>
 `;

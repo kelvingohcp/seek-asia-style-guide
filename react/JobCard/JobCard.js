@@ -156,7 +156,7 @@ class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
             </Button>
           )}
-          <Hidden desktop className={styles.alignCenter}>
+          <Hidden tablet className={styles.alignCenter}>
             <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
           </Hidden>
           <JobTitle
@@ -210,7 +210,7 @@ class JobCard extends React.Component {
               />}
             </div>
           </div>
-          <Hidden desktop>
+          <Hidden tablet>
             <JobMeta
               sellingPoints={job.sellingPoints}
               isSplitView={isSplitView}
@@ -234,7 +234,7 @@ class JobCard extends React.Component {
         </div>
         {
           !isSplitView &&
-          <div className={styles.rightContainer}>
+          <Hidden mobile className={styles.rightContainer}>
             <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
             <IconList
               className={styles.structuredData}
@@ -245,7 +245,7 @@ class JobCard extends React.Component {
                 { content: job.employmentTermName, iconType: 'employmentType' }
               ]}
             />
-          </div>
+          </Hidden>
         }
       </div>
     );
