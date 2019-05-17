@@ -104,8 +104,7 @@ export default {
           label: 'Call To Action',
           transformProps: props => ({
             ...props,
-            color: 'callToAction',
-            isJobStreet: true
+            color: 'callToAction'
           })
         },
         {
