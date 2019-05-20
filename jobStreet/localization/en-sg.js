@@ -67,7 +67,7 @@ export default {
       url: `${baseUrlWithLanguage}/companies`
     },
     education: {
-      title: 'Trainings',
+      title: 'Training',
       url: 'https://www.jobstreet.com.sg/learning'
     },
     signUp: {
