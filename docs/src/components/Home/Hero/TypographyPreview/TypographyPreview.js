@@ -2,9 +2,9 @@ import styles from './TypographyPreview.less';
 
 import React from 'react';
 
-const items = [
-  'screaming',
-  'yelling'
+const itemsStyles = [
+  styles.screamingItem,
+  styles.yellingItem
 ];
 
 const sampleText = <span>AaBb<span className={styles.cc}>Cc</span></span>;
@@ -12,8 +12,8 @@ const sampleText = <span>AaBb<span className={styles.cc}>Cc</span></span>;
 export default function TypographyPreview() {
   return (
     <div className={styles.root}>
-      {items.map(item => (
-        <div key={item} className={styles[`${item}Item`]}>
+      {itemsStyles.map((style, key) => (
+        <div key={key} className={style}>
           <p className={styles.bold}>{sampleText}</p>
           <p>{sampleText}</p>
         </div>

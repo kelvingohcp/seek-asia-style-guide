@@ -1,7 +1,7 @@
+import styles from './JobCard.less';
+
 import React from 'react';
 import classnames from 'classnames';
-
-import styles from './JobCard.less';
 
 import Text from '../Text/Text';
 import Hidden from '../Hidden/Hidden';
@@ -142,13 +142,18 @@ class JobCard extends React.Component {
 
     const { logoUrl } = _get(job, 'companyMeta', {});
 
+    const brandedStripeStyle = {
+      jobsdb: styles.sideHighlightBorderJobsdb,
+      jobstreet: styles.sideHighlightBorderJobstreet
+    }[tenant.toLowerCase()];
+
     return (
       <div
         className={classnames(styles.container, {
           [styles.borderRoot]: !borderlessRoot,
           [styles.highlightedBg]: showHighlightedBg,
           [styles.selected]: isSelected,
-          [styles[`sideHighlightBorder-${tenant.toLowerCase()}`]]: enableBrandedAd
+          [brandedStripeStyle]: enableBrandedAd && brandedStripeStyle
         })}>
         <div className={styles.leftContainer}>
           {showSavedStatus && (

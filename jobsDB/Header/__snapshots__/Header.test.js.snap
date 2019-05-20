@@ -6,7 +6,13 @@ exports[`JobsDB Header renders with default props 1`] = `
   activeTab="ACTIVE_TAB_HOME"
   authenticationStatus="unauthenticated"
   baseUrl="https://hk.jobsdb.com"
-  brandStyles={null}
+  brandStyles={
+    Object {
+      "activeActionTrayIcon": "activeActionTrayIcon",
+      "menuIcon": "menuIcon",
+      "primaryNavLink": "primaryNavLink",
+    }
+  }
   country="hk"
   employerSite={true}
   headerMessage={

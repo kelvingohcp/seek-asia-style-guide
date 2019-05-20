@@ -6,6 +6,7 @@ exports[`Autosuggest should render with compact prop 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-owns="react-autowhatever-1"
+    class="container"
     role="combobox"
   >
     <div
@@ -55,6 +56,7 @@ exports[`Autosuggest should render with label 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-owns="react-autowhatever-1"
+    class="container"
     role="combobox"
   >
     <div
@@ -124,6 +126,7 @@ exports[`Autosuggest should render with mobile backdrop 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-owns="react-autowhatever-1"
+    class="container"
     role="combobox"
   >
     <div
@@ -193,6 +196,7 @@ exports[`Autosuggest should render with mobile full width 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-owns="react-autowhatever-1"
+    class="container"
     role="combobox"
   >
     <div
@@ -262,6 +266,7 @@ exports[`Autosuggest should render with simple props 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-owns="react-autowhatever-1"
+    class="container"
     role="combobox"
   >
     <div
@@ -311,6 +316,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
     aria-expanded="true"
     aria-haspopup="listbox"
     aria-owns="react-autowhatever-1"
+    class="container containerOpen"
     role="combobox"
   >
     <div
@@ -343,7 +349,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
       />
     </div>
     <div
-      class="suggestionsContainer"
+      class="suggestionsContainer suggestionsContainerOpen"
       id="react-autowhatever-1"
       role="listbox"
     >
@@ -352,6 +358,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
       >
         <li
           aria-selected="false"
+          class="suggestion"
           data-suggestion-index="0"
           id="react-autowhatever-1--item-0"
           role="option"
@@ -364,6 +371,7 @@ exports[`Autosuggest should render with suggestions 1`] = `
         </li>
         <li
           aria-selected="false"
+          class="suggestion"
           data-suggestion-index="1"
           id="react-autowhatever-1--item-1"
           role="option"

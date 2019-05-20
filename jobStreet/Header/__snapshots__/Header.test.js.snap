@@ -10,7 +10,13 @@ exports[`JobStreet Header passes through optional props 1`] = `
   }
   activeTab="ACTIVE_TAB_HOME"
   authenticationStatus="unauthenticated"
-  brandStyles={null}
+  brandStyles={
+    Object {
+      "activeActionTrayIcon": "activeActionTrayIcon",
+      "menuIcon": "menuIcon",
+      "primaryNavLink": "primaryNavLink",
+    }
+  }
   country="my"
   headerMessage={
     Object {
@@ -162,7 +168,13 @@ exports[`JobStreet Header renders with default props 1`] = `
   LogoComponent={[Function]}
   activeTab="ACTIVE_TAB_HOME"
   authenticationStatus="unauthenticated"
-  brandStyles={null}
+  brandStyles={
+    Object {
+      "activeActionTrayIcon": "activeActionTrayIcon",
+      "menuIcon": "menuIcon",
+      "primaryNavLink": "primaryNavLink",
+    }
+  }
   country="my"
   headerMessage={
     Object {

@@ -1,4 +1,5 @@
 import styles from './Autosuggest.less';
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
@@ -141,7 +142,15 @@ export default class Autosuggest extends Component {
       renderInputComponent: this.renderInputComponent,
       ...autosuggestProps,
       theme: {
-        ...styles,
+        ...{
+          container: styles.container,
+          containerOpen: styles.containerOpen,
+          suggestionsContainerOpen: styles.suggestionsContainerOpen,
+          sectionTitle: styles.sectionTitle,
+          sectionContainer: styles.sectionContainer,
+          suggestion: styles.suggestion,
+          suggestionHighlighted: styles.suggestionHighlighted
+        },
         suggestionsContainer: classnames({
           [styles.suggestionsContainer]: true,
           [styles.suggestionsContainer_withLabel]: label,

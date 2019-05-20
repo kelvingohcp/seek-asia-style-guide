@@ -26,6 +26,12 @@ const getJobStreetProps = ({ country, language }) => {
 };
 
 const Header = ({ country, language, activeTab, loginAvailable = false, ...restProps }) => {
+  const brandStyles = {
+    activeActionTrayIcon: styles.activeActionTrayIcon,
+    menuIcon: styles.menuIcon,
+    primaryNavLink: styles.primaryNavLink
+  };
+
   return (
     <GlobalHeader
       LogoComponent={Logo}
@@ -33,7 +39,7 @@ const Header = ({ country, language, activeTab, loginAvailable = false, ...restP
       activeTab={activeTab}
       loginAvailable={loginAvailable}
       {...getJobStreetProps({ country, language })}
-      brandStyles={styles}
+      brandStyles={brandStyles}
       locales={locales}
       country={country}
       language={language}

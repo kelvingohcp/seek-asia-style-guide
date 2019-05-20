@@ -12,7 +12,7 @@ const FooterLinks = ({ footerMessages, linkRenderer, displayInDesktop }) => {
       <div className={styles.item}>
         {
           linkRenderer({
-            children: <Text className={styles.copyright} whispering secondary semiStrong>
+            children: <Text whispering secondary semiStrong>
               {title}
             </Text>,
             href: url

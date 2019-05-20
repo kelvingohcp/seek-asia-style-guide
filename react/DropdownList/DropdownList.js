@@ -1,4 +1,5 @@
 import styles from './DropdownList.less';
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
@@ -26,6 +27,12 @@ export default class DropdownList extends Component {
 
   render() {
     const { value, noShadow, className, children, compact, chevronAlignment, lowerLevel, iconPosition, ...restProps } = this.props;
+    const chevronAlignmentStyle = {
+      top: styles.top,
+      center: styles.center,
+      bottom: styles.bottom
+    }[chevronAlignment];
+
     return (
       <div
         className={classnames({
@@ -49,7 +56,7 @@ export default class DropdownList extends Component {
           <ChevronIcon
             className={classnames({
               [styles.chevron]: true,
-              [styles[`${chevronAlignment}`]]: true
+              [chevronAlignmentStyle]: chevronAlignmentStyle
             })}
             svgClassName={styles.chevronSvg}
             direction={this.state.chevronDirection}

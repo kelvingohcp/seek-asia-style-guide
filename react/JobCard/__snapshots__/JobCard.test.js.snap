@@ -7354,7 +7354,7 @@ exports[`JobCard should render with applied badge 1`] = `
 
 exports[`JobCard should render with company banner  1`] = `
 <div
-  className="container borderRoot sideHighlightBorder-jobsdb"
+  className="container borderRoot sideHighlightBorderJobsdb"
 >
   <div
     className="leftContainer"
@@ -7821,7 +7821,7 @@ exports[`JobCard should render with company banner  1`] = `
 
 exports[`JobCard should render with company banner 1`] = `
 <div
-  className="container borderRoot sideHighlightBorder-jobsdb"
+  className="container borderRoot sideHighlightBorderJobsdb"
 >
   <div
     className="leftContainer"
@@ -8288,7 +8288,7 @@ exports[`JobCard should render with company banner 1`] = `
 
 exports[`JobCard should render with company banner and selling points in split view 1`] = `
 <div
-  className="container borderRoot sideHighlightBorder-jobsdb"
+  className="container borderRoot sideHighlightBorderJobsdb"
 >
   <div
     className="leftContainer"
@@ -8664,7 +8664,7 @@ exports[`JobCard should render with company banner and selling points in split v
 
 exports[`JobCard should render with company banner in split view  1`] = `
 <div
-  className="container borderRoot sideHighlightBorder-jobsdb"
+  className="container borderRoot sideHighlightBorderJobsdb"
 >
   <div
     className="leftContainer"

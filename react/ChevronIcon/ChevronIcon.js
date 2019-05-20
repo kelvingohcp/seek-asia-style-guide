@@ -1,5 +1,6 @@
-import svgMarkup from './ChevronIcon.svg';
 import styles from './ChevronIcon.less';
+
+import svgMarkup from './ChevronIcon.svg';
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -8,9 +9,15 @@ import classnames from 'classnames';
 import Icon from '../private/Icon/Icon';
 
 export default function ChevronIcon({ direction, className, ...props }) {
+  const directionStyles = {
+    left: styles.left,
+    right: styles.right,
+    up: styles.up
+  }[direction];
+
   const combinedProps = {
     ...props,
-    className: classnames(styles.root, styles[direction], className)
+    className: classnames(styles.root, { [directionStyles]: directionStyles, [className]: className })
   };
 
   return <Icon markup={svgMarkup} {...combinedProps} />;

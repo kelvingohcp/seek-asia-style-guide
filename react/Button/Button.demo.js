@@ -1,7 +1,5 @@
 import { Button } from 'seek-asia-style-guide/react';
 import * as sketch from './Button.sketch';
-import styles from './Button.less';
-import classnames from 'classnames';
 
 export default {
   route: '/button',
@@ -17,20 +15,6 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
-        {
-          label: 'Hover',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootHover)
-          })
-        },
-        {
-          label: 'Active',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootActive)
-          })
-        },
         {
           label: 'isSelected',
           transformProps: ({ className, ...props }) => ({

@@ -10,16 +10,14 @@
 
 .hoverState(@rules) {
   @media (hover: hover) {
-    &:hover,
-    &.rootHover {
+    &:hover {
       @rules();
     }
   }
 }
 
 .activeState(@rules) {
-  &:active,
-  &.rootActive {
+  &:active {
     @rules();
   }
 }
@@ -32,8 +30,7 @@
 }
 
 .focusedState(@rules) {
-  &:focus,
-  &.rootFocused {
+  &:focus {
     @rules();
   }
 }
@@ -129,8 +126,7 @@
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
   }
-  &:focus,
-  &.focused {
+  &:focus {
     .focusedState({box-shadow: 0 0 2px 2px #94c9e0;});
   }
 }
@@ -145,8 +141,7 @@
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
   }
-  &:focus,
-  &.focused {
+  &:focus {
     .focusedState({box-shadow: 0 0 2px 2px #94c9e0;});
   }
 }

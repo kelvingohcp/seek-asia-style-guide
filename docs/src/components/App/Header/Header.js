@@ -52,7 +52,7 @@ export default class Header extends Component {
     return (
       <div>
         <PageBlock className={headerClasses}>
-          <Section className={styles.headerSection}>
+          <Section>
             <div className={styles.sectionContent}>
               <Link
                 className={classnames([styles.logoLink, brandStyle.logoLink])}
@@ -68,7 +68,7 @@ export default class Header extends Component {
                 </StyleGuideContext.Consumer>
               </Link>
 
-              <div className={styles.hamburger}>
+              <div>
                 <input
                   onChange={this.handleMenuToggle}
                   checked={menuOpen}
@@ -86,7 +86,7 @@ export default class Header extends Component {
                 <div className={styles.menu} onClick={this.handleMenuClose}>
                   <PageBlock>
                     <Section header>
-                      <Card transparent className={styles.components}>
+                      <Card transparent>
                         <h2>
                           <Text screaming>
                             <Link className={styles.link} to='./'>

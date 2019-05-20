@@ -11,23 +11,6 @@
   margin-right: auto;
 }
 
-.externalNav {
-  display: none;
-  ._cfs_container_width;
-  @media @desktop {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    height: @grid-base * 4;
-    padding: 0 @grid-base * 6;
-  }
-  &::before,
-  &::after {
-    display: none !important;
-  }
-}
-
 .currentLocale {
   display: flex;
   margin-top: @grid-base*4;
@@ -61,12 +44,6 @@
   }
 }
 
-.primaryNavWithCountry {
-  @media @desktop {
-    height: @grid-base * 16;
-  }
-}
-
 .primaryNavLinksWrapper {
   display: none;
   @media @desktop {
@@ -92,10 +69,6 @@
   display: inline-block;
 }
 
-.primaryNavLink .icon {
-  margin: auto @grid-base * 2;
-}
-
 .secondaryNav {
   margin-left: auto;
   display: none;
@@ -117,15 +90,6 @@
   top: 3px;
   @media @desktop {
     display: flex;
-  }
-}
-
-.logoSvg {
-  height: 39px;
-  width: 105px;
-  @media @desktop {
-    height: 51px;
-    width: 129px;
   }
 }
 

@@ -10,6 +10,12 @@ import _get from 'lodash/get';
 
 const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = false, authenticationStatus = UNAUTHENTICATED, userName, domainUrl, currentPage, ...restProps }) => {
   const messages = getLocalization({ country, language });
+  const brandStyles = {
+    activeActionTrayIcon: styles.activeActionTrayIcon,
+    menuIcon: styles.menuIcon,
+    primaryNavLink: styles.primaryNavLink
+  };
+
   return (
     <GlobalHeader
       LogoComponent={Logo}
@@ -18,7 +24,7 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
       {...getJobsDBHeaderProps({ country, domainUrl, authenticationStatus, headerMessage: _get(messages, 'header'), styles })}
       menuMessage={_get(messages, 'menu')}
       locales={getLocalList({ messages, currentPage, domainUrl, country, language })}
-      brandStyles={styles}
+      brandStyles={brandStyles}
       country={country}
       language={language}
       employerSite={(authenticationStatus === UNAUTHENTICATED) || loginAvailable}

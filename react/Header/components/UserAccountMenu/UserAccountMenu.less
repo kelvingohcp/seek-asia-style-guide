@@ -11,63 +11,6 @@
   }
 }
 
-.activeTab {
-  @media @mobile {
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 4px;
-      background-color: @saWhite;
-    }
-  }
-}
-
-.itemLink {
-  .touchableText();
-  color: currentColor;
-  text-decoration: none;
-}
-
-.secondaryItemText {
-  opacity: 0.5;
-}
-
-.subItem {
-  @media @desktop {
-    background-color: @saGrey5;
-  }
-}
-
-.iconSpacer {
-  margin-left: (@gutter-width / 2);
-  width: @gutter-width;
-  @media @desktop {
-    display: none;
-  }
-}
-
-.iconSvg {
-  width: 15px;
-  height: 15px;
-  // Begin bold icon hacks
-  @media @mobile {
-    overflow: visible;
-    :global(path) {
-      stroke: currentColor;
-      stroke-width: 70px;
-    }
-  }
-  // End bold icon hacks
-}
-
-.localeIcon {
-  margin: @grid-base @grid-base 0 0;
-}
-
 .currentLocale {
   display: flex;
   align-items: center;
