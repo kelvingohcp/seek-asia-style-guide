@@ -26,7 +26,7 @@ const renderItems = ({ items, hideInMobile = [], linkRenderer }) => {
         <span key={key}>
           {
             linkRenderer({
-              children: <Hidden desktop={true} tablet={true} mobile={false}>
+              children: <Hidden aboveMobile>
                 <FooterLink title={items[key].title} iconType={items[key].icon} />
               </Hidden>,
               href: items[key].mobileUrl,
@@ -35,7 +35,7 @@ const renderItems = ({ items, hideInMobile = [], linkRenderer }) => {
           }
           {
             linkRenderer({
-              children: <Hidden mobile={true}>
+              children: <Hidden mobile>
                 <FooterLink title={items[key].title} iconType={items[key].icon} />
               </Hidden>,
               href: items[key].url,
@@ -47,7 +47,7 @@ const renderItems = ({ items, hideInMobile = [], linkRenderer }) => {
     } else if (hideInMobile.indexOf(key) >= 0) {
       return (
         linkRenderer({
-          children: <Hidden mobile={true}>
+          children: <Hidden mobile>
             <FooterLink title={items[key].title} iconType={items[key].icon} />
           </Hidden>,
           href: items[key].url,

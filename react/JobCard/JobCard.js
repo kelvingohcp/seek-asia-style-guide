@@ -161,7 +161,7 @@ class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
             </Button>
           )}
-          <Hidden tablet className={styles.alignCenter}>
+          <Hidden aboveMobile className={styles.alignCenter}>
             <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
           </Hidden>
           <JobTitle
@@ -215,7 +215,7 @@ class JobCard extends React.Component {
               />}
             </div>
           </div>
-          <Hidden tablet>
+          <Hidden aboveMobile>
             <JobMeta
               sellingPoints={job.sellingPoints}
               isSplitView={isSplitView}

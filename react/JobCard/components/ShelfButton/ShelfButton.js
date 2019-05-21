@@ -12,7 +12,7 @@ import { ShelfPropTypes } from '../ShelfSection/ShelfSectionPropTypes';
 const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
   return (
     <Hidden
-      tablet={mobileOnly}
+      aboveMobile={mobileOnly}
       mobile={desktopOnly}
       className={styles.root}>
       {job.featuredLabel ? (

@@ -2,13 +2,13 @@
 
 exports[`Shelf Button should render default shelf button 1`] = `
 <Hidden
+  aboveMobile={false}
   className="root"
   component="span"
   desktop={false}
   mobile={false}
   print={false}
   screen={false}
-  tablet={false}
 >
   <Text
     baseline={false}
@@ -22,13 +22,13 @@ exports[`Shelf Button should render default shelf button 1`] = `
 
 exports[`Shelf Button should render shelf button with applied date 1`] = `
 <Hidden
+  aboveMobile={false}
   className="root"
   component="span"
   desktop={false}
   mobile={false}
   print={false}
   screen={false}
-  tablet={false}
 >
   <Text
     baseline={false}
@@ -42,13 +42,13 @@ exports[`Shelf Button should render shelf button with applied date 1`] = `
 
 exports[`Shelf Button should render shelf button with featured label 1`] = `
 <Hidden
+  aboveMobile={false}
   className="root"
   component="span"
   desktop={false}
   mobile={false}
   print={false}
   screen={false}
-  tablet={false}
 >
   <Text
     baseline={false}
@@ -62,13 +62,13 @@ exports[`Shelf Button should render shelf button with featured label 1`] = `
 
 exports[`Shelf Button should render shelf button with shelf 1`] = `
 <Hidden
+  aboveMobile={false}
   className="root"
   component="span"
   desktop={false}
   mobile={false}
   print={false}
   screen={false}
-  tablet={false}
 >
   <Text
     baseline={false}
@@ -78,13 +78,13 @@ exports[`Shelf Button should render shelf button with shelf 1`] = `
     1 hour ago
   </Text>
   <Hidden
+    aboveMobile={false}
     className="moreWrapper"
     component="span"
     desktop={false}
     mobile={true}
     print={false}
     screen={false}
-    tablet={false}
   >
     <Text
       baseline={false}
@@ -113,13 +113,13 @@ exports[`Shelf Button should render shelf button with shelf 1`] = `
 
 exports[`Shelf Button should render shelf button with shelf and openned style 1`] = `
 <Hidden
+  aboveMobile={false}
   className="root"
   component="span"
   desktop={false}
   mobile={false}
   print={false}
   screen={false}
-  tablet={false}
 >
   <Text
     baseline={false}
@@ -129,13 +129,13 @@ exports[`Shelf Button should render shelf button with shelf and openned style 1`
     1 hour ago
   </Text>
   <Hidden
+    aboveMobile={false}
     className="moreWrapper"
     component="span"
     desktop={false}
     mobile={true}
     print={false}
     screen={false}
-    tablet={false}
   >
     <Text
       baseline={false}

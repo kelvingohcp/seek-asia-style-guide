@@ -48,4 +48,9 @@ describe('components/grid/hidden', () => {
     const wrapper = shallow(<Hidden mobile>Text</Hidden>);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with aboveMobile', () => {
+    const wrapper = shallow(<Hidden aboveMobile>Text</Hidden>);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
