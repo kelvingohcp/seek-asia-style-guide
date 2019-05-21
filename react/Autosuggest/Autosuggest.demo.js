@@ -113,11 +113,11 @@ export default {
             autosuggestProps: {
               ...props.autosuggestProps,
               suggestions: [{
-                title: 'Section 1',
+                title: 'Section Header 1',
                 suggestions: ['Developer', 'Product manager', 'Iteration manager', 'Designer']
               },
               {
-                title: 'Section 2',
+                title: 'Section Header 2',
                 suggestions: ['Apple', 'Orange', 'Durian']
               }],
               multiSection: true,
