@@ -133,7 +133,8 @@ export default class Autosuggest extends Component {
       autosuggestProps,
       suggestionsContainerClassName,
       showMobileBackdrop,
-      showFullWidthSuggestionList
+      showFullWidthSuggestionList,
+      compact
     } = this.props;
     const { theme = {} } = autosuggestProps;
 
@@ -151,14 +152,17 @@ export default class Autosuggest extends Component {
           suggestion: styles.suggestion,
           suggestionHighlighted: styles.suggestionHighlighted
         },
-        suggestionsContainer: classnames({
-          [styles.suggestionsContainer]: true,
+        suggestionsContainer: classnames(styles.suggestionsContainer, {
+          [styles.compact]: compact,
           [styles.suggestionsContainer_withLabel]: label,
           [styles.suggestionsContainer_fullWidth]: showFullWidthSuggestionList,
           [suggestionsContainerClassName]: suggestionsContainerClassName
         }),
         suggestionsList: classnames({
           [styles.suggestionsList_fullWidth]: showFullWidthSuggestionList
+        }),
+        sectionTitle: classnames(styles.sectionTitle, {
+          [styles.sectionTitle_fullWidth]: showFullWidthSuggestionList
         }),
         ...theme
       }

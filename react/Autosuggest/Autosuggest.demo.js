@@ -60,7 +60,6 @@ export default {
   container: AutosuggestContainer,
   initialProps: {
     id: 'jobTitles',
-    label: 'Job Titles',
     type: 'search',
     value: '...',
     onChange: () => {},
@@ -87,6 +86,13 @@ export default {
           })
         },
         {
+          label: 'Label',
+          transformProps: props => ({
+            ...props,
+            label: 'Job Titles'
+          })
+        },
+        {
           label: 'Show mobile backdrop',
           transformProps: ({ ...props }) => ({
             ...props,
@@ -98,6 +104,26 @@ export default {
           transformProps: ({ ...props }) => ({
             ...props,
             showFullWidthSuggestionList: true
+          })
+        },
+        {
+          label: 'Multi Sections',
+          transformProps: ({ ...props }) => ({
+            ...props,
+            autosuggestProps: {
+              ...props.autosuggestProps,
+              suggestions: [{
+                title: 'Section 1',
+                suggestions: ['Developer', 'Product manager', 'Iteration manager', 'Designer']
+              },
+              {
+                title: 'Section 2',
+                suggestions: ['Apple', 'Orange', 'Durian']
+              }],
+              multiSection: true,
+              renderSectionTitle: section => <div>{section.title}</div>,
+              getSectionSuggestions: section => section.suggestions
+            }
           })
         }
       ]

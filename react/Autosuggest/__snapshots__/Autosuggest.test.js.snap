@@ -39,7 +39,7 @@ exports[`Autosuggest should render with compact prop 1`] = `
       />
     </div>
     <div
-      class="suggestionsContainer"
+      class="suggestionsContainer compact"
       id="react-autowhatever-1"
       role="listbox"
     />
