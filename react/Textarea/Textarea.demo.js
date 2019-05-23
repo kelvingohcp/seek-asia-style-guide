@@ -74,6 +74,13 @@ export default {
           })
         },
         {
+          label: 'Placeholder',
+          transformProps: props => ({
+            ...props,
+            placeholder: 'placeholder text'
+          })
+        },
+        {
           label: 'Compact',
           transformProps: props => ({
             ...props,

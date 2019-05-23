@@ -29,6 +29,7 @@ export default class Textarea extends Component {
     valid: PropTypes.bool,
     description: PropTypes.string,
     inputProps: PropTypes.object,
+    placeholder: PropTypes.string,
     /* eslint-disable consistent-return */
     countFeedback: (props, propName, componentName) => {
       const { value, inputProps = {} } = props;
@@ -89,13 +90,14 @@ export default class Textarea extends Component {
   /* eslint-enable consistent-return */
 
   renderInput() {
-    const { id, value, onChange, onFocus, onBlur, inputProps } = this.props;
+    const { id, value, onChange, onFocus, onBlur, inputProps, placeholder } = this.props;
     const allInputProps = {
       id,
       value,
       onChange,
       onFocus,
       onBlur,
+      placeholder,
       ...combineClassNames(inputProps, styles.textarea),
       'aria-describedby': `${id}-message`
     };
