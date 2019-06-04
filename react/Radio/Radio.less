@@ -1,0 +1,80 @@
+@import (reference) "~seek-asia-style-guide/theme";
+
+@touchableTextHeight: @grid-base * 10;
+@spring-transition: transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
+
+@circumference: @row-height * 4;
+@touchableMargin: (@touchableTextHeight - @circumference) / 2;
+
+.label {
+  display: flex;
+  cursor: pointer;
+  min-height: @touchableTextHeight;
+
+  :global(*) {
+    pointer-events: none;
+  }
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+  width: @circumference;
+  height: @circumference;
+  border: none;
+}
+
+.labelText {
+  .input:checked + .svg & {
+    font-weight: @sk-bold;
+  }
+}
+
+.svg {
+  flex-shrink: 0;
+  background-color: @saWhite;
+  width: @circumference;
+  height: @circumference;
+  border: @field-border-width solid @saGrey4;
+  border-radius: 100%;
+  padding: 5px;
+  margin-right: @gutter-width / 2;
+
+  .input:not([readonly]):not([disabled]):focus + & {
+    border-color: @saBlue2;
+  }
+
+  .input:not([readonly]):not([disabled]):focus + .svg & {
+    .focus();
+    border-radius: 100%;
+  }
+}
+
+.circle {
+  opacity: 0;
+  transition:
+    opacity 0.2s ease-in-out,
+    @spring-transition;
+  transform-origin: 50% 50%;
+
+  .input:active + .svg & {
+    transform: scale(0.9);
+  }
+
+  &.circle_isSelected {
+    fill: @saBlue2;
+
+    .input:checked + .svg & {
+      opacity: 1;
+    }
+  }
+
+  &.circle_isHover {
+    fill: @saGrey5;
+
+    .input:focus:not(:checked) + .svg &,
+    .input:hover:not(:checked) + .svg & {
+      opacity: 1;
+    }
+  }
+}
