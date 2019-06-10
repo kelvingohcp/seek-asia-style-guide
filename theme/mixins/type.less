@@ -42,7 +42,7 @@
   .__responsiveType("whispering"; @baseline);
 }
 
-@touchableTextHeight: @row-height * @interaction-type-row-span;
+@touchableTextHeight: @grid-row-height * @interaction-type-row-span;
 
 .touchableText(@font-scale: @interaction-type-scale) {
   .rawText(@font-scale);
@@ -57,7 +57,7 @@
   height: @touchableTextHeight;
 }
 
-@compactTouchableTextHeight: @row-height * @compact-interaction-type-row-span;
+@compactTouchableTextHeight: @grid-row-height * @compact-interaction-type-row-span;
 
 .compactTouchableText(@font-scale: @compact-interaction-type-scale) {
   .rawText(@font-scale);
