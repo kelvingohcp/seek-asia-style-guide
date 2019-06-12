@@ -2,7 +2,7 @@
 
 exports[`Radio inputProps should pass through other props to the input 1`] = `
 <div
-  className=""
+  className="checked"
 >
   <label
     className="label"
@@ -12,6 +12,7 @@ exports[`Radio inputProps should pass through other props to the input 1`] = `
       checked={true}
       className="input"
       data-automation="first-name-field"
+      disabled={false}
       id="testRadio"
       onChange={[Function]}
       type="radio"
@@ -57,6 +58,7 @@ exports[`Radio should render with className 1`] = `
     <input
       checked={false}
       className="input"
+      disabled={false}
       id="testRadio"
       onChange={[Function]}
       type="radio"
@@ -102,6 +104,7 @@ exports[`Radio should render with simple props 1`] = `
     <input
       checked={false}
       className="input"
+      disabled={false}
       id="testRadio"
       onChange={[Function]}
       type="radio"

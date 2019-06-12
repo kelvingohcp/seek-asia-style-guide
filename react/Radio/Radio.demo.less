@@ -1,9 +1,7 @@
-.root {
-  display: flex;
-  flex-direction: column;
-  width: 175px;
+.root > :global(*) {
+  max-width: 350px;
+}
 
-  > :global(*) {
-    min-width: 150px; // :(
-  }
+.fullWidth {
+  width: 300px;
 }

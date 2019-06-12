@@ -27,6 +27,18 @@ describe('Radio', () => {
     expect(inputChecked).toEqual(true);
   });
 
+  it('should render as checked in full width container', () => {
+    const wrapper = shallow(<Radio {...requiredProps} fullWidth checked={true} />);
+    const inputChecked = wrapper.find('input').prop('checked');
+    expect(inputChecked).toEqual(true);
+  });
+
+  it('should render as checked with tick style icon', () => {
+    const wrapper = shallow(<Radio {...requiredProps} iconType="tick" checked={true} />);
+    const inputChecked = wrapper.find('input').prop('checked');
+    expect(inputChecked).toEqual(true);
+  });
+
   it('should pass through the value', () => {
     const wrapper = shallow(
       <Radio {...requiredProps} value="foo" checked={true} />

@@ -6,13 +6,60 @@
 @circumference: @grid-row-height * 6;
 @touchableMargin: (@touchableTextHeight - @circumference) / 2;
 
+@radio-atom-gap: @grid-base * 2;
+@radio-side-length: @grid-base * 6;
+@radio-side-length-compact: @grid-base * 5;
+
+.horizontalPadding(@p) {
+  padding-left: @p;
+  padding-right: @p;
+}
+
+.horizontalMargin(@m) {
+  margin-left: @m;
+  margin-right: @m;
+}
+
 .label {
   display: flex;
   cursor: pointer;
   min-height: @touchableTextHeight;
+  .horizontalMargin(@radio-atom-gap * -1);
 
   :global(*) {
     pointer-events: none;
+  }
+  & > * {
+    .horizontalPadding(@radio-atom-gap);
+  }
+  .rtl & {
+    flex-direction: row-reverse;
+  }
+  .fullWidth & {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .disabled & {
+    color: @saGrey2;
+    cursor: not-allowed;
+  }
+  @supports (display: grid) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: @radio-atom-gap;
+    grid-template-columns: @radio-side-length 1fr;
+    grid-template-areas: "radio labels";
+    .horizontalMargin(0);
+    & > * {
+      .horizontalPadding(0);
+    }
+    .rtl & {
+      grid-template-columns: 1fr @radio-side-length;
+      grid-template-areas: "labels radio";
+    }
+  }
+  @supports (display: inline-grid) {
+    display: inline-grid;
   }
 }
 
@@ -25,12 +72,20 @@
 }
 
 .labelText {
+  grid-area: labels;
   .input:checked + .svg & {
     font-weight: @sk-bold;
+  }
+  .checked & {
+    font-weight: @sa-semi-bold;
+  }
+  .disabled & {
+    color: @saGrey3;
   }
 }
 
 .svg {
+  grid-area: radio;
   flex-shrink: 0;
   background-color: @saWhite;
   width: @circumference;
@@ -38,6 +93,7 @@
   border: @field-border-width solid @saGrey4;
   border-radius: 100%;
   padding: 5px;
+
   margin-right: @gutter-width / 2;
 
   .input:not([readonly]):not([disabled]):focus + & {
@@ -47,6 +103,10 @@
   .input:not([readonly]):not([disabled]):focus + .svg & {
     .focus();
     border-radius: 100%;
+  }
+
+  .disabled & {
+    border-color: @saGrey4;
   }
 }
 
@@ -61,20 +121,57 @@
     transform: scale(0.9);
   }
 
+  .disabled & {
+    fill: @saGrey5;
+    border-color: @saGrey4;
+  }
+
   &.circle_isSelected {
     fill: @saBlue2;
 
     .input:checked + .svg & {
       opacity: 1;
     }
+
+    .disabled & {
+      fill: @saGrey4;
+    }
   }
 
   &.circle_isHover {
-    fill: @saGrey5;
+    fill: @saGrey4;
 
     .input:focus:not(:checked) + .svg &,
     .input:hover:not(:checked) + .svg & {
       opacity: 1;
     }
+
+    .disabled & {
+      fill: @saGrey5;
+    }
+  }
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: @circumference;
+  height: @circumference;
+  color: @saBlue2;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+  .checked & {
+    opacity: 1;
+  }
+}
+
+.iconStyle {
+  opacity: 1;
+
+  .disabled & {
+    color: @saGrey4;
+    fill: @saGrey5;
   }
 }

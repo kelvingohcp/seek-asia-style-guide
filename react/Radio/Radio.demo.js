@@ -4,6 +4,7 @@ import Radio from './Radio';
 import Text from '../Text/Text';
 import * as sketch from './Radio.sketch';
 import demoStyles from './Radio.demo.less';
+import classnames from 'classnames';
 
 class RadioContainer extends Component {
   static propTypes = {
@@ -40,10 +41,14 @@ class RadioContainer extends Component {
   render() {
     const { component: DemoComponent, componentProps } = this.props;
     const { value } = this.state;
+    const classNames = classnames({
+      [demoStyles.root]: true, // eslint-disable-line
+      [demoStyles.fullWidth]: componentProps.fullWidth
+    });
 
     return (
-      <div className={demoStyles.root}>
-        <Text subheading>Still in role</Text>
+      <div className={classNames}>
+        <Text shouting>Still in role</Text>
         <DemoComponent
           {...componentProps}
           id="Yes"
@@ -61,7 +66,7 @@ class RadioContainer extends Component {
         <DemoComponent
           {...componentProps}
           id="Maybe"
-          label="Maybe - Very long label which goes over many lines."
+          label="Maybe"
           checked={value === 'Maybe'}
           onChange={this.handleMaybe}
         />
@@ -84,5 +89,70 @@ export default {
     checked: false,
     onChange: () => {}
   },
-  options: []
+  options: [
+    {
+      label: 'States',
+      type: 'checklist',
+      states: [
+        {
+          label: 'Full width',
+          transformProps: props => ({
+            ...props,
+            fullWidth: true
+          })
+        }
+      ]
+    },
+    {
+      label: 'Disabled',
+      type: 'checklist',
+      states: [
+        {
+          label: 'Disabled',
+          transformProps: props => ({
+            ...props,
+            disabled: true
+          })
+        }
+      ]
+    },
+    {
+      label: 'Icon style',
+      type: 'radio',
+      states: [
+        {
+          label: 'Icon style',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'Tick',
+          transformProps: props => ({
+            ...props,
+            iconType: 'tick'
+          })
+        }
+      ]
+    },
+    {
+      label: 'Radio position',
+      type: 'radio',
+      states: [
+        {
+          label: 'Icon at front',
+          transformProps: props => ({
+            ...props
+          })
+        },
+        {
+          label: 'Icon at back',
+          transformProps: props => ({
+            ...props,
+            rtl: true
+          })
+        }
+      ]
+    }
+  ]
 };
