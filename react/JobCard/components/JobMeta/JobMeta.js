@@ -6,10 +6,10 @@ import ShelfLink from '../ShelfLink/ShelfLink';
 import Description from '../Description/Description';
 import { JobCardPropTypes } from '../../JobCardPropTypes';
 
-const JobMeta = ({ sellingPoints, isSplitView, showSellingPoint, enableBrandedAd, description, showDescription, job, shelfSectionOpen, onClick, applied, expired, viewed }) => {
+const JobMeta = ({ sellingPoints, isSplitView, showSellingPoint, description, showDescription, job, shelfSectionOpen, onClick, applied, expired, viewed }) => {
   return (
     <Fragment>
-      <SellingPoint sellingPoints={sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
+      <SellingPoint sellingPoints={sellingPoints} showSellingPoint={showSellingPoint} />
       {!isSplitView && <Description description={description} showDescription={showDescription} />}
       <ShelfLink
         job={job}
@@ -34,8 +34,7 @@ JobMeta.propTypes = {
   applied: PropTypes.bool,
   expired: PropTypes.bool,
   viewed: PropTypes.bool,
-  isMobile: PropTypes.bool,
-  enableBrandedAd: PropTypes.bool
+  isMobile: PropTypes.bool
 };
 
 export default JobMeta;

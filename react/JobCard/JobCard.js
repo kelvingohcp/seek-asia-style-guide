@@ -147,6 +147,21 @@ class JobCard extends React.Component {
       jobstreet: styles.sideHighlightBorderJobstreet
     }[tenant.toLowerCase()];
 
+    const JobMetaComponent = () => (
+      <JobMeta
+        sellingPoints={job.sellingPoints}
+        isSplitView={isSplitView}
+        showSellingPoint={showSellingPoint}
+        description={job.description}
+        showDescription={showDescription}
+        job={job} shelfSectionOpen={shelfSectionOpen}
+        onClick={this.handleShelfSectionToggle}
+        applied={applied}
+        expired={job.isExpired}
+        viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+      />
+    );
+
     return (
       <div
         className={classnames(styles.container, {
@@ -181,19 +196,7 @@ class JobCard extends React.Component {
             <div className={styles.leftContent}>
               <MainPoint {...this.props} />
               <Hidden mobile>
-                <JobMeta
-                  sellingPoints={job.sellingPoints}
-                  isSplitView={isSplitView}
-                  showSellingPoint={showSellingPoint}
-                  enableBrandedAd={enableBrandedAd}
-                  description={job.description}
-                  showDescription={showDescription}
-                  job={job} shelfSectionOpen={shelfSectionOpen}
-                  onClick={this.handleShelfSectionToggle}
-                  applied={applied}
-                  expired={job.isExpired}
-                  viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
-                />
+                <JobMetaComponent />
               </Hidden>
             </div>
             <div
@@ -216,19 +219,7 @@ class JobCard extends React.Component {
             </div>
           </div>
           <Hidden aboveMobile>
-            <JobMeta
-              sellingPoints={job.sellingPoints}
-              isSplitView={isSplitView}
-              showSellingPoint={showSellingPoint}
-              enableBrandedAd={enableBrandedAd}
-              description={job.description}
-              showDescription={showDescription}
-              job={job} shelfSectionOpen={shelfSectionOpen}
-              onClick={this.handleShelfSectionToggle}
-              applied={applied}
-              expired={job.isExpired}
-              viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
-            />
+            <JobMetaComponent />
           </Hidden>
           <ShelfSection
             shelf={job.shelf}

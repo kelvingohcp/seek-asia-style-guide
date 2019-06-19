@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import styles from './SellingPoint.less';
 import Text from '../../../Text/Text';
 
-const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint, enableBrandedAd }) => {
-  if (!showSellingPoint || (isSplitView && !enableBrandedAd) || !sellingPoints) {
+const SellingPoint = ({ sellingPoints, showSellingPoint }) => {
+  if (!showSellingPoint || !sellingPoints) {
     return null;
   }
 
@@ -26,9 +26,7 @@ const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint, enableBran
 
 SellingPoint.propTypes = {
   sellingPoints: PropTypes.arrayOf(PropTypes.string),
-  isSplitView: PropTypes.bool,
-  showSellingPoint: PropTypes.bool,
-  enableBrandedAd: PropTypes.bool
+  showSellingPoint: PropTypes.bool
 };
 
 export default SellingPoint;

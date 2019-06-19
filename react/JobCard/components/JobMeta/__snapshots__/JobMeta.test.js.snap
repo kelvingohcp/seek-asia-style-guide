@@ -3,8 +3,6 @@
 exports[`JobMeta should render correctly 1`] = `
 <Fragment>
   <SellingPoint
-    enableBrandedAd={true}
-    isSplitView={true}
     sellingPoints={
       Array [
         "sellingPoints 1",
