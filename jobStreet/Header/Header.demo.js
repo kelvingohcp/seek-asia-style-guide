@@ -1,5 +1,6 @@
 import { Header } from 'seek-asia-style-guide/jobStreet';
 import { Constants } from 'seek-asia-style-guide/react';
+import { AUTHENTICATED, UNAUTHENTICATED } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
 const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH, ACTIVE_TAB_SAVED_JOBS } = Constants;
 const ROUTE = '/jobstreet-header';
@@ -13,7 +14,8 @@ export default {
     language: 'en',
     country: 'my',
     loginAvailable: false,
-    activeTab: ACTIVE_TAB_HOME
+    activeTab: ACTIVE_TAB_HOME,
+    authenticationStatus: UNAUTHENTICATED
   },
   options: [{
     label: 'States',
@@ -70,6 +72,14 @@ export default {
         transformProps: props => ({
           ...props,
           hideNavMenu: true
+        })
+      },
+      {
+        label: 'Authenticated',
+        transformProps: props => ({
+          ...props,
+          authenticationStatus: AUTHENTICATED,
+          userName: 'Olivia'
         })
       }
     ]

@@ -20,6 +20,10 @@ exports[`JobStreet Header passes through optional props 1`] = `
   country="my"
   headerMessage={
     Object {
+      "account": Object {
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
       "careerInsights": Object {
         "title": "Career Insights",
         "url": "https://jobstreet.com.my/en/career-insights",
@@ -49,9 +53,17 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "url": "https://jobstreet.com.my",
       },
       "homeUrlText": "JobStreet.com",
+      "invitation": Object {
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
       "login": Object {
         "title": "Log in",
         "url": "https://myjobstreet.jobstreet.com.my/login",
+      },
+      "logout": Object {
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       },
       "myJobStreet": Object {
         "title": "MyJobStreet",
@@ -160,6 +172,28 @@ exports[`JobStreet Header passes through optional props 1`] = `
     }
   }
   onMenuOpen={[Function]}
+  userAccMenuItems={
+    Array [
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
+      Object {
+        "EnableIcon": false,
+        "ItemIcon": [Function],
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
+      },
+    ]
+  }
 />
 `;
 
@@ -178,6 +212,10 @@ exports[`JobStreet Header renders with default props 1`] = `
   country="my"
   headerMessage={
     Object {
+      "account": Object {
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
       "careerInsights": Object {
         "title": "Career Insights",
         "url": "https://jobstreet.com.my/en/career-insights",
@@ -207,9 +245,17 @@ exports[`JobStreet Header renders with default props 1`] = `
         "url": "https://jobstreet.com.my",
       },
       "homeUrlText": "JobStreet.com",
+      "invitation": Object {
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
       "login": Object {
         "title": "Log in",
         "url": "https://myjobstreet.jobstreet.com.my/login",
+      },
+      "logout": Object {
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       },
       "myJobStreet": Object {
         "title": "MyJobStreet",
@@ -318,5 +364,27 @@ exports[`JobStreet Header renders with default props 1`] = `
     }
   }
   onMenuOpen={[Function]}
+  userAccMenuItems={
+    Array [
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
+      Object {
+        "EnableIcon": false,
+        "ItemIcon": [Function],
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
+      },
+    ]
+  }
 />
 `;

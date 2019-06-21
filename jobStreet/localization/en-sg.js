@@ -1,5 +1,6 @@
-const baseUrl = 'https://jobstreet.com.sg';
+const baseUrl = 'https://www.jobstreet.com.sg';
 const baseUrlWithLanguage = `${baseUrl}/en`;
+const accountBaseUrl = 'https://myjobstreet.jobstreet.com.sg';
 
 export default {
   footer: {
@@ -60,7 +61,7 @@ export default {
     },
     myJobStreet: {
       title: 'MyJobStreet',
-      url: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg'
+      url: `${accountBaseUrl}/resume/preview-resume.php`
     },
     companyProfiles: {
       title: 'Company Profiles',
@@ -81,6 +82,18 @@ export default {
     employer: {
       title: 'Employer Site',
       url: `${baseUrlWithLanguage}/cms/employer`
+    },
+    account: {
+      title: 'Account',
+      url: `${accountBaseUrl}/registration/update-account.php`
+    },
+    invitation: {
+      title: 'Invitation',
+      url: `${accountBaseUrl}/application/interview-request.php?view=latest`
+    },
+    logout: {
+      title: 'Logout',
+      url: `${accountBaseUrl}/home/logout.php`
     },
     homeUrlText: 'JobStreet.com',
     seperatorOr: 'or'
