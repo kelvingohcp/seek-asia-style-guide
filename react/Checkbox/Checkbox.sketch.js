@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from './Checkbox';
-import styles from './Checkbox.demo.less';
 
-const Container = ({ children }) => <div className={styles.root}>{ children }</div>;
+const Container = ({ children }) => <div>{children}</div>;
 Container.propTypes = {
   children: PropTypes.node.isRequired
 };

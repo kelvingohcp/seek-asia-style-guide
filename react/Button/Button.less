@@ -10,16 +10,14 @@
 
 .hoverState(@rules) {
   @media (hover: hover) {
-    &:hover,
-    &.rootHover {
+    &:hover {
       @rules();
     }
   }
 }
 
 .activeState(@rules) {
-  &:active,
-  &.rootActive {
+  &:active {
     @rules();
   }
 }
@@ -32,8 +30,7 @@
 }
 
 .focusedState(@rules) {
-  &:focus,
-  &.rootFocused {
+  &:focus {
     @rules();
   }
 }
@@ -124,12 +121,12 @@
   transition: box-shadow 0.15s ease-in-out;
   will-change: auto;
   &.selected {
-    .selectedState({background-color: @saBlue2; border-color: @saBlue1; color: @saWhite;});
+    background-color: darken(@saBlue2, 5%);
+    border-color: darken(@saBlue2, 5%);
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
   }
-  &:focus,
-  &.focused {
+  &:focus {
     .focusedState({box-shadow: 0 0 2px 2px #94c9e0;});
   }
 }
@@ -144,8 +141,7 @@
     padding-left: @grid-base * 4 - 1;
     padding-right: @grid-base * 4 - 1;
   }
-  &:focus,
-  &.focused {
+  &:focus {
     .focusedState({box-shadow: 0 0 2px 2px #94c9e0;});
   }
 }
@@ -194,6 +190,7 @@
 
   &.disabled {
     .disabledTertiary();
+    outline: none;
   }
 }
 
@@ -235,9 +232,8 @@
   pointer-events: none;
 }
 .disabledTertiary() {
-  background-color: @saWhite !important;
-  border-color: @saGrey5 !important;
-  color: @saGrey4 !important;
+  background-color: transparent !important;
+  color: @saGrey3 !important;
   cursor: not-allowed !important;
 }
 .disabledLink() {

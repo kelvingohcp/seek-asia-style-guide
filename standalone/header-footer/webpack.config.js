@@ -8,7 +8,7 @@ const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin'
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const autoprefixerConfig = require('../../config/autoprefixer.config');
-const { decorateClientConfig, decorateServerConfig } = require('seek-asia-style-guide-webpack');
+const { decorateClientConfig, decorateServerConfig } = require('../../webpack/index');
 const babelConfig = require('../../config/babel.config.js')({ reactHotLoader: false });
 const cssSelectorPrefix = require('./cssSelectorPrefix');
 

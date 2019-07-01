@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TextField from './TextField';
-import styles from './TextField.less';
 import * as sketch from './TextField.sketch';
-import classnames from 'classnames';
 import fieldMessageOptions from '../private/FieldMessage/FieldMessage.demo';
 import fieldLabelOptions from '../private/FieldLabel/FieldLabel.demo';
 
@@ -70,13 +68,6 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
-        {
-          label: 'Focus',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootFocus)
-          })
-        },
         {
           label: 'Compact',
           transformProps: ({ className, ...props }) => ({

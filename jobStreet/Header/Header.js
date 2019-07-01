@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Header.less';
 import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
-import { HomeIcon, PortalIcon, CompanyIcon, LightbulbIcon, EducationIcon, MoreIcon } from 'seek-asia-style-guide/react';
+import { PortalIcon, CompanyIcon, EducationIcon, ProfileIcon, JobInvitationIcon, JobFunctionIcon } from 'seek-asia-style-guide/react';
 import { getLocalization, locales } from '../localization';
 import _get from 'lodash/get';
 
@@ -11,26 +11,34 @@ const getJobStreetProps = ({ country, language }) => {
   const messages = getLocalization({ country, language });
   const headerMessage = _get(messages, 'header');
 
-  const more = [ _get(headerMessage, 'overseasJobs'), _get(headerMessage, 'freshGradJobs'), _get(headerMessage, 'classifiedJobs')];
-
   const links = [
-    { ..._get(headerMessage, 'home'), ItemIcon: HomeIcon },
     { ..._get(headerMessage, 'myJobStreet'), ItemIcon: PortalIcon },
     { ..._get(headerMessage, 'companyProfiles'), ItemIcon: CompanyIcon },
-    { ..._get(headerMessage, 'careerInsights'), ItemIcon: LightbulbIcon },
-    { ..._get(headerMessage, 'education'), ItemIcon: EducationIcon },
-    { title: 'Menu', url: '', ItemIcon: MoreIcon, children: more, hideInDesktop: true }
+    { ..._get(headerMessage, 'education'), ItemIcon: EducationIcon }
+  ];
+
+  const userAccMenuItems = [
+    { ... _get(headerMessage, 'account'), ItemIcon: ProfileIcon, EnableIcon: true },
+    { ... _get(headerMessage, 'invitation'), ItemIcon: JobInvitationIcon, EnableIcon: true },
+    { ... _get(headerMessage, 'logout'), ItemIcon: JobFunctionIcon, EnableIcon: false }
   ];
 
   return {
     links,
     headerMessage,
     locales,
-    menuMessage: _get(messages, 'menu')
+    menuMessage: _get(messages, 'menu'),
+    userAccMenuItems
   };
 };
 
-const Header = ({ country = 'my', language = 'en', activeTab, loginAvailable = false, ...restProps }) => {
+const Header = ({ country, language, activeTab, loginAvailable = false, ...restProps }) => {
+  const brandStyles = {
+    activeActionTrayIcon: styles.activeActionTrayIcon,
+    menuIcon: styles.menuIcon,
+    primaryNavLink: styles.primaryNavLink
+  };
+
   return (
     <GlobalHeader
       LogoComponent={Logo}
@@ -38,7 +46,7 @@ const Header = ({ country = 'my', language = 'en', activeTab, loginAvailable = f
       activeTab={activeTab}
       loginAvailable={loginAvailable}
       {...getJobStreetProps({ country, language })}
-      brandStyles={styles}
+      brandStyles={brandStyles}
       locales={locales}
       country={country}
       language={language}
@@ -48,8 +56,8 @@ const Header = ({ country = 'my', language = 'en', activeTab, loginAvailable = f
 };
 
 Header.propTypes = {
-  country: PropTypes.string,
-  language: PropTypes.string,
+  country: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
   activeTab: PropTypes.string,
   loginAvailable: PropTypes.bool
 };

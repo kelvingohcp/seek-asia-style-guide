@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Textarea from './Textarea';
-import styles from './Textarea.less';
-import classnames from 'classnames';
 import fieldMessageOptions from '../private/FieldMessage/FieldMessage.demo';
 import fieldLabelOptions from '../private/FieldLabel/FieldLabel.demo';
 
@@ -60,13 +58,6 @@ export default {
       type: 'checklist',
       states: [
         {
-          label: 'Focus',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootFocus)
-          })
-        },
-        {
           label: 'Show Count',
           transformProps: props => ({
             ...props,
@@ -80,6 +71,13 @@ export default {
           transformProps: props => ({
             ...props,
             description: 'Describe a descriptive description descriptively'
+          })
+        },
+        {
+          label: 'Placeholder',
+          transformProps: props => ({
+            ...props,
+            placeholder: 'placeholder text'
           })
         },
         {

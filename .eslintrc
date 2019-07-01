@@ -9,7 +9,11 @@
   "plugins": [
     "babel",
     "react",
-    "jest"
+    "jest",
+    "css-modules"
+  ],
+  "extends": [
+    "plugin:css-modules/recommended"
   ],
   "rules": {
     "comma-dangle": 2,

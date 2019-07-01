@@ -1,273 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JobCard - ShelfSection should render correctly 1`] = `
-<Section
-  className="root"
-  header={false}
-  pullout={false}
-  slim={false}
+<Hidden
+  aboveMobile={true}
+  className=""
+  component="span"
+  desktop={false}
+  mobile={true}
+  print={false}
+  screen={false}
 >
-  <div
-    className="shelfDivider"
-  />
-  <Text
-    baseline={true}
-    className="shelfLinksContainer"
-    whispering={true}
+  <Section
+    className="root"
+    header={false}
+    pullout={false}
+    slim={false}
   >
     <div
-      key="Job function"
+      className="shelfDivider"
+    />
+    <Text
+      baseline={true}
+      className="shelfLinksContainer"
+      whispering={true}
     >
-      Job function: 
-      <Link
-        className="shelfLink"
-        key="Accounting"
-        link="/jobCard"
-        name="Accounting"
-        onClick={[Function]}
-        title="Limit result to Accounting"
+      <div
+        key="Job function"
       >
-        Accounting
-      </Link>
-       &gt; 
-      <Link
-        className="shelfLink"
-        key="Accountant"
-        link="/jobCard"
-        name="Accountant"
-        onClick={[Function]}
-        title="Limit result to Accountant in Accounting"
+        Job function: 
+        <Link
+          className="shelfLink"
+          key="Accounting"
+          link="/jobCard"
+          name="Accounting"
+          onClick={[Function]}
+          title="Limit result to Accounting"
+        >
+          Accounting
+        </Link>
+         &gt; 
+        <Link
+          className="shelfLink"
+          key="Accountant"
+          link="/jobCard"
+          name="Accountant"
+          onClick={[Function]}
+          title="Limit result to Accountant in Accounting"
+        >
+          Accountant
+        </Link>
+         | 
+        <Link
+          className="shelfLink"
+          key="Audit"
+          link="/jobCard"
+          name="Audit"
+          onClick={[Function]}
+          title="Limit result to Audit in Accounting"
+        >
+          Audit
+        </Link>
+         | 
+        <Link
+          className="shelfLink"
+          key="Others"
+          link="/jobCard"
+          name="Others"
+          onClick={[Function]}
+          title="Limit result to Others in Accounting"
+        >
+          Others
+        </Link>
+        , 
+        <Link
+          className="shelfLink"
+          key="Admin & HR"
+          link="/jobCard"
+          name="Admin & HR"
+          onClick={[Function]}
+          title="Limit result to Admin & HR"
+        >
+          Admin & HR
+        </Link>
+         &gt; 
+        <Link
+          className="shelfLink"
+          key="Receptionist"
+          link="/jobCard"
+          name="Receptionist"
+          onClick={[Function]}
+          title="Limit result to Receptionist in Admin & HR"
+        >
+          Receptionist
+        </Link>
+      </div>
+      <div
+        key="Industry"
       >
-        Accountant
-      </Link>
-       | 
-      <Link
-        className="shelfLink"
-        key="Audit"
-        link="/jobCard"
-        name="Audit"
-        onClick={[Function]}
-        title="Limit result to Audit in Accounting"
-      >
-        Audit
-      </Link>
-       | 
-      <Link
-        className="shelfLink"
-        key="Others"
-        link="/jobCard"
-        name="Others"
-        onClick={[Function]}
-        title="Limit result to Others in Accounting"
-      >
-        Others
-      </Link>
-      , 
-      <Link
-        className="shelfLink"
-        key="Admin & HR"
-        link="/jobCard"
-        name="Admin & HR"
-        onClick={[Function]}
-        title="Limit result to Admin & HR"
-      >
-        Admin & HR
-      </Link>
-       &gt; 
-      <Link
-        className="shelfLink"
-        key="Receptionist"
-        link="/jobCard"
-        name="Receptionist"
-        onClick={[Function]}
-        title="Limit result to Receptionist in Admin & HR"
-      >
-        Receptionist
-      </Link>
-    </div>
-    <div
-      key="Industry"
+        Industry: 
+        <Link
+          className="shelfLink"
+          key="Accounting / Audit / Tax Services"
+          link="/jobCard"
+          name="Accounting / Audit / Tax Services"
+          onClick={[Function]}
+          title="Limit result to Accounting / Audit / Tax Services"
+        >
+          Accounting / Audit / Tax Services
+        </Link>
+      </div>
+    </Text>
+    <ButtonGroup
+      className="tagLinksContainer"
     >
-      Industry: 
-      <Link
-        className="shelfLink"
-        key="Accounting / Audit / Tax Services"
-        link="/jobCard"
-        name="Accounting / Audit / Tax Services"
-        onClick={[Function]}
-        title="Limit result to Accounting / Audit / Tax Services"
+      <Button
+        aria-pressed={false}
+        className="tagLink"
+        color="primary"
+        compact={true}
+        component="a"
+        href="/jobCard"
+        key="Limit result to Keyword 1"
+        role="button"
+        tabIndex={0}
+        title="Limit result to Keyword 1"
       >
-        Accounting / Audit / Tax Services
-      </Link>
-    </div>
-  </Text>
-  <ButtonGroup
-    className="tagLinksContainer"
-  >
-    <Button
-      aria-pressed={false}
-      className="tagLink"
-      color="primary"
-      compact={true}
-      component="a"
-      href="/jobCard"
-      key="Limit result to Keyword 1"
-      role="button"
-      tabIndex={0}
-      title="Limit result to Keyword 1"
-    >
-      keyword 1
-    </Button>
-    <Button
-      aria-pressed={false}
-      className="tagLink"
-      color="primary"
-      compact={true}
-      component="a"
-      href="/jobCard"
-      key="Limit result to Keyword 2"
-      role="button"
-      tabIndex={0}
-      title="Limit result to Keyword 2"
-    >
-      keyword 2
-    </Button>
-  </ButtonGroup>
-</Section>
+        keyword 1
+      </Button>
+      <Button
+        aria-pressed={false}
+        className="tagLink"
+        color="primary"
+        compact={true}
+        component="a"
+        href="/jobCard"
+        key="Limit result to Keyword 2"
+        role="button"
+        tabIndex={0}
+        title="Limit result to Keyword 2"
+      >
+        keyword 2
+      </Button>
+    </ButtonGroup>
+  </Section>
+</Hidden>
 `;
 
 exports[`JobCard - ShelfSection should render custom link 1`] = `
-<Section
-  className="root"
-  header={false}
-  pullout={false}
-  slim={false}
+<Hidden
+  aboveMobile={true}
+  className=""
+  component="span"
+  desktop={false}
+  mobile={true}
+  print={false}
+  screen={false}
 >
-  <div
-    className="shelfDivider"
-  />
-  <Text
-    baseline={true}
-    className="shelfLinksContainer"
-    whispering={true}
+  <Section
+    className="root"
+    header={false}
+    pullout={false}
+    slim={false}
   >
     <div
-      key="Job function"
+      className="shelfDivider"
+    />
+    <Text
+      baseline={true}
+      className="shelfLinksContainer"
+      whispering={true}
     >
-      Job function: 
-      <customLink
-        className="shelfLink"
-        key="Accounting"
-        link="/jobCard"
-        name="Accounting"
-        onClick={[Function]}
-        title="Limit result to Accounting"
+      <div
+        key="Job function"
       >
-        Accounting
-      </customLink>
-       &gt; 
-      <customLink
-        className="shelfLink"
-        key="Accountant"
-        link="/jobCard"
-        name="Accountant"
-        onClick={[Function]}
-        title="Limit result to Accountant in Accounting"
+        Job function: 
+        <customLink
+          className="shelfLink"
+          key="Accounting"
+          link="/jobCard"
+          name="Accounting"
+          onClick={[Function]}
+          title="Limit result to Accounting"
+        >
+          Accounting
+        </customLink>
+         &gt; 
+        <customLink
+          className="shelfLink"
+          key="Accountant"
+          link="/jobCard"
+          name="Accountant"
+          onClick={[Function]}
+          title="Limit result to Accountant in Accounting"
+        >
+          Accountant
+        </customLink>
+         | 
+        <customLink
+          className="shelfLink"
+          key="Audit"
+          link="/jobCard"
+          name="Audit"
+          onClick={[Function]}
+          title="Limit result to Audit in Accounting"
+        >
+          Audit
+        </customLink>
+         | 
+        <customLink
+          className="shelfLink"
+          key="Others"
+          link="/jobCard"
+          name="Others"
+          onClick={[Function]}
+          title="Limit result to Others in Accounting"
+        >
+          Others
+        </customLink>
+        , 
+        <customLink
+          className="shelfLink"
+          key="Admin & HR"
+          link="/jobCard"
+          name="Admin & HR"
+          onClick={[Function]}
+          title="Limit result to Admin & HR"
+        >
+          Admin & HR
+        </customLink>
+         &gt; 
+        <customLink
+          className="shelfLink"
+          key="Receptionist"
+          link="/jobCard"
+          name="Receptionist"
+          onClick={[Function]}
+          title="Limit result to Receptionist in Admin & HR"
+        >
+          Receptionist
+        </customLink>
+      </div>
+      <div
+        key="Industry"
       >
-        Accountant
-      </customLink>
-       | 
-      <customLink
-        className="shelfLink"
-        key="Audit"
-        link="/jobCard"
-        name="Audit"
-        onClick={[Function]}
-        title="Limit result to Audit in Accounting"
-      >
-        Audit
-      </customLink>
-       | 
-      <customLink
-        className="shelfLink"
-        key="Others"
-        link="/jobCard"
-        name="Others"
-        onClick={[Function]}
-        title="Limit result to Others in Accounting"
-      >
-        Others
-      </customLink>
-      , 
-      <customLink
-        className="shelfLink"
-        key="Admin & HR"
-        link="/jobCard"
-        name="Admin & HR"
-        onClick={[Function]}
-        title="Limit result to Admin & HR"
-      >
-        Admin & HR
-      </customLink>
-       &gt; 
-      <customLink
-        className="shelfLink"
-        key="Receptionist"
-        link="/jobCard"
-        name="Receptionist"
-        onClick={[Function]}
-        title="Limit result to Receptionist in Admin & HR"
-      >
-        Receptionist
-      </customLink>
-    </div>
-    <div
-      key="Industry"
+        Industry: 
+        <customLink
+          className="shelfLink"
+          key="Accounting / Audit / Tax Services"
+          link="/jobCard"
+          name="Accounting / Audit / Tax Services"
+          onClick={[Function]}
+          title="Limit result to Accounting / Audit / Tax Services"
+        >
+          Accounting / Audit / Tax Services
+        </customLink>
+      </div>
+    </Text>
+    <ButtonGroup
+      className="tagLinksContainer"
     >
-      Industry: 
-      <customLink
-        className="shelfLink"
-        key="Accounting / Audit / Tax Services"
-        link="/jobCard"
-        name="Accounting / Audit / Tax Services"
-        onClick={[Function]}
-        title="Limit result to Accounting / Audit / Tax Services"
+      <Button
+        aria-pressed={false}
+        className="tagLink"
+        color="primary"
+        compact={true}
+        component="a"
+        href="/jobCard"
+        key="Limit result to Keyword 1"
+        role="button"
+        tabIndex={0}
+        title="Limit result to Keyword 1"
       >
-        Accounting / Audit / Tax Services
-      </customLink>
-    </div>
-  </Text>
-  <ButtonGroup
-    className="tagLinksContainer"
-  >
-    <Button
-      aria-pressed={false}
-      className="tagLink"
-      color="primary"
-      compact={true}
-      component="a"
-      href="/jobCard"
-      key="Limit result to Keyword 1"
-      role="button"
-      tabIndex={0}
-      title="Limit result to Keyword 1"
-    >
-      keyword 1
-    </Button>
-    <Button
-      aria-pressed={false}
-      className="tagLink"
-      color="primary"
-      compact={true}
-      component="a"
-      href="/jobCard"
-      key="Limit result to Keyword 2"
-      role="button"
-      tabIndex={0}
-      title="Limit result to Keyword 2"
-    >
-      keyword 2
-    </Button>
-  </ButtonGroup>
-</Section>
+        keyword 1
+      </Button>
+      <Button
+        aria-pressed={false}
+        className="tagLink"
+        color="primary"
+        compact={true}
+        component="a"
+        href="/jobCard"
+        key="Limit result to Keyword 2"
+        role="button"
+        tabIndex={0}
+        title="Limit result to Keyword 2"
+      >
+        keyword 2
+      </Button>
+    </ButtonGroup>
+  </Section>
+</Hidden>
 `;

@@ -1,8 +1,9 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
-.headerBlock {
-  background: @sk-blue;
-}
+@duration: 0.2s;
+@distance: 8px;
+@easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+@componentListGridGap: @grid-base * 5 / 2;
 
 .fixedHeaderBlock {
   position: fixed;
@@ -22,18 +23,6 @@
   position: relative;
   top: 3px;
   margin-bottom: 3px;
-}
-
-.title {
-  .yellingTextResponsive();
-
-  text-transform: lowercase;
-  position: absolute;
-  color: @sk-white;
-  text-decoration: none;
-  top: -2px;
-  left: 126px;
-  width: 150px;
 }
 
 .sectionContent {
@@ -123,23 +112,101 @@
 .componentList {
   display: flex;
   flex-wrap: wrap;
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: @componentListGridGap;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  }
 }
 
 .componentListItem {
   flex: 0 0 (@grid-base * 64);
+  display: flex;
+  justify-content: stretch;
+  @supports (display: grid) {
+    padding-bottom: 0;
+  }
+
+  & > * {
+    flex-grow: 9999;
+  }
 }
 
 .componentSectionTitle {
   padding-top: @grid-base * 8;
-  border-bottom: medium solid rgba(255, 255, 255, 0.2);
 }
 
 .link {
-  color: white;
+  color: @saWhite;
+  display: block;
   text-decoration: none;
-  display: inline-block;
   margin-bottom: @grid-row-height * 2;
-  &:hover {
-    box-shadow: inset 0 -2px 0 @sk-white;
+  @supports (display: grid) {
+    margin-bottom: 0;
+  }
+  @media @mobile {
+    .componentListItem & {
+      border: 1px solid @saBlue3;
+      border-radius: @grid-base;
+      padding: @grid-base * 2;
+    }
+  }
+  @media @tablet-only {
+    .componentListItem & {
+      border: 1px solid @saBlue3;
+      border-radius: @grid-base;
+      padding: @grid-base * 2;
+    }
+  }
+  @media @desktop {
+    display: inline-block;
+    color: @saGrey5;
+    padding-bottom: @grid-base * 2;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: @grid-base / 2;
+      bottom: @grid-base / 2;
+      left: 0;
+      right: 0;
+      background-color: @saWhite;
+      opacity: 0;
+    }
+    &::before {
+      transform: translateY(@distance * -1);
+      transition:
+        transform 0s @easeOutBack,
+        opacity 0s;
+    }
+    &::after {
+      transform: translateY(@distance / 2);
+      transition:
+        transform @duration @easeOutBack,
+        opacity @duration;
+    }
+
+    &:hover,
+    &:focus {
+      color: @saWhite;
+
+      &::before,
+      &::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &::before {
+        transition:
+          transform @duration @easeOutBack,
+          opacity @duration;
+      }
+      &::after {
+        transition:
+          transform 0s @duration @easeOutBack,
+          opacity 0s @duration;
+      }
+    }
   }
 }

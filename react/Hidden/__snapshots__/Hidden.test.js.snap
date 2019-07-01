@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`components/grid/hidden should render with aboveMobile 1`] = `
+<span
+  className="aboveMobile"
+>
+  Text
+</span>
+`;
+
 exports[`components/grid/hidden should render with children 1`] = `
 <span
   className=""

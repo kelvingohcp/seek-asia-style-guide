@@ -22,7 +22,7 @@ describe('Slide toggle:', () => {
   });
 
   it('should render with the label on the left', () => {
-    expect(renderSlideToggle({ position: 'left' })).toMatchSnapshot();
+    expect(renderSlideToggle({ toggleAfterLabel: true })).toMatchSnapshot();
   });
 
   it('should render with the label hidden', () => {

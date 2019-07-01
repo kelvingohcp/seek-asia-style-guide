@@ -19,11 +19,11 @@ import {
   Positive,
   Critical,
   Secondary,
-  Strong
+  Strong,
+  Footer
 } from 'seek-asia-style-guide/react';
 
 import JobStreetHeader from 'seek-asia-style-guide/jobStreet/Header/Header';
-import JobStreetFooter from 'seek-asia-style-guide/jobStreet/Footer/Footer';
 
 import TextLink from './Atoms/TextLink/TextLink';
 import IconButton from './Atoms/IconButton/IconButton';
@@ -127,7 +127,10 @@ const renderJobDetailMetadata = () => (
 );
 
 const jobDetailsContent = '<HTML><p><strong>About SEEK</strong></p> <p>We are&nbsp;the global leader in the creation and operation of online employment markets. In the ASX Top 50, SEEK has enjoyed being one of Australia\'s fastest growing businesses with a consistent and formidable position of market leadership across Australia and New Zealand and ownership stakes in leading companies across China, Brazil, Mexico, Africa and SE Asia.&nbsp;</p> <p><strong>Multiple Opportunities&nbsp;</strong></p> <p>We&nbsp;have three Software Architect opportunities currently&nbsp;available&nbsp;at SEEK. All three roles are similar from a role and day to day&nbsp;perspective, however they have&nbsp;different development and technology strategy focus&nbsp;areas, being:&nbsp;Core Business, Mobile and Cloud.</p> <p><strong>About the Opportunities&nbsp;</strong></p> <p>The Software Architect is a technology leadership position at SEEK: you\'ll drive large transformational change across IT on behalf of the business. These opportunities will enable you to:&nbsp;</p> <ul><li>Work in a passionate,&nbsp;fast growing environment where the ability to learn and adapt quickly to new methodologies and technologies is valued.</li><li>Collaborate with&nbsp;cross-functional, multi-disciplinary teams to deliver excellent software for our customers in an agile environment.</li><li>Be part of a fun, successful global online business with a diverse team of development, operations and security minded folks.</li><li>Act as an enabler for the team, removing obstacles and identifying process and technological improvements.</li><li>Strive for technical excellence and help facilitate the healthy tension between the delivery and the long term viability of the code base</li><li>Actively participate and contribute to communities of practice at SEEK and beyond.</li></ul> <p><strong>Your Work</strong></p> <p>Your work will be a compelling mix of working embedded within delivery teams and of broader architectural responsibilities, which will include:</p> <ul><li>Getting your hands dirty delivering working software</li><li>Paving the way for development streams to adopt new technology, software patterns and approaches</li><li>Providing guidance to delivery</li><li>Developing solutions, tools and processes and technological roadmaps</li><li>Leading external vendor and emergent technology evaluation</li><li>Running and supporting the technical communities of practice</li></ul> <p><strong>To Succeed&nbsp;</strong></p> <p>To be successful as a Software Architect at SEEK&nbsp;you will ideally have experiences in:</p> <ul><li>The design, build, operations and evolution of high traffic applications, networks and business critical systems on AWS or native mobile applications&nbsp;OR the modernisation of software systems while delivering on aggressive revenue focussed roadmaps&nbsp;</li><li>Ability to effectively communicate trade-offs and impacts to stakeholders&nbsp;</li><li>In-depth technical knowledge of enterprise, solution and application architectures.</li><li>Practice Evolutionary Design, posses a deep understanding of Solution Design, and be proficient in Domain Driven Design, Design Patterns and Data Modelling, OO principles etc.</li><li>Highly competent in multiple languages across multiple layers of the technology stack.</li><li>Ability to mentor and coach developers and testers to author testable, effective and clean code</li><li>Demonstrated ability to lead and coach others in agile methodologies and development practices such as: CI TDD, BDD, Kanban and Lean.</li></ul> <p><strong>Culture and Benefits</strong></p> <p>SEEK\'s commitment to fostering a productive work environment has helped us drive growth and maintain a consistently high ranking in the annual Hewitt Best Employer Award. The work environment is Agile and fast-paced, with a strong emphasis on outcomes. People like to come here – and we\'re proud of that! And we don\'t have a dress code.</p> <p><strong>How to Apply</strong></p> <p>Click the &quot;Apply for this job&quot; link&nbsp;to begin your application. If you want to know more about the role please do not hesitate to contact<strong> Melanie Whitehouse</strong>, Talent Acquisition Consultant on <strong>(03) 8517 4571</strong>,<strong>&nbsp;</strong>for a confidential conversation.</p> <p><strong>Privacy Policy</strong></p> <p>All personal information received by us from you or about you will be stored, used and disclosed by us in accordance with our privacy policy, a copy of which can be found at www.seek.com.au/privacy. &nbsp;If you&nbsp;have any questions in relation to how we may use and store your personal information please contact us at usersupport@seek.com.au.</p></HTML> <HTML>Multiple opportunities available specialising in cloud, mobile and core business Pursue mastery of software delivery and inspire software craftsmanship in others Join a bunch of like minded, smart people doing great things</HTML>';
-
+const footerProps = {
+  country: 'hk',
+  language: 'en'
+};
 export default class Playground extends Component {
   render() {
     return (
@@ -135,7 +138,6 @@ export default class Playground extends Component {
         <Alert hideIcon tone="info" level="primary" onClose={() => {}}><Text>Welcome to our new search page. <span className={styles.alertBreaker}>Find your dream job faster.</span></Text></Alert>
 
         <JobStreetHeader language="en" country="my" user={{}} />
-        <JobStreetFooter language="vi" country="vn" />
 
         <PageBlock>
           <Section header>
@@ -469,7 +471,9 @@ export default class Playground extends Component {
             </Card>
           </CardGroup>
         </PageBlock>
-
+        <Footer {...footerProps} />
+        <br />
+        <Footer {...{ ...footerProps, country: 'sg' }} />
       </div>
     );
   }

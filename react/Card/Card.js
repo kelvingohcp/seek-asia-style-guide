@@ -9,10 +9,10 @@ export default function Card({ className, children, group, transparent, ...restP
     <div
       {...restProps}
       className={classnames({
-        [className]: className,
         [styles.root]: true,
         [styles.group]: group,
-        [styles.transparent]: transparent
+        [styles.transparent]: transparent,
+        [className]: className
       })}>
       {children}
     </div>

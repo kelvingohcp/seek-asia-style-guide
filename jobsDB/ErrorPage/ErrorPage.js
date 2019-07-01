@@ -34,7 +34,6 @@ export default function JobsDBErrorPage({ texts, button }) {
       <Section className={styles.section}>
         <Button
           color="callToAction"
-          isJobsDB
           className={styles.retryButton}
           onClick={(button && button.onClick) || reload}>
           {(button && button.text) || 'Retry'}

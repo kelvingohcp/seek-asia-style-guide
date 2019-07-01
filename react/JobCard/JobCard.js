@@ -1,19 +1,24 @@
+import styles from './JobCard.less';
+
 import React from 'react';
+import classnames from 'classnames';
+
 import Text from '../Text/Text';
-import Card from '../Card/Card';
+import Hidden from '../Hidden/Hidden';
 import Icon from '../Icon/Icon';
 import Button from '../Button/Button';
-import styles from './JobCard.less';
-import classnames from 'classnames';
 import LocationGroup from './components/LocationGroup/LocationGroup';
 import CompanyLink from './components/CompanyLink/CompanyLink';
 import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import IconList from './components/IconList/IconList';
-import ShelfButton from './components/ShelfButton/ShelfButton';
 import ShelfSection from './components/ShelfSection/ShelfSection';
+import CompanyBanner from './components/CompanyBanner/CompanyBanner';
+import ShelfLink from './components/ShelfLink/ShelfLink';
+import JobMeta from './components/JobMeta/JobMeta';
 import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
-import JobLabel from '../JobLabel/JobLabel';
 import PropTypes from 'prop-types';
+import _get from 'lodash/get';
+import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
 
 export const trackLinkType = {
   jobTitle: 'jobTitle',
@@ -46,8 +51,9 @@ const JobTitle = ({
     </div>
   );
 };
+
 JobTitle.propTypes = {
-  TitleLinkComponent: JobCardPropTypes.TitleLinkComponent,
+  TitleLinkComponent: PropTypes.func,
   viewed: JobCardPropTypes.viewed,
   keyword: JobCardPropTypes.keyword,
   job: JobCardPropTypes.job,
@@ -58,7 +64,7 @@ JobTitle.propTypes = {
 const Company = ({ company, keyword, LinkComponent, trackLinkClicked }) => {
   return (
     <Text intimate baseline={false} className={classnames(styles.text, styles.section)}>
-      { company.isPrivate ?
+      {company.isPrivate ?
         <span className={styles.greyLabel}>{company.name}</span> :
         <CompanyLink {...company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
       }
@@ -70,27 +76,6 @@ Company.propTypes = {
   keyword: JobCardPropTypes.keyword,
   LinkComponent: JobCardPropTypes.LinkComponent,
   trackLinkClicked: JobCardPropTypes.trackLinkClicked
-};
-
-const Description = ({ description, showDescription }) => {
-  if (!(showDescription && description)) {
-    return null;
-  }
-
-  return (
-    <div className={classnames(styles.desktopOnly, styles.description)}>
-      <Text
-        whispering
-        baseline={false}
-        className={styles.text}>
-        {description}
-      </Text>
-    </div>
-  );
-};
-Description.propTypes = {
-  description: JobType.description,
-  showDescription: JobCardPropTypes.showDescription
 };
 
 const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trackLinkClicked }) => {
@@ -108,33 +93,6 @@ const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trac
 };
 MainPoint.propTypes = JobCardPropTypes;
 
-const SellingPoint = ({ sellingPoints, isSplitView, showSellingPoint, enableBrandedAd }) => {
-  if (!showSellingPoint || (isSplitView && !enableBrandedAd) || !sellingPoints) {
-    return null;
-  }
-
-  return (
-    <ul className={styles.sellingPoints}>
-      {sellingPoints.map((sellingPoint, i) => (
-        <li key={i} className={styles.sellingPoint}>
-          <Text
-            whispering
-            baseline={false}
-            className={styles.text}>
-            {sellingPoint}
-          </Text>
-        </li>
-      ))}
-    </ul>
-  );
-};
-SellingPoint.propTypes = {
-  sellingPoints: JobType.sellingPoints,
-  isSplitView: JobCardPropTypes.isSplitView,
-  showSellingPoint: JobCardPropTypes.showSellingPoint,
-  enableBrandedAd: JobCardPropTypes.enableBrandedAd
-};
-
 const CompanyLogo = ({ companyLogoUrl, showCompanyLogo }) => {
   return companyLogoUrl && showCompanyLogo ?
     <img className={styles.companyLogo} src={companyLogoUrl} /> :
@@ -145,56 +103,7 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-const CompanyBanner = ({ bannerUrl, enableBrandedAd, isVariation }) => {
-  return enableBrandedAd && bannerUrl ?
-    <img
-      className={
-        classnames({
-          [styles.companyBannerOnMobile]: !isVariation,
-          [styles.companyBannerOnDesktop]: isVariation
-        })
-      }
-      src={bannerUrl}
-    /> : null;
-};
-CompanyBanner.propTypes = {
-  bannerUrl: JobType.bannerUrl,
-  enableBrandedAd: JobCardPropTypes.enableBrandedAd,
-  isVariation: JobCardPropTypes.isVariation
-};
-
-const CompanyPic = ({ companyPictureUrl, showCompanyPic }) => {
-  if (!(showCompanyPic && companyPictureUrl)) {
-    return null;
-  }
-
-  return (
-    <div className={styles.companyPicWrapper}>
-      <img
-        className={styles.companyPic}
-        src={companyPictureUrl}
-      />
-    </div>
-  );
-};
-CompanyPic.propTypes = {
-  companyPictureUrl: JobType.companyPictureUrl,
-  showCompanyPic: JobCardPropTypes.showCompanyPic
-};
-
-export const ShelfLink = ({ mobileOnly, desktopOnly, job, shelfSectionOpen, onClick }) => {
-  return (
-    <ShelfButton
-      mobileOnly={mobileOnly}
-      desktopOnly={desktopOnly}
-      job={job}
-      onClick={onClick}
-      isOpen={shelfSectionOpen}
-    />
-  );
-};
-ShelfLink.propTypes = JobCardPropTypes;
-export default class JobCard extends React.Component {
+class JobCard extends React.Component {
   state = {
     shelfSectionOpen: false
   }
@@ -210,41 +119,66 @@ export default class JobCard extends React.Component {
       borderlessRoot = false,
       isSelected,
       isSplitView,
-      isVariation,
       enableBrandedAd,
-      job,
+      job = {},
       keyword,
       LinkComponent,
       onBookmarkClick,
       showSellingPoint,
       showCompanyLogo,
-      showCompanyPic,
       showDescription,
       showHighlightedBg,
       showSavedStatus,
       TitleLinkComponent,
       trackLinkClicked,
       viewed,
-      viewedDate
+      viewedDate,
+      tenant
     } = this.props;
+
+    const { companyMeta = {}, isSaved, bannerUrl } = job;
 
     const { shelfSectionOpen } = this.state;
 
+    const { logoUrl } = _get(job, 'companyMeta', {});
+
+    const brandedStripeStyle = {
+      jobsdb: styles.sideHighlightBorderJobsdb,
+      jobstreet: styles.sideHighlightBorderJobstreet
+    }[tenant.toLowerCase()];
+
+    const JobMetaComponent = () => (
+      <JobMeta
+        sellingPoints={job.sellingPoints}
+        isSplitView={isSplitView}
+        showSellingPoint={showSellingPoint}
+        description={job.description}
+        showDescription={showDescription}
+        job={job} shelfSectionOpen={shelfSectionOpen}
+        onClick={this.handleShelfSectionToggle}
+        applied={applied}
+        expired={job.isExpired}
+        viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+      />
+    );
+
     return (
-      <Card
+      <div
         className={classnames(styles.container, {
           [styles.borderRoot]: !borderlessRoot,
           [styles.highlightedBg]: showHighlightedBg,
           [styles.selected]: isSelected,
-          [styles.sideHighlightBorder]: enableBrandedAd
+          [brandedStripeStyle]: enableBrandedAd && brandedStripeStyle
         })}>
         <div className={styles.leftContainer}>
           {showSavedStatus && (
             <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
-              <Icon size="normal" type="bookmark" className={job.isSaved ? styles.bookmarked : ''} animation={job.isSaved ? 'bounce' : ''} />
+              <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
             </Button>
           )}
-          <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
+          <Hidden aboveMobile className={styles.alignCenter}>
+            <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
+          </Hidden>
           <JobTitle
             {
             ...{
@@ -257,43 +191,36 @@ export default class JobCard extends React.Component {
               showSavedStatus
             }}
           />
-          <Company company={job.company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
-          <div className={styles.flexRow}>
+          <Company company={companyMeta} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+          <div className={classnames(styles.flexRow, styles.flexRowHeight)}>
             <div className={styles.leftContent}>
-              {isVariation && <MainPoint {...this.props} />}
-              <SellingPoint sellingPoints={job.sellingPoints} isSplitView={isSplitView} showSellingPoint={showSellingPoint} enableBrandedAd={enableBrandedAd} />
-              {!isVariation && <MainPoint {...this.props} />}
-              {!isSplitView &&
-                <Description description={job.description} showDescription={showDescription} />
-              }
-              <ShelfLink
-                job={job}
-                shelfSectionOpen={shelfSectionOpen}
-                mobileOnly={isVariation && !isSplitView}
-                onClick={this.handleShelfSectionToggle}
-              />
-              <JobLabel applied={applied} expired={job.isExpired} viewed={viewed && viewedDate && `Viewed ${viewedDate}`} />
+              <MainPoint {...this.props} />
+              <Hidden mobile>
+                <JobMetaComponent />
+              </Hidden>
             </div>
             <div
               className={
                 classnames(
                   {
-                    [styles.rightContent]: !(enableBrandedAd && isVariation && !isSplitView),
-                    [styles.rightContentWithBanner]: enableBrandedAd && isVariation && !isSplitView
+                    [styles.rightContent]: !(enableBrandedAd && !isSplitView),
+                    [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
                   }
                 )
               }>
-              <CompanyLogo companyLogoUrl={job.companyLogoUrl} showCompanyLogo={showCompanyLogo} />
-              <CompanyPic companyPictureUrl={job.companyPictureUrl} showCompanyPic={showCompanyPic} />
-              {isVariation && !isSplitView &&
-                <ShelfLink
-                  job={job}
-                  shelfSectionOpen={shelfSectionOpen}
-                  desktopOnly
-                  onClick={this.handleShelfSectionToggle}
-                />}
+              <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
+              {!isSplitView &&
+              <ShelfLink
+                job={job}
+                shelfSectionOpen={shelfSectionOpen}
+                desktopOnly
+                onClick={this.handleShelfSectionToggle}
+              />}
             </div>
           </div>
+          <Hidden aboveMobile>
+            <JobMetaComponent />
+          </Hidden>
           <ShelfSection
             shelf={job.shelf}
             LinkComponent={LinkComponent}
@@ -302,27 +229,38 @@ export default class JobCard extends React.Component {
           />
         </div>
         {
-          isVariation && !isSplitView &&
-          <div className={styles.rightContainer}>
-            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} isVariation={isVariation} />
+          !isSplitView &&
+          <Hidden mobile className={styles.rightContainer}>
+            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
             <IconList
               className={styles.structuredData}
               list={[
-                { content: job.careerLevel, iconType: 'careerLevel' },
-                { content: job.workExperience, iconType: 'experience' },
-                { content: job.qualification, iconType: 'education' },
-                { content: job.employmentTerm, iconType: 'employmentType' }
+                { content: job.careerLevelName, iconType: 'careerLevel' },
+                { content: job.workExperienceName, iconType: 'experience' },
+                { content: job.qualificationName, iconType: 'education' },
+                { content: job.employmentTermName, iconType: 'employmentType' }
               ]}
             />
-          </div>
+          </Hidden>
         }
-      </Card>
+      </div>
     );
   }
 }
 
+export default props => (
+  <StyleGuideContext.Consumer>
+    {({ tenant = '' }) => {
+      return <JobCard {...props} tenant={tenant} />;
+    }}
+  </StyleGuideContext.Consumer>
+);
+
 JobCard.defaultProps = {
-  trackLinkClicked: () => {}
+  trackLinkClicked: () => { },
+  tenant: ''
 };
 
 JobCard.propTypes = JobCardPropTypes;
+
+export { JobCard as JobCardForTest };

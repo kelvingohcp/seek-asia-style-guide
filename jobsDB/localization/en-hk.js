@@ -1,4 +1,8 @@
-import { FlagHKIcon, FlagIDIcon, FlagSGIcon, FlagTHIcon } from 'seek-asia-style-guide/react';
+import FlagHKIcon from '../../react/FlagHKIcon/FlagHKIcon';
+import FlagIDIcon from '../../react/FlagIDIcon/FlagIDIcon';
+import FlagSGIcon from '../../react/FlagSGIcon/FlagSGIcon';
+import FlagTHIcon from '../../react/FlagTHIcon/FlagTHIcon';
+import partners from './partners';
 
 const domain = 'jobsdb.com';
 const baseUrl = `https://hk.${domain}`;
@@ -152,34 +156,34 @@ export default {
       title: 'Legal terms',
       url: `${mUrlWithLanguage}/legal.do`
     },
-    aboutJobsDB: {
+    about: {
       title: 'About JobsDB',
-      aboutJobsDB: {
-        title: 'About jobsDB',
+      about: {
+        title: 'About Us',
         url: `${wpUrlWithLanguage}/pages/aboutus`
-      },
-      faq: {
-        title: 'FAQ',
-        url: `${baseUrlWithLanguage}/StaticContentFullContainer/AboutUS/faq/index.htm`
       },
       career: {
         title: 'Career @ jobsDB',
         url: `${baseUrlWithLanguage}/jobs/companies/jobsdb-hong-kong/1`
       },
       contactUs: {
-        title: 'Contact us',
+        title: 'Contact Us',
         url: `${wpUrlWithLanguage}/pages/regional-coverage`,
         mobileUrl: 'https://m.jobsdb.com/en-hk/legal.do?p=contact_us'
+      },
+      faq: {
+        title: 'FAQ',
+        url: `${baseUrlWithLanguage}/StaticContentFullContainer/AboutUS/faq/index.htm`
       }
     },
     jobSeeker: {
       title: 'Job Seekers',
       browse: {
-        title: 'Browse jobs',
+        title: 'Browse Jobs',
         url: `${baseUrlWithLanguage}/browse`
       },
       resumes: {
-        title: 'Post resumes',
+        title: 'Post Resumes',
         url: `${baseUrlWithLanguage}/Resumes/ResumeIndex`
       },
       jobAlerts: {
@@ -198,15 +202,15 @@ export default {
     employers: {
       title: 'Employers',
       postJob: {
-        title: 'Post a job',
+        title: 'Post a Job Ad',
         url: `${wpUrlWithLanguage}/cms/employer/product-services/job-ads/`
       },
       searchCandidates: {
-        title: 'Search candidates',
+        title: 'Search Candidates',
         url: `${wpUrlWithLanguage}/cms/employer/product-services/talent-search/`
       },
       advertise: {
-        title: 'Advertise with us',
+        title: 'Advertise With Us',
         url: `${wpUrlWithLanguage}/cms/employer/product-and-services/`
       },
       bestCompanies: {
@@ -237,56 +241,6 @@ export default {
         icon: 'android'
       }
     },
-    partners: {
-      title: 'International partners',
-      bdjobs: {
-        title: 'Bdjobs (Bandladesh)',
-        url: 'https://www.bdjobs.com/'
-      },
-      brighterMonday: {
-        title: 'Brighter Monday (East Africa)',
-        url: 'https://www.brightermonday.com/'
-      },
-      catho: {
-        title: 'Catho (Brazil)',
-        url: 'https://www.catho.com.br/'
-      },
-      jobberman: {
-        title: 'Jobberman (West Africa)',
-        url: 'https://www.jobberman.com/'
-      },
-      jobStreet: {
-        title: 'JobStreet (S.E. Asia)',
-        url: 'https://www.jobstreet.com/'
-      },
-      jora: {
-        title: 'Jora (Hong Kong)',
-        url: 'https://hk.jora.com/'
-      },
-      occ: {
-        title: 'OCC Mundial (Mexico)',
-        url: 'https://www.occ.com.mx/'
-      },
-      seaman: {
-        title: 'Seaman Jobsite (Philippines)',
-        url: 'https://www.seamanjobsite.com/'
-      },
-      seek: {
-        title: 'SEEK (Australia)',
-        url: 'https://www.seek.com.au/'
-      },
-      workAbroad: {
-        title: 'Work Abroad (Philippines)',
-        url: 'https://www.workabroad.ph/'
-      },
-      workana: {
-        title: 'Workana',
-        url: 'https://www.workana.com/'
-      },
-      zhaopin: {
-        title: 'Zhaopin (China)',
-        url: 'https://www.zhaopin.com/'
-      }
-    }
+    partners
   }
 };

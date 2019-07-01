@@ -23,7 +23,6 @@ exports[`JobsDB Error Page should render correctly 1`] = `
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -57,7 +56,6 @@ exports[`JobsDB Error Page should render correctly, with button props onClick 1`
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -91,7 +89,6 @@ exports[`JobsDB Error Page should render correctly, with button props onClick an
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -125,7 +122,6 @@ exports[`JobsDB Error Page should render correctly, with button props text 1`] =
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -178,7 +174,6 @@ exports[`JobsDB Error Page should render correctly, with texts props headline 1`
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -233,7 +228,6 @@ exports[`JobsDB Error Page should render correctly, with texts props headline an
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -286,7 +280,6 @@ exports[`JobsDB Error Page should render correctly, with texts props subline 1`]
       className="retryButton"
       color="callToAction"
       component="button"
-      isJobsDB={true}
       onClick={[Function]}
       role="button"
       tabIndex={0}

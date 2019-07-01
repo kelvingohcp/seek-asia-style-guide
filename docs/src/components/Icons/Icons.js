@@ -14,7 +14,7 @@ const renderIcons = sketch => {
   return sketch && sketch.symbols ? (
     <div>
       <PageBlock>
-        <div className={styles.symbols}>
+        <div>
           <Section className={styles.section}>
             {map(sketch.symbols || {}, (element, name) => (
               <div key={name} className={styles.symbolContainer}>

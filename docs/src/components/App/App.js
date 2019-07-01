@@ -16,9 +16,7 @@ import jobStreetDemoExports from '../../../../jobStreet/*/*.demo.js';
 import jobsDBDemoExports from '../../../../jobsDB/*/*.demo.js';
 
 import JobsDBHeader from '../../../../jobsDB/Header/Header';
-import JobsDBFooter from '../../../../jobsDB/Footer/Footer';
 import JobStreetHeader from '../../../../jobStreet/Header/Header';
-import JobStreetFooter from '../../../../jobStreet/Footer/Footer';
 
 const demoSpecs = demoSpecExports.concat(jobStreetDemoExports, jobsDBDemoExports).map(x => x.default);
 
@@ -49,7 +47,7 @@ export default class App extends Component {
         <Route
           path="/sandbox"
           render={props => (
-            <LoadSandbox {...props} brandedComponents={{ JobsDBFooter, JobsDBHeader, JobStreetHeader, JobStreetFooter }} />
+            <LoadSandbox {...props} brandedComponents={{ JobsDBHeader, JobStreetHeader }} />
           )}
         />
         <Route path="/sketch-exports" component={SketchExports} />

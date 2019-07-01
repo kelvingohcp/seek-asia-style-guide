@@ -34,4 +34,19 @@ describe('ShowMore:', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render value with color passed in', () => {
+    const options = { createNodeMock };
+    const wrapper = renderer.create(
+      <ShowMore
+        showLessHeight={150}
+        lblShowMore='Show more'
+        lblShowLess='Show less'
+        color="grey">
+        {card}
+      </ShowMore>,
+      options
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

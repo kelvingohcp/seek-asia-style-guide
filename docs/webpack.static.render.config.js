@@ -7,7 +7,7 @@ const fs = require('fs');
 const ejs = require('ejs');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
-const decorateServerConfig = require('seek-asia-style-guide-webpack').decorateServerConfig;
+const decorateServerConfig = require('../webpack/index').decorateServerConfig;
 const babelConfig = require('../config/babel.config.js')({ reactHotLoader: false });
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
@@ -135,7 +135,10 @@ const config = {
   },
 
   resolve: {
-    modules: ['node_modules', 'wip_modules', 'components']
+    modules: ['node_modules', 'wip_modules', 'components'],
+    alias: {
+      ['seek-asia-style-guide']:path.resolve(__dirname, '..')
+    }
   },
 
   plugins: [
@@ -152,14 +155,6 @@ const config = {
         '/playground'
       ],
       locals: { template }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      output: {
-        comments: false
-      },
-      compress: {
-        warnings: false
-      }
     })
   ]
 };

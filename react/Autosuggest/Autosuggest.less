@@ -1,10 +1,17 @@
 @import (reference) '~seek-asia-style-guide/theme';
 
 @suggestionContainerRowsOffset: 12;
+@compactSuggestionContainerRowsOffset: 9;
 @suggestionFieldHeightInRows: 10;
 
-@sectionTitleHeight: @grid-row-height * 8;
+@sectionTitleHeight: @grid-row-height * 10;
 @containerHeight: @touchableTextHeight + @sectionTitleHeight;
+
+.childFullWidth() {
+  position: relative;
+  left: -50vw;
+  background: @saWhite;
+}
 
 .container {
   position: relative;
@@ -19,17 +26,20 @@
 .suggestionsContainer {
   display: none;
   position: absolute;
-  background-color: @sk-white;
+  background-color: @saWhite;
   box-shadow: 0 9px 30px rgba(0, 0, 0, 0.4);
   padding: (@grid-row-height * 2) 0;
-  border-radius: 2px;
+  border-radius: @grid-base;
   min-width: 100%;
   max-width: 100%;
-  max-height: 385px;
+  max-height: ~'calc(100vh - @{containerHeight})';
   overflow-y: auto;
   top: @grid-row-height * @suggestionContainerRowsOffset;
-  @media @mobile {
-    max-height: ~'calc(100vh - @{containerHeight})';
+  @media @desktop {
+    max-height: 385px;
+  }
+  &.compact {
+    top: @grid-row-height * @compactSuggestionContainerRowsOffset;
   }
 }
 
@@ -38,44 +48,60 @@
 }
 
 .suggestionsContainer_withLabel {
-  @labelRowOffset: 4;
+  @labelRowOffset: 7;
   top: @grid-row-height * (@suggestionContainerRowsOffset + @labelRowOffset);
-  @media @desktop {
-    @labelRowOffset: 3;
-    top: @grid-row-height * (@suggestionContainerRowsOffset + @labelRowOffset);
+  &.compact {
+    @labelRowOffset: 8;
+    top: @grid-row-height * (@compactSuggestionContainerRowsOffset + @labelRowOffset);
   }
 }
 
 .suggestionsContainer_fullWidth {
-  @media @mobile {
-    display: table;
-    width: 100vw;
-    left: 50vw;
-    box-shadow: 0 0;
-    border-radius: 0;
-    background: none;
-    padding: 0;
+  display: table;
+  width: 100vw;
+  left: 50vw;
+  box-shadow: 0 0;
+  padding: 0;
+  border-radius: 0;
+  @media @desktop {
+    display: none;
+    width: 100%;
+    left: auto;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.4);
+    padding: (@grid-row-height * 2) 0;
+    border-radius: @grid-base;
+    &.suggestionsContainerOpen {
+      display: block;
+    }
   }
 }
 
 .suggestionsList_fullWidth {
-  @media @mobile {
-    position: relative;
-    left: -50vw;
-    background: @sk-white;
+  .childFullWidth();
+  @media @desktop {
+    left: auto;
   }
 }
 
 .sectionTitle {
-  .rawText(1);
+  .rawText();
   line-height: @sectionTitleHeight;
   height: @sectionTitleHeight;
-  margin: (@grid-row-height * 2) (@grid-gutter-width * 0.75) 0;
-  color: darken(@sk-highlight, 10%);
+  margin: 0;
   font-weight: @sk-bold;
-
+  background: @saWhite;
+  padding: 0 @grid-base * 3;
   .sectionContainer:first-child & {
     margin-top: 0;
+  }
+}
+
+.sectionTitle_fullWidth {
+  .childFullWidth();
+  margin: 0;
+  @media @desktop {
+    margin: auto;
+    left: auto;
   }
 }
 
@@ -83,7 +109,7 @@
   .rawText();
   line-height: (@grid-row-height * @suggestionFieldHeightInRows);
   height: (@grid-row-height * @suggestionFieldHeightInRows);
-  padding: 0 (@grid-gutter-width * 0.75);
+  padding: 0 @grid-base * 3;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -131,7 +131,7 @@ exports[`DropdownList: should render with center-aligned chevron 1`] = `
 
 exports[`DropdownList: should render with className 1`] = `
 <div
-  className="root"
+  className="root foo"
 >
   <div
     className="toggler"

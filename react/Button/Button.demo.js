@@ -1,8 +1,5 @@
-import React from 'react';
-import { Button, Icon } from 'seek-asia-style-guide/react';
+import { Button } from 'seek-asia-style-guide/react';
 import * as sketch from './Button.sketch';
-import styles from './Button.less';
-import classnames from 'classnames';
 
 export default {
   route: '/button',
@@ -18,20 +15,6 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
-        {
-          label: 'Hover',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootHover)
-          })
-        },
-        {
-          label: 'Active',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootActive)
-          })
-        },
         {
           label: 'isSelected',
           transformProps: ({ className, ...props }) => ({
@@ -105,8 +88,7 @@ export default {
           label: 'Call To Action',
           transformProps: props => ({
             ...props,
-            color: 'callToAction',
-            isJobStreet: true
+            color: 'callToAction'
           })
         },
         {
@@ -128,40 +110,6 @@ export default {
           transformProps: props => ({
             ...props,
             color: 'ghostWhite'
-          })
-        }
-      ]
-    },
-    {
-      label: 'Icon',
-      type: 'radio',
-      states: [
-        {
-          label: 'No Icon',
-          transformProps: props => props
-        },
-        {
-          label: 'Medical',
-          transformProps: props => ({
-            ...props,
-            children: (
-              <span>
-                <Icon type="medical" animation="popIn" lineHeight="waving" />
-                &nbsp;Click here
-              </span>
-            )
-          })
-        },
-        {
-          label: 'Past Application',
-          transformProps: props => ({
-            ...props,
-            children: (
-              <span>
-                <Icon type="pastApplication" animation="popIn" lineHeight="waving" />
-                &nbsp;Click here
-              </span>
-            )
           })
         }
       ]

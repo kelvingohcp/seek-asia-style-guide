@@ -5,7 +5,6 @@ import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import { Text, PageBlock } from 'seek-asia-style-guide/react';
 import Menu from './components/Menu/Menu';
 import ActionTray from './components/ActionTray/ActionTray';
-import CountryDropdown from './components/CountryDropdown/CountryDropdown';
 import styles from './Header.less';
 import UserAccount from './components/UserAccount/UserAccount';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
@@ -99,40 +98,19 @@ export default class Header extends Component {
       actionTrayProps,
       employerSite,
       loginAvailable = false,
-      selectCountry = true,
-      showCountryLanguage = true,
       authenticationStatus,
       userName,
       userAccMenuItems,
       baseUrl,
-      linkRenderer
+      linkRenderer,
+      hideNavMenu
     } = this.props;
     const menuOpen = this.state.menuOpen;
 
     return (
       <header className={styles.root}>
         <PageBlock>
-          {showCountryLanguage &&
-          <div
-            className={styles.externalNav}>
-            {
-              // *** Country Selector ***
-              selectCountry &&
-              (
-                <CountryDropdown
-                  links={locales}
-                  checked={0}
-                  linkRenderer={linkRenderer}
-                />
-              ) ||
-              (
-                <div className={styles.locale}>
-                  {currentLocale(locales[0])}
-                </div>
-              )
-            }
-          </div>}
-          <div className={classnames(loginAvailable ? styles.primaryNav : styles.primaryNavNoLogin, showCountryLanguage ? styles.primaryNavWithCountry : styles.primaryNavNoCountry)}>
+          <div className={classnames({ [styles.primaryNavNoLogin]: !loginAvailable }, styles.primaryNav)}>
             <h1 className={styles.logo}>
               {
                 linkRenderer({
@@ -144,7 +122,7 @@ export default class Header extends Component {
               <LogoComponent {...logoProps} />
             </h1>
 
-            {renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
+            {!hideNavMenu && renderPrimaryNavLinks({ brandStyles }, links, styles.primaryNavLinksWrapper, linkRenderer)}
             {loginAvailable && <div className={styles.secondaryNav} />}
             <UserAccount
               userName={userName}
@@ -202,8 +180,6 @@ Header.propTypes = {
   actionTrayProps: PropTypes.object,
   employerSite: PropTypes.bool,
   linkRenderer: PropTypes.func,
-  selectCountry: PropTypes.bool,
-  showCountryLanguage: PropTypes.bool,
   onMenuOpen: PropTypes.func,
   authenticationStatus: PropTypes.oneOf([
     AUTHENTICATED,
@@ -212,12 +188,14 @@ Header.propTypes = {
   ]),
   userName: PropTypes.string,
   userAccMenuItems: PropTypes.array,
-  baseUrl: PropTypes.string
+  baseUrl: PropTypes.string,
+  hideNavMenu: PropTypes.bool
 };
 
 Header.defaultProps = {
   linkRenderer: defaultLinkRenderer,
   authenticationStatus: UNAUTHENTICATED,
   homeUrl: '/',
-  onMenuOpen: () => {}
+  onMenuOpen: () => {},
+  hideNavMenu: false
 };

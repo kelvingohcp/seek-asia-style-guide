@@ -72,13 +72,20 @@ export default class Alert extends Component {
 
     const isTertiary = level === LEVEL.TERTIARY;
 
+    const toneStyle = {
+      [TONE.POSITIVE]: styles.positive,
+      [TONE.INFO]: styles.info,
+      [TONE.CRITICAL]: styles.critical,
+      [TONE.HELP]: styles.help
+    }[tone];
+
     return (
       <StyleGuideContext.Consumer>
         {({ tenant }) => {
           const { isJobsDB, isJobStreet } = getTenant(tenant);
           const rootClasses = classnames({
             [styles.root]: true,
-            [styles[tone]]: tone && isTertiary,
+            [toneStyle]: tone && isTertiary,
             [styles.jobsDB]: isJobsDB,
             [styles.jobStreet]: isJobStreet
           });

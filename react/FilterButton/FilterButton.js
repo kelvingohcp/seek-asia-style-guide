@@ -1,4 +1,6 @@
+/* eslint css-modules/no-unused-class: [2, { markAsUsed: [isHover] }] */
 import styles from './FilterButton.less';
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
