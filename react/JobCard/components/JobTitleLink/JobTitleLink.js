@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styles from './JobTitleLink.less';
 import classnames from 'classnames';
@@ -18,7 +18,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
 
   if (keywordParts) {
     title = (
-      <span>
+      <Fragment>
         {
           keywordParts.map((part, index) => {
             return (
@@ -32,7 +32,7 @@ const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defa
             );
           })
         }
-      </span>
+      </Fragment>
     );
   }
 
