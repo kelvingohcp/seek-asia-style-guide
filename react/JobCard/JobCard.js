@@ -176,9 +176,13 @@ class JobCard extends React.Component {
               <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
             </Button>
           )}
-          <Hidden aboveMobile className={styles.alignCenter}>
-            <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
-          </Hidden>
+          {
+            !isSplitView && (
+              <Hidden aboveMobile className={styles.alignCenter}>
+                <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
+              </Hidden>
+            )
+          }
           <JobTitle
             {
             ...{
