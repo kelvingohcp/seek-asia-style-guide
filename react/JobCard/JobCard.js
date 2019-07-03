@@ -1,6 +1,6 @@
 import styles from './JobCard.less';
 
-import React from 'react';
+import React, { useState } from 'react';
 import classnames from 'classnames';
 
 import Text from '../Text/Text';
@@ -95,7 +95,10 @@ MainPoint.propTypes = JobCardPropTypes;
 
 const CompanyLogo = ({ companyLogoUrl, showCompanyLogo }) => {
   return companyLogoUrl && showCompanyLogo ?
-    <img className={styles.companyLogo} src={companyLogoUrl} /> :
+    <img
+      className={styles.companyLogo}
+      src={companyLogoUrl}
+    /> :
     <div className={styles.companyLogo} />;
 };
 CompanyLogo.propTypes = {
@@ -103,154 +106,149 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-class JobCard extends React.Component {
-  state = {
-    shelfSectionOpen: false
-  }
+const JobCard = props => {
+  const [shelfSectionOpen, setShelfSectionOpen] = useState(false);
 
-  handleShelfSectionToggle = e => {
-    this.setState({ shelfSectionOpen: !this.state.shelfSectionOpen });
+  const handleShelfSectionToggle = e => {
+    setShelfSectionOpen(!shelfSectionOpen);
     e.stopPropagation();
   };
 
-  render() {
-    const {
-      applied,
-      borderlessRoot = false,
-      isSelected,
-      isSplitView,
-      enableBrandedAd,
-      job = {},
-      keyword,
-      LinkComponent,
-      onBookmarkClick,
-      showSellingPoint,
-      showCompanyLogo,
-      showDescription,
-      showHighlightedBg,
-      showSavedStatus,
-      TitleLinkComponent,
-      trackLinkClicked,
-      viewed,
-      viewedDate,
-      tenant
-    } = this.props;
+  const {
+    applied,
+    borderlessRoot = false,
+    isSelected,
+    isSplitView,
+    enableBrandedAd,
+    job = {},
+    keyword,
+    LinkComponent,
+    onBookmarkClick,
+    showSellingPoint,
+    showCompanyLogo,
+    showDescription,
+    showHighlightedBg,
+    showSavedStatus,
+    TitleLinkComponent,
+    trackLinkClicked,
+    viewed,
+    viewedDate,
+    tenant,
+    isIntersecting
+  } = props;
 
-    const { companyMeta = {}, isSaved, bannerUrl } = job;
+  const { companyMeta = {}, isSaved, bannerUrl, sellingPoints, description, isExpired } = job;
 
-    const { shelfSectionOpen } = this.state;
+  const { logoUrl } = _get(job, 'companyMeta', {});
 
-    const { logoUrl } = _get(job, 'companyMeta', {});
+  const brandedStripeStyle = {
+    jobsdb: styles.sideHighlightBorderJobsdb,
+    jobstreet: styles.sideHighlightBorderJobstreet
+  }[tenant.toLowerCase()];
 
-    const brandedStripeStyle = {
-      jobsdb: styles.sideHighlightBorderJobsdb,
-      jobstreet: styles.sideHighlightBorderJobstreet
-    }[tenant.toLowerCase()];
+  const JobMetaComponent = () => (
+    <JobMeta
+      sellingPoints={sellingPoints}
+      isSplitView={isSplitView}
+      showSellingPoint={showSellingPoint}
+      description={description}
+      showDescription={showDescription}
+      job={job} shelfSectionOpen={shelfSectionOpen}
+      onClick={handleShelfSectionToggle}
+      applied={applied}
+      expired={isExpired}
+      viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+    />
+  );
 
-    const JobMetaComponent = () => (
-      <JobMeta
-        sellingPoints={job.sellingPoints}
-        isSplitView={isSplitView}
-        showSellingPoint={showSellingPoint}
-        description={job.description}
-        showDescription={showDescription}
-        job={job} shelfSectionOpen={shelfSectionOpen}
-        onClick={this.handleShelfSectionToggle}
-        applied={applied}
-        expired={job.isExpired}
-        viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
-      />
-    );
-
-    return (
-      <div
-        className={classnames(styles.container, {
-          [styles.borderRoot]: !borderlessRoot,
-          [styles.highlightedBg]: showHighlightedBg,
-          [styles.selected]: isSelected,
-          [brandedStripeStyle]: enableBrandedAd && brandedStripeStyle
-        })}>
-        <div className={styles.leftContainer}>
-          {showSavedStatus && (
-            <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
-              <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
-            </Button>
-          )}
-          {
-            !isSplitView && (
-              <Hidden aboveMobile className={styles.alignCenter}>
-                <CompanyBanner bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
-              </Hidden>
-            )
-          }
-          <JobTitle
-            {
-            ...{
-              applied,
-              TitleLinkComponent,
-              viewed,
-              keyword,
-              job,
-              trackLinkClicked,
-              showSavedStatus
-            }}
-          />
-          <Company company={companyMeta} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
-          <div className={classnames(styles.flexRow, styles.flexRowHeight)}>
-            <div className={styles.leftContent}>
-              <MainPoint {...this.props} />
-              <Hidden mobile>
-                <JobMetaComponent />
-              </Hidden>
-            </div>
-            <div
-              className={
-                classnames(
-                  {
-                    [styles.rightContent]: !(enableBrandedAd && !isSplitView),
-                    [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
-                  }
-                )
-              }>
-              <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
-              {!isSplitView &&
-              <ShelfLink
-                job={job}
-                shelfSectionOpen={shelfSectionOpen}
-                desktopOnly
-                onClick={this.handleShelfSectionToggle}
-              />}
-            </div>
-          </div>
-          <Hidden aboveMobile>
-            <JobMetaComponent />
-          </Hidden>
-          <ShelfSection
-            shelf={job.shelf}
-            LinkComponent={LinkComponent}
-            showShelfSection={shelfSectionOpen}
-            trackLinkClicked={trackLinkClicked}
-          />
-        </div>
+  return (
+    <div
+      className={classnames(styles.container, {
+        [styles.borderRoot]: !borderlessRoot,
+        [styles.highlightedBg]: showHighlightedBg,
+        [styles.selected]: isSelected,
+        [brandedStripeStyle]: enableBrandedAd && brandedStripeStyle
+      })}>
+      <div className={styles.leftContainer}>
+        {showSavedStatus && (
+          <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
+            <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
+          </Button>
+        )}
         {
-          !isSplitView &&
-          <Hidden mobile className={styles.rightContainer}>
-            <CompanyBanner bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
-            <IconList
-              className={styles.structuredData}
-              list={[
-                { content: job.careerLevelName, iconType: 'careerLevel' },
-                { content: job.workExperienceName, iconType: 'experience' },
-                { content: job.qualificationName, iconType: 'education' },
-                { content: job.employmentTermName, iconType: 'employmentType' }
-              ]}
-            />
-          </Hidden>
+          !isSplitView && (
+            <Hidden aboveMobile className={styles.alignCenter}>
+              <CompanyBanner isIntersecting={isIntersecting} bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
+            </Hidden>
+          )
         }
+        <JobTitle
+          {
+          ...{
+            applied,
+            TitleLinkComponent,
+            viewed,
+            keyword,
+            job,
+            trackLinkClicked,
+            showSavedStatus
+          }}
+        />
+        <Company company={companyMeta} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+        <div className={classnames(styles.flexRow, styles.flexRowHeight)}>
+          <div className={styles.leftContent}>
+            <MainPoint {...props} />
+            <Hidden mobile>
+              <JobMetaComponent />
+            </Hidden>
+          </div>
+          <div
+            className={
+              classnames(
+                {
+                  [styles.rightContent]: !(enableBrandedAd && !isSplitView),
+                  [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
+                }
+              )
+            }>
+            <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
+            {!isSplitView &&
+            <ShelfLink
+              job={job}
+              shelfSectionOpen={shelfSectionOpen}
+              desktopOnly
+              onClick={handleShelfSectionToggle}
+            />}
+          </div>
+        </div>
+        <Hidden aboveMobile>
+          <JobMetaComponent />
+        </Hidden>
+        <ShelfSection
+          shelf={job.shelf}
+          LinkComponent={LinkComponent}
+          showShelfSection={shelfSectionOpen}
+          trackLinkClicked={trackLinkClicked}
+        />
       </div>
-    );
-  }
-}
+      {
+        !isSplitView &&
+        <Hidden mobile className={styles.rightContainer}>
+          <CompanyBanner isIntersecting={props.isIntersecting} bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
+          <IconList
+            className={styles.structuredData}
+            list={[
+              { content: job.careerLevelName, iconType: 'careerLevel' },
+              { content: job.workExperienceName, iconType: 'experience' },
+              { content: job.qualificationName, iconType: 'education' },
+              { content: job.employmentTermName, iconType: 'employmentType' }
+            ]}
+          />
+        </Hidden>
+      }
+    </div>
+  );
+};
 
 export default props => (
   <StyleGuideContext.Consumer>
