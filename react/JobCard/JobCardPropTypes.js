@@ -14,6 +14,7 @@ export const JobType = {
   company: PropTypes.shape(CompanyPropTypes),
   jobTitle: PropTypes.string.isRequired,
   jobUrl: PropTypes.string.isRequired,
+  companyLogoUrl: PropTypes.string,
   sellingPoints: PropTypes.arrayOf(PropTypes.string),
   description: PropTypes.string,
   locations: LocationsPropTypes,
