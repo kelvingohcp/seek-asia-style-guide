@@ -26,7 +26,7 @@ export default function Tabs({ items, className }) {
         </ReactTab>
       );
       tabsContent.push(
-        <ReactTabPanel key={index} className={styles.tabPanel}>
+        <ReactTabPanel key={index}>
           {item.content}
         </ReactTabPanel>
       );

@@ -1,775 +1,1734 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component should render with custom href link 1`] = `
-<footer
-  className="container"
->
-  <PageBlock>
-    <div
-      className="hidden upperWrapper"
-    >
-      <UpperFooter
-        footerMessages={
-          Object {
-            "aboutJobsDB": Object {
-              "aboutJobsDB": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
-              },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
-              },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-              },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-              },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
-              },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
-              },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
-              },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
-          }
-        }
-        linkRenderer={[Function]}
-      />
-      <FooterLinks
-        footerMessages={
-          Object {
-            "aboutJobsDB": Object {
-              "aboutJobsDB": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
-              },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
-              },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-              },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-              },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
-              },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
-              },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
-              },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
-          }
-        }
-        linkRenderer={[Function]}
-      />
-    </div>
-    <div
-      className="lowerWrapper"
-    >
-      <div
-        className="endOfLineWithoutCountry"
-      >
-        <div
-          className="collapsed lowerWrapperLinks"
-        >
-          <FooterLinks
-            displayInDesktop={true}
-            footerMessages={
-              Object {
-                "aboutJobsDB": Object {
-                  "aboutJobsDB": Object {
-                    "title": "About jobsDB",
-                    "url": "/pages/aboutus",
-                  },
-                  "contactUs": Object {
-                    "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                    "title": "Contact us",
-                    "url": "/pages/regional-coverage",
-                  },
-                  "title": "About JobsDB",
-                },
-                "cfsLink": "/hk/en",
-                "cmsLink": "/en-hk",
-                "connect": Object {
-                  "appStore": Object {
-                    "icon": "apple",
-                    "title": "jobsDB @ App Store",
-                    "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-                  },
-                  "playStore": Object {
-                    "icon": "android",
-                    "title": "jobsDB @ Google Play",
-                    "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-                  },
-                  "title": "Connect",
-                },
-                "copyright": "Copyright © 1998-{year}, jobsDB.",
-                "legal": Object {
-                  "title": "Legal terms",
-                  "url": "/legal.do",
-                },
-                "partners": Object {
-                  "bdjobs": Object {
-                    "title": "Bdjobs (Bandladesh)",
-                    "url": "https://www.bdjobs.com/",
-                  },
-                  "brighterMonday": Object {
-                    "title": "Brighter Monday (East Africa)",
-                    "url": "https://www.brightermonday.com/",
-                  },
-                  "catho": Object {
-                    "title": "Catho (Brazil)",
-                    "url": "https://www.catho.com.br/",
-                  },
-                  "title": "International partners",
-                  "zhaopin": Object {
-                    "title": "Zhaopin (China)",
-                    "url": "https://www.zhaopin.com/",
-                  },
-                },
-                "privacy": Object {
-                  "title": "Privacy Statement",
-                  "url": "/pages/terms/privacy-policy",
-                },
-                "rightReserved": "All Rights Reserved.",
-                "siteMap": Object {
-                  "title": "Site Map",
-                  "url": "/sitemap",
-                },
-                "terms": Object {
-                  "title": "Terms & Conditions",
-                  "url": "/pages/terms/terms-conditions",
-                },
-              }
-            }
-            linkRenderer={[Function]}
-          />
-          <Text
-            baseline={true}
-            secondary={true}
-            semiStrong={true}
-            whispering={true}
-          >
-            Copyright © 1998-2019, jobsDB.
-          </Text>
-        </div>
-        <div
-          className="chevronIcon"
-          onClick={[Function]}
-        >
-          <ChevronIcon
-            className=""
-            direction="down"
-            id="pageBottom"
-            svgClassName="chevronSvg"
-          />
-        </div>
-      </div>
-    </div>
-  </PageBlock>
-</footer>
+exports[`Footer component Localization should render en-hk 1`] = `
+<GlobalFooter
+  country="hk"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About Us",
+          "url": "https://hk.jobsdb.com/en-hk/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact Us",
+          "url": "https://hk.jobsdb.com/en-hk/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://hk.jobsdb.com/hk/en/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/hk/en",
+      "cmsLink": "/en-hk",
+      "connect": Object {
+        "appStore": Object {
+          "icon": "apple",
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "icon": "facebook",
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "icon": "android",
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "icon": "twitter",
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "Copyright © 1998-{year}, jobsDB.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise With Us",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://hk.jobsdb.com/hk/en/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search Candidates",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse Jobs",
+          "url": "https://hk.jobsdb.com/hk/en/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://hk.jobsdb.com/hk/en/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://hk.jobsdb.com/hk/en/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post Resumes",
+          "url": "https://hk.jobsdb.com/hk/en/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "Legal terms",
+        "url": "https://m.jobsdb.com/en-hk/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Privacy Statement",
+        "url": "https://hk.jobsdb.com/en-hk/pages/terms/privacy-policy",
+      },
+      "rightReserved": "All Rights Reserved.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://hk.jobsdb.com/hk/en/sitemap",
+      },
+      "terms": Object {
+        "title": "Terms & Conditions",
+        "url": "https://hk.jobsdb.com/en-hk/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
 `;
 
-exports[`Footer component should render with custom link renderer 1`] = `
-<footer
-  className="container"
->
-  <PageBlock>
-    <div
-      className="hidden upperWrapper"
-    >
-      <UpperFooter
-        footerMessages={
-          Object {
-            "aboutJobsDB": Object {
-              "aboutJobsDB": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
-              },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
-              },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-              },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-              },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
-              },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
-              },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
-              },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
-          }
-        }
-        linkRenderer={[Function]}
-      />
-      <FooterLinks
-        footerMessages={
-          Object {
-            "aboutJobsDB": Object {
-              "aboutJobsDB": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
-              },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
-              },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-              },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-              },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
-              },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
-              },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
-              },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
-          }
-        }
-        linkRenderer={[Function]}
-      />
-    </div>
-    <div
-      className="lowerWrapper"
-    >
-      <div
-        className="endOfLineWithoutCountry"
-      >
-        <div
-          className="collapsed lowerWrapperLinks"
-        >
-          <FooterLinks
-            displayInDesktop={true}
-            footerMessages={
-              Object {
-                "aboutJobsDB": Object {
-                  "aboutJobsDB": Object {
-                    "title": "About jobsDB",
-                    "url": "/pages/aboutus",
-                  },
-                  "contactUs": Object {
-                    "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                    "title": "Contact us",
-                    "url": "/pages/regional-coverage",
-                  },
-                  "title": "About JobsDB",
-                },
-                "cfsLink": "/hk/en",
-                "cmsLink": "/en-hk",
-                "connect": Object {
-                  "appStore": Object {
-                    "icon": "apple",
-                    "title": "jobsDB @ App Store",
-                    "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-                  },
-                  "playStore": Object {
-                    "icon": "android",
-                    "title": "jobsDB @ Google Play",
-                    "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-                  },
-                  "title": "Connect",
-                },
-                "copyright": "Copyright © 1998-{year}, jobsDB.",
-                "legal": Object {
-                  "title": "Legal terms",
-                  "url": "/legal.do",
-                },
-                "partners": Object {
-                  "bdjobs": Object {
-                    "title": "Bdjobs (Bandladesh)",
-                    "url": "https://www.bdjobs.com/",
-                  },
-                  "brighterMonday": Object {
-                    "title": "Brighter Monday (East Africa)",
-                    "url": "https://www.brightermonday.com/",
-                  },
-                  "catho": Object {
-                    "title": "Catho (Brazil)",
-                    "url": "https://www.catho.com.br/",
-                  },
-                  "title": "International partners",
-                  "zhaopin": Object {
-                    "title": "Zhaopin (China)",
-                    "url": "https://www.zhaopin.com/",
-                  },
-                },
-                "privacy": Object {
-                  "title": "Privacy Statement",
-                  "url": "/pages/terms/privacy-policy",
-                },
-                "rightReserved": "All Rights Reserved.",
-                "siteMap": Object {
-                  "title": "Site Map",
-                  "url": "/sitemap",
-                },
-                "terms": Object {
-                  "title": "Terms & Conditions",
-                  "url": "/pages/terms/terms-conditions",
-                },
-              }
-            }
-            linkRenderer={[Function]}
-          />
-          <Text
-            baseline={true}
-            secondary={true}
-            semiStrong={true}
-            whispering={true}
-          >
-            Copyright © 1998-2019, jobsDB.
-          </Text>
-        </div>
-        <div
-          className="chevronIcon"
-          onClick={[Function]}
-        >
-          <ChevronIcon
-            className=""
-            direction="down"
-            id="pageBottom"
-            svgClassName="chevronSvg"
-          />
-        </div>
-      </div>
-    </div>
-  </PageBlock>
-</footer>
+exports[`Footer component Localization should render en-hk fat footer 1`] = `
+<GlobalFooter
+  country="hk"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About Us",
+          "url": "https://hk.jobsdb.com/en-hk/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact Us",
+          "url": "https://hk.jobsdb.com/en-hk/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://hk.jobsdb.com/hk/en/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/hk/en",
+      "cmsLink": "/en-hk",
+      "connect": Object {
+        "appStore": Object {
+          "icon": "apple",
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "icon": "facebook",
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "icon": "android",
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "icon": "twitter",
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "Copyright © 1998-{year}, jobsDB.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise With Us",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://hk.jobsdb.com/hk/en/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search Candidates",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse Jobs",
+          "url": "https://hk.jobsdb.com/hk/en/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://hk.jobsdb.com/hk/en/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://hk.jobsdb.com/hk/en/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post Resumes",
+          "url": "https://hk.jobsdb.com/hk/en/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "Legal terms",
+        "url": "https://m.jobsdb.com/en-hk/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Privacy Statement",
+        "url": "https://hk.jobsdb.com/en-hk/pages/terms/privacy-policy",
+      },
+      "rightReserved": "All Rights Reserved.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://hk.jobsdb.com/hk/en/sitemap",
+      },
+      "terms": Object {
+        "title": "Terms & Conditions",
+        "url": "https://hk.jobsdb.com/en-hk/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={true}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
 `;
 
-exports[`Footer component should render with default props 1`] = `
-<footer
-  className="container"
->
-  <PageBlock>
-    <div
-      className="hidden upperWrapper"
-    >
-      <UpperFooter
-        footerMessages={
-          Object {
-            "aboutJobsDB": Object {
-              "aboutJobsDB": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
-              },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
-              },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-              },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-              },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
-              },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
-              },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
-              },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
-          }
-        }
-        linkRenderer={[Function]}
-      />
-      <FooterLinks
-        footerMessages={
-          Object {
-            "aboutJobsDB": Object {
-              "aboutJobsDB": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
-              },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
-              },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-              },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-              },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
-              },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
-              },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
-              },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
-          }
-        }
-        linkRenderer={[Function]}
-      />
-    </div>
-    <div
-      className="lowerWrapper"
-    >
-      <div
-        className="endOfLineWithoutCountry"
-      >
-        <div
-          className="collapsed lowerWrapperLinks"
-        >
-          <FooterLinks
-            displayInDesktop={true}
-            footerMessages={
-              Object {
-                "aboutJobsDB": Object {
-                  "aboutJobsDB": Object {
-                    "title": "About jobsDB",
-                    "url": "/pages/aboutus",
-                  },
-                  "contactUs": Object {
-                    "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                    "title": "Contact us",
-                    "url": "/pages/regional-coverage",
-                  },
-                  "title": "About JobsDB",
-                },
-                "cfsLink": "/hk/en",
-                "cmsLink": "/en-hk",
-                "connect": Object {
-                  "appStore": Object {
-                    "icon": "apple",
-                    "title": "jobsDB @ App Store",
-                    "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
-                  },
-                  "playStore": Object {
-                    "icon": "android",
-                    "title": "jobsDB @ Google Play",
-                    "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
-                  },
-                  "title": "Connect",
-                },
-                "copyright": "Copyright © 1998-{year}, jobsDB.",
-                "legal": Object {
-                  "title": "Legal terms",
-                  "url": "/legal.do",
-                },
-                "partners": Object {
-                  "bdjobs": Object {
-                    "title": "Bdjobs (Bandladesh)",
-                    "url": "https://www.bdjobs.com/",
-                  },
-                  "brighterMonday": Object {
-                    "title": "Brighter Monday (East Africa)",
-                    "url": "https://www.brightermonday.com/",
-                  },
-                  "catho": Object {
-                    "title": "Catho (Brazil)",
-                    "url": "https://www.catho.com.br/",
-                  },
-                  "title": "International partners",
-                  "zhaopin": Object {
-                    "title": "Zhaopin (China)",
-                    "url": "https://www.zhaopin.com/",
-                  },
-                },
-                "privacy": Object {
-                  "title": "Privacy Statement",
-                  "url": "/pages/terms/privacy-policy",
-                },
-                "rightReserved": "All Rights Reserved.",
-                "siteMap": Object {
-                  "title": "Site Map",
-                  "url": "/sitemap",
-                },
-                "terms": Object {
-                  "title": "Terms & Conditions",
-                  "url": "/pages/terms/terms-conditions",
-                },
-              }
-            }
-            linkRenderer={[Function]}
-          />
-          <Text
-            baseline={true}
-            secondary={true}
-            semiStrong={true}
-            whispering={true}
-          >
-            Copyright © 1998-2019, jobsDB.
-          </Text>
-        </div>
-        <div
-          className="chevronIcon"
-          onClick={[Function]}
-        >
-          <ChevronIcon
-            className=""
-            direction="down"
-            id="pageBottom"
-            svgClassName="chevronSvg"
-          />
-        </div>
-      </div>
-    </div>
-  </PageBlock>
-</footer>
+exports[`Footer component Localization should render en-id 1`] = `
+<GlobalFooter
+  country="id"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About jobsDB",
+          "url": "https://id.jobsdb.com/en-id/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://id.jobsdb.com/id/en/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact us",
+          "url": "https://id.jobsdb.com/en-id/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://id.jobsdb.com/id/en/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/id/en",
+      "cmsLink": "/en-id",
+      "connect": Object {
+        "appStore": Object {
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "Copyright © 1998-{year}, jobsDB.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise with us",
+          "url": "https://id.jobsdb.com/en-id/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://id.jobsdb.com/id/en/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://id.jobsdb.com/en-id/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search candidates",
+          "url": "https://id.jobsdb.com/en-id/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse jobs",
+          "url": "https://id.jobsdb.com/id/en/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://id.jobsdb.com/id/en/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://id.jobsdb.com/id/en/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://id.jobsdb.com/id/en/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post resumes",
+          "url": "https://id.jobsdb.com/id/en/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "Legal terms",
+        "url": "https://m.jobsdb.co.id/en-id/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Privacy Statement",
+        "url": "https://id.jobsdb.com/en-id/pages/terms/privacy-policy",
+      },
+      "rightReserved": "All Rights Reserved.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://id.jobsdb.com/id/en/sitemap",
+      },
+      "terms": Object {
+        "title": "Terms & Conditions",
+        "url": "https://id.jobsdb.com/en-id/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
+`;
+
+exports[`Footer component Localization should render en-sg 1`] = `
+<GlobalFooter
+  country="sg"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About Us",
+          "url": "https://www.jobstreet.com.sg/en/about-us/",
+        },
+        "career": Object {
+          "title": "Career @ JobStreet",
+          "url": "https://www.jobstreet.com.sg/en/companies/491262-jobstreet",
+        },
+        "contact": Object {
+          "title": "Contact Us",
+          "url": "https://www.jobstreet.com.sg/en/about-us/contact-us-singapore",
+        },
+        "feedback": Object {
+          "title": "Send Feedback",
+          "url": "https://myjobstreet.jobstreet.com.sg/home/feedback.php?site=sg&sub=feedback",
+        },
+        "help": Object {
+          "title": "FAQ",
+          "url": "https://www.jobstreet.com.sg/en/user/",
+        },
+        "news": Object {
+          "title": "News & Events",
+          "url": "https://www.jobstreet.com.sg/aboutus/press_releases.htm",
+        },
+        "title": "About JobStreet",
+      },
+      "connect": Object {
+        "appStore": Object {
+          "icon": "apple",
+          "title": "JobStreet @ App Store",
+          "url": "https://itunes.apple.com/sg/app/jobstreet/id367294492",
+        },
+        "facebook": Object {
+          "icon": "facebook",
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobStreetSingapore",
+        },
+        "playStore": Object {
+          "icon": "android",
+          "title": "JobStreet @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobstreet.jobstreet&hl=en",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "icon": "twitter",
+          "title": "Twitter",
+          "url": "https://twitter.com/JobStreetSG",
+        },
+      },
+      "copyright": "Copyright ©, jobStreet.com.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise With Us",
+          "url": "https://www.jobstreet.com.sg/employers/jobstreet-com-products-services",
+        },
+        "companies": Object {
+          "title": "Company Profiles",
+          "url": "https://www.jobstreet.com.sg/en/companies",
+        },
+        "postClassified": Object {
+          "title": "Post a Classified Ad",
+          "url": "https://www.jobstreet.com.sg/employers/jobstreet-com-classifieds",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://www.jobstreet.com.sg/employers",
+        },
+        "searchCandidates": Object {
+          "title": "Search for Resumes",
+          "url": "https://www.jobstreet.com.sg/employers/jobstreet-resume-search",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "careerResources": Object {
+          "title": "Career Resources",
+          "url": "https://www.jobstreet.com.sg/career-resources",
+        },
+        "jobsByCompany": Object {
+          "title": "Jobs by Company Name",
+          "url": "https://www.jobstreet.com.sg/en/job-search/find-company?c=a",
+        },
+        "jobsBySpecialisation": Object {
+          "title": "Jobs by Specialisation",
+          "url": "https://www.jobstreet.com.sg/en/job-search/find-specialization?sal=1",
+        },
+        "safeJobSearch": Object {
+          "title": "Safe Job Search Guide",
+          "url": "https://www.jobstreet.com.sg/en/about-us/safe-job-search-guide/",
+        },
+        "testimonials": Object {
+          "title": "Testimonials",
+          "url": "https://www.jobstreet.com.sg/en/about-us/testimonials",
+        },
+        "title": "Job Seekers",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Privacy Statement",
+        "url": "https://www.jobstreet.com.sg/en/about-us/privacy-policy",
+      },
+      "rightReserved": "All Rights Reserved.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://www.jobstreet.com.sg/sitemap.htm",
+      },
+      "terms": Object {
+        "title": "Terms & Conditions",
+        "url": "https://www.jobstreet.com.sg/en/about-us/terms-of-use",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
+`;
+
+exports[`Footer component Localization should render en-th 1`] = `
+<GlobalFooter
+  country="th"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About jobsDB",
+          "url": "https://th.jobsdb.com/en-th/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://th.jobsdb.com/th/en/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact us",
+          "url": "https://th.jobsdb.com/en-th/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://th.jobsdb.com/th/en/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/th/en",
+      "cmsLink": "/en-th",
+      "connect": Object {
+        "appStore": Object {
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "Copyright © 1998-{year}, jobsDB.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise with us",
+          "url": "https://th.jobsdb.com/en-th/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://th.jobsdb.com/th/en/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://th.jobsdb.com/en-th/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search candidates",
+          "url": "https://th.jobsdb.com/en-th/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse jobs",
+          "url": "https://th.jobsdb.com/th/en/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://th.jobsdb.com/th/en/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://th.jobsdb.com/th/en/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://th.jobsdb.com/th/en/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post resumes",
+          "url": "https://th.jobsdb.com/th/en/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "Legal terms",
+        "url": "https://m.jobsdb.co.th/en-th/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Privacy Statement",
+        "url": "https://th.jobsdb.com/en-th/pages/terms/privacy-policy",
+      },
+      "rightReserved": "All Rights Reserved.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://th.jobsdb.com/th/en/sitemap",
+      },
+      "terms": Object {
+        "title": "Terms & Conditions",
+        "url": "https://th.jobsdb.com/en-th/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
+`;
+
+exports[`Footer component Localization should render id-id 1`] = `
+<GlobalFooter
+  country="id"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About jobsDB",
+          "url": "https://id.jobsdb.com/id-id/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://id.jobsdb.com/id/id/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact us",
+          "url": "https://id.jobsdb.com/id-id/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://id.jobsdb.com/id/id/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/id/id",
+      "cmsLink": "/id-id",
+      "connect": Object {
+        "appStore": Object {
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "Hak Cipta© 1998-{year}, jobsDB.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise with us",
+          "url": "https://id.jobsdb.com/id-id/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://id.jobsdb.com/id/id/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://id.jobsdb.com/id-id/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search candidates",
+          "url": "https://id.jobsdb.com/id-id/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse jobs",
+          "url": "https://id.jobsdb.com/id/id/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://id.jobsdb.com/id/id/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://id.jobsdb.com/id/id/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://id.jobsdb.com/id/id/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post resumes",
+          "url": "https://id.jobsdb.com/id/id/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "Legal terms",
+        "url": "https://m.jobsdb.co.id/id-id/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Pernyataan Privasi",
+        "url": "https://id.jobsdb.com/id-id/pages/terms/privacy-policy",
+      },
+      "rightReserved": "Semua Hak Dilindungi.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://id.jobsdb.com/id/id/sitemap",
+      },
+      "terms": Object {
+        "title": "Syarat dan ketentuan",
+        "url": "https://id.jobsdb.com/id-id/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapura (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
+`;
+
+exports[`Footer component Localization should render th-th 1`] = `
+<GlobalFooter
+  country="th"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About jobsDB",
+          "url": "https://th.jobsdb.com/th-th/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://th.jobsdb.com/th/th/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact us",
+          "url": "https://th.jobsdb.com/th-th/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://th.jobsdb.com/th/th/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/th/th",
+      "cmsLink": "/th-th",
+      "connect": Object {
+        "appStore": Object {
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "สงวนลิขสิทธิ์ 1998-{year} jobsDB",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise with us",
+          "url": "https://th.jobsdb.com/th-th/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://th.jobsdb.com/th/th/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://th.jobsdb.com/th-th/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search candidates",
+          "url": "https://th.jobsdb.com/th-th/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse jobs",
+          "url": "https://th.jobsdb.com/th/th/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://th.jobsdb.com/th/th/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://th.jobsdb.com/th/th/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://th.jobsdb.com/th/th/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post resumes",
+          "url": "https://th.jobsdb.com/th/th/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "ข้อกำหนดทางกฎหมาย",
+        "url": "https://m.jobsdb.co.th/th-th/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "คำชี้แจงสิทธิส่วนบุคคล",
+        "url": "https://th.jobsdb.com/th-th/pages/terms/privacy-policy",
+      },
+      "rightReserved": "",
+      "siteMap": Object {
+        "title": "แผนที่เว็บไซต์",
+        "url": "https://th.jobsdb.com/th/th/sitemap",
+      },
+      "terms": Object {
+        "title": "ข้อกำหนดและเงื่อนไข",
+        "url": "https://th.jobsdb.com/th-th/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "ไทย (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "ฮ่องกง (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "อินโดนีเซีย (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "อินโดนีเซีย (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "สิงคโปร์ (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={true}
+/>
+`;
+
+exports[`Footer component Localization should render without offset if prop is passed 1`] = `
+<GlobalFooter
+  country="hk"
+  footerMessages={
+    Object {
+      "about": Object {
+        "about": Object {
+          "title": "About Us",
+          "url": "https://hk.jobsdb.com/en-hk/pages/aboutus",
+        },
+        "career": Object {
+          "title": "Career @ jobsDB",
+          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong/1",
+        },
+        "contactUs": Object {
+          "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+          "title": "Contact Us",
+          "url": "https://hk.jobsdb.com/en-hk/pages/regional-coverage",
+        },
+        "faq": Object {
+          "title": "FAQ",
+          "url": "https://hk.jobsdb.com/hk/en/StaticContentFullContainer/AboutUS/faq/index.htm",
+        },
+        "title": "About JobsDB",
+      },
+      "cfsLink": "/hk/en",
+      "cmsLink": "/en-hk",
+      "connect": Object {
+        "appStore": Object {
+          "icon": "apple",
+          "title": "jobsDB @ App Store",
+          "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+        },
+        "facebook": Object {
+          "icon": "facebook",
+          "title": "Facebook",
+          "url": "https://www.facebook.com/JobsDB.HongKong",
+        },
+        "playStore": Object {
+          "icon": "android",
+          "title": "jobsDB @ Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+        },
+        "title": "Connect",
+        "twitter": Object {
+          "icon": "twitter",
+          "title": "Twitter",
+          "url": "https://twitter.com/HKJobs",
+        },
+      },
+      "copyright": "Copyright © 1998-{year}, jobsDB.",
+      "employers": Object {
+        "advertise": Object {
+          "title": "Advertise With Us",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-and-services/",
+        },
+        "bestCompanies": Object {
+          "title": "Best Companies",
+          "url": "https://hk.jobsdb.com/hk/en/companies",
+        },
+        "postJob": Object {
+          "title": "Post a Job Ad",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-services/job-ads/",
+        },
+        "searchCandidates": Object {
+          "title": "Search Candidates",
+          "url": "https://hk.jobsdb.com/en-hk/cms/employer/product-services/talent-search/",
+        },
+        "title": "Employers",
+      },
+      "jobSeeker": Object {
+        "browse": Object {
+          "title": "Browse Jobs",
+          "url": "https://hk.jobsdb.com/hk/en/browse",
+        },
+        "careerInsights": Object {
+          "title": "Career Insights",
+          "url": "https://hk.jobsdb.com/hk/en/career-insights",
+        },
+        "jobAlerts": Object {
+          "title": "Job Alerts",
+          "url": "https://hk.jobsdb.com/hk/en/JobAlert/JobAlertCreation",
+        },
+        "myJobsDB": Object {
+          "title": "My jobsDB",
+          "url": "https://hk.jobsdb.com/hk/en/MyJobsDB",
+        },
+        "resumes": Object {
+          "title": "Post Resumes",
+          "url": "https://hk.jobsdb.com/hk/en/Resumes/ResumeIndex",
+        },
+        "title": "Job Seekers",
+      },
+      "legal": Object {
+        "title": "Legal terms",
+        "url": "https://m.jobsdb.com/en-hk/legal.do",
+      },
+      "partners": Object {
+        "bdjobs": Object {
+          "title": "Bdjobs (Bandladesh)",
+          "url": "https://www.bdjobs.com/",
+        },
+        "brighterMonday": Object {
+          "title": "Brighter Monday (East Africa)",
+          "url": "https://www.brightermonday.com/",
+        },
+        "catho": Object {
+          "title": "Catho (Brazil)",
+          "url": "https://www.catho.com.br/",
+        },
+        "jobStreet": Object {
+          "title": "JobStreet (S.E. Asia)",
+          "url": "https://www.jobstreet.com/",
+        },
+        "jobberman": Object {
+          "title": "Jobberman (West Africa)",
+          "url": "https://www.jobberman.com/",
+        },
+        "jora": Object {
+          "title": "Jora (Hong Kong)",
+          "url": "https://hk.jora.com/",
+        },
+        "occ": Object {
+          "title": "OCC Mundial (Mexico)",
+          "url": "https://www.occ.com.mx/",
+        },
+        "seaman": Object {
+          "title": "Seaman Jobsite (Philippines)",
+          "url": "https://www.seamanjobsite.com/",
+        },
+        "seek": Object {
+          "title": "SEEK (Australia)",
+          "url": "https://www.seek.com.au/",
+        },
+        "title": "International Partners",
+        "workAbroad": Object {
+          "title": "Work Abroad (Philippines)",
+          "url": "https://www.workabroad.ph/",
+        },
+        "workana": Object {
+          "title": "Workana",
+          "url": "https://www.workana.com/",
+        },
+        "zhaopin": Object {
+          "title": "Zhaopin (China)",
+          "url": "https://www.zhaopin.com/",
+        },
+      },
+      "privacy": Object {
+        "title": "Privacy Statement",
+        "url": "https://hk.jobsdb.com/en-hk/pages/terms/privacy-policy",
+      },
+      "rightReserved": "All Rights Reserved.",
+      "siteMap": Object {
+        "title": "Site Map",
+        "url": "https://hk.jobsdb.com/hk/en/sitemap",
+      },
+      "terms": Object {
+        "title": "Terms & Conditions",
+        "url": "https://hk.jobsdb.com/en-hk/pages/terms/terms-conditions",
+      },
+    }
+  }
+  hasCompanyProfile={true}
+  isExpandedVersion={false}
+  linkRenderer={[Function]}
+  locales={
+    Array [
+      Object {
+        "ItemIcon": [Function],
+        "country": "hk",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Hong Kong (English)",
+        "url": "https://hk.jobsdb.com/hk",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Indonesia (English)",
+        "url": "https://id.jobsdb.com/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "id",
+        "language": "id",
+        "languageDisplay": "Bahasa",
+        "title": "Indonesia (Bahasa)",
+        "url": "https://id.jobsdb.com/id/id",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "sg",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Singapore (English)",
+        "url": "https://sg.jobsdb.com/sg",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "en",
+        "languageDisplay": "English",
+        "title": "Thailand (English)",
+        "url": "https://th.jobsdb.com/th",
+      },
+      Object {
+        "ItemIcon": [Function],
+        "country": "th",
+        "language": "th",
+        "languageDisplay": "ภาษาไทย",
+        "title": "ไทย (ภาษาไทย)",
+        "url": "https://th.jobsdb.com/th/th",
+      },
+    ]
+  }
+  showCountryLanguage={true}
+  showHeaderActionTrayOffset={false}
+/>
 `;

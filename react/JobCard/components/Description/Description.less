@@ -1,0 +1,24 @@
+@import (reference) '~seek-asia-style-guide/theme';
+@import (reference) '../../JobCard';
+
+.text {
+  color: @saGrey1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-bottom: @grid-base;
+}
+
+.desktopOnly {
+  display: none;
+  @media @desktop {
+    display: flex;
+  }
+}
+
+.description {
+  padding-top: @grid-base * 4;
+  @media @desktop {
+    padding-top: @grid-base * 2;
+    margin-right: @grid-base * 4;
+  }
+}

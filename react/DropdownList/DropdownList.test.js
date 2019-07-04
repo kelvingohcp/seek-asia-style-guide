@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import DropdownList from './DropdownList';
-import styles from './DropdownList.less';
 
 describe('DropdownList:', () => {
   it('should render value with children', () => {
@@ -53,7 +52,7 @@ describe('DropdownList:', () => {
 
   it('should render with className', () => {
     const wrapper = shallow(
-      <DropdownList value="testValue" className={styles.root}>
+      <DropdownList value="testValue" className="foo">
         <span />
       </DropdownList>
     );

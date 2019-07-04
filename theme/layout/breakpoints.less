@@ -10,6 +10,7 @@
   (@mobile-breakpoint - 1)
 ); // alias to make thing less broken, as in mobile first approach it is not necessary as always be the default state
 @tablet: %(~'only screen and (min-width: %s)', @mobile-breakpoint);
+@aboveMobile: %(~'only screen and (min-width: %s)', @mobile-breakpoint);
 @desktop: %(~'only screen and (min-width: %s)', @tablet-breakpoint);
 @widescreen: %(~'only screen and (min-width: %s)', @desktop-breakpoint);
 

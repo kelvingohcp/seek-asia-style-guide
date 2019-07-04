@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Dropdown from './Dropdown';
-import styles from './Dropdown.less';
-import classnames from 'classnames';
 import fieldMessageOptions from '../private/FieldMessage/FieldMessage.demo';
 import fieldLabelOptions from '../private/FieldLabel/FieldLabel.demo';
 
@@ -78,13 +76,6 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
-        {
-          label: 'Focus',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootFocus)
-          })
-        },
         {
           label: 'Placeholder selectable',
           transformProps: ({ className, ...props }) => ({

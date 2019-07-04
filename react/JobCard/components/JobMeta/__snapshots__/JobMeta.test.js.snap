@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobMeta should render correctly 1`] = `
+<Fragment>
+  <SellingPoint
+    sellingPoints={
+      Array [
+        "sellingPoints 1",
+        "sellingPoints 2",
+        "sellingPoints 3",
+      ]
+    }
+    showSellingPoint={true}
+  />
+  <ShelfLink
+    mobileOnly={false}
+    shelfSectionOpen={false}
+  />
+  <JobLabel />
+</Fragment>
+`;

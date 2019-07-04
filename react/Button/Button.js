@@ -1,4 +1,6 @@
+/* eslint css-modules/no-unused-class: [2, { markAsUsed: [group] }] */
 import styles from './Button.less';
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Constants } from 'seek-asia-style-guide/react';

@@ -9,19 +9,18 @@ const IconList = ({ list, className }) => {
   return (
     <Fragment>
       {
-        list.filter(({ show = true }) => show).map(({ iconType, content }, i, filteredList) => (
+        list.filter(({ show = true }) => show).map(({ iconType, content }, i) => (
           <div
             key={i}
             className={classnames({
               [styles.container]: true,
-              [styles.last]: filteredList.length === i + 1,
               [className]: className
             })}>
             <div className={styles.iconWrapper}>
               <Icon type={iconType} className={styles.icon} size="small" />
             </div>
             <Text key={i} whispering baseline={false} className={styles.textWrapper}>
-              {React.isValidElement(content) ? content : <span>{content}</span>}
+              {content || 'Not specified'}
             </Text>
           </div>
         ))

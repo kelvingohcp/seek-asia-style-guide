@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 import { Button, ChevronIcon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 
+const COLOR_GREY = 'grey';
+const COLOR_WHITE = 'white';
+const POSITION_CENTER = 'center';
+const POSITION_LEFT = 'left';
+
 export default class ShowMore extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -11,12 +16,17 @@ export default class ShowMore extends Component {
     lblShowMore: PropTypes.string,
     lblShowLess: PropTypes.string,
     disable: PropTypes.bool,
-    onPanelOpen: PropTypes.func
+    position: PropTypes.oneOf([POSITION_LEFT, POSITION_CENTER]),
+    color: PropTypes.oneOf([COLOR_WHITE, COLOR_GREY]),
+    onPanelOpen: PropTypes.func,
+    onPanelToggle: PropTypes.func
   };
 
   static defaultProps = {
     lblShowMore: 'Show more',
-    lblShowLess: 'Show less'
+    lblShowLess: 'Show less',
+    color: COLOR_WHITE,
+    position: POSITION_CENTER
   };
 
   constructor(props) {
@@ -47,21 +57,27 @@ export default class ShowMore extends Component {
   }
 
   handleClick(e) {
-    const { onPanelOpen = () => {} } = this.props;
+    const { isPanelOpened } = this.state;
+    const { onPanelOpen, onPanelToggle = () => {} } = this.props;
     e.preventDefault();
 
-    if (!this.state.isPanelOpened) {
-      onPanelOpen();
+    if (!isPanelOpened) {
+      if (typeof onPanelOpen === 'function') {
+        console.warn('Property of onPanelOpen has been deprecated. Use onPanelToggle instead.');
+        onPanelOpen();
+      }
     }
 
+    onPanelToggle({ status: (!isPanelOpened ? 'open' : 'close') });
+
     this.setState({
-      isPanelOpened: !this.state.isPanelOpened
+      isPanelOpened: !isPanelOpened
     });
   }
 
   render() {
     const { isPanelOpened, contentHeight } = this.state;
-    const { disable, showLessHeight, children, lblShowLess, lblShowMore } = this.props;
+    const { disable, color, showLessHeight, children, lblShowLess, lblShowMore, position } = this.props;
 
     const panelHeight = (isPanelOpened || disable) ? contentHeight : showLessHeight;
     return (
@@ -73,12 +89,20 @@ export default class ShowMore extends Component {
         </div>
         {
           !disable && contentHeight > showLessHeight && (
-            <div className={classnames({ [styles.outCanvasGradientMaskTop]: !isPanelOpened })}>
+            <div
+              className={classnames({
+                [styles.outCanvasGradientMaskTopWhite]: !isPanelOpened && color === COLOR_WHITE,
+                [styles.outCanvasGradientMaskTopGrey]: !isPanelOpened && color === COLOR_GREY
+              })}>
               <Button
                 id='btnShowMore'
                 color='hyperlink'
-                className={styles.button}
-                onClick={this.handleClick} >
+                className={classnames(styles.button, {
+                  [styles.buttonGrey]: color === COLOR_GREY,
+                  [styles.buttonWhite]: color === COLOR_WHITE,
+                  [styles.buttonLeft]: position === POSITION_LEFT
+                })}
+                onClick={this.handleClick}>
                 <span>
                   {isPanelOpened ? lblShowLess : lblShowMore}
                 </span>

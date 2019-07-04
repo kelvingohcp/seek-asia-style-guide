@@ -212,7 +212,7 @@ export default class Demo extends Component {
                   <Text screaming>Sketch Symbols</Text>
                 </Section>
               </PageBlock>
-              <div className={styles.symbols}>
+              <div>
                 {
                   map(sketch.blockSymbols || {}, (element, name) => (
                     <div key={name}>
@@ -231,7 +231,7 @@ export default class Demo extends Component {
                 }
               </div>
               <PageBlock>
-                <div className={styles.symbols}>
+                <div>
                   {
                     map(sketch.symbols || {}, (element, name) => (
                       <div key={name}>

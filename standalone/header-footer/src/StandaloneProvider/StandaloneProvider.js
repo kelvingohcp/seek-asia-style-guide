@@ -31,6 +31,7 @@ export default class StandaloneProvider extends Component {
 
     return (
       <div className={cssSelectorPrefix.replace('.', '')}>
+        {/* eslint-disable-next-line css-modules/no-undef-class */}
         <div className={styles.root}>
           <StandaloneComponent {...componentProps} />
         </div>

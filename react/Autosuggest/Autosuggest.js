@@ -1,4 +1,5 @@
 import styles from './Autosuggest.less';
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
@@ -132,7 +133,8 @@ export default class Autosuggest extends Component {
       autosuggestProps,
       suggestionsContainerClassName,
       showMobileBackdrop,
-      showFullWidthSuggestionList
+      showFullWidthSuggestionList,
+      compact
     } = this.props;
     const { theme = {} } = autosuggestProps;
 
@@ -141,15 +143,26 @@ export default class Autosuggest extends Component {
       renderInputComponent: this.renderInputComponent,
       ...autosuggestProps,
       theme: {
-        ...styles,
-        suggestionsContainer: classnames({
-          [styles.suggestionsContainer]: true,
+        ...{
+          container: styles.container,
+          containerOpen: styles.containerOpen,
+          suggestionsContainerOpen: styles.suggestionsContainerOpen,
+          sectionTitle: styles.sectionTitle,
+          sectionContainer: styles.sectionContainer,
+          suggestion: styles.suggestion,
+          suggestionHighlighted: styles.suggestionHighlighted
+        },
+        suggestionsContainer: classnames(styles.suggestionsContainer, {
+          [styles.compact]: compact,
           [styles.suggestionsContainer_withLabel]: label,
           [styles.suggestionsContainer_fullWidth]: showFullWidthSuggestionList,
           [suggestionsContainerClassName]: suggestionsContainerClassName
         }),
         suggestionsList: classnames({
           [styles.suggestionsList_fullWidth]: showFullWidthSuggestionList
+        }),
+        sectionTitle: classnames(styles.sectionTitle, {
+          [styles.sectionTitle_fullWidth]: showFullWidthSuggestionList
         }),
         ...theme
       }

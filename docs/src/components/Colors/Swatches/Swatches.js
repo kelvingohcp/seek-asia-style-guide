@@ -33,7 +33,7 @@ const Swatches = ({ theme }) => {
             </div>
           </div>
         );
-      })};
+      })}
     </div>
   );
 };

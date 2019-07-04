@@ -29,8 +29,7 @@
     display: none;
   }
 
-  &:not([readonly]):not([disabled]):focus,
-  .rootFocus & {
+  &:not([readonly]):not([disabled]):focus {
     outline: none;
     border-color: transparent;
     .focus();
@@ -44,8 +43,7 @@
     border-color: transparent;
     box-shadow: 0 0 0 @field-border-width @sk-pink;
 
-    &:not([readonly]):not([disabled]):focus,
-    .rootFocus & {
+    &:not([readonly]):not([disabled]):focus {
       border-color: transparent;
       box-shadow: 0 0 0 @field-border-width @sk-pink;
     }

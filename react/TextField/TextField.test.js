@@ -6,6 +6,7 @@ describe('TextField', () => {
   const requiredProps = {
     id: 'testTextField',
     onChange: () => {},
+    onEnter: () => {},
     value: ''
   };
 
@@ -65,6 +66,13 @@ describe('TextField', () => {
     wrapper.find('input').simulate('change', { target: { value: 'foo' } });
     expect(onChange.mock.calls.length).toEqual(1);
     expect(onChange.mock.calls[0][0].target.value).toEqual('foo');
+  });
+
+  it('should invoke the enter handler', () => {
+    const onEnter = jest.fn();
+    const wrapper = shallow(<TextField {...requiredProps} onEnter={onEnter} />);
+    wrapper.find('input').simulate('keyDown', { keyCode: 13 });
+    expect(onEnter.mock.calls.length).toEqual(1);
   });
 
   it('should render with input props', () => {

@@ -32,3 +32,36 @@ exports[`ShowMore: should render value 1`] = `
   </div>
 </div>
 `;
+
+exports[`ShowMore: should render value with color passed in 1`] = `
+<div>
+  <div
+    className="panel"
+    style={
+      Object {
+        "maxHeight": "150px",
+      }
+    }
+  >
+    <div>
+      <div
+        className="root"
+      >
+        <div
+          className="root"
+        >
+          <span
+            className="root baseline"
+          >
+            <span
+              className=""
+            >
+              At jobsDB, we believe in an open and inclusive world for all.Here, opportunities and possibilities are plenty: A fresh start. A new career.A welcome change. These are just a few of the things we help people explore.
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -6,6 +6,7 @@ export const CompanyPropTypes = {
   name: PropTypes.string,
   link: PropTypes.string,
   title: PropTypes.string,
+  logoUrl: PropTypes.string,
   isPrivate: PropTypes.bool
 };
 
@@ -13,9 +14,8 @@ export const JobType = {
   company: PropTypes.shape(CompanyPropTypes),
   jobTitle: PropTypes.string.isRequired,
   jobUrl: PropTypes.string.isRequired,
-  sellingPoints: PropTypes.arrayOf(PropTypes.string),
-  companyPictureUrl: PropTypes.string,
   companyLogoUrl: PropTypes.string,
+  sellingPoints: PropTypes.arrayOf(PropTypes.string),
   description: PropTypes.string,
   locations: LocationsPropTypes,
   salary: PropTypes.string,
@@ -26,11 +26,12 @@ export const JobType = {
   shelf: ShelfPropTypes,
   appliedDate: PropTypes.string,
   isExpired: PropTypes.bool,
-  qualification: PropTypes.string,
-  careerLevel: PropTypes.string,
-  workExperience: PropTypes.string,
-  employmentTerm: PropTypes.string,
-  bannerUrl: PropTypes.string
+  qualificationName: PropTypes.string,
+  careerLevelName: PropTypes.string,
+  workExperienceName: PropTypes.string,
+  employmentTermName: PropTypes.string,
+  bannerUrl: PropTypes.string,
+  className: PropTypes.string
 };
 
 export const JobCardPropTypes = {
@@ -39,6 +40,7 @@ export const JobCardPropTypes = {
   hideSalary: PropTypes.bool,
   isSelected: PropTypes.bool,
   isSplitView: PropTypes.bool,
+  isIntersecting: PropTypes.bool,
   isVariation: PropTypes.bool,
   enableBrandedAd: PropTypes.bool,
   job: PropTypes.shape(JobType).isRequired,
@@ -47,7 +49,6 @@ export const JobCardPropTypes = {
   LinkComponent: PropTypes.func,
   onBookmarkClick: PropTypes.func,
   showCompanyLogo: PropTypes.bool,
-  showCompanyPic: PropTypes.bool,
   showDescription: PropTypes.bool,
   showHighlightedBg: PropTypes.bool,
   showSellingPoint: PropTypes.bool,

@@ -1,20 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FooterLinks: should render links with messages and linking functions 1`] = `
-<div
+exports[`FooterLinks: should render links with messages 1`] = `
+<ul
   className="list"
 >
-  <LinkItem
-    title="Privacy Statement"
-    url="/pages/terms/privacy-policy"
-  />
-  <LinkItem
-    title="Terms & Conditions"
-    url="/pages/terms/terms-conditions"
-  />
-  <LinkItem
-    title="Site Map"
-    url="/sitemap"
-  />
-</div>
+  <li
+    className="itemMobile"
+  >
+    <a
+      className="link"
+      rel="nofollow"
+    />
+  </li>
+  <li
+    className="item"
+  >
+    <a
+      className="link"
+      rel="nofollow"
+    />
+  </li>
+  <li
+    className="item"
+  >
+    <a
+      className="link"
+      rel="nofollow"
+    />
+  </li>
+  <li
+    className="item"
+  >
+    <a
+      className="link"
+    />
+  </li>
+</ul>
 `;

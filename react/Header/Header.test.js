@@ -61,15 +61,6 @@ describe('Header', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render with hide country', () => {
-    const testProps = {
-      ...defaultProps,
-      showCountryLanguage: false
-    };
-    const wrapper = shallow(<Header {...testProps} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it('should render with links list', () => {
     const testProps = {
       ...defaultProps,
@@ -90,6 +81,15 @@ describe('Header', () => {
         showMenu: false
       },
       onMenuOpen: () => {}
+    };
+    const wrapper = shallow(<Header {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render without navigation menu', () => {
+    const testProps = {
+      ...defaultProps,
+      showNavMenu: false
     };
     const wrapper = shallow(<Header {...testProps} />);
     expect(wrapper).toMatchSnapshot();

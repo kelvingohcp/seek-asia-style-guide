@@ -205,6 +205,12 @@ This is a fork of [seek-style-guide](https://github.com/seek-oss/seek-style-guid
 
 `seek-asia-style-guide` is rapidly accumulating SEEK Asia, JobsDB and JobStreet branding but does not yet offer a simple and canonical way to consume them (and avoid any SEEK ANZ remainders).  This is a high priority to improve the accessibility of the repo for consuming apps.
 
+## Note for Window user
+
+Note that certain command might not be working as expected in window. if you encounter a problem when executing a command, look at the '**scripts**' in package.json. Try to find a similar command with the postfix '-in-window'.
+
+eg. On a window, if you want to update the snapshot, you'll need to run the following command `npm run test-unit-in-window -- -u`
+
 ## Contributing
 
 Refer to [CONTRIBUTING.md](./CONTRIBUTING.md)

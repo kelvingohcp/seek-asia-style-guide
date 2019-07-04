@@ -1,5 +1,6 @@
-const baseUrl = 'https://jobstreet.com.sg';
+const baseUrl = 'https://www.jobstreet.com.sg';
 const baseUrlWithLanguage = `${baseUrl}/en`;
+const accountBaseUrl = 'https://myjobstreet.jobstreet.com.sg';
 
 export default {
   footer: {
@@ -60,31 +61,39 @@ export default {
     },
     myJobStreet: {
       title: 'MyJobStreet',
-      url: 'https://myjobstreet.jobstreet.com.my/home/login.php?site=my'
+      url: `${accountBaseUrl}/resume/preview-resume.php`
     },
     companyProfiles: {
       title: 'Company Profiles',
-      url: `${baseUrlWithLanguage}/companies/`
-    },
-    careerInsights: {
-      title: 'Career Insights',
-      url: `${baseUrlWithLanguage}/career-insights`
+      url: `${baseUrlWithLanguage}/companies`
     },
     education: {
-      title: 'Education',
-      url: 'https://www.jobstreeteducation.com.my/'
+      title: 'Training',
+      url: 'https://www.jobstreet.com.sg/learning'
     },
     signUp: {
       title: 'Sign up',
-      url: 'https://myjobstreet.jobstreet.com.my/signup'
+      url: 'https://myjobstreet.jobstreet.com.sg/registration/simple-signup.php?site=sg&language_code=3'
     },
     login: {
       title: 'Log in',
-      url: 'https://myjobstreet.jobstreet.com.my/login'
+      url: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3'
     },
     employer: {
       title: 'Employer Site',
       url: `${baseUrlWithLanguage}/cms/employer`
+    },
+    account: {
+      title: 'Account',
+      url: `${accountBaseUrl}/registration/update-account.php`
+    },
+    invitation: {
+      title: 'Invitation',
+      url: `${accountBaseUrl}/application/interview-request.php?view=latest`
+    },
+    logout: {
+      title: 'Logout',
+      url: `${accountBaseUrl}/home/logout.php`
     },
     homeUrlText: 'JobStreet.com',
     seperatorOr: 'or'

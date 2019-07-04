@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description should not show description when showDescription is false 1`] = `""`;
+
+exports[`Description should render correctly 1`] = `
+<div
+  className="desktopOnly description"
+>
+  <Text
+    baseline={false}
+    className="text"
+    whispering={true}
+  >
+    dummyDescription
+  </Text>
+</div>
+`;

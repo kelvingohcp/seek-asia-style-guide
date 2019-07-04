@@ -10,10 +10,20 @@ exports[`JobStreet Header passes through optional props 1`] = `
   }
   activeTab="ACTIVE_TAB_HOME"
   authenticationStatus="unauthenticated"
-  brandStyles={null}
+  brandStyles={
+    Object {
+      "activeActionTrayIcon": "activeActionTrayIcon",
+      "menuIcon": "menuIcon",
+      "primaryNavLink": "primaryNavLink",
+    }
+  }
   country="my"
   headerMessage={
     Object {
+      "account": Object {
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
       "careerInsights": Object {
         "title": "Career Insights",
         "url": "https://jobstreet.com.my/en/career-insights",
@@ -43,9 +53,17 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "url": "https://jobstreet.com.my",
       },
       "homeUrlText": "JobStreet.com",
+      "invitation": Object {
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
       "login": Object {
         "title": "Log in",
         "url": "https://myjobstreet.jobstreet.com.my/login",
+      },
+      "logout": Object {
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       },
       "myJobStreet": Object {
         "title": "MyJobStreet",
@@ -62,16 +80,12 @@ exports[`JobStreet Header passes through optional props 1`] = `
       },
     }
   }
+  hideNavMenu={false}
   homeUrl="/"
   language="en"
   linkRenderer={[Function]}
   links={
     Array [
-      Object {
-        "ItemIcon": [Function],
-        "title": "Home",
-        "url": "https://jobstreet.com.my",
-      },
       Object {
         "ItemIcon": [Function],
         "title": "MyJobStreet",
@@ -84,33 +98,8 @@ exports[`JobStreet Header passes through optional props 1`] = `
       },
       Object {
         "ItemIcon": [Function],
-        "title": "Career Insights",
-        "url": "https://jobstreet.com.my/en/career-insights",
-      },
-      Object {
-        "ItemIcon": [Function],
         "title": "Education",
         "url": "https://www.jobstreeteducation.com.my/",
-      },
-      Object {
-        "ItemIcon": [Function],
-        "children": Array [
-          Object {
-            "title": "Overseas Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
-          },
-          Object {
-            "title": "Fresh Grad Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
-          },
-          Object {
-            "title": "Classified Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
-          },
-        ],
-        "hideInDesktop": true,
-        "title": "Menu",
-        "url": "",
       },
     ]
   }
@@ -183,6 +172,28 @@ exports[`JobStreet Header passes through optional props 1`] = `
     }
   }
   onMenuOpen={[Function]}
+  userAccMenuItems={
+    Array [
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
+      Object {
+        "EnableIcon": false,
+        "ItemIcon": [Function],
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
+      },
+    ]
+  }
 />
 `;
 
@@ -191,10 +202,20 @@ exports[`JobStreet Header renders with default props 1`] = `
   LogoComponent={[Function]}
   activeTab="ACTIVE_TAB_HOME"
   authenticationStatus="unauthenticated"
-  brandStyles={null}
+  brandStyles={
+    Object {
+      "activeActionTrayIcon": "activeActionTrayIcon",
+      "menuIcon": "menuIcon",
+      "primaryNavLink": "primaryNavLink",
+    }
+  }
   country="my"
   headerMessage={
     Object {
+      "account": Object {
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
       "careerInsights": Object {
         "title": "Career Insights",
         "url": "https://jobstreet.com.my/en/career-insights",
@@ -224,9 +245,17 @@ exports[`JobStreet Header renders with default props 1`] = `
         "url": "https://jobstreet.com.my",
       },
       "homeUrlText": "JobStreet.com",
+      "invitation": Object {
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
       "login": Object {
         "title": "Log in",
         "url": "https://myjobstreet.jobstreet.com.my/login",
+      },
+      "logout": Object {
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       },
       "myJobStreet": Object {
         "title": "MyJobStreet",
@@ -243,16 +272,12 @@ exports[`JobStreet Header renders with default props 1`] = `
       },
     }
   }
+  hideNavMenu={false}
   homeUrl="/"
   language="en"
   linkRenderer={[Function]}
   links={
     Array [
-      Object {
-        "ItemIcon": [Function],
-        "title": "Home",
-        "url": "https://jobstreet.com.my",
-      },
       Object {
         "ItemIcon": [Function],
         "title": "MyJobStreet",
@@ -265,33 +290,8 @@ exports[`JobStreet Header renders with default props 1`] = `
       },
       Object {
         "ItemIcon": [Function],
-        "title": "Career Insights",
-        "url": "https://jobstreet.com.my/en/career-insights",
-      },
-      Object {
-        "ItemIcon": [Function],
         "title": "Education",
         "url": "https://www.jobstreeteducation.com.my/",
-      },
-      Object {
-        "ItemIcon": [Function],
-        "children": Array [
-          Object {
-            "title": "Overseas Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
-          },
-          Object {
-            "title": "Fresh Grad Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/campus/job-vacancy.php",
-          },
-          Object {
-            "title": "Classified Jobs",
-            "url": "https://jobstreet.com.my/en/job-search/classified-ads.php",
-          },
-        ],
-        "hideInDesktop": true,
-        "title": "Menu",
-        "url": "",
       },
     ]
   }
@@ -364,5 +364,27 @@ exports[`JobStreet Header renders with default props 1`] = `
     }
   }
   onMenuOpen={[Function]}
+  userAccMenuItems={
+    Array [
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Account",
+        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
+      },
+      Object {
+        "EnableIcon": true,
+        "ItemIcon": [Function],
+        "title": "Invitation",
+        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
+      },
+      Object {
+        "EnableIcon": false,
+        "ItemIcon": [Function],
+        "title": "Logout",
+        "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
+      },
+    ]
+  }
 />
 `;

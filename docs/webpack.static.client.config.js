@@ -5,11 +5,9 @@ require('module-alias').addAlias('seek-asia-style-guide', path.join(__dirname, '
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const autoprefixerConfig = require('../config/autoprefixer.config');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const decorateClientConfig = require('seek-asia-style-guide-webpack').decorateClientConfig;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const decorateClientConfig = require('../webpack/index').decorateClientConfig;
 const babelConfig = require('../config/babel.config.js')({ reactHotLoader: false});
-
-const appCss = new ExtractTextPlugin('app.css');
 
 // Must be absolute paths
 const appPaths = [
@@ -59,59 +57,55 @@ const config = {
       {
         test: /\.css\.js$/,
         include: appPaths,
-        loader: appCss.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                localIdentName: '[name]__[local]___[hash:base64:5]'
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: [autoprefixer(autoprefixerConfig)]
-              }
-            },
-            {
-              loader: 'less-loader'
-            },
-            {
-              loader: 'css-in-js-loader'
-            },
-            {
-              loader: 'babel-loader',
-              options: babelConfig
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
             }
-          ]
-        })
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [autoprefixer(autoprefixerConfig)]
+            }
+          },
+          {
+            loader: 'less-loader'
+          },
+          {
+            loader: 'css-in-js-loader'
+          },
+          {
+            loader: 'babel-loader',
+            options: babelConfig
+          }
+        ]
       },
       {
         test: /\.less$/,
         include: appPaths,
-        loader: appCss.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                localIdentName: '[name]__[local]___[hash:base64:5]'
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: [autoprefixer(autoprefixerConfig)]
-              }
-            },
-            {
-              loader: 'less-loader'
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
             }
-          ]
-        }),
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [autoprefixer(autoprefixerConfig)]
+            }
+          },
+          {
+            loader: 'less-loader'
+          }
+        ]
       },
       {
         test: /\.css$/,
@@ -141,7 +135,10 @@ const config = {
   },
 
   resolve: {
-    modules: ['node_modules', 'wip_modules', 'components']
+    modules: ['node_modules', 'wip_modules', 'components'],
+    alias: {
+      ['seek-asia-style-guide']:path.resolve(__dirname, '..')
+    }
   },
 
   plugins: [
@@ -149,20 +146,12 @@ const config = {
       'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.BASE_HREF': JSON.stringify(process.env.BASE_HREF)
     }),
-    appCss,
-    new webpack.optimize.UglifyJsPlugin({
-      output: {
-        comments: false
-      },
-      compress: {
-        warnings: false
-      }
-    })
+    new MiniCssExtractPlugin({ filename: 'app.css' })
   ],
 
   stats: { children: false }
 };
 
 module.exports = decorateClientConfig(config, {
-  extractTextPlugin: appCss
+  cssOutputLoader: MiniCssExtractPlugin.loader
 });

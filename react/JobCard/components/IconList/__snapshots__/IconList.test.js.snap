@@ -25,13 +25,11 @@ exports[`Itemlist - Icon should render item list with icon 1`] = `
       key="0"
       whispering={true}
     >
-      <span>
-        Text Only
-      </span>
+      Text Only
     </Text>
   </div>
   <div
-    className="container last"
+    className="container"
     key="1"
   >
     <div
@@ -56,6 +54,122 @@ exports[`Itemlist - Icon should render item list with icon 1`] = `
       <div>
         Text Only Test
       </div>
+    </Text>
+  </div>
+</Fragment>
+`;
+
+exports[`Itemlist - Icon should render with Not specified label if content is an empty string 1`] = `
+<Fragment>
+  <div
+    className="container"
+    key="0"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="android"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="0"
+      whispering={true}
+    >
+      Not specified
+    </Text>
+  </div>
+</Fragment>
+`;
+
+exports[`Itemlist - Icon should render with Not specified label if content is missing 1`] = `
+<Fragment>
+  <div
+    className="container"
+    key="0"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="careerLevel"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="0"
+      whispering={true}
+    >
+      Text Only
+    </Text>
+  </div>
+  <div
+    className="container"
+    key="1"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="careerLevel"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="1"
+      whispering={true}
+    >
+      <div>
+        Text Only Test
+      </div>
+    </Text>
+  </div>
+  <div
+    className="container"
+    key="2"
+  >
+    <div
+      className="iconWrapper"
+    >
+      <Icon
+        animation=""
+        className="icon"
+        lineHeight=""
+        rotation=""
+        size="small"
+        smoothRotate={false}
+        type="android"
+      />
+    </div>
+    <Text
+      baseline={false}
+      className="textWrapper"
+      key="2"
+      whispering={true}
+    >
+      Not specified
     </Text>
   </div>
 </Fragment>

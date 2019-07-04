@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { JobCard, PageBlock } from 'seek-asia-style-guide/react';
+import omit from 'lodash/omit';
+import { StyleGuideProvider, Constants } from 'seek-asia-style-guide/react';
 
 const booleanProps = [
   {
@@ -28,10 +30,6 @@ const booleanProps = [
     prop: 'viewed'
   },
   {
-    label: 'Variation',
-    prop: 'isVariation'
-  },
-  {
     label: 'Split View',
     prop: 'isSplitView'
   },
@@ -50,6 +48,10 @@ const booleanProps = [
   {
     label: 'Borderless Root',
     prop: 'borderlessRoot'
+  },
+  {
+    label: 'Intersecting',
+    prop: 'isIntersecting'
   }
 ];
 
@@ -62,16 +64,20 @@ const renderBooleanProp = item => ({
 });
 
 const JobCardContainer = ({ component: DemoComponent, componentProps }) => {
+  const tenant = componentProps.tenant || Constants.JOBSDB;
   return (
     <PageBlock style={{ width: '100%' }}>
-      <DemoComponent {...componentProps} />
+      <StyleGuideProvider fullScreen={true} enableWebFont={true} tenant={tenant}>
+        <DemoComponent {...componentProps} />
+      </StyleGuideProvider>
     </PageBlock>
   );
 };
 
 JobCardContainer.propTypes = {
   component: PropTypes.func,
-  componentProps: PropTypes.object
+  componentProps: PropTypes.object,
+  tenant: PropTypes.string
 };
 
 const shelfLinks = [
@@ -134,10 +140,11 @@ export default {
   container: JobCardContainer,
   initialProps: {
     job: {
-      company: {
+      companyMeta: {
         name: 'SEEK Asia',
         link: '/jobCard',
-        title: 'Jobs at SEEK Asia'
+        title: 'Jobs at SEEK Asia',
+        logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
       },
       jobTitle: 'Senior Software Engineer (6 months Contract)',
       jobUrl: 'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
@@ -162,8 +169,6 @@ export default {
         }
       ],
       description: 'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
-      companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png',
-      companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg',
       postingDuration: '1 hour ago',
       salary: 'RM99999 - RM999999',
       sellingPoints: [
@@ -172,14 +177,13 @@ export default {
         'We support a safe environment for our employees'
       ],
       isExpired: false,
-      qualification: 'Qualification Not Specified',
-      careerLevel: 'Entry Level',
-      workExperience: '3 Years of Experience',
-      employmentTerm: 'Full Time',
+      qualificationName: 'Degree',
+      careerLevelName: 'Entry Level',
+      workExperienceName: '3 Years of Experience',
+      employmentTermName: 'Full Time',
       bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
     },
     showCompanyLogo: false,
-    showCompanyPic: false,
     showHighlightedBg: false,
     showSellingPoint: false,
     showDescription: false,
@@ -223,7 +227,7 @@ export default {
             ...props,
             job: {
               ...props.job,
-              company: {
+              companyMeta: {
                 name: 'Company Confidential',
                 isPrivate: true
               }
@@ -235,7 +239,7 @@ export default {
           transformProps: ({ className, ...props }) => ({
             ...props,
             job: {
-              ...props.job,
+              ...omit(props.job, ['qualificationName', 'employmentTermName', 'workExperienceName', 'careerLevelName']),
               classifiedLabel: 'Classified'
             }
           })
@@ -374,7 +378,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+              companyMeta: {
+                ...props.job.companyMeta,
+                logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+              }
             }
           })
         },
@@ -384,7 +391,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
+              companyMeta: {
+                ...props.job.companyMeta,
+                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
+              }
             }
           })
         },
@@ -394,7 +404,10 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
+              companyMeta: {
+                ...props.job.companyMeta,
+                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
+              }
             }
           })
         },
@@ -404,61 +417,31 @@ export default {
             ...props,
             job: {
               ...props.job,
-              companyLogoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
+              companyMeta: {
+                ...props.job.companyMeta,
+                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
+              }
             }
           })
         }
       ]
     },
     {
-      label: 'States',
-      type: 'checklist',
-      states: [
-        renderBooleanProp({ label: 'Show company pic', prop: 'showCompanyPic' })
-      ]
-    },
-    {
-      label: 'Company Pic',
+      label: 'Tenant',
       type: 'radio',
       states: [
         {
-          label: 'Company Pic Size -- Normal',
+          label: Constants.JOBSDB,
           transformProps: props => ({
             ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/94463/images/photo/94463_photo_0_621506.jpg'
-            }
+            tenant: Constants.JOBSDB
           })
         },
         {
-          label: 'Very long',
+          label: Constants.JOBSTREET,
           transformProps: props => ({
             ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/56932/images/photo/56932_photo_0_213672.jpg'
-            }
-          })
-        },
-        {
-          label: 'Vertical',
-          transformProps: props => ({
-            ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/86688/images/photo/86688_photo_0_400935.jpg'
-            }
-          })
-        },
-        {
-          label: 'Square',
-          transformProps: props => ({
-            ...props,
-            job: {
-              ...props.job,
-              companyPictureUrl: 'https://siva.jsstatic.com/my/119697/images/photo/119697_photo_0_738574.jpg'
-            }
+            tenant: Constants.JOBSTREET
           })
         }
       ]

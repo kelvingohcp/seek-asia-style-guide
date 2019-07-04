@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Autosuggest from './Autosuggest';
-import styles from '../TextField/TextField.less';
-import classnames from 'classnames';
 import fieldMessageOptions from '../private/FieldMessage/FieldMessage.demo';
 import fieldLabelOptions from '../private/FieldLabel/FieldLabel.demo';
 
@@ -62,7 +60,6 @@ export default {
   container: AutosuggestContainer,
   initialProps: {
     id: 'jobTitles',
-    label: 'Job Titles',
     type: 'search',
     value: '...',
     onChange: () => {},
@@ -82,17 +79,17 @@ export default {
       type: 'checklist',
       states: [
         {
-          label: 'Focus',
-          transformProps: ({ className, ...props }) => ({
-            ...props,
-            className: classnames(className, styles.rootFocus)
-          })
-        },
-        {
           label: 'Compact',
           transformProps: props => ({
             ...props,
             compact: true
+          })
+        },
+        {
+          label: 'Label',
+          transformProps: props => ({
+            ...props,
+            label: 'Job Titles'
           })
         },
         {
@@ -107,6 +104,26 @@ export default {
           transformProps: ({ ...props }) => ({
             ...props,
             showFullWidthSuggestionList: true
+          })
+        },
+        {
+          label: 'Multi Sections',
+          transformProps: ({ ...props }) => ({
+            ...props,
+            autosuggestProps: {
+              ...props.autosuggestProps,
+              suggestions: [{
+                title: 'Section Header 1',
+                suggestions: ['Developer', 'Product manager', 'Iteration manager', 'Designer']
+              },
+              {
+                title: 'Section Header 2',
+                suggestions: ['Apple', 'Orange', 'Durian']
+              }],
+              multiSection: true,
+              renderSectionTitle: section => <div>{section.title}</div>,
+              getSectionSuggestions: section => section.suggestions
+            }
           })
         }
       ]

@@ -29,7 +29,7 @@ class CheckboxContainer extends Component {
     const { component: DemoComponent, componentProps } = this.props;
     const { checked } = this.state;
     const classNames = classnames({
-      [demoStyles.root]: true,
+      [demoStyles.root]: true, // eslint-disable-line
       [demoStyles.fullWidth]: componentProps.fullWidth
     });
 

@@ -5,7 +5,7 @@ require('module-alias').addAlias('seek-asia-style-guide', path.join(__dirname, '
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const autoprefixerConfig = require('../config/autoprefixer.config');
-const decorateClientConfig = require('seek-asia-style-guide-webpack').decorateClientConfig;
+const decorateClientConfig = require('../webpack/index').decorateClientConfig;
 const babelConfig = require('../config/babel.config.js')({ reactHotLoader: true });
 
 // Must be absolute paths
@@ -141,7 +141,10 @@ const config = decorateClientConfig({
   },
 
   resolve: {
-    modules: ['node_modules', 'wip_modules', 'components']
+    modules: ['node_modules', 'wip_modules', 'components'],
+    alias: {
+      ['seek-asia-style-guide']:path.resolve(__dirname, '..')
+    }
   },
 
   plugins: [

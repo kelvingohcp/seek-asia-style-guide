@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import ListItem from './ListItem';
 import { Icon } from 'seek-asia-style-guide/react';
-import styles from './ListItem.less';
 
 describe('ListItem:', () => {
   it('should render value', () => {
@@ -56,7 +55,7 @@ describe('ListItem:', () => {
   });
 
   it('should render with className', () => {
-    const wrapper = shallow(<ListItem value="testValue" className={styles.root} />);
+    const wrapper = shallow(<ListItem value="testValue" className="foo" />);
     expect(wrapper).toMatchSnapshot();
   });
 

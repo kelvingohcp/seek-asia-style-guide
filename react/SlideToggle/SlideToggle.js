@@ -1,75 +1,56 @@
 import styles from './SlideToggle.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import TickIcon from '../TickIcon/TickIcon';
 import Text from '../Text/Text';
 import classnames from 'classnames';
 
-const LEFT = 'left';
-const RIGHT = 'right';
-
 export default class SlideToggle extends Component {
   static propTypes = {
+    checked: PropTypes.bool,
+    children: PropTypes.node,
+    className: PropTypes.string,
+    hideLabel: PropTypes.bool,
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     onChange: PropTypes.func,
-    position: PropTypes.oneOf([LEFT, RIGHT]),
-    hideLabel: PropTypes.bool,
-    children: PropTypes.node,
-    checked: PropTypes.bool,
-    className: PropTypes.string
+    toggleAfterLabel: PropTypes.bool
   }
 
   static defaultProps = {
-    position: RIGHT,
-    hideLabel: false
+    hideLabel: false,
+    toggleAfterLabel: false
   };
 
-  renderLabel = currentPosition => {
-    const { label, hideLabel, children, position } = this.props;
-    const labelStyle = classnames(
-      styles.label,
-      position === LEFT ? styles.labelLeft : styles.labelRight
-    );
-    return hideLabel !== true && position === currentPosition && !children && (
-      <Text
-        className={labelStyle}
-        baseline={false}>
-        <span className={styles.labelText}>{label}</span>
-      </Text>
-    );
-  }
-
   render() {
-    const { id, checked, label, position, onChange, className } = this.props;
+    const { checked, className, hideLabel, id, label, onChange, toggleAfterLabel } = this.props;
+    let labelContent;
 
-    const inputStyles = classnames({
-      [styles.input]: true,
-      [styles.inputLeft]: position === LEFT
-    });
+    if (hideLabel) {
+      labelContent = null;
+    } else {
+      labelContent = <Text baseline={false} className={styles.label}> {label} </Text>;
+    }
 
     return (
       <label htmlFor={id} className={classnames(styles.root, className)}>
-        <div className={styles.switch}>
+        <div
+          className={classnames({
+            [styles.switch]: true,
+            [styles.toggleAfterLabel]: toggleAfterLabel === true
+          })}>
           <input
-            ref={this.storeInputRef}
-            type="checkbox"
-            id={id}
             aria-label={label}
-            className={inputStyles}
+            aria-checked={checked}
+            className={styles.input}
             checked={checked}
+            id={id}
             onChange={onChange}
+            ref={this.storeInputRef}
+            tabIndex="0"
+            type="checkbox"
           />
-          {this.renderLabel(LEFT)}
-          <div className={styles.slider}>
-            <div className={styles.slideButton}>
-              <TickIcon
-                className={styles.icon}
-                svgClassName={styles.svg}
-              />
-            </div>
-          </div>
-          {this.renderLabel(RIGHT)}
+          <div className={styles.slider} />
+          {labelContent}
         </div>
       </label>
     );

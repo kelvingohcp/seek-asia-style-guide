@@ -5,7 +5,7 @@ import classnames from 'classnames';
 
 export default function Loader({ _small, compact }) {
   return (
-    <div className={classnames(styles.root, { [styles._small]: _small, [styles.compact]: compact })}>
+    <div className={classnames(styles.root, { [styles.small]: _small, [styles.compact]: compact })}>
       <div className={styles.ball} />
       <div className={styles.ball} />
       <div className={styles.ball} />

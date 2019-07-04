@@ -63,7 +63,7 @@ exports[`Tabs should render with content 1`] = `
     </Tab>
   </TabList>
   <TabPanel
-    className="tabPanel"
+    className="react-tabs__tab-panel"
     forceRender={false}
     key="0"
     selectedClassName="react-tabs__tab-panel--selected"
@@ -71,7 +71,7 @@ exports[`Tabs should render with content 1`] = `
     Content 1
   </TabPanel>
   <TabPanel
-    className="tabPanel"
+    className="react-tabs__tab-panel"
     forceRender={false}
     key="1"
     selectedClassName="react-tabs__tab-panel--selected"
@@ -144,13 +144,13 @@ exports[`Tabs should render with no content 1`] = `
     </Tab>
   </TabList>
   <TabPanel
-    className="tabPanel"
+    className="react-tabs__tab-panel"
     forceRender={false}
     key="0"
     selectedClassName="react-tabs__tab-panel--selected"
   />
   <TabPanel
-    className="tabPanel"
+    className="react-tabs__tab-panel"
     forceRender={false}
     key="1"
     selectedClassName="react-tabs__tab-panel--selected"

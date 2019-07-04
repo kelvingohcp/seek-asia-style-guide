@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Text from '../../../Text/Text';
+import Hidden from '../../../Hidden/Hidden';
 import styles from './ShelfButton.less';
-import jobCardStyles from '../../JobCard.less';
 import classnames from 'classnames';
 import ChevronIcon from '../../../ChevronIcon/ChevronIcon';
 import Badge from '../../../Badge/Badge';
@@ -11,16 +11,12 @@ import { ShelfPropTypes } from '../ShelfSection/ShelfSectionPropTypes';
 
 const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
   return (
-    <div
-      className={classnames(
-        {
-          [jobCardStyles.flexRow]: true,
-          [jobCardStyles.section]: true,
-          [jobCardStyles.desktopOnly]: desktopOnly,
-          [jobCardStyles.mobileOnly]: mobileOnly
-        })}>
+    <Hidden
+      aboveMobile={mobileOnly}
+      mobile={desktopOnly}
+      className={styles.root}>
       {job.featuredLabel ? (
-        <span className={jobCardStyles.badgeWrapper}>
+        <span>
           <Badge color="new" label={job.featuredLabel} />
         </span>
       ) : (
@@ -32,7 +28,7 @@ const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
         </Text>
       )}
       {hasShelfLinks(job.shelf && job.shelf.shelfLinks) && (
-        <div className={jobCardStyles.desktopOnly}>
+        <Hidden mobile className={styles.moreWrapper}>
           <Text whispering className={styles.separatorDot} baseline={false}>•</Text>
           <Text
             whispering
@@ -45,9 +41,9 @@ const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
               svgClassName={styles.shelfToggleIcon}
             />
           </Text>
-        </div>
+        </Hidden>
       )}
-    </div>
+    </Hidden>
   );
 };
 

@@ -1,0 +1,33 @@
+@import (reference) '~seek-asia-style-guide/theme';
+@import (reference) '../../JobCard';
+
+.sellingPoints {
+  .rawText();
+  @media @desktop {
+    padding-top: @grid-base * 3;
+  }
+  padding-top: @grid-base * 2;
+  color: @saGrey3;
+  list-style: none;
+}
+
+.text {
+  color: @saGrey1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-bottom: @grid-base;
+}
+
+.sellingPoint {
+  display: flex;
+
+  &::before {
+    content: "\2022";
+    width: @grid-base * 4;
+    text-align: center;
+    margin-right: @grid-base * 2;
+    display: inline-block;
+    flex: 0 0 auto;
+    line-height: @grid-base * 3;
+  }
+}

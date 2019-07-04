@@ -5,21 +5,14 @@
   transition: max-height 0.5s ease;
 }
 
-.fade {
-  height: @grid-base * 25;
-  margin-top: -(@grid-base * 25);
-  position: relative;
-}
-
 .button {
-  background-color: @saWhite;
   width: 100%;
   &:focus {
     outline: none;
   }
 }
 
-.outCanvasGradientMaskTop {
+.outCanvasGradientMaskTop (@color) {
   position: relative;
   &::before {
     bottom: 100%;
@@ -31,6 +24,26 @@
     -webkit-transition: opacity 0.7s;
     transition: opacity 0.7s;
     width: 100%;
-    .linearGradientDown;
+    .linearGradientDown(@end-rgba: @color)
   }
+}
+
+.buttonLeft {
+  text-align: left;
+}
+
+.buttonWhite {
+  background-color: @saWhite;
+}
+
+.buttonGrey {
+  background-color: @saGrey5;
+}
+
+.outCanvasGradientMaskTopWhite {
+  .outCanvasGradientMaskTop(@color: @saWhite)
+}
+
+.outCanvasGradientMaskTopGrey {
+  .outCanvasGradientMaskTop(@color: @saGrey5)
 }

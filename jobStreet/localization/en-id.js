@@ -1,5 +1,6 @@
 const baseUrl = 'https://jobstreet.co.id';
 const baseUrlWithLanguage = `${baseUrl}/en`;
+const accountBaseUrl = 'https://myjobstreet.jobstreet.co.id';
 
 export default {
   footer: {
@@ -85,6 +86,18 @@ export default {
     employer: {
       title: 'Employer Site',
       url: `${baseUrlWithLanguage}/cms/employer`
+    },
+    account: {
+      title: 'Account',
+      url: `${accountBaseUrl}/registration/update-account.php`
+    },
+    invitation: {
+      title: 'Invitation',
+      url: `${accountBaseUrl}/application/interview-request.php?view=latest`
+    },
+    logout: {
+      title: 'Logout',
+      url: `${accountBaseUrl}/home/logout.php`
     },
     homeUrlText: 'JobStreet.com',
     seperatorOr: 'or'
