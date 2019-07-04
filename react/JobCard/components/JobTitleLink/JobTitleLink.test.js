@@ -18,7 +18,7 @@ describe('JobCard - JobTitleLink', () => {
     expect(wrapper).toMatchSnapshot();
   });
   it('should bold keyword', () => {
-    const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Software" />);
+    const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Soft Eng" />);
     expect(wrapper).toMatchSnapshot();
   });
   it('should render LinkComponent when it is provided', () => {

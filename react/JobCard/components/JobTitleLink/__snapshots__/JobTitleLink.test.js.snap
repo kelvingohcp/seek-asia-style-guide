@@ -14,7 +14,7 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
     strong={true}
     whistling={true}
   >
-    Software
+    Soft
   </Text>
   <Text
     baseline={true}
@@ -23,7 +23,25 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
     strong={true}
     whistling={true}
   >
-     Engineer
+    ware 
+  </Text>
+  <Text
+    baseline={true}
+    className="jobTitle titleKeyword"
+    key="2"
+    strong={true}
+    whistling={true}
+  >
+    Eng
+  </Text>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    key="3"
+    strong={true}
+    whistling={true}
+  >
+    ineer
   </Text>
 </Link>
 `;
