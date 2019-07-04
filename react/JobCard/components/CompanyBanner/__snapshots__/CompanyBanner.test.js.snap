@@ -17,3 +17,9 @@ exports[`CompanyBanner should render on mobile 1`] = `
   src="/foo"
 />
 `;
+
+exports[`CompanyBanner should render with placeholder 1`] = `
+<div
+  className="placeholder companyBanner companyBannerOnMobile"
+/>
+`;

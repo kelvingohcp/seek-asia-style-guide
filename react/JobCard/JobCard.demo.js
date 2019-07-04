@@ -48,6 +48,10 @@ const booleanProps = [
   {
     label: 'Borderless Root',
     prop: 'borderlessRoot'
+  },
+  {
+    label: 'Intersecting',
+    prop: 'isIntersecting'
   }
 ];
 
