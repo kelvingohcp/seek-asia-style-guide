@@ -9,11 +9,21 @@ exports[`JobCard - JobTitleLink should bold keyword 1`] = `
 >
   <Text
     baseline={true}
-    className="jobTitle"
+    className="jobTitle titleKeyword"
+    key="0"
     strong={true}
     whistling={true}
   >
-    Software Engineer
+    Software
+  </Text>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    key="1"
+    strong={true}
+    whistling={true}
+  >
+     Engineer
   </Text>
 </Link>
 `;
@@ -46,10 +56,20 @@ exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 
   <Text
     baseline={true}
     className="jobTitle"
+    key="0"
     strong={true}
     whistling={true}
   >
-    Software Engineer
+    Software 
+  </Text>
+  <Text
+    baseline={true}
+    className="jobTitle titleKeyword"
+    key="1"
+    strong={true}
+    whistling={true}
+  >
+    Engineer
   </Text>
 </LinkComponent>
 `;
