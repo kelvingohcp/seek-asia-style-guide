@@ -46,6 +46,24 @@ exports[`JobCard - JobTitleLink should change className for viewed job 1`] = `
 </Link>
 `;
 
+exports[`JobCard - JobTitleLink should not bold if the keyword are not match 1`] = `
+<Link
+  className="jobTitleLink"
+  link="/jobCard"
+  onClick={[Function]}
+  rel="noopener noreferrer"
+>
+  <Text
+    baseline={true}
+    className="jobTitle"
+    strong={true}
+    whistling={true}
+  >
+    Software Engineer
+  </Text>
+</Link>
+`;
+
 exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 1`] = `
 <LinkComponent
   className="jobTitleLink"

@@ -13,6 +13,10 @@ describe('JobCard - JobTitleLink', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} />);
     expect(wrapper).toMatchSnapshot();
   });
+  it('should not bold if the keyword are not match', () => {
+    const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Programmer" />);
+    expect(wrapper).toMatchSnapshot();
+  });
   it('should bold keyword', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Software" />);
     expect(wrapper).toMatchSnapshot();
