@@ -164,7 +164,7 @@ export default {
       },
       career: {
         title: 'Career @ jobsDB',
-        url: `${baseUrlWithLanguage}/jobs/companies/jobsdb-hong-kong/1`
+        url: `${baseUrlWithLanguage}/jobs/companies/jobsdb-hong-kong-limited/1`
       },
       contactUs: {
         title: 'Contact Us',
