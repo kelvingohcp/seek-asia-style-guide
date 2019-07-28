@@ -67,7 +67,6 @@ const defaultJob = {
 const defaultProps = {
   job: defaultJob,
   showCompanyLogo: false,
-  showHighlightedBg: false,
   showSellingPoint: true,
   showDescription: false,
   enableBrandedAd: false,
@@ -232,17 +231,6 @@ describe('JobCard', () => {
             Job Title
           </Text>
         )}
-      />
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render selected style', () => {
-    const wrapper = shallow(
-      <JobCard
-        {...defaultProps}
-        job={defaultJob}
-        isSelected
       />
     );
     expect(wrapper).toMatchSnapshot();

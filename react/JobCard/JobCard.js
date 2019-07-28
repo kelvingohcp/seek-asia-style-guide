@@ -1,6 +1,6 @@
 import styles from './JobCard.less';
 
-import React, { useState } from 'react';
+import React, { memo, useState } from 'react';
 import classnames from 'classnames';
 
 import Text from '../Text/Text';
@@ -106,7 +106,7 @@ CompanyLogo.propTypes = {
   showCompanyLogo: JobCardPropTypes.showCompanyLogo
 };
 
-const JobCard = props => {
+const JobCard = memo(props => {
   const [shelfSectionOpen, setShelfSectionOpen] = useState(false);
 
   const handleShelfSectionToggle = e => {
@@ -117,7 +117,6 @@ const JobCard = props => {
   const {
     applied,
     borderlessRoot = false,
-    isSelected,
     isSplitView,
     enableBrandedAd,
     job = {},
@@ -127,7 +126,6 @@ const JobCard = props => {
     showSellingPoint,
     showCompanyLogo,
     showDescription,
-    showHighlightedBg,
     showSavedStatus,
     TitleLinkComponent,
     trackLinkClicked,
@@ -165,8 +163,6 @@ const JobCard = props => {
     <div
       className={classnames(styles.container, {
         [styles.borderRoot]: !borderlessRoot,
-        [styles.highlightedBg]: showHighlightedBg,
-        [styles.selected]: isSelected,
         [brandedStripeStyle]: enableBrandedAd && brandedStripeStyle
       })}>
       <div className={styles.leftContainer}>
@@ -248,7 +244,7 @@ const JobCard = props => {
       }
     </div>
   );
-};
+});
 
 export default props => (
   <StyleGuideContext.Consumer>
