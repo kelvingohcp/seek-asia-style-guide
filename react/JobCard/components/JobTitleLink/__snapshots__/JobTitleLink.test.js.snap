@@ -1,73 +1,124 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JobCard - JobTitleLink should bold keyword 1`] = `
+exports[`JobCard - JobTitleLink JobTitlePart should render a highlighted job title part 1`] = `
+<Text
+  baseline={true}
+  className="jobTitle titleKeyword"
+  strong={true}
+  whistling={true}
+>
+  foo
+</Text>
+`;
+
+exports[`JobCard - JobTitleLink JobTitlePart should render a job title part 1`] = `
+<Text
+  baseline={true}
+  className="jobTitle"
+  strong={true}
+  whistling={true}
+>
+  foo
+</Text>
+`;
+
+exports[`JobCard - JobTitleLink should bold matching keywords 1`] = `
 <Link
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
+  <JobTitlePart
+    isHighlighted={true}
+    key="0"
   >
-    Software Engineer
-  </Text>
+    Soft
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={false}
+    key="1"
+  >
+    ware 
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={true}
+    key="2"
+  >
+    Eng
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={false}
+    key="3"
+  >
+    ineer Richmond
+  </JobTitlePart>
 </Link>
 `;
 
-exports[`JobCard - JobTitleLink should change className for viewed job 1`] = `
+exports[`JobCard - JobTitleLink should not bold anything if keywords do not match 1`] = `
 <Link
-  className="jobTitleLinkVisited"
+  className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
-  >
-    Software Engineer
-  </Text>
+  <JobTitlePart>
+    Software Engineer Richmond
+  </JobTitlePart>
 </Link>
 `;
 
-exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 1`] = `
+exports[`JobCard - JobTitleLink should render with LinkComponent 1`] = `
 <LinkComponent
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
+  <JobTitlePart
+    isHighlighted={false}
+    key="0"
   >
-    Software Engineer
-  </Text>
+    Software 
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={true}
+    key="1"
+  >
+    Engineer
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={false}
+    key="2"
+  >
+     Richmond
+  </JobTitlePart>
 </LinkComponent>
 `;
 
-exports[`JobCard - JobTitleLink should render correctly 1`] = `
+exports[`JobCard - JobTitleLink should render with viewed flag 1`] = `
+<Link
+  className="jobTitleLinkVisited"
+  link="/jobCard"
+  onClick={[Function]}
+  rel="noopener noreferrer"
+>
+  <JobTitlePart>
+    Software Engineer Richmond
+  </JobTitlePart>
+</Link>
+`;
+
+exports[`JobCard - JobTitleLink should render without keywords 1`] = `
 <Link
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
-  >
-    Software Engineer
-  </Text>
+  <JobTitlePart>
+    Software Engineer Richmond
+  </JobTitlePart>
 </Link>
 `;
