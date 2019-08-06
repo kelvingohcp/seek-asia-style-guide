@@ -40,8 +40,6 @@
 
 .container {
   .flexRow();
-  background: @sk-white;
-  margin-bottom: @grid-base;
   cursor: pointer;
   &:hover .jobTitle {
     text-decoration: underline;
@@ -71,6 +69,9 @@
   .flexCol();
   padding-top: @grid-base * 2;
   flex-grow: 1;
+  @media @desktop {
+    flex-basis: 50%;
+  }
 }
 
 .rightContent {
@@ -97,14 +98,6 @@
   border-style: solid;
   border-bottom-width: 1px;
   border-color: @saGrey4;
-}
-
-.highlightedBg {
-  background-color: @actionPastelBlue;
-}
-
-.selected {
-  background-color: @saHover;
 }
 
 .withBookmark {

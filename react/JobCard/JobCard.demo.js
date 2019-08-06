@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { JobCard, PageBlock } from 'seek-asia-style-guide/react';
 import omit from 'lodash/omit';
 import { StyleGuideProvider, Constants } from 'seek-asia-style-guide/react';
 
 const booleanProps = [
-  {
-    label: 'Show highlighted background',
-    prop: 'showHighlightedBg'
-  },
   {
     label: 'Show selling points',
     prop: 'showSellingPoint'
@@ -32,10 +28,6 @@ const booleanProps = [
   {
     label: 'Split View',
     prop: 'isSplitView'
-  },
-  {
-    label: 'Selected',
-    prop: 'isSelected'
   },
   {
     label: 'Shortened Location',
@@ -65,10 +57,17 @@ const renderBooleanProp = item => ({
 
 const JobCardContainer = ({ component: DemoComponent, componentProps }) => {
   const tenant = componentProps.tenant || Constants.JOBSDB;
+  const [isActive, updateIsActive] = useState(false);
+  const updateHighlight = () => {
+    updateIsActive(!isActive);
+  };
+
   return (
-    <PageBlock style={{ width: '100%' }}>
+    <PageBlock style={{ width: '100%' }} onClick={updateHighlight}>
       <StyleGuideProvider fullScreen={true} enableWebFont={true} tenant={tenant}>
-        <DemoComponent {...componentProps} />
+        <div style={{ width: '100%', backgroundColor: isActive ? '#ddf1fa' : 'white' }}>
+          <DemoComponent {...componentProps} />
+        </div>
       </StyleGuideProvider>
     </PageBlock>
   );
@@ -184,7 +183,6 @@ export default {
       bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
     },
     showCompanyLogo: false,
-    showHighlightedBg: false,
     showSellingPoint: false,
     showDescription: false,
     enableBrandedAd: false,

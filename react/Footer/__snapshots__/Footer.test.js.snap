@@ -12,7 +12,7 @@ exports[`Footer component Localization should render en-hk 1`] = `
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
@@ -235,7 +235,7 @@ exports[`Footer component Localization should render en-hk fat footer 1`] = `
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
@@ -458,7 +458,7 @@ exports[`Footer component Localization should render en-id 1`] = `
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://id.jobsdb.com/id/en/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://id.jobsdb.com/id/en/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
@@ -865,7 +865,7 @@ exports[`Footer component Localization should render en-th 1`] = `
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://th.jobsdb.com/th/en/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://th.jobsdb.com/th/en/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
@@ -1084,7 +1084,7 @@ exports[`Footer component Localization should render id-id 1`] = `
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://id.jobsdb.com/id/id/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://id.jobsdb.com/id/id/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
@@ -1303,7 +1303,7 @@ exports[`Footer component Localization should render th-th 1`] = `
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://th.jobsdb.com/th/th/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://th.jobsdb.com/th/th/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
@@ -1522,7 +1522,7 @@ exports[`Footer component Localization should render without offset if prop is p
         },
         "career": Object {
           "title": "Career @ jobsDB",
-          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong/1",
+          "url": "https://hk.jobsdb.com/hk/en/jobs/companies/jobsdb-hong-kong-limited/1",
         },
         "contactUs": Object {
           "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",

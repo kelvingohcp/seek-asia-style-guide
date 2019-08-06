@@ -80,7 +80,7 @@ export default class UserAccountMenu extends Component {
         }}>
 
         <div className={styles.currentLocale} show={dropdownOpen} onClick={e => this.handleDropdownToggle(e)}>
-          <Text className={styles.userName}>{userName}</Text>
+          <Text className={styles.userName} baseline={false}>{userName}</Text>
           <div className={styles.chevron}>
             <ChevronIcon svgClassName={styles.chevronSvg} direction="down" />
           </div>
