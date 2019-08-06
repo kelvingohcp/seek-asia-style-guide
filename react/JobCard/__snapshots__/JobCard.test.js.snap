@@ -22,6 +22,9 @@ exports[`JobCard should not render shelf section 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -268,6 +271,9 @@ exports[`JobCard should not render shelf section when none of the shelf links ha
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -560,6 +566,9 @@ exports[`JobCard should not render the viewed badge if viewed date is undefined 
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -879,6 +888,9 @@ exports[`JobCard should not render with company banner in split view  1`] = `
   <div
     className="leftContainer"
   >
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -1111,6 +1123,9 @@ exports[`JobCard should pass through viewed prop 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -1430,6 +1445,9 @@ exports[`JobCard should render brandedAd in split view 1`] = `
   <div
     className="leftContainer"
   >
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -1669,6 +1687,9 @@ exports[`JobCard should render company with bold keyword 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -2004,6 +2025,9 @@ exports[`JobCard should render correctly with missing qualification 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -2333,6 +2357,9 @@ exports[`JobCard should render job title component 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       TitleLinkComponent={[Function]}
       job={
@@ -2667,6 +2694,9 @@ exports[`JobCard should render job title with bold keyword 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -3002,6 +3032,9 @@ exports[`JobCard should render jobStreet standout style 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -3334,6 +3367,9 @@ exports[`JobCard should render jobsDB default style 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -3666,6 +3702,10 @@ exports[`JobCard should render only applied badge, when both applied and expired
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      applied={true}
+      expired={true}
+    />
     <JobTitle
       applied={true}
       job={
@@ -4000,6 +4040,9 @@ exports[`JobCard should render plain company label 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -4323,6 +4366,9 @@ exports[`JobCard should render tag links 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -4695,6 +4741,9 @@ exports[`JobCard should render with Classified in grey label 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -5030,6 +5079,10 @@ exports[`JobCard should render with applied badge 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      applied={true}
+      expired={false}
+    />
     <JobTitle
       applied={true}
       job={
@@ -5364,6 +5417,9 @@ exports[`JobCard should render with company banner  1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -5696,6 +5752,9 @@ exports[`JobCard should render with company banner 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -6028,6 +6087,9 @@ exports[`JobCard should render with company confidential in grey label 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -6355,6 +6417,9 @@ exports[`JobCard should render with default props 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -6687,6 +6752,9 @@ exports[`JobCard should render with expired badge 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={true}
+    />
     <JobTitle
       job={
         Object {
@@ -7004,6 +7072,9 @@ exports[`JobCard should render with selling points in split view 1`] = `
   <div
     className="leftContainer"
   >
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -7243,6 +7314,9 @@ exports[`JobCard should render with selling points props 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -7590,6 +7664,9 @@ exports[`JobCard should render with trackLinkClicked 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {
@@ -7922,6 +7999,10 @@ exports[`JobCard should render with viewed badge 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+      viewed="Viewed 1 hour ago"
+    />
     <JobTitle
       job={
         Object {
@@ -8257,6 +8338,9 @@ exports[`JobCard should render without border 1`] = `
         isMobile={true}
       />
     </Hidden>
+    <JobLabel
+      expired={false}
+    />
     <JobTitle
       job={
         Object {

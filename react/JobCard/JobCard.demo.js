@@ -44,7 +44,8 @@ const booleanProps = [
   {
     label: 'Intersecting',
     prop: 'isIntersecting'
-  }
+  },
+  { label: 'New Job', prop: 'isNewJob' }
 ];
 
 const renderBooleanProp = item => ({
@@ -123,11 +124,13 @@ const shelfLinks = [
   {
     label: 'Industry',
     searchMethod: 'Browse Job Industry - SRP',
-    items: [{
-      name: 'Accounting / Audit / Tax Services',
-      link: '/jobCard',
-      title: 'Limit result to Accounting / Audit / Tax Services'
-    }]
+    items: [
+      {
+        name: 'Accounting / Audit / Tax Services',
+        link: '/jobCard',
+        title: 'Limit result to Accounting / Audit / Tax Services'
+      }
+    ]
   }
 ];
 
@@ -143,10 +146,12 @@ export default {
         name: 'SEEK Asia',
         link: '/jobCard',
         title: 'Jobs at SEEK Asia',
-        logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+        logoUrl:
+          'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
       },
       jobTitle: 'Senior Software Engineer (6 months Contract)',
-      jobUrl: 'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
+      jobUrl:
+        'https://www.jobstreet.com.my/en/job/senior-software-engineer-3565614?fr=21',
       locations: [
         {
           name: 'Pahang',
@@ -167,7 +172,8 @@ export default {
           }
         }
       ],
-      description: 'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
+      description:
+        'Responsibilities :Responsible for Client Relationship Management and Worker Performance Management. Responsible for full spectrum of human resource and admin function, include...',
       postingDuration: '1 hour ago',
       salary: 'RM99999 - RM999999',
       sellingPoints: [
@@ -180,7 +186,8 @@ export default {
       careerLevelName: 'Entry Level',
       workExperienceName: '3 Years of Experience',
       employmentTermName: 'Full Time',
-      bannerUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
+      bannerUrl:
+        'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/banner-m/34999m.png'
     },
     showCompanyLogo: false,
     showSellingPoint: false,
@@ -237,7 +244,12 @@ export default {
           transformProps: ({ className, ...props }) => ({
             ...props,
             job: {
-              ...omit(props.job, ['qualificationName', 'employmentTermName', 'workExperienceName', 'careerLevelName']),
+              ...omit(props.job, [
+                'qualificationName',
+                'employmentTermName',
+                'workExperienceName',
+                'careerLevelName'
+              ]),
               classifiedLabel: 'Classified'
             }
           })
@@ -315,11 +327,7 @@ export default {
             ...props,
             trackLinkClicked: console.log,
             TitleLinkComponent: ({ link, children, ...restProps }) => {
-              return (
-                <span {...restProps}>
-                  {children}
-                </span>
-              );
+              return <span {...restProps}>{children}</span>;
             }
           })
         }
@@ -363,7 +371,10 @@ export default {
       label: 'States',
       type: 'checklist',
       states: [
-        renderBooleanProp({ label: 'Show company logo', prop: 'showCompanyLogo' })
+        renderBooleanProp({
+          label: 'Show company logo',
+          prop: 'showCompanyLogo'
+        })
       ]
     },
     {
@@ -378,7 +389,8 @@ export default {
               ...props.job,
               companyMeta: {
                 ...props.job.companyMeta,
-                logoUrl: 'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
+                logoUrl:
+                  'https://siva.jsstatic.com/my/94463/images/logo/94463_logo_0_48885.png'
               }
             }
           })
@@ -391,7 +403,8 @@ export default {
               ...props.job,
               companyMeta: {
                 ...props.job.companyMeta,
-                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
+                logoUrl:
+                  'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/23401l.png'
               }
             }
           })
@@ -404,7 +417,8 @@ export default {
               ...props.job,
               companyMeta: {
                 ...props.job.companyMeta,
-                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
+                logoUrl:
+                  'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/1689l.jpg'
               }
             }
           })
@@ -417,7 +431,8 @@ export default {
               ...props.job,
               companyMeta: {
                 ...props.job.companyMeta,
-                logoUrl: 'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
+                logoUrl:
+                  'https://content.jobsdbcdn.com/Content/CmsContent/Logo/HK/JobsDBFiles/CompanyLogo/logo-l/28842l.png'
               }
             }
           })

@@ -16,6 +16,5 @@ exports[`JobMeta should render correctly 1`] = `
     mobileOnly={false}
     shelfSectionOpen={false}
   />
-  <JobLabel />
 </Fragment>
 `;

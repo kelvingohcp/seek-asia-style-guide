@@ -15,10 +15,15 @@ import ShelfSection from './components/ShelfSection/ShelfSection';
 import CompanyBanner from './components/CompanyBanner/CompanyBanner';
 import ShelfLink from './components/ShelfLink/ShelfLink';
 import JobMeta from './components/JobMeta/JobMeta';
-import { JobCardPropTypes, JobType, CompanyPropTypes } from './JobCardPropTypes';
+import {
+  JobCardPropTypes,
+  JobType,
+  CompanyPropTypes
+} from './JobCardPropTypes';
 import PropTypes from 'prop-types';
 import _get from 'lodash/get';
 import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
+import JobLabel from '../JobLabel/JobLabel';
 
 export const trackLinkType = {
   jobTitle: 'jobTitle',
@@ -63,11 +68,20 @@ JobTitle.propTypes = {
 
 const Company = ({ company, keyword, LinkComponent, trackLinkClicked }) => {
   return (
-    <Text intimate baseline={false} className={classnames(styles.text, styles.section)}>
-      {company.isPrivate ?
-        <span className={styles.greyLabel}>{company.name}</span> :
-        <CompanyLink {...company} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
-      }
+    <Text
+      intimate
+      baseline={false}
+      className={classnames(styles.text, styles.section)}>
+      {company.isPrivate ? (
+        <span className={styles.greyLabel}>{company.name}</span>
+      ) : (
+        <CompanyLink
+          {...company}
+          keyword={keyword}
+          LinkComponent={LinkComponent}
+          trackLinkClicked={trackLinkClicked}
+        />
+      )}
     </Text>
   );
 };
@@ -78,15 +92,32 @@ Company.propTypes = {
   trackLinkClicked: JobCardPropTypes.trackLinkClicked
 };
 
-const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trackLinkClicked }) => {
+const MainPoint = ({
+  job,
+  LinkComponent,
+  showShortenedLocation,
+  hideSalary,
+  trackLinkClicked
+}) => {
   return (
     <IconList
       list={[
         {
-          content: <LocationGroup locations={job.locations} LinkComponent={LinkComponent} showShortenedLocation={showShortenedLocation} trackLinkClicked={trackLinkClicked} />,
+          content: (
+            <LocationGroup
+              locations={job.locations}
+              LinkComponent={LinkComponent}
+              showShortenedLocation={showShortenedLocation}
+              trackLinkClicked={trackLinkClicked}
+            />
+          ),
           iconType: 'location'
         },
-        { content: job.salary, iconType: 'salary', show: Boolean(job.salary && !hideSalary) }
+        {
+          content: job.salary,
+          iconType: 'salary',
+          show: Boolean(job.salary && !hideSalary)
+        }
       ]}
     />
   );
@@ -94,12 +125,11 @@ const MainPoint = ({ job, LinkComponent, showShortenedLocation, hideSalary, trac
 MainPoint.propTypes = JobCardPropTypes;
 
 const CompanyLogo = ({ companyLogoUrl, showCompanyLogo }) => {
-  return companyLogoUrl && showCompanyLogo ?
-    <img
-      className={styles.companyLogo}
-      src={companyLogoUrl}
-    /> :
-    <div className={styles.companyLogo} />;
+  return companyLogoUrl && showCompanyLogo ? (
+    <img className={styles.companyLogo} src={companyLogoUrl} />
+  ) : (
+    <div className={styles.companyLogo} />
+  );
 };
 CompanyLogo.propTypes = {
   companyLogoUrl: JobType.companyLogoUrl,
@@ -131,11 +161,19 @@ const JobCard = memo(props => {
     trackLinkClicked,
     viewed,
     viewedDate,
+    isNewJob,
     tenant,
     isIntersecting
   } = props;
 
-  const { companyMeta = {}, isSaved, bannerUrl, sellingPoints, description, isExpired } = job;
+  const {
+    companyMeta = {},
+    isSaved,
+    bannerUrl,
+    sellingPoints,
+    description,
+    isExpired
+  } = job;
 
   const { logoUrl } = _get(job, 'companyMeta', {});
 
@@ -151,11 +189,9 @@ const JobCard = memo(props => {
       showSellingPoint={showSellingPoint}
       description={description}
       showDescription={showDescription}
-      job={job} shelfSectionOpen={shelfSectionOpen}
+      job={job}
+      shelfSectionOpen={shelfSectionOpen}
       onClick={handleShelfSectionToggle}
-      applied={applied}
-      expired={isExpired}
-      viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
     />
   );
 
@@ -168,19 +204,32 @@ const JobCard = memo(props => {
       <div className={styles.leftContainer}>
         {showSavedStatus && (
           <Button className={styles.bookmarkButton} onClick={onBookmarkClick}>
-            <Icon size="normal" type="bookmark" className={isSaved ? styles.bookmarked : ''} animation={isSaved ? 'bounce' : ''} />
+            <Icon
+              size="normal"
+              type="bookmark"
+              className={isSaved ? styles.bookmarked : ''}
+              animation={isSaved ? 'bounce' : ''}
+            />
           </Button>
         )}
-        {
-          !isSplitView && (
-            <Hidden aboveMobile className={styles.alignCenter}>
-              <CompanyBanner isIntersecting={isIntersecting} bannerUrl={bannerUrl} enableBrandedAd={enableBrandedAd} isMobile />
-            </Hidden>
-          )
-        }
+        {!isSplitView && (
+          <Hidden aboveMobile className={styles.alignCenter}>
+            <CompanyBanner
+              isIntersecting={isIntersecting}
+              bannerUrl={bannerUrl}
+              enableBrandedAd={enableBrandedAd}
+              isMobile
+            />
+          </Hidden>
+        )}
+        <JobLabel
+          applied={applied}
+          expired={isExpired}
+          viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+          isNewJob={isNewJob}
+        />
         <JobTitle
-          {
-          ...{
+          {...{
             applied,
             TitleLinkComponent,
             viewed,
@@ -190,7 +239,12 @@ const JobCard = memo(props => {
             showSavedStatus
           }}
         />
-        <Company company={companyMeta} keyword={keyword} LinkComponent={LinkComponent} trackLinkClicked={trackLinkClicked} />
+        <Company
+          company={companyMeta}
+          keyword={keyword}
+          LinkComponent={LinkComponent}
+          trackLinkClicked={trackLinkClicked}
+        />
         <div className={classnames(styles.flexRow, styles.flexRowHeight)}>
           <div className={styles.leftContent}>
             <MainPoint {...props} />
@@ -199,22 +253,22 @@ const JobCard = memo(props => {
             </Hidden>
           </div>
           <div
-            className={
-              classnames(
-                {
-                  [styles.rightContent]: !(enableBrandedAd && !isSplitView),
-                  [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
-                }
-              )
-            }>
-            <CompanyLogo companyLogoUrl={logoUrl} showCompanyLogo={showCompanyLogo} />
-            {!isSplitView &&
-            <ShelfLink
-              job={job}
-              shelfSectionOpen={shelfSectionOpen}
-              desktopOnly
-              onClick={handleShelfSectionToggle}
-            />}
+            className={classnames({
+              [styles.rightContent]: !(enableBrandedAd && !isSplitView),
+              [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
+            })}>
+            <CompanyLogo
+              companyLogoUrl={logoUrl}
+              showCompanyLogo={showCompanyLogo}
+            />
+            {!isSplitView && (
+              <ShelfLink
+                job={job}
+                shelfSectionOpen={shelfSectionOpen}
+                desktopOnly
+                onClick={handleShelfSectionToggle}
+              />
+            )}
           </div>
         </div>
         <Hidden aboveMobile>
@@ -227,10 +281,13 @@ const JobCard = memo(props => {
           trackLinkClicked={trackLinkClicked}
         />
       </div>
-      {
-        !isSplitView &&
+      {!isSplitView && (
         <Hidden mobile className={styles.rightContainer}>
-          <CompanyBanner isIntersecting={props.isIntersecting} bannerUrl={job.bannerUrl} enableBrandedAd={enableBrandedAd} />
+          <CompanyBanner
+            isIntersecting={props.isIntersecting}
+            bannerUrl={job.bannerUrl}
+            enableBrandedAd={enableBrandedAd}
+          />
           <IconList
             className={styles.structuredData}
             list={[
@@ -241,7 +298,7 @@ const JobCard = memo(props => {
             ]}
           />
         </Hidden>
-      }
+      )}
     </div>
   );
 });
@@ -255,7 +312,7 @@ export default props => (
 );
 
 JobCard.defaultProps = {
-  trackLinkClicked: () => { },
+  trackLinkClicked: () => {},
   tenant: ''
 };
 
