@@ -1,27 +1,30 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import JobTitleLink from './JobTitleLink';
+import JobTitleLink, { JobTitlePartForTest as JobTitlePart } from './JobTitleLink';
 
 const defaultJob = {
-  jobTitle: 'Software Engineer',
+  jobTitle: 'Software Engineer Richmond',
   jobUrl: '/jobCard'
 };
 
 describe('JobCard - JobTitleLink', () => {
-  it('should render correctly', () => {
+  it('should render without keywords', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('should not bold if the keyword are not match', () => {
+
+  it('should not bold anything if keywords do not match', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Programmer" />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('should bold keyword', () => {
+
+  it('should bold matching keywords', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} keyword="Soft Eng" />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('should render LinkComponent when it is provided', () => {
+
+  it('should render with LinkComponent', () => {
     const wrapper = shallow(
       <JobTitleLink
         job={defaultJob}
@@ -34,8 +37,20 @@ describe('JobCard - JobTitleLink', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should change className for viewed job', () => {
+  it('should render with viewed flag', () => {
     const wrapper = shallow(<JobTitleLink job={defaultJob} viewed />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('JobTitlePart', () => {
+    it('should render a job title part', () => {
+      const wrapper = shallow(<JobTitlePart>foo</JobTitlePart>);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render a highlighted job title part', () => {
+      const wrapper = shallow(<JobTitlePart isHighlighted>foo</JobTitlePart>);
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });

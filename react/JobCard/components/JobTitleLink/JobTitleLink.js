@@ -12,29 +12,33 @@ const JobTitleLinkPropTypes = PropTypes.shape({
   jobUrl: PropTypes.string
 });
 
+const JobTitlePart = ({ children, isHighlighted }) => (<Text
+  strong
+  whistling
+  className={classnames(styles.jobTitle, { [styles.titleKeyword]: isHighlighted })}>
+  {children}
+</Text>);
+JobTitlePart.propTypes = {
+  children: PropTypes.string.isRequired,
+  isHighlighted: PropTypes.bool
+};
+
 const JobTitleLink = ({ keyword, job: { jobTitle, jobUrl }, LinkComponent = defaultLink, viewed, trackLinkClicked }) => {
-  let title = (<Text whistling strong className={styles.jobTitle}>{jobTitle}</Text>);
   const keywordParts = getParts(jobTitle, keyword);
 
-  if (keywordParts) {
-    title = (
-      <Fragment>
-        {
-          keywordParts.map((part, index) => {
-            return (
-              <Text
-                strong
-                whistling
-                className={classnames(styles.jobTitle, { [styles.titleKeyword]: part.highlight })}
-                key={index}>
-                {part.text}
-              </Text>
-            );
-          })
-        }
-      </Fragment>
-    );
-  }
+  const title = keywordParts ? (
+    <Fragment>
+      {
+        keywordParts.map((part, index) => {
+          return (
+            <JobTitlePart key={index} isHighlighted={part.highlight}>
+              {part.text}
+            </JobTitlePart>
+          );
+        })
+      }
+    </Fragment>
+  ) : <JobTitlePart>{jobTitle}</JobTitlePart>;
 
   return <LinkComponent link={jobUrl} className={classnames({ [styles.jobTitleLink]: !viewed, [styles.jobTitleLinkVisited]: viewed })} rel="noopener noreferrer" onClick={() => trackLinkClicked(trackLinkType.jobTitle)}>{title}</LinkComponent>;
 };
@@ -50,3 +54,4 @@ JobTitleLink.propTypes = {
 };
 
 export default JobTitleLink;
+export { JobTitlePart as JobTitlePartForTest };

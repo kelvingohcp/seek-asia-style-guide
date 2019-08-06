@@ -1,129 +1,124 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JobCard - JobTitleLink should bold keyword 1`] = `
+exports[`JobCard - JobTitleLink JobTitlePart should render a highlighted job title part 1`] = `
+<Text
+  baseline={true}
+  className="jobTitle titleKeyword"
+  strong={true}
+  whistling={true}
+>
+  foo
+</Text>
+`;
+
+exports[`JobCard - JobTitleLink JobTitlePart should render a job title part 1`] = `
+<Text
+  baseline={true}
+  className="jobTitle"
+  strong={true}
+  whistling={true}
+>
+  foo
+</Text>
+`;
+
+exports[`JobCard - JobTitleLink should bold matching keywords 1`] = `
 <Link
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle titleKeyword"
+  <JobTitlePart
+    isHighlighted={true}
     key="0"
-    strong={true}
-    whistling={true}
   >
     Soft
-  </Text>
-  <Text
-    baseline={true}
-    className="jobTitle"
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={false}
     key="1"
-    strong={true}
-    whistling={true}
   >
     ware 
-  </Text>
-  <Text
-    baseline={true}
-    className="jobTitle titleKeyword"
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={true}
     key="2"
-    strong={true}
-    whistling={true}
   >
     Eng
-  </Text>
-  <Text
-    baseline={true}
-    className="jobTitle"
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={false}
     key="3"
-    strong={true}
-    whistling={true}
   >
-    ineer
-  </Text>
+    ineer Richmond
+  </JobTitlePart>
 </Link>
 `;
 
-exports[`JobCard - JobTitleLink should change className for viewed job 1`] = `
-<Link
-  className="jobTitleLinkVisited"
-  link="/jobCard"
-  onClick={[Function]}
-  rel="noopener noreferrer"
->
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
-  >
-    Software Engineer
-  </Text>
-</Link>
-`;
-
-exports[`JobCard - JobTitleLink should not bold if the keyword are not match 1`] = `
+exports[`JobCard - JobTitleLink should not bold anything if keywords do not match 1`] = `
 <Link
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
-  >
-    Software Engineer
-  </Text>
+  <JobTitlePart>
+    Software Engineer Richmond
+  </JobTitlePart>
 </Link>
 `;
 
-exports[`JobCard - JobTitleLink should render LinkComponent when it is provided 1`] = `
+exports[`JobCard - JobTitleLink should render with LinkComponent 1`] = `
 <LinkComponent
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
+  <JobTitlePart
+    isHighlighted={false}
     key="0"
-    strong={true}
-    whistling={true}
   >
     Software 
-  </Text>
-  <Text
-    baseline={true}
-    className="jobTitle titleKeyword"
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={true}
     key="1"
-    strong={true}
-    whistling={true}
   >
     Engineer
-  </Text>
+  </JobTitlePart>
+  <JobTitlePart
+    isHighlighted={false}
+    key="2"
+  >
+     Richmond
+  </JobTitlePart>
 </LinkComponent>
 `;
 
-exports[`JobCard - JobTitleLink should render correctly 1`] = `
+exports[`JobCard - JobTitleLink should render with viewed flag 1`] = `
+<Link
+  className="jobTitleLinkVisited"
+  link="/jobCard"
+  onClick={[Function]}
+  rel="noopener noreferrer"
+>
+  <JobTitlePart>
+    Software Engineer Richmond
+  </JobTitlePart>
+</Link>
+`;
+
+exports[`JobCard - JobTitleLink should render without keywords 1`] = `
 <Link
   className="jobTitleLink"
   link="/jobCard"
   onClick={[Function]}
   rel="noopener noreferrer"
 >
-  <Text
-    baseline={true}
-    className="jobTitle"
-    strong={true}
-    whistling={true}
-  >
-    Software Engineer
-  </Text>
+  <JobTitlePart>
+    Software Engineer Richmond
+  </JobTitlePart>
 </Link>
 `;
