@@ -18,8 +18,4 @@ describe('CompanyBanner', () => {
   it('should render on mobile', () => {
     expect(shallow(<CompanyBanner enableBrandedAd bannerUrl="/foo" isMobile />)).toMatchSnapshot();
   });
-
-  it('should render with placeholder', () => {
-    expect(shallow(<CompanyBanner enableBrandedAd bannerUrl="/foo" isMobile isIntersecting={false} />)).toMatchSnapshot();
-  });
 });

@@ -162,8 +162,7 @@ const JobCard = memo(props => {
     viewed,
     viewedDate,
     isNewJob,
-    tenant,
-    isIntersecting
+    tenant
   } = props;
 
   const {
@@ -215,7 +214,6 @@ const JobCard = memo(props => {
         {!isSplitView && (
           <Hidden aboveMobile className={styles.alignCenter}>
             <CompanyBanner
-              isIntersecting={isIntersecting}
               bannerUrl={bannerUrl}
               enableBrandedAd={enableBrandedAd}
               isMobile
@@ -225,7 +223,7 @@ const JobCard = memo(props => {
         <JobLabel
           applied={applied}
           expired={isExpired}
-          viewed={viewed && viewedDate && `Viewed ${viewedDate}`}
+          viewed={viewed && viewedDate ? `Viewed ${viewedDate}` : ''}
           isNewJob={isNewJob}
         />
         <JobTitle
@@ -284,7 +282,6 @@ const JobCard = memo(props => {
       {!isSplitView && (
         <Hidden mobile className={styles.rightContainer}>
           <CompanyBanner
-            isIntersecting={props.isIntersecting}
             bannerUrl={job.bannerUrl}
             enableBrandedAd={enableBrandedAd}
           />

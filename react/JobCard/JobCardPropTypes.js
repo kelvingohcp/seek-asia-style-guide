@@ -39,7 +39,6 @@ export const JobCardPropTypes = {
   borderlessRoot: PropTypes.bool,
   hideSalary: PropTypes.bool,
   isSplitView: PropTypes.bool,
-  isIntersecting: PropTypes.bool,
   isVariation: PropTypes.bool,
   enableBrandedAd: PropTypes.bool,
   job: PropTypes.shape(JobType).isRequired,
