@@ -1,20 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FooterLinks: should render links with messages and linking functions 1`] = `
-<div
-  className="list"
+<ul
+  className="footerMeta"
 >
-  <LinkItem
-    title="Privacy Statement"
-    url="/pages/terms/privacy-policy"
-  />
-  <LinkItem
-    title="Terms & Conditions"
-    url="/pages/terms/terms-conditions"
-  />
-  <LinkItem
-    title="Site Map"
-    url="/sitemap"
-  />
-</div>
+  <li
+    className="footerMetaItem"
+  >
+    <LinkItem
+      className="footerMetaItem"
+      title="Privacy Statement"
+      url="/pages/terms/privacy-policy"
+    />
+  </li>
+  <li
+    className="footerMetaItem"
+  >
+    <LinkItem
+      className="footerMetaItem"
+      title="Terms & Conditions"
+      url="/pages/terms/terms-conditions"
+    />
+  </li>
+  <li
+    className="footerMetaItem"
+  >
+    <LinkItem
+      className="footerMetaItem"
+      title="Site Map"
+      url="/sitemap"
+    />
+  </li>
+</ul>
 `;

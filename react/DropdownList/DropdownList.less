@@ -1,10 +1,13 @@
 @import (reference) "~seek-asia-style-guide/theme";
 @import (reference) "~seek-asia-style-guide/react/ListItem/ListItem.less";
 
-@chevron-padding-left: @grid-base * 2;
+@toggler-item-side-padding: @grid-base;
 @dropdown-padding-top: @grid-base * 2;
 @chevron-height: @grid-base * 3;
 @chevron-padding: @grid-base;
+
+@toggler-line-height: @grid-base * 7;
+@toggler-line-height-mobile: @grid-base * 6;
 
 .root {
   align-items: flex-start;
@@ -12,65 +15,51 @@
   color: @saGrey1;
   display: flex;
   line-height: @list-item-padding;
-  padding: @list-item-padding @list-item-padding;
+  padding: @list-item-padding 0;
   flex-direction: column;
   &.lowerLevel.expanded {
     padding-bottom: 0;
   }
-}
-
-.noShadow {
-  box-shadow: none;
-}
-
-.chevronSvg {
-  height: @chevron-height;
-  width: @chevron-height;
-}
-
-.chevron {
-
-  &.top {
-    margin-top: @chevron-padding * 2;
-    margin-bottom: auto;
-  }
-
-  &.center {
-    margin: auto;
-  }
-  &.bottom {
-    margin-top: auto;
-    margin-bottom: @chevron-padding;
+  &.noShadow {
+    box-shadow: none;
   }
 }
 
-.description {
-  padding-right: @chevron-padding-left;
+.chevronBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: @toggler-line-height-mobile;
+  height: @toggler-line-height-mobile;
+  width: @toggler-line-height-mobile;
+  @media @aboveMobile {
+    flex-basis: @toggler-line-height;
+    height: @toggler-line-height;
+    width: @toggler-line-height;
+  }
+  transform: translateY(-@grid-base / 2);
+  flex-shrink: 0;
 }
 
-.padding {
-  padding-left: @chevron-padding-left;
-}
-
-.position {
+.leftChevron {
   flex-direction: row-reverse;
+
+  & + .dropdown {
+    padding-left: @toggler-line-height;
+  }
 }
 
 .toggler {
-  display: flex;
-  @media @desktop {
-    justify-content: center;
-    align-items: center;
-  }
   cursor: pointer;
+  display: flex;
 }
 
 .dropdown {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-top: @dropdown-padding-top;
-}
 
-.dropdownNoShow:extend(.dropdown) {
-  display: none;
+  &.opened {
+    display: flex;
+  }
 }

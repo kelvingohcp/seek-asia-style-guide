@@ -4,34 +4,27 @@
 @list-line-height: @grid-base * 4;
 @item-horizontal-padding: @grid-base * 2;
 
-.list {
-  display: block;
-  padding-top: @grid-base * 2;
-  padding-left: @grid-base * 3;
-  @media @desktop {
-    display: none;
-  }
-}
-
-.displayInDesktop {
-  display: none;
-  padding: 0;
-  @media @desktop {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    line-height: @list-line-height;
-  }
-}
-
 .item {
   padding: 0;
-  @media @desktop {
-    padding: 0 @item-horizontal-padding;
+}
+
+.footerMeta {
+  padding-right: @list-line-height;
+  list-style-type: none;
+  padding-top: @grid-base * 4;
+  @media @aboveMobile {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
   }
-  &:first-child {
-    padding-left: 0;
+}
+
+.footerMetaItem {
+  align-items: center;
+  display: flex;
+  margin-bottom: @grid-base * 2;
+  @media @aboveMobile {
+    margin-bottom: initial;
+    margin-right: @grid-base * 3;
   }
 }

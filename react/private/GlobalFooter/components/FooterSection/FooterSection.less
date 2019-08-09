@@ -5,15 +5,31 @@
 .title {
   color: @dbBrand;
   padding-bottom: @grid-base * 4;
-  padding-left: @grid-base * 3;
-  padding-right: @grid-base * 3;
+}
+
+.iconStyle {
+  color: @saGrey3;
+}
+
+.iconListItemStyle {
+  padding-left: 0;
 }
 
 .content {
-  color: @saGrey2;
+  color: @saGrey1;
+  padding: (@grid-base * 3 / 2) 0; // Divided by 2 for single side
 }
 
 .subSectionContent {
   background-color: transparent;
   color: @saGrey1;
+}
+
+.mobileOnly {
+  .hideBeyondMobile();
+}
+
+.flexBeyondMobile {
+  display: flex;
+  .hideOnMobile();
 }

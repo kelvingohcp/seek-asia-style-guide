@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: yarn --ignore-engines
+      - run: yarn install --frozen-lockfile --ignore-engines
       - run:
            name: Run lint
            command: yarn run lint
@@ -19,7 +19,7 @@ jobs:
      working_directory: ~/repo
      steps:
        - checkout
-       - run: yarn --ignore-engines
+       - run: yarn install --frozen-lockfile --ignore-engines
        - run: yarn run build
        - run: yarn run deploy-surge -- -d seek-asia-style-guide--$CIRCLE_SHA1.surge.sh
        - run: yarn run post-commit-status
@@ -29,7 +29,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: yarn --ignore-engines
+      - run: yarn install --frozen-lockfile --ignore-engines
       - run: git config --global user.name "Circle-CI";
       - run: git config --global user.email "srp-dev@seekasia.com";
       - run: yarn run build-gh-pages

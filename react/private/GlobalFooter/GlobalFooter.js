@@ -3,7 +3,7 @@ import styles from './GlobalFooter.less';
 import PropTypes from 'prop-types';
 import FooterLinks from './components/FooterLinks/FooterLinks';
 import UpperFooter from './components/UpperFooter/UpperFooter';
-import { Text, PageBlock, ListItem, ChevronIcon } from 'seek-asia-style-guide/react';
+import { Hidden, Text, PageBlock, ListItem, Icon } from 'seek-asia-style-guide/react';
 import classnames from 'classnames';
 import smoothScroll from 'seek-asia-style-guide/react/private/smoothScroll';
 import _get from 'lodash/get';
@@ -12,10 +12,8 @@ export const makeDefaultLinkRenderer = () => {
   const DefaultLinkRenderer = ({ href, children, ...props }) => (
     <a className={styles.link} href={href} {...props}>
       {React.Children.map(children, child => {
-        if (child.type === ListItem) {
-          return React.cloneElement(child, { noShadow: true });
-        }
-        return child;
+        return (child.type === ListItem) ?
+          React.cloneElement(child, { noShadow: true }) : child;
       })}
     </a>
   );
@@ -29,15 +27,10 @@ export const makeDefaultLinkRenderer = () => {
 };
 
 const currentLocale = ({ title, ItemIcon } = {}) => {
-  if (title) {
-    return (
-      <span className={styles.currentLocale}>
-        {ItemIcon && <ItemIcon className={styles.localeIcon} />}
-        <Text whispering>{title}</Text>
-      </span>
-    );
-  }
-  return null;
+  return title ? <div className={styles.currentLocale}>
+    {ItemIcon && <ItemIcon className={styles.localeIcon} />}
+    <Text whispering className={styles.currentLocaleLabel}>{title}</Text>
+  </div> : null;
 };
 
 currentLocale.propTypes = {
@@ -74,39 +67,29 @@ export default class GlobalFooter extends Component {
     return (
       <footer className={classnames(styles.container, { [styles.headerActionTrayOffset]: showHeaderActionTrayOffset })}>
         <PageBlock>
-          <div
-            className={classnames({
-              [styles.hidden]: isExpandedVersion ? false : !isOpen,
-              [styles.upperWrapper]: true
-            })}>
+          <div className={classnames(styles.upperWrapper, { [styles.hidden]: isExpandedVersion ? false : !isOpen })}>
             <UpperFooter footerMessages={footerMessages} linkRenderer={linkRenderer} />
-            <FooterLinks footerMessages={footerMessages} linkRenderer={linkRenderer} />
+            <Hidden aboveMobile>
+              <FooterLinks footerMessages={footerMessages} linkRenderer={linkRenderer} />
+            </Hidden>
           </div>
           <div className={styles.lowerWrapper} >
             {
               shouldShowCountryLanguage && currentLocale(locales[0])
             }
-            <div
-              className={classnames(shouldShowCountryLanguage ? styles.endOfLine : styles.endOfLineWithoutCountry, {
-                [styles.fullWidth]: shouldShowCountryLanguage === false
-              })}>
-              <div
-                className={classnames({
-                  [styles.collapsed]: isExpandedVersion ? false : !isOpen,
-                  [styles.lowerWrapperLinks]: true,
-                  [styles.fullWidth]: shouldShowCountryLanguage === false
-                })}>
-                <FooterLinks footerMessages={footerMessages} linkRenderer={linkRenderer} displayInDesktop />
-                <Text whispering secondary semiStrong>
-                  {_get(footerMessages, 'copyright').replace('{year}', year)}
-                </Text>
-              </div>
-              { !isExpandedVersion &&
-              <div className={styles.chevronIcon} onClick={e => this.handleClick(e)}>
-                <ChevronIcon id={pageBottom} svgClassName={styles.chevronSvg} direction={isOpen ? 'up' : 'down'} />
-              </div>
-              }
+            <div className={classnames(styles.meta)}>
+              <Hidden mobile>
+                <FooterLinks footerMessages={footerMessages} linkRenderer={linkRenderer} className={classnames(styles.bottomMeta)} />
+              </Hidden>
+              <Text whispering secondary semiStrong className={styles.copyright}>
+                {_get(footerMessages, 'copyright').replace('{year}', year)}
+              </Text>
             </div>
+            { !isExpandedVersion &&
+              <div className={styles.chevronIcon} onClick={e => this.handleClick(e)}>
+                <Icon type="chevron" id={pageBottom} smoothRotate rotation={isOpen ? 'reset' : '-180deg'} />
+              </div>
+            }
           </div>
         </PageBlock>
       </footer>

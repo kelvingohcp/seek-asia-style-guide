@@ -1,25 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import classnames from 'classnames';
 import styles from './FooterLinks.less';
 import { Text } from 'seek-asia-style-guide/react';
 import _get from 'lodash/get';
 
-const FooterLinks = ({ footerMessages, linkRenderer, displayInDesktop }) => {
+const FooterLinks = ({ footerMessages, linkRenderer }) => {
   const LinkItem = ({ title, url }) => {
-    return (
-      <div className={styles.item}>
-        {
-          linkRenderer({
-            children: <Text whispering secondary semiStrong>
-              {title}
-            </Text>,
-            href: url
-          })
-        }
-      </div>
-    );
+    return linkRenderer({
+      children: <Text whispering secondary semiStrong className={styles.item}>
+        {title}
+      </Text>,
+      href: url
+    });
   };
 
   LinkItem.propTypes = {
@@ -28,18 +21,17 @@ const FooterLinks = ({ footerMessages, linkRenderer, displayInDesktop }) => {
   };
 
   return (
-    <div className={classnames(styles.list, displayInDesktop && styles.displayInDesktop)}>
-      <LinkItem {..._get(footerMessages, 'privacy')} />
-      <LinkItem {..._get(footerMessages, 'terms')} />
-      <LinkItem {..._get(footerMessages, 'siteMap')} />
-    </div>
+    <ul className={styles.footerMeta}>
+      <li className={styles.footerMetaItem}><LinkItem {..._get(footerMessages, 'privacy')} className={styles.footerMetaItem} /></li>
+      <li className={styles.footerMetaItem}><LinkItem {..._get(footerMessages, 'terms')} className={styles.footerMetaItem} /></li>
+      <li className={styles.footerMetaItem}><LinkItem {..._get(footerMessages, 'siteMap')} className={styles.footerMetaItem} /></li>
+    </ul>
   );
 };
 
 FooterLinks.propTypes = {
   footerMessages: PropTypes.object.isRequired,
-  linkRenderer: PropTypes.func.isRequired,
-  displayInDesktop: PropTypes.bool
+  linkRenderer: PropTypes.func.isRequired
 };
 
 export default FooterLinks;

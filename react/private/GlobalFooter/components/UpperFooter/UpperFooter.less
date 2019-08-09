@@ -2,16 +2,24 @@
 @wrapper-low-vertical-padding: @grid-base * 2;
 @title-padding-bottom: @grid-base * 3;
 
-.columnGroup {
+.footerGrid {
   display: flex;
+  flex-wrap: wrap;
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: @grid-base * 4;
+    grid-template-columns: repeat(2, 1fr);
+    @media @aboveMobile {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
-.category {
-  padding: 0;
-  margin: 0 auto;
-  flex: 1;
-}
-
-.firstCategory:extend(.category) {
-  margin-left: 0;
+.footerGridItem {
+  @media @mobile {
+    flex-basis: 49%;
+  }
+  @supports (display: grid) {
+    width: 100%;
+  }
 }

@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FooterSection render footer section with hideInMobile 1`] = `
-<Section
+<div
   className=""
-  header={false}
-  pullout={false}
-  slim={false}
 >
   <Text
     baseline={true}
@@ -14,20 +11,14 @@ exports[`FooterSection render footer section with hideInMobile 1`] = `
   >
     About JobsDB
   </Text>
-  <span
-    key="contactUs"
-  />
-</Section>
+</div>
 `;
 
 exports[`FooterSection render footer section with icon 1`] = `""`;
 
 exports[`FooterSection render footer section with subSessionMessage 1`] = `
-<Section
+<div
   className=""
-  header={false}
-  pullout={false}
-  slim={false}
 >
   <Text
     baseline={true}
@@ -36,9 +27,6 @@ exports[`FooterSection render footer section with subSessionMessage 1`] = `
   >
     About JobsDB
   </Text>
-  <span
-    key="contactUs"
-  />
   <SubFooterSection
     linkRenderer={[Function]}
     message={
@@ -63,7 +51,7 @@ exports[`FooterSection render footer section with subSessionMessage 1`] = `
       }
     }
   />
-</Section>
+</div>
 `;
 
 exports[`FooterSection render footer section with wrong message 1`] = `""`;

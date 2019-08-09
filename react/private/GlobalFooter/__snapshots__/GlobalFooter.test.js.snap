@@ -6,7 +6,7 @@ exports[`Footer component should render with custom href link 1`] = `
 >
   <PageBlock>
     <div
-      className="hidden upperWrapper"
+      className="upperWrapper hidden"
     >
       <UpperFooter
         footerMessages={
@@ -79,89 +79,105 @@ exports[`Footer component should render with custom href link 1`] = `
         }
         linkRenderer={[Function]}
       />
-      <FooterLinks
-        footerMessages={
-          Object {
-            "about": Object {
+      <Hidden
+        aboveMobile={true}
+        className=""
+        component="span"
+        desktop={false}
+        mobile={false}
+        print={false}
+        screen={false}
+      >
+        <FooterLinks
+          footerMessages={
+            Object {
               "about": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
+                "about": Object {
+                  "title": "About jobsDB",
+                  "url": "/pages/aboutus",
+                },
+                "contactUs": Object {
+                  "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+                  "title": "Contact us",
+                  "url": "/pages/regional-coverage",
+                },
+                "title": "About JobsDB",
               },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
+              "cfsLink": "/hk/en",
+              "cmsLink": "/en-hk",
+              "connect": Object {
+                "appStore": Object {
+                  "icon": "apple",
+                  "title": "jobsDB @ App Store",
+                  "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+                },
+                "playStore": Object {
+                  "icon": "android",
+                  "title": "jobsDB @ Google Play",
+                  "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+                },
+                "title": "Connect",
               },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "copyright": "Copyright © 1998-{year}, jobsDB.",
+              "legal": Object {
+                "title": "Legal terms",
+                "url": "/legal.do",
               },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "partners": Object {
+                "bdjobs": Object {
+                  "title": "Bdjobs (Bandladesh)",
+                  "url": "https://www.bdjobs.com/",
+                },
+                "brighterMonday": Object {
+                  "title": "Brighter Monday (East Africa)",
+                  "url": "https://www.brightermonday.com/",
+                },
+                "catho": Object {
+                  "title": "Catho (Brazil)",
+                  "url": "https://www.catho.com.br/",
+                },
+                "title": "International partners",
+                "zhaopin": Object {
+                  "title": "Zhaopin (China)",
+                  "url": "https://www.zhaopin.com/",
+                },
               },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
+              "privacy": Object {
+                "title": "Privacy Statement",
+                "url": "/pages/terms/privacy-policy",
               },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
+              "rightReserved": "All Rights Reserved.",
+              "siteMap": Object {
+                "title": "Site Map",
+                "url": "/sitemap",
               },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
+              "terms": Object {
+                "title": "Terms & Conditions",
+                "url": "/pages/terms/terms-conditions",
               },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
+            }
           }
-        }
-        linkRenderer={[Function]}
-      />
+          linkRenderer={[Function]}
+        />
+      </Hidden>
     </div>
     <div
       className="lowerWrapper"
     >
       <div
-        className="endOfLineWithoutCountry"
+        className="meta"
       >
-        <div
-          className="collapsed lowerWrapperLinks"
+        <Hidden
+          aboveMobile={false}
+          className=""
+          component="span"
+          desktop={false}
+          mobile={true}
+          print={false}
+          screen={false}
         >
           <FooterLinks
-            displayInDesktop={true}
+            className="bottomMeta"
             footerMessages={
               Object {
                 "about": Object {
@@ -232,26 +248,30 @@ exports[`Footer component should render with custom href link 1`] = `
             }
             linkRenderer={[Function]}
           />
-          <Text
-            baseline={true}
-            secondary={true}
-            semiStrong={true}
-            whispering={true}
-          >
-            Copyright © 1998-2019, jobsDB.
-          </Text>
-        </div>
-        <div
-          className="chevronIcon"
-          onClick={[Function]}
+        </Hidden>
+        <Text
+          baseline={true}
+          className="copyright"
+          secondary={true}
+          semiStrong={true}
+          whispering={true}
         >
-          <ChevronIcon
-            className=""
-            direction="down"
-            id="pageBottom"
-            svgClassName="chevronSvg"
-          />
-        </div>
+          Copyright © 1998-2019, jobsDB.
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <Icon
+          animation=""
+          id="pageBottom"
+          lineHeight=""
+          rotation="-180deg"
+          size=""
+          smoothRotate={true}
+          type="chevron"
+        />
       </div>
     </div>
   </PageBlock>
@@ -264,7 +284,7 @@ exports[`Footer component should render with custom link renderer 1`] = `
 >
   <PageBlock>
     <div
-      className="hidden upperWrapper"
+      className="upperWrapper hidden"
     >
       <UpperFooter
         footerMessages={
@@ -337,89 +357,105 @@ exports[`Footer component should render with custom link renderer 1`] = `
         }
         linkRenderer={[Function]}
       />
-      <FooterLinks
-        footerMessages={
-          Object {
-            "about": Object {
+      <Hidden
+        aboveMobile={true}
+        className=""
+        component="span"
+        desktop={false}
+        mobile={false}
+        print={false}
+        screen={false}
+      >
+        <FooterLinks
+          footerMessages={
+            Object {
               "about": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
+                "about": Object {
+                  "title": "About jobsDB",
+                  "url": "/pages/aboutus",
+                },
+                "contactUs": Object {
+                  "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+                  "title": "Contact us",
+                  "url": "/pages/regional-coverage",
+                },
+                "title": "About JobsDB",
               },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
+              "cfsLink": "/hk/en",
+              "cmsLink": "/en-hk",
+              "connect": Object {
+                "appStore": Object {
+                  "icon": "apple",
+                  "title": "jobsDB @ App Store",
+                  "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+                },
+                "playStore": Object {
+                  "icon": "android",
+                  "title": "jobsDB @ Google Play",
+                  "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+                },
+                "title": "Connect",
               },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "copyright": "Copyright © 1998-{year}, jobsDB.",
+              "legal": Object {
+                "title": "Legal terms",
+                "url": "/legal.do",
               },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "partners": Object {
+                "bdjobs": Object {
+                  "title": "Bdjobs (Bandladesh)",
+                  "url": "https://www.bdjobs.com/",
+                },
+                "brighterMonday": Object {
+                  "title": "Brighter Monday (East Africa)",
+                  "url": "https://www.brightermonday.com/",
+                },
+                "catho": Object {
+                  "title": "Catho (Brazil)",
+                  "url": "https://www.catho.com.br/",
+                },
+                "title": "International partners",
+                "zhaopin": Object {
+                  "title": "Zhaopin (China)",
+                  "url": "https://www.zhaopin.com/",
+                },
               },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
+              "privacy": Object {
+                "title": "Privacy Statement",
+                "url": "/pages/terms/privacy-policy",
               },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
+              "rightReserved": "All Rights Reserved.",
+              "siteMap": Object {
+                "title": "Site Map",
+                "url": "/sitemap",
               },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
+              "terms": Object {
+                "title": "Terms & Conditions",
+                "url": "/pages/terms/terms-conditions",
               },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
+            }
           }
-        }
-        linkRenderer={[Function]}
-      />
+          linkRenderer={[Function]}
+        />
+      </Hidden>
     </div>
     <div
       className="lowerWrapper"
     >
       <div
-        className="endOfLineWithoutCountry"
+        className="meta"
       >
-        <div
-          className="collapsed lowerWrapperLinks"
+        <Hidden
+          aboveMobile={false}
+          className=""
+          component="span"
+          desktop={false}
+          mobile={true}
+          print={false}
+          screen={false}
         >
           <FooterLinks
-            displayInDesktop={true}
+            className="bottomMeta"
             footerMessages={
               Object {
                 "about": Object {
@@ -490,26 +526,30 @@ exports[`Footer component should render with custom link renderer 1`] = `
             }
             linkRenderer={[Function]}
           />
-          <Text
-            baseline={true}
-            secondary={true}
-            semiStrong={true}
-            whispering={true}
-          >
-            Copyright © 1998-2019, jobsDB.
-          </Text>
-        </div>
-        <div
-          className="chevronIcon"
-          onClick={[Function]}
+        </Hidden>
+        <Text
+          baseline={true}
+          className="copyright"
+          secondary={true}
+          semiStrong={true}
+          whispering={true}
         >
-          <ChevronIcon
-            className=""
-            direction="down"
-            id="pageBottom"
-            svgClassName="chevronSvg"
-          />
-        </div>
+          Copyright © 1998-2019, jobsDB.
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <Icon
+          animation=""
+          id="pageBottom"
+          lineHeight=""
+          rotation="-180deg"
+          size=""
+          smoothRotate={true}
+          type="chevron"
+        />
       </div>
     </div>
   </PageBlock>
@@ -522,7 +562,7 @@ exports[`Footer component should render with default props 1`] = `
 >
   <PageBlock>
     <div
-      className="hidden upperWrapper"
+      className="upperWrapper hidden"
     >
       <UpperFooter
         footerMessages={
@@ -595,89 +635,105 @@ exports[`Footer component should render with default props 1`] = `
         }
         linkRenderer={[Function]}
       />
-      <FooterLinks
-        footerMessages={
-          Object {
-            "about": Object {
+      <Hidden
+        aboveMobile={true}
+        className=""
+        component="span"
+        desktop={false}
+        mobile={false}
+        print={false}
+        screen={false}
+      >
+        <FooterLinks
+          footerMessages={
+            Object {
               "about": Object {
-                "title": "About jobsDB",
-                "url": "/pages/aboutus",
+                "about": Object {
+                  "title": "About jobsDB",
+                  "url": "/pages/aboutus",
+                },
+                "contactUs": Object {
+                  "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
+                  "title": "Contact us",
+                  "url": "/pages/regional-coverage",
+                },
+                "title": "About JobsDB",
               },
-              "contactUs": Object {
-                "mobileUrl": "https://m.jobsdb.com/en-hk/legal.do?p=contact_us",
-                "title": "Contact us",
-                "url": "/pages/regional-coverage",
+              "cfsLink": "/hk/en",
+              "cmsLink": "/en-hk",
+              "connect": Object {
+                "appStore": Object {
+                  "icon": "apple",
+                  "title": "jobsDB @ App Store",
+                  "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+                },
+                "playStore": Object {
+                  "icon": "android",
+                  "title": "jobsDB @ Google Play",
+                  "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+                },
+                "title": "Connect",
               },
-              "title": "About JobsDB",
-            },
-            "cfsLink": "/hk/en",
-            "cmsLink": "/en-hk",
-            "connect": Object {
-              "appStore": Object {
-                "icon": "apple",
-                "title": "jobsDB @ App Store",
-                "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432",
+              "copyright": "Copyright © 1998-{year}, jobsDB.",
+              "legal": Object {
+                "title": "Legal terms",
+                "url": "/legal.do",
               },
-              "playStore": Object {
-                "icon": "android",
-                "title": "jobsDB @ Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.jobsdb",
+              "partners": Object {
+                "bdjobs": Object {
+                  "title": "Bdjobs (Bandladesh)",
+                  "url": "https://www.bdjobs.com/",
+                },
+                "brighterMonday": Object {
+                  "title": "Brighter Monday (East Africa)",
+                  "url": "https://www.brightermonday.com/",
+                },
+                "catho": Object {
+                  "title": "Catho (Brazil)",
+                  "url": "https://www.catho.com.br/",
+                },
+                "title": "International partners",
+                "zhaopin": Object {
+                  "title": "Zhaopin (China)",
+                  "url": "https://www.zhaopin.com/",
+                },
               },
-              "title": "Connect",
-            },
-            "copyright": "Copyright © 1998-{year}, jobsDB.",
-            "legal": Object {
-              "title": "Legal terms",
-              "url": "/legal.do",
-            },
-            "partners": Object {
-              "bdjobs": Object {
-                "title": "Bdjobs (Bandladesh)",
-                "url": "https://www.bdjobs.com/",
+              "privacy": Object {
+                "title": "Privacy Statement",
+                "url": "/pages/terms/privacy-policy",
               },
-              "brighterMonday": Object {
-                "title": "Brighter Monday (East Africa)",
-                "url": "https://www.brightermonday.com/",
+              "rightReserved": "All Rights Reserved.",
+              "siteMap": Object {
+                "title": "Site Map",
+                "url": "/sitemap",
               },
-              "catho": Object {
-                "title": "Catho (Brazil)",
-                "url": "https://www.catho.com.br/",
+              "terms": Object {
+                "title": "Terms & Conditions",
+                "url": "/pages/terms/terms-conditions",
               },
-              "title": "International partners",
-              "zhaopin": Object {
-                "title": "Zhaopin (China)",
-                "url": "https://www.zhaopin.com/",
-              },
-            },
-            "privacy": Object {
-              "title": "Privacy Statement",
-              "url": "/pages/terms/privacy-policy",
-            },
-            "rightReserved": "All Rights Reserved.",
-            "siteMap": Object {
-              "title": "Site Map",
-              "url": "/sitemap",
-            },
-            "terms": Object {
-              "title": "Terms & Conditions",
-              "url": "/pages/terms/terms-conditions",
-            },
+            }
           }
-        }
-        linkRenderer={[Function]}
-      />
+          linkRenderer={[Function]}
+        />
+      </Hidden>
     </div>
     <div
       className="lowerWrapper"
     >
       <div
-        className="endOfLineWithoutCountry"
+        className="meta"
       >
-        <div
-          className="collapsed lowerWrapperLinks"
+        <Hidden
+          aboveMobile={false}
+          className=""
+          component="span"
+          desktop={false}
+          mobile={true}
+          print={false}
+          screen={false}
         >
           <FooterLinks
-            displayInDesktop={true}
+            className="bottomMeta"
             footerMessages={
               Object {
                 "about": Object {
@@ -748,26 +804,30 @@ exports[`Footer component should render with default props 1`] = `
             }
             linkRenderer={[Function]}
           />
-          <Text
-            baseline={true}
-            secondary={true}
-            semiStrong={true}
-            whispering={true}
-          >
-            Copyright © 1998-2019, jobsDB.
-          </Text>
-        </div>
-        <div
-          className="chevronIcon"
-          onClick={[Function]}
+        </Hidden>
+        <Text
+          baseline={true}
+          className="copyright"
+          secondary={true}
+          semiStrong={true}
+          whispering={true}
         >
-          <ChevronIcon
-            className=""
-            direction="down"
-            id="pageBottom"
-            svgClassName="chevronSvg"
-          />
-        </div>
+          Copyright © 1998-2019, jobsDB.
+        </Text>
+      </div>
+      <div
+        className="chevronIcon"
+        onClick={[Function]}
+      >
+        <Icon
+          animation=""
+          id="pageBottom"
+          lineHeight=""
+          rotation="-180deg"
+          size=""
+          smoothRotate={true}
+          type="chevron"
+        />
       </div>
     </div>
   </PageBlock>

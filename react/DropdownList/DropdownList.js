@@ -3,7 +3,7 @@ import styles from './DropdownList.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { Text, ChevronIcon } from 'seek-asia-style-guide/react';
+import { Text, Icon } from 'seek-asia-style-guide/react';
 
 const LEFT = 'left';
 const RIGHT = 'right';
@@ -27,11 +27,7 @@ export default class DropdownList extends Component {
 
   render() {
     const { value, noShadow, className, children, compact, chevronAlignment, lowerLevel, iconPosition, ...restProps } = this.props;
-    const chevronAlignmentStyle = {
-      top: styles.top,
-      center: styles.center,
-      bottom: styles.bottom
-    }[chevronAlignment];
+    const rotateDirection = (iconPosition === LEFT) ? '180deg' : '-180deg';
 
     return (
       <div
@@ -43,26 +39,20 @@ export default class DropdownList extends Component {
           [className]: className
         })} >
         <div
-          className={classnames({ [styles.toggler]: true, [styles.position]: iconPosition === LEFT })}
+          className={classnames({ [styles.toggler]: true, [styles.leftChevron]: iconPosition === LEFT })}
           onClick={this.toggleDropdown.bind(this)} >
           <Text
             shouting={!compact}
             baseline={false}
-            className={classnames({ [styles.description]: true, [styles.padding]: iconPosition === LEFT })}
             raw={true}
             {...restProps}>
             {value}
           </Text>
-          <ChevronIcon
-            className={classnames({
-              [styles.chevron]: true,
-              [chevronAlignmentStyle]: chevronAlignmentStyle
-            })}
-            svgClassName={styles.chevronSvg}
-            direction={this.state.chevronDirection}
-          />
+          <div className={styles.chevronBox}>
+            <Icon type="chevron" smoothRotate rotation={this.state.chevronDirection === 'down' ? rotateDirection : 'reset'} />
+          </div>
         </div>
-        <div className={this.state.isDropdownOpen ? styles.dropdown : styles.dropdownNoShow}>
+        <div className={classnames({ [styles.dropdown]: true, [styles.opened]: this.state.isDropdownOpen })}>
           {children}
         </div>
       </div>

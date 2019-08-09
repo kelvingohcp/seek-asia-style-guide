@@ -10,20 +10,26 @@ exports[`DropdownList: should render as lower level child 1`] = `
   >
     <Text
       baseline={false}
-      className="description"
       raw={true}
       shouting={true}
     >
       testValue
     </Text>
-    <ChevronIcon
-      className="chevron top"
-      direction="down"
-      svgClassName="chevronSvg"
-    />
+    <div
+      className="chevronBox"
+    >
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size=""
+        smoothRotate={true}
+        type="chevron"
+      />
+    </div>
   </div>
   <div
-    className="dropdownNoShow"
+    className="dropdown"
   >
     <DropdownList
       chevronAlignment="top"
@@ -49,20 +55,26 @@ exports[`DropdownList: should render in compact mode 1`] = `
   >
     <Text
       baseline={false}
-      className="description"
       raw={true}
       shouting={false}
     >
       testValue
     </Text>
-    <ChevronIcon
-      className="chevron top"
-      direction="down"
-      svgClassName="chevronSvg"
-    />
+    <div
+      className="chevronBox"
+    >
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size=""
+        smoothRotate={true}
+        type="chevron"
+      />
+    </div>
   </div>
   <div
-    className="dropdownNoShow"
+    className="dropdown"
   >
     <span />
   </div>
@@ -79,20 +91,26 @@ exports[`DropdownList: should render value with children 1`] = `
   >
     <Text
       baseline={false}
-      className="description"
       raw={true}
       shouting={true}
     >
       testValue
     </Text>
-    <ChevronIcon
-      className="chevron top"
-      direction="down"
-      svgClassName="chevronSvg"
-    />
+    <div
+      className="chevronBox"
+    >
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size=""
+        smoothRotate={true}
+        type="chevron"
+      />
+    </div>
   </div>
   <div
-    className="dropdownNoShow"
+    className="dropdown"
   >
     <span />
   </div>
@@ -109,20 +127,26 @@ exports[`DropdownList: should render with center-aligned chevron 1`] = `
   >
     <Text
       baseline={false}
-      className="description"
       raw={true}
       shouting={true}
     >
       testValue
     </Text>
-    <ChevronIcon
-      className="chevron center"
-      direction="down"
-      svgClassName="chevronSvg"
-    />
+    <div
+      className="chevronBox"
+    >
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size=""
+        smoothRotate={true}
+        type="chevron"
+      />
+    </div>
   </div>
   <div
-    className="dropdownNoShow"
+    className="dropdown"
   >
     <span />
   </div>
@@ -139,20 +163,26 @@ exports[`DropdownList: should render with className 1`] = `
   >
     <Text
       baseline={false}
-      className="description"
       raw={true}
       shouting={true}
     >
       testValue
     </Text>
-    <ChevronIcon
-      className="chevron top"
-      direction="down"
-      svgClassName="chevronSvg"
-    />
+    <div
+      className="chevronBox"
+    >
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size=""
+        smoothRotate={true}
+        type="chevron"
+      />
+    </div>
   </div>
   <div
-    className="dropdownNoShow"
+    className="dropdown"
   >
     <span />
   </div>
@@ -169,20 +199,26 @@ exports[`DropdownList: should render without shadow 1`] = `
   >
     <Text
       baseline={false}
-      className="description"
       raw={true}
       shouting={true}
     >
       testValue
     </Text>
-    <ChevronIcon
-      className="chevron top"
-      direction="down"
-      svgClassName="chevronSvg"
-    />
+    <div
+      className="chevronBox"
+    >
+      <Icon
+        animation=""
+        lineHeight=""
+        rotation="-180deg"
+        size=""
+        smoothRotate={true}
+        type="chevron"
+      />
+    </div>
   </div>
   <div
-    className="dropdownNoShow"
+    className="dropdown"
   >
     <span />
   </div>

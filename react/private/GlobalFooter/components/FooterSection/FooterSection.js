@@ -1,63 +1,64 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import styles from './FooterSection.less';
-import { Icon, ListItem, Section, Text, Hidden, DropdownList } from 'seek-asia-style-guide/react';
+import { Icon, ListItem, Text, DropdownList } from 'seek-asia-style-guide/react';
 import _get from 'lodash/get';
 import _omit from 'lodash/omit';
 
-const FooterLink = ({ title, iconType }) => (
-  <ListItem
-    compact
-    descriptionProps={{ semiStrong: true, whistling: true }}
-    disableBackground
-    icon={iconType && <Icon size="small" type={iconType} className={styles.content} />}
-    noShadow
-    value={title}
-  />
-);
+const FooterLink = ({ title, iconType, mobileOnly, flexBeyondMobile }) => {
+  return iconType ? (
+    <ListItem
+      compact
+      descriptionProps={{ semiStrong: true, whistling: true }}
+      disableBackground
+      icon={iconType && <Icon size="small" type={iconType} className={styles.iconStyle} />}
+      noShadow
+      value={title}
+      className={classnames(styles.iconListItemStyle, { [styles.mobileOnly]: mobileOnly, [styles.flexBeyondMobile]: flexBeyondMobile
+      })}
+    />
+  ) : (
+    <Text
+      intimate
+      semiStrong
+      className={classnames(styles.content, {
+        [styles.mobileOnly]: mobileOnly,
+        [styles.flexBeyondMobile]: flexBeyondMobile
+      })}>{title}</Text>
+  );
+};
 FooterLink.propTypes = {
   iconType: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  mobileOnly: PropTypes.bool,
+  flexBeyondMobile: PropTypes.bool
 };
 const renderItems = ({ items, hideInMobile = [], linkRenderer }) => {
   return Object.keys(items).map(key => {
     if (items[key].mobileUrl) {
       return (
-        <span key={key}>
+        <React.Fragment key={key}>
           {
             linkRenderer({
-              children: <Hidden aboveMobile>
-                <FooterLink title={items[key].title} iconType={items[key].icon} />
-              </Hidden>,
+              children: <FooterLink title={items[key].title} iconType={items[key].icon} mobileOnly={true} />,
               href: items[key].mobileUrl,
               key: `mobile${key}`
             })
           }
           {
             linkRenderer({
-              children: <Hidden mobile>
-                <FooterLink title={items[key].title} iconType={items[key].icon} />
-              </Hidden>,
+              children: <FooterLink title={items[key].title} iconType={items[key].icon} flexBeyondMobile={true} />,
               href: items[key].url,
               key: `desktop${key}`
             })
           }
-        </span>
-      );
-    } else if (hideInMobile.indexOf(key) >= 0) {
-      return (
-        linkRenderer({
-          children: <Hidden mobile>
-            <FooterLink title={items[key].title} iconType={items[key].icon} />
-          </Hidden>,
-          href: items[key].url,
-          key
-        })
+        </React.Fragment>
       );
     }
 
     return (linkRenderer({
-      children: <FooterLink title={items[key].title} iconType={items[key].icon} />,
+      children: <FooterLink title={items[key].title} iconType={items[key].icon} flexBeyondMobile={hideInMobile.indexOf(key) >= 0} />,
       href: items[key].url,
       key
     }));
@@ -95,7 +96,7 @@ const FooterSection = ({ sessionClass, sessionMessage, subSessionMessage, hideIn
   if (sessionMessage) {
     const items = _omit(sessionMessage, 'title');
     return (
-      <Section className={sessionClass}>
+      <div className={sessionClass}>
         <Text semiStrong className={styles.title}>
           {_get(sessionMessage, 'title')}
         </Text>
@@ -104,7 +105,7 @@ const FooterSection = ({ sessionClass, sessionMessage, subSessionMessage, hideIn
         }{
           subSessionMessage && <SubFooterSection message={subSessionMessage} linkRenderer={linkRenderer} />
         }
-      </Section>
+      </div>
     );
   }
   return null;

@@ -5,13 +5,11 @@ exports[`Columns: should render columns 1`] = `
   className="columns"
 >
   <div
-    className="column"
     key="0"
   >
     <div />
   </div>
   <div
-    className="column"
     key="1"
   >
     <div />
@@ -24,13 +22,11 @@ exports[`Columns: should render flexible columns 1`] = `
   className="columns columns_flexible"
 >
   <div
-    className="column"
     key="0"
   >
     <div />
   </div>
   <div
-    className="column"
     key="1"
   >
     <div />
@@ -43,13 +39,11 @@ exports[`Columns: should render tight columns 1`] = `
   className="columns columns_tight"
 >
   <div
-    className="column"
     key="0"
   >
     <div />
   </div>
   <div
-    className="column"
     key="1"
   >
     <div />
