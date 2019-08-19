@@ -309,32 +309,14 @@ describe('JobCard', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render with company banner', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} />);
+  it('should render branded ad', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render with company banner ', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} />);
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should not render with company banner in split view ', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} enableBrandedAd={true} isSplitView={true} />);
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render with selling points in split view', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} isSplitView={true} />);
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render brandedAd in split view', () => {
-    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} enableBrandedAd={true} isSplitView={true} />);
+  it('should render with selling points', () => {
+    const wrapper = shallow(<JobCard {...defaultProps} job={defaultJob} sellingPoints={sellingPoints} />);
 
     expect(wrapper).toMatchSnapshot();
   });

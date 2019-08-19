@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import SellingPoint from '../SellingPoint/SellingPoint';
-import ShelfLink from '../ShelfLink/ShelfLink';
+import ShelfButton from '../ShelfButton/ShelfButton';
 import Description from '../Description/Description';
 import { JobCardPropTypes } from '../../JobCardPropTypes';
+import Hidden from '../../../Hidden/Hidden';
 
 const JobMeta = ({
   sellingPoints,
-  isSplitView,
   showSellingPoint,
   description,
   showDescription,
@@ -21,17 +21,16 @@ const JobMeta = ({
         sellingPoints={sellingPoints}
         showSellingPoint={showSellingPoint}
       />
-      {!isSplitView && (
+      <Hidden aboveMobile>
         <Description
           description={description}
           showDescription={showDescription}
         />
-      )}
-      <ShelfLink
+      </Hidden>
+      <ShelfButton
         job={job}
-        shelfSectionOpen={shelfSectionOpen}
-        mobileOnly={!isSplitView}
         onClick={onClick}
+        isOpen={shelfSectionOpen}
       />
     </Fragment>
   );
@@ -39,7 +38,6 @@ const JobMeta = ({
 
 JobMeta.propTypes = {
   sellingPoints: PropTypes.arrayOf(PropTypes.string),
-  isSplitView: PropTypes.bool,
   showSellingPoint: PropTypes.bool,
   bannerUrl: PropTypes.string,
   description: PropTypes.string,

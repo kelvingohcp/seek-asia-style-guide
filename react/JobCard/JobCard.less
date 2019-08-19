@@ -28,7 +28,7 @@
 }
 
 .flexRowHeight {
-  @media @desktop {
+  @media @aboveMobile {
     flex-grow: 9999;
   }
 }
@@ -47,7 +47,7 @@
   .leftContainer {
     .flexCol();
     flex-grow: 1;
-    @media @desktop {
+    @media @aboveMobile {
       padding: @grid-base*3 @grid-base*2 @grid-base*3 @grid-base*3;
       justify-content: center;
     }
@@ -55,43 +55,15 @@
     position: relative;
     flex-basis: 100%;
   }
-  .rightContainer {
-    .flexCol();
-    padding: @grid-base * 3 @grid-base * 2 @grid-base * 4 @grid-base * 4;
-    width: @job-card-right-area-width;
-    min-width: @job-card-right-area-width;
-    background-color: @saGrey6;
-    justify-content: start;
-  }
 }
 
 .leftContent {
   .flexCol();
   padding-top: @grid-base * 2;
   flex-grow: 1;
-  @media @desktop {
+  @media @aboveMobile {
     flex-basis: 50%;
   }
-}
-
-.rightContent {
-  .flexCol();
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-left: @grid-base * 4;
-}
-
-.rightContentWithBanner {
-  .rightContent();
-  @media @desktop {
-    padding-left: @grid-base * 20;
-    min-height: @min-height-right-content + @max-banner-height + @banner-bottom-padding;
-  }
-}
-
-.structuredData {
-  padding-bottom: @grid-base;
-  padding-top: @grid-base;
 }
 
 .borderRoot {
@@ -122,7 +94,7 @@
 .companyLogo {
   max-width: @grid-base * 20;
   max-height: @grid-base * 10;
-  @media @desktop {
+  @media @aboveMobile {
     max-width: @grid-base * 30;
     max-height: @grid-base * 15;
     padding-bottom: @grid-base *2;

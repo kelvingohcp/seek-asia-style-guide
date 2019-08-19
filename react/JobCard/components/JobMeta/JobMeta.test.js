@@ -19,6 +19,6 @@ const description = 'dummyDescription';
 
 describe('JobMeta', () => {
   it('should render correctly', () => {
-    expect(shallow(<JobMeta sellingPoints={sellingPoints} isSplitView={true} showSellingPoint={true} enableBrandedAd={true} description={description} showDescription={true} shelfSectionOpen={false} />)).toMatchSnapshot();
+    expect(shallow(<JobMeta sellingPoints={sellingPoints} showSellingPoint={true} enableBrandedAd={true} description={description} showDescription={true} shelfSectionOpen={false} />)).toMatchSnapshot();
   });
 });

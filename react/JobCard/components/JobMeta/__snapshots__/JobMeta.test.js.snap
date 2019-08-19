@@ -12,9 +12,22 @@ exports[`JobMeta should render correctly 1`] = `
     }
     showSellingPoint={true}
   />
-  <ShelfLink
-    mobileOnly={false}
-    shelfSectionOpen={false}
+  <Hidden
+    aboveMobile={true}
+    className=""
+    component="span"
+    desktop={false}
+    mobile={false}
+    print={false}
+    screen={false}
+  >
+    <Description
+      description="dummyDescription"
+      showDescription={true}
+    />
+  </Hidden>
+  <ShelfButton
+    isOpen={false}
   />
 </Fragment>
 `;

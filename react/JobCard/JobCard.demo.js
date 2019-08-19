@@ -26,10 +26,6 @@ const booleanProps = [
     prop: 'viewed'
   },
   {
-    label: 'Split View',
-    prop: 'isSplitView'
-  },
-  {
     label: 'Shortened Location',
     prop: 'showShortenedLocation'
   },

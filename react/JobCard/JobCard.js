@@ -13,7 +13,6 @@ import JobTitleLink from './components/JobTitleLink/JobTitleLink';
 import IconList from './components/IconList/IconList';
 import ShelfSection from './components/ShelfSection/ShelfSection';
 import CompanyBanner from './components/CompanyBanner/CompanyBanner';
-import ShelfLink from './components/ShelfLink/ShelfLink';
 import JobMeta from './components/JobMeta/JobMeta';
 import {
   JobCardPropTypes,
@@ -147,7 +146,6 @@ const JobCard = memo(props => {
   const {
     applied,
     borderlessRoot = false,
-    isSplitView,
     enableBrandedAd,
     job = {},
     keyword,
@@ -184,7 +182,6 @@ const JobCard = memo(props => {
   const JobMetaComponent = () => (
     <JobMeta
       sellingPoints={sellingPoints}
-      isSplitView={isSplitView}
       showSellingPoint={showSellingPoint}
       description={description}
       showDescription={showDescription}
@@ -211,15 +208,13 @@ const JobCard = memo(props => {
             />
           </Button>
         )}
-        {!isSplitView && (
-          <Hidden aboveMobile className={styles.alignCenter}>
-            <CompanyBanner
-              bannerUrl={bannerUrl}
-              enableBrandedAd={enableBrandedAd}
-              isMobile
-            />
-          </Hidden>
-        )}
+        <Hidden aboveMobile className={styles.alignCenter}>
+          <CompanyBanner
+            bannerUrl={bannerUrl}
+            enableBrandedAd={enableBrandedAd}
+            isMobile
+          />
+        </Hidden>
         <JobLabel
           applied={applied}
           expired={isExpired}
@@ -250,23 +245,11 @@ const JobCard = memo(props => {
               <JobMetaComponent />
             </Hidden>
           </div>
-          <div
-            className={classnames({
-              [styles.rightContent]: !(enableBrandedAd && !isSplitView),
-              [styles.rightContentWithBanner]: enableBrandedAd && !isSplitView
-            })}>
+          <div>
             <CompanyLogo
               companyLogoUrl={logoUrl}
               showCompanyLogo={showCompanyLogo}
             />
-            {!isSplitView && (
-              <ShelfLink
-                job={job}
-                shelfSectionOpen={shelfSectionOpen}
-                desktopOnly
-                onClick={handleShelfSectionToggle}
-              />
-            )}
           </div>
         </div>
         <Hidden aboveMobile>
@@ -279,23 +262,6 @@ const JobCard = memo(props => {
           trackLinkClicked={trackLinkClicked}
         />
       </div>
-      {!isSplitView && (
-        <Hidden mobile className={styles.rightContainer}>
-          <CompanyBanner
-            bannerUrl={job.bannerUrl}
-            enableBrandedAd={enableBrandedAd}
-          />
-          <IconList
-            className={styles.structuredData}
-            list={[
-              { content: job.careerLevelName, iconType: 'careerLevel' },
-              { content: job.workExperienceName, iconType: 'experience' },
-              { content: job.qualificationName, iconType: 'education' },
-              { content: job.employmentTermName, iconType: 'employmentType' }
-            ]}
-          />
-        </Hidden>
-      )}
     </div>
   );
 });

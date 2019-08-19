@@ -9,11 +9,10 @@ import Badge from '../../../Badge/Badge';
 import { hasShelfLinks } from '../../jobCardHelper.js';
 import { ShelfPropTypes } from '../ShelfSection/ShelfSectionPropTypes';
 
-const ShelfButton = ({ desktopOnly, mobileOnly, isOpen, job, onClick }) => {
+const ShelfButton = ({ isOpen, job, onClick }) => {
   return (
     <Hidden
-      aboveMobile={mobileOnly}
-      mobile={desktopOnly}
+      mobile
       className={styles.root}>
       {job.featuredLabel ? (
         <span>
