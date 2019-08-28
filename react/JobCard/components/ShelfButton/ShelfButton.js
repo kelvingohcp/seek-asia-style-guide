@@ -11,8 +11,7 @@ import { ShelfPropTypes } from '../ShelfSection/ShelfSectionPropTypes';
 
 const ShelfButton = ({ isOpen, job, onClick }) => {
   return (
-    <Hidden
-      mobile
+    <div
       className={styles.root}>
       {job.featuredLabel ? (
         <span>
@@ -42,7 +41,7 @@ const ShelfButton = ({ isOpen, job, onClick }) => {
           </Text>
         </Hidden>
       )}
-    </Hidden>
+    </div>
   );
 };
 
