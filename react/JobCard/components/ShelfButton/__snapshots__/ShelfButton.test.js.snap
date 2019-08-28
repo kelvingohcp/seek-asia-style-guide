@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Shelf Button should render default shelf button 1`] = `
-<Hidden
-  aboveMobile={false}
+<div
   className="root"
-  component="span"
-  desktop={false}
-  mobile={true}
-  print={false}
-  screen={false}
 >
   <Text
     baseline={false}
@@ -17,18 +11,12 @@ exports[`Shelf Button should render default shelf button 1`] = `
   >
     1 hour ago
   </Text>
-</Hidden>
+</div>
 `;
 
 exports[`Shelf Button should render shelf button with applied date 1`] = `
-<Hidden
-  aboveMobile={false}
+<div
   className="root"
-  component="span"
-  desktop={false}
-  mobile={true}
-  print={false}
-  screen={false}
 >
   <Text
     baseline={false}
@@ -37,18 +25,12 @@ exports[`Shelf Button should render shelf button with applied date 1`] = `
   >
     1 hour ago
   </Text>
-</Hidden>
+</div>
 `;
 
 exports[`Shelf Button should render shelf button with featured label 1`] = `
-<Hidden
-  aboveMobile={false}
+<div
   className="root"
-  component="span"
-  desktop={false}
-  mobile={true}
-  print={false}
-  screen={false}
 >
   <Text
     baseline={false}
@@ -57,18 +39,12 @@ exports[`Shelf Button should render shelf button with featured label 1`] = `
   >
     1 hour ago
   </Text>
-</Hidden>
+</div>
 `;
 
 exports[`Shelf Button should render shelf button with shelf 1`] = `
-<Hidden
-  aboveMobile={false}
+<div
   className="root"
-  component="span"
-  desktop={false}
-  mobile={true}
-  print={false}
-  screen={false}
 >
   <Text
     baseline={false}
@@ -108,18 +84,12 @@ exports[`Shelf Button should render shelf button with shelf 1`] = `
       />
     </Text>
   </Hidden>
-</Hidden>
+</div>
 `;
 
 exports[`Shelf Button should render shelf button with shelf and openned style 1`] = `
-<Hidden
-  aboveMobile={false}
+<div
   className="root"
-  component="span"
-  desktop={false}
-  mobile={true}
-  print={false}
-  screen={false}
 >
   <Text
     baseline={false}
@@ -159,5 +129,5 @@ exports[`Shelf Button should render shelf button with shelf and openned style 1`
       />
     </Text>
   </Hidden>
-</Hidden>
+</div>
 `;
