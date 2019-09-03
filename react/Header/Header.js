@@ -137,7 +137,7 @@ export default class Header extends Component {
               headerMessage={headerMessage}
               linkRenderer={linkRenderer}
             />
-            {showTray &&
+            {!showTray &&
             <div onClick={this.handleToggleMenu.bind(this)} className={styles.menuToggle}>
               <Icon type="menu" className={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
             </div>}
