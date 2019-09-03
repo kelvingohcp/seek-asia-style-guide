@@ -114,6 +114,7 @@ export default class Header extends Component {
       <header className={styles.root}>
         <PageBlock>
           <div className={classnames({ [styles.primaryNavNoLogin]: !loginAvailable }, styles.primaryNav)}>
+            {!showTray && <div/> }
             <h1 className={styles.logo}>
               {
                 linkRenderer({

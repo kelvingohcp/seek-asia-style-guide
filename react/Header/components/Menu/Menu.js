@@ -182,5 +182,6 @@ Menu.propTypes = {
   ]).isRequired,
   linkRenderer: PropTypes.func,
   userName: PropTypes.string,
-  loginAvailable: PropTypes.bool
+  loginAvailable: PropTypes.bool,
+  shouldShowMenuWithSpace: PropTypes.bool
 };
