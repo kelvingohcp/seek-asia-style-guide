@@ -28,7 +28,7 @@
   align-items: center;
   padding: 1px @grid-base * 2 0 @grid-base * 2; /* 1px padding fixes baseline for align-centered items in this container */
   height: @grid-base * 12;
-  justify-content: space-between;
+  justify-content: center;
   ._cfs_container_width;
   @media @desktop {
     justify-content: space-between;
@@ -86,8 +86,7 @@
 }
 
 .logo {
-  position: relative;
-  top: 3px;
+  position: absolute;
   @media @desktop {
     display: flex;
   }
@@ -109,6 +108,7 @@
 }
 
 .menuToggle {
+  margin-left: auto;
   @media @desktop {
     display: none;
   }
