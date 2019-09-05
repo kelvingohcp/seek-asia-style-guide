@@ -1,5 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Menu should not render with menu open even allow extra space 1`] = `
+<div
+  className="root"
+>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+       
+      JOB SEEKER
+    </Text>
+  </Section>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+      SETTINGS
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          lineHeight="conversational"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      handleClick={[Function]}
+      title="Country & Language"
+    >
+      Hong Kong (English)
+    </MenuItem>
+  </div>
+  <div
+    className="subMenu"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
+        />
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Back to menu
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      key="1"
+      linkUrl="https://id.jobsdb.com/id"
+    >
+      Indonesia (English)
+    </MenuItem>
+  </div>
+</div>
+`;
+
 exports[`Menu should render when authenticated 1`] = `
 <div
   className="root"
@@ -609,6 +720,228 @@ exports[`Menu should render with links list 1`] = `
 `;
 
 exports[`Menu should render with menu open 1`] = `
+<div
+  className="root showMenu"
+>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+       
+      JOB SEEKER
+    </Text>
+  </Section>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+      SETTINGS
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          lineHeight="conversational"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      handleClick={[Function]}
+      title="Country & Language"
+    >
+      Hong Kong (English)
+    </MenuItem>
+  </div>
+  <div
+    className="subMenu"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
+        />
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Back to menu
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      key="1"
+      linkUrl="https://id.jobsdb.com/id"
+    >
+      Indonesia (English)
+    </MenuItem>
+  </div>
+</div>
+`;
+
+exports[`Menu should render with menu open with extra space 1`] = `
+<div
+  className="root showMenuSpace"
+>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+       
+      JOB SEEKER
+    </Text>
+  </Section>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+      SETTINGS
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          lineHeight="conversational"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      handleClick={[Function]}
+      title="Country & Language"
+    >
+      Hong Kong (English)
+    </MenuItem>
+  </div>
+  <div
+    className="subMenu"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
+        />
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Back to menu
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      key="1"
+      linkUrl="https://id.jobsdb.com/id"
+    >
+      Indonesia (English)
+    </MenuItem>
+  </div>
+</div>
+`;
+
+exports[`Menu should render with menu without extra space 1`] = `
 <div
   className="root showMenu"
 >

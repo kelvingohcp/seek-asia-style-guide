@@ -9,6 +9,7 @@ import styles from './Header.less';
 import UserAccount from './components/UserAccount/UserAccount';
 import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from 'seek-asia-style-guide/react/private/authStatusTypes';
 import _get from 'lodash/get';
+import { Icon } from 'seek-asia-style-guide/react';
 
 const currentLocale = ({ title, ItemIcon }) => {
   return (
@@ -105,12 +106,15 @@ export default class Header extends Component {
       linkRenderer,
       hideNavMenu
     } = this.props;
+    const { showTray } = actionTrayProps || {};
     const menuOpen = this.state.menuOpen;
+    const shouldShowMenuWithSpace = !showTray;
 
     return (
       <header className={styles.root}>
         <PageBlock>
           <div className={classnames({ [styles.primaryNavNoLogin]: !loginAvailable }, styles.primaryNav)}>
+            {!showTray && <div />}
             <h1 className={styles.logo}>
               {
                 linkRenderer({
@@ -134,6 +138,10 @@ export default class Header extends Component {
               headerMessage={headerMessage}
               linkRenderer={linkRenderer}
             />
+            {!showTray &&
+            <div onClick={this.handleToggleMenu.bind(this)} className={styles.menuToggle}>
+              <Icon type="menu" className={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
+            </div>}
           </div>
           <ActionTray
             country={country}
@@ -148,6 +156,7 @@ export default class Header extends Component {
           />
           <Menu
             shouldShowMenu={menuOpen}
+            shouldShowMenuWithSpace={shouldShowMenuWithSpace}
             headerMessage={headerMessage}
             menuMessage={menuMessage}
             links={links}

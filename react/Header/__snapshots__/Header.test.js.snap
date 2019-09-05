@@ -1,5 +1,384 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Header should hide bottom navigation 1`] = `
+<header
+  className="root"
+>
+  <PageBlock>
+    <div
+      className="primaryNavNoLogin primaryNav"
+    >
+      <div />
+      <h1
+        className="logo"
+      >
+        <a
+          className="logoLink"
+          href="/"
+        >
+          <ScreenReaderOnly
+            component="span"
+          >
+            jobsDB.com
+          </ScreenReaderOnly>
+        </a>
+        <FakeComponent />
+      </h1>
+      <div
+        className="primaryNavLinksWrapper"
+      />
+      <UserAccount
+        authenticationStatus="unauthenticated"
+        brandStyles={
+          Object {
+            "employerLink": "employerLink",
+            "primaryNavLink": "primaryNavLink",
+          }
+        }
+        headerMessage={
+          Object {
+            "appStore": Object {
+              "title": "App Store",
+              "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+            },
+            "applicationHistoryList": Object {
+              "title": "Application History",
+              "url": "/hk/en/MyJobsDB/ApplictationHistoryList",
+            },
+            "careerInsights": Object {
+              "title": "Career Insights",
+              "url": "/hk/en/career-insights",
+            },
+            "downloadApp": "Download Our App",
+            "employer": Object {
+              "title": "For Employers",
+              "url": "/hk/en/home/employerindex",
+            },
+            "homeTitle": "Home",
+            "homeUrl": "/hk",
+            "homeUrlText": "jobsDB.com",
+            "invitation": Object {
+              "title": "Job invitations",
+              "url": "/hk/en/Invitations/InvitationList",
+            },
+            "jobAlertsList": Object {
+              "title": "Job Alerts",
+              "url": "/hk/en/MyJobsDB/JobAlertsList",
+            },
+            "jobsDBTitle": Object {
+              "title": "My jobsDB",
+              "url": "/hk/en/MyJobsDB",
+            },
+            "login": Object {
+              "title": "Log in",
+              "url": "/hk/en/login/jobseekerlogin?from=header",
+            },
+            "logout": Object {
+              "title": "Log out",
+              "url": "/hk/en/login/jobseekerlogoff",
+            },
+            "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+            "mobileLogoutUrl": "/logout.do",
+            "playStore": Object {
+              "title": "Google Play Store",
+              "url": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+            },
+            "profile": Object {
+              "title": "View profile",
+              "url": "/hk/en/MyJobsDB/profile",
+            },
+            "resources": Object {
+              "title": "Resources",
+              "url": "/en-hk/career-recruitment-advice/",
+            },
+            "resumesAndDocuments": Object {
+              "title": "Resumes and Documents",
+              "url": "/hk/en/MyJobsDB/resumes-and-documents",
+            },
+            "saveJobs": Object {
+              "title": "Save Jobs",
+              "url": "/saveJobs.do",
+            },
+            "searchUrl": "/hk/en/search/getsearchresult",
+            "seperatorOr": "or",
+            "signUp": Object {
+              "title": "Sign up",
+              "url": "/hk/en/jobseeker/registration",
+            },
+          }
+        }
+        linkRenderer={[Function]}
+        loginAvailable={false}
+        onMenuToggle={[Function]}
+      />
+      <div
+        className="menuToggle"
+        onClick={[Function]}
+      >
+        <Icon
+          animation=""
+          className="svg"
+          lineHeight=""
+          rotation=""
+          size="normal"
+          smoothRotate={false}
+          type="menu"
+        />
+      </div>
+    </div>
+    <ActionTray
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      country="hk"
+      handleToggleMenu={[Function]}
+      headerMessage={
+        Object {
+          "appStore": Object {
+            "title": "App Store",
+            "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+          },
+          "applicationHistoryList": Object {
+            "title": "Application History",
+            "url": "/hk/en/MyJobsDB/ApplictationHistoryList",
+          },
+          "careerInsights": Object {
+            "title": "Career Insights",
+            "url": "/hk/en/career-insights",
+          },
+          "downloadApp": "Download Our App",
+          "employer": Object {
+            "title": "For Employers",
+            "url": "/hk/en/home/employerindex",
+          },
+          "homeTitle": "Home",
+          "homeUrl": "/hk",
+          "homeUrlText": "jobsDB.com",
+          "invitation": Object {
+            "title": "Job invitations",
+            "url": "/hk/en/Invitations/InvitationList",
+          },
+          "jobAlertsList": Object {
+            "title": "Job Alerts",
+            "url": "/hk/en/MyJobsDB/JobAlertsList",
+          },
+          "jobsDBTitle": Object {
+            "title": "My jobsDB",
+            "url": "/hk/en/MyJobsDB",
+          },
+          "login": Object {
+            "title": "Log in",
+            "url": "/hk/en/login/jobseekerlogin?from=header",
+          },
+          "logout": Object {
+            "title": "Log out",
+            "url": "/hk/en/login/jobseekerlogoff",
+          },
+          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLogoutUrl": "/logout.do",
+          "playStore": Object {
+            "title": "Google Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+          },
+          "profile": Object {
+            "title": "View profile",
+            "url": "/hk/en/MyJobsDB/profile",
+          },
+          "resources": Object {
+            "title": "Resources",
+            "url": "/en-hk/career-recruitment-advice/",
+          },
+          "resumesAndDocuments": Object {
+            "title": "Resumes and Documents",
+            "url": "/hk/en/MyJobsDB/resumes-and-documents",
+          },
+          "saveJobs": Object {
+            "title": "Save Jobs",
+            "url": "/saveJobs.do",
+          },
+          "searchUrl": "/hk/en/search/getsearchresult",
+          "seperatorOr": "or",
+          "signUp": Object {
+            "title": "Sign up",
+            "url": "/hk/en/jobseeker/registration",
+          },
+        }
+      }
+      linkRenderer={[Function]}
+      menuOpen={false}
+      showTray={false}
+    />
+    <Menu
+      authenticationStatus="unauthenticated"
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+          "primaryNavLink": "primaryNavLink",
+        }
+      }
+      headerMessage={
+        Object {
+          "appStore": Object {
+            "title": "App Store",
+            "url": "https://itunes.apple.com/hk/app/jobsdb-job-search/id414607432?utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+          },
+          "applicationHistoryList": Object {
+            "title": "Application History",
+            "url": "/hk/en/MyJobsDB/ApplictationHistoryList",
+          },
+          "careerInsights": Object {
+            "title": "Career Insights",
+            "url": "/hk/en/career-insights",
+          },
+          "downloadApp": "Download Our App",
+          "employer": Object {
+            "title": "For Employers",
+            "url": "/hk/en/home/employerindex",
+          },
+          "homeTitle": "Home",
+          "homeUrl": "/hk",
+          "homeUrlText": "jobsDB.com",
+          "invitation": Object {
+            "title": "Job invitations",
+            "url": "/hk/en/Invitations/InvitationList",
+          },
+          "jobAlertsList": Object {
+            "title": "Job Alerts",
+            "url": "/hk/en/MyJobsDB/JobAlertsList",
+          },
+          "jobsDBTitle": Object {
+            "title": "My jobsDB",
+            "url": "/hk/en/MyJobsDB",
+          },
+          "login": Object {
+            "title": "Log in",
+            "url": "/hk/en/login/jobseekerlogin?from=header",
+          },
+          "logout": Object {
+            "title": "Log out",
+            "url": "/hk/en/login/jobseekerlogoff",
+          },
+          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLogoutUrl": "/logout.do",
+          "playStore": Object {
+            "title": "Google Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.jobsdb&utm_campaign=MobileNavigationMenuAppDownload&utm_source=MobileNavigationMenu&utm_medium=banner",
+          },
+          "profile": Object {
+            "title": "View profile",
+            "url": "/hk/en/MyJobsDB/profile",
+          },
+          "resources": Object {
+            "title": "Resources",
+            "url": "/en-hk/career-recruitment-advice/",
+          },
+          "resumesAndDocuments": Object {
+            "title": "Resumes and Documents",
+            "url": "/hk/en/MyJobsDB/resumes-and-documents",
+          },
+          "saveJobs": Object {
+            "title": "Save Jobs",
+            "url": "/saveJobs.do",
+          },
+          "searchUrl": "/hk/en/search/getsearchresult",
+          "seperatorOr": "or",
+          "signUp": Object {
+            "title": "Sign up",
+            "url": "/hk/en/jobseeker/registration",
+          },
+        }
+      }
+      linkRenderer={[Function]}
+      locales={
+        Array [
+          Object {
+            "ItemIcon": [Function],
+            "country": "hk",
+            "language": "en",
+            "title": "Hong Kong (English)",
+            "url": "https://hk.jobsdb.com/hk",
+          },
+          Object {
+            "ItemIcon": [Function],
+            "country": "id",
+            "language": "en",
+            "title": "Indonesia (English)",
+            "url": "https://id.jobsdb.com/id",
+          },
+        ]
+      }
+      loginAvailable={false}
+      menuMessage={
+        Object {
+          "backToMenu": "Back to menu",
+          "countryAndLanguage": "Country & Language",
+          "countryList": Array [
+            Object {
+              "ItemIcon": [Function],
+              "country": "hk",
+              "language": "en",
+              "languageDisplay": "English",
+              "title": "Hong Kong (English)",
+              "url": "",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "id",
+              "language": "en",
+              "languageDisplay": "English",
+              "title": "Indonesia (English)",
+              "url": "",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "id",
+              "language": "id",
+              "languageDisplay": "Bahasa",
+              "title": "Indonesia (Bahasa)",
+              "url": "",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "sg",
+              "language": "en",
+              "languageDisplay": "English",
+              "title": "Singapore (English)",
+              "url": "",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "th",
+              "language": "en",
+              "languageDisplay": "English",
+              "title": "Thailand (English)",
+              "url": "",
+            },
+            Object {
+              "ItemIcon": [Function],
+              "country": "th",
+              "language": "th",
+              "languageDisplay": "ภาษาไทย",
+              "title": "ไทย (ภาษาไทย)",
+              "url": "",
+            },
+          ],
+          "jobSeekerHeader": "JOB SEEKER",
+          "jobSeekerProfile": "PROFILE",
+          "more": "More",
+          "moreHeader": "MORE",
+          "settingsHeader": "SETTINGS",
+        }
+      }
+      shouldShowMenu={false}
+      shouldShowMenuWithSpace={true}
+    />
+  </PageBlock>
+</header>
+`;
+
 exports[`Header should pass through optional props 1`] = `
 <header
   className="root"
@@ -259,6 +638,7 @@ exports[`Header should pass through optional props 1`] = `
       linkRenderer={[Function]}
       menuOpen={false}
       showMenu={false}
+      showTray={true}
     />
     <Menu
       authenticationStatus="unauthenticated"
@@ -446,6 +826,7 @@ exports[`Header should pass through optional props 1`] = `
         }
       }
       shouldShowMenu={false}
+      shouldShowMenuWithSpace={false}
     />
   </PageBlock>
 </header>
@@ -645,6 +1026,7 @@ exports[`Header should render with default props 1`] = `
       }
       linkRenderer={[Function]}
       menuOpen={false}
+      showTray={true}
     />
     <Menu
       authenticationStatus="unauthenticated"
@@ -808,6 +1190,7 @@ exports[`Header should render with default props 1`] = `
         }
       }
       shouldShowMenu={false}
+      shouldShowMenuWithSpace={false}
     />
   </PageBlock>
 </header>
@@ -1068,6 +1451,7 @@ exports[`Header should render with links list 1`] = `
       }
       linkRenderer={[Function]}
       menuOpen={false}
+      showTray={true}
     />
     <Menu
       authenticationStatus="unauthenticated"
@@ -1255,6 +1639,7 @@ exports[`Header should render with links list 1`] = `
         }
       }
       shouldShowMenu={false}
+      shouldShowMenuWithSpace={false}
     />
   </PageBlock>
 </header>
@@ -1457,6 +1842,7 @@ exports[`Header should render with login available 1`] = `
       }
       linkRenderer={[Function]}
       menuOpen={false}
+      showTray={true}
     />
     <Menu
       authenticationStatus="unauthenticated"
@@ -1620,6 +2006,7 @@ exports[`Header should render with login available 1`] = `
         }
       }
       shouldShowMenu={false}
+      shouldShowMenuWithSpace={false}
     />
   </PageBlock>
 </header>
@@ -1819,6 +2206,7 @@ exports[`Header should render without navigation menu 1`] = `
       }
       linkRenderer={[Function]}
       menuOpen={false}
+      showTray={true}
     />
     <Menu
       authenticationStatus="unauthenticated"
@@ -1982,6 +2370,7 @@ exports[`Header should render without navigation menu 1`] = `
         }
       }
       shouldShowMenu={false}
+      shouldShowMenuWithSpace={false}
     />
   </PageBlock>
 </header>
