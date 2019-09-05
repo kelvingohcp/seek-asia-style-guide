@@ -37,7 +37,10 @@ describe('Header', () => {
     country: 'hk',
     language: 'en',
     headerMessage,
-    menuMessage
+    menuMessage,
+    actionTrayProps: {
+      showTray: true
+    }
   };
 
   const mockLinks = [
@@ -78,7 +81,8 @@ describe('Header', () => {
       logoProps: { country: 'my' },
       more: [{ title: 'Space Piracy Jobs', url: 'http://seekasia.com/space-piracy' }],
       actionTrayProps: {
-        showMenu: false
+        showMenu: false,
+        showTray: true
       },
       onMenuOpen: () => {}
     };
@@ -92,6 +96,12 @@ describe('Header', () => {
       showNavMenu: false
     };
     const wrapper = shallow(<Header {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should hide bottom navigation', () => {
+    const overrideDefaultProps = { ...defaultProps, actionTrayProps: { showTray: false } };
+    const wrapper = shallow(<Header {...overrideDefaultProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

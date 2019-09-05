@@ -106,7 +106,7 @@ export default class Header extends Component {
       linkRenderer,
       hideNavMenu
     } = this.props;
-    const { showTray } = actionTrayProps;
+    const { showTray } = actionTrayProps || {};
     const menuOpen = this.state.menuOpen;
     const shouldShowMenuWithSpace = !showTray;
 

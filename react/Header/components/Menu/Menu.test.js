@@ -122,5 +122,35 @@ describe('Menu', () => {
     };
     expect(testProps).toMatchSnapshot();
   });
+
+  it('should render with menu open with extra space', () => {
+    const testProps = {
+      ...defaultProps,
+      shouldShowMenu: true,
+      shouldShowMenuWithSpace: true
+    };
+    const wrapper = shallow(<Menu {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should not render with menu open even allow extra space', () => {
+    const testProps = {
+      ...defaultProps,
+      shouldShowMenu: false,
+      shouldShowMenuWithSpace: true
+    };
+    const wrapper = shallow(<Menu {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render with menu without extra space', () => {
+    const testProps = {
+      ...defaultProps,
+      shouldShowMenu: true,
+      shouldShowMenuWithSpace: false
+    };
+    const wrapper = shallow(<Menu {...testProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
 
