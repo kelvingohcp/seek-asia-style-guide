@@ -18,7 +18,7 @@ export default class Checkbox extends Component {
 
   static propTypes = {
     id: PropTypes.string.isRequired,
-    label: PropTypes.node.isRequired,
+    label: PropTypes.node,
     extraLabel: PropTypes.node,
     value: PropTypes.string,
     className: PropTypes.string,
@@ -54,43 +54,11 @@ export default class Checkbox extends Component {
     };
   }
 
-  renderStandard(label, extraLabel, compact, checked, disabled, rtl) {
-    const standardStyle = classnames({
-      [styles.standard]: true,
-      [styles.disabled]: disabled,
-      [styles.rtl]: rtl
-    });
-    return (
-      <div className={standardStyle}>
-        {this.renderCheckBox()}
-        <span className={styles.mainLabel}>
-          <Text baseline={false} className={styles.standardLabel} intimate={compact} strong={checked}>{label}</Text>
-          {extraLabel && <Text baseline={false} className={styles.extraLabel} whispering strong={checked}>{extraLabel}</Text>}
-        </span>
-      </div>
-    );
-  }
-
   renderCheckBox() {
     return (
       <div className={styles.checkBox}>
         <Icon type="check" svgClassName={styles.checkMark} />
       </div>
-    );
-  }
-
-  renderLabel() {
-    const { label, id, extraLabel, compact, checked, disabled, rtl } = this.props;
-    const componentType = classnames({
-      [styles.label]: true
-    });
-
-    return (
-      <label className={componentType} htmlFor={id}>
-        {
-          this.renderStandard(label, extraLabel, compact, checked, disabled, rtl)
-        }
-      </label>
     );
   }
 
@@ -115,20 +83,26 @@ export default class Checkbox extends Component {
   }
 
   render() {
-    const { className, fullWidth, compact } = this.props;
+    const { checked, className, compact, extraLabel, fullWidth, id, label, rtl } = this.props;
     const rootClassNames = classnames({
       [styles.root]: true,
       [className]: className,
-      [styles.fullWidth]: fullWidth,
       [styles.checked]: this.state.checked,
+      [styles.compact]: compact,
       [styles.disabled]: this.state.disabled,
-      [styles.compact]: compact
+      [styles.fullWidth]: fullWidth,
+      [styles.rtl]: rtl
     });
 
     return (
-      <div className={rootClassNames}>
+      <div className={rootClassNames} htmlFor={id}>
         {this.renderInput()}
-        {this.renderLabel()}
+        {this.renderCheckBox()}
+        {label && <span className={styles.label}>
+          <Text baseline={false} intimate={compact} strong={checked} className={styles.labelText}>{label}</Text>
+          {extraLabel && <Text baseline={false} whispering strong={checked} className={styles.labelTextSecondary}>{extraLabel}</Text>}
+        </span>
+        }
       </div>
     );
   }

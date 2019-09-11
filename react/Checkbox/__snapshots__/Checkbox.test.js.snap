@@ -3,6 +3,7 @@
 exports[`Checkbox inputProps should pass through other props to the input 1`] = `
 <div
   className="root"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -13,46 +14,38 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={false}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={false}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
 
 exports[`Checkbox should render full width checkbox 1`] = `
 <div
   className="root fullWidth"
+  htmlFor="testCheckbox"
 >
   <input
     className="input"
@@ -61,46 +54,38 @@ exports[`Checkbox should render full width checkbox 1`] = `
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={false}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={false}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
 
 exports[`Checkbox should render with checkbox put at the end of component 1`] = `
 <div
-  className="root"
+  className="root rtl"
+  htmlFor="testCheckbox"
 >
   <input
     className="input"
@@ -109,46 +94,38 @@ exports[`Checkbox should render with checkbox put at the end of component 1`] = 
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard rtl"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={false}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={false}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
 
 exports[`Checkbox should render with className 1`] = `
 <div
   className="root testClassname"
+  htmlFor="testCheckbox"
 >
   <input
     className="input"
@@ -157,46 +134,38 @@ exports[`Checkbox should render with className 1`] = `
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={false}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={false}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
 
 exports[`Checkbox should render with compact checkbox style 1`] = `
 <div
   className="root compact"
+  htmlFor="testCheckbox"
 >
   <input
     className="input"
@@ -205,46 +174,38 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={true}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={true}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
 
 exports[`Checkbox should render with simple props 1`] = `
 <div
   className="root"
+  htmlFor="testCheckbox"
 >
   <input
     className="input"
@@ -253,46 +214,38 @@ exports[`Checkbox should render with simple props 1`] = `
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={false}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={false}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
 
 exports[`Checkbox should render with standard checkbox style 1`] = `
 <div
   className="root"
+  htmlFor="testCheckbox"
 >
   <input
     className="input"
@@ -301,39 +254,30 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
     onChange={[Function]}
     type="checkbox"
   />
-  <label
-    className="label"
-    htmlFor="testCheckbox"
+  <div
+    className="checkBox"
   >
-    <div
-      className="standard"
+    <Icon
+      animation=""
+      lineHeight=""
+      rotation=""
+      size=""
+      smoothRotate={false}
+      svgClassName="checkMark"
+      type="check"
+    />
+  </div>
+  <span
+    className="label"
+  >
+    <Text
+      baseline={false}
+      className="labelText"
+      intimate={false}
+      strong={false}
     >
-      <div
-        className="checkBox"
-      >
-        <Icon
-          animation=""
-          lineHeight=""
-          rotation=""
-          size=""
-          smoothRotate={false}
-          svgClassName="checkMark"
-          type="check"
-        />
-      </div>
-      <span
-        className="mainLabel"
-      >
-        <Text
-          baseline={false}
-          className="standardLabel"
-          intimate={false}
-          strong={false}
-        >
-          Still in role
-        </Text>
-      </span>
-    </div>
-  </label>
+      Still in role
+    </Text>
+  </span>
 </div>
 `;
