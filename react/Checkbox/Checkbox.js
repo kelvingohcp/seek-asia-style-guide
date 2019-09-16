@@ -63,12 +63,12 @@ export default class Checkbox extends Component {
   }
 
   renderInput() {
-    const { id, value, disabled, onChange, onFocus, onBlur, inputProps } = this.props;
+    const { id, value, checked, disabled, onChange, onFocus, onBlur, inputProps } = this.props;
 
     const allInputProps = {
       id,
       value,
-      checked: this.state.checked,
+      checked,
       disabled,
       onChange,
       onFocus,
@@ -77,31 +77,29 @@ export default class Checkbox extends Component {
       type: 'checkbox'
     };
 
-    return (
-      <input {...allInputProps} />
-    );
+    return <input {...allInputProps} />;
   }
 
   render() {
-    const { checked, className, compact, extraLabel, fullWidth, id, label, rtl } = this.props;
+    const { checked, className, compact, disabled, extraLabel, fullWidth, id, label, rtl } = this.props;
     const rootClassNames = classnames({
       [styles.root]: true,
       [className]: className,
-      [styles.checked]: this.state.checked,
+      [styles.checked]: checked,
       [styles.compact]: compact,
-      [styles.disabled]: this.state.disabled,
+      [styles.disabled]: disabled,
       [styles.fullWidth]: fullWidth,
       [styles.rtl]: rtl
     });
 
     return (
-      <div className={rootClassNames} htmlFor={id}>
+      <div className={rootClassNames}>
         {this.renderInput()}
         {this.renderCheckBox()}
-        {label && <span className={styles.label}>
+        {label && <label className={styles.label} htmlFor={id}>
           <Text baseline={false} intimate={compact} strong={checked} className={styles.labelText}>{label}</Text>
           {extraLabel && <Text baseline={false} whispering strong={checked} className={styles.labelTextSecondary}>{extraLabel}</Text>}
-        </span>
+        </label>
         }
       </div>
     );

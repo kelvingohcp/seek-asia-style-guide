@@ -37,6 +37,7 @@ class CheckboxContainer extends Component {
       <div className={classNames}>
         <DemoComponent
           {...componentProps}
+          id="checkBox"
           checked={checked}
           onChange={this.handleChange}
         />
