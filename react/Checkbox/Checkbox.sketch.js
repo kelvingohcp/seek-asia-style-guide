@@ -30,6 +30,11 @@ export const symbols = {
       <Checkbox id="checkbox4" label="Nullam sodales quis velit nec accumsan. Vivamus quis ex euismod." onChange={noop} />
     </Container>
   ),
+  'Checkbox/Standard/Long Label with sub-label': (
+    <Container>
+      <Checkbox id="checkbox4" label="Nullam sodales quis velit nec accumsan." extraLabel="Vivamus" onChange={noop} />
+    </Container>
+  ),
   'Checkbox/Standard/Checkbox at the end': (
     <Container>
       <Checkbox id="checkbox5" label="Checkbox" rtl={true} onChange={noop} />

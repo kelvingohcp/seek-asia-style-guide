@@ -54,14 +54,6 @@ export default class Checkbox extends Component {
     };
   }
 
-  renderCheckBox() {
-    return (
-      <div className={styles.checkBox}>
-        <Icon type="check" svgClassName={styles.checkMark} />
-      </div>
-    );
-  }
-
   renderInput() {
     const { id, value, checked, disabled, onChange, onFocus, onBlur, inputProps } = this.props;
 
@@ -93,15 +85,17 @@ export default class Checkbox extends Component {
     });
 
     return (
-      <div className={rootClassNames}>
+      <label className={rootClassNames} htmlFor={id}>
         {this.renderInput()}
-        {this.renderCheckBox()}
-        {label && <label className={styles.label} htmlFor={id}>
-          <Text baseline={false} intimate={compact} strong={checked} className={styles.labelText}>{label}</Text>
-          {extraLabel && <Text baseline={false} whispering strong={checked} className={styles.labelTextSecondary}>{extraLabel}</Text>}
-        </label>
-        }
-      </div>
+        <div className={styles.checkBox}>
+          <Icon type="check" svgClassName={styles.checkMark} />
+        </div>
+        {(label || extraLabel) && (
+          <div className={styles.label}>
+            <Text baseline={false} intimate={compact} strong={checked} className={styles.labelText}>{label}</Text>
+            {extraLabel && <Text baseline={false} whispering strong={checked} className={styles.labelTextSecondary}>{extraLabel}</Text>}
+          </div>)}
+      </label>
     );
   }
 }

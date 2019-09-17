@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox inputProps should pass through other props to the input 1`] = `
-<div
+<label
   className="root"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -26,9 +27,8 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -38,13 +38,14 @@ exports[`Checkbox inputProps should pass through other props to the input 1`] = 
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
 exports[`Checkbox should render full width checkbox 1`] = `
-<div
+<label
   className="root fullWidth"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -67,9 +68,8 @@ exports[`Checkbox should render full width checkbox 1`] = `
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -79,13 +79,14 @@ exports[`Checkbox should render full width checkbox 1`] = `
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
 exports[`Checkbox should render with checkbox put at the end of component 1`] = `
-<div
+<label
   className="root rtl"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -108,9 +109,8 @@ exports[`Checkbox should render with checkbox put at the end of component 1`] = 
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -120,13 +120,14 @@ exports[`Checkbox should render with checkbox put at the end of component 1`] = 
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
 exports[`Checkbox should render with className 1`] = `
-<div
+<label
   className="root testClassname"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -149,9 +150,8 @@ exports[`Checkbox should render with className 1`] = `
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -161,13 +161,14 @@ exports[`Checkbox should render with className 1`] = `
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
 exports[`Checkbox should render with compact checkbox style 1`] = `
-<div
+<label
   className="root compact"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -190,9 +191,8 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -202,13 +202,14 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
 exports[`Checkbox should render with simple props 1`] = `
-<div
+<label
   className="root"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -231,9 +232,8 @@ exports[`Checkbox should render with simple props 1`] = `
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -243,13 +243,14 @@ exports[`Checkbox should render with simple props 1`] = `
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
 
 exports[`Checkbox should render with standard checkbox style 1`] = `
-<div
+<label
   className="root"
+  htmlFor="testCheckbox"
 >
   <input
     checked={false}
@@ -272,9 +273,8 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
       type="check"
     />
   </div>
-  <label
+  <div
     className="label"
-    htmlFor="testCheckbox"
   >
     <Text
       baseline={false}
@@ -284,6 +284,6 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
     >
       Still in role
     </Text>
-  </label>
-</div>
+  </div>
+</label>
 `;
