@@ -6,9 +6,7 @@ import * as sketch from './Alert.sketch';
 
 const Container = ({ component: DemoComponent, componentProps }) => (
   <Card style={{ width: '500px' }}>
-    <Section>
-      <DemoComponent {...componentProps} />
-    </Section>
+    <DemoComponent {...componentProps} />
   </Card>
 );
 
@@ -49,13 +47,6 @@ export default {
           transformProps: ({ onClose, ...props }) => ({
             ...props,
             onClose: () => console.log('On close handler called')
-          })
-        },
-        {
-          label: 'Pullout',
-          transformProps: ({ pullout, ...props }) => ({
-            ...props,
-            pullout: !pullout
           })
         }
       ]

@@ -30,7 +30,6 @@ export default class Alert extends Component {
     tone: PropTypes.oneOf([TONE.POSITIVE, TONE.INFO, TONE.CRITICAL, TONE.HELP]).isRequired,
     level: PropTypes.oneOf([LEVEL.PRIMARY, LEVEL.SECONDARY, LEVEL.TERTIARY]).isRequired,
     message: PropTypes.node,
-    pullout: PropTypes.bool,
     hideIcon: PropTypes.bool,
     onClose: PropTypes.func,
     children: PropTypes.node
@@ -38,7 +37,6 @@ export default class Alert extends Component {
 
   static defaultProps = {
     hideIcon: false,
-    pullout: false,
     onClose: null
   };
 
@@ -66,7 +64,7 @@ export default class Alert extends Component {
   }
 
   render() {
-    const { hideIcon, onClose, tone, level, pullout, ...restProps } = this.props;
+    const { hideIcon, onClose, tone, level, ...restProps } = this.props;
 
     const additionalProps = omit(restProps, 'message');
 

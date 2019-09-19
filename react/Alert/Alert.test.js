@@ -54,11 +54,6 @@ describe('Alert:', () => {
     });
   });
 
-  it('should render the pullout style', () => {
-    const alert = renderAlert({ pullout: true });
-    expect(alert).toMatchSnapshot();
-  });
-
   it('should render with a hidden icon', () => {
     const alert = renderAlert({ hideIcon: true });
     expect(alert).toMatchSnapshot();
