@@ -49,14 +49,16 @@ export default class Alert extends Component {
   renderContents = () => {
     const { tone, message, hideIcon, onClose, children, compact } = this.props;
 
-    const Icon1 = tone ? ICONS[tone] : null;
+    const IconOld = tone ? ICONS[tone] : null;
 
     return (
       <div className={styles.alert}>
-        {(!hideIcon && Icon1) && <Icon1 className={styles.icon} />}
-        <div className={styles.text}>
-          {message && (<Text raw baseline={false} intimate={compact}>{message}</Text>)}
-          {children}
+        <div className={styles.alertContent}>
+          {(!hideIcon && IconOld) && <IconOld className={styles.icon} />}
+          <div className={styles.text}>
+            {message && (<Text raw baseline={false} intimate={compact}>{message}</Text>)}
+            {children}
+          </div>
         </div>
         {onClose && (
           <button className={styles.close} onClick={this.handleClose}>

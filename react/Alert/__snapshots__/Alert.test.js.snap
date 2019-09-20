@@ -12,20 +12,24 @@ exports[`Alert: levels: should render primary alerts 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -43,20 +47,24 @@ exports[`Alert: levels: should render secondary alerts 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -69,20 +77,24 @@ exports[`Alert: levels: should render tertiary alerts 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </div>
@@ -101,20 +113,24 @@ exports[`Alert: should pass through additional props 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -132,20 +148,24 @@ exports[`Alert: should render a close button 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
     <button
       className="close"
@@ -177,15 +197,19 @@ exports[`Alert: should render with a hidden icon 1`] = `
     className="alert"
   >
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -203,19 +227,23 @@ exports[`Alert: types: should render critical alerts 1`] = `
   <div
     className="alert"
   >
-    <CriticalIcon
-      className="icon"
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <CriticalIcon
+        className="icon"
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -233,19 +261,23 @@ exports[`Alert: types: should render help alerts 1`] = `
   <div
     className="alert"
   >
-    <HelpIcon
-      className="icon"
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <HelpIcon
+        className="icon"
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -263,19 +295,23 @@ exports[`Alert: types: should render info alerts 1`] = `
   <div
     className="alert"
   >
-    <InfoIcon
-      className="icon"
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <InfoIcon
+        className="icon"
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -293,20 +329,24 @@ exports[`Alert: types: should render positive alerts 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        Test message
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          Test message
+        </Text>
+      </div>
     </div>
   </div>
 </Section>
@@ -324,22 +364,26 @@ exports[`Alert: will accept a node in a the message prop 1`] = `
   <div
     className="alert"
   >
-    <TickCircleIcon
-      className="icon"
-      filled={false}
-    />
     <div
-      className="text"
+      className="alertContent"
     >
-      <Text
-        baseline={false}
-        intimate={false}
-        raw={true}
+      <TickCircleIcon
+        className="icon"
+        filled={false}
+      />
+      <div
+        className="text"
       >
-        <span>
-          I'm a node
-        </span>
-      </Text>
+        <Text
+          baseline={false}
+          intimate={false}
+          raw={true}
+        >
+          <span>
+            I'm a node
+          </span>
+        </Text>
+      </div>
     </div>
   </div>
 </Section>

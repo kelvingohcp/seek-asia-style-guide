@@ -32,6 +32,7 @@
 .alert {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   line-height: @line-height-local;
 }
 
@@ -59,17 +60,11 @@
   line-height: inherit;
   display: inline-block;
   vertical-align: middle;
-  flex-grow: 1;
-  &:not(:first-child) {
-    margin-left: @grid-base * 2;
-  }
-  &:not(:last-child) {
-    margin-right: @grid-base * 2;
-  }
 }
 
 .icon {
   ._attachment();
+  margin-right: @grid-base * 2;
   svg {
     width: 100%;
     height: 100%;
@@ -82,8 +77,19 @@
 .close {
   ._attachment();
   border: none;
+  flex-grow: 1;
   padding: 0;
   background-color: transparent;
   color: currentColor;
   cursor: pointer;
+}
+
+.alertContent {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-grow: 9999;
+  &:not(:last-child) {
+    margin-right: @grid-base * 2;
+  }
 }
