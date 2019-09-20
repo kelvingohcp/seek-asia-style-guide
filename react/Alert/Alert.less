@@ -1,31 +1,38 @@
 @import (reference) "~seek-asia-style-guide/theme";
 
-@icon-width: @grid-base * 10;
+@gutter-local: @grid-base * 2;
+@icon-width: @grid-base * 4;
+@line-height-local: @grid-base * 6;
+@line-height-local-compact: @grid-base * 5;
 
-._attachment(@side: @icon-width;) {
+._attachment() {
   align-items: center;
   display: flex;
-  flex-shrink: 0;
-  height: @side;
+  flex-grow: 0;
+  flex-basis: @line-height-local;
+  height: @line-height-local;
   justify-content: center;
-  width: @side;
+  line-height: inherit;
+  width: @line-height-local;
+  .compact & {
+    flex-basis: @line-height-local-compact;
+    height: @line-height-local-compact;
+    width: @line-height-local-compact;
+  }
 }
 
 .root {
   position: relative;
+  line-height: @line-height-local;
+  &.compact {
+    line-height: @line-height-local-compact;
+  }
 }
 
 .alert {
   display: flex;
-  align-items: center;
-  & > * {
-    &:not(:first-child) {
-      margin-left: @grid-base;
-    }
-    &:not(:last-child) {
-      margin-right: @grid-base;
-    }
-  }
+  align-items: flex-start;
+  line-height: @line-height-local;
 }
 
 .positive {
@@ -49,9 +56,16 @@
 }
 
 .text {
+  line-height: inherit;
   display: inline-block;
   vertical-align: middle;
   flex-grow: 1;
+  &:not(:first-child) {
+    margin-left: @grid-base * 2;
+  }
+  &:not(:last-child) {
+    margin-right: @grid-base * 2;
+  }
 }
 
 .icon {

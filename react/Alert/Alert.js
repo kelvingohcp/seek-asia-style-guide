@@ -11,10 +11,10 @@ import TickCircleIcon from '../TickCircleIcon/TickCircleIcon';
 import InfoIcon from '../InfoIcon/InfoIcon';
 import CriticalIcon from '../CriticalIcon/CriticalIcon';
 import HelpIcon from '../HelpIcon/HelpIcon';
-import CrossIcon from '../CrossIcon/CrossIcon';
 import { TONE, LEVEL } from '../Section/Section';
 import getTenant from '../private/tenant';
 import { StyleGuideContext } from '../StyleGuideProvider/StyleGuideProvider';
+import Icon from '../Icon/Icon';
 
 const ICONS = {
   [TONE.POSITIVE]: TickCircleIcon,
@@ -27,36 +27,40 @@ export default class Alert extends Component {
   static displayName = 'Alert';
 
   static propTypes = {
-    tone: PropTypes.oneOf([TONE.POSITIVE, TONE.INFO, TONE.CRITICAL, TONE.HELP]).isRequired,
-    level: PropTypes.oneOf([LEVEL.PRIMARY, LEVEL.SECONDARY, LEVEL.TERTIARY]).isRequired,
-    message: PropTypes.node,
+    children: PropTypes.node,
+    className: PropTypes.string,
+    compact: PropTypes.bool,
     hideIcon: PropTypes.bool,
+    level: PropTypes.oneOf(LEVEL).isRequired,
+    message: PropTypes.node,
     onClose: PropTypes.func,
-    children: PropTypes.node
+    tone: PropTypes.oneOf(TONE).isRequired,
   };
 
   static defaultProps = {
+    className: '',
     hideIcon: false,
-    onClose: null
+    onClose: null,
+    compact: false
   };
 
   handleClose = event => this.props.onClose(event);
 
   renderContents = () => {
-    const { tone, message, hideIcon, onClose, children } = this.props;
+    const { tone, message, hideIcon, onClose, children, compact } = this.props;
 
-    const Icon = tone ? ICONS[tone] : null;
+    const Icon1 = tone ? ICONS[tone] : null;
 
     return (
       <div className={styles.alert}>
-        {(!hideIcon && Icon) && <Icon className={styles.icon} />}
+        {(!hideIcon && Icon1) && <Icon1 className={styles.icon} />}
         <div className={styles.text}>
-          {message && (<Text raw baseline={false}>{message}</Text>)}
+          {message && (<Text raw baseline={false} intimate={compact}>{message}</Text>)}
           {children}
         </div>
         {onClose && (
           <button className={styles.close} onClick={this.handleClose}>
-            <CrossIcon />
+            <Icon type="exit" size="small" />
           </button>
         )}
       </div>
@@ -64,7 +68,7 @@ export default class Alert extends Component {
   }
 
   render() {
-    const { hideIcon, onClose, tone, level, ...restProps } = this.props;
+    const { children, className, compact, hideIcon, onClose, tone, level, ...restProps } = this.props;
 
     const additionalProps = omit(restProps, 'message');
 
@@ -83,6 +87,7 @@ export default class Alert extends Component {
           const { isJobsDB, isJobStreet } = getTenant(tenant);
           const rootClasses = classnames({
             [styles.root]: true,
+            [styles.compact]: compact,
             [toneStyle]: tone && isTertiary,
             [styles.jobsDB]: isJobsDB,
             [styles.jobStreet]: isJobStreet
@@ -95,7 +100,6 @@ export default class Alert extends Component {
             <Section
               tone={tone}
               level={level}
-              pullout={pullout}
               className={rootClasses}
               {...additionalProps}>
               {this.renderContents()}

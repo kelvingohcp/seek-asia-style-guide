@@ -28,7 +28,8 @@ export default {
     level: LEVEL.PRIMARY,
     message: 'I\'m some timely text that helps the user understand something',
     hideIcon: false,
-    onClose: null
+    onClose: null,
+    compact: false,
   },
   options: [
     {
@@ -48,7 +49,14 @@ export default {
             ...props,
             onClose: () => console.log('On close handler called')
           })
-        }
+        },
+        {
+          label: 'Compact',
+          transformProps: ({ ...props }) => ({
+            ...props,
+            compact: true
+          })
+        },
       ]
     },
     {
