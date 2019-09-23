@@ -73,7 +73,8 @@ export default class Checkbox extends Component {
   }
 
   render() {
-    const { checked, className, compact, disabled, extraLabel, fullWidth, id, label, rtl } = this.props;
+    const { className, compact, extraLabel, fullWidth, id, label, rtl } = this.props;
+    const { checked, disabled } = this.state;
     const rootClassNames = classnames({
       [styles.root]: true,
       [className]: className,

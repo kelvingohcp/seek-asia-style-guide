@@ -75,7 +75,6 @@ exports[`Checkbox should render full width checkbox 1`] = `
       baseline={false}
       className="labelText"
       intimate={false}
-      strong={false}
     >
       Still in role
     </Text>
@@ -116,7 +115,6 @@ exports[`Checkbox should render with checkbox put at the end of component 1`] = 
       baseline={false}
       className="labelText"
       intimate={false}
-      strong={false}
     >
       Still in role
     </Text>
@@ -157,7 +155,6 @@ exports[`Checkbox should render with className 1`] = `
       baseline={false}
       className="labelText"
       intimate={false}
-      strong={false}
     >
       Still in role
     </Text>
@@ -198,7 +195,6 @@ exports[`Checkbox should render with compact checkbox style 1`] = `
       baseline={false}
       className="labelText"
       intimate={true}
-      strong={false}
     >
       Still in role
     </Text>
@@ -239,7 +235,6 @@ exports[`Checkbox should render with simple props 1`] = `
       baseline={false}
       className="labelText"
       intimate={false}
-      strong={false}
     >
       Still in role
     </Text>
@@ -280,7 +275,6 @@ exports[`Checkbox should render with standard checkbox style 1`] = `
       baseline={false}
       className="labelText"
       intimate={false}
-      strong={false}
     >
       Still in role
     </Text>
