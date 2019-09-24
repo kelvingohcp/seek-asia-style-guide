@@ -61,7 +61,7 @@ export default {
     },
     myJobStreet: {
       title: 'MyJobStreet',
-      url: `${accountBaseUrl}/resume/preview-resume.php`
+      url: `${accountBaseUrl}/home/login.php?site=sg`
     },
     companyProfiles: {
       title: 'Company Profiles',
