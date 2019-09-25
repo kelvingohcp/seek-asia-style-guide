@@ -175,18 +175,6 @@ exports[`JobStreet Header passes through optional props 1`] = `
   userAccMenuItems={
     Array [
       Object {
-        "EnableIcon": true,
-        "ItemIcon": [Function],
-        "title": "Account",
-        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
-      },
-      Object {
-        "EnableIcon": true,
-        "ItemIcon": [Function],
-        "title": "Invitation",
-        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
-      },
-      Object {
         "EnableIcon": false,
         "ItemIcon": [Function],
         "title": "Logout",
@@ -366,18 +354,6 @@ exports[`JobStreet Header renders with default props 1`] = `
   onMenuOpen={[Function]}
   userAccMenuItems={
     Array [
-      Object {
-        "EnableIcon": true,
-        "ItemIcon": [Function],
-        "title": "Account",
-        "url": "https://myjobstreet.jobstreet.com.my/registration/update-account.php",
-      },
-      Object {
-        "EnableIcon": true,
-        "ItemIcon": [Function],
-        "title": "Invitation",
-        "url": "https://myjobstreet.jobstreet.com.my/application/interview-request.php?view=latest",
-      },
       Object {
         "EnableIcon": false,
         "ItemIcon": [Function],

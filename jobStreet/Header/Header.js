@@ -18,8 +18,9 @@ const getJobStreetProps = ({ country, language }) => {
   ];
 
   const userAccMenuItems = [
-    { ... _get(headerMessage, 'account'), ItemIcon: ProfileIcon, EnableIcon: true },
-    { ... _get(headerMessage, 'invitation'), ItemIcon: JobInvitationIcon, EnableIcon: true },
+    // Remove for short-term solution since FB user are having issue with this two link, Bricks team are fixing
+    // { ... _get(headerMessage, 'account'), ItemIcon: ProfileIcon, EnableIcon: true },
+    // { ... _get(headerMessage, 'invitation'), ItemIcon: JobInvitationIcon, EnableIcon: true },
     { ... _get(headerMessage, 'logout'), ItemIcon: JobFunctionIcon, EnableIcon: false }
   ];
 
