@@ -24,7 +24,8 @@
   display: flex;
   margin-bottom: @grid-base * 2;
   @media @aboveMobile {
-    margin-bottom: initial;
+    margin-bottom: 0; // For IE11 fallback
+    margin-bottom: unset;
     margin-right: @grid-base * 3;
   }
 }

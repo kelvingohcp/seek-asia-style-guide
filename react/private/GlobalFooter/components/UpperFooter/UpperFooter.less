@@ -5,6 +5,7 @@
 .footerGrid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   @supports (display: grid) {
     display: grid;
     grid-gap: @grid-base * 4;
@@ -16,8 +17,12 @@
 }
 
 .footerGridItem {
-  @media @mobile {
-    flex-basis: 49%;
+  flex-basis: 100%;
+  @media @tablet-only {
+    flex-basis: 49.5%;
+  }
+  @media @desktop {
+    flex-basis: 24.5%;
   }
   @supports (display: grid) {
     width: 100%;
