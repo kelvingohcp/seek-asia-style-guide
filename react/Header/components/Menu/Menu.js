@@ -79,12 +79,12 @@ export default class Menu extends Component {
     return null;
   }
   render() {
-    const { menuMessage, headerMessage, shouldShowMenu, shouldShowMenuWithSpace, links, locales, brandStyles, employerSite, authenticationStatus, userName, linkRenderer, loginAvailable } = this.props;
+    const { menuMessage, headerMessage, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, userName, linkRenderer, loginAvailable, HeaderComponent } = this.props;
     const selectedLocale = locales[0];
-    const openMenuWithSpace = shouldShowMenu && shouldShowMenuWithSpace;
-    const openMenu = shouldShowMenu && !shouldShowMenuWithSpace;
+    const openMenu = shouldShowMenu;
     return (
-      <div className={classnames(styles.root, { [styles.showMenu]: openMenu, [styles.showMenuSpace]: openMenuWithSpace })}>
+      <div className={classnames(styles.root, { [styles.showMenu]: openMenu })}>
+        <HeaderComponent />
         <Section className={styles.headerMenu}>
           <Text whisperingTitle> {authenticationStatus === AUTHENTICATED ? userName.toUpperCase() : _get(menuMessage, 'jobSeekerHeader')}</Text>
         </Section>
@@ -183,5 +183,5 @@ Menu.propTypes = {
   linkRenderer: PropTypes.func,
   userName: PropTypes.string,
   loginAvailable: PropTypes.bool,
-  shouldShowMenuWithSpace: PropTypes.bool
+  HeaderComponent: PropTypes.func
 };

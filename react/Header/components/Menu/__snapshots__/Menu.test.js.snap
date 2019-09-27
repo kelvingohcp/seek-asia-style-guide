@@ -4,6 +4,7 @@ exports[`Menu should not render with menu open even allow extra space 1`] = `
 <div
   className="root"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -115,6 +116,7 @@ exports[`Menu should render when authenticated 1`] = `
 <div
   className="root"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -449,6 +451,7 @@ exports[`Menu should render with default props 1`] = `
 <div
   className="root"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -560,6 +563,7 @@ exports[`Menu should render with links list 1`] = `
 <div
   className="root"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -723,6 +727,7 @@ exports[`Menu should render with menu open 1`] = `
 <div
   className="root showMenu"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -832,8 +837,9 @@ exports[`Menu should render with menu open 1`] = `
 
 exports[`Menu should render with menu open with extra space 1`] = `
 <div
-  className="root showMenuSpace"
+  className="root showMenu"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -945,6 +951,7 @@ exports[`Menu should render with menu without extra space 1`] = `
 <div
   className="root showMenu"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -1056,6 +1063,7 @@ exports[`Menu should render with more links 1`] = `
 <div
   className="root"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
@@ -1219,6 +1227,7 @@ exports[`Menu should render with sub links 1`] = `
 <div
   className="root"
 >
+  <Component />
   <Section
     className="headerMenu"
     header={false}
