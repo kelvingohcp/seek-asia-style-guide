@@ -83,7 +83,7 @@ export default {
       title: 'Employer Site',
       url: `${baseUrlWithLanguage}/cms/employer`
     },
-    account: { 
+    account: {
       title: 'Account',
       url: `${accountBaseUrl}/registration/update-account.php`
     },
@@ -98,7 +98,7 @@ export default {
     homeUrlText: 'JobStreet.com',
     seperatorOr: 'or',
     mobileLogoutUrl: `${accountBaseUrl}/home/logout.php`,
-    mobileLoginUrl: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3',
+    mobileLoginUrl: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3'
   },
   menu: {
     jobSeekerHeader: 'JOB SEEKER',
