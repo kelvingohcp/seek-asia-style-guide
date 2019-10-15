@@ -136,7 +136,6 @@ export default class Header extends Component {
         </div>
       );
     };
-
     return (
       <header className={styles.root}>
         <PageBlock>

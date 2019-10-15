@@ -79,6 +79,8 @@ export default {
       title: 'Log in',
       url: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3'
     },
+    mobileLogoutUrl: `${accountBaseUrl}/home/logout.php`,
+    mobileLoginUrl: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3',
     employer: {
       title: 'Employer Site',
       url: `${baseUrlWithLanguage}/cms/employer`
