@@ -79,7 +79,7 @@ export default class Menu extends Component {
     return null;
   }
   render() {
-    const { menuMessage, headerMessage, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, userName, linkRenderer, loginAvailable, HeaderComponent } = this.props;
+    const { menuMessage, headerMessage, shouldShowMenu, links, locales, brandStyles, employerSite, authenticationStatus, userName, linkRenderer, loginAvailable, HeaderComponent, pageType } = this.props;
     const selectedLocale = locales[0];
     const openMenu = shouldShowMenu;
     return (
@@ -125,7 +125,7 @@ export default class Menu extends Component {
         }
         {
           authenticationStatus === UNAUTHENTICATED && loginAvailable && (
-            <MenuItem className={styles.loginSignup} linkUrl={_get(headerMessage, 'mobileLoginUrl')} brandStyles={brandStyles} linkRenderer={linkRenderer}>
+            <MenuItem className={styles.loginSignup} linkUrl={_get(headerMessage, ['mobileLoginUrl', pageType])} brandStyles={brandStyles} linkRenderer={linkRenderer}>
               {_get(headerMessage, 'login.title')}
             </MenuItem>
           )
@@ -183,5 +183,6 @@ Menu.propTypes = {
   linkRenderer: PropTypes.func,
   userName: PropTypes.string,
   loginAvailable: PropTypes.bool,
-  HeaderComponent: PropTypes.func
+  HeaderComponent: PropTypes.func,
+  pageType: PropTypes.string
 };

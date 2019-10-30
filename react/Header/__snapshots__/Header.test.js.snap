@@ -51,13 +51,21 @@ exports[`Header should hide bottom navigation 1`] = `
           },
           "login": Object {
             "title": "Log in",
-            "url": "/hk/en/login/jobseekerlogin?from=header",
+            "url": Object {
+              "home": "/hk/en/login/jobseekerlogin?from=header",
+              "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+              "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+            },
           },
           "logout": Object {
             "title": "Log out",
             "url": "/hk/en/login/jobseekerlogoff",
           },
-          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLoginUrl": Object {
+            "home": "/login.do?nextPage=jobsForYou.do%3F",
+            "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+            "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+          },
           "mobileLogoutUrl": "/logout.do",
           "playStore": Object {
             "title": "Google Play Store",
@@ -168,6 +176,7 @@ exports[`Header should hide bottom navigation 1`] = `
           "settingsHeader": "SETTINGS",
         }
       }
+      pageType="home"
       shouldShowMenu={false}
     />
   </PageBlock>
@@ -225,13 +234,21 @@ exports[`Header should pass through optional props 1`] = `
           },
           "login": Object {
             "title": "Log in",
-            "url": "/hk/en/login/jobseekerlogin?from=header",
+            "url": Object {
+              "home": "/hk/en/login/jobseekerlogin?from=header",
+              "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+              "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+            },
           },
           "logout": Object {
             "title": "Log out",
             "url": "/hk/en/login/jobseekerlogoff",
           },
-          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLoginUrl": Object {
+            "home": "/login.do?nextPage=jobsForYou.do%3F",
+            "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+            "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+          },
           "mobileLogoutUrl": "/logout.do",
           "playStore": Object {
             "title": "Google Play Store",
@@ -366,6 +383,7 @@ exports[`Header should pass through optional props 1`] = `
           "settingsHeader": "SETTINGS",
         }
       }
+      pageType="home"
       shouldShowMenu={false}
     />
   </PageBlock>
@@ -423,13 +441,21 @@ exports[`Header should render with default props 1`] = `
           },
           "login": Object {
             "title": "Log in",
-            "url": "/hk/en/login/jobseekerlogin?from=header",
+            "url": Object {
+              "home": "/hk/en/login/jobseekerlogin?from=header",
+              "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+              "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+            },
           },
           "logout": Object {
             "title": "Log out",
             "url": "/hk/en/login/jobseekerlogoff",
           },
-          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLoginUrl": Object {
+            "home": "/login.do?nextPage=jobsForYou.do%3F",
+            "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+            "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+          },
           "mobileLogoutUrl": "/logout.do",
           "playStore": Object {
             "title": "Google Play Store",
@@ -540,6 +566,7 @@ exports[`Header should render with default props 1`] = `
           "settingsHeader": "SETTINGS",
         }
       }
+      pageType="home"
       shouldShowMenu={false}
     />
   </PageBlock>
@@ -597,13 +624,21 @@ exports[`Header should render with links list 1`] = `
           },
           "login": Object {
             "title": "Log in",
-            "url": "/hk/en/login/jobseekerlogin?from=header",
+            "url": Object {
+              "home": "/hk/en/login/jobseekerlogin?from=header",
+              "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+              "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+            },
           },
           "logout": Object {
             "title": "Log out",
             "url": "/hk/en/login/jobseekerlogoff",
           },
-          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLoginUrl": Object {
+            "home": "/login.do?nextPage=jobsForYou.do%3F",
+            "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+            "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+          },
           "mobileLogoutUrl": "/logout.do",
           "playStore": Object {
             "title": "Google Play Store",
@@ -738,6 +773,7 @@ exports[`Header should render with links list 1`] = `
           "settingsHeader": "SETTINGS",
         }
       }
+      pageType="home"
       shouldShowMenu={false}
     />
   </PageBlock>
@@ -795,13 +831,21 @@ exports[`Header should render with login available 1`] = `
           },
           "login": Object {
             "title": "Log in",
-            "url": "/hk/en/login/jobseekerlogin?from=header",
+            "url": Object {
+              "home": "/hk/en/login/jobseekerlogin?from=header",
+              "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+              "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+            },
           },
           "logout": Object {
             "title": "Log out",
             "url": "/hk/en/login/jobseekerlogoff",
           },
-          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLoginUrl": Object {
+            "home": "/login.do?nextPage=jobsForYou.do%3F",
+            "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+            "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+          },
           "mobileLogoutUrl": "/logout.do",
           "playStore": Object {
             "title": "Google Play Store",
@@ -912,6 +956,7 @@ exports[`Header should render with login available 1`] = `
           "settingsHeader": "SETTINGS",
         }
       }
+      pageType="home"
       shouldShowMenu={false}
     />
   </PageBlock>
@@ -969,13 +1014,21 @@ exports[`Header should render without navigation menu 1`] = `
           },
           "login": Object {
             "title": "Log in",
-            "url": "/hk/en/login/jobseekerlogin?from=header",
+            "url": Object {
+              "home": "/hk/en/login/jobseekerlogin?from=header",
+              "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+              "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+            },
           },
           "logout": Object {
             "title": "Log out",
             "url": "/hk/en/login/jobseekerlogoff",
           },
-          "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+          "mobileLoginUrl": Object {
+            "home": "/login.do?nextPage=jobsForYou.do%3F",
+            "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+            "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+          },
           "mobileLogoutUrl": "/logout.do",
           "playStore": Object {
             "title": "Google Play Store",
@@ -1086,6 +1139,7 @@ exports[`Header should render without navigation menu 1`] = `
           "settingsHeader": "SETTINGS",
         }
       }
+      pageType="home"
       shouldShowMenu={false}
     />
   </PageBlock>

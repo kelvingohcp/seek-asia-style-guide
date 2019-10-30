@@ -49,7 +49,8 @@ describe('Menu', () => {
     userName: 'Olivia',
     baseUrl: 'http://seekasia.com',
     menuMessage,
-    headerMessage
+    headerMessage,
+    pageType: 'home'
   };
 
   const mockLinks = [
@@ -151,6 +152,22 @@ describe('Menu', () => {
     };
     const wrapper = shallow(<Menu {...testProps} />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render login url based on pagetype', () => {
+    const jobListingProps = {
+      ...defaultProps,
+      loginAvailable: true,
+      pageType: 'jobListing'
+    };
+    expect(shallow(<Menu {...jobListingProps} />)).toMatchSnapshot();
+
+    const jobAdProps = {
+      ...defaultProps,
+      loginAvailable: true,
+      pageType: 'jobAd'
+    };
+    expect(shallow(<Menu {...jobAdProps} />)).toMatchSnapshot();
   });
 });
 

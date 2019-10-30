@@ -4,12 +4,168 @@ exports[`UserAccount should render is UNAUTHENTICATED 1`] = `
 <div
   className="secondaryNav"
 >
+  <a
+    href="/hk/en/login/jobseekerlogin?from=header"
+  >
+    <Button
+      aria-pressed={false}
+      className="userAcclink"
+      color="hyperlink"
+      component="button"
+      data-automation="log-in"
+      role="button"
+      tabIndex={0}
+    >
+      Log in
+    </Button>
+  </a>
   <Text
     baseline={false}
     className="displayText"
   >
     or
   </Text>
+  <a
+    href="/hk/en/jobseeker/registration"
+  >
+    <Button
+      aria-pressed={false}
+      className="signup"
+      color="hyperlink"
+      component="button"
+      data-automation="sign-up"
+      role="button"
+      tabIndex={0}
+    >
+      Sign up
+    </Button>
+  </a>
+  <a
+    href="/hk/en/home/employerindex"
+  >
+    <Button
+      aria-pressed={false}
+      className="userAcclink"
+      color="tertiary"
+      compact={true}
+      component="button"
+      data-automation="employer-site"
+      role="button"
+      tabIndex={0}
+    >
+      For Employers
+    </Button>
+  </a>
+</div>
+`;
+
+exports[`UserAccount should render login url based on pagetype 1`] = `
+<div
+  class="secondaryNav"
+>
+  <a
+    href="/hk/en/login/jobseekerlogin?from=header&pageType=jobListing"
+  >
+    <button
+      aria-pressed="false"
+      class="root userAcclink root_hyperlink"
+      data-automation="log-in"
+      role="button"
+      tabindex="0"
+    >
+      Log in
+    </button>
+  </a>
+  <span
+    class="root displayText"
+  >
+    <span
+      class=""
+    >
+      or
+    </span>
+  </span>
+  <a
+    href="/hk/en/jobseeker/registration"
+  >
+    <button
+      aria-pressed="false"
+      class="root signup root_hyperlink"
+      data-automation="sign-up"
+      role="button"
+      tabindex="0"
+    >
+      Sign up
+    </button>
+  </a>
+  <a
+    href="/hk/en/home/employerindex"
+  >
+    <button
+      aria-pressed="false"
+      class="root userAcclink compact root_tertiary"
+      data-automation="employer-site"
+      role="button"
+      tabindex="0"
+    >
+      For Employers
+    </button>
+  </a>
+</div>
+`;
+
+exports[`UserAccount should render login url based on pagetype 2`] = `
+<div
+  class="secondaryNav"
+>
+  <a
+    href="/hk/en/login/jobseekerlogin?from=header&pageType=jobAd"
+  >
+    <button
+      aria-pressed="false"
+      class="root userAcclink root_hyperlink"
+      data-automation="log-in"
+      role="button"
+      tabindex="0"
+    >
+      Log in
+    </button>
+  </a>
+  <span
+    class="root displayText"
+  >
+    <span
+      class=""
+    >
+      or
+    </span>
+  </span>
+  <a
+    href="/hk/en/jobseeker/registration"
+  >
+    <button
+      aria-pressed="false"
+      class="root signup root_hyperlink"
+      data-automation="sign-up"
+      role="button"
+      tabindex="0"
+    >
+      Sign up
+    </button>
+  </a>
+  <a
+    href="/hk/en/home/employerindex"
+  >
+    <button
+      aria-pressed="false"
+      class="root userAcclink compact root_tertiary"
+      data-automation="employer-site"
+      role="button"
+      tabindex="0"
+    >
+      For Employers
+    </button>
+  </a>
 </div>
 `;
 

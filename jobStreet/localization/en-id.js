@@ -81,7 +81,17 @@ export default {
     },
     login: {
       title: 'Log in',
-      url: 'https://myjobstreet.jobstreet.com.my/login'
+      url: {
+        home: 'https://myjobstreet.jobstreet.co.id/home/login.php?site=id&language_code=3',
+        jobListing: 'https://myjobstreet.jobstreet.co.id/home/login.php?site=id&language_code=3&go=JOB-LISTING&nrfr=1',
+        jobAd: 'https://myjobstreet.jobstreet.co.id/home/login.php?site=id&language_code=3&go=JOB-ADS&nrfr=1'
+      }
+    },
+    mobileLogoutUrl: `${accountBaseUrl}/home/logout.php`,
+    mobileLoginUrl: {
+      home: 'https://myjobstreet.jobstreet.co.id/home/login.php?site=id&language_code=3',
+      jobListing: 'https://myjobstreet.jobstreet.co.id/home/login.php?site=id&language_code=3&go=JOB-LISTING&nrfr=1',
+      jobAd: 'https://myjobstreet.jobstreet.co.id/home/login.php?site=id&language_code=3&go=JOB-ADS&nrfr=1'
     },
     employer: {
       title: 'Employer Site',

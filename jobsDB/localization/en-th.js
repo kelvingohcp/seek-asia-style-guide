@@ -66,7 +66,11 @@ export default {
     },
     login: {
       title: 'Log in',
-      url: `${baseUrl}/th/en/login/jobseekerlogin?from=header`
+      url: {
+        home: `${baseUrl}/th/en/login/jobseekerlogin?from=header`,
+        jobListing: `${baseUrl}/th/en/login/jobseekerlogin?from=header`,
+        jobAd: `${baseUrl}/th/en/login/jobseekerlogin?from=header`
+      }
     },
     employer: {
       title: 'For Employers',
@@ -75,6 +79,12 @@ export default {
     homeTitle: 'Home',
     homeUrlText: 'jobsDB.com',
     homeUrl: '/th',
+    mobileLogoutUrl: `${mUrlWithLanguage}/logout.do`,
+    mobileLoginUrl: {
+      home: `${mUrlWithLanguage}/login.do?nextPage=jobsForYou.do%3F`,
+      jobListing: `${mUrlWithLanguage}/login.do?nextPage=jobsForYou.do%3F`,
+      jobAd: `${mUrlWithLanguage}/login.do?nextPage=jobsForYou.do%3F`
+    },
     downloadApp: 'Download Our App',
     seperatorOr: 'or',
     searchUrl: '/TH/EN/Search/FindJobs?JSRV=1&page=1'

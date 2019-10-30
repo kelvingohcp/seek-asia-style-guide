@@ -59,12 +59,22 @@ exports[`JobStreet Header passes through optional props 1`] = `
       },
       "login": Object {
         "title": "Log in",
-        "url": "https://myjobstreet.jobstreet.com.my/login",
+        "url": Object {
+          "home": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3",
+          "jobAd": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-ADS&nrfr=1",
+          "jobListing": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-LISTING&nrfr=1",
+        },
       },
       "logout": Object {
         "title": "Logout",
         "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       },
+      "mobileLoginUrl": Object {
+        "home": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3",
+        "jobAd": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-ADS&nrfr=1",
+        "jobListing": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-LISTING&nrfr=1",
+      },
+      "mobileLogoutUrl": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       "myJobStreet": Object {
         "title": "MyJobStreet",
         "url": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",
@@ -251,12 +261,22 @@ exports[`JobStreet Header renders with default props 1`] = `
       },
       "login": Object {
         "title": "Log in",
-        "url": "https://myjobstreet.jobstreet.com.my/login",
+        "url": Object {
+          "home": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3",
+          "jobAd": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-ADS&nrfr=1",
+          "jobListing": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-LISTING&nrfr=1",
+        },
       },
       "logout": Object {
         "title": "Logout",
         "url": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       },
+      "mobileLoginUrl": Object {
+        "home": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3",
+        "jobAd": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-ADS&nrfr=1",
+        "jobListing": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my&language_code=3&go=JOB-LISTING&nrfr=1",
+      },
+      "mobileLogoutUrl": "https://myjobstreet.jobstreet.com.my/home/logout.php",
       "myJobStreet": Object {
         "title": "MyJobStreet",
         "url": "https://myjobstreet.jobstreet.com.my/home/login.php?site=my",

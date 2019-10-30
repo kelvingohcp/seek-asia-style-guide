@@ -40,7 +40,8 @@ describe('Header', () => {
     menuMessage,
     actionTrayProps: {
       showTray: true
-    }
+    },
+    pageType: 'home'
   };
 
   const mockLinks = [

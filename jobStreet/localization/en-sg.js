@@ -77,10 +77,18 @@ export default {
     },
     login: {
       title: 'Log in',
-      url: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3'
+      url: {
+        home: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3',
+        jobListing: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3&go=JOB-LISTING&nrfr=1',
+        jobAd: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3&go=JOB-ADS&nrfr=1'
+      }
     },
     mobileLogoutUrl: `${accountBaseUrl}/home/logout.php`,
-    mobileLoginUrl: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3',
+    mobileLoginUrl: {
+      home: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3',
+      jobListing: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3&go=JOB-LISTING&nrfr=1',
+      jobAd: 'https://myjobstreet.jobstreet.com.sg/home/login.php?site=sg&language_code=3&go=JOB-ADS&nrfr=1'
+    },
     employer: {
       title: 'Employer Site',
       url: `${baseUrlWithLanguage}/cms/employer`

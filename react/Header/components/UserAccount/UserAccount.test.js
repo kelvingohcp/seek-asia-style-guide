@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 import headerMessage from '../../mock/headerMessage';
 import { AUTHENTICATED, UNAUTHENTICATED } from '../../../private/authStatusTypes';
 
@@ -12,7 +12,8 @@ describe('UserAccount', () => {
     loginAvailable: true,
     userName: 'JObsDB',
     userAccMenuItems: [],
-    linkRenderer: () => {}
+    linkRenderer: props => (<a {...props} />),
+    pageType: 'home'
   };
 
   it('should render with default props', () => {
@@ -23,6 +24,13 @@ describe('UserAccount', () => {
   it('should render is UNAUTHENTICATED', () => {
     const wrapper = shallow(<UserAccount {...{ ...defaultProps, authenticationStatus: UNAUTHENTICATED }} />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render login url based on pagetype', () => {
+    const wrapper = render(<UserAccount {...{ ...defaultProps, authenticationStatus: UNAUTHENTICATED, pageType: 'jobListing' }} />);
+    expect(wrapper).toMatchSnapshot();
+    const wrapper2 = render(<UserAccount {...{ ...defaultProps, authenticationStatus: UNAUTHENTICATED, pageType: 'jobAd' }} />);
+    expect(wrapper2).toMatchSnapshot();
   });
 });
 

@@ -112,6 +112,274 @@ exports[`Menu should not render with menu open even allow extra space 1`] = `
 </div>
 `;
 
+exports[`Menu should render login url based on pagetype 1`] = `
+<div
+  className="root"
+>
+  <Component />
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+       
+      JOB SEEKER
+    </Text>
+  </Section>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+      SETTINGS
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          lineHeight="conversational"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      handleClick={[Function]}
+      title="Country & Language"
+    >
+      Hong Kong (English)
+    </MenuItem>
+  </div>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    className="loginSignup"
+    linkUrl="/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing"
+  >
+    Log in
+  </MenuItem>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    className="loginSignup"
+    linkUrl="/hk/en/jobseeker/registration"
+  >
+    Sign up
+  </MenuItem>
+  <div
+    className="subMenu"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
+        />
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Back to menu
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      key="1"
+      linkUrl="https://id.jobsdb.com/id"
+    >
+      Indonesia (English)
+    </MenuItem>
+  </div>
+</div>
+`;
+
+exports[`Menu should render login url based on pagetype 2`] = `
+<div
+  className="root"
+>
+  <Component />
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+       
+      JOB SEEKER
+    </Text>
+  </Section>
+  <Section
+    className="headerMenu"
+    header={false}
+    pullout={false}
+    slim={false}
+  >
+    <Text
+      baseline={true}
+      whisperingTitle={true}
+    >
+      SETTINGS
+    </Text>
+  </Section>
+  <div
+    className="menuBody"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          lineHeight="conversational"
+          rotation=""
+          size="small"
+          smoothRotate={false}
+          type="country"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      handleClick={[Function]}
+      title="Country & Language"
+    >
+      Hong Kong (English)
+    </MenuItem>
+  </div>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    className="loginSignup"
+    linkUrl="/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd"
+  >
+    Log in
+  </MenuItem>
+  <MenuItem
+    brandStyles={
+      Object {
+        "employerLink": "employerLink",
+      }
+    }
+    className="loginSignup"
+    linkUrl="/hk/en/jobseeker/registration"
+  >
+    Sign up
+  </MenuItem>
+  <div
+    className="subMenu"
+  >
+    <MenuItem
+      ItemIcon={
+        <Icon
+          animation=""
+          className="backLink"
+          lineHeight="loud"
+          rotation="-90deg"
+          size="small"
+          smoothRotate={false}
+          type="chevron"
+        />
+      }
+      className="backLink"
+      handleClick={[Function]}
+    >
+      Back to menu
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      descriptionProps={
+        Object {
+          "className": "selectedLocale",
+          "strong": true,
+        }
+      }
+    >
+      Hong Kong (English)
+    </MenuItem>
+    <MenuItem
+      ItemIcon={
+        <FakeIcon
+          className="flag"
+        />
+      }
+      brandStyles={
+        Object {
+          "employerLink": "employerLink",
+        }
+      }
+      key="1"
+      linkUrl="https://id.jobsdb.com/id"
+    >
+      Indonesia (English)
+    </MenuItem>
+  </div>
+</div>
+`;
+
 exports[`Menu should render when authenticated 1`] = `
 <div
   className="root"
@@ -315,13 +583,21 @@ Object {
     },
     "login": Object {
       "title": "Log in",
-      "url": "/hk/en/login/jobseekerlogin?from=header",
+      "url": Object {
+        "home": "/hk/en/login/jobseekerlogin?from=header",
+        "jobAd": "/hk/en/login/jobseekerlogin?from=header&pageType=jobAd",
+        "jobListing": "/hk/en/login/jobseekerlogin?from=header&pageType=jobListing",
+      },
     },
     "logout": Object {
       "title": "Log out",
       "url": "/hk/en/login/jobseekerlogoff",
     },
-    "mobileLoginUrl": "/login.do?nextPage=jobsForYou.do%3F",
+    "mobileLoginUrl": Object {
+      "home": "/login.do?nextPage=jobsForYou.do%3F",
+      "jobAd": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd",
+      "jobListing": "/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing",
+    },
     "mobileLogoutUrl": "/logout.do",
     "playStore": Object {
       "title": "Google Play Store",
@@ -443,6 +719,7 @@ Object {
     "menu.moreHeader": "MORE",
     "menu.settingsHeader": "SETTINGS",
   },
+  "pageType": "home",
   "userName": "Olivia",
 }
 `;

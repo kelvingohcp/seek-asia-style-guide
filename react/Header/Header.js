@@ -100,7 +100,8 @@ export default class Header extends Component {
       userAccMenuItems,
       baseUrl,
       linkRenderer,
-      hideNavMenu
+      hideNavMenu,
+      pageType = 'home'
     } = this.props;
     const menuOpen = this.state.menuOpen;
 
@@ -129,6 +130,7 @@ export default class Header extends Component {
             userAccMenuItems={userAccMenuItems}
             headerMessage={headerMessage}
             linkRenderer={linkRenderer}
+            pageType={pageType}
           />
           <div onClick={this.handleToggleMenu.bind(this)} className={styles.menuToggle}>
             <Icon type="menu" className={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
@@ -153,6 +155,7 @@ export default class Header extends Component {
             userName={userName}
             linkRenderer={linkRenderer}
             HeaderComponent={BrandHeader}
+            pageType={pageType}
           />
         </PageBlock>
       </header>
@@ -184,7 +187,8 @@ Header.propTypes = {
   userName: PropTypes.string,
   userAccMenuItems: PropTypes.array,
   baseUrl: PropTypes.string,
-  hideNavMenu: PropTypes.bool
+  hideNavMenu: PropTypes.bool,
+  pageType: PropTypes.string
 };
 
 Header.defaultProps = {

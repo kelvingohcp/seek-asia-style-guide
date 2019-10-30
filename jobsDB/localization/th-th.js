@@ -66,7 +66,11 @@ export default {
     },
     login: {
       title: 'เข้าสู่ระบบ',
-      url: `${baseUrl}/th/th/login/jobseekerlogin?from=header`
+      url: {
+        home: `${baseUrl}/th/th/login/jobseekerlogin?from=header`,
+        jobListing: `${baseUrl}/th/th/login/jobseekerlogin?from=header`,
+        jobAd: `${baseUrl}/th/th/login/jobseekerlogin?from=header`
+      }
     },
     employer: {
       title: 'สำหรับผู้ประกอบการ',
@@ -75,6 +79,12 @@ export default {
     homeTitle: 'หน้าหลัก',
     homeUrlText: 'jobsDB.com',
     homeUrl: '/th/th',
+    mobileLogoutUrl: `${mUrlWithLanguage}/logout.do`,
+    mobileLoginUrl: {
+      home: `${mUrlWithLanguage}/login.do?nextPage=jobsForYou.do%3F`,
+      jobListing: `${mUrlWithLanguage}/login.do?nextPage=jobsForYou.do%3F`,
+      jobAd: `${mUrlWithLanguage}/login.do?nextPage=jobsForYou.do%3F`
+    },
     downloadApp: 'Download Our App',
     seperatorOr: 'หรือ',
     searchUrl: '/TH/TH/Search/FindJobs?JSRV=1&page=1'

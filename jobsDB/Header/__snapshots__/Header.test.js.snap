@@ -51,13 +51,21 @@ exports[`JobsDB Header renders with default props 1`] = `
       },
       "login": Object {
         "title": "Log in",
-        "url": "https://hk.jobsdb.com/hk/en/login/jobseekerlogin?from=header",
+        "url": Object {
+          "home": "https://hk.jobsdb.com/hk/en/login/jobseekerlogin?from=header",
+          "jobAd": "https://hk.jobsdb.com/hk/en/login/jobseekerlogin?from=header",
+          "jobListing": "https://hk.jobsdb.com/hk/en/login/jobseekerlogin?from=header",
+        },
       },
       "logout": Object {
         "title": "Log out",
         "url": "https://hk.jobsdb.com/hk/en/login/jobseekerlogoff",
       },
-      "mobileLoginUrl": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
+      "mobileLoginUrl": Object {
+        "home": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
+        "jobAd": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
+        "jobListing": "https://m.jobsdb.com/en-hk/login.do?nextPage=jobsForYou.do%3F",
+      },
       "mobileLogoutUrl": "https://m.jobsdb.com/en-hk/logout.do",
       "playStore": Object {
         "title": "Google Play Store",

@@ -53,7 +53,11 @@ export default {
   },
   login: {
     title: 'Log in',
-    url: '/hk/en/login/jobseekerlogin?from=header'
+    url: {
+      home: '/hk/en/login/jobseekerlogin?from=header',
+      jobListing: '/hk/en/login/jobseekerlogin?from=header&pageType=jobListing',
+      jobAd: '/hk/en/login/jobseekerlogin?from=header&pageType=jobAd'
+    }
   },
   employer: {
     title: 'For Employers',
@@ -63,7 +67,11 @@ export default {
   homeUrlText: 'jobsDB.com',
   homeUrl: '/hk',
   mobileLogoutUrl: '/logout.do',
-  mobileLoginUrl: '/login.do?nextPage=jobsForYou.do%3F',
+  mobileLoginUrl: {
+    home: '/login.do?nextPage=jobsForYou.do%3F',
+    jobListing: '/login.do?nextPage=jobsForYou.do%3F&pageType=jobListing',
+    jobAd: '/login.do?nextPage=jobsForYou.do%3F&pageType=jobAd'
+  },
   downloadApp: 'Download Our App',
   seperatorOr: 'or',
   searchUrl: '/hk/en/search/getsearchresult'

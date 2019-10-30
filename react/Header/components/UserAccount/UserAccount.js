@@ -34,7 +34,8 @@ export default class UserAccount extends Component {
       userName,
       userAccMenuItems,
       headerMessage,
-      linkRenderer
+      linkRenderer,
+      pageType
     } = this.props;
 
     if (loginAvailable) {
@@ -52,7 +53,7 @@ export default class UserAccount extends Component {
           return (
             <div className={styles.secondaryNav}>
               {linkRenderer({
-                href: _get(headerMessage, 'login.url'),
+                href: _get(headerMessage, `login.url.${pageType}`),
                 children: <Button
                   className={styles.userAcclink}
                   color='hyperlink'
@@ -102,5 +103,6 @@ UserAccount.propTypes = {
   userAccMenuItems: PropTypes.array,
   onMenuToggle: PropTypes.func,
   headerMessage: PropTypes.object.isRequired,
-  linkRenderer: PropTypes.func
+  linkRenderer: PropTypes.func,
+  pageType: PropTypes.string
 };
