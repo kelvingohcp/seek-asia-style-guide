@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Header.less';
 import { Header as GlobalHeader } from 'seek-asia-style-guide/react';
 import Logo from '../Logo/Logo';
-import { PortalIcon, CompanyIcon, EducationIcon, ProfileIcon, JobInvitationIcon, JobFunctionIcon } from 'seek-asia-style-guide/react';
+import { PortalIcon, CompanyIcon, EducationIcon, ProfileIcon, JobInvitationIcon, JobFunctionIcon, SearchIcon } from 'seek-asia-style-guide/react';
 import { getLocalization, locales } from '../localization';
 import _get from 'lodash/get';
 
@@ -12,6 +12,7 @@ const getJobStreetProps = ({ country, language }) => {
   const headerMessage = _get(messages, 'header');
 
   const links = [
+    { ..._get(headerMessage, 'searchJobs'), ItemIcon: SearchIcon },
     { ..._get(headerMessage, 'myJobStreet'), ItemIcon: PortalIcon },
     { ..._get(headerMessage, 'companyProfiles'), ItemIcon: CompanyIcon },
     { ..._get(headerMessage, 'education'), ItemIcon: EducationIcon }

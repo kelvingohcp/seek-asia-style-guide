@@ -83,6 +83,10 @@ exports[`JobStreet Header passes through optional props 1`] = `
         "title": "Overseas Jobs",
         "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
       },
+      "searchJobs": Object {
+        "title": "Search Jobs",
+        "url": "https://jobstreet.com.my/en/job-search/job-vacancy.php?ojs=1",
+      },
       "seperatorOr": "or",
       "signUp": Object {
         "title": "Sign up",
@@ -96,6 +100,11 @@ exports[`JobStreet Header passes through optional props 1`] = `
   linkRenderer={[Function]}
   links={
     Array [
+      Object {
+        "ItemIcon": [Function],
+        "title": "Search Jobs",
+        "url": "https://jobstreet.com.my/en/job-search/job-vacancy.php?ojs=1",
+      },
       Object {
         "ItemIcon": [Function],
         "title": "MyJobStreet",
@@ -285,6 +294,10 @@ exports[`JobStreet Header renders with default props 1`] = `
         "title": "Overseas Jobs",
         "url": "https://jobstreet.com.my/en/job-search/browse/find-overseas-jobs",
       },
+      "searchJobs": Object {
+        "title": "Search Jobs",
+        "url": "https://jobstreet.com.my/en/job-search/job-vacancy.php?ojs=1",
+      },
       "seperatorOr": "or",
       "signUp": Object {
         "title": "Sign up",
@@ -298,6 +311,11 @@ exports[`JobStreet Header renders with default props 1`] = `
   linkRenderer={[Function]}
   links={
     Array [
+      Object {
+        "ItemIcon": [Function],
+        "title": "Search Jobs",
+        "url": "https://jobstreet.com.my/en/job-search/job-vacancy.php?ojs=1",
+      },
       Object {
         "ItemIcon": [Function],
         "title": "MyJobStreet",

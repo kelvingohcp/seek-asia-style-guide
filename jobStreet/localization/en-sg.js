@@ -63,6 +63,10 @@ export default {
       title: 'MyJobStreet',
       url: `${accountBaseUrl}/home/login.php?site=sg`
     },
+    searchJobs: {
+      title: 'Search Jobs',
+      url: `${baseUrlWithLanguage}/job-search/job-vacancy.php?ojs=1`
+    },
     companyProfiles: {
       title: 'Company Profiles',
       url: `${baseUrlWithLanguage}/companies`
