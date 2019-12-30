@@ -151,7 +151,7 @@
     "rimraf": "^2.6.1",
     "scope-eval": "^1.0.0",
     "semantic-release": "^7.0.2",
-    "serialize-javascript": "^1.4.0",
+    "serialize-javascript": "^2.1.1",
     "sinon": "^4.4.6",
     "sinon-chai": "^2.8.0",
     "static-site-generator-webpack-plugin": "^3.4.1",
