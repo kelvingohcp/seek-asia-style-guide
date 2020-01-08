@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Header } from 'seek-asia-style-guide/jobsDB';
-import { Constants } from 'seek-asia-style-guide/react';
 import { Link } from 'react-router-dom';
 import { AUTHENTICATED, UNAUTHENTICATED } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
@@ -16,8 +15,6 @@ export const makeDummyLinkRendererForPath = path => {
 
   return DummyLinkRenderer;
 };
-
-const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH, ACTIVE_TAB_SAVED_JOBS } = Constants;
 const ROUTE = '/jobsdb-header';
 const domain = 'jobsdb.com';
 
@@ -30,7 +27,6 @@ export default {
     language: 'en',
     country: 'hk',
     loginAvailable: true,
-    activeTab: ACTIVE_TAB_HOME,
     domainUrl: domain,
     linkRenderer: makeDummyLinkRendererForPath(ROUTE),
     authenticationStatus: UNAUTHENTICATED
@@ -39,51 +35,6 @@ export default {
     label: 'States',
     type: 'checklist',
     states: [
-      {
-        label: 'Hide Tray',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showTray: false
-          }
-        })
-      }, {
-        label: 'Hide Home',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showHome: false
-          }
-        })
-      }, {
-        label: 'Hide Search',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showSearch: false
-          }
-        })
-      }, {
-        label: 'Hide Saved Jobs',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps
-          }
-        })
-      }, {
-        label: 'Hide Menu',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showMenu: false
-          }
-        })
-      },
       {
         label: 'Hide Navigation',
         transformProps: props => ({
@@ -197,32 +148,6 @@ export default {
           ...props,
           returnUrl: '/jobs',
           loginAvailable: false
-        })
-      }
-    ]
-  }, {
-    label: 'Active tab',
-    type: 'radio',
-    states: [
-      {
-        label: 'Home',
-        transformProps: props => ({
-          ...props,
-          activeTab: ACTIVE_TAB_HOME
-        })
-      },
-      {
-        label: 'Search',
-        transformProps: props => ({
-          ...props,
-          activeTab: ACTIVE_TAB_SEARCH
-        })
-      },
-      {
-        label: 'Saved Jobs',
-        transformProps: props => ({
-          ...props,
-          activeTab: ACTIVE_TAB_SAVED_JOBS
         })
       }
     ]

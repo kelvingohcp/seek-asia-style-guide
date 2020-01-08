@@ -132,9 +132,12 @@ export default class Header extends Component {
             linkRenderer={linkRenderer}
             pageType={pageType}
           />
-          <div onClick={this.handleToggleMenu.bind(this)} className={styles.menuToggle}>
-            <Icon type="menu" className={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
-          </div>
+          {(!hideNavMenu || loginAvailable) && (
+            /* Only hide menu icon on mobile when both conditions match at the same time: 1. hideNavMenu={true}, 2. loginAvailable={false} */
+            <div onClick={this.handleToggleMenu.bind(this)} className={styles.menuToggle}>
+              <Icon type="menu" className={classnames(styles.svg, { [brandStyles.activeActionTrayIcon]: menuOpen })} size="normal" />
+            </div>
+          )}
         </div>
       );
     };
@@ -167,7 +170,6 @@ Header.propTypes = {
   loginAvailable: PropTypes.bool,
   LogoComponent: PropTypes.func.isRequired,
   logoProps: PropTypes.object,
-  activeTab: PropTypes.string,
   homeUrl: PropTypes.string,
   links: PropTypes.array,
   locales: PropTypes.array.isRequired,
@@ -175,7 +177,6 @@ Header.propTypes = {
   headerMessage: PropTypes.object.isRequired,
   menuMessage: PropTypes.object.isRequired,
   brandStyles: PropTypes.object.isRequired,
-  actionTrayProps: PropTypes.object,
   employerSite: PropTypes.bool,
   linkRenderer: PropTypes.func,
   onMenuOpen: PropTypes.func,

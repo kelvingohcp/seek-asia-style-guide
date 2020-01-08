@@ -256,7 +256,7 @@ exports[`Footer component should render with custom href link 1`] = `
           semiStrong={true}
           whispering={true}
         >
-          Copyright © 1998-2019, jobsDB.
+          Copyright © 1998-2020, jobsDB.
         </Text>
       </div>
       <div
@@ -534,7 +534,7 @@ exports[`Footer component should render with custom link renderer 1`] = `
           semiStrong={true}
           whispering={true}
         >
-          Copyright © 1998-2019, jobsDB.
+          Copyright © 1998-2020, jobsDB.
         </Text>
       </div>
       <div
@@ -812,7 +812,7 @@ exports[`Footer component should render with default props 1`] = `
           semiStrong={true}
           whispering={true}
         >
-          Copyright © 1998-2019, jobsDB.
+          Copyright © 1998-2020, jobsDB.
         </Text>
       </div>
       <div

@@ -8,7 +8,7 @@ import { AUTHENTICATED, UNAUTHENTICATED, AUTH_PENDING } from '../../react/privat
 import { getJobsDBHeaderProps, getLocalList } from '../helper';
 import _get from 'lodash/get';
 
-const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = false, authenticationStatus = UNAUTHENTICATED, userName, domainUrl, currentPage, ...restProps }) => {
+const Header = ({ country = 'hk', language = 'en', loginAvailable = false, authenticationStatus = UNAUTHENTICATED, userName, domainUrl, currentPage, ...restProps }) => {
   const messages = getLocalization({ country, language });
   const brandStyles = {
     activeActionTrayIcon: styles.activeActionTrayIcon,
@@ -19,7 +19,6 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
   return (
     <GlobalHeader
       LogoComponent={Logo}
-      activeTab={activeTab}
       loginAvailable={loginAvailable}
       {...getJobsDBHeaderProps({ country, domainUrl, authenticationStatus, headerMessage: _get(messages, 'header'), styles })}
       menuMessage={_get(messages, 'menu')}
@@ -39,7 +38,6 @@ const Header = ({ country = 'hk', language = 'en', activeTab, loginAvailable = f
 Header.propTypes = {
   country: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
-  activeTab: PropTypes.string,
   loginAvailable: PropTypes.bool,
   authenticationStatus: PropTypes.oneOf([
     AUTHENTICATED,

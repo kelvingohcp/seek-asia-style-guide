@@ -1,8 +1,6 @@
 import { Header } from 'seek-asia-style-guide/jobStreet';
-import { Constants } from 'seek-asia-style-guide/react';
 import { AUTHENTICATED, UNAUTHENTICATED } from 'seek-asia-style-guide/react/private/authStatusTypes';
 
-const { ACTIVE_TAB_HOME, ACTIVE_TAB_SEARCH, ACTIVE_TAB_SAVED_JOBS } = Constants;
 const ROUTE = '/jobstreet-header';
 
 export default {
@@ -14,59 +12,12 @@ export default {
     language: 'en',
     country: 'my',
     loginAvailable: false,
-    activeTab: ACTIVE_TAB_HOME,
     authenticationStatus: UNAUTHENTICATED
   },
   options: [{
     label: 'States',
     type: 'checklist',
     states: [
-      {
-        label: 'Hide Tray',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showTray: false
-          }
-        })
-      }, {
-        label: 'Hide Home',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showHome: false
-          }
-        })
-      }, {
-        label: 'Hide Search',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showSearch: false
-          }
-        })
-      }, {
-        label: 'Hide Saved Jobs',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showSavedJobs: false
-          }
-        })
-      }, {
-        label: 'Hide Menu',
-        transformProps: props => ({
-          ...props,
-          actionTrayProps: {
-            ...props.actionTrayProps,
-            showMenu: false
-          }
-        })
-      },
       {
         label: 'Hide Navigation',
         transformProps: props => ({
@@ -152,32 +103,6 @@ export default {
         transformProps: props => ({
           ...props,
           loginAvailable: true
-        })
-      }
-    ]
-  }, {
-    label: 'Active tab',
-    type: 'radio',
-    states: [
-      {
-        label: 'Home',
-        transformProps: props => ({
-          ...props,
-          activeTab: ACTIVE_TAB_HOME
-        })
-      },
-      {
-        label: 'Search',
-        transformProps: props => ({
-          ...props,
-          activeTab: ACTIVE_TAB_SEARCH
-        })
-      },
-      {
-        label: 'Saved Jobs',
-        transformProps: props => ({
-          ...props,
-          activeTab: ACTIVE_TAB_SAVED_JOBS
         })
       }
     ]
